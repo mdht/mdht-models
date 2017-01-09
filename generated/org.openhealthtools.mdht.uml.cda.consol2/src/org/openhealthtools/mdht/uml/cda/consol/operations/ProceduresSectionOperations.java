@@ -24,7 +24,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityAct;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure;
@@ -129,7 +128,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_HAS_PROCEDURE_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionHasProcedureActivity"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProceduresSectionProceduresSectionHasProcedureActivity"),
 						new Object[] { proceduresSection }));
 			}
 
@@ -192,7 +192,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProceduresSectionProceduresSectionTitle"),
 						new Object[] { proceduresSection }));
 			}
 
@@ -257,7 +258,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE,
-						ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionProcedureActivityProcedure"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProceduresSectionProceduresSectionProcedureActivityProcedure"),
 						new Object[] { proceduresSection }));
 			}
 
@@ -322,7 +324,7 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProceduresSectionProceduresSectionProcedureActivityObservation"),
 						new Object[] { proceduresSection }));
 			}
@@ -388,7 +390,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_ACT,
-						ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionProcedureActivityAct"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProceduresSectionProceduresSectionProcedureActivityAct"),
 						new Object[] { proceduresSection }));
 			}
 
@@ -601,7 +604,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionEntriesOptionalTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProceduresSectionProceduresSectionEntriesOptionalTemplateId"),
 						new Object[] { proceduresSection }));
 			}
 
@@ -666,7 +670,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionEntriesOptionalCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProceduresSectionProceduresSectionEntriesOptionalCodeP"),
 						new Object[] { proceduresSection }));
 			}
 
@@ -755,7 +760,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_CODE,
-						ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionEntriesOptionalCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProceduresSectionProceduresSectionEntriesOptionalCode"),
 						new Object[] { proceduresSection }));
 			}
 
@@ -820,7 +826,8 @@ public class ProceduresSectionOperations extends ProceduresSectionEntriesOptiona
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEXT,
-						ConsolPlugin.INSTANCE.getString("ProceduresSectionProceduresSectionEntriesOptionalText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProceduresSectionProceduresSectionEntriesOptionalText"),
 						new Object[] { proceduresSection }));
 			}
 

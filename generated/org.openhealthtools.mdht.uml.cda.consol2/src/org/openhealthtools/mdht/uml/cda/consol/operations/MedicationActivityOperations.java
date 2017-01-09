@@ -27,7 +27,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.DrugVehicle;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
@@ -172,7 +171,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITYORRATE_QUANTITY,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicationActivityMedicationActivityDoseQuantityorrateQuantity"),
 						new Object[] { medicationActivity }));
 			}
@@ -238,7 +237,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityTextReference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityTextReference"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -303,7 +303,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityReferenceValue"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -368,7 +369,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityTextReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityTextReferenceValue"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -433,7 +435,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLT_SOR_TS,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimeIVLTSorTS"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityEffectiveTimeIVLTSorTS"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -498,7 +501,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS_LOW,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimeIVLTSLow"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityEffectiveTimeIVLTSLow"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -563,7 +567,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_IVLTS_HIGH,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimeIVLTSHigh"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityEffectiveTimeIVLTSHigh"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -628,7 +633,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_TS_VALUE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimeTSValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityEffectiveTimeTSValue"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -693,7 +699,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_PIVLTS,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimePIVLTS"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityEffectiveTimePIVLTS"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -758,7 +765,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_EFFECTIVE_TIME_OPERATOR,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityEffectiveTimeOperator"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityEffectiveTimeOperator"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -823,7 +831,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITY_UNIT,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityDoseQuantityUnit"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityDoseQuantityUnit"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -888,7 +897,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DRUG_VEHICLE_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityDrugVehicleTypeCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityDrugVehicleTypeCode"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -953,7 +963,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTIONS_INVERSION_IND,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityInstructionsInversionInd"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityInstructionsInversionInd"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1018,7 +1029,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_RATE_QUANTITY_UNIT,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityRateQuantityUnit"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityRateQuantityUnit"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1081,7 +1093,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityTemplateId"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1144,7 +1157,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityClassCode"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1209,7 +1223,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityMoodCode"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1272,7 +1287,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ID,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityId"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1335,7 +1351,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityCode"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1398,7 +1415,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityStatusCode"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1462,7 +1480,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE_P,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityRouteCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityRouteCodeP"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1548,7 +1567,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ROUTE_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityRouteCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityRouteCode"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1592,7 +1612,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE_P,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityApproachSiteCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityApproachSiteCodeP"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1680,7 +1701,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_APPROACH_SITE_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityApproachSiteCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityApproachSiteCode"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1744,7 +1766,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DOSE_QUANTITY,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityDoseQuantity"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityDoseQuantity"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1808,7 +1831,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_RATE_QUANTITY,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityRateQuantity"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityRateQuantity"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1873,7 +1897,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MAX_DOSE_QUANTITY,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityMaxDoseQuantity"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityMaxDoseQuantity"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -1938,7 +1963,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE_P,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityAdministrationUnitCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityAdministrationUnitCodeP"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2027,7 +2053,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_ADMINISTRATION_UNIT_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityAdministrationUnitCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityAdministrationUnitCode"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2090,7 +2117,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_TEXT,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityText"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2154,7 +2182,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REPEAT_NUMBER,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityRepeatNumber"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityRepeatNumber"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2219,7 +2248,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_SUPPLY_ORDER,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityMedicationSupplyOrder"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityMedicationSupplyOrder"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2284,7 +2314,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_REACTION_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityReactionObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityReactionObservation"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2347,7 +2378,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PERFORMER,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityPerformer"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityPerformer"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2411,7 +2443,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INSTRUCTIONS,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityInstructions"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityInstructions"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2474,7 +2507,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_INDICATION,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityIndication"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityIndication"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2539,7 +2573,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_MEDICATION_DISPENSE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityMedicationDispense"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityMedicationDispense"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2582,7 +2617,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityPrecondition"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityPrecondition"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2646,7 +2682,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_DRUG_VEHICLE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityDrugVehicle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityDrugVehicle"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2730,7 +2767,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE,
-						ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityConsumable"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationActivityMedicationActivityConsumable"),
 						new Object[] { medicationActivity }));
 			}
 
@@ -2799,7 +2837,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_CONSUMABLE_MEDICATION_INFORMATION,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"MedicationActivityMedicationActivityConsumableMedicationInformation"),
 							new Object[] { eObject }));
 				}
@@ -2870,7 +2908,8 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION_TYPE_CODE,
-							ConsolPlugin.INSTANCE.getString("MedicationActivityMedicationActivityPreconditionTypeCode"),
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+								"MedicationActivityMedicationActivityPreconditionTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -2940,7 +2979,7 @@ public class MedicationActivityOperations extends SubstanceAdministrationOperati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_ACTIVITY__MEDICATION_ACTIVITY_PRECONDITION_PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"MedicationActivityMedicationActivityPreconditionPreconditionForSubstanceAdministration"),
 							new Object[] { eObject }));
 				}

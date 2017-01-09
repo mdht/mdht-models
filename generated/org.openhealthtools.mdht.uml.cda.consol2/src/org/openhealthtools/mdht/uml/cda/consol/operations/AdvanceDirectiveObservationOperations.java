@@ -26,7 +26,6 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -145,7 +144,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_HAS_STARTING_TIME,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveObservationAdvanceDirectiveObservationHasStartingTime"),
 						new Object[] { advanceDirectiveObservation }));
 			}
@@ -212,7 +211,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_HAS_ENDING_TIME,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveObservationAdvanceDirectiveObservationHasEndingTime"),
 						new Object[] { advanceDirectiveObservation }));
 			}
@@ -279,7 +278,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveObservationAdvanceDirectiveObservationTemplateId"),
 						new Object[] { advanceDirectiveObservation }));
 			}
@@ -346,7 +345,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveObservationAdvanceDirectiveObservationClassCode"),
 						new Object[] { advanceDirectiveObservation }));
 			}
@@ -413,7 +412,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveObservationAdvanceDirectiveObservationMoodCode"),
 						new Object[] { advanceDirectiveObservation }));
 			}
@@ -478,7 +477,8 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_ID,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AdvanceDirectiveObservationAdvanceDirectiveObservationId"),
 						new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -544,7 +544,8 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AdvanceDirectiveObservationAdvanceDirectiveObservationCodeP"),
 						new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -633,7 +634,8 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("AdvanceDirectiveObservationAdvanceDirectiveObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AdvanceDirectiveObservationAdvanceDirectiveObservationCode"),
 						new Object[] { advanceDirectiveObservation }));
 			}
 
@@ -700,7 +702,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveObservationAdvanceDirectiveObservationStatusCode"),
 						new Object[] { advanceDirectiveObservation }));
 			}
@@ -767,7 +769,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveObservationAdvanceDirectiveObservationEffectiveTime"),
 						new Object[] { advanceDirectiveObservation }));
 			}
@@ -834,7 +836,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveObservationAdvanceDirectiveObservationVerifier"),
 						new Object[] { advanceDirectiveObservation }));
 			}
@@ -901,7 +903,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveObservationAdvanceDirectiveObservationCustodian"),
 						new Object[] { advanceDirectiveObservation }));
 			}
@@ -968,7 +970,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdvanceDirectiveObservationAdvanceDirectiveObservationReference"),
 						new Object[] { advanceDirectiveObservation }));
 			}
@@ -1039,7 +1041,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TIME,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationVerifierTime"),
 							new Object[] { eObject }));
 				}
@@ -1111,7 +1113,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_TYPE_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationVerifierTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -1183,7 +1185,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_VERIFIER_PARTICIPANT_ROLE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationVerifierParticipantRole"),
 							new Object[] { eObject }));
 				}
@@ -1255,7 +1257,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CUSTODIAN_ENTITY_NAME,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationCustodianCustodianRoleCustodianEntityName"),
 							new Object[] { eObject }));
 				}
@@ -1327,7 +1329,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_ADDR,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationCustodianCustodianRoleAddr"),
 							new Object[] { eObject }));
 				}
@@ -1399,7 +1401,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_CLASS_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationCustodianCustodianRoleClassCode"),
 							new Object[] { eObject }));
 				}
@@ -1471,7 +1473,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_TELECOM,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationCustodianCustodianRoleTelecom"),
 							new Object[] { eObject }));
 				}
@@ -1543,7 +1545,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_CUSTODIAN_ROLE_PLAYING_ENTITY,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationCustodianCustodianRolePlayingEntity"),
 							new Object[] { eObject }));
 				}
@@ -1615,7 +1617,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_TYPE_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationCustodianTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -1687,7 +1689,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ADVANCE_DIRECTIVE_OBSERVATION_CUSTODIAN_ROLE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationCustodianAdvanceDirectiveObservationCustodianRole"),
 							new Object[] { eObject }));
 				}
@@ -1759,7 +1761,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_MEDIA_TYPE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationReferenceExternalDocumentTextMediaType"),
 							new Object[] { eObject }));
 				}
@@ -1831,7 +1833,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT_REFERENCE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationReferenceExternalDocumentTextReference"),
 							new Object[] { eObject }));
 				}
@@ -1903,7 +1905,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_ID,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationReferenceExternalDocumentId"),
 							new Object[] { eObject }));
 				}
@@ -1975,7 +1977,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_TEXT,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationReferenceExternalDocumentText"),
 							new Object[] { eObject }));
 				}
@@ -2049,7 +2051,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_TYPE_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationReferenceTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -2121,7 +2123,7 @@ public class AdvanceDirectiveObservationOperations extends ClinicalStatementOper
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADVANCE_DIRECTIVE_OBSERVATION__ADVANCE_DIRECTIVE_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdvanceDirectiveObservationAdvanceDirectiveObservationReferenceExternalDocument"),
 							new Object[] { eObject }));
 				}

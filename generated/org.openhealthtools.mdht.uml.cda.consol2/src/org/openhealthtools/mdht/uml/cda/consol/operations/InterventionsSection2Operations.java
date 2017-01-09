@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipants;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionAct;
 import org.openhealthtools.mdht.uml.cda.consol.InterventionsSection2;
@@ -122,7 +121,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_INTERVENTION_ACT,
-						ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSection2InterventionAct"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InterventionsSection2InterventionsSection2InterventionAct"),
 						new Object[] { interventionsSection2 }));
 			}
 
@@ -187,7 +187,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_HANDOFF_COMMUNICATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"InterventionsSection2InterventionsSection2HandoffCommunication"),
 						new Object[] { interventionsSection2 }));
 			}
@@ -253,7 +253,7 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION2_PLANNED_INTERVENTION_ACT,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"InterventionsSection2InterventionsSection2PlannedInterventionAct"),
 						new Object[] { interventionsSection2 }));
 			}
@@ -463,7 +463,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InterventionsSection2InterventionsSectionTemplateId"),
 						new Object[] { interventionsSection2 }));
 			}
 
@@ -526,7 +527,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InterventionsSection2InterventionsSectionCodeP"),
 						new Object[] { interventionsSection2 }));
 			}
 
@@ -612,7 +614,8 @@ public class InterventionsSection2Operations extends InterventionsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INTERVENTIONS_SECTION2__INTERVENTIONS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("InterventionsSection2InterventionsSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InterventionsSection2InterventionsSectionCode"),
 						new Object[] { interventionsSection2 }));
 			}
 

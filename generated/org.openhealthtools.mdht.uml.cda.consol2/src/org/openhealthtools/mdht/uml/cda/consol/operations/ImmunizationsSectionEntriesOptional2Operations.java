@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -167,7 +166,7 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalTemplateId"),
 						new Object[] { immunizationsSectionEntriesOptional2 }));
 			}
@@ -234,7 +233,7 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalCodeP"),
 						new Object[] { immunizationsSectionEntriesOptional2 }));
 			}
@@ -326,7 +325,7 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalCode"),
 						new Object[] { immunizationsSectionEntriesOptional2 }));
 			}
@@ -393,7 +392,7 @@ public class ImmunizationsSectionEntriesOptional2Operations extends Immunization
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL2__IMMUNIZATIONS_SECTION_ENTRIES_OPTIONAL_IMMUNIZATION_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ImmunizationsSectionEntriesOptional2ImmunizationsSectionEntriesOptionalImmunizationActivity"),
 						new Object[] { immunizationsSectionEntriesOptional2 }));
 			}

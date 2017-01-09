@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureEstimatedBloodLossSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -116,7 +115,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProcedureEstimatedBloodLossSectionProcedureEstimatedBloodLossSectionTemplateId"),
 						new Object[] { procedureEstimatedBloodLossSection }));
 			}
@@ -185,7 +184,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProcedureEstimatedBloodLossSectionProcedureEstimatedBloodLossSectionCode"),
 						new Object[] { procedureEstimatedBloodLossSection }));
 			}
@@ -252,7 +251,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProcedureEstimatedBloodLossSectionProcedureEstimatedBloodLossSectionCodeP"),
 						new Object[] { procedureEstimatedBloodLossSection }));
 			}
@@ -319,7 +318,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProcedureEstimatedBloodLossSectionProcedureEstimatedBloodLossSectionText"),
 						new Object[] { procedureEstimatedBloodLossSection }));
 			}
@@ -386,7 +385,7 @@ public class ProcedureEstimatedBloodLossSectionOperations extends SectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION__PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProcedureEstimatedBloodLossSectionProcedureEstimatedBloodLossSectionTitle"),
 						new Object[] { procedureEstimatedBloodLossSection }));
 			}

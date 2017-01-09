@@ -25,7 +25,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.CoverageActivity;
 import org.openhealthtools.mdht.uml.cda.consol.PayersSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -121,7 +120,8 @@ public class PayersSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PayersSectionPayersSectionTemplateId"),
 						new Object[] { payersSection }));
 			}
 
@@ -186,7 +186,8 @@ public class PayersSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PayersSectionPayersSectionCode"),
 						new Object[] { payersSection }));
 			}
 
@@ -249,7 +250,8 @@ public class PayersSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PayersSectionPayersSectionCodeP"),
 						new Object[] { payersSection }));
 			}
 
@@ -312,7 +314,8 @@ public class PayersSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PayersSectionPayersSectionTitle"),
 						new Object[] { payersSection }));
 			}
 
@@ -375,7 +378,8 @@ public class PayersSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PayersSectionPayersSectionText"),
 						new Object[] { payersSection }));
 			}
 
@@ -438,7 +442,8 @@ public class PayersSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION__PAYERS_SECTION_COVERAGE_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString("PayersSectionPayersSectionCoverageActivity"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PayersSectionPayersSectionCoverageActivity"),
 						new Object[] { payersSection }));
 			}
 

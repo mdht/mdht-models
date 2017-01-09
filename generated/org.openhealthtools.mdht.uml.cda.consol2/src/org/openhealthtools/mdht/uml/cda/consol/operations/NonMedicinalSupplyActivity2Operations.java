@@ -18,7 +18,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProductInstance;
@@ -119,7 +118,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2_INVERSION_IND,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2InversionInd"),
 						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
@@ -186,7 +185,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCodeP"),
 						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
@@ -267,7 +266,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY2_INSTRUCTION2,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivity2Instruction2"),
 						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
@@ -424,7 +423,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivityTemplateId"),
 						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
@@ -501,7 +500,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivityStatusCode"),
 						new Object[] { nonMedicinalSupplyActivity2 }));
 			}
@@ -568,7 +567,7 @@ public class NonMedicinalSupplyActivity2Operations extends NonMedicinalSupplyAct
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.NON_MEDICINAL_SUPPLY_ACTIVITY2__NON_MEDICINAL_SUPPLY_ACTIVITY_PRODUCT_INSTANCE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"NonMedicinalSupplyActivity2NonMedicinalSupplyActivityProductInstance"),
 						new Object[] { nonMedicinalSupplyActivity2 }));
 			}

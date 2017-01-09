@@ -21,7 +21,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.BoundaryObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -114,7 +113,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BoundaryObservationBoundaryObservationTemplateId"),
 						new Object[] { boundaryObservation }));
 			}
 
@@ -178,7 +178,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BoundaryObservationBoundaryObservationClassCode"),
 						new Object[] { boundaryObservation }));
 			}
 
@@ -243,7 +244,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BoundaryObservationBoundaryObservationCode"),
 						new Object[] { boundaryObservation }));
 			}
 
@@ -306,7 +308,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BoundaryObservationBoundaryObservationMoodCode"),
 						new Object[] { boundaryObservation }));
 			}
 
@@ -369,7 +372,8 @@ public class BoundaryObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BOUNDARY_OBSERVATION__BOUNDARY_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("BoundaryObservationBoundaryObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BoundaryObservationBoundaryObservationValue"),
 						new Object[] { boundaryObservation }));
 			}
 

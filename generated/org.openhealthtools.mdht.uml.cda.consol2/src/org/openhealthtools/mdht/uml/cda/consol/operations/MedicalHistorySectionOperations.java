@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -115,7 +114,8 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_HISTORY_SECTION__MEDICAL_HISTORY_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("MedicalHistorySectionMedicalHistorySectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicalHistorySectionMedicalHistorySectionTemplateId"),
 						new Object[] { medicalHistorySection }));
 			}
 
@@ -180,7 +180,8 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_HISTORY_SECTION__MEDICAL_HISTORY_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicalHistorySectionMedicalHistorySectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicalHistorySectionMedicalHistorySectionCode"),
 						new Object[] { medicalHistorySection }));
 			}
 
@@ -244,7 +245,8 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_HISTORY_SECTION__MEDICAL_HISTORY_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("MedicalHistorySectionMedicalHistorySectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicalHistorySectionMedicalHistorySectionCodeP"),
 						new Object[] { medicalHistorySection }));
 			}
 
@@ -307,7 +309,8 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_HISTORY_SECTION__MEDICAL_HISTORY_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("MedicalHistorySectionMedicalHistorySectionText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicalHistorySectionMedicalHistorySectionText"),
 						new Object[] { medicalHistorySection }));
 			}
 
@@ -371,7 +374,8 @@ public class MedicalHistorySectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_HISTORY_SECTION__MEDICAL_HISTORY_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("MedicalHistorySectionMedicalHistorySectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicalHistorySectionMedicalHistorySectionTitle"),
 						new Object[] { medicalHistorySection }));
 			}
 

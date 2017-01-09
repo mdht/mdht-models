@@ -18,7 +18,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.DeceasedObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -159,7 +158,8 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DeceasedObservation2DeceasedObservationTemplateId"),
 						new Object[] { deceasedObservation2 }));
 			}
 
@@ -222,7 +222,8 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DeceasedObservation2DeceasedObservationCodeP"),
 						new Object[] { deceasedObservation2 }));
 			}
 
@@ -308,7 +309,8 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DeceasedObservation2DeceasedObservationCode"),
 						new Object[] { deceasedObservation2 }));
 			}
 
@@ -373,7 +375,8 @@ public class DeceasedObservation2Operations extends DeceasedObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DECEASED_OBSERVATION2__DECEASED_OBSERVATION_PROBLEM_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("DeceasedObservation2DeceasedObservationProblemObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DeceasedObservation2DeceasedObservationProblemObservation"),
 						new Object[] { deceasedObservation2 }));
 			}
 

@@ -33,7 +33,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HighestPressureUlcerStage;
 import org.openhealthtools.mdht.uml.cda.consol.LongitudinalCareWoundObservation;
 import org.openhealthtools.mdht.uml.cda.consol.NumberOfPressureUlcersObservation2;
@@ -152,7 +151,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationClassCode"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -219,7 +218,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationMoodCode"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -286,7 +285,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCodeP"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -378,7 +377,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCode"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -445,7 +444,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationValueP"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -537,7 +536,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationValue"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -583,7 +582,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationTargetSiteCodeP"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -673,7 +672,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_TARGET_SITE_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationTargetSiteCode"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -740,7 +739,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_MEASUREMENT_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationWoundMeasurementObservation"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -807,7 +806,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_WOUND_CHARACTERISTICS,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationWoundCharacteristics"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -874,7 +873,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_HIGHEST_PRESSURE_ULCER_STAGE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationHighestPressureUlcerStage"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -941,7 +940,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_AUTHOR_PARTICIPATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationAuthorParticipation"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -1008,7 +1007,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION2,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"LongitudinalCareWoundObservationLongitudinalCareWoundObservationNumberOfPressureUlcersObservation2"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
@@ -1079,7 +1078,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_VALUE_TERMINOLOGY,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRCDValueTerminology"),
 							new Object[] { eObject }));
 				}
@@ -1151,7 +1150,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCRCD_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRCDCode"),
 							new Object[] { eObject }));
 				}
@@ -1225,7 +1224,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRName"),
 							new Object[] { eObject }));
 				}
@@ -1297,7 +1296,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_NAME_P,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRNameP"),
 							new Object[] { eObject }));
 				}
@@ -1369,7 +1368,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CDCR_VALUE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDCRValue"),
 							new Object[] { eObject }));
 				}
@@ -1441,7 +1440,7 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__LONGITUDINAL_CARE_WOUND_OBSERVATION_CD_QUALIFIER,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"LongitudinalCareWoundObservationLongitudinalCareWoundObservationCDQualifier"),
 							new Object[] { eObject }));
 				}
@@ -1704,7 +1703,8 @@ public class LongitudinalCareWoundObservationOperations extends ProblemObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.LONGITUDINAL_CARE_WOUND_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("LongitudinalCareWoundObservationProblemObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"LongitudinalCareWoundObservationProblemObservationTemplateId"),
 						new Object[] { longitudinalCareWoundObservation }));
 			}
 

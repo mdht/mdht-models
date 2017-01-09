@@ -21,7 +21,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationInformation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -125,7 +124,7 @@ public class MedicationInformation2Operations extends MedicationInformationOpera
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_INFORMATION2__MEDICATION_INFORMATION2_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CE_TRANSLATION,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"MedicationInformation2MedicationInformation2MedicationInformationManufacturedMaterialCETranslation"),
 							new Object[] { eObject }));
 				}
@@ -196,7 +195,7 @@ public class MedicationInformation2Operations extends MedicationInformationOpera
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_INFORMATION2__MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_REFERENCE_VALUE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialReferenceValue"),
 							new Object[] { eObject }));
 				}
@@ -246,7 +245,7 @@ public class MedicationInformation2Operations extends MedicationInformationOpera
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_INFORMATION2__MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_P,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeP"),
 							new Object[] { eObject }));
 				}
@@ -306,7 +305,8 @@ public class MedicationInformation2Operations extends MedicationInformationOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_INFORMATION2__MEDICATION_INFORMATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("MedicationInformation2MedicationInformationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationInformation2MedicationInformationTemplateId"),
 						new Object[] { medicationInformation2 }));
 			}
 
@@ -350,7 +350,7 @@ public class MedicationInformation2Operations extends MedicationInformationOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_INFORMATION2__MEDICATION_INFORMATION_MANUFACTURED_MATERIAL,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicationInformation2MedicationInformationManufacturedMaterial"),
 						new Object[] { medicationInformation2 }));
 			}
@@ -399,7 +399,7 @@ public class MedicationInformation2Operations extends MedicationInformationOpera
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_INFORMATION2__MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeOriginalText"),
 							new Object[] { eObject }));
 				}
@@ -449,7 +449,7 @@ public class MedicationInformation2Operations extends MedicationInformationOpera
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_INFORMATION2__MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCodeTranslation"),
 							new Object[] { eObject }));
 				}
@@ -499,7 +499,7 @@ public class MedicationInformation2Operations extends MedicationInformationOpera
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_INFORMATION2__MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_REFERENCE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialReference"),
 							new Object[] { eObject }));
 				}
@@ -696,7 +696,7 @@ public class MedicationInformation2Operations extends MedicationInformationOpera
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_INFORMATION2__MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE_VALUE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialOriginalTextReferenceValue"),
 							new Object[] { eObject }));
 				}
@@ -779,7 +779,7 @@ public class MedicationInformation2Operations extends MedicationInformationOpera
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.MEDICATION_INFORMATION2__MEDICATION_INFORMATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"MedicationInformation2MedicationInformationMedicationInformationManufacturedMaterialCode"),
 							new Object[] { eObject }));
 				}

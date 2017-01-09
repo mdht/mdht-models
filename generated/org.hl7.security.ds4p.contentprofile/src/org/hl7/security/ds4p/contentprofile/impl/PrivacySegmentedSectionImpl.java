@@ -52,6 +52,7 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +62,7 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedSectionConfidentialityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionConfidentialityCode(this, diagnostics, context);
 	}
@@ -70,6 +72,7 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedSectionConfidentialityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionConfidentialityCodeP(this, diagnostics, context);
 	}
@@ -79,6 +82,7 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedSectionAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionAuthor(this, diagnostics, context);
 	}
@@ -88,6 +92,7 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacySegmentedSection init() {
 	    return Initializer.Util.init(this);
 	}
@@ -96,7 +101,8 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
      * <!-- end-user-doc -->
      * @generated
      */
-    public PrivacySegmentedSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PrivacySegmentedSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

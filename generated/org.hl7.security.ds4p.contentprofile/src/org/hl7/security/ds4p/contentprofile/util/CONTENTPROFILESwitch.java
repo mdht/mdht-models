@@ -9,7 +9,6 @@ import org.eclipse.emf.ecore.util.Switch;
 
 import org.eclipse.mdht.uml.cda.AssignedAuthor;
 import org.eclipse.mdht.uml.cda.Author;
-import org.eclipse.mdht.uml.cda.ClinicalDocument;
 import org.eclipse.mdht.uml.cda.ClinicalStatement;
 import org.eclipse.mdht.uml.cda.Entry;
 import org.eclipse.mdht.uml.cda.EntryRelationship;
@@ -24,8 +23,6 @@ import org.eclipse.mdht.uml.hl7.rim.Participation;
 import org.eclipse.mdht.uml.hl7.rim.Role;
 
 import org.hl7.security.ds4p.contentprofile.*;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
-import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 
 /**
  * <!-- begin-user-doc -->
@@ -87,10 +84,6 @@ public class CONTENTPROFILESwitch<T> extends Switch<T> {
 			case CONTENTPROFILEPackage.PRIVACY_SEGMENTED_DOCUMENT: {
 				PrivacySegmentedDocument privacySegmentedDocument = (PrivacySegmentedDocument)theEObject;
 				T result = casePrivacySegmentedDocument(privacySegmentedDocument);
-				if (result == null) result = caseGeneralHeaderConstraints(privacySegmentedDocument);
-				if (result == null) result = caseClinicalDocument(privacySegmentedDocument);
-				if (result == null) result = caseAct(privacySegmentedDocument);
-				if (result == null) result = caseInfrastructureRoot(privacySegmentedDocument);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -197,11 +190,6 @@ public class CONTENTPROFILESwitch<T> extends Switch<T> {
 			case CONTENTPROFILEPackage.PROTECTED_PROBLEM: {
 				ProtectedProblem protectedProblem = (ProtectedProblem)theEObject;
 				T result = caseProtectedProblem(protectedProblem);
-				if (result == null) result = caseProblemObservation(protectedProblem);
-				if (result == null) result = caseObservation(protectedProblem);
-				if (result == null) result = caseClinicalStatement(protectedProblem);
-				if (result == null) result = caseAct(protectedProblem);
-				if (result == null) result = caseInfrastructureRoot(protectedProblem);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
@@ -516,36 +504,6 @@ public class CONTENTPROFILESwitch<T> extends Switch<T> {
 	}
 
 	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Clinical Document</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseClinicalDocument(ClinicalDocument object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>General Header Constraints</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseGeneralHeaderConstraints(GeneralHeaderConstraints object) {
-		return null;
-	}
-
-	/**
 	 * Returns the result of interpreting the object as an instance of '<em>Section</em>'.
 	 * <!-- begin-user-doc -->
 	 * This implementation returns null;
@@ -602,21 +560,6 @@ public class CONTENTPROFILESwitch<T> extends Switch<T> {
 	 * @generated
 	 */
 	public T caseOrganizer(Organizer object) {
-		return null;
-	}
-
-	/**
-	 * Returns the result of interpreting the object as an instance of '<em>Problem Observation</em>'.
-	 * <!-- begin-user-doc -->
-	 * This implementation returns null;
-	 * returning a non-null result will terminate the switch.
-	 * <!-- end-user-doc -->
-	 * @param object the target of the switch.
-	 * @return the result of interpreting the object as an instance of '<em>Problem Observation</em>'.
-	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-	 * @generated
-	 */
-	public T caseProblemObservation(ProblemObservation object) {
 		return null;
 	}
 

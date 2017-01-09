@@ -16,7 +16,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -113,7 +112,8 @@ public class Indication2Operations extends IndicationOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION2__INDICATION_PROBLEM_INDICATION,
-						ConsolPlugin.INSTANCE.getString("Indication2IndicationProblemIndication"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Indication2IndicationProblemIndication"),
 						new Object[] { indication2 }));
 			}
 
@@ -176,7 +176,8 @@ public class Indication2Operations extends IndicationOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION2__INDICATION_CODE_NULL_FLAVOR_VALUE,
-						ConsolPlugin.INSTANCE.getString("Indication2IndicationCodeNullFlavorValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Indication2IndicationCodeNullFlavorValue"),
 						new Object[] { indication2 }));
 			}
 
@@ -239,7 +240,8 @@ public class Indication2Operations extends IndicationOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION2__INDICATION_CODE_NULL_FLAVOR,
-						ConsolPlugin.INSTANCE.getString("Indication2IndicationCodeNullFlavor"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Indication2IndicationCodeNullFlavor"),
 						new Object[] { indication2 }));
 			}
 
@@ -302,7 +304,8 @@ public class Indication2Operations extends IndicationOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION2__INDICATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("Indication2IndicationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Indication2IndicationTemplateId"),
 						new Object[] { indication2 }));
 			}
 
@@ -344,7 +347,9 @@ public class Indication2Operations extends IndicationOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION2__INDICATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("Indication2IndicationCodeP"), new Object[] { indication2 }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Indication2IndicationCodeP"),
+						new Object[] { indication2 }));
 			}
 
 			if (context != null) {
@@ -406,7 +411,9 @@ public class Indication2Operations extends IndicationOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION2__INDICATION_CODE,
-						ConsolPlugin.INSTANCE.getString("Indication2IndicationCode"), new Object[] { indication2 }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Indication2IndicationCode"),
+						new Object[] { indication2 }));
 			}
 
 			return false;
@@ -511,7 +518,9 @@ public class Indication2Operations extends IndicationOperations {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION2__INDICATION_ID,
-						ConsolPlugin.INSTANCE.getString("Indication2IndicationId"), new Object[] { indication2 }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Indication2IndicationId"),
+						new Object[] { indication2 }));
 			}
 
 			return false;
@@ -573,7 +582,9 @@ public class Indication2Operations extends IndicationOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION2__INDICATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("Indication2IndicationValueP"), new Object[] { indication2 }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Indication2IndicationValueP"),
+						new Object[] { indication2 }));
 			}
 
 			if (context != null) {
@@ -658,7 +669,9 @@ public class Indication2Operations extends IndicationOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION2__INDICATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("Indication2IndicationValue"), new Object[] { indication2 }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Indication2IndicationValue"),
+						new Object[] { indication2 }));
 			}
 
 			return false;

@@ -21,7 +21,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -120,7 +119,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION__INDICATION_CODE_NULL_FLAVOR,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationCodeNullFlavor"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationCodeNullFlavor"),
 						new Object[] { indication }));
 			}
 
@@ -183,7 +183,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION__INDICATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationTemplateId"),
 						new Object[] { indication }));
 			}
 
@@ -246,7 +247,9 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION__INDICATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationClassCode"), new Object[] { indication }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationClassCode"),
+						new Object[] { indication }));
 			}
 
 			return false;
@@ -308,7 +311,9 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION__INDICATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationMoodCode"), new Object[] { indication }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationMoodCode"),
+						new Object[] { indication }));
 			}
 
 			return false;
@@ -369,7 +374,9 @@ public class IndicationOperations extends ClinicalStatementOperations {
 				diagnostics.add(
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE, ConsolValidator.INDICATION__INDICATION_ID,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationId"), new Object[] { indication }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationId"),
+						new Object[] { indication }));
 			}
 
 			return false;
@@ -431,7 +438,9 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION__INDICATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationCodeP"), new Object[] { indication }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationCodeP"),
+						new Object[] { indication }));
 			}
 
 			if (context != null) {
@@ -516,7 +525,9 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION__INDICATION_CODE,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationCode"), new Object[] { indication }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationCode"),
+						new Object[] { indication }));
 			}
 
 			return false;
@@ -579,7 +590,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION__INDICATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationStatusCode"),
 						new Object[] { indication }));
 			}
 
@@ -642,7 +654,8 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION__INDICATION_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationEffectiveTime"),
 						new Object[] { indication }));
 			}
 
@@ -707,7 +720,9 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION__INDICATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationValue"), new Object[] { indication }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationValue"),
+						new Object[] { indication }));
 			}
 
 			return false;
@@ -769,7 +784,9 @@ public class IndicationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INDICATION__INDICATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("IndicationIndicationValueP"), new Object[] { indication }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"IndicationIndicationValueP"),
+						new Object[] { indication }));
 			}
 
 			return false;

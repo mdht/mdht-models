@@ -22,7 +22,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ResultObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -120,7 +119,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2EffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultOrganizer2ResultOrganizer2EffectiveTime"),
 						new Object[] { resultOrganizer2 }));
 			}
 
@@ -185,7 +185,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_AUTHOR_PARTICIPATION,
-						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2AuthorParticipation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultOrganizer2ResultOrganizer2AuthorParticipation"),
 						new Object[] { resultOrganizer2 }));
 			}
 
@@ -255,7 +256,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_IVLTS_LOW,
-							ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2IVLTSLow"),
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+								"ResultOrganizer2ResultOrganizer2IVLTSLow"),
 							new Object[] { eObject }));
 				}
 
@@ -326,7 +328,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER2_IVLTS_HIGH,
-							ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizer2IVLTSHigh"),
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+								"ResultOrganizer2ResultOrganizer2IVLTSHigh"),
 							new Object[] { eObject }));
 				}
 
@@ -438,7 +441,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_CODE_VALUE,
-						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerCodeValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultOrganizer2ResultOrganizerCodeValue"),
 						new Object[] { resultOrganizer2 }));
 			}
 
@@ -501,7 +505,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_CLASS_CODE_VALUE,
-						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerClassCodeValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultOrganizer2ResultOrganizerClassCodeValue"),
 						new Object[] { resultOrganizer2 }));
 			}
 
@@ -564,7 +569,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultOrganizer2ResultOrganizerTemplateId"),
 						new Object[] { resultOrganizer2 }));
 			}
 
@@ -629,7 +635,8 @@ public class ResultOrganizer2Operations extends ResultOrganizerOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULT_ORGANIZER2__RESULT_ORGANIZER_RESULT_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("ResultOrganizer2ResultOrganizerResultObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultOrganizer2ResultOrganizerResultObservation"),
 						new Object[] { resultOrganizer2 }));
 			}
 

@@ -22,7 +22,6 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -122,7 +121,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__COGNITIVE_STATUS_RESULT_ORGANIZER_CODE_CODE_SYSTEM,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultOrganizerCognitiveStatusResultOrganizerCodeCodeSystem"),
 						new Object[] { cognitiveStatusResultOrganizer }));
 			}
@@ -238,7 +237,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusResultOrganizerResultOrganizerTemplateId"),
 						new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -303,7 +303,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusResultOrganizerResultOrganizerClassCode"),
 						new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -367,7 +368,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusResultOrganizerResultOrganizerMoodCode"),
 						new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -430,7 +432,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_ID,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusResultOrganizerResultOrganizerId"),
 						new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -493,7 +496,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_CODE,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusResultOrganizerResultOrganizerCode"),
 						new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -558,7 +562,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusResultOrganizerResultOrganizerStatusCodeP"),
 						new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -646,7 +651,8 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusResultOrganizerResultOrganizerStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusResultOrganizerResultOrganizerStatusCode"),
 						new Object[] { cognitiveStatusResultOrganizer }));
 			}
 
@@ -712,7 +718,7 @@ public class CognitiveStatusResultOrganizerOperations extends ResultOrganizerOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_RESULT_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusResultOrganizerResultOrganizerResultObservation"),
 						new Object[] { cognitiveStatusResultOrganizer }));
 			}

@@ -52,6 +52,7 @@ public class PrivacyAnnotationEntryRelationshipImpl extends EntryRelationshipImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyAnnotationEntryRelationshipTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyAnnotationEntryRelationshipOperations.validatePrivacyAnnotationEntryRelationshipTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +62,7 @@ public class PrivacyAnnotationEntryRelationshipImpl extends EntryRelationshipImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyAnnotationEntryRelationshipOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyAnnotationEntryRelationshipOperations.validatePrivacyAnnotationEntryRelationshipOrganizer(this, diagnostics, context);
 	}
@@ -70,6 +72,7 @@ public class PrivacyAnnotationEntryRelationshipImpl extends EntryRelationshipImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacyAnnotationEntryRelationship init() {
 	    return Initializer.Util.init(this);
 	}
@@ -78,7 +81,8 @@ public class PrivacyAnnotationEntryRelationshipImpl extends EntryRelationshipImp
      * <!-- end-user-doc -->
      * @generated
      */
-    public PrivacyAnnotationEntryRelationship init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PrivacyAnnotationEntryRelationship init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

@@ -27,7 +27,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Indication;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
@@ -142,7 +141,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_CODE_SYSTEMS,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActCodeCodeSystems"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActCodeCodeSystems"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -207,7 +207,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE_ORIGINAL_TEXT,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActCodeOriginalText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActCodeOriginalText"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -272,7 +273,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProcedureActivityActProcedureActivityActOriginalTextReference"),
 						new Object[] { procedureActivityAct }));
 			}
@@ -338,7 +339,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ORIGINAL_TEXT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProcedureActivityActProcedureActivityActOriginalTextReferenceValue"),
 						new Object[] { procedureActivityAct }));
 			}
@@ -425,7 +426,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActReferenceValue"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -469,7 +471,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENCOUNTER_INVERSION,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActEncounterInversion"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActEncounterInversion"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -555,7 +558,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION_TYPE_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProcedureActivityActProcedureActivityActServiceDeliveryLocationTypeCode"),
 						new Object[] { procedureActivityAct }));
 			}
@@ -621,7 +624,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS_INVERSION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProcedureActivityActProcedureActivityActInstructionsInversion"),
 						new Object[] { procedureActivityAct }));
 			}
@@ -687,7 +690,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActTemplateId"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -751,7 +755,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActClassCode"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -817,7 +822,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActMoodCode"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -880,7 +886,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ID,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActId"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -943,7 +950,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_CODE,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActCode"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -1010,7 +1018,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActStatusCode"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -1075,7 +1084,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActEffectiveTime"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -1140,7 +1150,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActPriorityCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActPriorityCodeP"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -1228,7 +1239,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PRIORITY_CODE,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActPriorityCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActPriorityCode"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -1292,7 +1304,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PERFORMER,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActPerformer"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActPerformer"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -1357,7 +1370,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_SERVICE_DELIVERY_LOCATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ProcedureActivityActProcedureActivityActServiceDeliveryLocation"),
 						new Object[] { procedureActivityAct }));
 			}
@@ -1423,7 +1436,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INSTRUCTIONS,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActInstructions"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActInstructions"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -1487,7 +1501,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_INDICATION,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActIndication"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActIndication"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -1552,7 +1567,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_MEDICATION_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActMedicationActivity"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActMedicationActivity"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -1617,7 +1633,8 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP,
-						ConsolPlugin.INSTANCE.getString("ProcedureActivityActProcedureActivityActEntryRelationship"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProcedureActivityActProcedureActivityActEntryRelationship"),
 						new Object[] { procedureActivityAct }));
 			}
 
@@ -1686,7 +1703,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ID,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationId"),
 							new Object[] { eObject }));
 				}
@@ -1757,7 +1774,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_NAME,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationName"),
 							new Object[] { eObject }));
 				}
@@ -1828,7 +1845,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_TELECOM,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationTelecom"),
 							new Object[] { eObject }));
 				}
@@ -1899,7 +1916,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_PROCEDURE_ACT_REPRESENTED_ORGANIZATION_ADDR,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActProcedureActPerformerProcedureActAssignedEntityProcedureActRepresentedOrganizationAddr"),
 							new Object[] { eObject }));
 				}
@@ -1970,7 +1987,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ID,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActProcedureActPerformerProcedureActAssignedEntityId"),
 							new Object[] { eObject }));
 				}
@@ -2041,7 +2058,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_ADDR,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActProcedureActPerformerProcedureActAssignedEntityAddr"),
 							new Object[] { eObject }));
 				}
@@ -2112,7 +2129,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_TELECOM,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActProcedureActPerformerProcedureActAssignedEntityTelecom"),
 							new Object[] { eObject }));
 				}
@@ -2183,7 +2200,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_PROCEDURE_ACT_ASSIGNED_ENTITY_REPRESENTED_ORGANIZATION,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActProcedureActPerformerProcedureActAssignedEntityRepresentedOrganization"),
 							new Object[] { eObject }));
 				}
@@ -2254,7 +2271,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_PROCEDURE_ACT_PERFORMER_ASSIGNED_ENTITY,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActProcedureActPerformerAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -2325,7 +2342,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_CLASS_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActEntryRelationshipProcedureActEncounterClassCode"),
 							new Object[] { eObject }));
 				}
@@ -2396,7 +2413,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_MOOD_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActEntryRelationshipProcedureActEncounterMoodCode"),
 							new Object[] { eObject }));
 				}
@@ -2467,7 +2484,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER_ID,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActEntryRelationshipProcedureActEncounterId"),
 							new Object[] { eObject }));
 				}
@@ -2538,7 +2555,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_INVERSION_IND,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActEntryRelationshipInversionInd"),
 							new Object[] { eObject }));
 				}
@@ -2609,7 +2626,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_TYPE_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActEntryRelationshipTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -2680,7 +2697,7 @@ public class ProcedureActivityActOperations extends ClinicalStatementOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.PROCEDURE_ACTIVITY_ACT__PROCEDURE_ACTIVITY_ACT_ENTRY_RELATIONSHIP_PROCEDURE_ACT_ENCOUNTER,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ProcedureActivityActProcedureActivityActEntryRelationshipProcedureActEncounter"),
 							new Object[] { eObject }));
 				}

@@ -27,7 +27,6 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSectionEntriesOptional;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -124,7 +123,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalTemplateId"),
 						new Object[] { allergiesSectionEntriesOptional }));
 			}
@@ -193,7 +192,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalCode"),
 						new Object[] { allergiesSectionEntriesOptional }));
 			}
@@ -260,7 +259,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalCodeP"),
 						new Object[] { allergiesSectionEntriesOptional }));
 			}
@@ -327,7 +326,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TITLE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalTitle"),
 						new Object[] { allergiesSectionEntriesOptional }));
 			}
@@ -394,7 +393,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_TEXT,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalText"),
 						new Object[] { allergiesSectionEntriesOptional }));
 			}
@@ -461,7 +460,7 @@ public class AllergiesSectionEntriesOptionalOperations extends SectionOperations
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGIES_SECTION_ENTRIES_OPTIONAL__ALLERGIES_SECTION_ENTRIES_OPTIONAL_ALLERGY_PROBLEM_ACT,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AllergiesSectionEntriesOptionalAllergiesSectionEntriesOptionalAllergyProblemAct"),
 						new Object[] { allergiesSectionEntriesOptional }));
 			}

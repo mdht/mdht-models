@@ -8,18 +8,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.consol.BirthSexObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -116,7 +110,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BirthSexObservationBirthSexObservationTemplateId"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -180,7 +175,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BirthSexObservationBirthSexObservationClassCode"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -244,7 +240,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BirthSexObservationBirthSexObservationMoodCode"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -307,7 +304,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BirthSexObservationBirthSexObservationCodeP"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -393,7 +391,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BirthSexObservationBirthSexObservationCode"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -458,7 +457,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BirthSexObservationBirthSexObservationStatusCode"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -523,7 +523,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BirthSexObservationBirthSexObservationStatusCodeP"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -542,7 +543,7 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 	 */
 	protected static final String VALIDATE_BIRTH_SEX_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.5.1' and (value.code = 'F' or value.code = 'M')))";
+			"value.code = 'F' or value.code = 'M'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateBirthSexObservationValue(BirthSexObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Birth Sex Observation Value</em>}' invariant operation.
@@ -588,7 +589,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BirthSexObservationBirthSexObservationValue"),
 						new Object[] { birthSexObservation }));
 			}
 
@@ -651,7 +653,8 @@ public class BirthSexObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.BIRTH_SEX_OBSERVATION__BIRTH_SEX_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("BirthSexObservationBirthSexObservationValueP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"BirthSexObservationBirthSexObservationValueP"),
 						new Object[] { birthSexObservation }));
 			}
 

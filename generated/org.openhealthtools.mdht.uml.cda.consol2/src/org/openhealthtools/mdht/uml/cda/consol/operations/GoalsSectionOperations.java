@@ -21,7 +21,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.GoalsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -118,7 +117,8 @@ public class GoalsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOALS_SECTION__GOALS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalsSectionGoalsSectionTemplateId"),
 						new Object[] { goalsSection }));
 			}
 
@@ -181,7 +181,8 @@ public class GoalsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOALS_SECTION__GOALS_SECTION_NULL_FLAVOR,
-						ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionNullFlavor"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalsSectionGoalsSectionNullFlavor"),
 						new Object[] { goalsSection }));
 			}
 
@@ -246,7 +247,8 @@ public class GoalsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOALS_SECTION__GOALS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalsSectionGoalsSectionCode"),
 						new Object[] { goalsSection }));
 			}
 
@@ -309,7 +311,8 @@ public class GoalsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOALS_SECTION__GOALS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalsSectionGoalsSectionCodeP"),
 						new Object[] { goalsSection }));
 			}
 
@@ -372,7 +375,8 @@ public class GoalsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOALS_SECTION__GOALS_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalsSectionGoalsSectionTitle"),
 						new Object[] { goalsSection }));
 			}
 
@@ -435,7 +439,8 @@ public class GoalsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOALS_SECTION__GOALS_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalsSectionGoalsSectionText"),
 						new Object[] { goalsSection }));
 			}
 
@@ -498,7 +503,8 @@ public class GoalsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOALS_SECTION__GOALS_SECTION_GOAL_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("GoalsSectionGoalsSectionGoalObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalsSectionGoalsSectionGoalObservation"),
 						new Object[] { goalsSection }));
 			}
 

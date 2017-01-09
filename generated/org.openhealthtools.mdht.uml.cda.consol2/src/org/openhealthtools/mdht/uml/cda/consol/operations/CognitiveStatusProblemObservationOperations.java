@@ -23,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -137,7 +136,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_METHOD_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationCognitiveStatusProblemObservationMethodCode"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -204,7 +203,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationCognitiveStatusProblemObservationNonMedicinalSupplyActivity"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -271,7 +270,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_CAREGIVER_CHARACTERISTICS,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationCognitiveStatusProblemObservationCaregiverCharacteristics"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -338,7 +337,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__COGNITIVE_STATUS_PROBLEM_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationCognitiveStatusProblemObservationAssessmentScaleObservation"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -554,7 +553,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationProblemObservationHasTextReference"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -621,7 +620,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_TEXT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationProblemObservationHasTextReferenceValue"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -688,7 +687,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_ONSET_DATE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationProblemObservationHasOnsetDate"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -755,7 +754,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_HAS_RESOLUTION_DATE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationProblemObservationHasResolutionDate"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -821,7 +820,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationProblemObservationTemplateId"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -887,7 +886,8 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusProblemObservationProblemObservationClassCode"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -952,7 +952,8 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusProblemObservationProblemObservationMoodCode"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1017,7 +1018,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_NEGATION_IND,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationProblemObservationNegationInd"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -1082,7 +1083,8 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_ID,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusProblemObservationProblemObservationId"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1147,7 +1149,8 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusProblemObservationProblemObservationCodeP"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1235,7 +1238,8 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusProblemObservationProblemObservationCode"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1299,7 +1303,8 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_TEXT,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusProblemObservationProblemObservationText"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1365,7 +1370,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationProblemObservationStatusCode"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -1432,7 +1437,7 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CognitiveStatusProblemObservationProblemObservationEffectiveTime"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
@@ -1498,7 +1503,8 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationValueP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusProblemObservationProblemObservationValueP"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
 
@@ -1586,7 +1592,8 @@ public class CognitiveStatusProblemObservationOperations extends ProblemObservat
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COGNITIVE_STATUS_PROBLEM_OBSERVATION__PROBLEM_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("CognitiveStatusProblemObservationProblemObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CognitiveStatusProblemObservationProblemObservationValue"),
 						new Object[] { cognitiveStatusProblemObservation }));
 			}
 

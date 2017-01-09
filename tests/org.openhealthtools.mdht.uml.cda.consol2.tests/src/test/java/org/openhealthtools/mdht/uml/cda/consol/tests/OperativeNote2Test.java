@@ -393,7 +393,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				/* ProcedureEstimatedBloodLossSection */
 				ProcedureEstimatedBloodLossSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureEstimatedBloodLossSection().init();
+						ConsolFactory.eINSTANCE.createProcedureEstimatedBloodLossSection().init();
 
 				target.addSection(section);
 
@@ -470,7 +470,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				/* ProcedureSpecimensTakenSection */
 				ProcedureSpecimensTakenSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureSpecimensTakenSection().init();
+						ConsolFactory.eINSTANCE.createProcedureSpecimensTakenSection().init();
 
 				target.addSection(section);
 
@@ -512,7 +512,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				/* ProcedureDescriptionSection */
 				ProcedureDescriptionSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureDescriptionSection().init();
+						ConsolFactory.eINSTANCE.createProcedureDescriptionSection().init();
 
 				target.addSection(section);
 
@@ -554,7 +554,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				/* PostoperativeDiagnosisSection */
 				PostoperativeDiagnosisSection section =
 
-				ConsolFactory.eINSTANCE.createPostoperativeDiagnosisSection().init();
+						ConsolFactory.eINSTANCE.createPostoperativeDiagnosisSection().init();
 
 				target.addSection(section);
 
@@ -595,7 +595,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				/* ProcedureImplantsSection */
 				ProcedureImplantsSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureImplantsSection().init();
+						ConsolFactory.eINSTANCE.createProcedureImplantsSection().init();
 
 				target.addSection(section);
 
@@ -637,7 +637,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				/* OperativeNoteFluidSection */
 				OperativeNoteFluidSection section =
 
-				ConsolFactory.eINSTANCE.createOperativeNoteFluidSection().init();
+						ConsolFactory.eINSTANCE.createOperativeNoteFluidSection().init();
 
 				target.addSection(section);
 
@@ -679,7 +679,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				/* OperativeNoteSurgicalProcedureSection */
 				OperativeNoteSurgicalProcedureSection section =
 
-				ConsolFactory.eINSTANCE.createOperativeNoteSurgicalProcedureSection().init();
+						ConsolFactory.eINSTANCE.createOperativeNoteSurgicalProcedureSection().init();
 
 				target.addSection(section);
 
@@ -789,7 +789,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				/* ProcedureDispositionSection */
 				ProcedureDispositionSection section =
 
-				ConsolFactory.eINSTANCE.createProcedureDispositionSection().init();
+						ConsolFactory.eINSTANCE.createProcedureDispositionSection().init();
 
 				target.addSection(section);
 
@@ -865,7 +865,7 @@ public class OperativeNote2Test extends CDAValidationTest {
 				/* SurgicalDrainsSection */
 				SurgicalDrainsSection section =
 
-				ConsolFactory.eINSTANCE.createSurgicalDrainsSection().init();
+						ConsolFactory.eINSTANCE.createSurgicalDrainsSection().init();
 
 				target.addSection(section);
 

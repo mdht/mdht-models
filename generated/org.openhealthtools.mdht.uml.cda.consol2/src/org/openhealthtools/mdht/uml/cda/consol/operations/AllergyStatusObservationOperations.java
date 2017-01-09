@@ -21,7 +21,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -116,7 +115,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("AllergyStatusObservationAllergyStatusObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyStatusObservationAllergyStatusObservationTemplateId"),
 						new Object[] { allergyStatusObservation }));
 			}
 
@@ -181,7 +181,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("AllergyStatusObservationAllergyStatusObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyStatusObservationAllergyStatusObservationClassCode"),
 						new Object[] { allergyStatusObservation }));
 			}
 
@@ -246,7 +247,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("AllergyStatusObservationAllergyStatusObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyStatusObservationAllergyStatusObservationMoodCode"),
 						new Object[] { allergyStatusObservation }));
 			}
 
@@ -312,7 +314,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("AllergyStatusObservationAllergyStatusObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyStatusObservationAllergyStatusObservationCode"),
 						new Object[] { allergyStatusObservation }));
 			}
 
@@ -378,7 +381,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("AllergyStatusObservationAllergyStatusObservationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyStatusObservationAllergyStatusObservationStatusCode"),
 						new Object[] { allergyStatusObservation }));
 			}
 
@@ -444,7 +448,8 @@ public class AllergyStatusObservationOperations extends ClinicalStatementOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_STATUS_OBSERVATION__ALLERGY_STATUS_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("AllergyStatusObservationAllergyStatusObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyStatusObservationAllergyStatusObservationValue"),
 						new Object[] { allergyStatusObservation }));
 			}
 

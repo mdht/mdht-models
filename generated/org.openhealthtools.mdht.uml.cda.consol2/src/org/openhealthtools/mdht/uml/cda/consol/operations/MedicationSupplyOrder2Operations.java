@@ -18,7 +18,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationSupplyOrder2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -119,7 +118,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER2_CONTAINS_MEDICATION_INFORMATION2,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicationSupplyOrder2MedicationSupplyOrder2ContainsMedicationInformation2"),
 						new Object[] { medicationSupplyOrder2 }));
 			}
@@ -185,7 +184,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER2_CONTAINS_IMMUNIZATION_MEDICATION_INFORMATION2,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicationSupplyOrder2MedicationSupplyOrder2ContainsImmunizationMedicationInformation2"),
 						new Object[] { medicationSupplyOrder2 }));
 			}
@@ -251,7 +250,8 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrderStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationSupplyOrder2MedicationSupplyOrderStatusCodeP"),
 						new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -374,7 +374,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_CONTAINS_MEDICATION_OR_IMMUNIZATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicationSupplyOrder2MedicationSupplyOrderContainsMedicationOrImmunization"),
 						new Object[] { medicationSupplyOrder2 }));
 			}
@@ -440,7 +440,7 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_INSTRUCTION_INVERSION_IND,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicationSupplyOrder2MedicationSupplyOrderInstructionInversionInd"),
 						new Object[] { medicationSupplyOrder2 }));
 			}
@@ -506,7 +506,8 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrderTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationSupplyOrder2MedicationSupplyOrderTemplateId"),
 						new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -581,7 +582,8 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrderStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationSupplyOrder2MedicationSupplyOrderStatusCode"),
 						new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -646,7 +648,8 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_REPEAT_NUMBER,
-						ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrderRepeatNumber"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationSupplyOrder2MedicationSupplyOrderRepeatNumber"),
 						new Object[] { medicationSupplyOrder2 }));
 			}
 
@@ -711,7 +714,8 @@ public class MedicationSupplyOrder2Operations extends MedicationSupplyOrderOpera
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_SUPPLY_ORDER2__MEDICATION_SUPPLY_ORDER_INSTRUCTIONS,
-						ConsolPlugin.INSTANCE.getString("MedicationSupplyOrder2MedicationSupplyOrderInstructions"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationSupplyOrder2MedicationSupplyOrderInstructions"),
 						new Object[] { medicationSupplyOrder2 }));
 			}
 

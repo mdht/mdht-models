@@ -22,7 +22,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -118,7 +117,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_VALUE_UNITS,
-						ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationValueUnits"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AgeObservationAgeObservationValueUnits"),
 						new Object[] { ageObservation }));
 			}
 
@@ -181,7 +181,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AgeObservationAgeObservationTemplateId"),
 						new Object[] { ageObservation }));
 			}
 
@@ -244,7 +245,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AgeObservationAgeObservationClassCode"),
 						new Object[] { ageObservation }));
 			}
 
@@ -307,7 +309,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AgeObservationAgeObservationMoodCode"),
 						new Object[] { ageObservation }));
 			}
 
@@ -370,7 +373,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AgeObservationAgeObservationCodeP"),
 						new Object[] { ageObservation }));
 			}
 
@@ -456,7 +460,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AgeObservationAgeObservationCode"),
 						new Object[] { ageObservation }));
 			}
 
@@ -520,7 +525,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AgeObservationAgeObservationStatusCode"),
 						new Object[] { ageObservation }));
 			}
 
@@ -583,7 +589,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AgeObservationAgeObservationStatusCodeP"),
 						new Object[] { ageObservation }));
 			}
 
@@ -646,7 +653,8 @@ public class AgeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AGE_OBSERVATION__AGE_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("AgeObservationAgeObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AgeObservationAgeObservationValue"),
 						new Object[] { ageObservation }));
 			}
 

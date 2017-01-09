@@ -17,13 +17,16 @@
 
 
 	<modules>
-
-		<module>org.openhealthtools.mdht.uml.cda.mu2consol</module>
+ <module>org.openhealthtools.mdht.uml.cda.consol2</module>
+ <module>org.openhealthtools.mdht.uml.cda.mu2consol</module>
+  <module>org.hl7.security.ds4p.contentprofile</module>
+  
+	<!--	<module>org.openhealthtools.mdht.uml.cda.mu2consol</module>
 		<module>org.openhealthtools.mdht.uml.cda.consol</module>
-        <module>org.openhealthtools.mdht.uml.cda.consol2</module>
+       
         <module>org.hl7.security.ds4p.contentprofile</module>
                 
-		<!-- <module>org.openhealthtools.mdht.uml.cda.ccd</module> <module>org.openhealthtools.mdht.uml.cda.cdt</module> 
+		 <module>org.openhealthtools.mdht.uml.cda.ccd</module> <module>org.openhealthtools.mdht.uml.cda.cdt</module> 
 			<module>org.openhealthtools.mdht.uml.cda.hitsp</module> <module>org.openhealthtools.mdht.uml.cda.consol2</module> 
 			<module>org.openhealthtools.mdht.uml.cda.ihe</module> <module>org.openhealthtools.mdht.cda.doc.user</module> 
 			<module>org.openhealthtools.mdht.uml.cda.cdt.doc</module> <module>org.openhealthtools.mdht.uml.cda.ccd.doc</module> 

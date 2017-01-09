@@ -23,7 +23,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery;
 import org.openhealthtools.mdht.uml.cda.consol.PregnancyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -124,7 +123,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PregnancyObservationPregnancyObservationTemplateId"),
 						new Object[] { pregnancyObservation }));
 			}
 
@@ -188,7 +188,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PregnancyObservationPregnancyObservationClassCode"),
 						new Object[] { pregnancyObservation }));
 			}
 
@@ -252,7 +253,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PregnancyObservationPregnancyObservationMoodCode"),
 						new Object[] { pregnancyObservation }));
 			}
 
@@ -315,7 +317,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PregnancyObservationPregnancyObservationCodeP"),
 						new Object[] { pregnancyObservation }));
 			}
 
@@ -401,7 +404,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PregnancyObservationPregnancyObservationCode"),
 						new Object[] { pregnancyObservation }));
 			}
 
@@ -466,7 +470,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PregnancyObservationPregnancyObservationStatusCode"),
 						new Object[] { pregnancyObservation }));
 			}
 
@@ -531,7 +536,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PregnancyObservationPregnancyObservationValue"),
 						new Object[] { pregnancyObservation }));
 			}
 
@@ -594,7 +600,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationValueP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PregnancyObservationPregnancyObservationValueP"),
 						new Object[] { pregnancyObservation }));
 			}
 
@@ -659,7 +666,8 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("PregnancyObservationPregnancyObservationEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PregnancyObservationPregnancyObservationEffectiveTime"),
 						new Object[] { pregnancyObservation }));
 			}
 
@@ -724,7 +732,7 @@ public class PregnancyObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PREGNANCY_OBSERVATION__PREGNANCY_OBSERVATION_ESTIMATED_DATE_OF_DELIVERY,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PregnancyObservationPregnancyObservationEstimatedDateOfDelivery"),
 						new Object[] { pregnancyObservation }));
 			}

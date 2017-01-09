@@ -8,18 +8,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.CriticalityObservation;
-
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -117,7 +111,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CriticalityObservationCriticalityObservationTemplateId"),
 						new Object[] { criticalityObservation }));
 			}
 
@@ -182,7 +177,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CriticalityObservationCriticalityObservationClassCode"),
 						new Object[] { criticalityObservation }));
 			}
 
@@ -246,7 +242,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CriticalityObservationCriticalityObservationMoodCode"),
 						new Object[] { criticalityObservation }));
 			}
 
@@ -310,7 +307,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CriticalityObservationCriticalityObservationCodeP"),
 						new Object[] { criticalityObservation }));
 			}
 
@@ -397,7 +395,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CriticalityObservationCriticalityObservationCode"),
 						new Object[] { criticalityObservation }));
 			}
 
@@ -463,7 +462,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CriticalityObservationCriticalityObservationStatusCode"),
 						new Object[] { criticalityObservation }));
 			}
 
@@ -528,7 +528,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CriticalityObservationCriticalityObservationStatusCodeP"),
 						new Object[] { criticalityObservation }));
 			}
 
@@ -547,7 +548,7 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 	 */
 	protected static final String VALIDATE_CRITICALITY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
 			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
-			"value.codeSystem = '2.16.840.1.113883.5.1063' and (value.code = 'CRITL' or value.code = 'CRITH' or value.code = 'CRITU')))";
+			"value.code = 'CRITL' or value.code = 'CRITH' or value.code = 'CRITU'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCriticalityObservationValue(CriticalityObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Criticality Observation Value</em>}' invariant operation.
@@ -594,7 +595,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CriticalityObservationCriticalityObservationValue"),
 						new Object[] { criticalityObservation }));
 			}
 
@@ -658,7 +660,8 @@ public class CriticalityObservationOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CRITICALITY_OBSERVATION__CRITICALITY_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("CriticalityObservationCriticalityObservationValueP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CriticalityObservationCriticalityObservationValueP"),
 						new Object[] { criticalityObservation }));
 			}
 

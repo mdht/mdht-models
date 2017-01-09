@@ -511,7 +511,7 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 				/* FindingsSection */
 				FindingsSection section =
 
-				ConsolFactory.eINSTANCE.createFindingsSection().init();
+						ConsolFactory.eINSTANCE.createFindingsSection().init();
 
 				target.addSection(section);
 
@@ -553,7 +553,7 @@ public class DiagnosticImagingReportTest extends CDAValidationTest {
 				/* DICOMObjectCatalogSection */
 				DICOMObjectCatalogSection section =
 
-				ConsolFactory.eINSTANCE.createDICOMObjectCatalogSection().init();
+						ConsolFactory.eINSTANCE.createDICOMObjectCatalogSection().init();
 
 				target.addSection(section);
 

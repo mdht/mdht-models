@@ -52,6 +52,7 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMandatoryEntryAssignedAuthorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +62,7 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorAssignedAuthoringDevice(this, diagnostics, context);
 	}
@@ -70,6 +72,7 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMandatoryEntryAssignedAuthorAssignedPerson(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorAssignedPerson(this, diagnostics, context);
 	}
@@ -79,6 +82,7 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMandatoryEntryAssignedAuthorRepresentedOrganization(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MandatoryEntryAssignedAuthorOperations.validateMandatoryEntryAssignedAuthorRepresentedOrganization(this, diagnostics, context);
 	}
@@ -88,6 +92,7 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MandatoryEntryAssignedAuthor init() {
 	    return Initializer.Util.init(this);
 	}
@@ -96,7 +101,8 @@ public class MandatoryEntryAssignedAuthorImpl extends AssignedAuthorImpl impleme
      * <!-- end-user-doc -->
      * @generated
      */
-    public MandatoryEntryAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public MandatoryEntryAssignedAuthor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

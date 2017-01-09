@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EstimatedDateOfDelivery;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -116,7 +115,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EstimatedDateOfDeliveryEstimatedDateOfDeliveryTemplateId"),
 						new Object[] { estimatedDateOfDelivery }));
 			}
 
@@ -181,7 +181,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EstimatedDateOfDeliveryEstimatedDateOfDeliveryClassCode"),
 						new Object[] { estimatedDateOfDelivery }));
 			}
 
@@ -247,7 +248,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_CODE,
-						ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EstimatedDateOfDeliveryEstimatedDateOfDeliveryCode"),
 						new Object[] { estimatedDateOfDelivery }));
 			}
 
@@ -312,7 +314,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EstimatedDateOfDeliveryEstimatedDateOfDeliveryMoodCode"),
 						new Object[] { estimatedDateOfDelivery }));
 			}
 
@@ -378,7 +381,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EstimatedDateOfDeliveryEstimatedDateOfDeliveryStatusCode"),
 						new Object[] { estimatedDateOfDelivery }));
 			}
 
@@ -442,7 +446,8 @@ public class EstimatedDateOfDeliveryOperations extends ClinicalStatementOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ESTIMATED_DATE_OF_DELIVERY__ESTIMATED_DATE_OF_DELIVERY_VALUE,
-						ConsolPlugin.INSTANCE.getString("EstimatedDateOfDeliveryEstimatedDateOfDeliveryValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EstimatedDateOfDeliveryEstimatedDateOfDeliveryValue"),
 						new Object[] { estimatedDateOfDelivery }));
 			}
 

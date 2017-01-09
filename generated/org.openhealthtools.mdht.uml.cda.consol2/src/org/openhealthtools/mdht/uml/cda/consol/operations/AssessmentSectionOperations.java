@@ -21,7 +21,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -113,7 +112,8 @@ public class AssessmentSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("AssessmentSectionAssessmentSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AssessmentSectionAssessmentSectionTemplateId"),
 						new Object[] { assessmentSection }));
 			}
 
@@ -178,7 +178,8 @@ public class AssessmentSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("AssessmentSectionAssessmentSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AssessmentSectionAssessmentSectionCode"),
 						new Object[] { assessmentSection }));
 			}
 
@@ -241,7 +242,8 @@ public class AssessmentSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("AssessmentSectionAssessmentSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AssessmentSectionAssessmentSectionCodeP"),
 						new Object[] { assessmentSection }));
 			}
 
@@ -304,7 +306,8 @@ public class AssessmentSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("AssessmentSectionAssessmentSectionText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AssessmentSectionAssessmentSectionText"),
 						new Object[] { assessmentSection }));
 			}
 
@@ -367,7 +370,8 @@ public class AssessmentSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ASSESSMENT_SECTION__ASSESSMENT_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("AssessmentSectionAssessmentSectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AssessmentSectionAssessmentSectionTitle"),
 						new Object[] { assessmentSection }));
 			}
 

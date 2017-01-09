@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.EncountersSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -167,7 +166,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"EncountersSectionEntriesOptional2EncountersSectionEntriesOptionalTemplateId"),
 						new Object[] { encountersSectionEntriesOptional2 }));
 			}
@@ -234,7 +233,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"EncountersSectionEntriesOptional2EncountersSectionEntriesOptionalCodeP"),
 						new Object[] { encountersSectionEntriesOptional2 }));
 			}
@@ -326,7 +325,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"EncountersSectionEntriesOptional2EncountersSectionEntriesOptionalCode"),
 						new Object[] { encountersSectionEntriesOptional2 }));
 			}
@@ -393,7 +392,7 @@ public class EncountersSectionEntriesOptional2Operations extends EncountersSecti
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTERS_SECTION_ENTRIES_OPTIONAL2__ENCOUNTERS_SECTION_ENTRIES_OPTIONAL_ENCOUNTER_ACTIVITIES,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"EncountersSectionEntriesOptional2EncountersSectionEntriesOptionalEncounterActivities"),
 						new Object[] { encountersSectionEntriesOptional2 }));
 			}

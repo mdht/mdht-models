@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -166,7 +165,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalTemplateId"),
 						new Object[] { resultsSectionEntriesOptional2 }));
 			}
@@ -233,7 +232,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalCodeP"),
 						new Object[] { resultsSectionEntriesOptional2 }));
 			}
@@ -325,7 +324,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalCode"),
 						new Object[] { resultsSectionEntriesOptional2 }));
 			}
@@ -392,7 +391,7 @@ public class ResultsSectionEntriesOptional2Operations extends ResultsSectionEntr
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION_ENTRIES_OPTIONAL2__RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ResultsSectionEntriesOptional2ResultsSectionEntriesOptionalResultOrganizer"),
 						new Object[] { resultsSectionEntriesOptional2 }));
 			}

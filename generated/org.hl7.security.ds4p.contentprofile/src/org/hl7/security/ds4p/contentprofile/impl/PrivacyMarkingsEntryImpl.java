@@ -52,6 +52,7 @@ public class PrivacyMarkingsEntryImpl extends EntryImpl implements PrivacyMarkin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsEntryOperations.validatePrivacyMarkingsEntryTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +62,7 @@ public class PrivacyMarkingsEntryImpl extends EntryImpl implements PrivacyMarkin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsEntryOrganizer(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsEntryOperations.validatePrivacyMarkingsEntryOrganizer(this, diagnostics, context);
 	}
@@ -70,6 +72,7 @@ public class PrivacyMarkingsEntryImpl extends EntryImpl implements PrivacyMarkin
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacyMarkingsEntry init() {
 	    return Initializer.Util.init(this);
 	}
@@ -78,7 +81,8 @@ public class PrivacyMarkingsEntryImpl extends EntryImpl implements PrivacyMarkin
      * <!-- end-user-doc -->
      * @generated
      */
-    public PrivacyMarkingsEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PrivacyMarkingsEntry init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

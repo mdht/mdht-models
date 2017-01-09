@@ -52,6 +52,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsSectionOperations.validatePrivacyMarkingsSectionTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +62,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsSectionOperations.validatePrivacyMarkingsSectionCode(this, diagnostics, context);
 	}
@@ -70,6 +72,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsSectionOperations.validatePrivacyMarkingsSectionCodeP(this, diagnostics, context);
 	}
@@ -79,6 +82,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsSectionOperations.validatePrivacyMarkingsSectionText(this, diagnostics, context);
 	}
@@ -88,6 +92,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsSectionOperations.validatePrivacyMarkingsSectionEntry1(this, diagnostics, context);
 	}
@@ -97,6 +102,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacyMarkingsSection init() {
 	    return Initializer.Util.init(this);
 	}
@@ -105,7 +111,8 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
      * <!-- end-user-doc -->
      * @generated
      */
-    public PrivacyMarkingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PrivacyMarkingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

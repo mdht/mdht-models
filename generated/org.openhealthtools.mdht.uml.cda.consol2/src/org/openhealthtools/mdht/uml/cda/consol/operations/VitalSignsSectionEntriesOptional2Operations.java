@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignsSectionEntriesOptional2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -167,7 +166,7 @@ public class VitalSignsSectionEntriesOptional2Operations extends VitalSignsSecti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"VitalSignsSectionEntriesOptional2VitalSignsSectionEntriesOptionalTemplateId"),
 						new Object[] { vitalSignsSectionEntriesOptional2 }));
 			}
@@ -234,7 +233,7 @@ public class VitalSignsSectionEntriesOptional2Operations extends VitalSignsSecti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"VitalSignsSectionEntriesOptional2VitalSignsSectionEntriesOptionalCodeP"),
 						new Object[] { vitalSignsSectionEntriesOptional2 }));
 			}
@@ -326,7 +325,7 @@ public class VitalSignsSectionEntriesOptional2Operations extends VitalSignsSecti
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"VitalSignsSectionEntriesOptional2VitalSignsSectionEntriesOptionalCode"),
 						new Object[] { vitalSignsSectionEntriesOptional2 }));
 			}
@@ -393,7 +392,7 @@ public class VitalSignsSectionEntriesOptional2Operations extends VitalSignsSecti
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL2__VITAL_SIGNS_SECTION_ENTRIES_OPTIONAL_VITAL_SIGNS_ORGANIZER,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"VitalSignsSectionEntriesOptional2VitalSignsSectionEntriesOptionalVitalSignsOrganizer"),
 						new Object[] { vitalSignsSectionEntriesOptional2 }));
 			}

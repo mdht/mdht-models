@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.SubjectiveSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -113,7 +112,8 @@ public class SubjectiveSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("SubjectiveSectionSubjectiveSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SubjectiveSectionSubjectiveSectionTemplateId"),
 						new Object[] { subjectiveSection }));
 			}
 
@@ -178,7 +178,8 @@ public class SubjectiveSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("SubjectiveSectionSubjectiveSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SubjectiveSectionSubjectiveSectionCode"),
 						new Object[] { subjectiveSection }));
 			}
 
@@ -241,7 +242,8 @@ public class SubjectiveSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("SubjectiveSectionSubjectiveSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SubjectiveSectionSubjectiveSectionCodeP"),
 						new Object[] { subjectiveSection }));
 			}
 
@@ -304,7 +306,8 @@ public class SubjectiveSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("SubjectiveSectionSubjectiveSectionText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SubjectiveSectionSubjectiveSectionText"),
 						new Object[] { subjectiveSection }));
 			}
 
@@ -367,7 +370,8 @@ public class SubjectiveSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SUBJECTIVE_SECTION__SUBJECTIVE_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("SubjectiveSectionSubjectiveSectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SubjectiveSectionSubjectiveSectionTitle"),
 						new Object[] { subjectiveSection }));
 			}
 

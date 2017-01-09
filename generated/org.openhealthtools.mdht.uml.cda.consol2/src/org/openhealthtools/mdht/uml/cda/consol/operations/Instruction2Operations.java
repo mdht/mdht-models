@@ -15,7 +15,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -105,7 +104,8 @@ public class Instruction2Operations extends InstructionsOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTION2__INSTRUCTIONS_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("Instruction2InstructionsTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Instruction2InstructionsTemplateId"),
 						new Object[] { instruction2 }));
 			}
 
@@ -168,7 +168,8 @@ public class Instruction2Operations extends InstructionsOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTION2__INSTRUCTIONS_TEXT,
-						ConsolPlugin.INSTANCE.getString("Instruction2InstructionsText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"Instruction2InstructionsText"),
 						new Object[] { instruction2 }));
 			}
 

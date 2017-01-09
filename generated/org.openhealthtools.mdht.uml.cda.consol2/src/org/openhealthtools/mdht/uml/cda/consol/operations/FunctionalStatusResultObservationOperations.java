@@ -22,7 +22,6 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CaregiverCharacteristics;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -141,7 +140,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_VALUE_DATATYPE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationFunctionalStatusResultObservationValueDatatype"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -206,7 +205,8 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusResultObservationResultObservationCodeP"),
 						new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -285,7 +285,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_AUTHOR,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationFunctionalStatusResultObservationAuthor"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -352,7 +352,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationFunctionalStatusResultObservationNonMedicinalSupplyActivity"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -419,7 +419,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_CAREGIVER_CHARACTERISTICS,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationFunctionalStatusResultObservationCaregiverCharacteristics"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -486,7 +486,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_ASSESSMENT_SCALE_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationFunctionalStatusResultObservationAssessmentScaleObservation"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -553,7 +553,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationFunctionalStatusResultObservationReferenceRange"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -624,7 +624,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE_NO_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"FunctionalStatusResultObservationFunctionalStatusResultObservationReferenceRangeObservationRangeNoCode"),
 							new Object[] { eObject }));
 				}
@@ -696,7 +696,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__FUNCTIONAL_STATUS_RESULT_OBSERVATION_REFERENCE_RANGE_OBSERVATION_RANGE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"FunctionalStatusResultObservationFunctionalStatusResultObservationReferenceRangeObservationRange"),
 							new Object[] { eObject }));
 				}
@@ -903,7 +903,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationResultObservationTextReference"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -970,7 +970,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationResultObservationTextReferenceValue"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -1036,7 +1036,8 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusResultObservationResultObservationTemplateId"),
 						new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1101,7 +1102,8 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusResultObservationResultObservationClassCode"),
 						new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1166,7 +1168,8 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusResultObservationResultObservationMoodCode"),
 						new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1230,7 +1233,8 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_ID,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusResultObservationResultObservationId"),
 						new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1305,7 +1309,8 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusResultObservationResultObservationCode"),
 						new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1369,7 +1374,8 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEXT,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusResultObservationResultObservationText"),
 						new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1434,7 +1440,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationResultObservationStatusCodeP"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -1523,7 +1529,8 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusResultObservationResultObservationStatusCode"),
 						new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1588,7 +1595,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationResultObservationEffectiveTime"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -1653,7 +1660,8 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusResultObservationResultObservationValue"),
 						new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1719,7 +1727,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_INTERPRETATION_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationResultObservationInterpretationCode"),
 						new Object[] { functionalStatusResultObservation }));
 			}
@@ -1785,7 +1793,8 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_METHOD_CODE,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusResultObservationResultObservationMethodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusResultObservationResultObservationMethodCode"),
 						new Object[] { functionalStatusResultObservation }));
 			}
 
@@ -1851,7 +1860,7 @@ public class FunctionalStatusResultObservationOperations extends ResultObservati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TARGET_SITE_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusResultObservationResultObservationTargetSiteCode"),
 						new Object[] { functionalStatusResultObservation }));
 			}

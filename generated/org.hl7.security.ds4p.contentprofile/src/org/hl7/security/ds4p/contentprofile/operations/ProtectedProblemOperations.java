@@ -18,7 +18,6 @@ import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPlugin;
 import org.hl7.security.ds4p.contentprofile.ProtectedProblem;
 
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
-import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservationOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,15 +27,23 @@ import org.openhealthtools.mdht.uml.cda.consol.operations.ProblemObservationOper
  * <p>
  * The following operations are supported:
  * <ul>
+ *   <li>{@link org.hl7.security.ds4p.contentprofile.ProtectedProblem#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
  *   <li>{@link org.hl7.security.ds4p.contentprofile.ProtectedProblem#validateProtectedProblemProblemProvenance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protected Problem Problem Provenance</em>}</li>
  *   <li>{@link org.hl7.security.ds4p.contentprofile.ProtectedProblem#validateProtectedProblemPrivacyAnnotations(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protected Problem Privacy Annotations</em>}</li>
- *   <li>{@link org.hl7.security.ds4p.contentprofile.ProtectedProblem#validateProblemObservationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
-public class ProtectedProblemOperations extends ProblemObservationOperations {
+public class ProtectedProblemOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -58,18 +65,28 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 	 */
 	
 	public static  boolean validateProblemObservationTemplateId(ProtectedProblem protectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PROTECTED_PROBLEM);
 			try {
-				VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protectedProblem)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protectedProblem)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -86,28 +103,6 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 	}
 
 	/**
-	 * The cached OCL expression body for the '{@link #validateProtectedProblemProblemProvenance(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protected Problem Problem Provenance</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProtectedProblemProblemProvenance(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(contentprofile::MandatoryEntryProvenance))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProtectedProblemProblemProvenance(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protected Problem Problem Provenance</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProtectedProblemProblemProvenance(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
-	
-
-	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
@@ -119,18 +114,28 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 	 */
 	
 	public static  boolean validateProtectedProblemProblemProvenance(ProtectedProblem protectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PROTECTED_PROBLEM);
 			try {
-				VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protectedProblem)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protectedProblem)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -145,27 +150,6 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 		}
 		return true;
 	}
-
-	/**
-	 * The cached OCL expression body for the '{@link #validateProtectedProblemPrivacyAnnotations(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protected Problem Privacy Annotations</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProtectedProblemPrivacyAnnotations(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(contentprofile::PrivacyAnnotationEntryRelationship))";
-
-	/**
-	 * The cached OCL invariant for the '{@link #validateProtectedProblemPrivacyAnnotations(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protected Problem Privacy Annotations</em>}' invariant operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #validateProtectedProblemPrivacyAnnotations(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 * @ordered
-	 */
-	
-	protected static Constraint VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
 
 	/**
 	 * The cached OCL expression body for the '{@link #validateProblemObservationTemplateId(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Observation Template Id</em>}' operation.
@@ -186,7 +170,49 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PROBLEM_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProtectedProblemProblemProvenance(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protected Problem Problem Provenance</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProtectedProblemProblemProvenance(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.author->one(author : cda::Author | not author.oclIsUndefined() and author.oclIsKindOf(contentprofile::MandatoryEntryProvenance))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProtectedProblemProblemProvenance(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protected Problem Problem Provenance</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProtectedProblemProblemProvenance(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTECTED_PROBLEM_PROBLEM_PROVENANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateProtectedProblemPrivacyAnnotations(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protected Problem Privacy Annotations</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProtectedProblemPrivacyAnnotations(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(contentprofile::PrivacyAnnotationEntryRelationship))";
+
+	/**
+	 * The cached OCL invariant for the '{@link #validateProtectedProblemPrivacyAnnotations(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Protected Problem Privacy Annotations</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateProtectedProblemPrivacyAnnotations(ProtectedProblem, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	
+	protected static ThreadLocal<  Constraint> VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -201,18 +227,28 @@ public class ProtectedProblemOperations extends ProblemObservationOperations {
 	 */
 	
 	public static  boolean validateProtectedProblemPrivacyAnnotations(ProtectedProblem protectedProblem, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PROTECTED_PROBLEM);
 			try {
-				VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(protectedProblem)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PROTECTED_PROBLEM_PRIVACY_ANNOTATIONS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(protectedProblem)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic

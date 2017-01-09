@@ -50,6 +50,7 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateObligationPolicySecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObligationPolicySecurityObservationOperations.validateObligationPolicySecurityObservationValueP(this, diagnostics, context);
 	}
@@ -59,6 +60,7 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateObligationPolicySecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ObligationPolicySecurityObservationOperations.validateObligationPolicySecurityObservationValue(this, diagnostics, context);
 	}
@@ -98,6 +100,7 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ObligationPolicySecurityObservation init() {
 	    return Initializer.Util.init(this);
 	}
@@ -106,7 +109,8 @@ public class ObligationPolicySecurityObservationImpl extends SecurityObservation
      * <!-- end-user-doc -->
      * @generated
      */
-    public ObligationPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public ObligationPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

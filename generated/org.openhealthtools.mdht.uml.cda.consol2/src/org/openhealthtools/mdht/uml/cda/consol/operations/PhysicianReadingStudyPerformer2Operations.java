@@ -11,7 +11,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PhysicianReadingStudyPerformer2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -103,7 +102,7 @@ public class PhysicianReadingStudyPerformer2Operations extends PhysicianReadingS
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PHYSICIAN_READING_STUDY_PERFORMER2__PHYSICIAN_READING_STUDY_PERFORMER_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PhysicianReadingStudyPerformer2PhysicianReadingStudyPerformerTemplateId"),
 						new Object[] { physicianReadingStudyPerformer2 }));
 			}

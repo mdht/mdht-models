@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.SeverityObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -121,7 +120,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationTextReference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationTextReference"),
 						new Object[] { severityObservation }));
 			}
 
@@ -186,7 +186,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_TEXT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationTextReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationTextReferenceValue"),
 						new Object[] { severityObservation }));
 			}
 
@@ -251,7 +252,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationReferenceValue"),
 						new Object[] { severityObservation }));
 			}
 
@@ -315,7 +317,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationTemplateId"),
 						new Object[] { severityObservation }));
 			}
 
@@ -379,7 +382,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationClassCode"),
 						new Object[] { severityObservation }));
 			}
 
@@ -442,7 +446,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationMoodCode"),
 						new Object[] { severityObservation }));
 			}
 
@@ -507,7 +512,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationCode"),
 						new Object[] { severityObservation }));
 			}
 
@@ -570,7 +576,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_TEXT,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationText"),
 						new Object[] { severityObservation }));
 			}
 
@@ -635,7 +642,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationStatusCode"),
 						new Object[] { severityObservation }));
 			}
 
@@ -700,7 +708,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationValue"),
 						new Object[] { severityObservation }));
 			}
 
@@ -763,7 +772,8 @@ public class SeverityObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SEVERITY_OBSERVATION__SEVERITY_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("SeverityObservationSeverityObservationValueP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SeverityObservationSeverityObservationValueP"),
 						new Object[] { severityObservation }));
 			}
 

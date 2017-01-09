@@ -23,7 +23,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.EncounterDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.Indication2;
@@ -109,7 +108,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_CODE_P,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EncounterActivity2EncounterActivitiesCodeP"),
 						new Object[] { encounterActivity2 }));
 			}
 
@@ -157,7 +157,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITY2_CD_TRANSLATION,
-							ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivity2CDTranslation"),
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+								"EncounterActivity2EncounterActivity2CDTranslation"),
 							new Object[] { eObject }));
 				}
 
@@ -206,7 +207,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE_P,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"EncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -351,7 +352,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_SDTC_DDC_FROM_NUBC_OR_DD,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesSdtcDDCFromNUBCOrDD"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EncounterActivity2EncounterActivitiesSdtcDDCFromNUBCOrDD"),
 						new Object[] { encounterActivity2 }));
 			}
 
@@ -394,7 +396,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EncounterActivity2EncounterActivitiesTemplateId"),
 						new Object[] { encounterActivity2 }));
 			}
 
@@ -624,7 +627,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_CODE,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EncounterActivity2EncounterActivitiesCode"),
 						new Object[] { encounterActivity2 }));
 			}
 
@@ -689,7 +693,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_SDTC_DISCHARGE_DISPOSITION_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"EncounterActivity2EncounterActivitiesSDTCDischargeDispositionCode"),
 						new Object[] { encounterActivity2 }));
 			}
@@ -753,7 +757,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_INDICATION,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesIndication"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EncounterActivity2EncounterActivitiesIndication"),
 						new Object[] { encounterActivity2 }));
 			}
 
@@ -818,7 +823,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_ENCOUNTER_DIAGNOSIS,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesEncounterDiagnosis"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EncounterActivity2EncounterActivitiesEncounterDiagnosis"),
 						new Object[] { encounterActivity2 }));
 			}
 
@@ -883,7 +889,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_SERVICE_DELIVERY_LOCATION,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesServiceDeliveryLocation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EncounterActivity2EncounterActivitiesServiceDeliveryLocation"),
 						new Object[] { encounterActivity2 }));
 			}
 
@@ -948,7 +955,8 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER,
-						ConsolPlugin.INSTANCE.getString("EncounterActivity2EncounterActivitiesEncounterPerformer"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"EncounterActivity2EncounterActivitiesEncounterPerformer"),
 						new Object[] { encounterActivity2 }));
 			}
 
@@ -1029,7 +1037,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"EncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -1100,7 +1108,7 @@ public class EncounterActivity2Operations extends EncounterActivitiesOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ENCOUNTER_ACTIVITY2__ENCOUNTER_ACTIVITIES_ENCOUNTER_PERFORMER_ENCOUNTER_PERFORMER_ASSIGNED_ENTITY,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"EncounterActivity2EncounterActivitiesEncounterPerformerEncounterPerformerAssignedEntity"),
 							new Object[] { eObject }));
 				}

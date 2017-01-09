@@ -59,6 +59,14 @@ import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
  * @generated
  */
 public class PrivacyAnnotationOperations extends OrganizerOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -87,7 +95,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -102,18 +110,28 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validatePrivacyAnnotationTemplateId(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyAnnotation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -148,7 +166,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -163,18 +181,28 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validatePrivacyAnnotationClassCode(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyAnnotation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -209,7 +237,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -224,18 +252,28 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validatePrivacyAnnotationMoodCode(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyAnnotation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -270,7 +308,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -285,18 +323,28 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validatePrivacyAnnotationStatusCodeP(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyAnnotation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -345,7 +393,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -360,6 +408,9 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validatePrivacyAnnotationStatusCode(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
 		Object passToken = (context == null) ? null : context.get("org.hl7.security.ds4p.contentprofile.PrivacyAnnotationStatusCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(privacyAnnotation)) {
@@ -367,17 +418,24 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 			return true;
 		}
   	  
-		if (VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyAnnotation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -412,7 +470,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -427,18 +485,28 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validatePrivacyAnnotationObligationPolicySecurityObservation(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyAnnotation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_OBLIGATION_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -473,7 +541,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -488,18 +556,28 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validatePrivacyAnnotationRefrainPolicySecurityObservation(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyAnnotation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_REFRAIN_POLICY_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -534,7 +612,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -549,18 +627,28 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validatePrivacyAnnotationPurposeOfUseSecurityObservation(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyAnnotation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_PURPOSE_OF_USE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -595,7 +683,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -610,18 +698,28 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validatePrivacyAnnotationConfidentialityCodeSecurityObservation(PrivacyAnnotation privacyAnnotation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION);
 			try {
-				VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(privacyAnnotation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRIVACY_ANNOTATION_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(privacyAnnotation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
@@ -664,8 +762,13 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  EList<ObligationPolicySecurityObservation> getObligationPolicySecurityObservations(PrivacyAnnotation privacyAnnotation) {
+	
+	
+	
 		if (GET_OBLIGATION_POLICY_SECURITY_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(61));
 			try {
 				GET_OBLIGATION_POLICY_SECURITY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_OBLIGATION_POLICY_SECURITY_OBSERVATIONS__EOCL_EXP);
@@ -673,8 +776,9 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_OBLIGATION_POLICY_SECURITY_OBSERVATIONS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_OBLIGATION_POLICY_SECURITY_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ObligationPolicySecurityObservation> result = (Collection<ObligationPolicySecurityObservation>) query.evaluate(privacyAnnotation);
 		return new BasicEList.UnmodifiableEList<ObligationPolicySecurityObservation>(result.size(), result.toArray());
@@ -707,8 +811,13 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  EList<RefrainPolicySecurityObservation> getRefrainPolicySecurityObservations(PrivacyAnnotation privacyAnnotation) {
+	
+	
+	
 		if (GET_REFRAIN_POLICY_SECURITY_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(62));
 			try {
 				GET_REFRAIN_POLICY_SECURITY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_REFRAIN_POLICY_SECURITY_OBSERVATIONS__EOCL_EXP);
@@ -716,8 +825,9 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_REFRAIN_POLICY_SECURITY_OBSERVATIONS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_REFRAIN_POLICY_SECURITY_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RefrainPolicySecurityObservation> result = (Collection<RefrainPolicySecurityObservation>) query.evaluate(privacyAnnotation);
 		return new BasicEList.UnmodifiableEList<RefrainPolicySecurityObservation>(result.size(), result.toArray());
@@ -750,8 +860,13 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  EList<PurposeOfUseSecurityObservation> getPurposeOfUseSecurityObservations(PrivacyAnnotation privacyAnnotation) {
+	
+	
+	
 		if (GET_PURPOSE_OF_USE_SECURITY_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(63));
 			try {
 				GET_PURPOSE_OF_USE_SECURITY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PURPOSE_OF_USE_SECURITY_OBSERVATIONS__EOCL_EXP);
@@ -759,8 +874,9 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PURPOSE_OF_USE_SECURITY_OBSERVATIONS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PURPOSE_OF_USE_SECURITY_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PurposeOfUseSecurityObservation> result = (Collection<PurposeOfUseSecurityObservation>) query.evaluate(privacyAnnotation);
 		return new BasicEList.UnmodifiableEList<PurposeOfUseSecurityObservation>(result.size(), result.toArray());
@@ -793,8 +909,13 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 	 */
 	
 	public static  ConfidentialitySecurityObservation getConfidentialityCodeSecurityObservation(PrivacyAnnotation privacyAnnotation) {
+	
+	
+	
 		if (GET_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(64));
 			try {
 				GET_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__EOCL_EXP);
@@ -802,8 +923,9 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__EOCL_QRY);
 		return (ConfidentialitySecurityObservation) query.evaluate(privacyAnnotation);
 	}
 

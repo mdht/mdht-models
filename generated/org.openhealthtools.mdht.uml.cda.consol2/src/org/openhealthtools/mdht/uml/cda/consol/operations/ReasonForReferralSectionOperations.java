@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ReasonForReferralSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -115,7 +114,8 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REASON_FOR_REFERRAL_SECTION__REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionReasonForReferralSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReasonForReferralSectionReasonForReferralSectionTemplateId"),
 						new Object[] { reasonForReferralSection }));
 			}
 
@@ -181,7 +181,8 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REASON_FOR_REFERRAL_SECTION__REASON_FOR_REFERRAL_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionReasonForReferralSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReasonForReferralSectionReasonForReferralSectionCode"),
 						new Object[] { reasonForReferralSection }));
 			}
 
@@ -246,7 +247,8 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REASON_FOR_REFERRAL_SECTION__REASON_FOR_REFERRAL_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionReasonForReferralSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReasonForReferralSectionReasonForReferralSectionCodeP"),
 						new Object[] { reasonForReferralSection }));
 			}
 
@@ -310,7 +312,8 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REASON_FOR_REFERRAL_SECTION__REASON_FOR_REFERRAL_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionReasonForReferralSectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReasonForReferralSectionReasonForReferralSectionTitle"),
 						new Object[] { reasonForReferralSection }));
 			}
 
@@ -374,7 +377,8 @@ public class ReasonForReferralSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REASON_FOR_REFERRAL_SECTION__REASON_FOR_REFERRAL_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("ReasonForReferralSectionReasonForReferralSectionText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReasonForReferralSectionReasonForReferralSectionText"),
 						new Object[] { reasonForReferralSection }));
 			}
 

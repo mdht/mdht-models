@@ -26,7 +26,6 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AuthorizationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -123,7 +122,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AuthorizationActivityAuthorizationActivityTemplateId"),
 						new Object[] { authorizationActivity }));
 			}
 
@@ -187,7 +187,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AuthorizationActivityAuthorizationActivityClassCode"),
 						new Object[] { authorizationActivity }));
 			}
 
@@ -250,7 +251,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ID,
-						ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AuthorizationActivityAuthorizationActivityId"),
 						new Object[] { authorizationActivity }));
 			}
 
@@ -314,7 +316,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AuthorizationActivityAuthorizationActivityMoodCode"),
 						new Object[] { authorizationActivity }));
 			}
 
@@ -379,7 +382,8 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP,
-						ConsolPlugin.INSTANCE.getString("AuthorizationActivityAuthorizationActivityEntryRelationship"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AuthorizationActivityAuthorizationActivityEntryRelationship"),
 						new Object[] { authorizationActivity }));
 			}
 
@@ -448,7 +452,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_CLINICAL_STATEMENT,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AuthorizationActivityAuthorizationActivityEntryRelationshipHasClinicalStatement"),
 							new Object[] { eObject }));
 				}
@@ -527,7 +531,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_HAS_AUTHORIZED_PERFORMERS,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AuthorizationActivityAuthorizationActivityEntryRelationshipHasAuthorizedPerformers"),
 							new Object[] { eObject }));
 				}
@@ -598,7 +602,7 @@ public class AuthorizationActivityOperations extends ClinicalStatementOperations
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.AUTHORIZATION_ACTIVITY__AUTHORIZATION_ACTIVITY_ENTRY_RELATIONSHIP_TYPE_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AuthorizationActivityAuthorizationActivityEntryRelationshipTypeCode"),
 							new Object[] { eObject }));
 				}

@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.MedicalEquipmentSection2;
 import org.openhealthtools.mdht.uml.cda.consol.NonMedicinalSupplyActivity2;
@@ -123,7 +122,7 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_MEDICAL_EQUIPMENT_ORGANIZER,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicalEquipmentSection2MedicalEquipmentSection2MedicalEquipmentOrganizer"),
 						new Object[] { medicalEquipmentSection2 }));
 			}
@@ -190,7 +189,7 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION2_PROCEDURE_ACTIVITY_PROCEDURE2,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicalEquipmentSection2MedicalEquipmentSection2ProcedureActivityProcedure2"),
 						new Object[] { medicalEquipmentSection2 }));
 			}
@@ -406,7 +405,8 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicalEquipmentSection2MedicalEquipmentSectionTemplateId"),
 						new Object[] { medicalEquipmentSection2 }));
 			}
 
@@ -470,7 +470,8 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicalEquipmentSection2MedicalEquipmentSectionCodeP"),
 						new Object[] { medicalEquipmentSection2 }));
 			}
 
@@ -557,7 +558,8 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicalEquipmentSection2MedicalEquipmentSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicalEquipmentSection2MedicalEquipmentSectionCode"),
 						new Object[] { medicalEquipmentSection2 }));
 			}
 
@@ -623,7 +625,7 @@ public class MedicalEquipmentSection2Operations extends MedicalEquipmentSectionO
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICAL_EQUIPMENT_SECTION2__MEDICAL_EQUIPMENT_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicalEquipmentSection2MedicalEquipmentSectionNonMedicinalSupplyActivity"),
 						new Object[] { medicalEquipmentSection2 }));
 			}

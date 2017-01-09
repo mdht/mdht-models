@@ -29,7 +29,6 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyObservation;
 import org.openhealthtools.mdht.uml.cda.consol.AllergyProblemAct;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -132,7 +131,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_LOW,
-						ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActEffectiveTimeLow"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyProblemActAllergyProblemActEffectiveTimeLow"),
 						new Object[] { allergyProblemAct }));
 			}
 
@@ -197,7 +197,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME_HIGH,
-						ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActEffectiveTimeHigh"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyProblemActAllergyProblemActEffectiveTimeHigh"),
 						new Object[] { allergyProblemAct }));
 			}
 
@@ -260,7 +261,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyProblemActAllergyProblemActTemplateId"),
 						new Object[] { allergyProblemAct }));
 			}
 
@@ -323,7 +325,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyProblemActAllergyProblemActClassCode"),
 						new Object[] { allergyProblemAct }));
 			}
 
@@ -386,7 +389,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyProblemActAllergyProblemActMoodCode"),
 						new Object[] { allergyProblemAct }));
 			}
 
@@ -449,7 +453,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ID,
-						ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyProblemActAllergyProblemActId"),
 						new Object[] { allergyProblemAct }));
 			}
 
@@ -512,7 +517,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CODE,
-						ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyProblemActAllergyProblemActCode"),
 						new Object[] { allergyProblemAct }));
 			}
 
@@ -577,7 +583,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyProblemActAllergyProblemActStatusCode"),
 						new Object[] { allergyProblemAct }));
 			}
 
@@ -642,7 +649,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyProblemActAllergyProblemActEffectiveTime"),
 						new Object[] { allergyProblemAct }));
 			}
 
@@ -707,7 +715,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_ALLERGY_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActAllergyObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"AllergyProblemActAllergyProblemActAllergyObservation"),
 						new Object[] { allergyProblemAct }));
 			}
 
@@ -776,7 +785,7 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CD_CODE_AND_CODE_SYSTEM_VALUES,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AllergyProblemActAllergyProblemActCDCodeAndCodeSystemValues"),
 							new Object[] { eObject }));
 				}
@@ -847,7 +856,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CD_CODE,
-							ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActCDCode"),
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+								"AllergyProblemActAllergyProblemActCDCode"),
 							new Object[] { eObject }));
 				}
 
@@ -917,7 +927,8 @@ public class AllergyProblemActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ALLERGY_PROBLEM_ACT__ALLERGY_PROBLEM_ACT_CD_CODE_SYSTEM,
-							ConsolPlugin.INSTANCE.getString("AllergyProblemActAllergyProblemActCDCodeSystem"),
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+								"AllergyProblemActAllergyProblemActCDCodeSystem"),
 							new Object[] { eObject }));
 				}
 

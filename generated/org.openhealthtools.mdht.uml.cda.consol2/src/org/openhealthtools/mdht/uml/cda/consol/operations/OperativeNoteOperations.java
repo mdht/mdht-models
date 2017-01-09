@@ -26,7 +26,6 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AnesthesiaSection;
 import org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.OperativeNote;
 import org.openhealthtools.mdht.uml.cda.consol.OperativeNoteFluidSection;
 import org.openhealthtools.mdht.uml.cda.consol.OperativeNoteSurgicalProcedureSection;
@@ -180,7 +179,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteGeneralHeaderConstraintsCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteGeneralHeaderConstraintsCodeP"),
 						new Object[] { operativeNote }));
 			}
 
@@ -256,7 +256,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOf"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteDocumentationOf"),
 						new Object[] { operativeNote }));
 			}
 
@@ -319,7 +320,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_ANESTHESIA_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteAnesthesiaSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteAnesthesiaSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -383,7 +385,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_COMPLICATIONS_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteComplicationsSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteComplicationsSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -448,7 +451,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_POSTOPERATIVE_DIAGNOSIS_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNotePostoperativeDiagnosisSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNotePostoperativeDiagnosisSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -513,7 +517,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PREOPERATIVE_DIAGNOSIS_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNotePreoperativeDiagnosisSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNotePreoperativeDiagnosisSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -578,7 +583,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_ESTIMATED_BLOOD_LOSS_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureEstimatedBloodLossSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteProcedureEstimatedBloodLossSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -643,7 +649,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_FINDINGS_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureFindingsSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteProcedureFindingsSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -708,7 +715,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_SPECIMENS_TAKEN_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureSpecimensTakenSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteProcedureSpecimensTakenSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -773,7 +781,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DESCRIPTION_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureDescriptionSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteProcedureDescriptionSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -838,7 +847,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_IMPLANTS_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureImplantsSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteProcedureImplantsSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -903,7 +913,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_OPERATIVE_NOTE_FLUID_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteOperativeNoteFluidSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteOperativeNoteFluidSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -968,7 +979,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_OPERATIVE_NOTE_SURGICAL_PROCEDURE_SECTION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"OperativeNoteOperativeNoteOperativeNoteSurgicalProcedureSection"),
 						new Object[] { operativeNote }));
 			}
@@ -1033,7 +1044,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PLAN_OF_CARE_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNotePlanOfCareSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNotePlanOfCareSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -1098,7 +1110,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PLANNED_PROCEDURE_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNotePlannedProcedureSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNotePlannedProcedureSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -1163,7 +1176,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_DISPOSITION_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureDispositionSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteProcedureDispositionSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -1228,7 +1242,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_PROCEDURE_INDICATIONS_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteProcedureIndicationsSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteProcedureIndicationsSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -1293,7 +1308,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_SURGICAL_DRAINS_SECTION,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteSurgicalDrainsSection"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteOperativeNoteSurgicalDrainsSection"),
 						new Object[] { operativeNote }));
 			}
 
@@ -1364,7 +1380,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCode"),
 							new Object[] { eObject }));
 				}
@@ -1435,7 +1451,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY_CODE_P,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntityCodeP"),
 							new Object[] { eObject }));
 				}
@@ -1506,7 +1522,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_TYPE_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerTypeCode"),
 							new Object[] { eObject }));
 				}
@@ -1577,7 +1593,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER_ASSIGNED_ENTITY,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformerAssignedEntity"),
 							new Object[] { eObject }));
 				}
@@ -1648,7 +1664,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PROCEDURE_CODES,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventProcedureCodes"),
 							new Object[] { eObject }));
 				}
@@ -1719,7 +1735,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_LOW,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTimeHasLow"),
 							new Object[] { eObject }));
 				}
@@ -1790,7 +1806,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_HAS_HIGH_WHEN_NO_WIDTH,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTimeHasHighWhenNoWidth"),
 							new Object[] { eObject }));
 				}
@@ -1861,7 +1877,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME_NO_HIGH_IF_WIDTH,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTimeNoHighIfWidth"),
 							new Object[] { eObject }));
 				}
@@ -1932,7 +1948,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_DAY,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventPreciseToTheDay"),
 							new Object[] { eObject }));
 				}
@@ -2003,7 +2019,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_MINUTE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventPreciseToTheMinute"),
 							new Object[] { eObject }));
 				}
@@ -2074,7 +2090,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRECISE_TO_THE_SECOND,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventPreciseToTheSecond"),
 							new Object[] { eObject }));
 				}
@@ -2145,7 +2161,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_IF_MORE_PRECISE_THAN_DAY_INCLUDE_TIME_ZONE_OFFSET,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventIfMorePreciseThanDayIncludeTimeZoneOffset"),
 							new Object[] { eObject }));
 				}
@@ -2216,7 +2232,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventCode"),
 							new Object[] { eObject }));
 				}
@@ -2287,7 +2303,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_EFFECTIVE_TIME,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventEffectiveTime"),
 							new Object[] { eObject }));
 				}
@@ -2358,7 +2374,7 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT_PRIMARY_PERFORMER,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OperativeNoteOperativeNoteDocumentationOfServiceEventPrimaryPerformer"),
 							new Object[] { eObject }));
 				}
@@ -2429,7 +2445,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OPERATIVE_NOTE__OPERATIVE_NOTE_DOCUMENTATION_OF_SERVICE_EVENT,
-							ConsolPlugin.INSTANCE.getString("OperativeNoteOperativeNoteDocumentationOfServiceEvent"),
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+								"OperativeNoteOperativeNoteDocumentationOfServiceEvent"),
 							new Object[] { eObject }));
 				}
 
@@ -3226,7 +3243,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteGeneralHeaderConstraintsTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteGeneralHeaderConstraintsTemplateId"),
 						new Object[] { operativeNote }));
 			}
 
@@ -3299,7 +3317,8 @@ public class OperativeNoteOperations extends GeneralHeaderConstraintsOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OPERATIVE_NOTE__GENERAL_HEADER_CONSTRAINTS_CODE,
-						ConsolPlugin.INSTANCE.getString("OperativeNoteGeneralHeaderConstraintsCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OperativeNoteGeneralHeaderConstraintsCode"),
 						new Object[] { operativeNote }));
 			}
 

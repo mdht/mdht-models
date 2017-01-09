@@ -21,7 +21,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ChiefComplaintAndReasonForVisitSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
 /**
@@ -116,7 +115,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionTemplateId"),
 						new Object[] { chiefComplaintAndReasonForVisitSection }));
 			}
@@ -185,7 +184,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionCode"),
 						new Object[] { chiefComplaintAndReasonForVisitSection }));
 			}
@@ -252,7 +251,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionCodeP"),
 						new Object[] { chiefComplaintAndReasonForVisitSection }));
 			}
@@ -319,7 +318,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionText"),
 						new Object[] { chiefComplaintAndReasonForVisitSection }));
 			}
@@ -386,7 +385,7 @@ public class ChiefComplaintAndReasonForVisitSectionOperations extends SectionOpe
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION__CHIEF_COMPLAINT_AND_REASON_FOR_VISIT_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ChiefComplaintAndReasonForVisitSectionChiefComplaintAndReasonForVisitSectionTitle"),
 						new Object[] { chiefComplaintAndReasonForVisitSection }));
 			}

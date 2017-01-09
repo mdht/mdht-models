@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -96,7 +95,8 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCodeP"),
 						new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
 
@@ -246,7 +246,7 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisTemplateId"),
 						new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
@@ -322,7 +322,8 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_CODE,
-						ConsolPlugin.INSTANCE.getString("HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisCode"),
 						new Object[] { hospitalAdmissionDiagnosis2 }));
 			}
 
@@ -388,7 +389,7 @@ public class HospitalAdmissionDiagnosis2Operations extends HospitalAdmissionDiag
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.HOSPITAL_ADMISSION_DIAGNOSIS2__HOSPITAL_ADMISSION_DIAGNOSIS_PROBLEM_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"HospitalAdmissionDiagnosis2HospitalAdmissionDiagnosisProblemObservation"),
 						new Object[] { hospitalAdmissionDiagnosis2 }));
 			}

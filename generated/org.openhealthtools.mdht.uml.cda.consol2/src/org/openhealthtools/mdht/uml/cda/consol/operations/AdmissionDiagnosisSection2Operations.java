@@ -17,7 +17,6 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AdmissionDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.HospitalAdmissionDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -121,7 +120,7 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADMISSION_DIAGNOSIS_SECTION2__ADMISSION_DIAGNOSIS_SECTION2_CE_TRANSLATION,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdmissionDiagnosisSection2AdmissionDiagnosisSection2CETranslation"),
 							new Object[] { eObject }));
 				}
@@ -193,7 +192,7 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.ADMISSION_DIAGNOSIS_SECTION2__ADMISSION_DIAGNOSIS_SECTION2_CE_TRANSLATION_P,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"AdmissionDiagnosisSection2AdmissionDiagnosisSection2CETranslationP"),
 							new Object[] { eObject }));
 				}
@@ -308,7 +307,7 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADMISSION_DIAGNOSIS_SECTION2__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionTemplateId"),
 						new Object[] { admissionDiagnosisSection2 }));
 			}
@@ -375,7 +374,7 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADMISSION_DIAGNOSIS_SECTION2__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionCodeP"),
 						new Object[] { admissionDiagnosisSection2 }));
 			}
@@ -466,7 +465,7 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADMISSION_DIAGNOSIS_SECTION2__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionCode"),
 						new Object[] { admissionDiagnosisSection2 }));
 			}
@@ -533,7 +532,7 @@ public class AdmissionDiagnosisSection2Operations extends HospitalAdmissionDiagn
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.ADMISSION_DIAGNOSIS_SECTION2__HOSPITAL_ADMISSION_DIAGNOSIS_SECTION_HOSPITAL_ADMISSION_DIAGNOSIS,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"AdmissionDiagnosisSection2HospitalAdmissionDiagnosisSectionHospitalAdmissionDiagnosis"),
 						new Object[] { admissionDiagnosisSection2 }));
 			}

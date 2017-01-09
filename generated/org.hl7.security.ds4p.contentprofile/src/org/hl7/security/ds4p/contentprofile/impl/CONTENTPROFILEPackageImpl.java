@@ -36,7 +36,6 @@ import org.hl7.security.ds4p.contentprofile.RefrainPolicySecurityObservation;
 import org.hl7.security.ds4p.contentprofile.SecurityObservation;
 
 import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -204,7 +203,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
         isInited = true;
 
         // Initialize simple dependencies
-        ConsolPackage.eINSTANCE.eClass();
+        CDAPackage.eINSTANCE.eClass();
 
         // Create package meta-data objects
         theCONTENTPROFILEPackage.createPackageContents();
@@ -216,7 +215,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
         EValidator.Registry.INSTANCE.put
             (theCONTENTPROFILEPackage, 
              new EValidator.Descriptor() {
-                 public EValidator getEValidator() {
+                 @Override
+				public EValidator getEValidator() {
                      return CONTENTPROFILEValidator.INSTANCE;
                  }
              });
@@ -239,7 +239,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getPrivacySegmentedDocument() {
+    @Override
+	public EClass getPrivacySegmentedDocument() {
         return privacySegmentedDocumentEClass;
     }
 
@@ -248,7 +249,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getPrivacySegmentedSection() {
+    @Override
+	public EClass getPrivacySegmentedSection() {
         return privacySegmentedSectionEClass;
     }
 
@@ -257,7 +259,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getPrivacyMarkingsSection() {
+    @Override
+	public EClass getPrivacyMarkingsSection() {
         return privacyMarkingsSectionEClass;
     }
 
@@ -266,7 +269,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getObligationPolicySecurityObservation() {
+    @Override
+	public EClass getObligationPolicySecurityObservation() {
         return obligationPolicySecurityObservationEClass;
     }
 
@@ -275,7 +279,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getSecurityObservation() {
+    @Override
+	public EClass getSecurityObservation() {
         return securityObservationEClass;
     }
 
@@ -284,7 +289,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getMandatoryDocumentProvenance() {
+    @Override
+	public EClass getMandatoryDocumentProvenance() {
         return mandatoryDocumentProvenanceEClass;
     }
 
@@ -293,7 +299,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getMandatoryDocumentAssignedAuthor() {
+    @Override
+	public EClass getMandatoryDocumentAssignedAuthor() {
         return mandatoryDocumentAssignedAuthorEClass;
     }
 
@@ -302,7 +309,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getPrivacyAnnotation() {
+    @Override
+	public EClass getPrivacyAnnotation() {
         return privacyAnnotationEClass;
     }
 
@@ -311,7 +319,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getRefrainPolicySecurityObservation() {
+    @Override
+	public EClass getRefrainPolicySecurityObservation() {
         return refrainPolicySecurityObservationEClass;
     }
 
@@ -320,7 +329,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getPurposeOfUseSecurityObservation() {
+    @Override
+	public EClass getPurposeOfUseSecurityObservation() {
         return purposeOfUseSecurityObservationEClass;
     }
 
@@ -329,7 +339,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getConfidentialitySecurityObservation() {
+    @Override
+	public EClass getConfidentialitySecurityObservation() {
         return confidentialitySecurityObservationEClass;
     }
 
@@ -338,7 +349,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getProtectedProblem() {
+    @Override
+	public EClass getProtectedProblem() {
         return protectedProblemEClass;
     }
 
@@ -347,7 +359,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getMandatoryEntryProvenance() {
+    @Override
+	public EClass getMandatoryEntryProvenance() {
         return mandatoryEntryProvenanceEClass;
     }
 
@@ -356,7 +369,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getMandatoryEntryAssignedAuthor() {
+    @Override
+	public EClass getMandatoryEntryAssignedAuthor() {
         return mandatoryEntryAssignedAuthorEClass;
     }
 
@@ -365,7 +379,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getPrivacyAnnotationEntryRelationship() {
+    @Override
+	public EClass getPrivacyAnnotationEntryRelationship() {
         return privacyAnnotationEntryRelationshipEClass;
     }
 
@@ -374,7 +389,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public EClass getPrivacyMarkingsEntry() {
+    @Override
+	public EClass getPrivacyMarkingsEntry() {
         return privacyMarkingsEntryEClass;
     }
 
@@ -383,7 +399,8 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
      * <!-- end-user-doc -->
      * @generated
      */
-    public CONTENTPROFILEFactory getCONTENTPROFILEFactory() {
+    @Override
+	public CONTENTPROFILEFactory getCONTENTPROFILEFactory() {
         return (CONTENTPROFILEFactory)getEFactoryInstance();
     }
 
@@ -463,7 +480,6 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
         setNsURI(eNS_URI);
 
         // Obtain other dependent packages
-        ConsolPackage theConsolPackage = (ConsolPackage)EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI);
         CDAPackage theCDAPackage = (CDAPackage)EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
 
         // Create type parameters
@@ -471,7 +487,6 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
         // Set bounds for type parameters
 
         // Add supertypes to classes
-        privacySegmentedDocumentEClass.getESuperTypes().add(theConsolPackage.getGeneralHeaderConstraints());
         privacySegmentedSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
         privacyMarkingsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
         obligationPolicySecurityObservationEClass.getESuperTypes().add(this.getSecurityObservation());
@@ -482,7 +497,6 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
         refrainPolicySecurityObservationEClass.getESuperTypes().add(this.getSecurityObservation());
         purposeOfUseSecurityObservationEClass.getESuperTypes().add(this.getSecurityObservation());
         confidentialitySecurityObservationEClass.getESuperTypes().add(this.getSecurityObservation());
-        protectedProblemEClass.getESuperTypes().add(theConsolPackage.getProblemObservation());
         mandatoryEntryProvenanceEClass.getESuperTypes().add(theCDAPackage.getAuthor());
         mandatoryEntryAssignedAuthorEClass.getESuperTypes().add(theCDAPackage.getAssignedAuthor());
         privacyAnnotationEntryRelationshipEClass.getESuperTypes().add(theCDAPackage.getEntryRelationship());
@@ -957,6 +971,15 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
 
         initEClass(protectedProblemEClass, ProtectedProblem.class, "ProtectedProblem", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(protectedProblemEClass, ecorePackage.getEBoolean(), "validateProblemObservationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(protectedProblemEClass, ecorePackage.getEBoolean(), "validateProtectedProblemProblemProvenance", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1109,7 +1132,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
            source, 
            new String[] {
              "initializers", "org.hl7.security.ds4p.contentprofile"
-           });                                                                                                                                                                                                                   
+           });                                                                                                                                                                                                                     
     }
 
     /**
@@ -1259,7 +1282,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
            new String[] {
              "constraints.validation.error", "ProblemObservationTemplateId ProtectedProblemProblemProvenance ProtectedProblemPrivacyAnnotations",
              "templateId.root", "2.16.840.1.113883.3.3251.1.8"
-           });            
+           });              
         addAnnotation
           (mandatoryEntryProvenanceEClass, 
            source, 
@@ -1317,12 +1340,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
           (confidentialitySecurityObservationEClass, 
            source, 
            new String[] {
-           });            
-        addAnnotation
-          (protectedProblemEClass, 
-           source, 
-           new String[] {
-           });                                           
+           });                                                     
     }
 
     /**
@@ -1347,7 +1365,7 @@ public class CONTENTPROFILEPackageImpl extends EPackageImpl implements CONTENTPR
              "value.codeSystem", "2.16.840.1.113883.5.25",
              "value.codeSystemName", "ConfidentialityCode",
              "constraints.validation.dependOn.RefrainPolicySecurityObservationConfidentialitySecurityObservationValue", "RefrainPolicySecurityObservationConfidentialitySecurityObservationValueP"
-           });                                                                                
+           });                                                                                  
     }
 
 } //CONTENTPROFILEPackageImpl

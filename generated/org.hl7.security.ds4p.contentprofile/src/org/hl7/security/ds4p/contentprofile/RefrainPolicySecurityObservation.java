@@ -77,11 +77,13 @@ public interface RefrainPolicySecurityObservation extends SecurityObservation {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RefrainPolicySecurityObservation init();
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public RefrainPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public RefrainPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // RefrainPolicySecurityObservation

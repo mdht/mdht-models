@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ResultOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.ResultsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -117,7 +116,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION2__RESULTS_SECTION2_NULL_FLAVOR,
-						ConsolPlugin.INSTANCE.getString("ResultsSection2ResultsSection2NullFlavor"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultsSection2ResultsSection2NullFlavor"),
 						new Object[] { resultsSection2 }));
 			}
 
@@ -180,7 +180,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION2__RESULTS_SECTION2_TITLE,
-						ConsolPlugin.INSTANCE.getString("ResultsSection2ResultsSection2Title"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultsSection2ResultsSection2Title"),
 						new Object[] { resultsSection2 }));
 			}
 
@@ -243,7 +244,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION2__RESULTS_SECTION2_TEXT,
-						ConsolPlugin.INSTANCE.getString("ResultsSection2ResultsSection2Text"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultsSection2ResultsSection2Text"),
 						new Object[] { resultsSection2 }));
 			}
 
@@ -308,7 +310,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION2__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ResultsSection2ResultsSectionEntriesOptionalTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultsSection2ResultsSectionEntriesOptionalTemplateId"),
 						new Object[] { resultsSection2 }));
 			}
 
@@ -373,7 +376,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION2__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ResultsSection2ResultsSectionEntriesOptionalCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultsSection2ResultsSectionEntriesOptionalCodeP"),
 						new Object[] { resultsSection2 }));
 			}
 
@@ -462,7 +466,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION2__RESULTS_SECTION_ENTRIES_OPTIONAL_CODE,
-						ConsolPlugin.INSTANCE.getString("ResultsSection2ResultsSectionEntriesOptionalCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultsSection2ResultsSectionEntriesOptionalCode"),
 						new Object[] { resultsSection2 }));
 			}
 
@@ -527,7 +532,8 @@ public class ResultsSection2Operations extends ResultsSectionEntriesOptional2Ope
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.RESULTS_SECTION2__RESULTS_SECTION_ENTRIES_OPTIONAL_RESULT_ORGANIZER,
-						ConsolPlugin.INSTANCE.getString("ResultsSection2ResultsSectionEntriesOptionalResultOrganizer"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ResultsSection2ResultsSectionEntriesOptionalResultOrganizer"),
 						new Object[] { resultsSection2 }));
 			}
 

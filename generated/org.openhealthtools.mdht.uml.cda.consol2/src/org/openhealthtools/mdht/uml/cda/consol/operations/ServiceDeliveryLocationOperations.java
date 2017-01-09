@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ServiceDeliveryLocation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -118,7 +117,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ServiceDeliveryLocationServiceDeliveryLocationHasPlayingEntity"),
 						new Object[] { serviceDeliveryLocation }));
 			}
@@ -184,7 +183,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ServiceDeliveryLocationServiceDeliveryLocationHasPlayingEntityClassCode"),
 						new Object[] { serviceDeliveryLocation }));
 			}
@@ -250,7 +249,7 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_HAS_PLAYING_ENTITY_NAME,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ServiceDeliveryLocationServiceDeliveryLocationHasPlayingEntityName"),
 						new Object[] { serviceDeliveryLocation }));
 			}
@@ -316,7 +315,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ServiceDeliveryLocationServiceDeliveryLocationTemplateId"),
 						new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -381,7 +381,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ServiceDeliveryLocationServiceDeliveryLocationClassCode"),
 						new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -447,7 +448,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_CODE,
-						ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ServiceDeliveryLocationServiceDeliveryLocationCode"),
 						new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -511,7 +513,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_ADDR,
-						ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationAddr"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ServiceDeliveryLocationServiceDeliveryLocationAddr"),
 						new Object[] { serviceDeliveryLocation }));
 			}
 
@@ -575,7 +578,8 @@ public class ServiceDeliveryLocationOperations extends ParticipantRoleOperations
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SERVICE_DELIVERY_LOCATION__SERVICE_DELIVERY_LOCATION_TELECOM,
-						ConsolPlugin.INSTANCE.getString("ServiceDeliveryLocationServiceDeliveryLocationTelecom"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ServiceDeliveryLocationServiceDeliveryLocationTelecom"),
 						new Object[] { serviceDeliveryLocation }));
 			}
 

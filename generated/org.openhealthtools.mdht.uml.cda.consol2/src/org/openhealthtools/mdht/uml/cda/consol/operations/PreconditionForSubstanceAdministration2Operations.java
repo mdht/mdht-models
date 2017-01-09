@@ -11,7 +11,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PreconditionForSubstanceAdministration2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -109,7 +108,7 @@ public class PreconditionForSubstanceAdministration2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCodeP"),
 						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
@@ -176,7 +175,7 @@ public class PreconditionForSubstanceAdministration2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValueP"),
 						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
@@ -243,7 +242,7 @@ public class PreconditionForSubstanceAdministration2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationTemplateId"),
 						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
@@ -312,7 +311,7 @@ public class PreconditionForSubstanceAdministration2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationCode"),
 						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
@@ -379,7 +378,7 @@ public class PreconditionForSubstanceAdministration2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_TEXT,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationText"),
 						new Object[] { preconditionForSubstanceAdministration2 }));
 			}
@@ -448,7 +447,7 @@ public class PreconditionForSubstanceAdministration2Operations
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION2__PRECONDITION_FOR_SUBSTANCE_ADMINISTRATION_VALUE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PreconditionForSubstanceAdministration2PreconditionForSubstanceAdministrationValue"),
 						new Object[] { preconditionForSubstanceAdministration2 }));
 			}

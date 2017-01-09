@@ -19,7 +19,6 @@ import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.ProtectedProblem;
 
 import org.hl7.security.ds4p.contentprofile.operations.ProtectedProblemOperations;
-import org.openhealthtools.mdht.uml.cda.consol.impl.ProblemObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +27,7 @@ import org.openhealthtools.mdht.uml.cda.consol.impl.ProblemObservationImpl;
  *
  * @generated
  */
-public class ProtectedProblemImpl extends ProblemObservationImpl implements ProtectedProblem {
+public class ProtectedProblemImpl extends EObjectImpl implements ProtectedProblem {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63,6 +62,7 @@ public class ProtectedProblemImpl extends ProblemObservationImpl implements Prot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProtectedProblemProblemProvenance(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProtectedProblemOperations.validateProtectedProblemProblemProvenance(this, diagnostics, context);
 	}
@@ -72,6 +72,7 @@ public class ProtectedProblemImpl extends ProblemObservationImpl implements Prot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateProtectedProblemPrivacyAnnotations(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProtectedProblemOperations.validateProtectedProblemPrivacyAnnotations(this, diagnostics, context);
 	}
@@ -81,6 +82,7 @@ public class ProtectedProblemImpl extends ProblemObservationImpl implements Prot
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProtectedProblem init() {
 	    return Initializer.Util.init(this);
 	}
@@ -89,7 +91,8 @@ public class ProtectedProblemImpl extends ProblemObservationImpl implements Prot
      * <!-- end-user-doc -->
      * @generated
      */
-    public ProtectedProblem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public ProtectedProblem init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

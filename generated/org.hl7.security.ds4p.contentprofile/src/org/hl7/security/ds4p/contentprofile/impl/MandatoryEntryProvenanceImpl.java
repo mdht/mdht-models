@@ -52,6 +52,7 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMandatoryEntryProvenanceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +62,7 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMandatoryEntryProvenanceTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceTime(this, diagnostics, context);
 	}
@@ -70,6 +72,7 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMandatoryEntryProvenanceAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceAssignedAuthor(this, diagnostics, context);
 	}
@@ -79,6 +82,7 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MandatoryEntryProvenance init() {
 	    return Initializer.Util.init(this);
 	}
@@ -87,7 +91,8 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
      * <!-- end-user-doc -->
      * @generated
      */
-    public MandatoryEntryProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public MandatoryEntryProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

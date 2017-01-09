@@ -23,7 +23,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
@@ -137,7 +136,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationTemplateId"),
 						new Object[] { goalObservation }));
 			}
 
@@ -200,7 +200,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationClassCode"),
 						new Object[] { goalObservation }));
 			}
 
@@ -263,7 +264,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationMoodCode"),
 						new Object[] { goalObservation }));
 			}
 
@@ -326,7 +328,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ID,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationId"),
 						new Object[] { goalObservation }));
 			}
 
@@ -389,7 +392,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationCodeP"),
 						new Object[] { goalObservation }));
 			}
 
@@ -475,7 +479,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationCode"),
 						new Object[] { goalObservation }));
 			}
 
@@ -539,7 +544,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationStatusCode"),
 						new Object[] { goalObservation }));
 			}
 
@@ -602,7 +608,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationStatusCodeP"),
 						new Object[] { goalObservation }));
 			}
 
@@ -665,7 +672,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationEffectiveTime"),
 						new Object[] { goalObservation }));
 			}
 
@@ -728,7 +736,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationValue"),
 						new Object[] { goalObservation }));
 			}
 
@@ -791,7 +800,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_GOAL_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationGoalObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationGoalObservation"),
 						new Object[] { goalObservation }));
 			}
 
@@ -854,7 +864,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_ACT_REFERENCE_ER,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationActReferenceER"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationActReferenceER"),
 						new Object[] { goalObservation }));
 			}
 
@@ -919,7 +930,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_AUTHOR_PARTICIPATION,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationAuthorParticipation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationAuthorParticipation"),
 						new Object[] { goalObservation }));
 			}
 
@@ -984,7 +996,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_HEALTH_CONCERN_ACT_ER,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationHealthConcernActER"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationHealthConcernActER"),
 						new Object[] { goalObservation }));
 			}
 
@@ -1049,7 +1062,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PRIORITY_PREFERENCE,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPriorityPreference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationPriorityPreference"),
 						new Object[] { goalObservation }));
 			}
 
@@ -1112,7 +1126,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_PLANNED_ERS,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationPlannedERs"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationPlannedERs"),
 						new Object[] { goalObservation }));
 			}
 
@@ -1175,7 +1190,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationReference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"GoalObservationGoalObservationReference"),
 						new Object[] { goalObservation }));
 			}
 
@@ -1244,7 +1260,8 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_REFERENCE_TYPE_CODE,
-							ConsolPlugin.INSTANCE.getString("GoalObservationGoalObservationReferenceTypeCode"),
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+								"GoalObservationGoalObservationReferenceTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -1314,7 +1331,7 @@ public class GoalObservationOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.GOAL_OBSERVATION__GOAL_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"GoalObservationGoalObservationReferenceExternalDocumentReference"),
 							new Object[] { eObject }));
 				}

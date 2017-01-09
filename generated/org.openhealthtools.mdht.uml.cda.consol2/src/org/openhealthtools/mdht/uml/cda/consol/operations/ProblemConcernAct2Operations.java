@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PriorityPreference;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct2;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
@@ -103,7 +102,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernActStatusCodeP"),
 						new Object[] { problemConcernAct2 }));
 			}
 
@@ -160,7 +160,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_AUTHOR_PARTICIPATION,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2AuthorParticipation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernAct2AuthorParticipation"),
 						new Object[] { problemConcernAct2 }));
 			}
 
@@ -204,7 +205,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT2_PRIORITY_PREFERENCE,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernAct2PriorityPreference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernAct2PriorityPreference"),
 						new Object[] { problemConcernAct2 }));
 			}
 
@@ -303,7 +305,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTimeLow"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernActEffectiveTimeLow"),
 						new Object[] { problemConcernAct2 }));
 			}
 
@@ -347,7 +350,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTimeHigh"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernActEffectiveTimeHigh"),
 						new Object[] { problemConcernAct2 }));
 			}
 
@@ -555,7 +559,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernActTemplateId"),
 						new Object[] { problemConcernAct2 }));
 			}
 
@@ -628,7 +633,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernActStatusCode"),
 						new Object[] { problemConcernAct2 }));
 			}
 
@@ -693,7 +699,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernActEffectiveTime"),
 						new Object[] { problemConcernAct2 }));
 			}
 
@@ -756,7 +763,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernActCodeP"),
 						new Object[] { problemConcernAct2 }));
 			}
 
@@ -842,7 +850,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_CODE,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernActCode"),
 						new Object[] { problemConcernAct2 }));
 			}
 
@@ -907,7 +916,8 @@ public class ProblemConcernAct2Operations extends ProblemConcernActOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT2__PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernAct2ProblemConcernActProblemObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernAct2ProblemConcernActProblemObservation"),
 						new Object[] { problemConcernAct2 }));
 			}
 

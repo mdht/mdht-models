@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.GoalObservation;
 import org.openhealthtools.mdht.uml.cda.consol.HandoffCommunicationParticipants;
 import org.openhealthtools.mdht.uml.cda.consol.Instruction2;
@@ -146,7 +145,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_TREATMENT_SECTION2_HANDOFF_COMMUNICATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PlanOfTreatmentSection2PlanOfTreatmentSection2HandoffCommunication"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
@@ -212,7 +211,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_TREATMENT_SECTION2_NUTRITION_RECOMMENDATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PlanOfTreatmentSection2PlanOfTreatmentSection2NutritionRecommendation"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
@@ -278,7 +277,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_TREATMENT_SECTION2_PLANNED_IMMUNIZATION_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PlanOfTreatmentSection2PlanOfTreatmentSection2PlannedImmunizationActivity"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
@@ -344,7 +343,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_TREATMENT_SECTION2_GOAL_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PlanOfTreatmentSection2PlanOfTreatmentSection2GoalObservation"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
@@ -941,7 +940,8 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_CARE_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("PlanOfTreatmentSection2PlanOfCareSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PlanOfTreatmentSection2PlanOfCareSectionTemplateId"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
 
@@ -1005,7 +1005,8 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_CARE_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PlanOfTreatmentSection2PlanOfCareSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PlanOfTreatmentSection2PlanOfCareSectionCodeP"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
 
@@ -1091,7 +1092,8 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_CARE_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("PlanOfTreatmentSection2PlanOfCareSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PlanOfTreatmentSection2PlanOfCareSectionCode"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
 
@@ -1156,7 +1158,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PlanOfTreatmentSection2PlanOfCareSectionPlanOfCareActivityObservation"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
@@ -1222,7 +1224,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ENCOUNTER,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PlanOfTreatmentSection2PlanOfCareSectionPlanOfCareActivityEncounter"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
@@ -1288,7 +1290,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_ACT,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PlanOfTreatmentSection2PlanOfCareSectionPlanOfCareActivityAct"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
@@ -1354,7 +1356,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_PROCEDURE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PlanOfTreatmentSection2PlanOfCareSectionPlanOfCareActivityProcedure"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
@@ -1420,7 +1422,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUBSTANCE_ADMINISTRATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PlanOfTreatmentSection2PlanOfCareSectionPlanOfCareActivitySubstanceAdministration"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
@@ -1486,7 +1488,7 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_CARE_SECTION_PLAN_OF_CARE_ACTIVITY_SUPPLY,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PlanOfTreatmentSection2PlanOfCareSectionPlanOfCareActivitySupply"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
@@ -1551,7 +1553,8 @@ public class PlanOfTreatmentSection2Operations extends PlanOfCareSectionOperatio
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PLAN_OF_TREATMENT_SECTION2__PLAN_OF_CARE_SECTION_INSTRUCTIONS,
-						ConsolPlugin.INSTANCE.getString("PlanOfTreatmentSection2PlanOfCareSectionInstructions"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PlanOfTreatmentSection2PlanOfCareSectionInstructions"),
 						new Object[] { planOfTreatmentSection2 }));
 			}
 

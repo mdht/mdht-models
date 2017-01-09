@@ -18,7 +18,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosis2;
 import org.openhealthtools.mdht.uml.cda.consol.PostprocedureDiagnosisSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -162,7 +161,7 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionTemplateId"),
 						new Object[] { postprocedureDiagnosisSection2 }));
 			}
@@ -229,7 +228,7 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionCodeP"),
 						new Object[] { postprocedureDiagnosisSection2 }));
 			}
@@ -321,7 +320,7 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionCode"),
 						new Object[] { postprocedureDiagnosisSection2 }));
 			}
@@ -388,7 +387,7 @@ public class PostprocedureDiagnosisSection2Operations extends PostprocedureDiagn
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.POSTPROCEDURE_DIAGNOSIS_SECTION2__POSTPROCEDURE_DIAGNOSIS_SECTION_POSTPROCEDURE_DIAGNOSIS,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"PostprocedureDiagnosisSection2PostprocedureDiagnosisSectionPostprocedureDiagnosis"),
 						new Object[] { postprocedureDiagnosisSection2 }));
 			}

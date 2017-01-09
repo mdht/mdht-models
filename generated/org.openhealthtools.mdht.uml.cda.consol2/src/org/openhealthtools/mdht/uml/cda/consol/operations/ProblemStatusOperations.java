@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemStatus;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -118,7 +117,8 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusTextReference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemStatusProblemStatusTextReference"),
 						new Object[] { problemStatus }));
 			}
 
@@ -181,7 +181,8 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemStatusProblemStatusReferenceValue"),
 						new Object[] { problemStatus }));
 			}
 
@@ -245,7 +246,8 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_TEXT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusTextReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemStatusProblemStatusTextReferenceValue"),
 						new Object[] { problemStatus }));
 			}
 
@@ -308,7 +310,8 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemStatusProblemStatusTemplateId"),
 						new Object[] { problemStatus }));
 			}
 
@@ -371,7 +374,8 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemStatusProblemStatusClassCode"),
 						new Object[] { problemStatus }));
 			}
 
@@ -434,7 +438,8 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemStatusProblemStatusMoodCode"),
 						new Object[] { problemStatus }));
 			}
 
@@ -499,7 +504,8 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemStatusProblemStatusCode"),
 						new Object[] { problemStatus }));
 			}
 
@@ -562,7 +568,8 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_TEXT,
-						ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemStatusProblemStatusText"),
 						new Object[] { problemStatus }));
 			}
 
@@ -626,7 +633,8 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemStatusProblemStatusStatusCode"),
 						new Object[] { problemStatus }));
 			}
 
@@ -691,7 +699,8 @@ public class ProblemStatusOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_STATUS__PROBLEM_STATUS_VALUE,
-						ConsolPlugin.INSTANCE.getString("ProblemStatusProblemStatusValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemStatusProblemStatusValue"),
 						new Object[] { problemStatus }));
 			}
 

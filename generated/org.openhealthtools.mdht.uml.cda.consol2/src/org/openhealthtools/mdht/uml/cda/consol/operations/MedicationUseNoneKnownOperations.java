@@ -17,7 +17,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationUseNoneKnown;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -122,7 +121,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownTextReference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownTextReference"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -187,7 +187,7 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicationUseNoneKnownMedicationUseNoneKnownTextReferenceValue"),
 						new Object[] { medicationUseNoneKnown }));
 			}
@@ -253,7 +253,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownReferenceValue"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -318,7 +319,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownTemplateId"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -383,7 +385,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownClassCode"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -448,7 +451,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownMoodCode"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -512,7 +516,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_ID,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownId"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -576,7 +581,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CODE_P,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownCodeP"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -663,7 +669,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownCode"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -728,7 +735,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownEffectiveTime"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -794,7 +802,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownStatusCode"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -859,7 +868,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownStatusCodeP"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -923,7 +933,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_TEXT,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownText"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -989,7 +1000,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_VALUE,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownValue"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 
@@ -1053,7 +1065,8 @@ public class MedicationUseNoneKnownOperations extends ClinicalStatementOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATION_USE_NONE_KNOWN__MEDICATION_USE_NONE_KNOWN_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("MedicationUseNoneKnownMedicationUseNoneKnownValueP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationUseNoneKnownMedicationUseNoneKnownValueP"),
 						new Object[] { medicationUseNoneKnown }));
 			}
 

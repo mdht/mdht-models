@@ -25,7 +25,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ImmunizationMedicationInformation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -127,7 +126,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ImmunizationMedicationInformationImmunizationMedicationInformationTemplateId"),
 						new Object[] { immunizationMedicationInformation }));
 			}
@@ -194,7 +193,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ImmunizationMedicationInformationImmunizationMedicationInformationClassCode"),
 						new Object[] { immunizationMedicationInformation }));
 			}
@@ -261,7 +260,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ImmunizationMedicationInformationImmunizationMedicationInformationId"),
 						new Object[] { immunizationMedicationInformation }));
 			}
@@ -328,7 +327,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURER_ORGANIZATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ImmunizationMedicationInformationImmunizationMedicationInformationManufacturerOrganization"),
 						new Object[] { immunizationMedicationInformation }));
 			}
@@ -395,7 +394,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterial"),
 						new Object[] { immunizationMedicationInformation }));
 			}
@@ -466,7 +465,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_ORIGINAL_TEXT,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ImmunizationMedicationInformationImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeOriginalText"),
 							new Object[] { eObject }));
 				}
@@ -538,7 +537,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_ORIGINAL_TEXT_REFERENCE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ImmunizationMedicationInformationImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialOriginalTextReference"),
 							new Object[] { eObject }));
 				}
@@ -610,7 +609,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_TEXT_REFERENCE_VALUE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ImmunizationMedicationInformationImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialTextReferenceValue"),
 							new Object[] { eObject }));
 				}
@@ -682,7 +681,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE_TRANSLATION,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ImmunizationMedicationInformationImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCodeTranslation"),
 							new Object[] { eObject }));
 				}
@@ -756,7 +755,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ImmunizationMedicationInformationImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialCode"),
 							new Object[] { eObject }));
 				}
@@ -828,7 +827,7 @@ public class ImmunizationMedicationInformationOperations extends ManufacturedPro
 						new BasicDiagnostic(
 							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.IMMUNIZATION_MEDICATION_INFORMATION__IMMUNIZATION_MEDICATION_INFORMATION_IMMUNIZATION_MEDICATION_INFORMATION_MANUFACTURED_MATERIAL_LOT_NUMBER_TEXT,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"ImmunizationMedicationInformationImmunizationMedicationInformationImmunizationMedicationInformationManufacturedMaterialLotNumberText"),
 							new Object[] { eObject }));
 				}

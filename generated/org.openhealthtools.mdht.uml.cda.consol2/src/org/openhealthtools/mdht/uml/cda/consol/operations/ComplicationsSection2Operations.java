@@ -21,7 +21,6 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ComplicationsSection2;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -117,7 +116,7 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_EXPLICIT_COMPLICATIONS,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ComplicationsSection2ComplicationsSectionExplicitComplications"),
 						new Object[] { complicationsSection2 }));
 			}
@@ -232,7 +231,8 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ComplicationsSection2ComplicationsSectionTemplateId"),
 						new Object[] { complicationsSection2 }));
 			}
 
@@ -295,7 +295,8 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ComplicationsSection2ComplicationsSectionCodeP"),
 						new Object[] { complicationsSection2 }));
 			}
 
@@ -381,7 +382,8 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ComplicationsSection2ComplicationsSectionCode"),
 						new Object[] { complicationsSection2 }));
 			}
 
@@ -446,7 +448,8 @@ public class ComplicationsSection2Operations extends ComplicationsSectionOperati
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.COMPLICATIONS_SECTION2__COMPLICATIONS_SECTION_PROBLEM_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("ComplicationsSection2ComplicationsSectionProblemObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ComplicationsSection2ComplicationsSectionProblemObservation"),
 						new Object[] { complicationsSection2 }));
 			}
 

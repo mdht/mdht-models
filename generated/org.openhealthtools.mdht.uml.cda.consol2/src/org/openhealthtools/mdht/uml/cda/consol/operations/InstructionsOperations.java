@@ -21,7 +21,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.Instructions;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -119,7 +118,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("InstructionsInstructionsTextReference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InstructionsInstructionsTextReference"),
 						new Object[] { instructions }));
 			}
 
@@ -182,7 +182,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("InstructionsInstructionsReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InstructionsInstructionsReferenceValue"),
 						new Object[] { instructions }));
 			}
 
@@ -245,7 +246,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEXT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("InstructionsInstructionsTextReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InstructionsInstructionsTextReferenceValue"),
 						new Object[] { instructions }));
 			}
 
@@ -308,7 +310,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("InstructionsInstructionsTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InstructionsInstructionsTemplateId"),
 						new Object[] { instructions }));
 			}
 
@@ -371,7 +374,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("InstructionsInstructionsClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InstructionsInstructionsClassCode"),
 						new Object[] { instructions }));
 			}
 
@@ -434,7 +438,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("InstructionsInstructionsMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InstructionsInstructionsMoodCode"),
 						new Object[] { instructions }));
 			}
 
@@ -497,7 +502,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("InstructionsInstructionsCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InstructionsInstructionsCodeP"),
 						new Object[] { instructions }));
 			}
 
@@ -583,7 +589,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_CODE,
-						ConsolPlugin.INSTANCE.getString("InstructionsInstructionsCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InstructionsInstructionsCode"),
 						new Object[] { instructions }));
 			}
 
@@ -646,7 +653,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_TEXT,
-						ConsolPlugin.INSTANCE.getString("InstructionsInstructionsText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InstructionsInstructionsText"),
 						new Object[] { instructions }));
 			}
 
@@ -710,7 +718,8 @@ public class InstructionsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.INSTRUCTIONS__INSTRUCTIONS_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("InstructionsInstructionsStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"InstructionsInstructionsStatusCode"),
 						new Object[] { instructions }));
 			}
 

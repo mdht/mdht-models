@@ -22,7 +22,6 @@ import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultObservation;
 import org.openhealthtools.mdht.uml.cda.consol.CognitiveStatusResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.FunctionalStatusSection2;
@@ -118,7 +117,8 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusSection2FunctionalStatusSectionCodeP"),
 						new Object[] { functionalStatusSection2 }));
 			}
 
@@ -176,7 +176,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION2_SELF_CARE_ACTIVITIES,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusSection2FunctionalStatusSection2SelfCareActivities"),
 						new Object[] { functionalStatusSection2 }));
 			}
@@ -222,7 +222,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION2_SENSORY_AND_SPEECH_STATUS,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusSection2FunctionalStatusSection2SensoryAndSpeechStatus"),
 						new Object[] { functionalStatusSection2 }));
 			}
@@ -796,7 +796,8 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusSection2FunctionalStatusSectionTemplateId"),
 						new Object[] { functionalStatusSection2 }));
 			}
 
@@ -870,7 +871,8 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("FunctionalStatusSection2FunctionalStatusSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"FunctionalStatusSection2FunctionalStatusSectionCode"),
 						new Object[] { functionalStatusSection2 }));
 			}
 
@@ -936,7 +938,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_ORGANIZER,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusSection2FunctionalStatusSectionFunctionalStatusResultOrganizer"),
 						new Object[] { functionalStatusSection2 }));
 			}
@@ -1003,7 +1005,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_FUNCTIONAL_STATUS_RESULT_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusSection2FunctionalStatusSectionFunctionalStatusResultObservation"),
 						new Object[] { functionalStatusSection2 }));
 			}
@@ -1070,7 +1072,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_ORGANIZER,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusSection2FunctionalStatusSectionCognitiveStatusResultOrganizer"),
 						new Object[] { functionalStatusSection2 }));
 			}
@@ -1137,7 +1139,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_COGNITIVE_STATUS_RESULT_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusSection2FunctionalStatusSectionCognitiveStatusResultObservation"),
 						new Object[] { functionalStatusSection2 }));
 			}
@@ -1204,7 +1206,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_NON_MEDICINAL_SUPPLY_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusSection2FunctionalStatusSectionNonMedicinalSupplyActivity"),
 						new Object[] { functionalStatusSection2 }));
 			}
@@ -1271,7 +1273,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_NUMBER_OF_PRESSURE_ULCERS_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusSection2FunctionalStatusSectionNumberOfPressureUlcersObservation"),
 						new Object[] { functionalStatusSection2 }));
 			}
@@ -1338,7 +1340,7 @@ public class FunctionalStatusSection2Operations extends FunctionalStatusSectionO
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.FUNCTIONAL_STATUS_SECTION2__FUNCTIONAL_STATUS_SECTION_HIGHEST_PRESSURE_ULCER_STAGE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"FunctionalStatusSection2FunctionalStatusSectionHighestPressureUlcerStage"),
 						new Object[] { functionalStatusSection2 }));
 			}

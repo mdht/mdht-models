@@ -25,7 +25,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -128,7 +127,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_LOW,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActEffectiveTimeLow"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActEffectiveTimeLow"),
 						new Object[] { problemConcernAct }));
 			}
 
@@ -193,7 +193,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME_HIGH,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActEffectiveTimeHigh"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActEffectiveTimeHigh"),
 						new Object[] { problemConcernAct }));
 			}
 
@@ -256,7 +257,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActTemplateId"),
 						new Object[] { problemConcernAct }));
 			}
 
@@ -319,7 +321,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActClassCode"),
 						new Object[] { problemConcernAct }));
 			}
 
@@ -382,7 +385,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActMoodCode"),
 						new Object[] { problemConcernAct }));
 			}
 
@@ -445,7 +449,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_ID,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActId"),
 						new Object[] { problemConcernAct }));
 			}
 
@@ -508,7 +513,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActCodeP"),
 						new Object[] { problemConcernAct }));
 			}
 
@@ -594,7 +600,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_CODE,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActCode"),
 						new Object[] { problemConcernAct }));
 			}
 
@@ -659,7 +666,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActStatusCode"),
 						new Object[] { problemConcernAct }));
 			}
 
@@ -724,7 +732,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActEffectiveTime"),
 						new Object[] { problemConcernAct }));
 			}
 
@@ -789,7 +798,8 @@ public class ProblemConcernActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PROBLEM_CONCERN_ACT__PROBLEM_CONCERN_ACT_PROBLEM_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("ProblemConcernActProblemConcernActProblemObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ProblemConcernActProblemConcernActProblemObservation"),
 						new Object[] { problemConcernAct }));
 			}
 

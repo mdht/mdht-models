@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.SurgicalDrainsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -115,7 +114,8 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionSurgicalDrainsSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SurgicalDrainsSectionSurgicalDrainsSectionTemplateId"),
 						new Object[] { surgicalDrainsSection }));
 			}
 
@@ -180,7 +180,8 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionSurgicalDrainsSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SurgicalDrainsSectionSurgicalDrainsSectionCode"),
 						new Object[] { surgicalDrainsSection }));
 			}
 
@@ -244,7 +245,8 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionSurgicalDrainsSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SurgicalDrainsSectionSurgicalDrainsSectionCodeP"),
 						new Object[] { surgicalDrainsSection }));
 			}
 
@@ -307,7 +309,8 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionSurgicalDrainsSectionText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SurgicalDrainsSectionSurgicalDrainsSectionText"),
 						new Object[] { surgicalDrainsSection }));
 			}
 
@@ -371,7 +374,8 @@ public class SurgicalDrainsSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SURGICAL_DRAINS_SECTION__SURGICAL_DRAINS_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("SurgicalDrainsSectionSurgicalDrainsSectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SurgicalDrainsSectionSurgicalDrainsSectionTitle"),
 						new Object[] { surgicalDrainsSection }));
 			}
 

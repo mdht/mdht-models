@@ -16,7 +16,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.SmokingStatusMeaningfulUse2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -113,7 +112,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_MEANINGFUL_USE2_ID,
-						ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2Id"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2Id"),
 						new Object[] { smokingStatusMeaningfulUse2 }));
 			}
 
@@ -158,7 +158,7 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_MEANINGFUL_USE2_AUTHOR_PARTICIPATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2AuthorParticipation"),
 						new Object[] { smokingStatusMeaningfulUse2 }));
 			}
@@ -208,7 +208,7 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 						new BasicDiagnostic(
 							Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_MEANINGFUL_USE2_CD_CODE_TERM_ASSERTION_OR_LOINC,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"SmokingStatusMeaningfulUse2SmokingStatusMeaningfulUse2CDCodeTermAssertionOrLoinc"),
 							new Object[] { eObject }));
 				}
@@ -255,7 +255,7 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"SmokingStatusMeaningfulUse2SmokingStatusObservationTemplateId"),
 						new Object[] { smokingStatusMeaningfulUse2 }));
 			}
@@ -383,7 +383,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SmokingStatusMeaningfulUse2SmokingStatusObservationCodeP"),
 						new Object[] { smokingStatusMeaningfulUse2 }));
 			}
 
@@ -470,7 +471,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SmokingStatusMeaningfulUse2SmokingStatusObservationCode"),
 						new Object[] { smokingStatusMeaningfulUse2 }));
 			}
 
@@ -536,7 +538,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_VALUE_P,
-						ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationValueP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SmokingStatusMeaningfulUse2SmokingStatusObservationValueP"),
 						new Object[] { smokingStatusMeaningfulUse2 }));
 			}
 
@@ -623,7 +626,8 @@ public class SmokingStatusMeaningfulUse2Operations extends SmokingStatusObservat
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.SMOKING_STATUS_MEANINGFUL_USE2__SMOKING_STATUS_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("SmokingStatusMeaningfulUse2SmokingStatusObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"SmokingStatusMeaningfulUse2SmokingStatusObservationValue"),
 						new Object[] { smokingStatusMeaningfulUse2 }));
 			}
 

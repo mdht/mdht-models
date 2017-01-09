@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.ProcedureActivityProcedure2;
 import org.openhealthtools.mdht.uml.cda.consol.ReactionObservation2;
@@ -133,7 +132,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE_VALUE_SET,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCodeValueSet"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationCodeValueSet"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -196,7 +196,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationCodeP"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -253,7 +254,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationStatusCodeP"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -394,7 +396,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE_INVERSION_IND,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ReactionObservation2ReactionObservationProcedureActivityProcedureInversionInd"),
 						new Object[] { reactionObservation2 }));
 			}
@@ -439,7 +441,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_MEDICATION_ACTIVITY_INVERSION_IND,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ReactionObservation2ReactionObservationMedicationActivityInversionInd"),
 						new Object[] { reactionObservation2 }));
 			}
@@ -484,7 +486,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_SEVERITY_OBSERVATION_INVERSION_IND,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ReactionObservation2ReactionObservationSeverityObservationInversionInd"),
 						new Object[] { reactionObservation2 }));
 			}
@@ -529,7 +531,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationTextReference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationTextReference"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -573,7 +576,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEXT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationTextReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationTextReferenceValue"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -617,7 +621,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationReferenceValue"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -660,7 +665,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationTemplateId"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -710,7 +716,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationCode"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -752,7 +759,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_ID,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationId"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -1087,7 +1095,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_TEXT,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationText"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -1160,7 +1169,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationStatusCode"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -1225,7 +1235,7 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_PROCEDURE_ACTIVITY_PROCEDURE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"ReactionObservation2ReactionObservationProcedureActivityProcedure"),
 						new Object[] { reactionObservation2 }));
 			}
@@ -1291,7 +1301,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_MEDICATION_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationMedicationActivity"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationMedicationActivity"),
 						new Object[] { reactionObservation2 }));
 			}
 
@@ -1356,7 +1367,8 @@ public class ReactionObservation2Operations extends ReactionObservationOperation
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.REACTION_OBSERVATION2__REACTION_OBSERVATION_SEVERITY_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("ReactionObservation2ReactionObservationSeverityObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"ReactionObservation2ReactionObservationSeverityObservation"),
 						new Object[] { reactionObservation2 }));
 			}
 

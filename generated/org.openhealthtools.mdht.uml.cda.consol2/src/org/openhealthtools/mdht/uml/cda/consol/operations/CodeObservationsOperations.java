@@ -26,7 +26,6 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.CodeObservations;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.QuantityMeasurementObservation;
 import org.openhealthtools.mdht.uml.cda.consol.SOPInstanceObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -125,7 +124,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CodeObservationsCodeObservationsTemplateId"),
 						new Object[] { codeObservations }));
 			}
 
@@ -188,7 +188,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CodeObservationsCodeObservationsClassCode"),
 						new Object[] { codeObservations }));
 			}
 
@@ -251,7 +252,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CodeObservationsCodeObservationsMoodCode"),
 						new Object[] { codeObservations }));
 			}
 
@@ -314,7 +316,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_CODE,
-						ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CodeObservationsCodeObservationsCode"),
 						new Object[] { codeObservations }));
 			}
 
@@ -377,7 +380,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CodeObservationsCodeObservationsEffectiveTime"),
 						new Object[] { codeObservations }));
 			}
 
@@ -440,7 +444,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_VALUE,
-						ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CodeObservationsCodeObservationsValue"),
 						new Object[] { codeObservations }));
 			}
 
@@ -505,7 +510,8 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_SOP_INSTANCE_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString("CodeObservationsCodeObservationsSOPInstanceObservation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"CodeObservationsCodeObservationsSOPInstanceObservation"),
 						new Object[] { codeObservations }));
 			}
 
@@ -570,7 +576,7 @@ public class CodeObservationsOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.CODE_OBSERVATIONS__CODE_OBSERVATIONS_QUANTITY_MEASUREMENT_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"CodeObservationsCodeObservationsQuantityMeasurementObservation"),
 						new Object[] { codeObservations }));
 			}

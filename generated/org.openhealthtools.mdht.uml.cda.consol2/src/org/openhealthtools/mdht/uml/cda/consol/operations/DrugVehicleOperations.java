@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.DrugVehicle;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -114,7 +113,8 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_CODE,
-						ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehiclePlayingEntityCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugVehicleDrugVehiclePlayingEntityCode"),
 						new Object[] { drugVehicle }));
 			}
 
@@ -177,7 +177,8 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY_NAME,
-						ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehiclePlayingEntityName"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugVehicleDrugVehiclePlayingEntityName"),
 						new Object[] { drugVehicle }));
 			}
 
@@ -240,7 +241,8 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehicleTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugVehicleDrugVehicleTemplateId"),
 						new Object[] { drugVehicle }));
 			}
 
@@ -303,7 +305,8 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehicleClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugVehicleDrugVehicleClassCode"),
 						new Object[] { drugVehicle }));
 			}
 
@@ -368,7 +371,9 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_CODE,
-						ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehicleCode"), new Object[] { drugVehicle }));
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugVehicleDrugVehicleCode"),
+						new Object[] { drugVehicle }));
 			}
 
 			return false;
@@ -430,7 +435,8 @@ public class DrugVehicleOperations extends ParticipantRoleOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_VEHICLE__DRUG_VEHICLE_PLAYING_ENTITY,
-						ConsolPlugin.INSTANCE.getString("DrugVehicleDrugVehiclePlayingEntity"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugVehicleDrugVehiclePlayingEntity"),
 						new Object[] { drugVehicle }));
 			}
 

@@ -21,7 +21,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.DrugMonitoringAct;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -126,7 +125,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugMonitoringActDrugMonitoringActTemplateId"),
 						new Object[] { drugMonitoringAct }));
 			}
 
@@ -189,7 +189,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugMonitoringActDrugMonitoringActClassCode"),
 						new Object[] { drugMonitoringAct }));
 			}
 
@@ -252,7 +253,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugMonitoringActDrugMonitoringActMoodCode"),
 						new Object[] { drugMonitoringAct }));
 			}
 
@@ -315,7 +317,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_ID,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugMonitoringActDrugMonitoringActId"),
 						new Object[] { drugMonitoringAct }));
 			}
 
@@ -378,7 +381,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_CODE_P,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugMonitoringActDrugMonitoringActCodeP"),
 						new Object[] { drugMonitoringAct }));
 			}
 
@@ -464,7 +468,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_CODE,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugMonitoringActDrugMonitoringActCode"),
 						new Object[] { drugMonitoringAct }));
 			}
 
@@ -529,7 +534,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugMonitoringActDrugMonitoringActStatusCode"),
 						new Object[] { drugMonitoringAct }));
 			}
 
@@ -593,7 +599,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugMonitoringActDrugMonitoringActStatusCodeP"),
 						new Object[] { drugMonitoringAct }));
 			}
 
@@ -658,7 +665,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugMonitoringActDrugMonitoringActEffectiveTime"),
 						new Object[] { drugMonitoringAct }));
 			}
 
@@ -721,7 +729,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT,
-						ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActParticipant"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DrugMonitoringActDrugMonitoringActParticipant"),
 						new Object[] { drugMonitoringAct }));
 			}
 
@@ -790,7 +799,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_CLASS_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"DrugMonitoringActDrugMonitoringActParticipantParticipantRolePlayingEntityClassCode"),
 							new Object[] { eObject }));
 				}
@@ -861,7 +870,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY_NAME,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"DrugMonitoringActDrugMonitoringActParticipantParticipantRolePlayingEntityName"),
 							new Object[] { eObject }));
 				}
@@ -932,7 +941,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_CLASS_CODE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"DrugMonitoringActDrugMonitoringActParticipantParticipantRoleClassCode"),
 							new Object[] { eObject }));
 				}
@@ -1003,7 +1012,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_ID,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"DrugMonitoringActDrugMonitoringActParticipantParticipantRoleId"),
 							new Object[] { eObject }));
 				}
@@ -1074,7 +1083,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE_PLAYING_ENTITY,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"DrugMonitoringActDrugMonitoringActParticipantParticipantRolePlayingEntity"),
 							new Object[] { eObject }));
 				}
@@ -1145,7 +1154,8 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_TYPE_CODE,
-							ConsolPlugin.INSTANCE.getString("DrugMonitoringActDrugMonitoringActParticipantTypeCode"),
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+								"DrugMonitoringActDrugMonitoringActParticipantTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -1215,7 +1225,7 @@ public class DrugMonitoringActOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.DRUG_MONITORING_ACT__DRUG_MONITORING_ACT_PARTICIPANT_PARTICIPANT_ROLE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"DrugMonitoringActDrugMonitoringActParticipantParticipantRole"),
 							new Object[] { eObject }));
 				}

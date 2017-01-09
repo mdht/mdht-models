@@ -20,7 +20,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.CoverageActivity2;
 import org.openhealthtools.mdht.uml.cda.consol.PayersSection2;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -161,7 +160,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PayersSection2PayersSectionTemplateId"),
 						new Object[] { payersSection2 }));
 			}
 
@@ -224,7 +224,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PayersSection2PayersSectionCodeP"),
 						new Object[] { payersSection2 }));
 			}
 
@@ -310,7 +311,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PayersSection2PayersSectionCode"),
 						new Object[] { payersSection2 }));
 			}
 
@@ -373,7 +375,8 @@ public class PayersSection2Operations extends PayersSectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.PAYERS_SECTION2__PAYERS_SECTION_COVERAGE_ACTIVITY,
-						ConsolPlugin.INSTANCE.getString("PayersSection2PayersSectionCoverageActivity"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"PayersSection2PayersSectionCoverageActivity"),
 						new Object[] { payersSection2 }));
 			}
 

@@ -24,7 +24,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.consol.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
@@ -121,7 +120,8 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationsSectionMedicationsSectionCode"),
 						new Object[] { medicationsSection }));
 			}
 
@@ -184,7 +184,8 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationsSectionMedicationsSectionTitle"),
 						new Object[] { medicationsSection }));
 			}
 
@@ -247,7 +248,8 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationsSectionMedicationsSectionText"),
 						new Object[] { medicationsSection }));
 			}
 
@@ -310,7 +312,8 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_MEDICATION,
-						ConsolPlugin.INSTANCE.getString("MedicationsSectionMedicationsSectionMedication"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MedicationsSectionMedicationsSectionMedication"),
 						new Object[] { medicationsSection }));
 			}
 
@@ -422,7 +425,7 @@ public class MedicationsSectionOperations extends MedicationsSectionEntriesOptio
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MEDICATIONS_SECTION__MEDICATIONS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MedicationsSectionMedicationsSectionEntriesOptionalTemplateId"),
 						new Object[] { medicationsSection }));
 			}

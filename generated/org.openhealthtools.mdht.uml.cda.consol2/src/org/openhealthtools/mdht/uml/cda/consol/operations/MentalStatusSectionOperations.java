@@ -22,7 +22,6 @@ import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.AssessmentScaleObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusObservation2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusOrganizer2;
 import org.openhealthtools.mdht.uml.cda.consol.MentalStatusSection;
@@ -124,7 +123,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MentalStatusSectionMentalStatusSectionTemplateId"),
 						new Object[] { mentalStatusSection }));
 			}
 
@@ -189,7 +189,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MentalStatusSectionMentalStatusSectionCode"),
 						new Object[] { mentalStatusSection }));
 			}
 
@@ -252,7 +253,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MentalStatusSectionMentalStatusSectionCodeP"),
 						new Object[] { mentalStatusSection }));
 			}
 
@@ -315,7 +317,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MentalStatusSectionMentalStatusSectionTitle"),
 						new Object[] { mentalStatusSection }));
 			}
 
@@ -378,7 +381,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MentalStatusSectionMentalStatusSectionText"),
 						new Object[] { mentalStatusSection }));
 			}
 
@@ -443,7 +447,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_ASSESSMENT_SCALE_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MentalStatusSectionMentalStatusSectionAssessmentScaleObservation"),
 						new Object[] { mentalStatusSection }));
 			}
@@ -509,7 +513,8 @@ public class MentalStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_MENTAL_STATUS_ORGANIZER2,
-						ConsolPlugin.INSTANCE.getString("MentalStatusSectionMentalStatusSectionMentalStatusOrganizer2"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"MentalStatusSectionMentalStatusSectionMentalStatusOrganizer2"),
 						new Object[] { mentalStatusSection }));
 			}
 
@@ -574,7 +579,7 @@ public class MentalStatusSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.MENTAL_STATUS_SECTION__MENTAL_STATUS_SECTION_MENTAL_STATUS_OBSERVATION2,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"MentalStatusSectionMentalStatusSectionMentalStatusObservation2"),
 						new Object[] { mentalStatusSection }));
 			}

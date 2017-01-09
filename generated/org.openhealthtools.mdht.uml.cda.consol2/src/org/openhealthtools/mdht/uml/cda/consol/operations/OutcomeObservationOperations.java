@@ -23,7 +23,6 @@ import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.EntryReference;
 import org.openhealthtools.mdht.uml.cda.consol.OutcomeObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProgressTowardGoalObservation;
@@ -134,7 +133,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROG_TOWARD_GOAL_OBS_INVERSION_IND_IS_TRUE,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"OutcomeObservationOutcomeObservationProgTowardGoalObsInversionIndIsTrue"),
 						new Object[] { outcomeObservation }));
 			}
@@ -198,7 +197,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationTemplateId"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -261,7 +261,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationClassCode"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -324,7 +325,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationMoodCode"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -387,7 +389,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ID,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationId"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -450,7 +453,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationCodeP"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -536,7 +540,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationCode"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -599,7 +604,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationValue"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -664,7 +670,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_REFERENCE_GOAL_OBS,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryReferenceGoalObs"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationEntryReferenceGoalObs"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -729,7 +736,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_REFERENCE_INTERVENTION_ACT,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"OutcomeObservationOutcomeObservationEntryReferenceInterventionAct"),
 						new Object[] { outcomeObservation }));
 			}
@@ -795,7 +802,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_AUTHOR_PARTICIPATION,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationAuthorParticipation"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationAuthorParticipation"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -860,7 +868,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_PROGRESS_TOWARD_GOAL_OBSERVATION,
-						ConsolPlugin.INSTANCE.getString(
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 							"OutcomeObservationOutcomeObservationProgressTowardGoalObservation"),
 						new Object[] { outcomeObservation }));
 			}
@@ -924,7 +932,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationReference"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -989,7 +998,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_ENTRY_RELATIONSHIP,
-						ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationEntryRelationship"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"OutcomeObservationOutcomeObservationEntryRelationship"),
 						new Object[] { outcomeObservation }));
 			}
 
@@ -1058,7 +1068,8 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE_TYPE_CODE,
-							ConsolPlugin.INSTANCE.getString("OutcomeObservationOutcomeObservationReferenceTypeCode"),
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+								"OutcomeObservationOutcomeObservationReferenceTypeCode"),
 							new Object[] { eObject }));
 				}
 
@@ -1128,7 +1139,7 @@ public class OutcomeObservationOperations extends ClinicalStatementOperations {
 						new BasicDiagnostic(
 							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.OUTCOME_OBSERVATION__OUTCOME_OBSERVATION_REFERENCE_EXTERNAL_DOCUMENT_REFERENCE,
-							ConsolPlugin.INSTANCE.getString(
+							org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
 								"OutcomeObservationOutcomeObservationReferenceExternalDocumentReference"),
 							new Object[] { eObject }));
 				}

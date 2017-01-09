@@ -21,7 +21,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.VitalSignObservation;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -129,7 +128,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TEXT_REFERENCE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationTextReference"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationTextReference"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -194,7 +194,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationReferenceValue"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -259,7 +260,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TEXT_REFERENCE_VALUE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationTextReferenceValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationTextReferenceValue"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -324,7 +326,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationTemplateId"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -388,7 +391,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_CLASS_CODE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationClassCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationClassCode"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -452,7 +456,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_MOOD_CODE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationMoodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationMoodCode"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -515,7 +520,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_ID,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationId"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -578,7 +584,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationCodeP"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -664,7 +671,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_CODE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationCode"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -730,7 +738,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_STATUS_CODE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationStatusCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationStatusCode"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -795,7 +804,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_STATUS_CODE_P,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationStatusCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationStatusCodeP"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -860,7 +870,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationEffectiveTime"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationEffectiveTime"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -923,7 +934,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_VALUE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationValue"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationValue"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -988,7 +1000,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_INTERPRETATION_CODE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationInterpretationCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationInterpretationCode"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -1053,7 +1066,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_METHOD_CODE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationMethodCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationMethodCode"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -1118,7 +1132,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TARGET_SITE_CODE,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationTargetSiteCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationTargetSiteCode"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -1181,7 +1196,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_TEXT,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationText"),
 						new Object[] { vitalSignObservation }));
 			}
 
@@ -1244,7 +1260,8 @@ public class VitalSignObservationOperations extends ClinicalStatementOperations 
 					new BasicDiagnostic(
 						Diagnostic.INFO, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.VITAL_SIGN_OBSERVATION__VITAL_SIGN_OBSERVATION_AUTHOR,
-						ConsolPlugin.INSTANCE.getString("VitalSignObservationVitalSignObservationAuthor"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"VitalSignObservationVitalSignObservationAuthor"),
 						new Object[] { vitalSignObservation }));
 			}
 

@@ -20,7 +20,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin;
 import org.openhealthtools.mdht.uml.cda.consol.DischargeDietSection;
 import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
 
@@ -115,7 +114,8 @@ public class DischargeDietSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_TEMPLATE_ID,
-						ConsolPlugin.INSTANCE.getString("DischargeDietSectionDischargeDietSectionTemplateId"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DischargeDietSectionDischargeDietSectionTemplateId"),
 						new Object[] { dischargeDietSection }));
 			}
 
@@ -180,7 +180,8 @@ public class DischargeDietSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_CODE,
-						ConsolPlugin.INSTANCE.getString("DischargeDietSectionDischargeDietSectionCode"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DischargeDietSectionDischargeDietSectionCode"),
 						new Object[] { dischargeDietSection }));
 			}
 
@@ -243,7 +244,8 @@ public class DischargeDietSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_CODE_P,
-						ConsolPlugin.INSTANCE.getString("DischargeDietSectionDischargeDietSectionCodeP"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DischargeDietSectionDischargeDietSectionCodeP"),
 						new Object[] { dischargeDietSection }));
 			}
 
@@ -306,7 +308,8 @@ public class DischargeDietSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_TITLE,
-						ConsolPlugin.INSTANCE.getString("DischargeDietSectionDischargeDietSectionTitle"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DischargeDietSectionDischargeDietSectionTitle"),
 						new Object[] { dischargeDietSection }));
 			}
 
@@ -369,7 +372,8 @@ public class DischargeDietSectionOperations extends SectionOperations {
 					new BasicDiagnostic(
 						Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
 						ConsolValidator.DISCHARGE_DIET_SECTION__DISCHARGE_DIET_SECTION_TEXT,
-						ConsolPlugin.INSTANCE.getString("DischargeDietSectionDischargeDietSectionText"),
+						org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin.INSTANCE.getString(
+							"DischargeDietSectionDischargeDietSectionText"),
 						new Object[] { dischargeDietSection }));
 			}
 
