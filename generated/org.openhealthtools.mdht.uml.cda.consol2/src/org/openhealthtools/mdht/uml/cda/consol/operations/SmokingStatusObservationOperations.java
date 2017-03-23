@@ -771,7 +771,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_IVLTS_CENTER,
 							ConsolPlugin.INSTANCE.getString(
 								"SmokingStatusObservationSmokingStatusObservationIVLTSCenter"),
@@ -821,7 +821,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_IVLTS_HIGH,
 							ConsolPlugin.INSTANCE.getString(
 								"SmokingStatusObservationSmokingStatusObservationIVLTSHigh"),
@@ -871,7 +871,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_IVLTS_LOW,
 							ConsolPlugin.INSTANCE.getString("SmokingStatusObservationSmokingStatusObservationIVLTSLow"),
 							new Object[] { eObject }));
@@ -920,7 +920,7 @@ public class SmokingStatusObservationOperations extends ClinicalStatementOperati
 				for (EObject eObject : oclResultSet) {
 					diagnostics.add(
 						new BasicDiagnostic(
-							Diagnostic.ERROR, ConsolValidator.DIAGNOSTIC_SOURCE,
+							Diagnostic.WARNING, ConsolValidator.DIAGNOSTIC_SOURCE,
 							ConsolValidator.SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_IVLTS_WIDTH,
 							ConsolPlugin.INSTANCE.getString(
 								"SmokingStatusObservationSmokingStatusObservationIVLTSWidth"),
