@@ -235,9 +235,8 @@ public class AllergyObservationTest extends CDAValidationTest {
 				target.setCode(createCDWithOriginalTextReference("Some sample text", "#1.2.3.4"));
 
 				// add the observation to a section, as required by the constraint, that has text that we can reference
-				addText(
-					createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class), "",
-					"No particular health status observed.");
+				addText(createSectionForClinicalStatement(target, ConsolPackage.eINSTANCE, GeneralStatusSection.class),
+					"", "No particular health status observed.");
 
 			}
 

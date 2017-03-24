@@ -406,7 +406,6 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-
 	public void testValidateSmokingStatusObservationEffectiveTime() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationEffectiveTimeTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
 			"validateSmokingStatusObservationEffectiveTime", operationsForOCL.getOCLValue(
@@ -444,7 +443,6 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-
 	public void testValidateSmokingStatusObservationIVLTSCenter() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationIVLTSCenterTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
 			"validateSmokingStatusObservationIVLTSCenter", operationsForOCL.getOCLValue(
@@ -460,7 +458,6 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 
 			@Override
 			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
-
 				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
 			}
 
@@ -481,7 +478,6 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-
 	public void testValidateSmokingStatusObservationIVLTSHigh() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationIVLTSHighTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
 			"validateSmokingStatusObservationIVLTSHigh", operationsForOCL.getOCLValue(
@@ -498,7 +494,6 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 			@Override
 			protected void updateToPass(SmokingStatusMeaningfulUse2 target) {
 				target.setEffectiveTime(DatatypesFactory.eINSTANCE.createIVL_TS());
-
 			}
 
 			@Override
@@ -518,7 +513,6 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-
 	public void testValidateSmokingStatusObservationIVLTSLow() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationIVLTSLowTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
 			"validateSmokingStatusObservationIVLTSLow", operationsForOCL.getOCLValue(
@@ -554,7 +548,6 @@ public class SmokingStatusMeaningfulUse2Test extends CDAValidationTest {
 	* @generated NOT
 	*/
 	@Test
-
 	public void testValidateSmokingStatusObservationIVLTSWidth() {
 		OperationsTestCase<SmokingStatusMeaningfulUse2> validateSmokingStatusObservationIVLTSWidthTestCase = new OperationsTestCase<SmokingStatusMeaningfulUse2>(
 			"validateSmokingStatusObservationIVLTSWidth", operationsForOCL.getOCLValue(

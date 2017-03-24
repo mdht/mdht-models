@@ -529,7 +529,7 @@ The smoking status value set includes a special code to communicate if the smoki
   <CDA:PropertyValidation xmi:id="_BYK8QOWUEeGKmvzED_He2w" base_Property="_Yz0EIOWQEeGKmvzED_He2w">
     <ruleId>CONF:14808</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_R6jJcOWUEeGKmvzED_He2w" message="Consol Smoking Status Observation SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot; (CONF:14814, R2.0=CONF:1098-31928, DSTU:596, DSTU:597) Note: This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to just a time stamp, and will approximately correspond with the author/time. " base_Property="_Yz0EIeWQEeGKmvzED_He2w">
+  <CDA:PropertyValidation xmi:id="_R6jJcOWUEeGKmvzED_He2w" message="Consol Smoking Status Observation SHALL contain exactly one [1..1] effectiveTime (CONF:14814, DSTU:596-relaxed-to-warning, DSTU:597)" base_Property="_Yz0EIeWQEeGKmvzED_He2w">
     <ruleId>CONF:14814</ruleId>
     <ruleId>DSTU:596-relaxed-to-warning</ruleId>
     <ruleId>DSTU:597</ruleId>
@@ -1339,19 +1339,19 @@ The effectiveTime element is used to describe dates associated with the patient'
   <CDA:PropertyValidation xmi:id="_4rmWYM80EeSJsu9BbhWxmQ" base_Property="_1XI8AM80EeSJsu9BbhWxmQ">
     <ruleId>CONF:1098-32400</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_pnuJYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a center (DSTU:596-relaxed-to-warning, DSTU:597)" severity="WARNING" negationIndicator="true" base_Property="_jfV14O3yEeSQmpVKea6s3Q">
+  <CDA:PropertyValidation xmi:id="_pnuJYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a center (DSTU:596-relaxed-to-warning, DSTU:597) Note: This template is encouraged to represent a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime should be a time stamp, and will approximately correspond with the author/time. " severity="WARNING" negationIndicator="true" base_Property="_jfV14O3yEeSQmpVKea6s3Q">
     <ruleId>DSTU:596-relaxed-to-warning</ruleId>
     <ruleId>DSTU:597</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_qFj78O3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a high (DSTU:596-relaxed-to-warning, DSTU:597)" severity="WARNING" negationIndicator="true" base_Property="_jfV14-3yEeSQmpVKea6s3Q">
+  <CDA:PropertyValidation xmi:id="_qFj78O3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a high (DSTU:596-relaxed-to-warning, DSTU:597) Note: This template is encouraged to represent a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime should be a time stamp, and will approximately correspond with the author/time. " severity="WARNING" negationIndicator="true" base_Property="_jfV14-3yEeSQmpVKea6s3Q">
     <ruleId>DSTU:596-relaxed-to-warning</ruleId>
     <ruleId>DSTU:597</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_qyCAYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a low (DSTU:596-relaxed-to-warning, DSTU:597)" severity="WARNING" negationIndicator="true" base_Property="_jfV15u3yEeSQmpVKea6s3Q">
+  <CDA:PropertyValidation xmi:id="_qyCAYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a low (DSTU:596-relaxed-to-warning, DSTU:597) Note: This template is encouraged to represent a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime should be a time stamp, and will approximately correspond with the author/time. " severity="WARNING" negationIndicator="true" base_Property="_jfV15u3yEeSQmpVKea6s3Q">
     <ruleId>DSTU:596-relaxed-to-warning</ruleId>
     <ruleId>DSTU:597</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_rGOuwO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a width (DSTU:596-relaxed-to-warning, DSTU:597)" severity="WARNING" negationIndicator="true" base_Property="_jfV16e3yEeSQmpVKea6s3Q">
+  <CDA:PropertyValidation xmi:id="_rGOuwO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a width (DSTU:596-relaxed-to-warning, DSTU:597) Note: This template is encouraged to represent a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime should be a time stamp, and will approximately correspond with the author/time. " severity="WARNING" negationIndicator="true" base_Property="_jfV16e3yEeSQmpVKea6s3Q">
     <ruleId>DSTU:596-relaxed-to-warning</ruleId>
     <ruleId>DSTU:597</ruleId>
   </CDA:PropertyValidation>
@@ -1477,7 +1477,7 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ruleId>CONF:3250-32947</ruleId>
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_pJl6gD-uEeaJttsCYk-pKw"/>
   </CDA:ValueSetConstraint>
-  <CDA:PropertyValidation xmi:id="_EaonoA8lEeecs5O6JXLprw" message="Consol Smoking Status Observation SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot; (CONF:14814, R2.0=CONF:1098-31928, DSTU:596, DSTU:597) Note: This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to just a time stamp, and will approximately correspond with the author/time. " base_Property="_EaXh4A8lEeecs5O6JXLprw">
+  <CDA:PropertyValidation xmi:id="_EaonoA8lEeecs5O6JXLprw" message="Consol Smoking Status Meaningful Use2 SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot; (CONF:1098-31928, DSTU:596, DSTU:597) Note: This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to just a time stamp, and will approximately correspond with the author/time. " base_Property="_EaXh4A8lEeecs5O6JXLprw">
     <ruleId>CONF:1098-31928</ruleId>
     <ruleId>DSTU:596</ruleId>
     <ruleId>DSTU:597</ruleId>
