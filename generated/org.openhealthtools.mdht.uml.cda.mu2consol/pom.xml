@@ -88,6 +88,7 @@
 				<inherited>true</inherited>
 				<version>2.5.4</version>
 				<configuration>
+                                        <tarLongFileMode>posix</tarLongFileMode>
 					<descriptors>
 						<descriptor>${project.parent.basedir}/runtimeassembly.xml</descriptor>
 					</descriptors>

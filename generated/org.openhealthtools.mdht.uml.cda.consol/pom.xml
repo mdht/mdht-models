@@ -87,7 +87,8 @@
 				<artifactId>maven-assembly-plugin</artifactId>
 				<inherited>true</inherited>
 				<version>2.5.4</version>
-				<configuration>
+                                <configuration>
+                                        <tarLongFileMode>posix</tarLongFileMode>
 					<descriptors>
 						<descriptor>${project.parent.basedir}/runtimeassembly.xml</descriptor>
 					</descriptors>
