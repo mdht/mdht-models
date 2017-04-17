@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.AuthorizationActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.AuthorizationActivityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Authorization Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -78,7 +76,8 @@ public class AuthorizationActivityImpl extends ActImpl implements AuthorizationA
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAuthorizationActivityHasPerformers(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAuthorizationActivityHasPerformers(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AuthorizationActivityOperations.validateAuthorizationActivityHasPerformers(this, diagnostics, context);
 	}
 

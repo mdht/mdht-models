@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.Purpose;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PurposeOperations;
@@ -63,66 +63,69 @@ public class PurposeTest extends  CDAValidationTest {
  
 									
 public void testValidatePurposeSectionTemplateId() {
-      OperationsTestCase<Purpose> validatePurposeSectionTemplateIdTestCase = new OperationsTestCase<Purpose>(
-      "validatePurposeSectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PURPOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<Purpose> validatePurposeSectionTemplateIdTestCase = new OperationsTestCase<Purpose>(
+			"validatePurposeSectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PURPOSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(Purpose target) {
+			@Override
+			protected void updateToFail(Purpose target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(Purpose target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(Purpose target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PurposeOperations.validatePurposeSectionTemplateId(
-          (Purpose) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PurposeOperations.validatePurposeSectionTemplateId(
+					(Purpose) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePurposeSectionTemplateIdTestCase.doValidationTest();
+		validatePurposeSectionTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -151,6 +154,7 @@ public void testValidatePurposeSectionTemplateId() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<Purpose> {
+		@Override
 		public Purpose create() {		
 			return PhmrFactory.eINSTANCE.createPurpose();
 		}
@@ -182,9 +186,9 @@ public void testValidatePurposeSectionTemplateId() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -194,8 +198,8 @@ public void testValidatePurposeSectionTemplateId() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

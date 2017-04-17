@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -39,7 +32,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
 import org.openhealthtools.mdht.uml.cda.sdtm.VitalSign;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -104,7 +96,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class VitalSignOperations extends ClinicalStatementOperations {
+public class VitalSignOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -133,7 +133,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -148,25 +148,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignTemplateId(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -194,7 +204,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -209,25 +219,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignClassCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -255,7 +275,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -270,25 +290,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignMoodCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -316,7 +346,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -331,25 +361,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignId(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -379,7 +419,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -394,25 +434,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -440,7 +490,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -455,25 +505,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignStatusCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -501,7 +561,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -516,25 +576,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignEffectiveTime(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -562,7 +632,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -577,25 +647,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignValue(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -623,7 +703,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -638,25 +718,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignInterpretationCodeP(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_INTERPRETATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -686,7 +776,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -701,25 +791,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignInterpretationCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -747,7 +847,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -762,25 +862,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignTargetSiteCodeP(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_TARGET_SITE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignTargetSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignTargetSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -810,7 +920,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -825,25 +935,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignTargetSiteCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_TARGET_SITE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -871,7 +991,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -886,25 +1006,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignEventStudyDay(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_EVENT_STUDY_DAY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -932,7 +1062,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -947,25 +1077,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignTimingReference(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_TIMING_REFERENCE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -993,7 +1133,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1008,25 +1148,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignNonPerformanceReason(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1054,7 +1204,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1069,25 +1219,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignConsciousnessState(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_CONSCIOUSNESS_STATE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignConsciousnessState", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignConsciousnessState", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1115,7 +1275,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1130,25 +1290,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignPlannedStudyDay(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_PLANNED_STUDY_DAY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1176,7 +1346,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1191,25 +1361,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignStudyDayPeriod(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_STUDY_DAY_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1237,7 +1417,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1252,25 +1432,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignExclusionReason(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_EXCLUSION_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignExclusionReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignExclusionReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1298,7 +1488,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1313,25 +1503,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignGroupIdentifier(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1359,7 +1559,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1374,25 +1574,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignComment(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1420,7 +1630,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1435,25 +1645,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignDomainAssignment(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1481,7 +1701,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1496,25 +1716,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignRelatedRecord(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1542,7 +1772,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1557,25 +1787,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignSupplementalValue(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1603,7 +1843,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1618,25 +1858,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignCategory(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1664,7 +1914,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1679,25 +1929,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignSubCategory(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1725,7 +1985,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1740,25 +2000,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignPositionofSubject(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_POSITIONOF_SUBJECT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignPositionofSubject", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignPositionofSubject", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1786,7 +2056,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGN_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGN_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1801,25 +2071,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignFindingAbout(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGN_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGN_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGN_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGN_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGN_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGN_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGN_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGN_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGN_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1847,7 +2127,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1862,25 +2142,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignassociatedConsciousnessconsciousnessStateClassCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignassociatedConsciousnessconsciousnessStateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignassociatedConsciousnessconsciousnessStateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1908,7 +2198,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1923,25 +2213,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignassociatedConsciousnessconsciousnessStateCodeP(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignassociatedConsciousnessconsciousnessStateCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignassociatedConsciousnessconsciousnessStateCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -1971,7 +2271,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1986,25 +2286,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignassociatedConsciousnessconsciousnessStateCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignassociatedConsciousnessconsciousnessStateCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignassociatedConsciousnessconsciousnessStateCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -2032,7 +2342,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2047,25 +2357,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignassociatedConsciousnessconsciousnessStateMoodCode(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignassociatedConsciousnessconsciousnessStateMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignassociatedConsciousnessconsciousnessStateMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -2095,7 +2415,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2110,25 +2430,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignassociatedConsciousnessconsciousnessStateValue(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignassociatedConsciousnessconsciousnessStateValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignassociatedConsciousnessconsciousnessStateValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -2156,7 +2486,7 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2171,25 +2501,35 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateVitalSignassociatedConsciousnessconsciousnessStateValueP(VitalSign vitalSign, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.VITAL_SIGN);
 			try {
-				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(vitalSign)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vitalSign)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.VITAL_SIGN__VITAL_SIGNASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignassociatedConsciousnessconsciousnessStateValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "VitalSignVitalSignassociatedConsciousnessconsciousnessStateValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(vitalSign, context) }),
 						 new Object [] { vitalSign }));
 			}
 			 
@@ -2225,8 +2565,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EventStudyDay getEventStudyDay(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_EVENT_STUDY_DAY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(85));
 			try {
 				GET_EVENT_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_EVENT_STUDY_DAY__EOCL_EXP);
@@ -2234,8 +2579,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_STUDY_DAY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_STUDY_DAY__EOCL_QRY);
 		return (EventStudyDay) query.evaluate(vitalSign);
 	}
 
@@ -2266,8 +2612,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  TimingReference getTimingReference(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_TIMING_REFERENCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(86));
 			try {
 				GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -2275,8 +2626,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
 		return (TimingReference) query.evaluate(vitalSign);
 	}
 
@@ -2307,8 +2659,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(87));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -2316,8 +2673,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(vitalSign);
 	}
 
@@ -2348,8 +2706,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  PlannedStudyDay getPlannedStudyDay(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_PLANNED_STUDY_DAY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(88));
 			try {
 				GET_PLANNED_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_PLANNED_STUDY_DAY__EOCL_EXP);
@@ -2357,8 +2720,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
 		return (PlannedStudyDay) query.evaluate(vitalSign);
 	}
 
@@ -2389,8 +2753,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StudyDayPeriod getStudyDayPeriod(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(89));
 			try {
 				GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);
@@ -2398,8 +2767,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
 		return (StudyDayPeriod) query.evaluate(vitalSign);
 	}
 
@@ -2430,8 +2800,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  ExclusionReason getExclusionReason(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_EXCLUSION_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(90));
 			try {
 				GET_EXCLUSION_REASON__EOCL_QRY = helper.createQuery(GET_EXCLUSION_REASON__EOCL_EXP);
@@ -2439,8 +2814,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EXCLUSION_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EXCLUSION_REASON__EOCL_QRY);
 		return (ExclusionReason) query.evaluate(vitalSign);
 	}
 
@@ -2471,8 +2847,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(91));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -2480,8 +2861,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(vitalSign);
 	}
 
@@ -2512,8 +2894,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<Comment> getComments(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(92));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -2521,8 +2908,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(vitalSign);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -2555,8 +2943,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(93));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -2564,8 +2957,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(vitalSign);
 	}
 
@@ -2596,8 +2990,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(94));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -2605,8 +3004,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(vitalSign);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -2639,8 +3039,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(95));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -2648,8 +3053,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(vitalSign);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -2682,8 +3088,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Category getCategory(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(96));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -2691,8 +3102,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(vitalSign);
 	}
 
@@ -2723,8 +3135,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SubCategory getSubCategory(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(97));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -2732,8 +3149,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(vitalSign);
 	}
 
@@ -2764,8 +3182,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  PositionofSubject getPositionofSubject(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_POSITIONOF_SUBJECT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(98));
 			try {
 				GET_POSITIONOF_SUBJECT__EOCL_QRY = helper.createQuery(GET_POSITIONOF_SUBJECT__EOCL_EXP);
@@ -2773,8 +3196,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_POSITIONOF_SUBJECT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_POSITIONOF_SUBJECT__EOCL_QRY);
 		return (PositionofSubject) query.evaluate(vitalSign);
 	}
 
@@ -2805,8 +3229,13 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(VitalSign vitalSign) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.VITAL_SIGN, SdtmPackage.Literals.VITAL_SIGN.getEAllOperations().get(99));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -2814,8 +3243,9 @@ public class VitalSignOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(vitalSign);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

@@ -11,16 +11,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowComaScoreOrganizer;
@@ -29,10 +24,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowMotor;
 import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowQualifier;
 import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowTotal;
 import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowVerbal;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -59,7 +51,14 @@ import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
  *
  * @generated
  */
-public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
+public class GlasgowComaScoreOrganizerOperations extends org.eclipse.mdht.uml.cda.operations.OrganizerOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -88,7 +87,7 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -104,26 +103,38 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	public static boolean validateGlasgowComaScoreOrganizerGlasgowEye(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER);
 			try {
-				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			glasgowComaScoreOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE,
-					EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowEye"),
-					new Object[] { glasgowComaScoreOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(glasgowComaScoreOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_EYE,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowComaScoreOrganizerGlasgowEye"),
+						 new Object [] { glasgowComaScoreOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -148,7 +159,7 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -164,26 +175,38 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	public static boolean validateGlasgowComaScoreOrganizerGlasgowMotor(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER);
 			try {
-				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			glasgowComaScoreOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR,
-					EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowMotor"),
-					new Object[] { glasgowComaScoreOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(glasgowComaScoreOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_MOTOR,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowComaScoreOrganizerGlasgowMotor"),
+						 new Object [] { glasgowComaScoreOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -208,7 +231,7 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -224,27 +247,38 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	public static boolean validateGlasgowComaScoreOrganizerGlasgowQualifier(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER);
 			try {
-				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			glasgowComaScoreOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER,
-					EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowQualifier"),
-					new Object[] { glasgowComaScoreOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(glasgowComaScoreOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_QUALIFIER,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowComaScoreOrganizerGlasgowQualifier"),
+						 new Object [] { glasgowComaScoreOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -269,7 +303,7 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -285,26 +319,38 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	public static boolean validateGlasgowComaScoreOrganizerGlasgowTotal(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER);
 			try {
-				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			glasgowComaScoreOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL,
-					EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowTotal"),
-					new Object[] { glasgowComaScoreOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(glasgowComaScoreOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.WARNING,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_TOTAL,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowComaScoreOrganizerGlasgowTotal"),
+						 new Object [] { glasgowComaScoreOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -329,7 +375,7 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -345,26 +391,38 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	public static boolean validateGlasgowComaScoreOrganizerGlasgowVerbal(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER);
 			try {
-				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			glasgowComaScoreOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL,
-					EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowVerbal"),
-					new Object[] { glasgowComaScoreOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(glasgowComaScoreOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_GLASGOW_VERBAL,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowComaScoreOrganizerGlasgowVerbal"),
+						 new Object [] { glasgowComaScoreOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -389,7 +447,7 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -405,26 +463,38 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	public static boolean validateGlasgowComaScoreOrganizerTemplateId(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER);
 			try {
-				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			glasgowComaScoreOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerTemplateId"),
-					new Object[] { glasgowComaScoreOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(glasgowComaScoreOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowComaScoreOrganizerTemplateId"),
+						 new Object [] { glasgowComaScoreOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -449,7 +519,7 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -465,26 +535,38 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	public static boolean validateGlasgowComaScoreOrganizerEffectiveTime(
 			GlasgowComaScoreOrganizer glasgowComaScoreOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER);
 			try {
-				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			glasgowComaScoreOrganizer)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME,
-					EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerEffectiveTime"),
-					new Object[] { glasgowComaScoreOrganizer }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(glasgowComaScoreOrganizer)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.GLASGOW_COMA_SCORE_ORGANIZER__GLASGOW_COMA_SCORE_ORGANIZER_EFFECTIVE_TIME,
+						 EmspcrPlugin.INSTANCE.getString("GlasgowComaScoreOrganizerGlasgowComaScoreOrganizerEffectiveTime"),
+						 new Object [] { glasgowComaScoreOrganizer }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -517,18 +599,23 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 */
 
 	public static GlasgowEye getGlasgowEye(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer) {
+	
+	
+	
 		if (GET_GLASGOW_EYE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER,
-				EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER.getEAllOperations().get(59));
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER, EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER.getEAllOperations().get(59));
 			try {
 				GET_GLASGOW_EYE__EOCL_QRY = helper.createQuery(GET_GLASGOW_EYE__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GLASGOW_EYE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GLASGOW_EYE__EOCL_QRY);
 		return (GlasgowEye) query.evaluate(glasgowComaScoreOrganizer);
 	}
 
@@ -559,18 +646,23 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 */
 
 	public static GlasgowMotor getGlasgowMotor(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer) {
+	
+	
+	
 		if (GET_GLASGOW_MOTOR__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER,
-				EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER.getEAllOperations().get(60));
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER, EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER.getEAllOperations().get(60));
 			try {
 				GET_GLASGOW_MOTOR__EOCL_QRY = helper.createQuery(GET_GLASGOW_MOTOR__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GLASGOW_MOTOR__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GLASGOW_MOTOR__EOCL_QRY);
 		return (GlasgowMotor) query.evaluate(glasgowComaScoreOrganizer);
 	}
 
@@ -601,18 +693,23 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 */
 
 	public static GlasgowQualifier getGlasgowQualifier(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer) {
+	
+	
+	
 		if (GET_GLASGOW_QUALIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER,
-				EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER.getEAllOperations().get(61));
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER, EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER.getEAllOperations().get(61));
 			try {
 				GET_GLASGOW_QUALIFIER__EOCL_QRY = helper.createQuery(GET_GLASGOW_QUALIFIER__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GLASGOW_QUALIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GLASGOW_QUALIFIER__EOCL_QRY);
 		return (GlasgowQualifier) query.evaluate(glasgowComaScoreOrganizer);
 	}
 
@@ -643,18 +740,23 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 */
 
 	public static GlasgowTotal getGlasgowTotal(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer) {
+	
+	
+	
 		if (GET_GLASGOW_TOTAL__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER,
-				EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER.getEAllOperations().get(62));
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER, EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER.getEAllOperations().get(62));
 			try {
 				GET_GLASGOW_TOTAL__EOCL_QRY = helper.createQuery(GET_GLASGOW_TOTAL__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GLASGOW_TOTAL__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GLASGOW_TOTAL__EOCL_QRY);
 		return (GlasgowTotal) query.evaluate(glasgowComaScoreOrganizer);
 	}
 
@@ -685,18 +787,23 @@ public class GlasgowComaScoreOrganizerOperations extends OrganizerOperations {
 	 */
 
 	public static GlasgowVerbal getGlasgowVerbal(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer) {
+	
+	
+	
 		if (GET_GLASGOW_VERBAL__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER,
-				EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER.getEAllOperations().get(63));
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER, EmspcrPackage.Literals.GLASGOW_COMA_SCORE_ORGANIZER.getEAllOperations().get(63));
 			try {
 				GET_GLASGOW_VERBAL__EOCL_QRY = helper.createQuery(GET_GLASGOW_VERBAL__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GLASGOW_VERBAL__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GLASGOW_VERBAL__EOCL_QRY);
 		return (GlasgowVerbal) query.evaluate(glasgowComaScoreOrganizer);
 	}
 

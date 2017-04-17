@@ -6,17 +6,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSSceneSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.FirstUnitIndicator;
@@ -24,21 +18,16 @@ import org.openhealthtools.mdht.uml.cda.emspcr.FirstUnitOnScene;
 import org.openhealthtools.mdht.uml.cda.emspcr.LocationTypeObservation;
 import org.openhealthtools.mdht.uml.cda.emspcr.MassCasualtyIndicator;
 import org.openhealthtools.mdht.uml.cda.emspcr.ScenePatientCount;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSSceneSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Scene Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EMSSceneSectionImpl extends SectionImpl implements EMSSceneSection {
+public class EMSSceneSectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl implements EMSSceneSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -191,16 +180,16 @@ public class EMSSceneSectionImpl extends SectionImpl implements EMSSceneSection 
 	 * @generated
 	 */
 	public EMSSceneSection init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSSceneSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public EMSSceneSection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EMSSceneSectionImpl

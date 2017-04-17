@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ConsumableOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.ConsumableMaterial;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -53,7 +47,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class ConsumableMaterialOperations extends ConsumableOperations {
+public class ConsumableMaterialOperations extends org.eclipse.mdht.uml.cda.operations.ConsumableOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -82,7 +84,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -97,25 +99,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialTemplateId(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -143,7 +155,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -158,25 +170,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialTypeCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -204,7 +226,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -219,25 +241,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedication(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedication", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedication", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -265,7 +297,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -280,25 +312,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassClassCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -326,7 +368,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -341,25 +383,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassDeterminerCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KINDSUBSTANCE_CLASS_DETERMINER_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassDeterminerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialasSpecializedKindsubstanceClassDeterminerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -387,7 +439,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -402,25 +454,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindClassCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialasSpecializedKindClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialasSpecializedKindClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -450,7 +512,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -465,25 +527,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialasSpecializedKindCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialasSpecializedKindCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -511,7 +583,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -526,25 +598,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindCodeP(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialasSpecializedKindCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialasSpecializedKindCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -572,7 +654,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -587,25 +669,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialasSpecializedKindRepresentedOrganization(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALAS_SPECIALIZED_KIND_REPRESENTED_ORGANIZATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialasSpecializedKindRepresentedOrganization", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialasSpecializedKindRepresentedOrganization", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -633,7 +725,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -648,25 +740,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceClassCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -694,7 +796,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -709,25 +811,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceDeterminerCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_DETERMINER_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceDeterminerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceDeterminerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -757,7 +869,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -772,25 +884,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -818,7 +940,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -833,25 +955,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceCodeP(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLEINGREDIENT_SUBSTANCE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialingredientRoleingredientSubstanceCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -879,7 +1011,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -894,25 +1026,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialingredientRoleClassCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialingredientRoleClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialingredientRoleClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -940,7 +1082,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -955,25 +1097,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialingredientRoleAssignedPerson(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIALINGREDIENT_ROLE_ASSIGNED_PERSON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialingredientRoleAssignedPerson", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialingredientRoleAssignedPerson", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -1001,7 +1153,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1016,25 +1168,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialClassCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -1064,7 +1226,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1079,25 +1241,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -1125,7 +1297,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1140,25 +1312,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialCodeP(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -1186,7 +1368,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1201,25 +1383,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationMedicationMaterialLotNumberText(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_MEDICATION_MATERIAL_LOT_NUMBER_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationMedicationMaterialLotNumberText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationMedicationMaterialLotNumberText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 
@@ -1247,7 +1439,7 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1262,25 +1454,35 @@ public class ConsumableMaterialOperations extends ConsumableOperations {
 	 */
 	
 	public static  boolean validateConsumableMaterialMedicationClassCode(ConsumableMaterial consumableMaterial, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.CONSUMABLE_MATERIAL);
 			try {
-				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(consumableMaterial)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(consumableMaterial)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.CONSUMABLE_MATERIAL__CONSUMABLE_MATERIAL_MEDICATION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialMedicationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ConsumableMaterialConsumableMaterialMedicationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(consumableMaterial, context) }),
 						 new Object [] { consumableMaterial }));
 			}
 			 

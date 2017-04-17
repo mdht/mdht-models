@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.EstimateofGestation;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.EstimateofGestationOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,6 +48,7 @@ public class EstimateofGestationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateEstimateofGestationTemplateId() {
 		OperationsTestCase<EstimateofGestation> validateEstimateofGestationTemplateIdTestCase = new OperationsTestCase<EstimateofGestation>(
 			"validateEstimateofGestationTemplateId",
@@ -79,6 +83,7 @@ public class EstimateofGestationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateEstimateofGestationClassCode() {
 		OperationsTestCase<EstimateofGestation> validateEstimateofGestationClassCodeTestCase = new OperationsTestCase<EstimateofGestation>(
 			"validateEstimateofGestationClassCode",
@@ -113,6 +118,7 @@ public class EstimateofGestationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateEstimateofGestationMoodCode() {
 		OperationsTestCase<EstimateofGestation> validateEstimateofGestationMoodCodeTestCase = new OperationsTestCase<EstimateofGestation>(
 			"validateEstimateofGestationMoodCode",
@@ -147,6 +153,7 @@ public class EstimateofGestationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateEstimateofGestationCodeP() {
 		OperationsTestCase<EstimateofGestation> validateEstimateofGestationCodePTestCase = new OperationsTestCase<EstimateofGestation>(
 			"validateEstimateofGestationCodeP",
@@ -181,6 +188,7 @@ public class EstimateofGestationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateEstimateofGestationCode() {
 		OperationsTestCase<EstimateofGestation> validateEstimateofGestationCodeTestCase = new OperationsTestCase<EstimateofGestation>(
 			"validateEstimateofGestationCode",
@@ -215,6 +223,7 @@ public class EstimateofGestationTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateEstimateofGestationValue() {
 		OperationsTestCase<EstimateofGestation> validateEstimateofGestationValueTestCase = new OperationsTestCase<EstimateofGestation>(
 			"validateEstimateofGestationValue",
@@ -300,8 +309,7 @@ public class EstimateofGestationTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

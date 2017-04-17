@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.LanguageCommunication;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.LanguageCommunicationOperations;
@@ -25,46 +25,45 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.LanguageCommunicationOper
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Language Communication</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class LanguageCommunicationImpl extends org.openhealthtools.mdht.uml.cda.impl.LanguageCommunicationImpl
+public class LanguageCommunicationImpl extends org.eclipse.mdht.uml.cda.impl.LanguageCommunicationImpl
 		implements LanguageCommunication {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected LanguageCommunicationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.LANGUAGE_COMMUNICATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateIHELanguageCommunicationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	 * @generated
+	 */
+	public boolean validateIHELanguageCommunicationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return LanguageCommunicationOperations.validateIHELanguageCommunicationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public LanguageCommunication init() {
 		return Initializer.Util.init(this);
 	}

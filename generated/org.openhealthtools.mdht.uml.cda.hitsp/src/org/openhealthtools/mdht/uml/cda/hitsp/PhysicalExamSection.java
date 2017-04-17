@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.PhysicalExaminationSection;
 
 /**
@@ -26,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.cdt.PhysicalExaminationSection;
  *
  * <!-- begin-model-doc -->
  * <p>
- *     The Physical Examination Section contains information describing the physical findings. 
+ *     The Physical Examination Section contains information describing the physical findings.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -35,8 +33,8 @@ import org.openhealthtools.mdht.uml.cda.cdt.PhysicalExaminationSection;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPPhysicalExamSectionTemplateId HITSPPhysicalExamSectionCondition' templateId.root='2.16.840.1.113883.3.88.11.83.118'"
  * @generated
  */
-public interface PhysicalExamSection extends PhysicalExaminationSection,
-		org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamSection {
+public interface PhysicalExamSection
+		extends PhysicalExaminationSection, org.openhealthtools.mdht.uml.cda.ihe.PhysicalExamSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -82,5 +80,6 @@ public interface PhysicalExamSection extends PhysicalExaminationSection,
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PhysicalExamSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public PhysicalExamSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // PhysicalExamSection

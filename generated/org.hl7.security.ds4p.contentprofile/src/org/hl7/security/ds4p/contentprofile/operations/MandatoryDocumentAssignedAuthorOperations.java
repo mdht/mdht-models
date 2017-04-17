@@ -8,7 +8,6 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 
-import org.eclipse.mdht.uml.cda.operations.AssignedAuthorOperations;
 import org.eclipse.ocl.ParserException;
 
 import org.eclipse.ocl.ecore.Constraint;
@@ -38,7 +37,7 @@ import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
  *
  * @generated
  */
-public class MandatoryDocumentAssignedAuthorOperations extends AssignedAuthorOperations {
+public class MandatoryDocumentAssignedAuthorOperations {
 	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
 		@Override
 		public OCL initialValue() {

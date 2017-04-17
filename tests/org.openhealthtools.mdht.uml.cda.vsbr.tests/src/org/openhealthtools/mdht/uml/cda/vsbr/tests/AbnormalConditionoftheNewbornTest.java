@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.AbnormalConditionoftheNewborn;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.AbnormalConditionoftheNewbornOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,10 +50,12 @@ public class AbnormalConditionoftheNewbornTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAbnormalConditionoftheNewbornTemplateId() {
 		OperationsTestCase<AbnormalConditionoftheNewborn> validateAbnormalConditionoftheNewbornTemplateIdTestCase = new OperationsTestCase<AbnormalConditionoftheNewborn>(
 			"validateAbnormalConditionoftheNewbornTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -81,10 +86,11 @@ public class AbnormalConditionoftheNewbornTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAbnormalConditionoftheNewbornClassCode() {
 		OperationsTestCase<AbnormalConditionoftheNewborn> validateAbnormalConditionoftheNewbornClassCodeTestCase = new OperationsTestCase<AbnormalConditionoftheNewborn>(
-			"validateAbnormalConditionoftheNewbornClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAbnormalConditionoftheNewbornClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -115,10 +121,11 @@ public class AbnormalConditionoftheNewbornTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAbnormalConditionoftheNewbornMoodCode() {
 		OperationsTestCase<AbnormalConditionoftheNewborn> validateAbnormalConditionoftheNewbornMoodCodeTestCase = new OperationsTestCase<AbnormalConditionoftheNewborn>(
-			"validateAbnormalConditionoftheNewbornMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAbnormalConditionoftheNewbornMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -149,10 +156,11 @@ public class AbnormalConditionoftheNewbornTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAbnormalConditionoftheNewbornCodeP() {
 		OperationsTestCase<AbnormalConditionoftheNewborn> validateAbnormalConditionoftheNewbornCodePTestCase = new OperationsTestCase<AbnormalConditionoftheNewborn>(
-			"validateAbnormalConditionoftheNewbornCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAbnormalConditionoftheNewbornCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -183,10 +191,11 @@ public class AbnormalConditionoftheNewbornTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAbnormalConditionoftheNewbornCode() {
 		OperationsTestCase<AbnormalConditionoftheNewborn> validateAbnormalConditionoftheNewbornCodeTestCase = new OperationsTestCase<AbnormalConditionoftheNewborn>(
-			"validateAbnormalConditionoftheNewbornCode",
-			operationsForOCL.getOCLValue("VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAbnormalConditionoftheNewbornCode", operationsForOCL.getOCLValue(
+				"VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -217,10 +226,11 @@ public class AbnormalConditionoftheNewbornTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAbnormalConditionoftheNewbornCodeVS() {
 		OperationsTestCase<AbnormalConditionoftheNewborn> validateAbnormalConditionoftheNewbornCodeVSTestCase = new OperationsTestCase<AbnormalConditionoftheNewborn>(
-			"validateAbnormalConditionoftheNewbornCodeVS",
-			operationsForOCL.getOCLValue("VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAbnormalConditionoftheNewbornCodeVS", operationsForOCL.getOCLValue(
+				"VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -251,10 +261,11 @@ public class AbnormalConditionoftheNewbornTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAbnormalConditionoftheNewbornValue() {
 		OperationsTestCase<AbnormalConditionoftheNewborn> validateAbnormalConditionoftheNewbornValueTestCase = new OperationsTestCase<AbnormalConditionoftheNewborn>(
-			"validateAbnormalConditionoftheNewbornValue",
-			operationsForOCL.getOCLValue("VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAbnormalConditionoftheNewbornValue", operationsForOCL.getOCLValue(
+				"VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -288,10 +299,11 @@ public class AbnormalConditionoftheNewbornTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateAbnormalConditionoftheNewbornValueP() {
 		OperationsTestCase<AbnormalConditionoftheNewborn> validateAbnormalConditionoftheNewbornValuePTestCase = new OperationsTestCase<AbnormalConditionoftheNewborn>(
-			"validateAbnormalConditionoftheNewbornValueP",
-			operationsForOCL.getOCLValue("VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateAbnormalConditionoftheNewbornValueP", operationsForOCL.getOCLValue(
+				"VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -370,8 +382,7 @@ public class AbnormalConditionoftheNewbornTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

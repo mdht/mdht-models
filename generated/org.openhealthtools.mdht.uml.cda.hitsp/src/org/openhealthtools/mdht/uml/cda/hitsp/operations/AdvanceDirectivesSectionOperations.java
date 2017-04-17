@@ -47,6 +47,13 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedAdvanceDirectivesSec
  * @generated
  */
 public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -75,7 +82,7 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,25 +96,33 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 	 */
 
 	public static boolean validateHITSPAdvanceDirectivesSectionTemplateId(
-			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
 			try {
-				VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			advanceDirectivesSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				advanceDirectivesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.ADVANCE_DIRECTIVES_SECTION__HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPAdvanceDirectivesSectionTemplateId"),
-					new Object[] { advanceDirectivesSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.ADVANCE_DIRECTIVES_SECTION__HITSP_ADVANCE_DIRECTIVES_SECTION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString(
+							"AdvanceDirectivesSectionHITSPAdvanceDirectivesSectionTemplateId"),
+						new Object[] { advanceDirectivesSection }));
 			}
 
 			return false;
@@ -134,7 +149,7 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,26 +163,33 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 	 */
 
 	public static boolean validateHITSPAdvanceDirectivesSectionAdvanceDirective(
-			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ADVANCE_DIRECTIVES_SECTION);
 			try {
-				VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			advanceDirectivesSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				advanceDirectivesSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.ADVANCE_DIRECTIVES_SECTION__HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE,
-					HITSPPlugin.INSTANCE.getString("HITSPAdvanceDirectivesSectionAdvanceDirective"),
-					new Object[] { advanceDirectivesSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.ADVANCE_DIRECTIVES_SECTION__HITSP_ADVANCE_DIRECTIVES_SECTION_ADVANCE_DIRECTIVE,
+						HITSPPlugin.INSTANCE.getString(
+							"AdvanceDirectivesSectionHITSPAdvanceDirectivesSectionAdvanceDirective"),
+						new Object[] { advanceDirectivesSection }));
 			}
 
 			return false;
@@ -201,8 +223,10 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 	 * @generated
 	 */
 	public static EList<AdvanceDirective> getAdvanceDirectives(AdvanceDirectivesSection advanceDirectivesSection) {
+
 		if (GET_ADVANCE_DIRECTIVES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.ADVANCE_DIRECTIVES_SECTION,
 				HITSPPackage.Literals.ADVANCE_DIRECTIVES_SECTION.getEAllOperations().get(67));
@@ -212,7 +236,8 @@ public class AdvanceDirectivesSectionOperations extends CodedAdvanceDirectivesSe
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ADVANCE_DIRECTIVES__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ADVANCE_DIRECTIVES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<AdvanceDirective> result = (Collection<AdvanceDirective>) query.evaluate(advanceDirectivesSection);
 		return new BasicEList.UnmodifiableEList<AdvanceDirective>(result.size(), result.toArray());

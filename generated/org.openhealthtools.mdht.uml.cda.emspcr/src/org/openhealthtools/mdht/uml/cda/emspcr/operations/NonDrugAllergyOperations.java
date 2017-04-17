@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.NonDrugAllergy;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +36,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class NonDrugAllergyOperations extends ClinicalStatementOperations {
+public class NonDrugAllergyOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +72,7 @@ public class NonDrugAllergyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NON_DRUG_ALLERGY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,25 +87,38 @@ public class NonDrugAllergyOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNonDrugAllergyTemplateId(NonDrugAllergy nonDrugAllergy, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_NON_DRUG_ALLERGY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_DRUG_ALLERGY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY);
 			try {
-				VALIDATE_NON_DRUG_ALLERGY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NON_DRUG_ALLERGY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_DRUG_ALLERGY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonDrugAllergy)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NON_DRUG_ALLERGY__NON_DRUG_ALLERGY_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("NonDrugAllergyTemplateId"), new Object[] { nonDrugAllergy }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_DRUG_ALLERGY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonDrugAllergy)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NON_DRUG_ALLERGY__NON_DRUG_ALLERGY_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("NonDrugAllergyNonDrugAllergyTemplateId"),
+						 new Object [] { nonDrugAllergy }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -129,7 +143,7 @@ public class NonDrugAllergyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NON_DRUG_ALLERGY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,25 +158,38 @@ public class NonDrugAllergyOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNonDrugAllergyMoodCode(NonDrugAllergy nonDrugAllergy, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_NON_DRUG_ALLERGY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_DRUG_ALLERGY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY);
 			try {
-				VALIDATE_NON_DRUG_ALLERGY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NON_DRUG_ALLERGY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_DRUG_ALLERGY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			nonDrugAllergy)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NON_DRUG_ALLERGY__NON_DRUG_ALLERGY_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("NonDrugAllergyMoodCode"), new Object[] { nonDrugAllergy }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_DRUG_ALLERGY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonDrugAllergy)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NON_DRUG_ALLERGY__NON_DRUG_ALLERGY_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("NonDrugAllergyNonDrugAllergyMoodCode"),
+						 new Object [] { nonDrugAllergy }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -176,9 +203,9 @@ public class NonDrugAllergyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69748-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69748-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNonDrugAllergyCode(NonDrugAllergy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Drug Allergy Code</em>}' invariant operation.
@@ -189,7 +216,7 @@ public class NonDrugAllergyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,24 +231,38 @@ public class NonDrugAllergyOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNonDrugAllergyCode(NonDrugAllergy nonDrugAllergy, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY);
 			try {
-				VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonDrugAllergy)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NON_DRUG_ALLERGY__NON_DRUG_ALLERGY_CODE,
-					EmspcrPlugin.INSTANCE.getString("NonDrugAllergyCode"), new Object[] { nonDrugAllergy }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_DRUG_ALLERGY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonDrugAllergy)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NON_DRUG_ALLERGY__NON_DRUG_ALLERGY_CODE,
+						 EmspcrPlugin.INSTANCE.getString("NonDrugAllergyNonDrugAllergyCode"),
+						 new Object [] { nonDrugAllergy }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -235,9 +276,9 @@ public class NonDrugAllergyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17059-9' or value.code = 'LA18356-8' or value.code = 'LA18357-6' or value.code = 'LA18358-4' or value.code = 'LA18359-2' or value.code = 'LA18360-0' or value.code = 'LA18361-8')))";
+	protected static final String VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA137-2' or value.code = 'LA17059-9' or value.code = 'LA18356-8' or value.code = 'LA18357-6' or value.code = 'LA18358-4' or value.code = 'LA18359-2' or value.code = 'LA18360-0' or value.code = 'LA18361-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNonDrugAllergyValue(NonDrugAllergy, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Non Drug Allergy Value</em>}' invariant operation.
@@ -248,7 +289,7 @@ public class NonDrugAllergyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,24 +304,38 @@ public class NonDrugAllergyOperations extends ClinicalStatementOperations {
 
 	public static boolean validateNonDrugAllergyValue(NonDrugAllergy nonDrugAllergy, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NON_DRUG_ALLERGY);
 			try {
-				VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonDrugAllergy)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NON_DRUG_ALLERGY__NON_DRUG_ALLERGY_VALUE,
-					EmspcrPlugin.INSTANCE.getString("NonDrugAllergyValue"), new Object[] { nonDrugAllergy }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_DRUG_ALLERGY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonDrugAllergy)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NON_DRUG_ALLERGY__NON_DRUG_ALLERGY_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("NonDrugAllergyNonDrugAllergyValue"),
+						 new Object [] { nonDrugAllergy }));
+			}
+			 
 			return false;
 		}
 		return true;

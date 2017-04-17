@@ -7,17 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -41,6 +36,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class LocationofDeathOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +72,7 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_LOCATIONOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_LOCATIONOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +87,35 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateLocationofDeathTemplateId(LocationofDeath locationofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_LOCATIONOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_LOCATIONOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.LOCATIONOF_DEATH);
 			try {
-				VALIDATE_LOCATIONOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LOCATIONOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LOCATIONOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(locationofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_LOCATIONOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(locationofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.LOCATIONOF_DEATH__LOCATIONOF_DEATH_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathLocationofDeathTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
 						 new Object [] { locationofDeath }));
 			}
 			 
@@ -130,7 +143,7 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_LOCATIONOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_LOCATIONOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +158,35 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateLocationofDeathClassCode(LocationofDeath locationofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_LOCATIONOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_LOCATIONOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.LOCATIONOF_DEATH);
 			try {
-				VALIDATE_LOCATIONOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LOCATIONOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LOCATIONOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(locationofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_LOCATIONOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(locationofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.LOCATIONOF_DEATH__LOCATIONOF_DEATH_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathLocationofDeathClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
 						 new Object [] { locationofDeath }));
 			}
 			 
@@ -191,7 +214,7 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +229,35 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateLocationofDeathMoodCode(LocationofDeath locationofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.LOCATIONOF_DEATH);
 			try {
-				VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(locationofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_LOCATIONOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(locationofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.LOCATIONOF_DEATH__LOCATIONOF_DEATH_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathLocationofDeathMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
 						 new Object [] { locationofDeath }));
 			}
 			 
@@ -252,7 +285,7 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +300,35 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateLocationofDeathCodeP(LocationofDeath locationofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.LOCATIONOF_DEATH);
 			try {
-				VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(locationofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_LOCATIONOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(locationofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.LOCATIONOF_DEATH__LOCATIONOF_DEATH_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathLocationofDeathCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
 						 new Object [] { locationofDeath }));
 			}
 			 
@@ -315,7 +358,7 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +373,35 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateLocationofDeathCode(LocationofDeath locationofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.LOCATIONOF_DEATH);
 			try {
-				VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(locationofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_LOCATIONOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(locationofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.LOCATIONOF_DEATH__LOCATIONOF_DEATH_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathLocationofDeathCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
 						 new Object [] { locationofDeath }));
 			}
 			 
@@ -376,7 +429,7 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_LOCATIONOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_LOCATIONOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -391,25 +444,35 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateLocationofDeathText(LocationofDeath locationofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_LOCATIONOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_LOCATIONOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.LOCATIONOF_DEATH);
 			try {
-				VALIDATE_LOCATIONOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LOCATIONOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LOCATIONOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(locationofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_LOCATIONOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(locationofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.LOCATIONOF_DEATH__LOCATIONOF_DEATH_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathLocationofDeathText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
 						 new Object [] { locationofDeath }));
 			}
 			 
@@ -437,7 +500,7 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_LOCATIONOF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_LOCATIONOF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -452,25 +515,35 @@ public class LocationofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateLocationofDeathValue(LocationofDeath locationofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_LOCATIONOF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_LOCATIONOF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.LOCATIONOF_DEATH);
 			try {
-				VALIDATE_LOCATIONOF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LOCATIONOF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_LOCATIONOF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LOCATIONOF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(locationofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_LOCATIONOF_DEATH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(locationofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.LOCATIONOF_DEATH__LOCATIONOF_DEATH_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "LocationofDeathLocationofDeathValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(locationofDeath, context) }),
 						 new Object [] { locationofDeath }));
 			}
 			 

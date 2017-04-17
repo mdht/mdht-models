@@ -10,11 +10,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.operations.CSOperations;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.operations.CSOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -95,8 +95,8 @@ public class CSTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
 			public void addPassTests() {
@@ -144,8 +144,8 @@ public class CSTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
 			public void addPassTests() {
@@ -180,7 +180,8 @@ public class CSTest extends CDAValidationTest {
 	public void testValidateCodeSystemVersion() {
 		OperationsTestCase<CS> validateCodeSystemVersionTestCase = new OperationsTestCase<CS>(
 			"validateCodeSystemVersion",
-			operationsForOCL.getOCLValue("VALIDATE_CODE_SYSTEM_VERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_CODE_SYSTEM_VERSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 			{
 				skipNullTest();
 			}
@@ -193,8 +194,8 @@ public class CSTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
 			public void addPassTests() {
@@ -242,8 +243,8 @@ public class CSTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
 			public void addPassTests() {
@@ -324,8 +325,7 @@ public class CSTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ResultObservationImpl;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.Result;
@@ -27,8 +25,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.SimpleObservationOperatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Result</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -152,7 +148,7 @@ public class ResultImpl extends ResultObservationImpl implements Result {
 	 */
 	@Override
 	public Result init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -161,8 +157,9 @@ public class ResultImpl extends ResultObservationImpl implements Result {
 	 * @generated
 	 */
 	@Override
-	public Result init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public Result init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // ResultImpl

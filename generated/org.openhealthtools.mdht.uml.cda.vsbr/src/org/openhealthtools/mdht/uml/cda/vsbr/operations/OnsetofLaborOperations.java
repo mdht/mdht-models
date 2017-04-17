@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.OnsetofLabor;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -41,7 +39,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class OnsetofLaborOperations extends ClinicalStatementOperations {
+public class OnsetofLaborOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,7 +75,7 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ONSETOF_LABOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ONSETOF_LABOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,27 +91,32 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	public static boolean validateOnsetofLaborTemplateId(OnsetofLabor onsetofLabor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ONSETOF_LABOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ONSETOF_LABOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ONSETOF_LABOR);
 			try {
-				VALIDATE_ONSETOF_LABOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ONSETOF_LABOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ONSETOF_LABOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ONSETOF_LABOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ONSETOF_LABOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ONSETOF_LABOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			onsetofLabor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OnsetofLaborTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(onsetofLabor, context) }),
-					new Object[] { onsetofLabor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OnsetofLaborOnsetofLaborTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										onsetofLabor, context) }),
+						new Object[] { onsetofLabor }));
 			}
 
 			return false;
@@ -133,7 +143,7 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ONSETOF_LABOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ONSETOF_LABOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,26 +159,32 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	public static boolean validateOnsetofLaborClassCode(OnsetofLabor onsetofLabor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ONSETOF_LABOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ONSETOF_LABOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ONSETOF_LABOR);
 			try {
-				VALIDATE_ONSETOF_LABOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ONSETOF_LABOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ONSETOF_LABOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ONSETOF_LABOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ONSETOF_LABOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(onsetofLabor)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ONSETOF_LABOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			onsetofLabor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OnsetofLaborClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(onsetofLabor, context) }),
-					new Object[] { onsetofLabor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OnsetofLaborOnsetofLaborClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										onsetofLabor, context) }),
+						new Object[] { onsetofLabor }));
 			}
 
 			return false;
@@ -195,7 +211,7 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ONSETOF_LABOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ONSETOF_LABOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,26 +227,32 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	public static boolean validateOnsetofLaborMoodCode(OnsetofLabor onsetofLabor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ONSETOF_LABOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ONSETOF_LABOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ONSETOF_LABOR);
 			try {
-				VALIDATE_ONSETOF_LABOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ONSETOF_LABOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ONSETOF_LABOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ONSETOF_LABOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ONSETOF_LABOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(onsetofLabor)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ONSETOF_LABOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			onsetofLabor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OnsetofLaborMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(onsetofLabor, context) }),
-					new Object[] { onsetofLabor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OnsetofLaborOnsetofLaborMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										onsetofLabor, context) }),
+						new Object[] { onsetofLabor }));
 			}
 
 			return false;
@@ -257,7 +279,7 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ONSETOF_LABOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ONSETOF_LABOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,26 +295,32 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	public static boolean validateOnsetofLaborCodeP(OnsetofLabor onsetofLabor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ONSETOF_LABOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ONSETOF_LABOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ONSETOF_LABOR);
 			try {
-				VALIDATE_ONSETOF_LABOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ONSETOF_LABOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ONSETOF_LABOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ONSETOF_LABOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ONSETOF_LABOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(onsetofLabor)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ONSETOF_LABOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			onsetofLabor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OnsetofLaborCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(onsetofLabor, context) }),
-					new Object[] { onsetofLabor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OnsetofLaborOnsetofLaborCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										onsetofLabor, context) }),
+						new Object[] { onsetofLabor }));
 			}
 
 			return false;
@@ -308,9 +336,9 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73774-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73774-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOnsetofLaborCode(OnsetofLabor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Onsetof Labor Code</em>}' invariant operation.
@@ -321,7 +349,7 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -337,25 +365,32 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	public static boolean validateOnsetofLaborCode(OnsetofLabor onsetofLabor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ONSETOF_LABOR);
 			try {
-				VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(onsetofLabor)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ONSETOF_LABOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			onsetofLabor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE, VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OnsetofLaborCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(onsetofLabor, context) }),
-					new Object[] { onsetofLabor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OnsetofLaborOnsetofLaborCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										onsetofLabor, context) }),
+						new Object[] { onsetofLabor }));
 			}
 
 			return false;
@@ -371,9 +406,9 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '44223004' or value.code = '51920004' or value.code = '53443007' or value.code = '260413007'))";
+	protected static final String VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '44223004' or value.code = '51920004' or value.code = '53443007' or value.code = '260413007'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOnsetofLaborCodeVS(OnsetofLabor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Onsetof Labor Code VS</em>}' invariant operation.
@@ -384,7 +419,7 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -400,26 +435,32 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	public static boolean validateOnsetofLaborCodeVS(OnsetofLabor onsetofLabor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ONSETOF_LABOR);
 			try {
-				VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(onsetofLabor)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ONSETOF_LABOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			onsetofLabor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_CODE_VS,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OnsetofLaborCodeVS",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(onsetofLabor, context) }),
-					new Object[] { onsetofLabor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_CODE_VS,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OnsetofLaborOnsetofLaborCodeVS",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										onsetofLabor, context) }),
+						new Object[] { onsetofLabor }));
 			}
 
 			return false;
@@ -435,9 +476,9 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '44223004' or value.code = '51920004' or value.code = '53443007' or value.code = '260413007')))";
+	protected static final String VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '44223004' or value.code = '51920004' or value.code = '53443007' or value.code = '260413007')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOnsetofLaborValue(OnsetofLabor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Onsetof Labor Value</em>}' invariant operation.
@@ -448,7 +489,7 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -464,26 +505,32 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	public static boolean validateOnsetofLaborValue(OnsetofLabor onsetofLabor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ONSETOF_LABOR);
 			try {
-				VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(onsetofLabor)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ONSETOF_LABOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			onsetofLabor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OnsetofLaborValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(onsetofLabor, context) }),
-					new Object[] { onsetofLabor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OnsetofLaborOnsetofLaborValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										onsetofLabor, context) }),
+						new Object[] { onsetofLabor }));
 			}
 
 			return false;
@@ -510,7 +557,7 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ONSETOF_LABOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ONSETOF_LABOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -526,26 +573,32 @@ public class OnsetofLaborOperations extends ClinicalStatementOperations {
 	public static boolean validateOnsetofLaborValueP(OnsetofLabor onsetofLabor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ONSETOF_LABOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ONSETOF_LABOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ONSETOF_LABOR);
 			try {
-				VALIDATE_ONSETOF_LABOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ONSETOF_LABOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ONSETOF_LABOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ONSETOF_LABOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ONSETOF_LABOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(onsetofLabor)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ONSETOF_LABOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			onsetofLabor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_VALUE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OnsetofLaborValueP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(onsetofLabor, context) }),
-					new Object[] { onsetofLabor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ONSETOF_LABOR__ONSETOF_LABOR_VALUE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OnsetofLaborOnsetofLaborValueP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										onsetofLabor, context) }),
+						new Object[] { onsetofLabor }));
 			}
 
 			return false;

@@ -6,37 +6,26 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.DrugUseIndication;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSSocialHistorySection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfDrugUseIndication;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSSocialHistorySectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Social History Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocialHistorySection {
+public class EMSSocialHistorySectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl implements EMSSocialHistorySection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -108,8 +97,7 @@ public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocia
 	 */
 	public boolean validateEMSSocialHistorySectionExistenceOfDrugUseIndication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionExistenceOfDrugUseIndication(
-			this, diagnostics, context);
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionExistenceOfDrugUseIndication(this, diagnostics, context);
 	}
 
 	/**
@@ -119,8 +107,7 @@ public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocia
 	 */
 	public boolean validateEMSSocialHistorySectionDrugUseIndication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionDrugUseIndication(
-			this, diagnostics, context);
+		return EMSSocialHistorySectionOperations.validateEMSSocialHistorySectionDrugUseIndication(this, diagnostics, context);
 	}
 
 	/**
@@ -147,16 +134,16 @@ public class EMSSocialHistorySectionImpl extends SectionImpl implements EMSSocia
 	 * @generated
 	 */
 	public EMSSocialHistorySection init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSSocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public EMSSocialHistorySection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EMSSocialHistorySectionImpl

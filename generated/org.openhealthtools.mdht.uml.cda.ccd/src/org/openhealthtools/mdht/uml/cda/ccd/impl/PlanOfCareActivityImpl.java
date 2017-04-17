@@ -14,7 +14,7 @@ import java.lang.Iterable;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.impl.EObjectImpl;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivity;
 
@@ -22,8 +22,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.PlanOfCareActivity;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Plan Of Care Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */

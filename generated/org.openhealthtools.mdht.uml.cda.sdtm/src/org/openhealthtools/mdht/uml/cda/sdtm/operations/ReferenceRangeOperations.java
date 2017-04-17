@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ObservationRangeOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.ReferenceRange;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -40,7 +34,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class ReferenceRangeOperations extends ObservationRangeOperations {
+public class ReferenceRangeOperations extends org.eclipse.mdht.uml.cda.operations.ObservationRangeOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +71,7 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_REFERENCE_RANGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_REFERENCE_RANGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +86,35 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 */
 	
 	public static  boolean validateReferenceRangeTemplateId(ReferenceRange referenceRange, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_REFERENCE_RANGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_REFERENCE_RANGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.REFERENCE_RANGE);
 			try {
-				VALIDATE_REFERENCE_RANGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCE_RANGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERENCE_RANGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_REFERENCE_RANGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCE_RANGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referenceRange)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_REFERENCE_RANGE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(referenceRange)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.REFERENCE_RANGE__REFERENCE_RANGE_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeReferenceRangeTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
 						 new Object [] { referenceRange }));
 			}
 			 
@@ -130,7 +142,7 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_REFERENCE_RANGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_REFERENCE_RANGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +157,35 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 */
 	
 	public static  boolean validateReferenceRangeClassCode(ReferenceRange referenceRange, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_REFERENCE_RANGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_REFERENCE_RANGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.REFERENCE_RANGE);
 			try {
-				VALIDATE_REFERENCE_RANGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCE_RANGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERENCE_RANGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_REFERENCE_RANGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCE_RANGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referenceRange)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_REFERENCE_RANGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(referenceRange)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.REFERENCE_RANGE__REFERENCE_RANGE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeReferenceRangeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
 						 new Object [] { referenceRange }));
 			}
 			 
@@ -191,7 +213,7 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_REFERENCE_RANGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_REFERENCE_RANGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +228,35 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 */
 	
 	public static  boolean validateReferenceRangeMoodCode(ReferenceRange referenceRange, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_REFERENCE_RANGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_REFERENCE_RANGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.REFERENCE_RANGE);
 			try {
-				VALIDATE_REFERENCE_RANGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCE_RANGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERENCE_RANGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_REFERENCE_RANGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCE_RANGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referenceRange)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_REFERENCE_RANGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(referenceRange)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.REFERENCE_RANGE__REFERENCE_RANGE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeReferenceRangeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
 						 new Object [] { referenceRange }));
 			}
 			 
@@ -254,7 +286,7 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_REFERENCE_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_REFERENCE_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -269,25 +301,35 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 */
 	
 	public static  boolean validateReferenceRangeCode(ReferenceRange referenceRange, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_REFERENCE_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_REFERENCE_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.REFERENCE_RANGE);
 			try {
-				VALIDATE_REFERENCE_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCE_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERENCE_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_REFERENCE_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCE_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referenceRange)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_REFERENCE_RANGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(referenceRange)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.REFERENCE_RANGE__REFERENCE_RANGE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeReferenceRangeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
 						 new Object [] { referenceRange }));
 			}
 			 
@@ -315,7 +357,7 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_REFERENCE_RANGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_REFERENCE_RANGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +372,35 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 */
 	
 	public static  boolean validateReferenceRangeCodeP(ReferenceRange referenceRange, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_REFERENCE_RANGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_REFERENCE_RANGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.REFERENCE_RANGE);
 			try {
-				VALIDATE_REFERENCE_RANGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCE_RANGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERENCE_RANGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_REFERENCE_RANGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCE_RANGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referenceRange)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_REFERENCE_RANGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(referenceRange)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.REFERENCE_RANGE__REFERENCE_RANGE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeReferenceRangeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
 						 new Object [] { referenceRange }));
 			}
 			 
@@ -376,7 +428,7 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_REFERENCE_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_REFERENCE_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -391,25 +443,35 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 */
 	
 	public static  boolean validateReferenceRangeValue(ReferenceRange referenceRange, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_REFERENCE_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_REFERENCE_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.REFERENCE_RANGE);
 			try {
-				VALIDATE_REFERENCE_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCE_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERENCE_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_REFERENCE_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCE_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referenceRange)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_REFERENCE_RANGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(referenceRange)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.REFERENCE_RANGE__REFERENCE_RANGE_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeReferenceRangeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
 						 new Object [] { referenceRange }));
 			}
 			 
@@ -439,7 +501,7 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_REFERENCE_RANGE_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_REFERENCE_RANGE_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -454,25 +516,35 @@ public class ReferenceRangeOperations extends ObservationRangeOperations {
 	 */
 	
 	public static  boolean validateReferenceRangeInterpretationCode(ReferenceRange referenceRange, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_REFERENCE_RANGE_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_REFERENCE_RANGE_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.REFERENCE_RANGE);
 			try {
-				VALIDATE_REFERENCE_RANGE_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REFERENCE_RANGE_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REFERENCE_RANGE_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_REFERENCE_RANGE_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_REFERENCE_RANGE_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(referenceRange)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_REFERENCE_RANGE_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(referenceRange)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.REFERENCE_RANGE__REFERENCE_RANGE_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ReferenceRangeReferenceRangeInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(referenceRange, context) }),
 						 new Object [] { referenceRange }));
 			}
 			 

@@ -41,6 +41,13 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicalDocumentOperations
  * @generated
  */
 public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +75,7 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,22 +90,27 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	public static boolean validateScannedDocumentTemplateId(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_SCANNED_DOCUMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.UNSTRUCTURED_DOCUMENT__SCANNED_DOCUMENT_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("ScannedDocumentTemplateId"), new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.UNSTRUCTURED_DOCUMENT__SCANNED_DOCUMENT_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString("UnstructuredDocumentScannedDocumentTemplateId"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -124,7 +136,7 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -139,23 +151,29 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	public static boolean validateUnstructuredDocumentNoStructuredData(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA,
-					HITSPPlugin.INSTANCE.getString("UnstructuredDocumentNoStructuredData"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_NO_STRUCTURED_DATA,
+						HITSPPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentNoStructuredData"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -181,7 +199,7 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -196,24 +214,29 @@ public class UnstructuredDocumentOperations extends MedicalDocumentOperations {
 	public static boolean validateUnstructuredDocumentOnePatientPerDocument(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT,
-					HITSPPlugin.INSTANCE.getString("UnstructuredDocumentOnePatientPerDocument"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ONE_PATIENT_PER_DOCUMENT,
+						HITSPPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentOnePatientPerDocument"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;

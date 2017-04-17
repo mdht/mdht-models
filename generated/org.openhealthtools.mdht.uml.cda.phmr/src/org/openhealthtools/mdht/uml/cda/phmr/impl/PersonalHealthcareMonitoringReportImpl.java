@@ -22,195 +22,187 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.PurposeSection;
-
 import org.openhealthtools.mdht.uml.cda.phmr.MedicalEquipment;
 import org.openhealthtools.mdht.uml.cda.phmr.PersonalHealthcareMonitoringReport;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.Results;
 import org.openhealthtools.mdht.uml.cda.phmr.VitalSigns;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PersonalHealthcareMonitoringReportOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Personal Healthcare Monitoring Report</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstraintsImpl implements PersonalHealthcareMonitoringReport {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PersonalHealthcareMonitoringReportImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT;
-  }
+		return PhmrPackage.Literals.PERSONAL_HEALTHCARE_MONITORING_REPORT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePersonalHealthcareMonitoringReportTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportTemplateId(this, diagnostics, context);
-  }
+		return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePersonalHealthcareMonitoringReportVitalSigns(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportVitalSigns(this, diagnostics, context);
-  }
+		return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportVitalSigns(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePersonalHealthcareMonitoringReportResults(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportResults(this, diagnostics, context);
-  }
+		return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportResults(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePersonalHealthcareMonitoringReportMedicalEquipment(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportMedicalEquipment(this, diagnostics, context);
-  }
+		return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportMedicalEquipment(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePersonalHealthcareMonitoringReportFunctionalStatus(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportFunctionalStatus(this, diagnostics, context);
-  }
+		return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportFunctionalStatus(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePersonalHealthcareMonitoringReportMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportMedication(this, diagnostics, context);
-  }
+		return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportMedication(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePersonalHealthcareMonitoringReportPurpose(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportPurpose(this, diagnostics, context);
-  }
+		return PersonalHealthcareMonitoringReportOperations.validatePersonalHealthcareMonitoringReportPurpose(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public VitalSigns getVitalSigns() {
-    return PersonalHealthcareMonitoringReportOperations.getVitalSigns(this);
-  }
+		return PersonalHealthcareMonitoringReportOperations.getVitalSigns(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Results getResults() {
-    return PersonalHealthcareMonitoringReportOperations.getResults(this);
-  }
+		return PersonalHealthcareMonitoringReportOperations.getResults(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public MedicalEquipment getMedicalEquipment() {
-    return PersonalHealthcareMonitoringReportOperations.getMedicalEquipment(this);
-  }
+		return PersonalHealthcareMonitoringReportOperations.getMedicalEquipment(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public FunctionalStatusSection getFunctionalStatus() {
-    return PersonalHealthcareMonitoringReportOperations.getFunctionalStatus(this);
-  }
+		return PersonalHealthcareMonitoringReportOperations.getFunctionalStatus(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public MedicationsSection getMedication() {
-    return PersonalHealthcareMonitoringReportOperations.getMedication(this);
-  }
+		return PersonalHealthcareMonitoringReportOperations.getMedication(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public PurposeSection getPurpose() {
-    return PersonalHealthcareMonitoringReportOperations.getPurpose(this);
-  }
+		return PersonalHealthcareMonitoringReportOperations.getPurpose(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public PersonalHealthcareMonitoringReport init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -218,8 +210,8 @@ public class PersonalHealthcareMonitoringReportImpl extends GeneralHeaderConstra
      * @generated
      */
     @Override
-	public PersonalHealthcareMonitoringReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public PersonalHealthcareMonitoringReport init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //PersonalHealthcareMonitoringReportImpl

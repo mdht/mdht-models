@@ -19,6 +19,7 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.cda.operations.SectionOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
@@ -28,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPlugin;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemAct;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -50,6 +50,13 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  * @generated
  */
 public class AlertsSectionOperations extends SectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -77,7 +84,7 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,22 +99,27 @@ public class AlertsSectionOperations extends SectionOperations {
 	public static boolean validateAlertsSectionTemplateId(AlertsSection alertsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
-				VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			alertsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ALERTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TEMPLATE_ID,
-					CCDPlugin.INSTANCE.getString("AlertsSectionTemplateId"), new Object[] { alertsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TEMPLATE_ID,
+						CCDPlugin.INSTANCE.getString("AlertsSectionAlertsSectionTemplateId"),
+						new Object[] { alertsSection }));
 			}
 
 			return false;
@@ -123,9 +135,9 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '48765-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAlertsSectionCode(AlertsSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Alerts Section Code</em>}' invariant operation.
@@ -135,7 +147,7 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,20 +162,27 @@ public class AlertsSectionOperations extends SectionOperations {
 	public static boolean validateAlertsSectionCode(AlertsSection alertsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
-				VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(alertsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ALERTS_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.ALERTS_SECTION__ALERTS_SECTION_CODE,
-					CCDPlugin.INSTANCE.getString("AlertsSectionCode"), new Object[] { alertsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.ALERTS_SECTION__ALERTS_SECTION_CODE,
+						CCDPlugin.INSTANCE.getString("AlertsSectionAlertsSectionCode"),
+						new Object[] { alertsSection }));
 			}
 
 			return false;
@@ -189,7 +208,7 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,21 +223,27 @@ public class AlertsSectionOperations extends SectionOperations {
 	public static boolean validateAlertsSectionTitle(AlertsSection alertsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
-				VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(alertsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ALERTS_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TITLE,
-					CCDPlugin.INSTANCE.getString("AlertsSectionTitle"), new Object[] { alertsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TITLE,
+						CCDPlugin.INSTANCE.getString("AlertsSectionAlertsSectionTitle"),
+						new Object[] { alertsSection }));
 			}
 
 			return false;
@@ -244,7 +269,7 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -259,20 +284,27 @@ public class AlertsSectionOperations extends SectionOperations {
 	public static boolean validateAlertsSectionText(AlertsSection alertsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
-				VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(alertsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ALERTS_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TEXT,
-					CCDPlugin.INSTANCE.getString("AlertsSectionText"), new Object[] { alertsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.ALERTS_SECTION__ALERTS_SECTION_TEXT,
+						CCDPlugin.INSTANCE.getString("AlertsSectionAlertsSectionText"),
+						new Object[] { alertsSection }));
 			}
 
 			return false;
@@ -298,7 +330,7 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -313,22 +345,27 @@ public class AlertsSectionOperations extends SectionOperations {
 	public static boolean validateAlertsSectionProblemAct(AlertsSection alertsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.ALERTS_SECTION);
 			try {
-				VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			alertsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ALERTS_SECTION_PROBLEM_ACT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(alertsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.ALERTS_SECTION__ALERTS_SECTION_PROBLEM_ACT,
-					CCDPlugin.INSTANCE.getString("AlertsSectionProblemAct"), new Object[] { alertsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.WARNING, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.ALERTS_SECTION__ALERTS_SECTION_PROBLEM_ACT,
+						CCDPlugin.INSTANCE.getString("AlertsSectionAlertsSectionProblemAct"),
+						new Object[] { alertsSection }));
 			}
 
 			return false;
@@ -362,8 +399,10 @@ public class AlertsSectionOperations extends SectionOperations {
 	 * @generated
 	 */
 	public static EList<ProblemAct> getProblemActs(AlertsSection alertsSection) {
+
 		if (GET_PROBLEM_ACTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.ALERTS_SECTION, CCDPackage.Literals.ALERTS_SECTION.getEAllOperations().get(60));
 			try {
@@ -372,7 +411,8 @@ public class AlertsSectionOperations extends SectionOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_ACTS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROBLEM_ACTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemAct> result = (Collection<ProblemAct>) query.evaluate(alertsSection);
 		return new BasicEList.UnmodifiableEList<ProblemAct>(result.size(), result.toArray());

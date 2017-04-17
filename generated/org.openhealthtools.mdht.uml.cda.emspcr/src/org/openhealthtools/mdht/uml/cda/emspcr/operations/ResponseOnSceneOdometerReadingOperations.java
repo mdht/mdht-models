@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.ResponseOnSceneOdometerReading;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -44,7 +38,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementOperations {
+public class ResponseOnSceneOdometerReadingOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73,7 +74,7 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,27 +90,38 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	public static boolean validateResponseOnSceneOdometerReadingTemplateId(
 			ResponseOnSceneOdometerReading responseOnSceneOdometerReading, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_ON_SCENE_ODOMETER_READING);
 			try {
-				VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			responseOnSceneOdometerReading)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.RESPONSE_ON_SCENE_ODOMETER_READING__RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("ResponseOnSceneOdometerReadingTemplateId"),
-					new Object[] { responseOnSceneOdometerReading }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(responseOnSceneOdometerReading)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.RESPONSE_ON_SCENE_ODOMETER_READING__RESPONSE_ON_SCENE_ODOMETER_READING_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("ResponseOnSceneOdometerReadingResponseOnSceneOdometerReadingTemplateId"),
+						 new Object [] { responseOnSceneOdometerReading }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -134,7 +146,7 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,26 +162,38 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	public static boolean validateResponseOnSceneOdometerReadingMoodCode(
 			ResponseOnSceneOdometerReading responseOnSceneOdometerReading, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_ON_SCENE_ODOMETER_READING);
 			try {
-				VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			responseOnSceneOdometerReading)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.RESPONSE_ON_SCENE_ODOMETER_READING__RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("ResponseOnSceneOdometerReadingMoodCode"),
-					new Object[] { responseOnSceneOdometerReading }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(responseOnSceneOdometerReading)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.RESPONSE_ON_SCENE_ODOMETER_READING__RESPONSE_ON_SCENE_ODOMETER_READING_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ResponseOnSceneOdometerReadingResponseOnSceneOdometerReadingMoodCode"),
+						 new Object [] { responseOnSceneOdometerReading }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -194,7 +218,7 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,26 +234,38 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	public static boolean validateResponseOnSceneOdometerReadingCodeP(
 			ResponseOnSceneOdometerReading responseOnSceneOdometerReading, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_ON_SCENE_ODOMETER_READING);
 			try {
-				VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			responseOnSceneOdometerReading)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.RESPONSE_ON_SCENE_ODOMETER_READING__RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("ResponseOnSceneOdometerReadingCodeP"),
-					new Object[] { responseOnSceneOdometerReading }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(responseOnSceneOdometerReading)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.RESPONSE_ON_SCENE_ODOMETER_READING__RESPONSE_ON_SCENE_ODOMETER_READING_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("ResponseOnSceneOdometerReadingResponseOnSceneOdometerReadingCodeP"),
+						 new Object [] { responseOnSceneOdometerReading }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -237,12 +273,11 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.emspcr.ResponseOnSceneOdometerReadingCodeP", passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.emspcr.ResponseOnSceneOdometerReadingCodeP", passToken);
 				}
 				passToken.add(responseOnSceneOdometerReading);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -256,9 +291,9 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67485-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67485-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateResponseOnSceneOdometerReadingCode(ResponseOnSceneOdometerReading, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Response On Scene Odometer Reading Code</em>}' invariant operation.
@@ -269,7 +304,7 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -285,35 +320,44 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	public static boolean validateResponseOnSceneOdometerReadingCode(
 			ResponseOnSceneOdometerReading responseOnSceneOdometerReading, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.ResponseOnSceneOdometerReadingCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(responseOnSceneOdometerReading)) {
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.ResponseOnSceneOdometerReadingCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(responseOnSceneOdometerReading)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_ON_SCENE_ODOMETER_READING);
 			try {
-				VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			responseOnSceneOdometerReading)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.RESPONSE_ON_SCENE_ODOMETER_READING__RESPONSE_ON_SCENE_ODOMETER_READING_CODE,
-					EmspcrPlugin.INSTANCE.getString("ResponseOnSceneOdometerReadingCode"),
-					new Object[] { responseOnSceneOdometerReading }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(responseOnSceneOdometerReading)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.RESPONSE_ON_SCENE_ODOMETER_READING__RESPONSE_ON_SCENE_ODOMETER_READING_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ResponseOnSceneOdometerReadingResponseOnSceneOdometerReadingCode"),
+						 new Object [] { responseOnSceneOdometerReading }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -338,7 +382,7 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -354,26 +398,38 @@ public class ResponseOnSceneOdometerReadingOperations extends ClinicalStatementO
 	public static boolean validateResponseOnSceneOdometerReadingValue(
 			ResponseOnSceneOdometerReading responseOnSceneOdometerReading, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RESPONSE_ON_SCENE_ODOMETER_READING);
 			try {
-				VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			responseOnSceneOdometerReading)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.RESPONSE_ON_SCENE_ODOMETER_READING__RESPONSE_ON_SCENE_ODOMETER_READING_VALUE,
-					EmspcrPlugin.INSTANCE.getString("ResponseOnSceneOdometerReadingValue"),
-					new Object[] { responseOnSceneOdometerReading }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RESPONSE_ON_SCENE_ODOMETER_READING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(responseOnSceneOdometerReading)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.RESPONSE_ON_SCENE_ODOMETER_READING__RESPONSE_ON_SCENE_ODOMETER_READING_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("ResponseOnSceneOdometerReadingResponseOnSceneOdometerReadingValue"),
+						 new Object [] { responseOnSceneOdometerReading }));
+			}
+			 
 			return false;
 		}
 		return true;

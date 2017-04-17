@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelay;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +39,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class DispatchDelayOperations extends ClinicalStatementOperations {
+public class DispatchDelayOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,7 +75,7 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,25 +90,38 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDispatchDelayTemplateId(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
-				VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayTemplateId"), new Object[] { dispatchDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayDispatchDelayTemplateId"),
+						 new Object [] { dispatchDelay }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -132,7 +146,7 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,25 +161,38 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDispatchDelayMoodCode(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
-				VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dispatchDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayMoodCode"), new Object[] { dispatchDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayDispatchDelayMoodCode"),
+						 new Object [] { dispatchDelay }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -190,7 +217,7 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,24 +232,38 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDispatchDelayCodeP(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
-				VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayCodeP"), new Object[] { dispatchDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayDispatchDelayCodeP"),
+						 new Object [] { dispatchDelay }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -234,7 +275,7 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(dispatchDelay);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -248,9 +289,9 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67480-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67480-4' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDispatchDelayCode(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Code</em>}' invariant operation.
@@ -261,7 +302,7 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,32 +317,44 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDispatchDelayCode(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelayCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.DispatchDelayCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(dispatchDelay)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
-				VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_CODE,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayCode"), new Object[] { dispatchDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_CODE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayDispatchDelayCode"),
+						 new Object [] { dispatchDelay }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -315,9 +368,9 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17183-7' or value.code = 'LA17579-6' or value.code = 'LA17580-4' or value.code = 'LA17581-2' or value.code = 'LA17582-0' or value.code = 'LA17584-6' or value.code = 'LA18081-2' or value.code = 'LA7540-3')))";
+	protected static final String VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17183-7' or value.code = 'LA17579-6' or value.code = 'LA17580-4' or value.code = 'LA17581-2' or value.code = 'LA17582-0' or value.code = 'LA17584-6' or value.code = 'LA18081-2' or value.code = 'LA7540-3')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDispatchDelayValue(DispatchDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dispatch Delay Value</em>}' invariant operation.
@@ -328,7 +381,7 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,24 +396,38 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDispatchDelayValue(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
-				VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_VALUE,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayValue"), new Object[] { dispatchDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayDispatchDelayValue"),
+						 new Object [] { dispatchDelay }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -385,7 +452,7 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -400,24 +467,38 @@ public class DispatchDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateDispatchDelayValueP(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.DISPATCH_DELAY);
 			try {
-				VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dispatchDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("DispatchDelayValueP"), new Object[] { dispatchDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DISPATCH_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dispatchDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.DISPATCH_DELAY__DISPATCH_DELAY_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("DispatchDelayDispatchDelayValueP"),
+						 new Object [] { dispatchDelay }));
+			}
+			 
 			return false;
 		}
 		return true;

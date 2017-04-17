@@ -24,18 +24,19 @@
 package org.openhealthtools.mdht.uml.cda.phmr.tests;
 
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.WaveformSeriesObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.WaveformSeriesObservationOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 
 /**
@@ -76,66 +77,69 @@ public class WaveformSeriesObservationTest extends  CDAValidationTest {
  
 									
 public void testValidateWaveformSeriesObservationTemplateId() {
-      OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationTemplateIdTestCase = new OperationsTestCase<WaveformSeriesObservation>(
-      "validateWaveformSeriesObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationTemplateIdTestCase = new OperationsTestCase<WaveformSeriesObservation>(
+			"validateWaveformSeriesObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(WaveformSeriesObservation target) {
+			@Override
+			protected void updateToFail(WaveformSeriesObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(WaveformSeriesObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(WaveformSeriesObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return WaveformSeriesObservationOperations.validateWaveformSeriesObservationTemplateId(
-          (WaveformSeriesObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return WaveformSeriesObservationOperations.validateWaveformSeriesObservationTemplateId(
+					(WaveformSeriesObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateWaveformSeriesObservationTemplateIdTestCase.doValidationTest();
+		validateWaveformSeriesObservationTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -150,66 +154,69 @@ public void testValidateWaveformSeriesObservationTemplateId() {
  
 									
 public void testValidateWaveformSeriesObservationClassCode() {
-      OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationClassCodeTestCase = new OperationsTestCase<WaveformSeriesObservation>(
-      "validateWaveformSeriesObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationClassCodeTestCase = new OperationsTestCase<WaveformSeriesObservation>(
+			"validateWaveformSeriesObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(WaveformSeriesObservation target) {
+			@Override
+			protected void updateToFail(WaveformSeriesObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(WaveformSeriesObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(WaveformSeriesObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return WaveformSeriesObservationOperations.validateWaveformSeriesObservationClassCode(
-          (WaveformSeriesObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return WaveformSeriesObservationOperations.validateWaveformSeriesObservationClassCode(
+					(WaveformSeriesObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateWaveformSeriesObservationClassCodeTestCase.doValidationTest();
+		validateWaveformSeriesObservationClassCodeTestCase.doValidationTest();
 }		
 
 
@@ -224,66 +231,69 @@ public void testValidateWaveformSeriesObservationClassCode() {
  
 									
 public void testValidateWaveformSeriesObservationCodeP() {
-      OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationCodePTestCase = new OperationsTestCase<WaveformSeriesObservation>(
-      "validateWaveformSeriesObservationCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationCodePTestCase = new OperationsTestCase<WaveformSeriesObservation>(
+			"validateWaveformSeriesObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(WaveformSeriesObservation target) {
+			@Override
+			protected void updateToFail(WaveformSeriesObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(WaveformSeriesObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(WaveformSeriesObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return WaveformSeriesObservationOperations.validateWaveformSeriesObservationCodeP(
-          (WaveformSeriesObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return WaveformSeriesObservationOperations.validateWaveformSeriesObservationCodeP(
+					(WaveformSeriesObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateWaveformSeriesObservationCodePTestCase.doValidationTest();
+		validateWaveformSeriesObservationCodePTestCase.doValidationTest();
 }		
 
 
@@ -298,69 +308,80 @@ public void testValidateWaveformSeriesObservationCodeP() {
  
 									
 public void testValidateWaveformSeriesObservationCode() {
-      OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationCodeTestCase = new OperationsTestCase<WaveformSeriesObservation>(
-      "validateWaveformSeriesObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationCodeTestCase = new OperationsTestCase<WaveformSeriesObservation>(
+			"validateWaveformSeriesObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(WaveformSeriesObservation target) {
+			@Override
+			protected void updateToFail(WaveformSeriesObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(WaveformSeriesObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(WaveformSeriesObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+			
+				CD cd  = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		
         
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+        @Override
+            protected void setDependency(WaveformSeriesObservation target) {
+                Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+                passToken.add(target);
+                map.put("org.openhealthtools.mdht.uml.cda.phmr.WaveformSeriesObservationCodeP", passToken);
+            }
+         
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return WaveformSeriesObservationOperations.validateWaveformSeriesObservationCode(
-          (WaveformSeriesObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return WaveformSeriesObservationOperations.validateWaveformSeriesObservationCode(
+					(WaveformSeriesObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateWaveformSeriesObservationCodeTestCase.doValidationTest();
+		validateWaveformSeriesObservationCodeTestCase.doValidationTest();
 }		
 
 
@@ -375,69 +396,72 @@ public void testValidateWaveformSeriesObservationCode() {
  
 									
 public void testValidateWaveformSeriesObservationEffectiveTime() {
-      OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationEffectiveTimeTestCase = new OperationsTestCase<WaveformSeriesObservation>(
-      "validateWaveformSeriesObservationEffectiveTime",
-      operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationEffectiveTimeTestCase = new OperationsTestCase<WaveformSeriesObservation>(
+			"validateWaveformSeriesObservationEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(WaveformSeriesObservation target) {
+			@Override
+			protected void updateToFail(WaveformSeriesObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(WaveformSeriesObservation target) {
-        target.init();
-        
-        
-          IVL_TS ts = DatatypesFactory .eINSTANCE.createIVL_TS();
-          target.setEffectiveTime(ts );								
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(WaveformSeriesObservation target) {
+				target.init();
+				
+				
+					IVL_TS ts = DatatypesFactory .eINSTANCE.createIVL_TS();
+					target.setEffectiveTime(ts );								
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return WaveformSeriesObservationOperations.validateWaveformSeriesObservationEffectiveTime(
-          (WaveformSeriesObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return WaveformSeriesObservationOperations.validateWaveformSeriesObservationEffectiveTime(
+					(WaveformSeriesObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateWaveformSeriesObservationEffectiveTimeTestCase.doValidationTest();
+		validateWaveformSeriesObservationEffectiveTimeTestCase.doValidationTest();
 }		
 
 
@@ -452,66 +476,69 @@ public void testValidateWaveformSeriesObservationEffectiveTime() {
  
 									
 public void testValidateWaveformSeriesObservationMoodCode() {
-      OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationMoodCodeTestCase = new OperationsTestCase<WaveformSeriesObservation>(
-      "validateWaveformSeriesObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationMoodCodeTestCase = new OperationsTestCase<WaveformSeriesObservation>(
+			"validateWaveformSeriesObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(WaveformSeriesObservation target) {
+			@Override
+			protected void updateToFail(WaveformSeriesObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(WaveformSeriesObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(WaveformSeriesObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return WaveformSeriesObservationOperations.validateWaveformSeriesObservationMoodCode(
-          (WaveformSeriesObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return WaveformSeriesObservationOperations.validateWaveformSeriesObservationMoodCode(
+					(WaveformSeriesObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateWaveformSeriesObservationMoodCodeTestCase.doValidationTest();
+		validateWaveformSeriesObservationMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -526,66 +553,69 @@ public void testValidateWaveformSeriesObservationMoodCode() {
  
 									
 public void testValidateWaveformSeriesObservationPHMRProductInstanceReference() {
-      OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationPHMRProductInstanceReferenceTestCase = new OperationsTestCase<WaveformSeriesObservation>(
-      "validateWaveformSeriesObservationPHMRProductInstanceReference",
-      operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationPHMRProductInstanceReferenceTestCase = new OperationsTestCase<WaveformSeriesObservation>(
+			"validateWaveformSeriesObservationPHMRProductInstanceReference",
+			operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(WaveformSeriesObservation target) {
+			@Override
+			protected void updateToFail(WaveformSeriesObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(WaveformSeriesObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(WaveformSeriesObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return WaveformSeriesObservationOperations.validateWaveformSeriesObservationPHMRProductInstanceReference(
-          (WaveformSeriesObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return WaveformSeriesObservationOperations.validateWaveformSeriesObservationPHMRProductInstanceReference(
+					(WaveformSeriesObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateWaveformSeriesObservationPHMRProductInstanceReferenceTestCase.doValidationTest();
+		validateWaveformSeriesObservationPHMRProductInstanceReferenceTestCase.doValidationTest();
 }		
 
 
@@ -600,66 +630,69 @@ public void testValidateWaveformSeriesObservationPHMRProductInstanceReference() 
  
 									
 public void testValidateWaveformSeriesObservationObservationMediaJPG() {
-      OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationObservationMediaJPGTestCase = new OperationsTestCase<WaveformSeriesObservation>(
-      "validateWaveformSeriesObservationObservationMediaJPG",
-      operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_OBSERVATION_MEDIA_JPG__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationObservationMediaJPGTestCase = new OperationsTestCase<WaveformSeriesObservation>(
+			"validateWaveformSeriesObservationObservationMediaJPG",
+			operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_OBSERVATION_MEDIA_JPG__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(WaveformSeriesObservation target) {
+			@Override
+			protected void updateToFail(WaveformSeriesObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(WaveformSeriesObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(WaveformSeriesObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return WaveformSeriesObservationOperations.validateWaveformSeriesObservationObservationMediaJPG(
-          (WaveformSeriesObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return WaveformSeriesObservationOperations.validateWaveformSeriesObservationObservationMediaJPG(
+					(WaveformSeriesObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateWaveformSeriesObservationObservationMediaJPGTestCase.doValidationTest();
+		validateWaveformSeriesObservationObservationMediaJPGTestCase.doValidationTest();
 }		
 
 
@@ -674,66 +707,69 @@ public void testValidateWaveformSeriesObservationObservationMediaJPG() {
  
 									
 public void testValidateWaveformSeriesObservationObservationNullFlavor() {
-      OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationObservationNullFlavorTestCase = new OperationsTestCase<WaveformSeriesObservation>(
-      "validateWaveformSeriesObservationObservationNullFlavor",
-      operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_OBSERVATION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<WaveformSeriesObservation> validateWaveformSeriesObservationObservationNullFlavorTestCase = new OperationsTestCase<WaveformSeriesObservation>(
+			"validateWaveformSeriesObservationObservationNullFlavor",
+			operationsForOCL.getOCLValue("VALIDATE_WAVEFORM_SERIES_OBSERVATION_OBSERVATION_NULL_FLAVOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(WaveformSeriesObservation target) {
+			@Override
+			protected void updateToFail(WaveformSeriesObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(WaveformSeriesObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(WaveformSeriesObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return WaveformSeriesObservationOperations.validateWaveformSeriesObservationObservationNullFlavor(
-          (WaveformSeriesObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return WaveformSeriesObservationOperations.validateWaveformSeriesObservationObservationNullFlavor(
+					(WaveformSeriesObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateWaveformSeriesObservationObservationNullFlavorTestCase.doValidationTest();
+		validateWaveformSeriesObservationObservationNullFlavorTestCase.doValidationTest();
 }		
 
 
@@ -808,6 +844,7 @@ target.getObservationNullFlavor();
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<WaveformSeriesObservation> {
+		@Override
 		public WaveformSeriesObservation create() {		
 			return PhmrFactory.eINSTANCE.createWaveformSeriesObservation();
 		}
@@ -839,9 +876,9 @@ target.getObservationNullFlavor();
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -851,8 +888,8 @@ target.getObservationNullFlavor();
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

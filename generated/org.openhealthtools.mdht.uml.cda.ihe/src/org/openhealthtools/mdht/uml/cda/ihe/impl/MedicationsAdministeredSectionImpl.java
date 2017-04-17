@@ -16,46 +16,44 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicationsAdministeredSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medications Administered Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class MedicationsAdministeredSectionImpl extends SectionImpl implements MedicationsAdministeredSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected MedicationsAdministeredSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.MEDICATIONS_ADMINISTERED_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateMedicationsAdministeredSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionTemplateId(
@@ -63,20 +61,21 @@ public class MedicationsAdministeredSectionImpl extends SectionImpl implements M
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateMedicationsAdministeredSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	 * @generated
+	 */
+	public boolean validateMedicationsAdministeredSectionCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationsAdministeredSectionOperations.validateMedicationsAdministeredSectionCode(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationsAdministeredSection init() {
 		return Initializer.Util.init(this);
 	}

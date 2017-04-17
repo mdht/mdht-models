@@ -40,6 +40,13 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedVitalSignsSectionOpe
  * @generated
  */
 public class VitalSignsSectionOperations extends CodedVitalSignsSectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +75,7 @@ public class VitalSignsSectionOperations extends CodedVitalSignsSectionOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,23 +91,29 @@ public class VitalSignsSectionOperations extends CodedVitalSignsSectionOperation
 	public static boolean validateHITSPVitalSignsSectionVitalSignEntry(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.VITAL_SIGNS_SECTION);
 			try {
-				VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vitalSignsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				vitalSignsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY,
-					HITSPPlugin.INSTANCE.getString("HITSPVitalSignsSectionVitalSignEntry"),
-					new Object[] { vitalSignsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_VITAL_SIGN_ENTRY,
+						HITSPPlugin.INSTANCE.getString("VitalSignsSectionHITSPVitalSignsSectionVitalSignEntry"),
+						new Object[] { vitalSignsSection }));
 			}
 
 			return false;
@@ -127,7 +140,7 @@ public class VitalSignsSectionOperations extends CodedVitalSignsSectionOperation
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -143,23 +156,29 @@ public class VitalSignsSectionOperations extends CodedVitalSignsSectionOperation
 	public static boolean validateHITSPVitalSignsSectionTemplateId(VitalSignsSection vitalSignsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.VITAL_SIGNS_SECTION);
 			try {
-				VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vitalSignsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				vitalSignsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPVitalSignsSectionTemplateId"),
-					new Object[] { vitalSignsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.VITAL_SIGNS_SECTION__HITSP_VITAL_SIGNS_SECTION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString("VitalSignsSectionHITSPVitalSignsSectionTemplateId"),
+						new Object[] { vitalSignsSection }));
 			}
 
 			return false;

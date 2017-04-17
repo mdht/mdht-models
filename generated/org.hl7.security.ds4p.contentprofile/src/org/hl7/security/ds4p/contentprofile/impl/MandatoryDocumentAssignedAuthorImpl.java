@@ -11,9 +11,9 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.impl.AssignedAuthorImpl;
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.MandatoryDocumentAssignedAuthor;
 
@@ -26,7 +26,7 @@ import org.hl7.security.ds4p.contentprofile.operations.MandatoryDocumentAssigned
  *
  * @generated
  */
-public class MandatoryDocumentAssignedAuthorImpl extends AssignedAuthorImpl implements MandatoryDocumentAssignedAuthor {
+public class MandatoryDocumentAssignedAuthorImpl extends EObjectImpl implements MandatoryDocumentAssignedAuthor {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

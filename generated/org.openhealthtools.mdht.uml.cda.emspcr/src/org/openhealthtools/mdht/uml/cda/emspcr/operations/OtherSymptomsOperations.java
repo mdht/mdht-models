@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.OtherSymptoms;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +39,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class OtherSymptomsOperations extends ClinicalStatementOperations {
+public class OtherSymptomsOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,7 +75,7 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,25 +90,38 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOtherSymptomsTemplateId(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.OTHER_SYMPTOMS);
 			try {
-				VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			otherSymptoms)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("OtherSymptomsTemplateId"), new Object[] { otherSymptoms }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OTHER_SYMPTOMS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(otherSymptoms)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("OtherSymptomsOtherSymptomsTemplateId"),
+						 new Object [] { otherSymptoms }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -132,7 +146,7 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,25 +161,38 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOtherSymptomsMoodCode(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.OTHER_SYMPTOMS);
 			try {
-				VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			otherSymptoms)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("OtherSymptomsMoodCode"), new Object[] { otherSymptoms }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OTHER_SYMPTOMS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(otherSymptoms)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("OtherSymptomsOtherSymptomsMoodCode"),
+						 new Object [] { otherSymptoms }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -190,7 +217,7 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -205,24 +232,38 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOtherSymptomsCodeP(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.OTHER_SYMPTOMS);
 			try {
-				VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(otherSymptoms)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("OtherSymptomsCodeP"), new Object[] { otherSymptoms }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OTHER_SYMPTOMS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(otherSymptoms)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("OtherSymptomsOtherSymptomsCodeP"),
+						 new Object [] { otherSymptoms }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -234,7 +275,7 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(otherSymptoms);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -248,9 +289,9 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67776-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67776-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOtherSymptomsCode(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Code</em>}' invariant operation.
@@ -261,7 +302,7 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,32 +317,44 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOtherSymptomsCode(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.OtherSymptomsCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.OtherSymptomsCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(otherSymptoms)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.OTHER_SYMPTOMS);
 			try {
-				VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(otherSymptoms)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_CODE,
-					EmspcrPlugin.INSTANCE.getString("OtherSymptomsCode"), new Object[] { otherSymptoms }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OTHER_SYMPTOMS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(otherSymptoms)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_CODE,
+						 EmspcrPlugin.INSTANCE.getString("OtherSymptomsOtherSymptomsCode"),
+						 new Object [] { otherSymptoms }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -315,9 +368,9 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.90'))";
+	protected static final String VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.90'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOtherSymptomsValue(OtherSymptoms, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Symptoms Value</em>}' invariant operation.
@@ -328,7 +381,7 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,24 +396,38 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOtherSymptomsValue(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.OTHER_SYMPTOMS);
 			try {
-				VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(otherSymptoms)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_VALUE,
-					EmspcrPlugin.INSTANCE.getString("OtherSymptomsValue"), new Object[] { otherSymptoms }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OTHER_SYMPTOMS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(otherSymptoms)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("OtherSymptomsOtherSymptomsValue"),
+						 new Object [] { otherSymptoms }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -385,7 +452,7 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -400,24 +467,38 @@ public class OtherSymptomsOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOtherSymptomsValueP(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.OTHER_SYMPTOMS);
 			try {
-				VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(otherSymptoms)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("OtherSymptomsValueP"), new Object[] { otherSymptoms }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OTHER_SYMPTOMS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(otherSymptoms)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.INFO,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.OTHER_SYMPTOMS__OTHER_SYMPTOMS_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("OtherSymptomsOtherSymptomsValueP"),
+						 new Object [] { otherSymptoms }));
+			}
+			 
 			return false;
 		}
 		return true;

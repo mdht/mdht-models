@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StudyArm;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -40,7 +34,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class StudyArmOperations extends ClinicalStatementOperations {
+public class StudyArmOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +71,7 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +86,35 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudyArmTemplateId(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_ARM);
 			try {
-				VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyArm)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_ARM_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyArm)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_ARM__STUDY_ARM_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmStudyArmTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
 						 new Object [] { studyArm }));
 			}
 			 
@@ -130,7 +142,7 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +157,35 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudyArmClassCode(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_ARM);
 			try {
-				VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyArm)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_ARM_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyArm)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_ARM__STUDY_ARM_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmStudyArmClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
 						 new Object [] { studyArm }));
 			}
 			 
@@ -191,7 +213,7 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +228,35 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudyArmMoodCode(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_ARM);
 			try {
-				VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyArm)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_ARM_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyArm)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_ARM__STUDY_ARM_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmStudyArmMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
 						 new Object [] { studyArm }));
 			}
 			 
@@ -252,7 +284,7 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +299,35 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudyArmCodeP(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_ARM);
 			try {
-				VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyArm)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_ARM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyArm)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_ARM__STUDY_ARM_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmStudyArmCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
 						 new Object [] { studyArm }));
 			}
 			 
@@ -315,7 +357,7 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +372,35 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudyArmCode(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_ARM);
 			try {
-				VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyArm)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_ARM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyArm)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_ARM__STUDY_ARM_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmStudyArmCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
 						 new Object [] { studyArm }));
 			}
 			 
@@ -376,7 +428,7 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -391,25 +443,35 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudyArmText(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_ARM);
 			try {
-				VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyArm)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_ARM_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyArm)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_ARM__STUDY_ARM_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmStudyArmText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
 						 new Object [] { studyArm }));
 			}
 			 
@@ -437,7 +499,7 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -452,25 +514,35 @@ public class StudyArmOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudyArmEffectiveTime(StudyArm studyArm, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_ARM);
 			try {
-				VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyArm)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_ARM_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyArm)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_ARM__STUDY_ARM_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyArmStudyArmEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyArm, context) }),
 						 new Object [] { studyArm }));
 			}
 			 

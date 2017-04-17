@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.InitialPatientAcuity;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.InitialPatientAcuityOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Initial Patient Acuity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class InitialPatientAcuityImpl extends ObservationImpl implements InitialPatientAcuity {
+public class InitialPatientAcuityImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements InitialPatientAcuity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -113,16 +102,16 @@ public class InitialPatientAcuityImpl extends ObservationImpl implements Initial
 	 * @generated
 	 */
 	public InitialPatientAcuity init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public InitialPatientAcuity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public InitialPatientAcuity init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // InitialPatientAcuityImpl

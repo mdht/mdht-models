@@ -17,8 +17,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalDocumentOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection;
 import org.openhealthtools.mdht.uml.cda.vsbr.HistoryofInfectionFetalDeathSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliverySection;
@@ -69,8 +67,15 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations extends
-		ClinicalDocumentOperations {
+public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations
+		extends org.eclipse.mdht.uml.cda.operations.ClinicalDocumentOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -99,7 +104,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -116,30 +121,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -166,7 +175,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -183,30 +192,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -233,7 +246,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -250,30 +263,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -289,8 +306,8 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = element.oclAsType(datatypes::CS) in " + "value.code = 'US'))";
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.realmCode->isEmpty() or self.realmCode->exists(element | element.isNullFlavorUndefined())) implies (self.realmCode->size() = 1 and self.realmCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = element.oclAsType(datatypes::CS) in " + "value.code = 'US'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code</em>}' invariant operation.
@@ -301,7 +318,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -318,30 +335,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -368,7 +389,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -385,30 +406,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRealmCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -435,7 +460,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -452,30 +477,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTypeId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -502,7 +531,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -519,30 +548,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -569,7 +602,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -586,30 +619,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -625,9 +662,9 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '69045-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '69045-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Code</em>}' invariant operation.
@@ -638,7 +675,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -655,30 +692,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -705,7 +746,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -722,30 +763,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTitle",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsTitle",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -772,7 +817,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -789,30 +834,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEffectiveTime",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEffectiveTime",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -839,7 +888,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -856,30 +905,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -895,9 +948,9 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.5.25')";
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.confidentialityCode.oclIsUndefined() or self.confidentialityCode.isNullFlavorUndefined()) implies (not self.confidentialityCode.oclIsUndefined() and self.confidentialityCode.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.confidentialityCode.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.5.25')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCode(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Confidentiality Code</em>}' invariant operation.
@@ -908,7 +961,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -925,30 +978,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsConfidentialityCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -975,7 +1032,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -992,30 +1049,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLanguageCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLanguageCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -1042,7 +1103,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1059,30 +1120,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -1109,7 +1174,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1126,30 +1191,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -1176,7 +1245,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1193,30 +1262,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -1232,7 +1305,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))";
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::LaborandDeliverySection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Labor And Delivery Section</em>}' invariant operation.
@@ -1243,7 +1316,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1260,30 +1333,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsLaborAndDeliverySection",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -1299,7 +1376,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Fetal Delivery Section))";
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::FetalDeliverySection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetalDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Fetal Delivery Section</em>}' invariant operation.
@@ -1310,7 +1387,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1327,30 +1404,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetalDeliverySection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsFetalDeliverySection",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -1366,7 +1447,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))";
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::PrenatalTestingandSurveillanceSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Prenatal Testing And Surveillance</em>}' invariant operation.
@@ -1377,7 +1458,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1394,30 +1475,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -1433,7 +1518,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prior Pregnancy History Section))";
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::PriorPregnancyHistorySection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPregnancyHistory(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Pregnancy History</em>}' invariant operation.
@@ -1444,7 +1529,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1461,30 +1546,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPregnancyHistory",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPregnancyHistory",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -1500,7 +1589,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Fetal Death Section))";
+	protected static final String VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::HistoryofInfectionFetalDeathSection))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords History Of Infection Fetal Death Section</em>}' invariant operation.
@@ -1511,7 +1600,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1528,30 +1617,34 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 			try {
-				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reportingFetalDeathInformationfromaclinicalsettingtovitalrecords)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
-					new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										reportingFetalDeathInformationfromaclinicalsettingtovitalrecords, context) }),
+						new Object[] { reportingFetalDeathInformationfromaclinicalsettingtovitalrecords }));
 			}
 
 			return false;
@@ -1567,7 +1660,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_LABOR_AND_DELIVERY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Labor and Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Labor and Delivery Section)";
+	protected static final String GET_LABOR_AND_DELIVERY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::LaborandDeliverySection))->asSequence()->any(true).oclAsType(vsbr::LaborandDeliverySection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getLaborAndDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Labor And Delivery Section</em>}' query operation.
@@ -1587,8 +1680,10 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 
 	public static LaborandDeliverySection getLaborAndDeliverySection(
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords) {
+
 		if (GET_LABOR_AND_DELIVERY_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS,
 				VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS.getEAllOperations().get(
@@ -1599,8 +1694,10 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_LABOR_AND_DELIVERY_SECTION__EOCL_QRY);
-		return (LaborandDeliverySection) query.evaluate(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_LABOR_AND_DELIVERY_SECTION__EOCL_QRY);
+		return (LaborandDeliverySection) query.evaluate(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
 	}
 
 	/**
@@ -1611,7 +1708,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_FETAL_DELIVERY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Fetal Delivery Section))->asSequence()->any(true).oclAsType(vsbr::Fetal Delivery Section)";
+	protected static final String GET_FETAL_DELIVERY_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::FetalDeliverySection))->asSequence()->any(true).oclAsType(vsbr::FetalDeliverySection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getFetalDeliverySection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Fetal Delivery Section</em>}' query operation.
@@ -1631,8 +1728,10 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 
 	public static FetalDeliverySection getFetalDeliverySection(
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords) {
+
 		if (GET_FETAL_DELIVERY_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS,
 				VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS.getEAllOperations().get(
@@ -1643,7 +1742,8 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FETAL_DELIVERY_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FETAL_DELIVERY_SECTION__EOCL_QRY);
 		return (FetalDeliverySection) query.evaluate(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
 	}
 
@@ -1655,7 +1755,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prenatal Testing and Surveillance Section))->asSequence()->any(true).oclAsType(vsbr::Prenatal Testing and Surveillance Section)";
+	protected static final String GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::PrenatalTestingandSurveillanceSection))->asSequence()->any(true).oclAsType(vsbr::PrenatalTestingandSurveillanceSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPrenatalTestingAndSurveillance(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Prenatal Testing And Surveillance</em>}' query operation.
@@ -1675,20 +1775,25 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 
 	public static PrenatalTestingandSurveillanceSection getPrenatalTestingAndSurveillance(
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords) {
+
 		if (GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS,
 				VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS.getEAllOperations().get(
 					53));
 			try {
-				GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_QRY = helper.createQuery(GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_EXP);
+				GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_QRY = helper.createQuery(
+					GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_QRY);
-		return (PrenatalTestingandSurveillanceSection) query.evaluate(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRENATAL_TESTING_AND_SURVEILLANCE__EOCL_QRY);
+		return (PrenatalTestingandSurveillanceSection) query.evaluate(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
 	}
 
 	/**
@@ -1699,7 +1804,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_PREGNANCY_HISTORY__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::Prior Pregnancy History Section))->asSequence()->any(true).oclAsType(vsbr::Prior Pregnancy History Section)";
+	protected static final String GET_PREGNANCY_HISTORY__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::PriorPregnancyHistorySection))->asSequence()->any(true).oclAsType(vsbr::PriorPregnancyHistorySection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getPregnancyHistory(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get Pregnancy History</em>}' query operation.
@@ -1719,8 +1824,10 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 
 	public static PriorPregnancyHistorySection getPregnancyHistory(
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords) {
+
 		if (GET_PREGNANCY_HISTORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS,
 				VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS.getEAllOperations().get(
@@ -1731,8 +1838,10 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PREGNANCY_HISTORY__EOCL_QRY);
-		return (PriorPregnancyHistorySection) query.evaluate(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PREGNANCY_HISTORY__EOCL_QRY);
+		return (PriorPregnancyHistorySection) query.evaluate(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
 	}
 
 	/**
@@ -1743,7 +1852,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::History of Infection: Fetal Death Section))->asSequence()->any(true).oclAsType(vsbr::History of Infection: Fetal Death Section)";
+	protected static final String GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_EXP = "self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(vsbr::HistoryofInfectionFetalDeathSection))->asSequence()->any(true).oclAsType(vsbr::HistoryofInfectionFetalDeathSection)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHistoryOfInfectionFetalDeathSection(ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) <em>Get History Of Infection Fetal Death Section</em>}' query operation.
@@ -1763,20 +1872,25 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOpe
 
 	public static HistoryofInfectionFetalDeathSection getHistoryOfInfectionFetalDeathSection(
 			ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords) {
+
 		if (GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS,
 				VsbrPackage.Literals.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS.getEAllOperations().get(
 					55));
 			try {
-				GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY = helper.createQuery(GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_EXP);
+				GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY = helper.createQuery(
+					GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY);
-		return (HistoryofInfectionFetalDeathSection) query.evaluate(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION__EOCL_QRY);
+		return (HistoryofInfectionFetalDeathSection) query.evaluate(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
 	}
 
 } // ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations

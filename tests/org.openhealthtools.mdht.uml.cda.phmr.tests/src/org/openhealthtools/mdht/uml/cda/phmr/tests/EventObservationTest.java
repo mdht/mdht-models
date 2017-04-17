@@ -28,13 +28,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.EventObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.EventObservationOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -70,66 +70,69 @@ public class EventObservationTest extends  CDAValidationTest {
  
 									
 public void testValidateEventObservationTemplateId() {
-      OperationsTestCase<EventObservation> validateEventObservationTemplateIdTestCase = new OperationsTestCase<EventObservation>(
-      "validateEventObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<EventObservation> validateEventObservationTemplateIdTestCase = new OperationsTestCase<EventObservation>(
+			"validateEventObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(EventObservation target) {
+			@Override
+			protected void updateToFail(EventObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(EventObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(EventObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return EventObservationOperations.validateEventObservationTemplateId(
-          (EventObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return EventObservationOperations.validateEventObservationTemplateId(
+					(EventObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateEventObservationTemplateIdTestCase.doValidationTest();
+		validateEventObservationTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -144,66 +147,69 @@ public void testValidateEventObservationTemplateId() {
  
 									
 public void testValidateEventObservationClassCode() {
-      OperationsTestCase<EventObservation> validateEventObservationClassCodeTestCase = new OperationsTestCase<EventObservation>(
-      "validateEventObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<EventObservation> validateEventObservationClassCodeTestCase = new OperationsTestCase<EventObservation>(
+			"validateEventObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(EventObservation target) {
+			@Override
+			protected void updateToFail(EventObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(EventObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(EventObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return EventObservationOperations.validateEventObservationClassCode(
-          (EventObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return EventObservationOperations.validateEventObservationClassCode(
+					(EventObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateEventObservationClassCodeTestCase.doValidationTest();
+		validateEventObservationClassCodeTestCase.doValidationTest();
 }		
 
 
@@ -218,69 +224,72 @@ public void testValidateEventObservationClassCode() {
  
 									
 public void testValidateEventObservationCode() {
-      OperationsTestCase<EventObservation> validateEventObservationCodeTestCase = new OperationsTestCase<EventObservation>(
-      "validateEventObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<EventObservation> validateEventObservationCodeTestCase = new OperationsTestCase<EventObservation>(
+			"validateEventObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(EventObservation target) {
+			@Override
+			protected void updateToFail(EventObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(EventObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(EventObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+			
+				CD cd  = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return EventObservationOperations.validateEventObservationCode(
-          (EventObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return EventObservationOperations.validateEventObservationCode(
+					(EventObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateEventObservationCodeTestCase.doValidationTest();
+		validateEventObservationCodeTestCase.doValidationTest();
 }		
 
 
@@ -295,66 +304,69 @@ public void testValidateEventObservationCode() {
  
 									
 public void testValidateEventObservationMoodCode() {
-      OperationsTestCase<EventObservation> validateEventObservationMoodCodeTestCase = new OperationsTestCase<EventObservation>(
-      "validateEventObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<EventObservation> validateEventObservationMoodCodeTestCase = new OperationsTestCase<EventObservation>(
+			"validateEventObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(EventObservation target) {
+			@Override
+			protected void updateToFail(EventObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(EventObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(EventObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return EventObservationOperations.validateEventObservationMoodCode(
-          (EventObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return EventObservationOperations.validateEventObservationMoodCode(
+					(EventObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateEventObservationMoodCodeTestCase.doValidationTest();
+		validateEventObservationMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -369,69 +381,72 @@ public void testValidateEventObservationMoodCode() {
  
 									
 public void testValidateEventObservationValue() {
-      OperationsTestCase<EventObservation> validateEventObservationValueTestCase = new OperationsTestCase<EventObservation>(
-      "validateEventObservationValue",
-      operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<EventObservation> validateEventObservationValueTestCase = new OperationsTestCase<EventObservation>(
+			"validateEventObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(EventObservation target) {
+			@Override
+			protected void updateToFail(EventObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(EventObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(EventObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-      
-        CD value = DatatypesFactory.eINSTANCE.createCD();
-        target.getValues().add(value);
-        
+				
+			
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return EventObservationOperations.validateEventObservationValue(
-          (EventObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return EventObservationOperations.validateEventObservationValue(
+					(EventObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateEventObservationValueTestCase.doValidationTest();
+		validateEventObservationValueTestCase.doValidationTest();
 }		
 
 
@@ -446,66 +461,69 @@ public void testValidateEventObservationValue() {
  
 									
 public void testValidateEventObservationPHMRProductInstanceReference() {
-      OperationsTestCase<EventObservation> validateEventObservationPHMRProductInstanceReferenceTestCase = new OperationsTestCase<EventObservation>(
-      "validateEventObservationPHMRProductInstanceReference",
-      operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<EventObservation> validateEventObservationPHMRProductInstanceReferenceTestCase = new OperationsTestCase<EventObservation>(
+			"validateEventObservationPHMRProductInstanceReference",
+			operationsForOCL.getOCLValue("VALIDATE_EVENT_OBSERVATION_PHMR_PRODUCT_INSTANCE_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(EventObservation target) {
+			@Override
+			protected void updateToFail(EventObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(EventObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(EventObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return EventObservationOperations.validateEventObservationPHMRProductInstanceReference(
-          (EventObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return EventObservationOperations.validateEventObservationPHMRProductInstanceReference(
+					(EventObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateEventObservationPHMRProductInstanceReferenceTestCase.doValidationTest();
+		validateEventObservationPHMRProductInstanceReferenceTestCase.doValidationTest();
 }		
 
 
@@ -534,6 +552,7 @@ public void testValidateEventObservationPHMRProductInstanceReference() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<EventObservation> {
+		@Override
 		public EventObservation create() {		
 			return PhmrFactory.eINSTANCE.createEventObservation();
 		}
@@ -565,9 +584,9 @@ public void testValidateEventObservationPHMRProductInstanceReference() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -577,8 +596,8 @@ public void testValidateEventObservationPHMRProductInstanceReference() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

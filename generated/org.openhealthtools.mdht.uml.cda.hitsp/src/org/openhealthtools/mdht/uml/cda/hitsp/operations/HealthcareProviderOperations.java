@@ -39,6 +39,13 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.HealthcareProvidersPharma
  * @generated
  */
 public class HealthcareProviderOperations extends HealthcareProvidersPharmaciesOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -66,7 +73,7 @@ public class HealthcareProviderOperations extends HealthcareProvidersPharmaciesO
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -81,22 +88,27 @@ public class HealthcareProviderOperations extends HealthcareProvidersPharmaciesO
 	public static boolean validateHealthcareProviderTemplateId(HealthcareProvider healthcareProvider,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HEALTHCARE_PROVIDER);
 			try {
-				VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			healthcareProvider)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HEALTHCARE_PROVIDER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(healthcareProvider)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HealthcareProviderTemplateId"), new Object[] { healthcareProvider }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.HEALTHCARE_PROVIDER__HEALTHCARE_PROVIDER_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString("HealthcareProviderHealthcareProviderTemplateId"),
+						new Object[] { healthcareProvider }));
 			}
 
 			return false;

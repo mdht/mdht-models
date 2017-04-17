@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.DateofLastLiveBirth;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -38,7 +36,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
+public class DateofLastLiveBirthOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,7 +72,7 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -83,28 +88,34 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	public static boolean validateDateofLastLiveBirthTemplateId(DateofLastLiveBirth dateofLastLiveBirth,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.DATEOF_LAST_LIVE_BIRTH);
 			try {
-				VALIDATE_DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dateofLastLiveBirth)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dateofLastLiveBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.DATEOF_LAST_LIVE_BIRTH__DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"DateofLastLiveBirthTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateofLastLiveBirth, context) }),
-					new Object[] { dateofLastLiveBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.DATEOF_LAST_LIVE_BIRTH__DATEOF_LAST_LIVE_BIRTH_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"DateofLastLiveBirthDateofLastLiveBirthTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										dateofLastLiveBirth, context) }),
+						new Object[] { dateofLastLiveBirth }));
 			}
 
 			return false;
@@ -131,7 +142,7 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DATEOF_LAST_LIVE_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_DATEOF_LAST_LIVE_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,28 +158,33 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	public static boolean validateDateofLastLiveBirthMoodCode(DateofLastLiveBirth dateofLastLiveBirth,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_DATEOF_LAST_LIVE_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_DATEOF_LAST_LIVE_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.DATEOF_LAST_LIVE_BIRTH);
 			try {
-				VALIDATE_DATEOF_LAST_LIVE_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEOF_LAST_LIVE_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEOF_LAST_LIVE_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DATEOF_LAST_LIVE_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEOF_LAST_LIVE_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dateofLastLiveBirth)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATEOF_LAST_LIVE_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				dateofLastLiveBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.DATEOF_LAST_LIVE_BIRTH__DATEOF_LAST_LIVE_BIRTH_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"DateofLastLiveBirthMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateofLastLiveBirth, context) }),
-					new Object[] { dateofLastLiveBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.DATEOF_LAST_LIVE_BIRTH__DATEOF_LAST_LIVE_BIRTH_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"DateofLastLiveBirthDateofLastLiveBirthMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										dateofLastLiveBirth, context) }),
+						new Object[] { dateofLastLiveBirth }));
 			}
 
 			return false;
@@ -195,7 +211,7 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,28 +227,32 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	public static boolean validateDateofLastLiveBirthCodeP(DateofLastLiveBirth dateofLastLiveBirth,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.DATEOF_LAST_LIVE_BIRTH);
 			try {
-				VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dateofLastLiveBirth)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateofLastLiveBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.DATEOF_LAST_LIVE_BIRTH__DATEOF_LAST_LIVE_BIRTH_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"DateofLastLiveBirthCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateofLastLiveBirth, context) }),
-					new Object[] { dateofLastLiveBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.DATEOF_LAST_LIVE_BIRTH__DATEOF_LAST_LIVE_BIRTH_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"DateofLastLiveBirthDateofLastLiveBirthCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										dateofLastLiveBirth, context) }),
+						new Object[] { dateofLastLiveBirth }));
 			}
 
 			return false;
@@ -248,9 +268,9 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '68499-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '68499-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateDateofLastLiveBirthCode(DateofLastLiveBirth, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Dateof Last Live Birth Code</em>}' invariant operation.
@@ -261,7 +281,7 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -277,28 +297,32 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	public static boolean validateDateofLastLiveBirthCode(DateofLastLiveBirth dateofLastLiveBirth,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.DATEOF_LAST_LIVE_BIRTH);
 			try {
-				VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dateofLastLiveBirth)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATEOF_LAST_LIVE_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateofLastLiveBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.DATEOF_LAST_LIVE_BIRTH__DATEOF_LAST_LIVE_BIRTH_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"DateofLastLiveBirthCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateofLastLiveBirth, context) }),
-					new Object[] { dateofLastLiveBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.DATEOF_LAST_LIVE_BIRTH__DATEOF_LAST_LIVE_BIRTH_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"DateofLastLiveBirthDateofLastLiveBirthCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										dateofLastLiveBirth, context) }),
+						new Object[] { dateofLastLiveBirth }));
 			}
 
 			return false;
@@ -325,7 +349,7 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_DATEOF_LAST_LIVE_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_DATEOF_LAST_LIVE_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -341,28 +365,32 @@ public class DateofLastLiveBirthOperations extends ClinicalStatementOperations {
 	public static boolean validateDateofLastLiveBirthValue(DateofLastLiveBirth dateofLastLiveBirth,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_DATEOF_LAST_LIVE_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_DATEOF_LAST_LIVE_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.DATEOF_LAST_LIVE_BIRTH);
 			try {
-				VALIDATE_DATEOF_LAST_LIVE_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEOF_LAST_LIVE_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEOF_LAST_LIVE_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_DATEOF_LAST_LIVE_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEOF_LAST_LIVE_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			dateofLastLiveBirth)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_DATEOF_LAST_LIVE_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateofLastLiveBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.DATEOF_LAST_LIVE_BIRTH__DATEOF_LAST_LIVE_BIRTH_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"DateofLastLiveBirthValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateofLastLiveBirth, context) }),
-					new Object[] { dateofLastLiveBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.DATEOF_LAST_LIVE_BIRTH__DATEOF_LAST_LIVE_BIRTH_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"DateofLastLiveBirthDateofLastLiveBirthValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										dateofLastLiveBirth, context) }),
+						new Object[] { dateofLastLiveBirth }));
 			}
 
 			return false;

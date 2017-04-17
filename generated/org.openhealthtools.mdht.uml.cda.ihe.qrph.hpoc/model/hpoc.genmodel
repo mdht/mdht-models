@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc/src"
-    modelPluginID="org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc" templateDirectory="/org.openhealthtools.mdht.uml.cda/templates"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc" templateDirectory="/org.eclipse.mdht.uml.cda/templates"
     dynamicTemplates="true" modelName="hpoc_Ecore" modelPluginClass="HPOCPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
-    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda ../../org.openhealthtools.mdht.uml.cda.consol/model/consol.genmodel#//consol platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore platform:/plugin/org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="../../org.eclipse.mdht.uml.cda/model/cda.genmodel#//cda ../../org.eclipse.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
     pluralizedGetters="true" invariantPrefix="validate">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
@@ -24,6 +24,10 @@
     <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
     <details key="VALIDATION_DELEGATES" value="IGNORE"/>
     <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
   </genAnnotations>
   <foreignModel>hpoc_Ecore.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="HPOC" basePackage="org.openhealthtools.mdht.uml.cda.ihe.qrph"
@@ -188,6 +192,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingScreeningSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningSection/ResultsSectionEntriesOptionalTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningSection/ResultsSectionEntriesOptionalTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningSection/ResultsSectionEntriesOptionalTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningSection/HearingScreeningSectionCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningSection/HearingScreeningSectionCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningSection/HearingScreeningSectionCodeP/context"/>
@@ -300,6 +308,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityAct/HearingPlanOfCareActivityActEffectiveTimeLowHigh/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityAct/HearingPlanOfCareActivityActEffectiveTimeLowHigh/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityAct/PlanOfCareActivityActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityAct/PlanOfCareActivityActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityAct/PlanOfCareActivityActTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityAct/HearingPlanOfCareActivityActCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityAct/HearingPlanOfCareActivityActCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityAct/HearingPlanOfCareActivityActCodeP/context"/>
@@ -326,6 +338,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityEncounter/HearingPlanOfCareActivityEncounterEffectiveTimeLowHigh/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityEncounter/HearingPlanOfCareActivityEncounterEffectiveTimeLowHigh/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityEncounter/PlanOfCareActivityEncounterTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityEncounter/PlanOfCareActivityEncounterTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityEncounter/PlanOfCareActivityEncounterTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityEncounter/HearingPlanOfCareActivityEncounterCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityEncounter/HearingPlanOfCareActivityEncounterCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityEncounter/HearingPlanOfCareActivityEncounterCode/context"/>
@@ -347,6 +363,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityObservation/HearingPlanOfCareActivityObservationEffectiveTimeLowHigh">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityObservation/HearingPlanOfCareActivityObservationEffectiveTimeLowHigh/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityObservation/HearingPlanOfCareActivityObservationEffectiveTimeLowHigh/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityObservation/PlanOfCareActivityObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityObservation/PlanOfCareActivityObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityObservation/PlanOfCareActivityObservationTemplateId/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityObservation/HearingPlanOfCareActivityObservationCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityObservation/HearingPlanOfCareActivityObservationCodeP/diagnostics"/>
@@ -374,6 +394,10 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityProcedure/HearingPlanOfCareActivityProcedureEffectiveTimeLowHigh/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityProcedure/HearingPlanOfCareActivityProcedureEffectiveTimeLowHigh/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityProcedure/PlanOfCareActivityProcedureTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityProcedure/PlanOfCareActivityProcedureTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityProcedure/PlanOfCareActivityProcedureTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityProcedure/HearingPlanOfCareActivityProcedureCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityProcedure/HearingPlanOfCareActivityProcedureCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityProcedure/HearingPlanOfCareActivityProcedureCode/context"/>
@@ -396,6 +420,10 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingPlanOfCareActivitySubstanceAdministration">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivitySubstanceAdministration/PlanOfCareActivitySubstanceAdministrationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivitySubstanceAdministration/PlanOfCareActivitySubstanceAdministrationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivitySubstanceAdministration/PlanOfCareActivitySubstanceAdministrationTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivitySubstanceAdministration/HearingPlanOfCareActivitySubstanceAdministrationCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivitySubstanceAdministration/HearingPlanOfCareActivitySubstanceAdministrationCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivitySubstanceAdministration/HearingPlanOfCareActivitySubstanceAdministrationCode/context"/>
@@ -490,6 +518,22 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingPlanOfCareInstructions">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsText/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareInstructions/HearingPlanOfCareInstructionsEffectiveTime">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/HearingPlanOfCareInstructionsEffectiveTime/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/HearingPlanOfCareInstructionsEffectiveTime/context"/>
@@ -498,8 +542,16 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsStatusCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsStatusCodeP/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareInstructions/InstructionsStatusCode/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingPlanOfCareActivityNonMedicinalSupply">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityNonMedicinalSupply/PlanOfCareActivitySupplyTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityNonMedicinalSupply/PlanOfCareActivitySupplyTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityNonMedicinalSupply/PlanOfCareActivitySupplyTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareActivityNonMedicinalSupply/HearingPlanOfCareActivityNonMedicinalSupplyCode">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityNonMedicinalSupply/HearingPlanOfCareActivityNonMedicinalSupplyCode/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareActivityNonMedicinalSupply/HearingPlanOfCareActivityNonMedicinalSupplyCode/context"/>
@@ -526,9 +578,21 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingScreeningOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerClassCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningOrganizer/ResultOrganizerCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningOrganizer/HearingScreeningOrganizerComponentLeftEar">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningOrganizer/HearingScreeningOrganizerComponentLeftEar/diagnostics"/>
@@ -718,9 +782,29 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingScreeningResultsOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerClassCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/ResultOrganizerStatusCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultsOrganizer/HearingScreeningResultsOrganizerComponentResultObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultsOrganizer/HearingScreeningResultsOrganizerComponentResultObservation/diagnostics"/>
@@ -728,9 +812,29 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingScreeningResultObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationValue/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationValueP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationValueP/diagnostics"/>
@@ -740,9 +844,17 @@
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationMethodCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationMethodCodeP/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationMethodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationMethodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationMethodCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationTargetSiteCodeP">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationTargetSiteCodeP/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationTargetSiteCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationTargetSiteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationTargetSiteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/ResultObservationTargetSiteCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingScreeningResultObservation/HearingScreeningResultObservationEntryRelationshipReasonNotScreened">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingScreeningResultObservation/HearingScreeningResultObservationEntryRelationshipReasonNotScreened/diagnostics"/>
@@ -800,15 +912,35 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//ProblemConcern">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProblemConcern/ProblemConcernActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProblemConcern/ProblemConcernActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProblemConcern/ProblemConcernActTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProblemConcern/ProblemConcernText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProblemConcern/ProblemConcernText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProblemConcern/ProblemConcernText/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProblemConcern/ProblemConcernActEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProblemConcern/ProblemConcernActEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProblemConcern/ProblemConcernActEffectiveTime/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingPlanOfCareProblemConcern">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProblemConcern/ProblemConcernActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProblemConcern/ProblemConcernActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProblemConcern/ProblemConcernActTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProblemConcern/ProblemConcernActId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProblemConcern/ProblemConcernActId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProblemConcern/ProblemConcernActId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProblemConcern/HearingPlanOfCareProblemConcernText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProblemConcern/HearingPlanOfCareProblemConcernText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProblemConcern/HearingPlanOfCareProblemConcernText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProblemConcern/ProblemConcernActEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProblemConcern/ProblemConcernActEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProblemConcern/ProblemConcernActEffectiveTime/context"/>
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingPlanOfCareProblemsSubSection">
@@ -838,15 +970,35 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//ProcedureActivityProcedure">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProcedureActivityProcedure/HPOCProcedureActivityProcedureText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityProcedure/HPOCProcedureActivityProcedureText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityProcedure/HPOCProcedureActivityProcedureText/context"/>
       </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityProcedure/ProcedureActivityProcedureCode/context"/>
+      </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//ProcedureActivityAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProcedureActivityAct/ProcedureActivityActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityAct/ProcedureActivityActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityAct/ProcedureActivityActTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProcedureActivityAct/HPOCProcedureActivityActText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityAct/HPOCProcedureActivityActText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityAct/HPOCProcedureActivityActText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProcedureActivityAct/ProcedureActivityActCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityAct/ProcedureActivityActCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityAct/ProcedureActivityActCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//ProcedureActivityAct/HPOCProcedureActivityActEntryRelationshipEncounter">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//ProcedureActivityAct/HPOCProcedureActivityActEntryRelationshipEncounter/diagnostics"/>
@@ -900,9 +1052,17 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/ProcedureActivityProcedureTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/ProcedureActivityProcedureTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/ProcedureActivityProcedureTemplateId/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/HearingPlanOfCareProcedureActivityProcedureId">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/HearingPlanOfCareProcedureActivityProcedureId/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/HearingPlanOfCareProcedureActivityProcedureId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/ProcedureActivityProcedureCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/ProcedureActivityProcedureCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/ProcedureActivityProcedureCode/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/HearingPlanOfCareProcedureActivityProcedureText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityProcedure/HearingPlanOfCareProcedureActivityProcedureText/diagnostics"/>
@@ -910,6 +1070,18 @@
       </genOperations>
     </genClasses>
     <genClasses xsi:type="genmodel:GenClass" ecoreClass="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/ProcedureActivityActTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/ProcedureActivityActTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/ProcedureActivityActTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/ProcedureActivityActId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/ProcedureActivityActId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/ProcedureActivityActId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/ProcedureActivityActCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/ProcedureActivityActCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/ProcedureActivityActCode/context"/>
+      </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/HearingPlanOfCareProcedureActivityActText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/HearingPlanOfCareProcedureActivityActText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="hpoc.ecore#//HearingPlanOfCareProcedureActivityAct/HearingPlanOfCareProcedureActivityActText/context"/>

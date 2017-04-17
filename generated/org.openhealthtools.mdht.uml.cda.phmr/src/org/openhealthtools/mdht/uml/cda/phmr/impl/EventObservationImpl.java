@@ -22,121 +22,112 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.phmr.EventObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.EventObservationOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Event Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EventObservationImpl extends ObservationImpl implements EventObservation {
+public class EventObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements EventObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected EventObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.EVENT_OBSERVATION;
-  }
+		return PhmrPackage.Literals.EVENT_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateEventObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EventObservationOperations.validateEventObservationTemplateId(this, diagnostics, context);
-  }
+		return EventObservationOperations.validateEventObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateEventObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EventObservationOperations.validateEventObservationClassCode(this, diagnostics, context);
-  }
+		return EventObservationOperations.validateEventObservationClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateEventObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EventObservationOperations.validateEventObservationCode(this, diagnostics, context);
-  }
+		return EventObservationOperations.validateEventObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateEventObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EventObservationOperations.validateEventObservationMoodCode(this, diagnostics, context);
-  }
+		return EventObservationOperations.validateEventObservationMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateEventObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return EventObservationOperations.validateEventObservationValue(this, diagnostics, context);
-  }
+		return EventObservationOperations.validateEventObservationValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
 public boolean validateEventObservationPHMRProductInstanceReference(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return EventObservationOperations.validateEventObservationPHMRProductInstanceReference(this, diagnostics, context);
-  }
+		return EventObservationOperations.validateEventObservationPHMRProductInstanceReference(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public EventObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -144,8 +135,8 @@ public boolean validateEventObservationPHMRProductInstanceReference(DiagnosticCh
      * @generated
      */
     @Override
-	public EventObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public EventObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //EventObservationImpl

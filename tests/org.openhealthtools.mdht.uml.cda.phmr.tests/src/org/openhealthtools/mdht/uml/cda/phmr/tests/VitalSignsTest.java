@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.VitalSigns;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.VitalSignsOperations;
@@ -43,7 +43,7 @@ import org.openhealthtools.mdht.uml.cda.phmr.operations.VitalSignsOperations;
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.VitalSigns#validateVitalSignsVitalSignsOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Vital Signs Organizer</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.VitalSigns#validateVitalSignsOrganizer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.VitalSigns#getPhmrVitalSignsOrganizer() <em>Get Phmr Vital Signs Organizer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.VitalSigns#validateVitalSignsSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vital Signs Section Template Id</em>}</li>
  * </ul>
@@ -64,68 +64,71 @@ public class VitalSignsTest extends  CDAValidationTest {
 
  
 									
-public void testValidateVitalSignsVitalSignsOrganizer() {
-      OperationsTestCase<VitalSigns> validateVitalSignsVitalSignsOrganizerTestCase = new OperationsTestCase<VitalSigns>(
-      "validateVitalSignsVitalSignsOrganizer",
-      operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+public void testValidateVitalSignsOrganizer() {
+			OperationsTestCase<VitalSigns> validateVitalSignsOrganizerTestCase = new OperationsTestCase<VitalSigns>(
+			"validateVitalSignsOrganizer",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(VitalSigns target) {
+			@Override
+			protected void updateToFail(VitalSigns target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(VitalSigns target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(VitalSigns target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return VitalSignsOperations.validateVitalSignsVitalSignsOrganizer(
-          (VitalSigns) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return VitalSignsOperations.validateVitalSignsOrganizer(
+					(VitalSigns) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateVitalSignsVitalSignsOrganizerTestCase.doValidationTest();
-}		
+		validateVitalSignsOrganizerTestCase.doValidationTest();
+}
 
 
 
@@ -162,66 +165,69 @@ target.getPhmrVitalSignsOrganizer();
  
 									
 public void testValidateVitalSignsSectionTemplateId() {
-      OperationsTestCase<VitalSigns> validateVitalSignsSectionTemplateIdTestCase = new OperationsTestCase<VitalSigns>(
-      "validateVitalSignsSectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<VitalSigns> validateVitalSignsSectionTemplateIdTestCase = new OperationsTestCase<VitalSigns>(
+			"validateVitalSignsSectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(VitalSigns target) {
+			@Override
+			protected void updateToFail(VitalSigns target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(VitalSigns target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(VitalSigns target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return VitalSignsOperations.validateVitalSignsSectionTemplateId(
-          (VitalSigns) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return VitalSignsOperations.validateVitalSignsSectionTemplateId(
+					(VitalSigns) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateVitalSignsSectionTemplateIdTestCase.doValidationTest();
+		validateVitalSignsSectionTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -250,6 +256,7 @@ public void testValidateVitalSignsSectionTemplateId() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<VitalSigns> {
+		@Override
 		public VitalSigns create() {		
 			return PhmrFactory.eINSTANCE.createVitalSigns();
 		}
@@ -281,9 +288,9 @@ public void testValidateVitalSignsSectionTemplateId() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -293,8 +300,8 @@ public void testValidateVitalSignsSectionTemplateId() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

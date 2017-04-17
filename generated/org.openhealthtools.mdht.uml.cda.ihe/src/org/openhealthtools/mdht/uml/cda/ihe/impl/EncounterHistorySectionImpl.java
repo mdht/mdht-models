@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.EncountersSectionImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterHistorySection;
@@ -28,45 +28,43 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.EncounterHistorySectionOp
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounter History Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class EncounterHistorySectionImpl extends EncountersSectionImpl implements EncounterHistorySection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected EncounterHistorySectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.ENCOUNTER_HISTORY_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterHistorySectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return EncounterHistorySectionOperations.validateEncounterHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateEncounterHistorySectionEncounterEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return EncounterHistorySectionOperations.validateEncounterHistorySectionEncounterEntry(
@@ -74,19 +72,19 @@ public class EncounterHistorySectionImpl extends EncountersSectionImpl implement
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<EncounterEntry> getEncounterEntries() {
 		return EncounterHistorySectionOperations.getEncounterEntries(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public EncounterHistorySection init() {
 		return Initializer.Util.init(this);

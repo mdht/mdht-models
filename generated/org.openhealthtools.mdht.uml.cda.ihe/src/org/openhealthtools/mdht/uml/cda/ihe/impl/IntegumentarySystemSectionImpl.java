@@ -16,66 +16,65 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IntegumentarySystemSection;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.IntegumentarySystemSectionOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Integumentary System Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class IntegumentarySystemSectionImpl extends SectionImpl implements IntegumentarySystemSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected IntegumentarySystemSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.INTEGUMENTARY_SYSTEM_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateIntegumentarySystemSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	 * @generated
+	 */
+	public boolean validateIntegumentarySystemSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionTemplateId(
 			this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIntegumentarySystemSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIntegumentarySystemSectionProblemEntry(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return IntegumentarySystemSectionOperations.validateIntegumentarySystemSectionProblemEntry(
@@ -83,19 +82,19 @@ public class IntegumentarySystemSectionImpl extends SectionImpl implements Integ
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProblemEntry getProblemEntry() {
 		return IntegumentarySystemSectionOperations.getProblemEntry(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public IntegumentarySystemSection init() {
 		return Initializer.Util.init(this);
 	}

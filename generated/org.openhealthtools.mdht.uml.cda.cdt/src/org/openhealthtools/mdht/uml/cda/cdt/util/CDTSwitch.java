@@ -13,9 +13,11 @@ package org.openhealthtools.mdht.uml.cda.cdt.util;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
-import org.openhealthtools.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.RegistryDelegate;
+import org.eclipse.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.hl7.rim.Act;
+import org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot;
 import org.openhealthtools.mdht.uml.cda.ccd.ResultsSection;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSectionProcNote;
@@ -50,8 +52,6 @@ import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSectionIHE;
 import org.openhealthtools.mdht.uml.cda.cdt.SubjectiveSection;
 import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.VitalSignsSection;
-import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -91,7 +91,7 @@ public class CDTSwitch<T> extends Switch<T> {
 	 * Checks whether this is a switch for the given package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @parameter ePackage the package in question.
+	 * @param ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
 	 */

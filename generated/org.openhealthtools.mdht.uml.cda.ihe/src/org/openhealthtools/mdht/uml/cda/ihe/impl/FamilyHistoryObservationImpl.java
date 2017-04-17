@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.FamilyHistoryObservationOperations;
@@ -26,82 +26,80 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.SimpleObservationOperatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Family History Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class FamilyHistoryObservationImpl extends
-		org.openhealthtools.mdht.uml.cda.ccd.impl.FamilyHistoryObservationImpl implements FamilyHistoryObservation {
+public class FamilyHistoryObservationImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.FamilyHistoryObservationImpl
+		implements FamilyHistoryObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected FamilyHistoryObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.FAMILY_HISTORY_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSimpleObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateSimpleObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSimpleObservationId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SimpleObservationOperations.validateSimpleObservationId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSimpleObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SimpleObservationOperations.validateSimpleObservationStatusCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIHEFamilyHistoryObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateIHEFamilyHistoryObservationCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIHEFamilyHistoryObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return FamilyHistoryObservationOperations.validateIHEFamilyHistoryObservationValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public FamilyHistoryObservation init() {
 		return Initializer.Util.init(this);

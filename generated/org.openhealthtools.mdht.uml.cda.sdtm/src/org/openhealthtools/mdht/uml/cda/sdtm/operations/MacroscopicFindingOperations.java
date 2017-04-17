@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.BodySystemorOrganClass;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -35,7 +28,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SpecimenInformation;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -84,7 +76,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class MacroscopicFindingOperations extends ClinicalStatementOperations {
+public class MacroscopicFindingOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -113,7 +113,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -128,25 +128,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingTemplateId(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -174,7 +184,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -189,25 +199,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingClassCode(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -235,7 +255,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -250,25 +270,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingMoodCode(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -296,7 +326,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -311,25 +341,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingCodeP(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -359,7 +399,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -374,25 +414,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingCode(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -420,7 +470,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -435,25 +485,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingId(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -481,7 +541,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -496,25 +556,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingValue(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -542,7 +612,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -557,25 +627,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingStatusCode(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -603,7 +683,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -618,25 +698,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingMassIdentification(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_MASS_IDENTIFICATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMassIdentification", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingMassIdentification", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -664,7 +754,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -679,25 +769,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingGroupIdentifier(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -725,7 +825,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -740,25 +840,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingSpecimenInformation(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_SPECIMEN_INFORMATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -786,7 +896,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -801,25 +911,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingBodySystemorOrganClass(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_BODY_SYSTEMOR_ORGAN_CLASS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingBodySystemorOrganClass", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingBodySystemorOrganClass", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -847,7 +967,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -862,25 +982,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingNonPerformanceReason(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -908,7 +1038,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -923,25 +1053,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingStudyTestPerformer(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_STUDY_TEST_PERFORMER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -969,7 +1109,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -984,25 +1124,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingStudyFindingEvaluator(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_STUDY_FINDING_EVALUATOR,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingStudyFindingEvaluator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingStudyFindingEvaluator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -1030,7 +1180,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1045,25 +1195,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingEventSeverity(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_EVENT_SEVERITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingEventSeverity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingEventSeverity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -1091,7 +1251,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1106,25 +1266,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingDataCollection(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_DATA_COLLECTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -1152,7 +1322,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1167,25 +1337,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingComment(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -1213,7 +1393,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1228,25 +1408,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingDomainAssignment(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -1274,7 +1464,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1289,25 +1479,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingRelatedRecord(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -1335,7 +1535,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1350,25 +1550,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingSupplementalValue(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -1396,7 +1606,7 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MACROSCOPIC_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MACROSCOPIC_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1411,25 +1621,35 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateMacroscopicFindingDeathRelationship(MacroscopicFinding macroscopicFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MACROSCOPIC_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MACROSCOPIC_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MACROSCOPIC_FINDING);
 			try {
-				VALIDATE_MACROSCOPIC_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MACROSCOPIC_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MACROSCOPIC_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MACROSCOPIC_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(macroscopicFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MACROSCOPIC_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(macroscopicFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MACROSCOPIC_FINDING__MACROSCOPIC_FINDING_DEATH_RELATIONSHIP,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingDeathRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MacroscopicFindingMacroscopicFindingDeathRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(macroscopicFinding, context) }),
 						 new Object [] { macroscopicFinding }));
 			}
 			 
@@ -1465,8 +1685,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(73));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1474,8 +1699,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(macroscopicFinding);
 	}
 
@@ -1506,8 +1732,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SpecimenInformation getSpecimenInformation(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_SPECIMEN_INFORMATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(74));
 			try {
 				GET_SPECIMEN_INFORMATION__EOCL_QRY = helper.createQuery(GET_SPECIMEN_INFORMATION__EOCL_EXP);
@@ -1515,8 +1746,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
 		return (SpecimenInformation) query.evaluate(macroscopicFinding);
 	}
 
@@ -1547,8 +1779,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  BodySystemorOrganClass getBodySystemorOrganClass(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(75));
 			try {
 				GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY = helper.createQuery(GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_EXP);
@@ -1556,8 +1793,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY);
 		return (BodySystemorOrganClass) query.evaluate(macroscopicFinding);
 	}
 
@@ -1588,8 +1826,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(76));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1597,8 +1840,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(macroscopicFinding);
 	}
 
@@ -1629,8 +1873,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EventorFindingSeverity getEventSeverity(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_EVENT_SEVERITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(77));
 			try {
 				GET_EVENT_SEVERITY__EOCL_QRY = helper.createQuery(GET_EVENT_SEVERITY__EOCL_EXP);
@@ -1638,8 +1887,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_SEVERITY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_SEVERITY__EOCL_QRY);
 		return (EventorFindingSeverity) query.evaluate(macroscopicFinding);
 	}
 
@@ -1670,8 +1920,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DataCollection getDataCollection(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_DATA_COLLECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(78));
 			try {
 				GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);
@@ -1679,8 +1934,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DATA_COLLECTION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DATA_COLLECTION__EOCL_QRY);
 		return (DataCollection) query.evaluate(macroscopicFinding);
 	}
 
@@ -1711,8 +1967,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<Comment> getComments(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(79));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1720,8 +1981,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(macroscopicFinding);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1754,8 +2016,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(80));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1763,8 +2030,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(macroscopicFinding);
 	}
 
@@ -1795,8 +2063,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(81));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1804,8 +2077,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(macroscopicFinding);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1838,8 +2112,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(82));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1847,8 +2126,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(macroscopicFinding);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -1881,8 +2161,13 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DeathRelationship getDeathRelationship(MacroscopicFinding macroscopicFinding) {
+	
+	
+	
 		if (GET_DEATH_RELATIONSHIP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MACROSCOPIC_FINDING, SdtmPackage.Literals.MACROSCOPIC_FINDING.getEAllOperations().get(83));
 			try {
 				GET_DEATH_RELATIONSHIP__EOCL_QRY = helper.createQuery(GET_DEATH_RELATIONSHIP__EOCL_EXP);
@@ -1890,8 +2175,9 @@ public class MacroscopicFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DEATH_RELATIONSHIP__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DEATH_RELATIONSHIP__EOCL_QRY);
 		return (DeathRelationship) query.evaluate(macroscopicFinding);
 	}
 

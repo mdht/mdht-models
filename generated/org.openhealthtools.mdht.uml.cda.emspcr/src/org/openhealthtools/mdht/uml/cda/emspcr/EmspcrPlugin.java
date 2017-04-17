@@ -7,7 +7,6 @@
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
 import org.eclipse.emf.common.EMFPlugin;
-
 import org.eclipse.emf.common.util.ResourceLocator;
 
 /**
@@ -40,7 +39,7 @@ public final class EmspcrPlugin extends EMFPlugin {
 	 * @generated
 	 */
 	public EmspcrPlugin() {
-		super(new ResourceLocator[] {});
+		super(new ResourceLocator [] {});
 	}
 
 	/**

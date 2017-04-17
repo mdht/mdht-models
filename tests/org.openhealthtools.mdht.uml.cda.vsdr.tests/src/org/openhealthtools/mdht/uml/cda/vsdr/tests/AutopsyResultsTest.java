@@ -1,9 +1,5 @@
 
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,14 +7,20 @@ package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.AutopsyResultsOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -31,10 +33,11 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults#validateAutopsyResultsAutopsyReportRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Autopsy Results Autopsy Report Relationship</em>}</li>
  * </ul>
  * </p>
  *
@@ -101,6 +104,9 @@ public void testValidateAutopsyResultsTemplateId() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -175,6 +181,9 @@ public void testValidateAutopsyResultsClassCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -188,6 +197,83 @@ public void testValidateAutopsyResultsClassCode() {
 		};
 
 		validateAutopsyResultsClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateAutopsyResultsMoodCode() {
+			OperationsTestCase<AutopsyResults> validateAutopsyResultsMoodCodeTestCase = new OperationsTestCase<AutopsyResults>(
+			"validateAutopsyResultsMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_AUTOPSY_RESULTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(AutopsyResults target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AutopsyResults target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return AutopsyResultsOperations.validateAutopsyResultsMoodCode(
+					(AutopsyResults) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAutopsyResultsMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -249,6 +335,9 @@ public void testValidateAutopsyResultsCodeP() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -323,6 +412,9 @@ public void testValidateAutopsyResultsCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -336,80 +428,6 @@ public void testValidateAutopsyResultsCode() {
 		};
 
 		validateAutopsyResultsCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateAutopsyResultsMoodCode() {
-			OperationsTestCase<AutopsyResults> validateAutopsyResultsMoodCodeTestCase = new OperationsTestCase<AutopsyResults>(
-			"validateAutopsyResultsMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_AUTOPSY_RESULTS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(AutopsyResults target) {
-
-			}
-
-			@Override
-			protected void updateToPass(AutopsyResults target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return AutopsyResultsOperations.validateAutopsyResultsMoodCode(
-					(AutopsyResults) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateAutopsyResultsMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -474,6 +492,9 @@ public void testValidateAutopsyResultsValue() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -487,6 +508,83 @@ public void testValidateAutopsyResultsValue() {
 		};
 
 		validateAutopsyResultsValueTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateAutopsyResultsAutopsyReportRelationship() {
+			OperationsTestCase<AutopsyResults> validateAutopsyResultsAutopsyReportRelationshipTestCase = new OperationsTestCase<AutopsyResults>(
+			"validateAutopsyResultsAutopsyReportRelationship",
+			operationsForOCL.getOCLValue("VALIDATE_AUTOPSY_RESULTS_AUTOPSY_REPORT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(AutopsyResults target) {
+
+			}
+
+			@Override
+			protected void updateToPass(AutopsyResults target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return AutopsyResultsOperations.validateAutopsyResultsAutopsyReportRelationship(
+					(AutopsyResults) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateAutopsyResultsAutopsyReportRelationshipTestCase.doValidationTest();
 }		
 
 
@@ -515,6 +613,7 @@ public void testValidateAutopsyResultsValue() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<AutopsyResults> {
+		@Override
 		public AutopsyResults create() {		
 			return VsdrFactory.eINSTANCE.createAutopsyResults();
 		}

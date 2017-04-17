@@ -16,8 +16,8 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.SubstanceAdministration;
 
 /**
  * <!-- begin-user-doc -->
@@ -95,7 +95,8 @@ public interface MedicationActivity extends SubstanceAdministration {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.precondition->exists(precondition : cda::Precondition | not precondition.criterion.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationActivityHasPreconditionCriterion(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationActivityHasPreconditionCriterion(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

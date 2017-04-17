@@ -9,11 +9,8 @@ package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.impl.EFactoryImpl;
-
 import org.eclipse.emf.ecore.plugin.EcorePlugin;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.*;
 
 /**
@@ -31,11 +28,12 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 	 */
 	public static EmspcrFactory init() {
 		try {
-			EmspcrFactory theEmspcrFactory = (EmspcrFactory) EPackage.Registry.INSTANCE.getEFactory(EmspcrPackage.eNS_URI);
+			EmspcrFactory theEmspcrFactory = (EmspcrFactory)EPackage.Registry.INSTANCE.getEFactory(EmspcrPackage.eNS_URI);
 			if (theEmspcrFactory != null) {
 				return theEmspcrFactory;
 			}
-		} catch (Exception exception) {
+		}
+		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
 		return new EmspcrFactoryImpl();
@@ -59,342 +57,174 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case EmspcrPackage.PATIENT_CARE_REPORT:
-				return createPatientCareReport();
-			case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION:
-				return createEMSCurrentMedicationSection();
-			case EmspcrPackage.CURRENTLY_ON_MEDICATION:
-				return createCurrentlyOnMedication();
-			case EmspcrPackage.PATIENT_ON_ANTICOAGULANTS:
-				return createPatientOnAnticoagulants();
-			case EmspcrPackage.CURRENT_MEDICATION:
-				return createCurrentMedication();
-			case EmspcrPackage.EMS_CARDIAC_ARREST_EVENT_SECTION:
-				return createEMSCardiacArrestEventSection();
-			case EmspcrPackage.CARDIAC_ARREST:
-				return createCardiacArrest();
-			case EmspcrPackage.EMS_ADVANCE_DIRECTIVES_SECTION:
-				return createEMSAdvanceDirectivesSection();
-			case EmspcrPackage.ADVANCE_DIRECTIVE_OBSERVATION:
-				return createAdvanceDirectiveObservation();
-			case EmspcrPackage.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION:
-				return createEMSAllergiesAndAdverseReactionsSection();
-			case EmspcrPackage.NON_DRUG_ALLERGY_ORGANIZER:
-				return createNonDrugAllergyOrganizer();
-			case EmspcrPackage.EXISTENCE_OF_NON_DRUG_ALLERGY:
-				return createExistenceOfNonDrugAllergy();
-			case EmspcrPackage.NON_DRUG_ALLERGY:
-				return createNonDrugAllergy();
-			case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY_SECTION:
-				return createEMSPastMedicalHistorySection();
-			case EmspcrPackage.EXISTENCE_OF_HISTORY_OF_CONDITION:
-				return createExistenceOfHistoryOfCondition();
-			case EmspcrPackage.HISTORY_OF_CONDITION:
-				return createHistoryOfCondition();
-			case EmspcrPackage.EMS_SOCIAL_HISTORY_SECTION:
-				return createEMSSocialHistorySection();
-			case EmspcrPackage.EXISTENCE_OF_DRUG_USE_INDICATION:
-				return createExistenceOfDrugUseIndication();
-			case EmspcrPackage.DRUG_USE_INDICATION:
-				return createDrugUseIndication();
-			case EmspcrPackage.EMS_PHYSICAL_ASSESSMENT_SECTION:
-				return createEMSPhysicalAssessmentSection();
-			case EmspcrPackage.PHYSICAL_ASSESSMENT_ORGANIZER:
-				return createPhysicalAssessmentOrganizer();
-			case EmspcrPackage.SKIN_ASSESSMENT:
-				return createSkinAssessment();
-			case EmspcrPackage.PATIENT_PREGNANCY:
-				return createPatientPregnancy();
-			case EmspcrPackage.LAST_ORAL_INTAKE:
-				return createLastOralIntake();
-			case EmspcrPackage.PATIENT_AGE:
-				return createPatientAge();
-			case EmspcrPackage.THROMBOLYTIC_CONTRAINDICATIONS:
-				return createThrombolyticContraindications();
-			case EmspcrPackage.BARRIERS_TO_PATIENT_CARE:
-				return createBarriersToPatientCare();
-			case EmspcrPackage.EMS_MEDICATIONS_ADMINISTERED_SECTION:
-				return createEMSMedicationsAdministeredSection();
-			case EmspcrPackage.MEDICATION_ADMINISTERED:
-				return createMedicationAdministered();
-			case EmspcrPackage.EMS_PROCEDURES_PERFORMED_SECTION:
-				return createEMSProceduresPerformedSection();
-			case EmspcrPackage.PROCEDURE:
-				return createProcedure();
-			case EmspcrPackage.EMS_PATIENT_CARE_NARRATIVE_SECTION:
-				return createEMSPatientCareNarrativeSection();
-			case EmspcrPackage.EMS_SCENE_SECTION:
-				return createEMSSceneSection();
-			case EmspcrPackage.FIRST_UNIT_INDICATOR:
-				return createFirstUnitIndicator();
-			case EmspcrPackage.FIRST_UNIT_ON_SCENE:
-				return createFirstUnitOnScene();
-			case EmspcrPackage.SCENE_PATIENT_COUNT:
-				return createScenePatientCount();
-			case EmspcrPackage.MASS_CASUALTY_INDICATOR:
-				return createMassCasualtyIndicator();
-			case EmspcrPackage.LOCATION_TYPE_OBSERVATION:
-				return createLocationTypeObservation();
-			case EmspcrPackage.EMS_DISPATCH_SECTION:
-				return createEMSDispatchSection();
-			case EmspcrPackage.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION:
-				return createEmergencyMedicalDispatchObservation();
-			case EmspcrPackage.COMPLAINT_REPORTED_BY_DISPATCH:
-				return createComplaintReportedByDispatch();
-			case EmspcrPackage.EMS_DISPOSITION_SECTION:
-				return createEMSDispositionSection();
-			case EmspcrPackage.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION:
-				return createNumberOfPatientsTransportedObservation();
-			case EmspcrPackage.INCIDENT_DISPOSITION_OBSERVATION:
-				return createIncidentDispositionObservation();
-			case EmspcrPackage.TRANSPORT_MODE_OBSERVATION:
-				return createTransportModeObservation();
-			case EmspcrPackage.TRANSPORT_METHOD_OBSERVATION:
-				return createTransportMethodObservation();
-			case EmspcrPackage.REASON_FOR_CHOOSING_DESTINATION_OBSERVATION:
-				return createReasonForChoosingDestinationObservation();
-			case EmspcrPackage.PREARRIVAL_ACTIVATION_OBSERVATION:
-				return createPrearrivalActivationObservation();
-			case EmspcrPackage.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION:
-				return createPatientConditionChangeAtDestinationObservation();
-			case EmspcrPackage.EMS_PERSONNEL_ADVERSE_EVENT_SECTION:
-				return createEMSPersonnelAdverseEventSection();
-			case EmspcrPackage.ADVERSE_EVENT_INDICATOR:
-				return createAdverseEventIndicator();
-			case EmspcrPackage.ADVERSE_EVENT_TYPE_OBSERVATION:
-				return createAdverseEventTypeObservation();
-			case EmspcrPackage.EMS_PROTOCOL_SECTION:
-				return createEMSProtocolSection();
-			case EmspcrPackage.PROTOCOL_OBSERVATION:
-				return createProtocolObservation();
-			case EmspcrPackage.CANDIDATE_PATIENT_REGISTRY_TYPE:
-				return createCandidatePatientRegistryType();
-			case EmspcrPackage.EMS_RESPONSE_SECTION:
-				return createEMSResponseSection();
-			case EmspcrPackage.DELAY_ORGANIZER:
-				return createDelayOrganizer();
-			case EmspcrPackage.DISPATCH_LOCATION_ORGANIZER:
-				return createDispatchLocationOrganizer();
-			case EmspcrPackage.RESPONSE_ODOMETER_READING_ORGANIZER:
-				return createResponseOdometerReadingOrganizer();
-			case EmspcrPackage.RESPONSE_MODE_TO_SCENE:
-				return createResponseModeToScene();
-			case EmspcrPackage.EMS_SITUATION_SECTION:
-				return createEMSSituationSection();
-			case EmspcrPackage.COMPLAINT:
-				return createComplaint();
-			case EmspcrPackage.POSSIBLE_INJURY:
-				return createPossibleInjury();
-			case EmspcrPackage.PROVIDER_PRIMARY_IMPRESSION:
-				return createProviderPrimaryImpression();
-			case EmspcrPackage.PRIMARY_SYMPTOM:
-				return createPrimarySymptom();
-			case EmspcrPackage.OTHER_SYMPTOMS:
-				return createOtherSymptoms();
-			case EmspcrPackage.PROVIDER_SECONDARY_IMPRESSIONS:
-				return createProviderSecondaryImpressions();
-			case EmspcrPackage.INITIAL_PATIENT_ACUITY:
-				return createInitialPatientAcuity();
-			case EmspcrPackage.TIMES_SECTION:
-				return createTimesSection();
-			case EmspcrPackage.CALL_TIME:
-				return createCallTime();
-			case EmspcrPackage.UNIT_NOTIFIED_TIME:
-				return createUnitNotifiedTime();
-			case EmspcrPackage.UNIT_EN_ROUTE_TIME:
-				return createUnitEnRouteTime();
-			case EmspcrPackage.UNIT_ON_SCENE_TIME:
-				return createUnitOnSceneTime();
-			case EmspcrPackage.UNIT_AT_PATIENT_TIME:
-				return createUnitAtPatientTime();
-			case EmspcrPackage.UNIT_LEFT_SCENE_TIME:
-				return createUnitLeftSceneTime();
-			case EmspcrPackage.PATIENT_ARRIVED_AT_DESTINATION_TIME:
-				return createPatientArrivedAtDestinationTime();
-			case EmspcrPackage.UNIT_BACK_IN_SERVICE_TIME:
-				return createUnitBackInServiceTime();
-			case EmspcrPackage.DISPATCH_NOTIFIED_TIME:
-				return createDispatchNotifiedTime();
-			case EmspcrPackage.EMS_VITAL_SIGNS_SECTION:
-				return createEMSVitalSignsSection();
-			case EmspcrPackage.VITAL_SIGNS_ORGANIZER:
-				return createVitalSignsOrganizer();
-			case EmspcrPackage.PRIOR_AID_VITALS:
-				return createPriorAidVitals();
-			case EmspcrPackage.ADDITIONAL_VITAL_SIGNS_ORGANIZER:
-				return createAdditionalVitalSignsOrganizer();
-			case EmspcrPackage.STROKE_SCORE:
-				return createStrokeScore();
-			case EmspcrPackage.PAIN_SCORE:
-				return createPainScore();
-			case EmspcrPackage.LEVEL_OF_RESPONSIVENESS:
-				return createLevelOfResponsiveness();
-			case EmspcrPackage.BLOOD_GLUCOSE:
-				return createBloodGlucose();
-			case EmspcrPackage.CARBON_MONOXIDE:
-				return createCarbonMonoxide();
-			case EmspcrPackage.CARBON_DIOXIDE:
-				return createCarbonDioxide();
-			case EmspcrPackage.CARDIAC_RHYTHM:
-				return createCardiacRhythm();
-			case EmspcrPackage.GLASGOW_COMA_SCORE_ORGANIZER:
-				return createGlasgowComaScoreOrganizer();
-			case EmspcrPackage.GLASGOW_EYE:
-				return createGlasgowEye();
-			case EmspcrPackage.GLASGOW_MOTOR:
-				return createGlasgowMotor();
-			case EmspcrPackage.GLASGOW_QUALIFIER:
-				return createGlasgowQualifier();
-			case EmspcrPackage.GLASGOW_TOTAL:
-				return createGlasgowTotal();
-			case EmspcrPackage.GLASGOW_VERBAL:
-				return createGlasgowVerbal();
-			case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION:
-				return createEMSInjuryIncidentDescriptionSection();
-			case EmspcrPackage.INJURY_CAUSE_CATEGORY:
-				return createInjuryCauseCategory();
-			case EmspcrPackage.INJURY_MECHANISM:
-				return createInjuryMechanism();
-			case EmspcrPackage.TRAUMA_CENTER_CRITERIA:
-				return createTraumaCenterCriteria();
-			case EmspcrPackage.INJURY_RISK_FACTOR:
-				return createInjuryRiskFactor();
-			case EmspcrPackage.VEHICLE_IMPACT_AREA:
-				return createVehicleImpactArea();
-			case EmspcrPackage.PATIENT_LOCATION_IN_VEHICLE:
-				return createPatientLocationInVehicle();
-			case EmspcrPackage.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT:
-				return createVehicleOccupantSafetyEquipment();
-			case EmspcrPackage.AIRBAG_DEPLOYMENT_STATUS:
-				return createAirbagDeploymentStatus();
-			case EmspcrPackage.HEIGHT_OF_FALL:
-				return createHeightOfFall();
-			case EmspcrPackage.DISASTER_TYPE:
-				return createDisasterType();
-			case EmspcrPackage.EMS_BILLING_SECTION:
-				return createEMSBillingSection();
-			case EmspcrPackage.BILLING_CONDITION:
-				return createBillingCondition();
-			case EmspcrPackage.LEVEL_OF_SERVICE_OBSERVATION:
-				return createLevelOfServiceObservation();
-			case EmspcrPackage.EMS_DRUG_ALLERGY:
-				return createEMSDrugAllergy();
-			case EmspcrPackage.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION:
-				return createExistenceOfDrugAllergyObservation();
-			case EmspcrPackage.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION:
-				return createMedicationNotAdministeredReasonObservation();
-			case EmspcrPackage.MEDICATION_RESPONSE_OBSERVATION:
-				return createMedicationResponseObservation();
-			case EmspcrPackage.MEDICATION_COMPLICATION_OBSERVATION:
-				return createMedicationComplicationObservation();
-			case EmspcrPackage.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION:
-				return createMedicationPriorAdministrationObservation();
-			case EmspcrPackage.PATIENT_BODY_WEIGHT:
-				return createPatientBodyWeight();
-			case EmspcrPackage.LENGTH_BASED_PATIENT_BODY_WEIGHT_CLASS:
-				return createLengthBasedPatientBodyWeightClass();
-			case EmspcrPackage.FACE_ASSESSMENT:
-				return createFaceAssessment();
-			case EmspcrPackage.HEAD_ASSESSMENT:
-				return createHeadAssessment();
-			case EmspcrPackage.NECK_ASSESSMENT:
-				return createNeckAssessment();
-			case EmspcrPackage.CHEST_AND_LUNGS_ASSESSMENT:
-				return createChestAndLungsAssessment();
-			case EmspcrPackage.HEART_ASSESSMENT:
-				return createHeartAssessment();
-			case EmspcrPackage.ABDOMEN_ASSESSMENT:
-				return createAbdomenAssessment();
-			case EmspcrPackage.PELVIC_AND_GENITOURINARY_ASSESSMENT:
-				return createPelvicAndGenitourinaryAssessment();
-			case EmspcrPackage.BACK_AND_SPINE_ASSESSMENT:
-				return createBackAndSpineAssessment();
-			case EmspcrPackage.EXTREMITIES_ASSESSMENT:
-				return createExtremitiesAssessment();
-			case EmspcrPackage.EYE_ASSESSMENT:
-				return createEyeAssessment();
-			case EmspcrPackage.MENTAL_STATUS_ASSESSMENT:
-				return createMentalStatusAssessment();
-			case EmspcrPackage.CARDIAC_ARREST_WITH_TIMING:
-				return createCardiacArrestWithTiming();
-			case EmspcrPackage.CARDIAC_ARREST_CAUSE:
-				return createCardiacArrestCause();
-			case EmspcrPackage.PRIOR_CPR:
-				return createPriorCPR();
-			case EmspcrPackage.PRIOR_AED_USE:
-				return createPriorAEDUse();
-			case EmspcrPackage.ARREST_RHYTHM:
-				return createArrestRhythm();
-			case EmspcrPackage.RETURN_OF_SPONTANEOUS_CIRCULATION:
-				return createReturnOfSpontaneousCirculation();
-			case EmspcrPackage.DESTINATION_RHYTHM:
-				return createDestinationRhythm();
-			case EmspcrPackage.ABANDONED_PROCEDURE_REASON_OBSERVATION:
-				return createAbandonedProcedureReasonObservation();
-			case EmspcrPackage.PROCEDURE_PRIOR_INDICATOR:
-				return createProcedurePriorIndicator();
-			case EmspcrPackage.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION:
-				return createProcedureNumberOfAttemptsObservation();
-			case EmspcrPackage.PROCEDURE_SUCCESSFUL_OBSERVATION:
-				return createProcedureSuccessfulObservation();
-			case EmspcrPackage.PROCEDURE_COMPLICATIONS_OBSERVATION:
-				return createProcedureComplicationsObservation();
-			case EmspcrPackage.PROCEDURE_PATIENT_RESPONSE_OBSERVATION:
-				return createProcedurePatientResponseObservation();
-			case EmspcrPackage.AIRWAY_CONFIRMATION_OBSERVATION:
-				return createAirwayConfirmationObservation();
-			case EmspcrPackage.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION:
-				return createReasonProcedureNotAttemptedObservation();
-			case EmspcrPackage.COMPLAINT_TYPE:
-				return createComplaintType();
-			case EmspcrPackage.COMPLAINT_DURATION:
-				return createComplaintDuration();
-			case EmspcrPackage.COMPLAINT_ORGAN_SYSTEM:
-				return createComplaintOrganSystem();
-			case EmspcrPackage.NEUROLOGICAL_ASSESSMENT:
-				return createNeurologicalAssessment();
-			case EmspcrPackage.SYSTOLIC_BLOOD_PRESSURE:
-				return createSystolicBloodPressure();
-			case EmspcrPackage.DIASTOLIC_BLOOD_PRESSURE:
-				return createDiastolicBloodPressure();
-			case EmspcrPackage.HEART_RATE:
-				return createHeartRate();
-			case EmspcrPackage.RESPIRATORY_RATE:
-				return createRespiratoryRate();
-			case EmspcrPackage.BODY_TEMPERATURE:
-				return createBodyTemperature();
-			case EmspcrPackage.OXYGEN_SATURATION:
-				return createOxygenSaturation();
-			case EmspcrPackage.PROTOCOL_AGE_CATEGORY:
-				return createProtocolAgeCategory();
-			case EmspcrPackage.DISPATCH_LOCATION_NAME:
-				return createDispatchLocationName();
-			case EmspcrPackage.DISPATCH_LOCATION_LATITUDE:
-				return createDispatchLocationLatitude();
-			case EmspcrPackage.DISPATCH_LOCATION_LONGITUDE:
-				return createDispatchLocationLongitude();
-			case EmspcrPackage.DISPATCH_DELAY:
-				return createDispatchDelay();
-			case EmspcrPackage.RESPONSE_DELAY:
-				return createResponseDelay();
-			case EmspcrPackage.SCENE_DELAY:
-				return createSceneDelay();
-			case EmspcrPackage.TRANSPORT_DELAY:
-				return createTransportDelay();
-			case EmspcrPackage.TURNAROUND_DELAY:
-				return createTurnaroundDelay();
-			case EmspcrPackage.RESPONSE_BEGINNING_ODOMETER_READING:
-				return createResponseBeginningOdometerReading();
-			case EmspcrPackage.RESPONSE_ON_SCENE_ODOMETER_READING:
-				return createResponseOnSceneOdometerReading();
-			case EmspcrPackage.RESPONSE_DESTINATION_ODOMETER_READING:
-				return createResponseDestinationOdometerReading();
-			case EmspcrPackage.RESPONSE_ENDING_ODOMETER_READING:
-				return createResponseEndingOdometerReading();
-			case EmspcrPackage.NON_DRUG_ALLERGY_ORGANIZER_ACTUALLY_DREG:
-				return createNonDrugAllergyOrganizerActuallyDreg();
-			case EmspcrPackage.EMS_DRUG_ALLERGY_ORGANIZER:
-				return createEMSDrugAllergyOrganizer();
+			case EmspcrPackage.PATIENT_CARE_REPORT: return createPatientCareReport();
+			case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION: return createEMSCurrentMedicationSection();
+			case EmspcrPackage.CURRENTLY_ON_MEDICATION: return createCurrentlyOnMedication();
+			case EmspcrPackage.PATIENT_ON_ANTICOAGULANTS: return createPatientOnAnticoagulants();
+			case EmspcrPackage.CURRENT_MEDICATION: return createCurrentMedication();
+			case EmspcrPackage.EMS_CARDIAC_ARREST_EVENT_SECTION: return createEMSCardiacArrestEventSection();
+			case EmspcrPackage.CARDIAC_ARREST: return createCardiacArrest();
+			case EmspcrPackage.EMS_ADVANCE_DIRECTIVES_SECTION: return createEMSAdvanceDirectivesSection();
+			case EmspcrPackage.ADVANCE_DIRECTIVE_OBSERVATION: return createAdvanceDirectiveObservation();
+			case EmspcrPackage.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION: return createEMSAllergiesAndAdverseReactionsSection();
+			case EmspcrPackage.NON_DRUG_ALLERGY_ORGANIZER: return createNonDrugAllergyOrganizer();
+			case EmspcrPackage.EXISTENCE_OF_NON_DRUG_ALLERGY: return createExistenceOfNonDrugAllergy();
+			case EmspcrPackage.NON_DRUG_ALLERGY: return createNonDrugAllergy();
+			case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY_SECTION: return createEMSPastMedicalHistorySection();
+			case EmspcrPackage.EXISTENCE_OF_HISTORY_OF_CONDITION: return createExistenceOfHistoryOfCondition();
+			case EmspcrPackage.HISTORY_OF_CONDITION: return createHistoryOfCondition();
+			case EmspcrPackage.EMS_SOCIAL_HISTORY_SECTION: return createEMSSocialHistorySection();
+			case EmspcrPackage.EXISTENCE_OF_DRUG_USE_INDICATION: return createExistenceOfDrugUseIndication();
+			case EmspcrPackage.DRUG_USE_INDICATION: return createDrugUseIndication();
+			case EmspcrPackage.EMS_PHYSICAL_ASSESSMENT_SECTION: return createEMSPhysicalAssessmentSection();
+			case EmspcrPackage.PHYSICAL_ASSESSMENT_ORGANIZER: return createPhysicalAssessmentOrganizer();
+			case EmspcrPackage.SKIN_ASSESSMENT: return createSkinAssessment();
+			case EmspcrPackage.PATIENT_PREGNANCY: return createPatientPregnancy();
+			case EmspcrPackage.LAST_ORAL_INTAKE: return createLastOralIntake();
+			case EmspcrPackage.PATIENT_AGE: return createPatientAge();
+			case EmspcrPackage.THROMBOLYTIC_CONTRAINDICATIONS: return createThrombolyticContraindications();
+			case EmspcrPackage.BARRIERS_TO_PATIENT_CARE: return createBarriersToPatientCare();
+			case EmspcrPackage.EMS_MEDICATIONS_ADMINISTERED_SECTION: return createEMSMedicationsAdministeredSection();
+			case EmspcrPackage.MEDICATION_ADMINISTERED: return createMedicationAdministered();
+			case EmspcrPackage.EMS_PROCEDURES_PERFORMED_SECTION: return createEMSProceduresPerformedSection();
+			case EmspcrPackage.PROCEDURE: return createProcedure();
+			case EmspcrPackage.EMS_PATIENT_CARE_NARRATIVE_SECTION: return createEMSPatientCareNarrativeSection();
+			case EmspcrPackage.EMS_SCENE_SECTION: return createEMSSceneSection();
+			case EmspcrPackage.FIRST_UNIT_INDICATOR: return createFirstUnitIndicator();
+			case EmspcrPackage.FIRST_UNIT_ON_SCENE: return createFirstUnitOnScene();
+			case EmspcrPackage.SCENE_PATIENT_COUNT: return createScenePatientCount();
+			case EmspcrPackage.MASS_CASUALTY_INDICATOR: return createMassCasualtyIndicator();
+			case EmspcrPackage.LOCATION_TYPE_OBSERVATION: return createLocationTypeObservation();
+			case EmspcrPackage.EMS_DISPATCH_SECTION: return createEMSDispatchSection();
+			case EmspcrPackage.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION: return createEmergencyMedicalDispatchObservation();
+			case EmspcrPackage.COMPLAINT_REPORTED_BY_DISPATCH: return createComplaintReportedByDispatch();
+			case EmspcrPackage.EMS_DISPOSITION_SECTION: return createEMSDispositionSection();
+			case EmspcrPackage.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION: return createNumberOfPatientsTransportedObservation();
+			case EmspcrPackage.INCIDENT_DISPOSITION_OBSERVATION: return createIncidentDispositionObservation();
+			case EmspcrPackage.TRANSPORT_MODE_OBSERVATION: return createTransportModeObservation();
+			case EmspcrPackage.TRANSPORT_METHOD_OBSERVATION: return createTransportMethodObservation();
+			case EmspcrPackage.REASON_FOR_CHOOSING_DESTINATION_OBSERVATION: return createReasonForChoosingDestinationObservation();
+			case EmspcrPackage.PREARRIVAL_ACTIVATION_OBSERVATION: return createPrearrivalActivationObservation();
+			case EmspcrPackage.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION: return createPatientConditionChangeAtDestinationObservation();
+			case EmspcrPackage.EMS_PERSONNEL_ADVERSE_EVENT_SECTION: return createEMSPersonnelAdverseEventSection();
+			case EmspcrPackage.ADVERSE_EVENT_INDICATOR: return createAdverseEventIndicator();
+			case EmspcrPackage.ADVERSE_EVENT_TYPE_OBSERVATION: return createAdverseEventTypeObservation();
+			case EmspcrPackage.EMS_PROTOCOL_SECTION: return createEMSProtocolSection();
+			case EmspcrPackage.PROTOCOL_OBSERVATION: return createProtocolObservation();
+			case EmspcrPackage.CANDIDATE_PATIENT_REGISTRY_TYPE: return createCandidatePatientRegistryType();
+			case EmspcrPackage.EMS_RESPONSE_SECTION: return createEMSResponseSection();
+			case EmspcrPackage.DELAY_ORGANIZER: return createDelayOrganizer();
+			case EmspcrPackage.DISPATCH_LOCATION_ORGANIZER: return createDispatchLocationOrganizer();
+			case EmspcrPackage.RESPONSE_ODOMETER_READING_ORGANIZER: return createResponseOdometerReadingOrganizer();
+			case EmspcrPackage.RESPONSE_MODE_TO_SCENE: return createResponseModeToScene();
+			case EmspcrPackage.EMS_SITUATION_SECTION: return createEMSSituationSection();
+			case EmspcrPackage.COMPLAINT: return createComplaint();
+			case EmspcrPackage.POSSIBLE_INJURY: return createPossibleInjury();
+			case EmspcrPackage.PROVIDER_PRIMARY_IMPRESSION: return createProviderPrimaryImpression();
+			case EmspcrPackage.PRIMARY_SYMPTOM: return createPrimarySymptom();
+			case EmspcrPackage.OTHER_SYMPTOMS: return createOtherSymptoms();
+			case EmspcrPackage.PROVIDER_SECONDARY_IMPRESSIONS: return createProviderSecondaryImpressions();
+			case EmspcrPackage.INITIAL_PATIENT_ACUITY: return createInitialPatientAcuity();
+			case EmspcrPackage.TIMES_SECTION: return createTimesSection();
+			case EmspcrPackage.CALL_TIME: return createCallTime();
+			case EmspcrPackage.UNIT_NOTIFIED_TIME: return createUnitNotifiedTime();
+			case EmspcrPackage.UNIT_EN_ROUTE_TIME: return createUnitEnRouteTime();
+			case EmspcrPackage.UNIT_ON_SCENE_TIME: return createUnitOnSceneTime();
+			case EmspcrPackage.UNIT_AT_PATIENT_TIME: return createUnitAtPatientTime();
+			case EmspcrPackage.UNIT_LEFT_SCENE_TIME: return createUnitLeftSceneTime();
+			case EmspcrPackage.PATIENT_ARRIVED_AT_DESTINATION_TIME: return createPatientArrivedAtDestinationTime();
+			case EmspcrPackage.UNIT_BACK_IN_SERVICE_TIME: return createUnitBackInServiceTime();
+			case EmspcrPackage.DISPATCH_NOTIFIED_TIME: return createDispatchNotifiedTime();
+			case EmspcrPackage.EMS_VITAL_SIGNS_SECTION: return createEMSVitalSignsSection();
+			case EmspcrPackage.VITAL_SIGNS_ORGANIZER: return createVitalSignsOrganizer();
+			case EmspcrPackage.PRIOR_AID_VITALS: return createPriorAidVitals();
+			case EmspcrPackage.ADDITIONAL_VITAL_SIGNS_ORGANIZER: return createAdditionalVitalSignsOrganizer();
+			case EmspcrPackage.STROKE_SCORE: return createStrokeScore();
+			case EmspcrPackage.PAIN_SCORE: return createPainScore();
+			case EmspcrPackage.LEVEL_OF_RESPONSIVENESS: return createLevelOfResponsiveness();
+			case EmspcrPackage.BLOOD_GLUCOSE: return createBloodGlucose();
+			case EmspcrPackage.CARBON_MONOXIDE: return createCarbonMonoxide();
+			case EmspcrPackage.CARBON_DIOXIDE: return createCarbonDioxide();
+			case EmspcrPackage.CARDIAC_RHYTHM: return createCardiacRhythm();
+			case EmspcrPackage.GLASGOW_COMA_SCORE_ORGANIZER: return createGlasgowComaScoreOrganizer();
+			case EmspcrPackage.GLASGOW_EYE: return createGlasgowEye();
+			case EmspcrPackage.GLASGOW_MOTOR: return createGlasgowMotor();
+			case EmspcrPackage.GLASGOW_QUALIFIER: return createGlasgowQualifier();
+			case EmspcrPackage.GLASGOW_TOTAL: return createGlasgowTotal();
+			case EmspcrPackage.GLASGOW_VERBAL: return createGlasgowVerbal();
+			case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION: return createEMSInjuryIncidentDescriptionSection();
+			case EmspcrPackage.INJURY_CAUSE_CATEGORY: return createInjuryCauseCategory();
+			case EmspcrPackage.INJURY_MECHANISM: return createInjuryMechanism();
+			case EmspcrPackage.TRAUMA_CENTER_CRITERIA: return createTraumaCenterCriteria();
+			case EmspcrPackage.INJURY_RISK_FACTOR: return createInjuryRiskFactor();
+			case EmspcrPackage.VEHICLE_IMPACT_AREA: return createVehicleImpactArea();
+			case EmspcrPackage.PATIENT_LOCATION_IN_VEHICLE: return createPatientLocationInVehicle();
+			case EmspcrPackage.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT: return createVehicleOccupantSafetyEquipment();
+			case EmspcrPackage.AIRBAG_DEPLOYMENT_STATUS: return createAirbagDeploymentStatus();
+			case EmspcrPackage.HEIGHT_OF_FALL: return createHeightOfFall();
+			case EmspcrPackage.DISASTER_TYPE: return createDisasterType();
+			case EmspcrPackage.EMS_BILLING_SECTION: return createEMSBillingSection();
+			case EmspcrPackage.BILLING_CONDITION: return createBillingCondition();
+			case EmspcrPackage.LEVEL_OF_SERVICE_OBSERVATION: return createLevelOfServiceObservation();
+			case EmspcrPackage.EMS_DRUG_ALLERGY: return createEMSDrugAllergy();
+			case EmspcrPackage.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION: return createExistenceOfDrugAllergyObservation();
+			case EmspcrPackage.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION: return createMedicationNotAdministeredReasonObservation();
+			case EmspcrPackage.MEDICATION_RESPONSE_OBSERVATION: return createMedicationResponseObservation();
+			case EmspcrPackage.MEDICATION_COMPLICATION_OBSERVATION: return createMedicationComplicationObservation();
+			case EmspcrPackage.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION: return createMedicationPriorAdministrationObservation();
+			case EmspcrPackage.PATIENT_BODY_WEIGHT: return createPatientBodyWeight();
+			case EmspcrPackage.LENGTH_BASED_PATIENT_BODY_WEIGHT_CLASS: return createLengthBasedPatientBodyWeightClass();
+			case EmspcrPackage.FACE_ASSESSMENT: return createFaceAssessment();
+			case EmspcrPackage.HEAD_ASSESSMENT: return createHeadAssessment();
+			case EmspcrPackage.NECK_ASSESSMENT: return createNeckAssessment();
+			case EmspcrPackage.CHEST_AND_LUNGS_ASSESSMENT: return createChestAndLungsAssessment();
+			case EmspcrPackage.HEART_ASSESSMENT: return createHeartAssessment();
+			case EmspcrPackage.ABDOMEN_ASSESSMENT: return createAbdomenAssessment();
+			case EmspcrPackage.PELVIC_AND_GENITOURINARY_ASSESSMENT: return createPelvicAndGenitourinaryAssessment();
+			case EmspcrPackage.BACK_AND_SPINE_ASSESSMENT: return createBackAndSpineAssessment();
+			case EmspcrPackage.EXTREMITIES_ASSESSMENT: return createExtremitiesAssessment();
+			case EmspcrPackage.EYE_ASSESSMENT: return createEyeAssessment();
+			case EmspcrPackage.MENTAL_STATUS_ASSESSMENT: return createMentalStatusAssessment();
+			case EmspcrPackage.CARDIAC_ARREST_WITH_TIMING: return createCardiacArrestWithTiming();
+			case EmspcrPackage.CARDIAC_ARREST_CAUSE: return createCardiacArrestCause();
+			case EmspcrPackage.PRIOR_CPR: return createPriorCPR();
+			case EmspcrPackage.PRIOR_AED_USE: return createPriorAEDUse();
+			case EmspcrPackage.ARREST_RHYTHM: return createArrestRhythm();
+			case EmspcrPackage.RETURN_OF_SPONTANEOUS_CIRCULATION: return createReturnOfSpontaneousCirculation();
+			case EmspcrPackage.DESTINATION_RHYTHM: return createDestinationRhythm();
+			case EmspcrPackage.ABANDONED_PROCEDURE_REASON_OBSERVATION: return createAbandonedProcedureReasonObservation();
+			case EmspcrPackage.PROCEDURE_PRIOR_INDICATOR: return createProcedurePriorIndicator();
+			case EmspcrPackage.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION: return createProcedureNumberOfAttemptsObservation();
+			case EmspcrPackage.PROCEDURE_SUCCESSFUL_OBSERVATION: return createProcedureSuccessfulObservation();
+			case EmspcrPackage.PROCEDURE_COMPLICATIONS_OBSERVATION: return createProcedureComplicationsObservation();
+			case EmspcrPackage.PROCEDURE_PATIENT_RESPONSE_OBSERVATION: return createProcedurePatientResponseObservation();
+			case EmspcrPackage.AIRWAY_CONFIRMATION_OBSERVATION: return createAirwayConfirmationObservation();
+			case EmspcrPackage.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION: return createReasonProcedureNotAttemptedObservation();
+			case EmspcrPackage.COMPLAINT_TYPE: return createComplaintType();
+			case EmspcrPackage.COMPLAINT_DURATION: return createComplaintDuration();
+			case EmspcrPackage.COMPLAINT_ORGAN_SYSTEM: return createComplaintOrganSystem();
+			case EmspcrPackage.NEUROLOGICAL_ASSESSMENT: return createNeurologicalAssessment();
+			case EmspcrPackage.SYSTOLIC_BLOOD_PRESSURE: return createSystolicBloodPressure();
+			case EmspcrPackage.DIASTOLIC_BLOOD_PRESSURE: return createDiastolicBloodPressure();
+			case EmspcrPackage.HEART_RATE: return createHeartRate();
+			case EmspcrPackage.RESPIRATORY_RATE: return createRespiratoryRate();
+			case EmspcrPackage.BODY_TEMPERATURE: return createBodyTemperature();
+			case EmspcrPackage.OXYGEN_SATURATION: return createOxygenSaturation();
+			case EmspcrPackage.PROTOCOL_AGE_CATEGORY: return createProtocolAgeCategory();
+			case EmspcrPackage.DISPATCH_LOCATION_NAME: return createDispatchLocationName();
+			case EmspcrPackage.DISPATCH_LOCATION_LATITUDE: return createDispatchLocationLatitude();
+			case EmspcrPackage.DISPATCH_LOCATION_LONGITUDE: return createDispatchLocationLongitude();
+			case EmspcrPackage.DISPATCH_DELAY: return createDispatchDelay();
+			case EmspcrPackage.RESPONSE_DELAY: return createResponseDelay();
+			case EmspcrPackage.SCENE_DELAY: return createSceneDelay();
+			case EmspcrPackage.TRANSPORT_DELAY: return createTransportDelay();
+			case EmspcrPackage.TURNAROUND_DELAY: return createTurnaroundDelay();
+			case EmspcrPackage.RESPONSE_BEGINNING_ODOMETER_READING: return createResponseBeginningOdometerReading();
+			case EmspcrPackage.RESPONSE_ON_SCENE_ODOMETER_READING: return createResponseOnSceneOdometerReading();
+			case EmspcrPackage.RESPONSE_DESTINATION_ODOMETER_READING: return createResponseDestinationOdometerReading();
+			case EmspcrPackage.RESPONSE_ENDING_ODOMETER_READING: return createResponseEndingOdometerReading();
+			case EmspcrPackage.NON_DRUG_ALLERGY_ORGANIZER_ACTUALLY_DREG: return createNonDrugAllergyOrganizerActuallyDreg();
+			case EmspcrPackage.EMS_DRUG_ALLERGY_ORGANIZER: return createEMSDrugAllergyOrganizer();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -2086,7 +1916,7 @@ public class EmspcrFactoryImpl extends EFactoryImpl implements EmspcrFactory {
 	 * @generated
 	 */
 	public EmspcrPackage getEmspcrPackage() {
-		return (EmspcrPackage) getEPackage();
+		return (EmspcrPackage)getEPackage();
 	}
 
 	/**

@@ -13,7 +13,7 @@ package org.openhealthtools.mdht.uml.cda.ccd;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.openhealthtools.mdht.uml.cda.Procedure;
+import org.eclipse.mdht.uml.cda.Procedure;
 
 /**
  * <!-- begin-user-doc -->

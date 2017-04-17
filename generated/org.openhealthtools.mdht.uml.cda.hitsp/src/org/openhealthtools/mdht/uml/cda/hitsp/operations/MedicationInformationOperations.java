@@ -46,6 +46,13 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ProductEntryOperations;
  * @generated
  */
 public class MedicationInformationOperations extends ProductEntryOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73,7 +80,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,23 +95,29 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	public static boolean validateMedicationInformationCodedProductName(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
 			try {
-				VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationInformation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationInformation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_NAME,
-					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedProductName"),
-					new Object[] { medicationInformation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_NAME,
+						HITSPPlugin.INSTANCE.getString("MedicationInformationMedicationInformationCodedProductName"),
+						new Object[] { medicationInformation }));
 			}
 
 			return false;
@@ -130,7 +143,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,23 +158,29 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	public static boolean validateMedicationInformationCodedProductVocab(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
 			try {
-				VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationInformation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationInformation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB,
-					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedProductVocab"),
-					new Object[] { medicationInformation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_PRODUCT_VOCAB,
+						HITSPPlugin.INSTANCE.getString("MedicationInformationMedicationInformationCodedProductVocab"),
+						new Object[] { medicationInformation }));
 			}
 
 			return false;
@@ -187,7 +206,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -199,27 +218,33 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validateMedicationInformationCodedIngredientVocab(
-			MedicationInformation medicationInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateMedicationInformationCodedIngredientVocab(MedicationInformation medicationInformation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
 			try {
-				VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationInformation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationInformation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB,
-					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedIngredientVocab"),
-					new Object[] { medicationInformation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_INGREDIENT_VOCAB,
+						HITSPPlugin.INSTANCE.getString(
+							"MedicationInformationMedicationInformationCodedIngredientVocab"),
+						new Object[] { medicationInformation }));
 			}
 
 			return false;
@@ -245,7 +270,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -260,23 +285,29 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	public static boolean validateMedicationInformationCodedBrandName(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
 			try {
-				VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationInformation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationInformation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME,
-					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedBrandName"),
-					new Object[] { medicationInformation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME,
+						HITSPPlugin.INSTANCE.getString("MedicationInformationMedicationInformationCodedBrandName"),
+						new Object[] { medicationInformation }));
 			}
 
 			return false;
@@ -302,7 +333,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -317,24 +348,29 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	public static boolean validateMedicationInformationCodedBrandNameVocab(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
 			try {
-				VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationInformation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationInformation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB,
-					HITSPPlugin.INSTANCE.getString("MedicationInformationCodedBrandNameVocab"),
-					new Object[] { medicationInformation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_CODED_BRAND_NAME_VOCAB,
+						HITSPPlugin.INSTANCE.getString("MedicationInformationMedicationInformationCodedBrandNameVocab"),
+						new Object[] { medicationInformation }));
 			}
 
 			return false;
@@ -360,7 +396,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -375,24 +411,29 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	public static boolean validateMedicationInformationFreeTextProductName(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
 			try {
-				VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationInformation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationInformation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME,
-					HITSPPlugin.INSTANCE.getString("MedicationInformationFreeTextProductName"),
-					new Object[] { medicationInformation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_PRODUCT_NAME,
+						HITSPPlugin.INSTANCE.getString("MedicationInformationMedicationInformationFreeTextProductName"),
+						new Object[] { medicationInformation }));
 			}
 
 			return false;
@@ -418,7 +459,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -433,23 +474,29 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	public static boolean validateMedicationInformationFreeTextBrandName(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
 			try {
-				VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationInformation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationInformation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME,
-					HITSPPlugin.INSTANCE.getString("MedicationInformationFreeTextBrandName"),
-					new Object[] { medicationInformation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_FREE_TEXT_BRAND_NAME,
+						HITSPPlugin.INSTANCE.getString("MedicationInformationMedicationInformationFreeTextBrandName"),
+						new Object[] { medicationInformation }));
 			}
 
 			return false;
@@ -475,7 +522,7 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -490,23 +537,29 @@ public class MedicationInformationOperations extends ProductEntryOperations {
 	public static boolean validateMedicationInformationTemplateId(MedicationInformation medicationInformation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.MEDICATION_INFORMATION);
 			try {
-				VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationInformation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MEDICATION_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				medicationInformation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("MedicationInformationTemplateId"),
-					new Object[] { medicationInformation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.MEDICATION_INFORMATION__MEDICATION_INFORMATION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString("MedicationInformationMedicationInformationTemplateId"),
+						new Object[] { medicationInformation }));
 			}
 
 			return false;

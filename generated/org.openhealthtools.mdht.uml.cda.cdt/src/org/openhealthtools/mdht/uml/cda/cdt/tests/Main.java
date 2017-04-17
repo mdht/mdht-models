@@ -14,21 +14,22 @@ import java.io.FileInputStream;
 import java.util.UUID;
 
 import org.eclipse.emf.common.util.Diagnostic;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.util.BasicValidationHandler;
+import org.eclipse.mdht.uml.cda.util.CDAUtil;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.INT;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTFactory;
 import org.openhealthtools.mdht.uml.cda.cdt.ConsultationNote;
 import org.openhealthtools.mdht.uml.cda.cdt.ReasonForReferralSection;
-import org.openhealthtools.mdht.uml.cda.util.BasicValidationHandler;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.INT;
 
 public class Main {
 	public static void main(String[] args) throws Exception {
 		ConsultationNote consultationNote = CDTFactory.eINSTANCE.createConsultationNote().init();
 		consultationNote.getCode().setCode("11488-4");
 		consultationNote.getCode().setDisplayName("CONSULTATION NOTE");
-		consultationNote.setTitle(DatatypesFactory.eINSTANCE.createST("Good Health Pain Management Consultants Consultation Note"));
+		consultationNote.setTitle(
+			DatatypesFactory.eINSTANCE.createST("Good Health Pain Management Consultants Consultation Note"));
 		consultationNote.setEffectiveTime(DatatypesFactory.eINSTANCE.createTS("20070303171504+0500"));
 		consultationNote.setId(DatatypesFactory.eINSTANCE.createII(UUID.randomUUID().toString(), "999021"));
 		consultationNote.setConfidentialityCode(DatatypesFactory.eINSTANCE.createCE("N", "2.16.840.1.113883.5.25"));

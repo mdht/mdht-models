@@ -7,17 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -64,6 +59,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class DeathCausalInformationOperations extends OrganizerOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -92,7 +95,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -107,25 +110,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationTemplateId(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -153,7 +166,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -168,25 +181,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationClassCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -214,7 +237,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -229,25 +252,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationMoodCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -277,7 +310,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -292,25 +325,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -338,7 +381,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -353,25 +396,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationStatusCodeP(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_STATUS_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationStatusCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -401,7 +454,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -416,25 +469,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationStatusCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -462,7 +525,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -477,25 +540,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCause(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCause", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCause", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -523,7 +596,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -538,25 +611,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentOtherSignificantCondition(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentOtherSignificantCondition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentOtherSignificantCondition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -584,7 +667,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -599,25 +682,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -645,7 +738,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -660,25 +753,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -708,7 +811,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -723,25 +826,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -769,7 +882,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -784,25 +897,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -830,7 +953,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -845,25 +968,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -891,7 +1024,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -906,25 +1039,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -952,7 +1095,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -967,25 +1110,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1013,7 +1166,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1028,25 +1181,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseClassCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1074,7 +1237,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1089,25 +1252,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseCodeP(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1137,7 +1310,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1152,25 +1325,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1198,7 +1381,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1213,25 +1396,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseMoodCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1259,7 +1452,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1274,25 +1467,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCauseValue(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCauseValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCauseValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1320,7 +1523,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1335,25 +1538,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseSequenceNumber(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_SEQUENCE_NUMBER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseSequenceNumber", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseSequenceNumber", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1381,7 +1594,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1396,25 +1609,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseTypeCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1442,7 +1665,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1457,25 +1680,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentCauseDeathCause(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentCauseDeathCause", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentCauseDeathCause", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1503,7 +1736,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1518,25 +1751,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1564,7 +1807,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1579,25 +1822,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1625,7 +1878,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1640,25 +1893,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1688,7 +1951,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1703,25 +1966,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1749,7 +2022,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1764,25 +2037,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1810,7 +2093,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1825,25 +2108,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentOtherSignificantConditionTypeCode(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentOtherSignificantConditionTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentOtherSignificantConditionTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 
@@ -1871,7 +2164,7 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1886,25 +2179,35 @@ public class DeathCausalInformationOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition(DeathCausalInformation deathCausalInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_CAUSAL_INFORMATION);
 			try {
-				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathCausalInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathCausalInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_CAUSAL_INFORMATION__DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathCausalInformationDeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathCausalInformation, context) }),
 						 new Object [] { deathCausalInformation }));
 			}
 			 

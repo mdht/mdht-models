@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedReasonForReferralSection;
 
 /**
@@ -27,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedReasonForReferralSection;
  * <!-- begin-model-doc -->
  * <p>
  *     The Reason for Referral Section contains information about the reason that the patient is being
- *     referred. 
+ *     referred.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -36,8 +34,8 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedReasonForReferralSection;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='CodedReasonForReferralSectionTemplateId' templateId.root='2.16.840.1.113883.3.88.11.83.106' constraints.validation.info='HITSPReasonForReferralSectionCondition HITSPReasonForReferralSectionResult'"
  * @generated
  */
-public interface ReasonForReferralSection extends CodedReasonForReferralSection,
-		org.openhealthtools.mdht.uml.cda.cdt.ReasonForReferralSection {
+public interface ReasonForReferralSection
+		extends CodedReasonForReferralSection, org.openhealthtools.mdht.uml.cda.cdt.ReasonForReferralSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -92,5 +90,6 @@ public interface ReasonForReferralSection extends CodedReasonForReferralSection,
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReasonForReferralSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ReasonForReferralSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // ReasonForReferralSection

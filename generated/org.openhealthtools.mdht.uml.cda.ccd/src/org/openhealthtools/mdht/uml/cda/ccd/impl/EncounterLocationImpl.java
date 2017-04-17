@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.Participant2Impl;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.EncounterLocation;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.EncounterLocationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.Participant2Impl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Encounter Location</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,7 +54,8 @@ public class EncounterLocationImpl extends Participant2Impl implements Encounter
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncounterLocationHasParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncounterLocationHasParticipantRole(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return EncounterLocationOperations.validateEncounterLocationHasParticipantRole(this, diagnostics, context);
 	}
 

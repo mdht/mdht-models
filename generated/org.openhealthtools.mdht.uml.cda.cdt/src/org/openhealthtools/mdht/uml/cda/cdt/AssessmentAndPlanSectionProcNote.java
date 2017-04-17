@@ -15,8 +15,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Section;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->
@@ -39,7 +39,8 @@ public interface AssessmentAndPlanSectionProcNote extends Section {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.18.2.14\')'"
 	 * @generated
 	 */
-	boolean validateAssessmentAndPlanSectionProcNoteTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAssessmentAndPlanSectionProcNoteTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -62,7 +63,7 @@ public interface AssessmentAndPlanSectionProcNote extends Section {
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AssessmentAndPlanSectionProcNote init(Iterable<? extends Initializer<? extends EObject>> initializers);

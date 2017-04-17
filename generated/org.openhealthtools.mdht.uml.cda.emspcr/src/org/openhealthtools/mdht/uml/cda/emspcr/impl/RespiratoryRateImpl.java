@@ -6,34 +6,24 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.consol.impl.VitalSignObservationImpl;
-
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.RespiratoryRate;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.RespiratoryRateOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Respiratory Rate</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class RespiratoryRateImpl extends VitalSignObservationImpl implements RespiratoryRate {
+public class RespiratoryRateImpl extends EObjectImpl implements RespiratoryRate {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -106,17 +96,17 @@ public class RespiratoryRateImpl extends VitalSignObservationImpl implements Res
 	 */
 	@Override
 	public RespiratoryRate init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
-	public RespiratoryRate init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+	public RespiratoryRate init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // RespiratoryRateImpl

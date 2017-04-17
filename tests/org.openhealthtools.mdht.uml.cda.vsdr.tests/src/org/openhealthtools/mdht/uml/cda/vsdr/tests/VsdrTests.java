@@ -1,14 +1,9 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
 
 import junit.framework.JUnit4TestAdapter;
-
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
@@ -22,11 +17,11 @@ import org.junit.runners.Suite;
  */
  @RunWith(Suite.class)
 @Suite.SuiteClasses({
-  	ReportingdeathinformationfromaclinicalsettingtovitalrecordsTest.class
+  	ReportingDeathInformationfromaClinicalSettingtoVitalRecordsTest.class
   	,DeathReportDocumentBodyTest.class
-  	,TimeofDeathTest.class
+  	,DateandTimeofDeathTest.class
   	,LocationofDeathTest.class
-  	,DeathCertificationTest.class
+  	,CertifyingDeathTest.class
   	,MannerofDeathTest.class
   	,PregnancyStatusTest.class
   	,TobaccoUseTest.class
@@ -37,6 +32,7 @@ import org.junit.runners.Suite;
   	,CoronerReferralTest.class
   	,CoronerCaseTransferTest.class
   	,DeathLocationTypeTest.class
+  	,PronouncingDeathTest.class
 })
 public class VsdrTests {
 

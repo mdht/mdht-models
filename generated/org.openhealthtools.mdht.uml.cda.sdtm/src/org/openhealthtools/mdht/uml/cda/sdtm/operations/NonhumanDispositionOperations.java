@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
 import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanDisposition;
@@ -30,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -64,7 +56,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class NonhumanDispositionOperations extends ClinicalStatementOperations {
+public class NonhumanDispositionOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -93,7 +93,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -108,25 +108,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionTemplateId(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -154,7 +164,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -169,25 +179,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionClassCode(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -215,7 +235,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -230,25 +250,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionMoodCode(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -276,7 +306,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -291,25 +321,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionId(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -337,7 +377,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -352,25 +392,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionCode(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -398,7 +448,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -413,25 +463,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionEffectiveTime(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -459,7 +519,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -474,25 +534,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionStudyDayPeriod(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_STUDY_DAY_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -520,7 +590,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -535,25 +605,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionPlannedStudyDay(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_PLANNED_STUDY_DAY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -581,7 +661,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -596,25 +676,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionComment(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -642,7 +732,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -657,25 +747,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionDomainAssignment(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -703,7 +803,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -718,25 +818,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionRelatedRecord(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -764,7 +874,7 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -779,25 +889,35 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateNonhumanDispositionSupplementalValue(NonhumanDisposition nonhumanDisposition, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION);
 			try {
-				VALIDATE_NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanDisposition)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanDisposition)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_DISPOSITION__NONHUMAN_DISPOSITION_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanDispositionNonhumanDispositionSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanDisposition, context) }),
 						 new Object [] { nonhumanDisposition }));
 			}
 			 
@@ -833,8 +953,13 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StudyDayPeriod getStudyDayPeriod(NonhumanDisposition nonhumanDisposition) {
+	
+	
+	
 		if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION, SdtmPackage.Literals.NONHUMAN_DISPOSITION.getEAllOperations().get(63));
 			try {
 				GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);
@@ -842,8 +967,9 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
 		return (StudyDayPeriod) query.evaluate(nonhumanDisposition);
 	}
 
@@ -874,8 +1000,13 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  PlannedStudyDay getPlannedStudyDay(NonhumanDisposition nonhumanDisposition) {
+	
+	
+	
 		if (GET_PLANNED_STUDY_DAY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION, SdtmPackage.Literals.NONHUMAN_DISPOSITION.getEAllOperations().get(64));
 			try {
 				GET_PLANNED_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_PLANNED_STUDY_DAY__EOCL_EXP);
@@ -883,8 +1014,9 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
 		return (PlannedStudyDay) query.evaluate(nonhumanDisposition);
 	}
 
@@ -915,8 +1047,13 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<Comment> getComments(NonhumanDisposition nonhumanDisposition) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION, SdtmPackage.Literals.NONHUMAN_DISPOSITION.getEAllOperations().get(65));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -924,8 +1061,9 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(nonhumanDisposition);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -958,8 +1096,13 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(NonhumanDisposition nonhumanDisposition) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION, SdtmPackage.Literals.NONHUMAN_DISPOSITION.getEAllOperations().get(66));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -967,8 +1110,9 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(nonhumanDisposition);
 	}
 
@@ -999,8 +1143,13 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(NonhumanDisposition nonhumanDisposition) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION, SdtmPackage.Literals.NONHUMAN_DISPOSITION.getEAllOperations().get(67));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1008,8 +1157,9 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(nonhumanDisposition);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1042,8 +1192,13 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(NonhumanDisposition nonhumanDisposition) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_DISPOSITION, SdtmPackage.Literals.NONHUMAN_DISPOSITION.getEAllOperations().get(68));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1051,8 +1206,9 @@ public class NonhumanDispositionOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(nonhumanDisposition);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());

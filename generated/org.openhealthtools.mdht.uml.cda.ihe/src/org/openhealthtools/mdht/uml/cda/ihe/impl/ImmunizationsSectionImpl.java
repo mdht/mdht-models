@@ -17,7 +17,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.Immunization;
 import org.openhealthtools.mdht.uml.cda.ihe.ImmunizationsSection;
@@ -27,64 +27,63 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ImmunizationsSectionOpera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Immunizations Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class ImmunizationsSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.ImmunizationsSectionImpl
 		implements ImmunizationsSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ImmunizationsSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.IMMUNIZATIONS_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIHEImmunizationsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ImmunizationsSectionOperations.validateIHEImmunizationsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
-	public boolean validateIHEImmunizationsSectionImmunization(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	 * @generated
+	 */
+	public boolean validateIHEImmunizationsSectionImmunization(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ImmunizationsSectionOperations.validateIHEImmunizationsSectionImmunization(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EList<Immunization> getImmunizations() {
 		return ImmunizationsSectionOperations.getImmunizations(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public ImmunizationsSection init() {
 		return Initializer.Util.init(this);

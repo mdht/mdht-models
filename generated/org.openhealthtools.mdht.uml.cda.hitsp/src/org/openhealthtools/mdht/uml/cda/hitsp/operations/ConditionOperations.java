@@ -19,12 +19,13 @@ import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
 import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
 import org.openhealthtools.mdht.uml.cda.hitsp.ConditionEntry;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPFactory;
@@ -33,7 +34,6 @@ import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPlugin;
 import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ProblemConcernEntryOperations;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 /**
  * <!-- begin-user-doc -->
@@ -56,6 +56,13 @@ import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship
  * @generated
  */
 public class ConditionOperations extends ProblemConcernEntryOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -83,7 +90,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -98,22 +105,27 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	public static boolean validateConditionHasTreatingProvider(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION);
 			try {
-				VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			condition)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONDITION_HAS_TREATING_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(condition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.CONDITION__CONDITION_HAS_TREATING_PROVIDER,
-					HITSPPlugin.INSTANCE.getString("ConditionHasTreatingProvider"), new Object[] { condition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.CONDITION__CONDITION_HAS_TREATING_PROVIDER,
+						HITSPPlugin.INSTANCE.getString("ConditionConditionHasTreatingProvider"),
+						new Object[] { condition }));
 			}
 
 			return false;
@@ -139,7 +151,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -154,21 +166,26 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	public static boolean validateConditionHasProviderId(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION);
 			try {
-				VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(condition)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONDITION_HAS_PROVIDER_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			condition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.CONDITION__CONDITION_HAS_PROVIDER_ID,
-					HITSPPlugin.INSTANCE.getString("ConditionHasProviderId"), new Object[] { condition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.CONDITION__CONDITION_HAS_PROVIDER_ID,
+						HITSPPlugin.INSTANCE.getString("ConditionConditionHasProviderId"), new Object[] { condition }));
 			}
 
 			return false;
@@ -194,7 +211,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -209,22 +226,28 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	public static boolean validateConditionHasProviderTreatmentTime(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION);
 			try {
-				VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			condition)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONDITION_HAS_PROVIDER_TREATMENT_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(condition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.CONDITION__CONDITION_HAS_PROVIDER_TREATMENT_TIME,
-					HITSPPlugin.INSTANCE.getString("ConditionHasProviderTreatmentTime"), new Object[] { condition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.CONDITION__CONDITION_HAS_PROVIDER_TREATMENT_TIME,
+						HITSPPlugin.INSTANCE.getString("ConditionConditionHasProviderTreatmentTime"),
+						new Object[] { condition }));
 			}
 
 			return false;
@@ -250,7 +273,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -265,21 +288,26 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	public static boolean validateConditionTemplateId(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION);
 			try {
-				VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(condition)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONDITION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			condition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.CONDITION__CONDITION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("ConditionTemplateId"), new Object[] { condition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.CONDITION__CONDITION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString("ConditionConditionTemplateId"), new Object[] { condition }));
 			}
 
 			return false;
@@ -306,7 +334,7 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -322,20 +350,25 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	public static boolean validateConditionEntry(Condition condition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.CONDITION);
 			try {
-				VALIDATE_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(condition)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONDITION_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			condition)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.CONDITION__CONDITION_ENTRY,
-					HITSPPlugin.INSTANCE.getString("ConditionEntry"), new Object[] { condition }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE, HITSPValidator.CONDITION__CONDITION_ENTRY,
+						HITSPPlugin.INSTANCE.getString("ConditionConditionEntry"), new Object[] { condition }));
 			}
 
 			return false;
@@ -384,8 +417,10 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 	 * @generated
 	 */
 	public static EList<ProblemEntry> getConditionEntries(Condition condition) {
+
 		if (GET_CONDITION_ENTRIES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.CONDITION, HITSPPackage.Literals.CONDITION.getEAllOperations().get(79));
 			try {
@@ -394,7 +429,8 @@ public class ConditionOperations extends ProblemConcernEntryOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONDITION_ENTRIES__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONDITION_ENTRIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ProblemEntry> result = (Collection<ProblemEntry>) query.evaluate(condition);
 		return new BasicEList.UnmodifiableEList<ProblemEntry>(result.size(), result.toArray());

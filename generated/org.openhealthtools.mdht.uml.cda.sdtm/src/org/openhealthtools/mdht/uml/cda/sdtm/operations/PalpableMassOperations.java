@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -31,7 +24,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.PlannedStudyDay;
 import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -73,7 +65,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class PalpableMassOperations extends ClinicalStatementOperations {
+public class PalpableMassOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -102,7 +102,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -117,25 +117,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassTemplateId(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -163,7 +173,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -178,25 +188,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassClassCode(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -224,7 +244,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -239,25 +259,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassMoodCode(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -285,7 +315,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -300,25 +330,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassId(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -346,7 +386,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -361,25 +401,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassCodeP(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -409,7 +459,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -424,25 +474,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassCode(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -470,7 +530,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -485,25 +545,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassStatusCode(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -531,7 +601,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -546,25 +616,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassValue(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -592,7 +672,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -607,25 +687,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassTargetSiteCodeP(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_TARGET_SITE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassTargetSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassTargetSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -655,7 +745,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -670,25 +760,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassTargetSiteCode(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_TARGET_SITE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -716,7 +816,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -731,25 +831,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassNonPerformanceReason(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -777,7 +887,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -792,25 +902,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassStudyFindingEvaluator(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_STUDY_FINDING_EVALUATOR,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassStudyFindingEvaluator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassStudyFindingEvaluator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -838,7 +958,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -853,25 +973,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassPlannedStudyDay(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_PLANNED_STUDY_DAY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -899,7 +1029,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -914,25 +1044,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassDataCollection(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_DATA_COLLECTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -960,7 +1100,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -975,25 +1115,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassMassIdentification(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_MASS_IDENTIFICATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassMassIdentification", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassMassIdentification", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -1021,7 +1171,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1036,25 +1186,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassComment(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -1082,7 +1242,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1097,25 +1257,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassDomainAssignment(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -1143,7 +1313,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1158,25 +1328,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassRelatedRecord(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -1204,7 +1384,7 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PALPABLE_MASS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PALPABLE_MASS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1219,25 +1399,35 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePalpableMassSupplementalValue(PalpableMass palpableMass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PALPABLE_MASS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PALPABLE_MASS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PALPABLE_MASS);
 			try {
-				VALIDATE_PALPABLE_MASS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PALPABLE_MASS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PALPABLE_MASS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PALPABLE_MASS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PALPABLE_MASS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(palpableMass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PALPABLE_MASS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(palpableMass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PALPABLE_MASS__PALPABLE_MASS_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PalpableMassPalpableMassSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(palpableMass, context) }),
 						 new Object [] { palpableMass }));
 			}
 			 
@@ -1273,8 +1463,13 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(PalpableMass palpableMass) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PALPABLE_MASS, SdtmPackage.Literals.PALPABLE_MASS.getEAllOperations().get(70));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1282,8 +1477,9 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(palpableMass);
 	}
 
@@ -1314,8 +1510,13 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  PlannedStudyDay getPlannedStudyDay(PalpableMass palpableMass) {
+	
+	
+	
 		if (GET_PLANNED_STUDY_DAY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PALPABLE_MASS, SdtmPackage.Literals.PALPABLE_MASS.getEAllOperations().get(71));
 			try {
 				GET_PLANNED_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_PLANNED_STUDY_DAY__EOCL_EXP);
@@ -1323,8 +1524,9 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
 		return (PlannedStudyDay) query.evaluate(palpableMass);
 	}
 
@@ -1355,8 +1557,13 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DataCollection getDataCollection(PalpableMass palpableMass) {
+	
+	
+	
 		if (GET_DATA_COLLECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PALPABLE_MASS, SdtmPackage.Literals.PALPABLE_MASS.getEAllOperations().get(72));
 			try {
 				GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);
@@ -1364,8 +1571,9 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DATA_COLLECTION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DATA_COLLECTION__EOCL_QRY);
 		return (DataCollection) query.evaluate(palpableMass);
 	}
 
@@ -1396,8 +1604,13 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<Comment> getComments(PalpableMass palpableMass) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PALPABLE_MASS, SdtmPackage.Literals.PALPABLE_MASS.getEAllOperations().get(73));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1405,8 +1618,9 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(palpableMass);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1439,8 +1653,13 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(PalpableMass palpableMass) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PALPABLE_MASS, SdtmPackage.Literals.PALPABLE_MASS.getEAllOperations().get(74));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1448,8 +1667,9 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(palpableMass);
 	}
 
@@ -1480,8 +1700,13 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(PalpableMass palpableMass) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PALPABLE_MASS, SdtmPackage.Literals.PALPABLE_MASS.getEAllOperations().get(75));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1489,8 +1714,9 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(palpableMass);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1523,8 +1749,13 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(PalpableMass palpableMass) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PALPABLE_MASS, SdtmPackage.Literals.PALPABLE_MASS.getEAllOperations().get(76));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1532,8 +1763,9 @@ public class PalpableMassOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(palpableMass);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());

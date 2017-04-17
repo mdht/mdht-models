@@ -10,28 +10,23 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationType;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.MedicationTypeOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Type</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MedicationTypeImpl extends ObservationImpl implements MedicationType {
+public class MedicationTypeImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements MedicationType {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -75,7 +70,7 @@ public class MedicationTypeImpl extends ObservationImpl implements MedicationTyp
 	 * @generated
 	 */
 	public MedicationType init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -83,8 +78,9 @@ public class MedicationTypeImpl extends ObservationImpl implements MedicationTyp
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationType init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public MedicationType init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // MedicationTypeImpl

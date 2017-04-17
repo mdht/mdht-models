@@ -50,6 +50,13 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.CodedReasonForReferralSec
  * @generated
  */
 public class ReasonForReferralSectionOperations extends CodedReasonForReferralSectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -78,7 +85,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,25 +99,33 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 */
 
 	public static boolean validateHITSPReasonForReferralSectionCondition(
-			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION);
 			try {
-				VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reasonForReferralSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reasonForReferralSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION,
-					HITSPPlugin.INSTANCE.getString("HITSPReasonForReferralSectionCondition"),
-					new Object[] { reasonForReferralSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_CONDITION,
+						HITSPPlugin.INSTANCE.getString(
+							"ReasonForReferralSectionHITSPReasonForReferralSectionCondition"),
+						new Object[] { reasonForReferralSection }));
 			}
 
 			return false;
@@ -137,7 +152,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,26 +165,32 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 * @generated
 	 */
 
-	public static boolean validateHITSPReasonForReferralSectionResult(
-			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateHITSPReasonForReferralSectionResult(ReasonForReferralSection reasonForReferralSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION);
 			try {
-				VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reasonForReferralSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_REASON_FOR_REFERRAL_SECTION_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reasonForReferralSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_RESULT,
-					HITSPPlugin.INSTANCE.getString("HITSPReasonForReferralSectionResult"),
-					new Object[] { reasonForReferralSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.REASON_FOR_REFERRAL_SECTION__HITSP_REASON_FOR_REFERRAL_SECTION_RESULT,
+						HITSPPlugin.INSTANCE.getString("ReasonForReferralSectionHITSPReasonForReferralSectionResult"),
+						new Object[] { reasonForReferralSection }));
 			}
 
 			return false;
@@ -203,8 +224,10 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 * @generated
 	 */
 	public static EList<Condition> getConditions(ReasonForReferralSection reasonForReferralSection) {
+
 		if (GET_CONDITIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION,
 				HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION.getEAllOperations().get(66));
@@ -214,7 +237,8 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONDITIONS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONDITIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Condition> result = (Collection<Condition>) query.evaluate(reasonForReferralSection);
 		return new BasicEList.UnmodifiableEList<Condition>(result.size(), result.toArray());
@@ -246,8 +270,10 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 * @generated
 	 */
 	public static EList<Result> getResults(ReasonForReferralSection reasonForReferralSection) {
+
 		if (GET_RESULTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION,
 				HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION.getEAllOperations().get(67));
@@ -257,7 +283,8 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESULTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Result> result = (Collection<Result>) query.evaluate(reasonForReferralSection);
 		return new BasicEList.UnmodifiableEList<Result>(result.size(), result.toArray());
@@ -281,7 +308,7 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -294,26 +321,33 @@ public class ReasonForReferralSectionOperations extends CodedReasonForReferralSe
 	 * @generated
 	 */
 	public static boolean validateCodedReasonForReferralSectionTemplateId(
-			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-		if (VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.REASON_FOR_REFERRAL_SECTION);
 			try {
-				VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			reasonForReferralSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				reasonForReferralSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.REASON_FOR_REFERRAL_SECTION__CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("CodedReasonForReferralSectionTemplateId"),
-					new Object[] { reasonForReferralSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.REASON_FOR_REFERRAL_SECTION__CODED_REASON_FOR_REFERRAL_SECTION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString(
+							"ReasonForReferralSectionCodedReasonForReferralSectionTemplateId"),
+						new Object[] { reasonForReferralSection }));
 			}
 
 			return false;

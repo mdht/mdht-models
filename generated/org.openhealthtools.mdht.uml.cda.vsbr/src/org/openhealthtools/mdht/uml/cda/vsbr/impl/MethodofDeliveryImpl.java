@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ProcedureImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,10 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.MethodofDeliveryOperatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Methodof Delivery</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MethodofDeliveryImpl extends ProcedureImpl implements MethodofDelivery {
+public class MethodofDeliveryImpl extends org.eclipse.mdht.uml.cda.impl.ProcedureImpl implements MethodofDelivery {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -99,7 +93,8 @@ public class MethodofDeliveryImpl extends ProcedureImpl implements MethodofDeliv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMethodofDeliveryFinalRouteAndMethod(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMethodofDeliveryFinalRouteAndMethod(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MethodofDeliveryOperations.validateMethodofDeliveryFinalRouteAndMethod(this, diagnostics, context);
 	}
 
@@ -129,7 +124,7 @@ public class MethodofDeliveryImpl extends ProcedureImpl implements MethodofDeliv
 	 * @generated
 	 */
 	public MethodofDelivery init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -137,8 +132,9 @@ public class MethodofDeliveryImpl extends ProcedureImpl implements MethodofDeliv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MethodofDelivery init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public MethodofDelivery init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // MethodofDeliveryImpl

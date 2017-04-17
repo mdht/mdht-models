@@ -11,9 +11,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
-import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsSection;
@@ -27,7 +26,7 @@ import org.hl7.security.ds4p.contentprofile.operations.PrivacyMarkingsSectionOpe
  *
  * @generated
  */
-public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMarkingsSection {
+public class PrivacyMarkingsSectionImpl extends EObjectImpl implements PrivacyMarkingsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

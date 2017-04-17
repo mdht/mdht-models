@@ -4,12 +4,15 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.openhealthtools.mdht.cda</groupId>
 	<artifactId>org.openhealthtools.mdht.cda.models</artifactId>
-	<version>2.5.17-SNAPSHOT</version>
+	<version>3.0.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
-		<tycho-version>0.24.0</tycho-version>
-		<org.apache.maven.version>2.4</org.apache.maven.version>
+		<tycho-version>1.0.0</tycho-version>
+		<org.apache.maven.version>3.0.1</org.apache.maven.version>
+		<maven-javadoc-plugin.version>2.10.4</maven-javadoc-plugin.version>
+		<maven-assembly-plugin.version>3.0.0</maven-assembly-plugin.version>
+		<maven-dependency-plugin.version>3.0.0</maven-dependency-plugin.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<release_url>http://52.26.42.198:8081/nexus/content/repositories/releases</release_url>
 		<snapshot_url>http://52.26.42.198:8081/nexus/content/repositories/snapshots</snapshot_url>
@@ -18,31 +21,50 @@
 
 	<repositories>
 		<repository>
-			<id>mars</id>
+			<id>neon</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/mars</url>
+			<url>http://download.eclipse.org/releases/neon</url>
 		</repository>
 
 		<repository>
-			<id>mdht-mars</id>
+			<id>mdht-neon</id>
 			<layout>p2</layout>
-			<url>https://hudson.eclipse.org/mdht/job/MDHT-mars/lastSuccessfulBuild/artifact/repository</url>
+			<url>https://hudson.eclipse.org/mdht/job/MDHT-master/lastSuccessfulBuild/artifact/repository</url>
 		</repository>
 
 	</repositories>
 
 	<distributionManagement>
 		<repository>
-			<id>${repository_id}</id>
-			<name>mdht-releases</name>
-			<url>${release_url}</url>
+			<id>devsoap.sitenv.org</id>
+			<name>MDHT.release</name>
+			<url>http://devsoap.sitenv.org:8081/artifactory/libs-release-local</url>
 		</repository>
 		<snapshotRepository>
-			<id>${repository_id}</id>
-			<name>mdht-snapshots</name>
-			<url>${snapshot_url}</url>
+			<id>devsoap.sitenv.org</id>
+			<name>MDHT.snapshot</name>
+			<url>http://devsoap.sitenv.org:8081/artifactory/libs-snapshot-local</url>
 		</snapshotRepository>
 	</distributionManagement>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>com.itemis.maven.plugins</groupId>
+					<artifactId>unleash-maven-plugin</artifactId>
+					<version>1.0.0</version>
+					<dependencies>
+						<dependency>
+							<groupId>com.itemis.maven.plugins</groupId>
+							<artifactId>unleash-scm-provider-git</artifactId>
+							<version>1.0.0</version>
+						</dependency>
+					</dependencies>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
 
 	<modules>
 		<module>generated</module>
@@ -58,9 +80,9 @@
 			</activation>
 			<repositories>
 				<repository>
-					<id>mars</id>
+					<id>neon</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/mars</url>
+					<url>http://download.eclipse.org/releases/neon</url>
 				</repository>
 			</repositories>
 			<build>
@@ -71,7 +93,6 @@
 						<version>${tycho-version}</version>
 						<extensions>true</extensions>
 					</plugin>
-
 					<plugin>
 						<groupId>org.eclipse.tycho</groupId>
 						<artifactId>target-platform-configuration</artifactId>
@@ -104,22 +125,16 @@
 									<arch>x86_64</arch>
 								</environment>
 							</environments>
-
 							<dependency-resolution>
 								<optionalDependencies>ignore</optionalDependencies>
 							</dependency-resolution>
-
-
-
 						</configuration>
 					</plugin>
-
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-release-plugin</artifactId>
 						<version>2.5.1</version>
 					</plugin>
-
 				</plugins>
 			</build>
 		</profile>
@@ -132,31 +147,27 @@
 					<name>cdatools.com-releases</name>
 					<url>http://www.cdatools.com:8081/artifactory/libs-release-local</url>
 				</repository>
-
 				<snapshotRepository>
 					<id>cdatools.com</id>
 					<name>cdatools.com-snapshots</name>
 					<url>http://www.cdatools.com:8081/artifactory/libs-snapshot-local</url>
 				</snapshotRepository>
-
 			</distributionManagement>
 		</profile>
-		
+
 		<profile>
 			<id>siteenv</id>
 			<distributionManagement>
 				<repository>
 					<id>devsoap.sitenv.org</id>
-					<name>devsoap.sitenv.org-releases</name>
+					<name>MDHT.libs-release-local</name>
 					<url>http://devsoap.sitenv.org:8081/artifactory/libs-release-local</url>
 				</repository>
-
 				<snapshotRepository>
 					<id>devsoap.sitenv.org</id>
-					<name>devsoap.sitenv.org-snapshots</name>
+					<name>MDHT.libs-snapshot-local</name>
 					<url>http://devsoap.sitenv.org:8081/artifactory/libs-snapshot-local</url>
 				</snapshotRepository>
-
 			</distributionManagement>
 		</profile>
 
@@ -184,12 +195,9 @@
 							</execution>
 						</executions>
 					</plugin>
-
 				</plugins>
 			</build>
-
 		</profile>
-
 	</profiles>
 
 	<scm>

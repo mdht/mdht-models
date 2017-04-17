@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.CharacteristicofLaborandDelivery;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.CharacteristicofLaborandDeliveryOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,10 +50,12 @@ public class CharacteristicofLaborandDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCharacteristicofLaborandDeliveryTemplateId() {
 		OperationsTestCase<CharacteristicofLaborandDelivery> validateCharacteristicofLaborandDeliveryTemplateIdTestCase = new OperationsTestCase<CharacteristicofLaborandDelivery>(
 			"validateCharacteristicofLaborandDeliveryTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -81,10 +86,12 @@ public class CharacteristicofLaborandDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCharacteristicofLaborandDeliveryClassCode() {
 		OperationsTestCase<CharacteristicofLaborandDelivery> validateCharacteristicofLaborandDeliveryClassCodeTestCase = new OperationsTestCase<CharacteristicofLaborandDelivery>(
 			"validateCharacteristicofLaborandDeliveryClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -115,10 +122,12 @@ public class CharacteristicofLaborandDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCharacteristicofLaborandDeliveryMoodCode() {
 		OperationsTestCase<CharacteristicofLaborandDelivery> validateCharacteristicofLaborandDeliveryMoodCodeTestCase = new OperationsTestCase<CharacteristicofLaborandDelivery>(
 			"validateCharacteristicofLaborandDeliveryMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -149,10 +158,11 @@ public class CharacteristicofLaborandDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCharacteristicofLaborandDeliveryCodeP() {
 		OperationsTestCase<CharacteristicofLaborandDelivery> validateCharacteristicofLaborandDeliveryCodePTestCase = new OperationsTestCase<CharacteristicofLaborandDelivery>(
-			"validateCharacteristicofLaborandDeliveryCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCharacteristicofLaborandDeliveryCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -183,10 +193,11 @@ public class CharacteristicofLaborandDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCharacteristicofLaborandDeliveryCode() {
 		OperationsTestCase<CharacteristicofLaborandDelivery> validateCharacteristicofLaborandDeliveryCodeTestCase = new OperationsTestCase<CharacteristicofLaborandDelivery>(
-			"validateCharacteristicofLaborandDeliveryCode",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCharacteristicofLaborandDeliveryCode", operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -217,10 +228,11 @@ public class CharacteristicofLaborandDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCharacteristicofLaborandDeliveryCodeVS() {
 		OperationsTestCase<CharacteristicofLaborandDelivery> validateCharacteristicofLaborandDeliveryCodeVSTestCase = new OperationsTestCase<CharacteristicofLaborandDelivery>(
-			"validateCharacteristicofLaborandDeliveryCodeVS",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCharacteristicofLaborandDeliveryCodeVS", operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -251,10 +263,11 @@ public class CharacteristicofLaborandDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCharacteristicofLaborandDeliveryValue() {
 		OperationsTestCase<CharacteristicofLaborandDelivery> validateCharacteristicofLaborandDeliveryValueTestCase = new OperationsTestCase<CharacteristicofLaborandDelivery>(
-			"validateCharacteristicofLaborandDeliveryValue",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCharacteristicofLaborandDeliveryValue", operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -288,10 +301,11 @@ public class CharacteristicofLaborandDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCharacteristicofLaborandDeliveryValueP() {
 		OperationsTestCase<CharacteristicofLaborandDelivery> validateCharacteristicofLaborandDeliveryValuePTestCase = new OperationsTestCase<CharacteristicofLaborandDelivery>(
-			"validateCharacteristicofLaborandDeliveryValueP",
-			operationsForOCL.getOCLValue("VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateCharacteristicofLaborandDeliveryValueP", operationsForOCL.getOCLValue(
+				"VALIDATE_CHARACTERISTICOF_LABORAND_DELIVERY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -370,8 +384,7 @@ public class CharacteristicofLaborandDeliveryTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.FamilyHistoryOrganizer;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
 
@@ -136,5 +134,6 @@ public interface FamilyHistory extends FamilyHistoryOrganizer {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public FamilyHistory init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public FamilyHistory init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // FamilyHistory

@@ -16,8 +16,8 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Organizer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Organizer;
 
 /**
  * <!-- begin-user-doc -->
@@ -90,7 +90,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.classCode = vocab::x_DocumentSubject::PRS'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerRelationshipValueCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerRelationshipValueCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -102,7 +103,8 @@ public interface FamilyHistoryOrganizer extends Organizer {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.subject.relatedSubject.code->size() = 1'"
 	 * @generated
 	 */
-	boolean validateFamilyHistoryOrganizerHasRelatedSubjectCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateFamilyHistoryOrganizerHasRelatedSubjectCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

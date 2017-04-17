@@ -6,18 +6,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Organizer;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.info='NonDrugAllergyOrganizerActuallyDregEMSDrugAllergy' constraints.validation.error='NonDrugAllergyOrganizerActuallyDregExistenceOfDrugAllergyObservation'"
  * @generated
  */
-public interface NonDrugAllergyOrganizerActuallyDreg extends Organizer {
+public interface NonDrugAllergyOrganizerActuallyDreg extends org.eclipse.mdht.uml.cda.Organizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -82,9 +75,9 @@ public interface NonDrugAllergyOrganizerActuallyDreg extends Organizer {
 	public NonDrugAllergyOrganizerActuallyDreg init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NonDrugAllergyOrganizerActuallyDreg init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public NonDrugAllergyOrganizerActuallyDreg init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // NonDrugAllergyOrganizerActuallyDreg

@@ -7,18 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DeathRelationship;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -30,7 +23,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SpecimenInformation;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TumorFinding;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -80,7 +72,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class TumorFindingOperations extends ClinicalStatementOperations {
+public class TumorFindingOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,7 +109,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -124,25 +124,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingTemplateId(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -170,7 +180,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -185,25 +195,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingId(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -231,7 +251,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -246,25 +266,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingCodeP(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -294,7 +324,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -309,25 +339,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingCode(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -355,7 +395,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -370,25 +410,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingStatusCode(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -416,7 +466,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -431,25 +481,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingValue(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -477,7 +537,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -492,25 +552,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingMethodCodeP(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_METHOD_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -540,7 +610,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -555,25 +625,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingMethodCode(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_METHOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -601,7 +681,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -616,25 +696,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingGroupIdentifier(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -662,7 +752,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -677,25 +767,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingSpecimenInformation(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_SPECIMEN_INFORMATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -723,7 +823,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -738,25 +838,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingMassIdentification(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_MASS_IDENTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_MASS_IDENTIFICATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingMassIdentification", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingMassIdentification", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -784,7 +894,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -799,25 +909,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingNonPerformanceReason(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -845,7 +965,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -860,25 +980,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingStudyTestPerformer(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_STUDY_TEST_PERFORMER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -906,7 +1036,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -921,25 +1051,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingDetectionDelayAssociation(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_DETECTION_DELAY_ASSOCIATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingDetectionDelayAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingDetectionDelayAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -967,7 +1107,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -982,25 +1122,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingComment(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1028,7 +1178,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1043,25 +1193,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingDomainAssignment(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1089,7 +1249,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1104,25 +1264,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingRelatedRecord(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1150,7 +1320,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1165,25 +1335,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingSupplementalValue(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1211,7 +1391,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1226,25 +1406,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingResultCategory(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_RESULT_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingResultCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingResultCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1272,7 +1462,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1287,25 +1477,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingDeathRelationship(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDING_DEATH_RELATIONSHIP,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingDeathRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingDeathRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1333,7 +1533,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1348,25 +1548,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingdetectionDelayAssociationdetectionDelayClassCode(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingdetectionDelayAssociationdetectionDelayClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingdetectionDelayAssociationdetectionDelayClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1394,7 +1604,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1409,25 +1619,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingdetectionDelayAssociationdetectionDelayCode(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingdetectionDelayAssociationdetectionDelayCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingdetectionDelayAssociationdetectionDelayCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1455,7 +1675,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1470,25 +1690,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingdetectionDelayAssociationdetectionDelayMoodCode(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingdetectionDelayAssociationdetectionDelayMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingdetectionDelayAssociationdetectionDelayMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1516,7 +1746,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1531,25 +1761,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingdetectionDelayAssociationdetectionDelayValue(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDINGDETECTION_DELAY_ASSOCIATIONDETECTION_DELAY_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingdetectionDelayAssociationdetectionDelayValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingdetectionDelayAssociationdetectionDelayValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1577,7 +1817,7 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1592,25 +1832,35 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateTumorFindingdetectionDelayAssociationTypeCode(TumorFinding tumorFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TUMOR_FINDING);
 			try {
-				VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(tumorFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(tumorFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TUMOR_FINDING__TUMOR_FINDINGDETECTION_DELAY_ASSOCIATION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingdetectionDelayAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "TumorFindingTumorFindingdetectionDelayAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(tumorFinding, context) }),
 						 new Object [] { tumorFinding }));
 			}
 			 
@@ -1646,8 +1896,13 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(TumorFinding tumorFinding) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.TUMOR_FINDING, SdtmPackage.Literals.TUMOR_FINDING.getEAllOperations().get(76));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1655,8 +1910,9 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(tumorFinding);
 	}
 
@@ -1687,8 +1943,13 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SpecimenInformation getSpecimenInformation(TumorFinding tumorFinding) {
+	
+	
+	
 		if (GET_SPECIMEN_INFORMATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.TUMOR_FINDING, SdtmPackage.Literals.TUMOR_FINDING.getEAllOperations().get(77));
 			try {
 				GET_SPECIMEN_INFORMATION__EOCL_QRY = helper.createQuery(GET_SPECIMEN_INFORMATION__EOCL_EXP);
@@ -1696,8 +1957,9 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
 		return (SpecimenInformation) query.evaluate(tumorFinding);
 	}
 
@@ -1728,8 +1990,13 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(TumorFinding tumorFinding) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.TUMOR_FINDING, SdtmPackage.Literals.TUMOR_FINDING.getEAllOperations().get(78));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1737,8 +2004,9 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(tumorFinding);
 	}
 
@@ -1769,8 +2037,13 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Comment getComment(TumorFinding tumorFinding) {
+	
+	
+	
 		if (GET_COMMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.TUMOR_FINDING, SdtmPackage.Literals.TUMOR_FINDING.getEAllOperations().get(79));
 			try {
 				GET_COMMENT__EOCL_QRY = helper.createQuery(GET_COMMENT__EOCL_EXP);
@@ -1778,8 +2051,9 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENT__EOCL_QRY);
 		return (Comment) query.evaluate(tumorFinding);
 	}
 
@@ -1810,8 +2084,13 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(TumorFinding tumorFinding) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.TUMOR_FINDING, SdtmPackage.Literals.TUMOR_FINDING.getEAllOperations().get(80));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1819,8 +2098,9 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(tumorFinding);
 	}
 
@@ -1851,8 +2131,13 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  RelatedRecord getRelatedRecord(TumorFinding tumorFinding) {
+	
+	
+	
 		if (GET_RELATED_RECORD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.TUMOR_FINDING, SdtmPackage.Literals.TUMOR_FINDING.getEAllOperations().get(81));
 			try {
 				GET_RELATED_RECORD__EOCL_QRY = helper.createQuery(GET_RELATED_RECORD__EOCL_EXP);
@@ -1860,8 +2145,9 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORD__EOCL_QRY);
 		return (RelatedRecord) query.evaluate(tumorFinding);
 	}
 
@@ -1892,8 +2178,13 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SupplementalValue getSupplementalValue(TumorFinding tumorFinding) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.TUMOR_FINDING, SdtmPackage.Literals.TUMOR_FINDING.getEAllOperations().get(82));
 			try {
 				GET_SUPPLEMENTAL_VALUE__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUE__EOCL_EXP);
@@ -1901,8 +2192,9 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUE__EOCL_QRY);
 		return (SupplementalValue) query.evaluate(tumorFinding);
 	}
 
@@ -1933,8 +2225,13 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  ResultCategory getResultCategory(TumorFinding tumorFinding) {
+	
+	
+	
 		if (GET_RESULT_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.TUMOR_FINDING, SdtmPackage.Literals.TUMOR_FINDING.getEAllOperations().get(83));
 			try {
 				GET_RESULT_CATEGORY__EOCL_QRY = helper.createQuery(GET_RESULT_CATEGORY__EOCL_EXP);
@@ -1942,8 +2239,9 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RESULT_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESULT_CATEGORY__EOCL_QRY);
 		return (ResultCategory) query.evaluate(tumorFinding);
 	}
 
@@ -1974,8 +2272,13 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DeathRelationship getDeathRelationship(TumorFinding tumorFinding) {
+	
+	
+	
 		if (GET_DEATH_RELATIONSHIP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.TUMOR_FINDING, SdtmPackage.Literals.TUMOR_FINDING.getEAllOperations().get(84));
 			try {
 				GET_DEATH_RELATIONSHIP__EOCL_QRY = helper.createQuery(GET_DEATH_RELATIONSHIP__EOCL_EXP);
@@ -1983,8 +2286,9 @@ public class TumorFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DEATH_RELATIONSHIP__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DEATH_RELATIONSHIP__EOCL_QRY);
 		return (DeathRelationship) query.evaluate(tumorFinding);
 	}
 

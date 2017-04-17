@@ -14,20 +14,34 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.AssignedCustodian;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.Custodian;
-import org.openhealthtools.mdht.uml.cda.CustodianOrganization;
-import org.openhealthtools.mdht.uml.cda.DocumentationOf;
-import org.openhealthtools.mdht.uml.cda.EntryRelationship;
-import org.openhealthtools.mdht.uml.cda.InfrastructureRootTypeId;
-import org.openhealthtools.mdht.uml.cda.Organization;
-import org.openhealthtools.mdht.uml.cda.Patient;
-import org.openhealthtools.mdht.uml.cda.PatientRole;
-import org.openhealthtools.mdht.uml.cda.Person;
-import org.openhealthtools.mdht.uml.cda.RecordTarget;
+import org.eclipse.mdht.uml.cda.AssignedAuthor;
+import org.eclipse.mdht.uml.cda.AssignedCustodian;
+import org.eclipse.mdht.uml.cda.Author;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.Custodian;
+import org.eclipse.mdht.uml.cda.CustodianOrganization;
+import org.eclipse.mdht.uml.cda.DocumentationOf;
+import org.eclipse.mdht.uml.cda.EntryRelationship;
+import org.eclipse.mdht.uml.cda.InfrastructureRootTypeId;
+import org.eclipse.mdht.uml.cda.Organization;
+import org.eclipse.mdht.uml.cda.Patient;
+import org.eclipse.mdht.uml.cda.PatientRole;
+import org.eclipse.mdht.uml.cda.Person;
+import org.eclipse.mdht.uml.cda.RecordTarget;
+import org.eclipse.mdht.uml.cda.util.CDAUtil;
+import org.eclipse.mdht.uml.cda.util.ValidationResult;
+import org.eclipse.mdht.uml.hl7.datatypes.AD;
+import org.eclipse.mdht.uml.hl7.datatypes.CE;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.II;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.IVXB_TS;
+import org.eclipse.mdht.uml.hl7.datatypes.ON;
+import org.eclipse.mdht.uml.hl7.datatypes.PN;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
+import org.eclipse.mdht.uml.hl7.datatypes.TEL;
+import org.eclipse.mdht.uml.hl7.datatypes.TS;
+import org.eclipse.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 import org.openhealthtools.mdht.uml.cda.consol.AllergiesSection;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument;
@@ -35,20 +49,6 @@ import org.openhealthtools.mdht.uml.cda.consol.HealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemSection;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-import org.openhealthtools.mdht.uml.cda.util.ValidationResult;
-import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CE;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.II;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVXB_TS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ON;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
-import org.openhealthtools.mdht.uml.hl7.datatypes.TEL;
-import org.openhealthtools.mdht.uml.hl7.datatypes.TS;
-import org.openhealthtools.mdht.uml.hl7.vocab.x_ActRelationshipEntryRelationship;
 
 public class Examples {
 	public static final IVXB_TS TS_UNK = DatatypesFactory.eINSTANCE.createIVXB_TS();
@@ -185,10 +185,10 @@ public class Examples {
 	private static void fillProblemList(ProblemSection problemSection) {
 		problemSection.setTitle(DatatypesFactory.eINSTANCE.createST("Problem Section"));
 
-		String narrative = "<table border=\"1\" width=\"100%\">"
-				+ "<thead><tr><th>Problem</th><th>Date</th></tr></thead>"
-				+ "<tbody><tr><td><content ID=\"Problem1\">Pneumonia</content></td><td>1997</td>"
-				+ "</tr></tbody></table>";
+		String narrative = "<table border=\"1\" width=\"100%\">" +
+				"<thead><tr><th>Problem</th><th>Date</th></tr></thead>" +
+				"<tbody><tr><td><content ID=\"Problem1\">Pneumonia</content></td><td>1997</td>" +
+				"</tr></tbody></table>";
 		problemSection.createStrucDocText(narrative);
 
 		ProblemConcernAct problemConcernAct = ConsolFactory.eINSTANCE.createProblemConcernAct().init();
@@ -206,8 +206,8 @@ public class Examples {
 		problemConcernAct.getEntryRelationships().add(entryRelationship);
 
 		problemObservation.getIds().add(DatatypesFactory.eINSTANCE.createII("ab1791b0-5c71-11db-b0de-0800200c9a66"));
-		problemObservation.setCode(DatatypesFactory.eINSTANCE.createCD(
-			"64572001", "2.16.840.1.113883.6.96", "SNOMED-CT", "Condition"));
+		problemObservation.setCode(
+			DatatypesFactory.eINSTANCE.createCD("64572001", "2.16.840.1.113883.6.96", "SNOMED-CT", "Condition"));
 		problemObservation.getValues().add(
 			DatatypesFactory.eINSTANCE.createCD("233604007", "2.16.840.1.113883.6.96", "SNOMED-CT", "Pneumonia"));
 		effectiveTime = DatatypesFactory.eINSTANCE.createIVL_TS("199701", null);
@@ -262,7 +262,8 @@ public class Examples {
 		// System.out.println("WARNING: " + diagnostic.getMessage());
 		// }
 
-		System.out.println("Number of Schema Validation Diagnostics: " + result.getSchemaValidationDiagnostics().size());
+		System.out.println(
+			"Number of Schema Validation Diagnostics: " + result.getSchemaValidationDiagnostics().size());
 		System.out.println("Number of EMF Resource Diagnostics: " + result.getEMFResourceDiagnostics().size());
 		System.out.println("Number of EMF Validation Diagnostics: " + result.getEMFValidationDiagnostics().size());
 		System.out.println("Number of Total Diagnostics: " + result.getAllDiagnostics().size());

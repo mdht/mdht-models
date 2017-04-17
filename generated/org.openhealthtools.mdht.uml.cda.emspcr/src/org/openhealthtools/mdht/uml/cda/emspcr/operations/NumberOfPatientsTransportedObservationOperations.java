@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.NumberOfPatientsTransportedObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -44,7 +38,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class NumberOfPatientsTransportedObservationOperations extends ClinicalStatementOperations {
+public class NumberOfPatientsTransportedObservationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73,7 +74,7 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,28 +90,38 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	public static boolean validateNumberOfPatientsTransportedObservationTemplateId(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION);
 			try {
-				VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberOfPatientsTransportedObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION__NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("NumberOfPatientsTransportedObservationTemplateId"),
-					new Object[] { numberOfPatientsTransportedObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(numberOfPatientsTransportedObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION__NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("NumberOfPatientsTransportedObservationNumberOfPatientsTransportedObservationTemplateId"),
+						 new Object [] { numberOfPatientsTransportedObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -135,7 +146,7 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,28 +162,38 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	public static boolean validateNumberOfPatientsTransportedObservationMoodCode(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION);
 			try {
-				VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberOfPatientsTransportedObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION__NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("NumberOfPatientsTransportedObservationMoodCode"),
-					new Object[] { numberOfPatientsTransportedObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(numberOfPatientsTransportedObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION__NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("NumberOfPatientsTransportedObservationNumberOfPatientsTransportedObservationMoodCode"),
+						 new Object [] { numberOfPatientsTransportedObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -197,7 +218,7 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -213,28 +234,38 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	public static boolean validateNumberOfPatientsTransportedObservationCodeP(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION);
 			try {
-				VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberOfPatientsTransportedObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION__NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("NumberOfPatientsTransportedObservationCodeP"),
-					new Object[] { numberOfPatientsTransportedObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(numberOfPatientsTransportedObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION__NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("NumberOfPatientsTransportedObservationNumberOfPatientsTransportedObservationCodeP"),
+						 new Object [] { numberOfPatientsTransportedObservation }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -242,13 +273,11 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
-					context.put(
-						"org.openhealthtools.mdht.uml.cda.emspcr.NumberOfPatientsTransportedObservationCodeP",
-						passToken);
+					context.put("org.openhealthtools.mdht.uml.cda.emspcr.NumberOfPatientsTransportedObservationCodeP", passToken);
 				}
 				passToken.add(numberOfPatientsTransportedObservation);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -262,9 +291,9 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67547-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67547-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateNumberOfPatientsTransportedObservationCode(NumberOfPatientsTransportedObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Number Of Patients Transported Observation Code</em>}' invariant operation.
@@ -275,7 +304,7 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -291,37 +320,44 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	public static boolean validateNumberOfPatientsTransportedObservationCode(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.NumberOfPatientsTransportedObservationCodeP");
-		if ((passToken instanceof Collection<?>) &&
-				((Collection<?>) passToken).contains(numberOfPatientsTransportedObservation)) {
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.NumberOfPatientsTransportedObservationCodeP");
+		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(numberOfPatientsTransportedObservation)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION);
 			try {
-				VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberOfPatientsTransportedObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION__NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("NumberOfPatientsTransportedObservationCode"),
-					new Object[] { numberOfPatientsTransportedObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(numberOfPatientsTransportedObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION__NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("NumberOfPatientsTransportedObservationNumberOfPatientsTransportedObservationCode"),
+						 new Object [] { numberOfPatientsTransportedObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -346,7 +382,7 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,28 +398,38 @@ public class NumberOfPatientsTransportedObservationOperations extends ClinicalSt
 	public static boolean validateNumberOfPatientsTransportedObservationValue(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION);
 			try {
-				VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			numberOfPatientsTransportedObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION__NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("NumberOfPatientsTransportedObservationValue"),
-					new Object[] { numberOfPatientsTransportedObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(numberOfPatientsTransportedObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION__NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("NumberOfPatientsTransportedObservationNumberOfPatientsTransportedObservationValue"),
+						 new Object [] { numberOfPatientsTransportedObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

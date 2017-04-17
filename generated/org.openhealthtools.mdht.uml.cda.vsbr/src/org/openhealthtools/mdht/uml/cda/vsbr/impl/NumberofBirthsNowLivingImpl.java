@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofBirthsNowLiving;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NumberofBirthsNowLivingO
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Numberof Births Now Living</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NumberofBirthsNowLivingImpl extends ObservationImpl implements NumberofBirthsNowLiving {
+public class NumberofBirthsNowLivingImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements NumberofBirthsNowLiving {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,7 +104,7 @@ public class NumberofBirthsNowLivingImpl extends ObservationImpl implements Numb
 	 * @generated
 	 */
 	public NumberofBirthsNowLiving init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -117,8 +112,9 @@ public class NumberofBirthsNowLivingImpl extends ObservationImpl implements Numb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NumberofBirthsNowLiving init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public NumberofBirthsNowLiving init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // NumberofBirthsNowLivingImpl

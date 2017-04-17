@@ -22,9 +22,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr;
 
-import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.PurposeSection;
 
 /**
@@ -39,10 +37,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.PurposeSection;
  */
 public interface Purpose extends PurposeSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Purpose init();
 
@@ -52,5 +50,5 @@ public interface Purpose extends PurposeSection {
      * @generated
      */
     @Override
-	public Purpose init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public Purpose init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // Purpose

@@ -13,19 +13,6 @@ package org.openhealthtools.mdht.uml.cda.hitsp.util;
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.Switch;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-import org.openhealthtools.mdht.uml.cda.Guardian;
-import org.openhealthtools.mdht.uml.cda.LanguageCommunication;
-import org.openhealthtools.mdht.uml.cda.ManufacturedProduct;
-import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.Organizer;
-import org.openhealthtools.mdht.uml.cda.Participant1;
-import org.openhealthtools.mdht.uml.cda.Performer1;
-import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
-import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
-import org.openhealthtools.mdht.uml.cda.Supply;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.AlertsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.ContinuityOfCareDocument;
@@ -148,10 +135,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.SplitDose;
 import org.openhealthtools.mdht.uml.cda.ihe.SupplyEntry;
 import org.openhealthtools.mdht.uml.cda.ihe.TaperedDose;
 import org.openhealthtools.mdht.uml.cda.ihe.VitalSignObservation;
-import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
-import org.openhealthtools.mdht.uml.hl7.rim.Participation;
-import org.openhealthtools.mdht.uml.hl7.rim.Role;
 
 /**
  * <!-- begin-user-doc -->
@@ -191,7 +174,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * Checks whether this is a switch for the given package.
 	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	 * @parameter ePackage the package in question.
+	 * @param ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
 	 */
@@ -2775,7 +2758,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInfrastructureRoot(InfrastructureRoot object) {
+	public T caseInfrastructureRoot(org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot object) {
 		return null;
 	}
 
@@ -2790,7 +2773,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAct(Act object) {
+	public T caseAct(org.eclipse.mdht.uml.hl7.rim.Act object) {
 		return null;
 	}
 
@@ -2805,7 +2788,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClinicalStatement(ClinicalStatement object) {
+	public T caseClinicalStatement(org.eclipse.mdht.uml.cda.ClinicalStatement object) {
 		return null;
 	}
 
@@ -2820,7 +2803,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCDA_Act(org.openhealthtools.mdht.uml.cda.Act object) {
+	public T caseCDA_Act(org.eclipse.mdht.uml.cda.Act object) {
 		return null;
 	}
 
@@ -2880,7 +2863,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSubstanceAdministration(SubstanceAdministration object) {
+	public T caseSubstanceAdministration(org.eclipse.mdht.uml.cda.SubstanceAdministration object) {
 		return null;
 	}
 
@@ -2925,7 +2908,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseObservation(Observation object) {
+	public T caseObservation(org.eclipse.mdht.uml.cda.Observation object) {
 		return null;
 	}
 
@@ -2940,7 +2923,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSupply(Supply object) {
+	public T caseSupply(org.eclipse.mdht.uml.cda.Supply object) {
 		return null;
 	}
 
@@ -3030,7 +3013,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClinicalDocument(ClinicalDocument object) {
+	public T caseClinicalDocument(org.eclipse.mdht.uml.cda.ClinicalDocument object) {
 		return null;
 	}
 
@@ -3090,7 +3073,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSection(Section object) {
+	public T caseSection(org.eclipse.mdht.uml.cda.Section object) {
 		return null;
 	}
 
@@ -3240,7 +3223,8 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIHE_AdvanceDirectiveObservation(org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation object) {
+	public T caseIHE_AdvanceDirectiveObservation(
+			org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectiveObservation object) {
 		return null;
 	}
 
@@ -3315,7 +3299,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCDA_Encounter(org.openhealthtools.mdht.uml.cda.Encounter object) {
+	public T caseCDA_Encounter(org.eclipse.mdht.uml.cda.Encounter object) {
 		return null;
 	}
 
@@ -3495,7 +3479,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCDA_Procedure(org.openhealthtools.mdht.uml.cda.Procedure object) {
+	public T caseCDA_Procedure(org.eclipse.mdht.uml.cda.Procedure object) {
 		return null;
 	}
 
@@ -3645,7 +3629,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseOrganizer(Organizer object) {
+	public T caseOrganizer(org.eclipse.mdht.uml.cda.Organizer object) {
 		return null;
 	}
 
@@ -3690,7 +3674,8 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseIHE_HistoryOfPastIllnessSection(org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPastIllnessSection object) {
+	public T caseIHE_HistoryOfPastIllnessSection(
+			org.openhealthtools.mdht.uml.cda.ihe.HistoryOfPastIllnessSection object) {
 		return null;
 	}
 
@@ -4159,7 +4144,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseLanguageCommunication(LanguageCommunication object) {
+	public T caseLanguageCommunication(org.eclipse.mdht.uml.cda.LanguageCommunication object) {
 		return null;
 	}
 
@@ -4189,7 +4174,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParticipation(Participation object) {
+	public T caseParticipation(org.eclipse.mdht.uml.hl7.rim.Participation object) {
 		return null;
 	}
 
@@ -4204,7 +4189,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T casePerformer1(Performer1 object) {
+	public T casePerformer1(org.eclipse.mdht.uml.cda.Performer1 object) {
 		return null;
 	}
 
@@ -4369,7 +4354,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRole(Role object) {
+	public T caseRole(org.eclipse.mdht.uml.hl7.rim.Role object) {
 		return null;
 	}
 
@@ -4384,7 +4369,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseGuardian(Guardian object) {
+	public T caseGuardian(org.eclipse.mdht.uml.cda.Guardian object) {
 		return null;
 	}
 
@@ -4429,7 +4414,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParticipant1(Participant1 object) {
+	public T caseParticipant1(org.eclipse.mdht.uml.cda.Participant1 object) {
 		return null;
 	}
 
@@ -4489,7 +4474,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseManufacturedProduct(ManufacturedProduct object) {
+	public T caseManufacturedProduct(org.eclipse.mdht.uml.cda.ManufacturedProduct object) {
 		return null;
 	}
 
@@ -4654,7 +4639,7 @@ public class HITSPSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseRegistryDelegate(RegistryDelegate object) {
+	public T caseRegistryDelegate(org.eclipse.mdht.uml.cda.RegistryDelegate object) {
 		return null;
 	}
 

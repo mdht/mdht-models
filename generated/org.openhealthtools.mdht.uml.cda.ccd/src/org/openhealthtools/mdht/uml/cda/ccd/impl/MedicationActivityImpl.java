@@ -17,7 +17,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationSeriesNumberObservation;
@@ -26,14 +27,11 @@ import org.openhealthtools.mdht.uml.cda.ccd.PatientInstruction;
 import org.openhealthtools.mdht.uml.cda.ccd.ProductInstance;
 import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.MedicationActivityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SubstanceAdministrationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -91,7 +89,8 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivityInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationActivityInformationSource(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityInformationSource(this, diagnostics, context);
 	}
 
@@ -120,7 +119,8 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivityHasReasonProblem(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationActivityHasReasonProblem(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityHasReasonProblem(this, diagnostics, context);
 	}
 
@@ -232,7 +232,8 @@ public class MedicationActivityImpl extends SubstanceAdministrationImpl implemen
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivityPatientInstruction(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationActivityPatientInstruction(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationActivityOperations.validateMedicationActivityPatientInstruction(this, diagnostics, context);
 	}
 

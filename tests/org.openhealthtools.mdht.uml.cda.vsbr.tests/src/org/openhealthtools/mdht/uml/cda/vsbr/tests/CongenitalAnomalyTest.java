@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.CongenitalAnomaly;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.CongenitalAnomalyOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -49,6 +52,7 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCongenitalAnomalyTemplateId() {
 		OperationsTestCase<CongenitalAnomaly> validateCongenitalAnomalyTemplateIdTestCase = new OperationsTestCase<CongenitalAnomaly>(
 			"validateCongenitalAnomalyTemplateId",
@@ -83,6 +87,7 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCongenitalAnomalyClassCode() {
 		OperationsTestCase<CongenitalAnomaly> validateCongenitalAnomalyClassCodeTestCase = new OperationsTestCase<CongenitalAnomaly>(
 			"validateCongenitalAnomalyClassCode",
@@ -117,6 +122,7 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCongenitalAnomalyMoodCode() {
 		OperationsTestCase<CongenitalAnomaly> validateCongenitalAnomalyMoodCodeTestCase = new OperationsTestCase<CongenitalAnomaly>(
 			"validateCongenitalAnomalyMoodCode",
@@ -151,6 +157,7 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCongenitalAnomalyCodeP() {
 		OperationsTestCase<CongenitalAnomaly> validateCongenitalAnomalyCodePTestCase = new OperationsTestCase<CongenitalAnomaly>(
 			"validateCongenitalAnomalyCodeP",
@@ -185,6 +192,7 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCongenitalAnomalyCode() {
 		OperationsTestCase<CongenitalAnomaly> validateCongenitalAnomalyCodeTestCase = new OperationsTestCase<CongenitalAnomaly>(
 			"validateCongenitalAnomalyCode",
@@ -219,6 +227,7 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCongenitalAnomalyCodeVS() {
 		OperationsTestCase<CongenitalAnomaly> validateCongenitalAnomalyCodeVSTestCase = new OperationsTestCase<CongenitalAnomaly>(
 			"validateCongenitalAnomalyCodeVS",
@@ -253,6 +262,7 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCongenitalAnomalyValue() {
 		OperationsTestCase<CongenitalAnomaly> validateCongenitalAnomalyValueTestCase = new OperationsTestCase<CongenitalAnomaly>(
 			"validateCongenitalAnomalyValue",
@@ -290,6 +300,7 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCongenitalAnomalyValueP() {
 		OperationsTestCase<CongenitalAnomaly> validateCongenitalAnomalyValuePTestCase = new OperationsTestCase<CongenitalAnomaly>(
 			"validateCongenitalAnomalyValueP",
@@ -324,10 +335,12 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCongenitalAnomalyDownConfirmationAssociation() {
 		OperationsTestCase<CongenitalAnomaly> validateCongenitalAnomalyDownConfirmationAssociationTestCase = new OperationsTestCase<CongenitalAnomaly>(
 			"validateCongenitalAnomalyDownConfirmationAssociation",
-			operationsForOCL.getOCLValue("VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -358,10 +371,12 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateCongenitalAnomalyChromosomalDisorderConfirmationAssociation() {
 		OperationsTestCase<CongenitalAnomaly> validateCongenitalAnomalyChromosomalDisorderConfirmationAssociationTestCase = new OperationsTestCase<CongenitalAnomaly>(
 			"validateCongenitalAnomalyChromosomalDisorderConfirmationAssociation",
-			operationsForOCL.getOCLValue("VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -440,8 +455,7 @@ public class CongenitalAnomalyTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

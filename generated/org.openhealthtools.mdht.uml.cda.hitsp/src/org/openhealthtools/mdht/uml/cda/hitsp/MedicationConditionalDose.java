@@ -10,9 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.ConditionalDose;
 
 /**
@@ -38,5 +36,6 @@ public interface MedicationConditionalDose extends ConditionalDose, Medication {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationConditionalDose init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public MedicationConditionalDose init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // MedicationConditionalDose

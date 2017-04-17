@@ -6,37 +6,26 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSDrugAllergy;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSDrugAllergyOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfDrugAllergyObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSDrugAllergyOrganizerOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Drug Allergy Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EMSDrugAllergyOrganizerImpl extends OrganizerImpl implements EMSDrugAllergyOrganizer {
+public class EMSDrugAllergyOrganizerImpl extends org.eclipse.mdht.uml.cda.impl.OrganizerImpl implements EMSDrugAllergyOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63,8 +52,7 @@ public class EMSDrugAllergyOrganizerImpl extends OrganizerImpl implements EMSDru
 	 */
 	public boolean validateEMSDrugAllergyOrganizerEMSDrugAllergy(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSDrugAllergyOrganizerOperations.validateEMSDrugAllergyOrganizerEMSDrugAllergy(
-			this, diagnostics, context);
+		return EMSDrugAllergyOrganizerOperations.validateEMSDrugAllergyOrganizerEMSDrugAllergy(this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +62,7 @@ public class EMSDrugAllergyOrganizerImpl extends OrganizerImpl implements EMSDru
 	 */
 	public boolean validateEMSDrugAllergyOrganizerExistenceOfDrugAllergyObservation(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSDrugAllergyOrganizerOperations.validateEMSDrugAllergyOrganizerExistenceOfDrugAllergyObservation(
-			this, diagnostics, context);
+		return EMSDrugAllergyOrganizerOperations.validateEMSDrugAllergyOrganizerExistenceOfDrugAllergyObservation(this, diagnostics, context);
 	}
 
 	/**
@@ -102,16 +89,16 @@ public class EMSDrugAllergyOrganizerImpl extends OrganizerImpl implements EMSDru
 	 * @generated
 	 */
 	public EMSDrugAllergyOrganizer init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSDrugAllergyOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public EMSDrugAllergyOrganizer init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EMSDrugAllergyOrganizerImpl

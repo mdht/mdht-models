@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.NonStudyTreatmentRelationship;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -39,7 +33,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOperations {
+public class NonStudyTreatmentRelationshipOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +70,7 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -83,25 +85,35 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 */
 	
 	public static  boolean validateNonStudyTreatmentRelationshipTemplateId(NonStudyTreatmentRelationship nonStudyTreatmentRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_STUDY_TREATMENT_RELATIONSHIP);
 			try {
-				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonStudyTreatmentRelationship)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonStudyTreatmentRelationship)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_STUDY_TREATMENT_RELATIONSHIP__NON_STUDY_TREATMENT_RELATIONSHIP_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipNonStudyTreatmentRelationshipTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
 						 new Object [] { nonStudyTreatmentRelationship }));
 			}
 			 
@@ -129,7 +141,7 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -144,25 +156,35 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 */
 	
 	public static  boolean validateNonStudyTreatmentRelationshipClassCode(NonStudyTreatmentRelationship nonStudyTreatmentRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_STUDY_TREATMENT_RELATIONSHIP);
 			try {
-				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonStudyTreatmentRelationship)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonStudyTreatmentRelationship)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_STUDY_TREATMENT_RELATIONSHIP__NON_STUDY_TREATMENT_RELATIONSHIP_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipNonStudyTreatmentRelationshipClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
 						 new Object [] { nonStudyTreatmentRelationship }));
 			}
 			 
@@ -190,7 +212,7 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -205,25 +227,35 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 */
 	
 	public static  boolean validateNonStudyTreatmentRelationshipCodeP(NonStudyTreatmentRelationship nonStudyTreatmentRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_STUDY_TREATMENT_RELATIONSHIP);
 			try {
-				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonStudyTreatmentRelationship)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonStudyTreatmentRelationship)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_STUDY_TREATMENT_RELATIONSHIP__NON_STUDY_TREATMENT_RELATIONSHIP_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipNonStudyTreatmentRelationshipCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
 						 new Object [] { nonStudyTreatmentRelationship }));
 			}
 			 
@@ -253,7 +285,7 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -268,25 +300,35 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 */
 	
 	public static  boolean validateNonStudyTreatmentRelationshipCode(NonStudyTreatmentRelationship nonStudyTreatmentRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_STUDY_TREATMENT_RELATIONSHIP);
 			try {
-				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonStudyTreatmentRelationship)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonStudyTreatmentRelationship)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_STUDY_TREATMENT_RELATIONSHIP__NON_STUDY_TREATMENT_RELATIONSHIP_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipNonStudyTreatmentRelationshipCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
 						 new Object [] { nonStudyTreatmentRelationship }));
 			}
 			 
@@ -314,7 +356,7 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -329,25 +371,35 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 */
 	
 	public static  boolean validateNonStudyTreatmentRelationshipMoodCode(NonStudyTreatmentRelationship nonStudyTreatmentRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_STUDY_TREATMENT_RELATIONSHIP);
 			try {
-				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonStudyTreatmentRelationship)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonStudyTreatmentRelationship)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_STUDY_TREATMENT_RELATIONSHIP__NON_STUDY_TREATMENT_RELATIONSHIP_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipNonStudyTreatmentRelationshipMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
 						 new Object [] { nonStudyTreatmentRelationship }));
 			}
 			 
@@ -375,7 +427,7 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -390,25 +442,35 @@ public class NonStudyTreatmentRelationshipOperations extends ClinicalStatementOp
 	 */
 	
 	public static  boolean validateNonStudyTreatmentRelationshipValue(NonStudyTreatmentRelationship nonStudyTreatmentRelationship, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NON_STUDY_TREATMENT_RELATIONSHIP);
 			try {
-				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonStudyTreatmentRelationship)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NON_STUDY_TREATMENT_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonStudyTreatmentRelationship)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NON_STUDY_TREATMENT_RELATIONSHIP__NON_STUDY_TREATMENT_RELATIONSHIP_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonStudyTreatmentRelationshipNonStudyTreatmentRelationshipValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonStudyTreatmentRelationship, context) }),
 						 new Object [] { nonStudyTreatmentRelationship }));
 			}
 			 

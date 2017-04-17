@@ -15,8 +15,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Observation;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,7 +46,8 @@ public interface MedicationSeriesNumberObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.1.46\')'"
 	 * @generated
 	 */
-	boolean validateMedicationSeriesNumberObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationSeriesNumberObservationTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -58,7 +59,8 @@ public interface MedicationSeriesNumberObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.classCode=vocab::ActClassObservation::OBS'"
 	 * @generated
 	 */
-	boolean validateMedicationSeriesNumberObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationSeriesNumberObservationClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -82,7 +84,8 @@ public interface MedicationSeriesNumberObservation extends Observation {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
-	boolean validateMedicationSeriesNumberObservationStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateMedicationSeriesNumberObservationStatusCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

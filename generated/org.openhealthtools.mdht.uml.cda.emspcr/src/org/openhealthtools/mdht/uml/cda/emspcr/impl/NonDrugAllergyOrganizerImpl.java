@@ -6,37 +6,26 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfNonDrugAllergy;
 import org.openhealthtools.mdht.uml.cda.emspcr.NonDrugAllergy;
 import org.openhealthtools.mdht.uml.cda.emspcr.NonDrugAllergyOrganizer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.NonDrugAllergyOrganizerOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Non Drug Allergy Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NonDrugAllergyOrganizerImpl extends OrganizerImpl implements NonDrugAllergyOrganizer {
+public class NonDrugAllergyOrganizerImpl extends org.eclipse.mdht.uml.cda.impl.OrganizerImpl implements NonDrugAllergyOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63,8 +52,7 @@ public class NonDrugAllergyOrganizerImpl extends OrganizerImpl implements NonDru
 	 */
 	public boolean validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(
-			this, diagnostics, context);
+		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(this, diagnostics, context);
 	}
 
 	/**
@@ -74,8 +62,7 @@ public class NonDrugAllergyOrganizerImpl extends OrganizerImpl implements NonDru
 	 */
 	public boolean validateNonDrugAllergyOrganizerNonDrugAllergy(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerNonDrugAllergy(
-			this, diagnostics, context);
+		return NonDrugAllergyOrganizerOperations.validateNonDrugAllergyOrganizerNonDrugAllergy(this, diagnostics, context);
 	}
 
 	/**
@@ -111,16 +98,16 @@ public class NonDrugAllergyOrganizerImpl extends OrganizerImpl implements NonDru
 	 * @generated
 	 */
 	public NonDrugAllergyOrganizer init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NonDrugAllergyOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public NonDrugAllergyOrganizer init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NonDrugAllergyOrganizerImpl

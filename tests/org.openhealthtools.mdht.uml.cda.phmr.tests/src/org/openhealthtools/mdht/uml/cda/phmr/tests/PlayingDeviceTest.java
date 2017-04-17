@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.PlayingDevice;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PlayingDeviceOperations;
@@ -65,66 +65,69 @@ public class PlayingDeviceTest extends  CDAValidationTest {
  
 									
 public void testValidatePlayingDeviceTemplateId() {
-      OperationsTestCase<PlayingDevice> validatePlayingDeviceTemplateIdTestCase = new OperationsTestCase<PlayingDevice>(
-      "validatePlayingDeviceTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PLAYING_DEVICE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PlayingDevice> validatePlayingDeviceTemplateIdTestCase = new OperationsTestCase<PlayingDevice>(
+			"validatePlayingDeviceTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PLAYING_DEVICE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PlayingDevice target) {
+			@Override
+			protected void updateToFail(PlayingDevice target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PlayingDevice target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PlayingDevice target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PlayingDeviceOperations.validatePlayingDeviceTemplateId(
-          (PlayingDevice) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PlayingDeviceOperations.validatePlayingDeviceTemplateId(
+					(PlayingDevice) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePlayingDeviceTemplateIdTestCase.doValidationTest();
+		validatePlayingDeviceTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -139,66 +142,69 @@ public void testValidatePlayingDeviceTemplateId() {
  
 									
 public void testValidatePlayingDeviceCode() {
-      OperationsTestCase<PlayingDevice> validatePlayingDeviceCodeTestCase = new OperationsTestCase<PlayingDevice>(
-      "validatePlayingDeviceCode",
-      operationsForOCL.getOCLValue("VALIDATE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PlayingDevice> validatePlayingDeviceCodeTestCase = new OperationsTestCase<PlayingDevice>(
+			"validatePlayingDeviceCode",
+			operationsForOCL.getOCLValue("VALIDATE_PLAYING_DEVICE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PlayingDevice target) {
+			@Override
+			protected void updateToFail(PlayingDevice target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PlayingDevice target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PlayingDevice target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PlayingDeviceOperations.validatePlayingDeviceCode(
-          (PlayingDevice) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PlayingDeviceOperations.validatePlayingDeviceCode(
+					(PlayingDevice) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePlayingDeviceCodeTestCase.doValidationTest();
+		validatePlayingDeviceCodeTestCase.doValidationTest();
 }		
 
 
@@ -213,66 +219,69 @@ public void testValidatePlayingDeviceCode() {
  
 									
 public void testValidatePlayingDeviceManufacturerModelName() {
-      OperationsTestCase<PlayingDevice> validatePlayingDeviceManufacturerModelNameTestCase = new OperationsTestCase<PlayingDevice>(
-      "validatePlayingDeviceManufacturerModelName",
-      operationsForOCL.getOCLValue("VALIDATE_PLAYING_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PlayingDevice> validatePlayingDeviceManufacturerModelNameTestCase = new OperationsTestCase<PlayingDevice>(
+			"validatePlayingDeviceManufacturerModelName",
+			operationsForOCL.getOCLValue("VALIDATE_PLAYING_DEVICE_MANUFACTURER_MODEL_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PlayingDevice target) {
+			@Override
+			protected void updateToFail(PlayingDevice target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PlayingDevice target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PlayingDevice target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PlayingDeviceOperations.validatePlayingDeviceManufacturerModelName(
-          (PlayingDevice) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PlayingDeviceOperations.validatePlayingDeviceManufacturerModelName(
+					(PlayingDevice) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePlayingDeviceManufacturerModelNameTestCase.doValidationTest();
+		validatePlayingDeviceManufacturerModelNameTestCase.doValidationTest();
 }		
 
 
@@ -301,6 +310,7 @@ public void testValidatePlayingDeviceManufacturerModelName() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<PlayingDevice> {
+		@Override
 		public PlayingDevice create() {		
 			return PhmrFactory.eINSTANCE.createPlayingDevice();
 		}
@@ -332,9 +342,9 @@ public void testValidatePlayingDeviceManufacturerModelName() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -344,8 +354,8 @@ public void testValidatePlayingDeviceManufacturerModelName() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

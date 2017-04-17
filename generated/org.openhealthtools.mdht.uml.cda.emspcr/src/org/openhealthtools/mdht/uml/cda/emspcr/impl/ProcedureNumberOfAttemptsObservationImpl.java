@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ProcedureNumberOfAttemptsObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ProcedureNumberOfAttemptsObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Number Of Attempts Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl implements
+public class ProcedureNumberOfAttemptsObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements
 		ProcedureNumberOfAttemptsObservation {
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,8 +50,7 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 */
 	public boolean validateProcedureNumberOfAttemptsObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationTemplateId(
-			this, diagnostics, context);
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +60,7 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 */
 	public boolean validateProcedureNumberOfAttemptsObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationMoodCode(
-			this, diagnostics, context);
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +70,7 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 */
 	public boolean validateProcedureNumberOfAttemptsObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCodeP(
-			this, diagnostics, context);
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +80,7 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 */
 	public boolean validateProcedureNumberOfAttemptsObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCode(
-			this, diagnostics, context);
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +90,7 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 */
 	public boolean validateProcedureNumberOfAttemptsObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationValue(
-			this, diagnostics, context);
+		return ProcedureNumberOfAttemptsObservationOperations.validateProcedureNumberOfAttemptsObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -115,16 +99,16 @@ public class ProcedureNumberOfAttemptsObservationImpl extends ObservationImpl im
 	 * @generated
 	 */
 	public ProcedureNumberOfAttemptsObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureNumberOfAttemptsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ProcedureNumberOfAttemptsObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureNumberOfAttemptsObservationImpl

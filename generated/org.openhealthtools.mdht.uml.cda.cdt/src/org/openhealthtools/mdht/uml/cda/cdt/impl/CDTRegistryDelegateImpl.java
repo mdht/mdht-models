@@ -20,8 +20,6 @@ import org.openhealthtools.mdht.uml.cda.cdt.operations.CDTRegistryDelegateOperat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Registry Delegate</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */

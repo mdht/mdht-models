@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -41,7 +35,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class SupplementalValueOperations extends ClinicalStatementOperations {
+public class SupplementalValueOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,7 +72,7 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUPPLEMENTAL_VALUE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUPPLEMENTAL_VALUE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -85,25 +87,35 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSupplementalValueTemplateId(SupplementalValue supplementalValue, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUPPLEMENTAL_VALUE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUPPLEMENTAL_VALUE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUPPLEMENTAL_VALUE);
 			try {
-				VALIDATE_SUPPLEMENTAL_VALUE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUPPLEMENTAL_VALUE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLEMENTAL_VALUE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplementalValue)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUPPLEMENTAL_VALUE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(supplementalValue)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUPPLEMENTAL_VALUE__SUPPLEMENTAL_VALUE_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueSupplementalValueTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
 						 new Object [] { supplementalValue }));
 			}
 			 
@@ -131,7 +143,7 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUPPLEMENTAL_VALUE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUPPLEMENTAL_VALUE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -146,25 +158,35 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSupplementalValueClassCode(SupplementalValue supplementalValue, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUPPLEMENTAL_VALUE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUPPLEMENTAL_VALUE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUPPLEMENTAL_VALUE);
 			try {
-				VALIDATE_SUPPLEMENTAL_VALUE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUPPLEMENTAL_VALUE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLEMENTAL_VALUE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplementalValue)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUPPLEMENTAL_VALUE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(supplementalValue)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUPPLEMENTAL_VALUE__SUPPLEMENTAL_VALUE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueSupplementalValueClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
 						 new Object [] { supplementalValue }));
 			}
 			 
@@ -192,7 +214,7 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUPPLEMENTAL_VALUE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUPPLEMENTAL_VALUE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -207,25 +229,35 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSupplementalValueMoodCode(SupplementalValue supplementalValue, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUPPLEMENTAL_VALUE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUPPLEMENTAL_VALUE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUPPLEMENTAL_VALUE);
 			try {
-				VALIDATE_SUPPLEMENTAL_VALUE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUPPLEMENTAL_VALUE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLEMENTAL_VALUE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplementalValue)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUPPLEMENTAL_VALUE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(supplementalValue)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUPPLEMENTAL_VALUE__SUPPLEMENTAL_VALUE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueSupplementalValueMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
 						 new Object [] { supplementalValue }));
 			}
 			 
@@ -253,7 +285,7 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUPPLEMENTAL_VALUE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUPPLEMENTAL_VALUE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -268,25 +300,35 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSupplementalValueCodeP(SupplementalValue supplementalValue, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUPPLEMENTAL_VALUE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUPPLEMENTAL_VALUE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUPPLEMENTAL_VALUE);
 			try {
-				VALIDATE_SUPPLEMENTAL_VALUE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUPPLEMENTAL_VALUE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLEMENTAL_VALUE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplementalValue)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUPPLEMENTAL_VALUE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(supplementalValue)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUPPLEMENTAL_VALUE__SUPPLEMENTAL_VALUE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueSupplementalValueCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
 						 new Object [] { supplementalValue }));
 			}
 			 
@@ -316,7 +358,7 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUPPLEMENTAL_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUPPLEMENTAL_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -331,25 +373,35 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSupplementalValueCode(SupplementalValue supplementalValue, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUPPLEMENTAL_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUPPLEMENTAL_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUPPLEMENTAL_VALUE);
 			try {
-				VALIDATE_SUPPLEMENTAL_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUPPLEMENTAL_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLEMENTAL_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplementalValue)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUPPLEMENTAL_VALUE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(supplementalValue)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUPPLEMENTAL_VALUE__SUPPLEMENTAL_VALUE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueSupplementalValueCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
 						 new Object [] { supplementalValue }));
 			}
 			 
@@ -377,7 +429,7 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUPPLEMENTAL_VALUE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUPPLEMENTAL_VALUE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -392,25 +444,35 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSupplementalValueValue(SupplementalValue supplementalValue, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUPPLEMENTAL_VALUE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUPPLEMENTAL_VALUE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUPPLEMENTAL_VALUE);
 			try {
-				VALIDATE_SUPPLEMENTAL_VALUE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUPPLEMENTAL_VALUE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLEMENTAL_VALUE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplementalValue)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUPPLEMENTAL_VALUE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(supplementalValue)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUPPLEMENTAL_VALUE__SUPPLEMENTAL_VALUE_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueSupplementalValueValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
 						 new Object [] { supplementalValue }));
 			}
 			 
@@ -438,7 +500,7 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -453,25 +515,35 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSupplementalValueOrigenAssociation(SupplementalValue supplementalValue, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUPPLEMENTAL_VALUE);
 			try {
-				VALIDATE_SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplementalValue)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(supplementalValue)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUPPLEMENTAL_VALUE__SUPPLEMENTAL_VALUE_ORIGEN_ASSOCIATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueOrigenAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueSupplementalValueOrigenAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
 						 new Object [] { supplementalValue }));
 			}
 			 
@@ -499,7 +571,7 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -514,25 +586,35 @@ public class SupplementalValueOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSupplementalValueStudyFindingEvaluator(SupplementalValue supplementalValue, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUPPLEMENTAL_VALUE);
 			try {
-				VALIDATE_SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(supplementalValue)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(supplementalValue)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUPPLEMENTAL_VALUE__SUPPLEMENTAL_VALUE_STUDY_FINDING_EVALUATOR,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueStudyFindingEvaluator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SupplementalValueSupplementalValueStudyFindingEvaluator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(supplementalValue, context) }),
 						 new Object [] { supplementalValue }));
 			}
 			 

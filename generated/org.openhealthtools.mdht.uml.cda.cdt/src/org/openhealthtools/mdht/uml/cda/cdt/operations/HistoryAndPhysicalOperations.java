@@ -87,6 +87,13 @@ import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
  * @generated
  */
 public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -104,9 +111,9 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentAndPlanSection))"
-			+ "   xor (self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSection))"
-			+ "      and self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::PlanSection)))";
+	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentAndPlanSection))" +
+			"   xor (self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSection))" +
+			"      and self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::PlanSection)))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalAssessmentAndPlan(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Assessment And Plan</em>}' invariant operation.
@@ -116,7 +123,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -131,23 +138,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalAssessmentAndPlan(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalAssessmentAndPlan"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_ASSESSMENT_AND_PLAN,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalAssessmentAndPlan"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -163,9 +176,9 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "let assessmentExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSection)) in"
-			+ "  let planExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::PlanSection))"
-			+ "    in (assessmentExists or planExists) implies (assessmentExists and planExists)";
+	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "let assessmentExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::AssessmentSection)) in" +
+			"  let planExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::PlanSection))" +
+			"    in (assessmentExists or planExists) implies (assessmentExists and planExists)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalBothAssessmentAndPlan(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Both Assessment And Plan</em>}' invariant operation.
@@ -175,7 +188,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -190,24 +203,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalBothAssessmentAndPlan(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalBothAssessmentAndPlan"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_BOTH_ASSESSMENT_AND_PLAN,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalBothAssessmentAndPlan"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -233,7 +251,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -248,24 +266,30 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalReasonForVisitAndChiefComplaint(
 			HistoryAndPhysical historyAndPhysical, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalReasonForVisitAndChiefComplaint"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT,
+						CDTPlugin.INSTANCE.getString(
+							"HistoryAndPhysicalHistoryAndPhysicalReasonForVisitAndChiefComplaint"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -281,9 +305,9 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "let reasonExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSection)) in"
-			+ "  let complaintExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ChiefComplaintSection))"
-			+ "    in (reasonExists or complaintExists) implies (reasonExists and complaintExists)";
+	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "let reasonExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ReasonForVisitSection)) in" +
+			"  let complaintExists : Boolean = self.getSections()->exists(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(cdt::ChiefComplaintSection))" +
+			"    in (reasonExists or complaintExists) implies (reasonExists and complaintExists)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalBothReasonForVisitAndChiefComplaint(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Both Reason For Visit And Chief Complaint</em>}' invariant operation.
@@ -293,7 +317,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -308,24 +332,30 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalBothReasonForVisitAndChiefComplaint(
 			HistoryAndPhysical historyAndPhysical, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalBothReasonForVisitAndChiefComplaint"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_BOTH_REASON_FOR_VISIT_AND_CHIEF_COMPLAINT,
+						CDTPlugin.INSTANCE.getString(
+							"HistoryAndPhysicalHistoryAndPhysicalBothReasonForVisitAndChiefComplaint"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -341,9 +371,9 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
+	protected static final String VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.1' and not value.code.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryAndPhysicalCode(HistoryAndPhysical, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate History And Physical Code</em>}' invariant operation.
@@ -354,7 +384,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -370,22 +400,27 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalCode(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HISTORY_AND_PHYSICAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_CODE,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalCode"), new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_CODE,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalCode"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -411,7 +446,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -426,24 +461,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalHistoryOfPresentIllness(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryOfPresentIllness"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_HISTORY_OF_PRESENT_ILLNESS,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalHistoryOfPresentIllness"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -469,7 +509,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -484,24 +524,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalPastMedicalHistorySection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalPastMedicalHistorySection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_PAST_MEDICAL_HISTORY_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalPastMedicalHistorySection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -527,7 +572,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -542,23 +587,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalMedicationsSection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalMedicationsSection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_MEDICATIONS_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalMedicationsSection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -584,7 +635,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -599,23 +650,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalAlertsSection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_ALERTS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_ALERTS_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalAlertsSection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_ALERTS_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalAlertsSection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -641,7 +698,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -656,23 +713,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalSocialHistorySection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalSocialHistorySection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_SOCIAL_HISTORY_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalSocialHistorySection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -698,7 +761,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -713,23 +776,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalFamilyHistorySection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalFamilyHistorySection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_FAMILY_HISTORY_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalFamilyHistorySection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -755,7 +824,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -770,24 +839,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalReviewOfSystemsSection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalReviewOfSystemsSection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_REVIEW_OF_SYSTEMS_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalReviewOfSystemsSection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -813,7 +887,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -828,24 +902,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalPhysicalExaminationSection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalPhysicalExaminationSection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_PHYSICAL_EXAMINATION_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalPhysicalExaminationSection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -871,7 +950,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -886,23 +965,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalVitalSignsSection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalVitalSignsSection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_VITAL_SIGNS_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalVitalSignsSection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -928,7 +1013,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -943,23 +1028,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalGeneralStatusSection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalGeneralStatusSection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_GENERAL_STATUS_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalGeneralStatusSection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -985,7 +1076,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1000,23 +1091,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalDiagnosticFindings(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalDiagnosticFindings"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_DIAGNOSTIC_FINDINGS,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalDiagnosticFindings"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -1042,7 +1139,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1057,23 +1154,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalProblemSection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_PROBLEM_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_PROBLEM_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalProblemSection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_PROBLEM_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalProblemSection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -1099,7 +1202,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1114,23 +1217,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalProceduresSection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_PROCEDURES_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_PROCEDURES_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalProceduresSection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_PROCEDURES_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalProceduresSection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -1156,7 +1265,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1171,23 +1280,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateHistoryAndPhysicalImmunizationsSection(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION,
-					CDTPlugin.INSTANCE.getString("HistoryAndPhysicalImmunizationsSection"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__HISTORY_AND_PHYSICAL_IMMUNIZATIONS_SECTION,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalHistoryAndPhysicalImmunizationsSection"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;
@@ -1221,8 +1336,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static HistoryOfPresentIllness getHistoryOfPresentIllness(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(87));
@@ -1232,7 +1349,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_HISTORY_OF_PRESENT_ILLNESS__EOCL_QRY);
 		return (HistoryOfPresentIllness) query.evaluate(historyAndPhysical);
 	}
 
@@ -1262,18 +1380,22 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static PastMedicalHistorySection getPastMedicalHistorySection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(88));
 			try {
-				GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_EXP);
+				GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_QRY = helper.createQuery(
+					GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PAST_MEDICAL_HISTORY_SECTION__EOCL_QRY);
 		return (PastMedicalHistorySection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1303,8 +1425,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static MedicationsSection getMedicationsSection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_MEDICATIONS_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(89));
@@ -1314,7 +1438,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATIONS_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MEDICATIONS_SECTION__EOCL_QRY);
 		return (MedicationsSection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1344,8 +1469,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static AlertsSection getAlertsSection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_ALERTS_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(90));
@@ -1355,7 +1482,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ALERTS_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ALERTS_SECTION__EOCL_QRY);
 		return (AlertsSection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1385,8 +1513,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static SocialHistorySection getSocialHistorySection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_SOCIAL_HISTORY_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(91));
@@ -1396,7 +1526,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SOCIAL_HISTORY_SECTION__EOCL_QRY);
 		return (SocialHistorySection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1426,8 +1557,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static FamilyHistorySection getFamilyHistorySection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_FAMILY_HISTORY_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(92));
@@ -1437,7 +1570,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FAMILY_HISTORY_SECTION__EOCL_QRY);
 		return (FamilyHistorySection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1467,8 +1601,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static ReviewOfSystemsSectionIHE getReviewOfSystemsSection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(93));
@@ -1478,7 +1614,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_REVIEW_OF_SYSTEMS_SECTION__EOCL_QRY);
 		return (ReviewOfSystemsSectionIHE) query.evaluate(historyAndPhysical);
 	}
 
@@ -1508,18 +1645,22 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static PhysicalExaminationSection getPhysicalExaminationSection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_PHYSICAL_EXAMINATION_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(94));
 			try {
-				GET_PHYSICAL_EXAMINATION_SECTION__EOCL_QRY = helper.createQuery(GET_PHYSICAL_EXAMINATION_SECTION__EOCL_EXP);
+				GET_PHYSICAL_EXAMINATION_SECTION__EOCL_QRY = helper.createQuery(
+					GET_PHYSICAL_EXAMINATION_SECTION__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PHYSICAL_EXAMINATION_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PHYSICAL_EXAMINATION_SECTION__EOCL_QRY);
 		return (PhysicalExaminationSection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1549,8 +1690,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static VitalSignsSection getVitalSignsSection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_VITAL_SIGNS_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(95));
@@ -1560,7 +1703,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_VITAL_SIGNS_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_VITAL_SIGNS_SECTION__EOCL_QRY);
 		return (VitalSignsSection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1590,8 +1734,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static GeneralStatusSection getGeneralStatusSection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_GENERAL_STATUS_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(96));
@@ -1601,7 +1747,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GENERAL_STATUS_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GENERAL_STATUS_SECTION__EOCL_QRY);
 		return (GeneralStatusSection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1631,8 +1778,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static DiagnosticFindings getDiagnosticFindings(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_DIAGNOSTIC_FINDINGS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(97));
@@ -1642,7 +1791,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DIAGNOSTIC_FINDINGS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DIAGNOSTIC_FINDINGS__EOCL_QRY);
 		return (DiagnosticFindings) query.evaluate(historyAndPhysical);
 	}
 
@@ -1672,8 +1822,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static ProblemSection getProblemSection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_PROBLEM_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(98));
@@ -1683,7 +1835,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROBLEM_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROBLEM_SECTION__EOCL_QRY);
 		return (ProblemSection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1713,8 +1866,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static ProceduresSection getProceduresSection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_PROCEDURES_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(99));
@@ -1724,7 +1879,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURES_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROCEDURES_SECTION__EOCL_QRY);
 		return (ProceduresSection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1754,8 +1910,10 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 */
 	public static ImmunizationsSection getImmunizationsSection(HistoryAndPhysical historyAndPhysical) {
+
 		if (GET_IMMUNIZATIONS_SECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL,
 				CDTPackage.Literals.HISTORY_AND_PHYSICAL.getEAllOperations().get(100));
@@ -1765,7 +1923,8 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_IMMUNIZATIONS_SECTION__EOCL_QRY);
 		return (ImmunizationsSection) query.evaluate(historyAndPhysical);
 	}
 
@@ -1787,7 +1946,7 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1802,23 +1961,29 @@ public class HistoryAndPhysicalOperations extends GeneralHeaderConstraintsOperat
 	public static boolean validateGeneralHeaderConstraintsTemplateId(HistoryAndPhysical historyAndPhysical,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.HISTORY_AND_PHYSICAL);
 			try {
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyAndPhysical)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyAndPhysical)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.HISTORY_AND_PHYSICAL__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
-					new Object[] { historyAndPhysical }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.HISTORY_AND_PHYSICAL__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						CDTPlugin.INSTANCE.getString("HistoryAndPhysicalGeneralHeaderConstraintsTemplateId"),
+						new Object[] { historyAndPhysical }));
 			}
 
 			return false;

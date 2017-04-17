@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -40,7 +38,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations {
+public class OtherPregnancyOutcomeOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +74,7 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,27 +90,34 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	public static boolean validateOtherPregnancyOutcomeTemplateId(OtherPregnancyOutcome otherPregnancyOutcome,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME);
 			try {
-				VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			otherPregnancyOutcome)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				otherPregnancyOutcome)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OtherPregnancyOutcomeTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									otherPregnancyOutcome, context) }), new Object[] { otherPregnancyOutcome }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OtherPregnancyOutcomeOtherPregnancyOutcomeTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										otherPregnancyOutcome, context) }),
+						new Object[] { otherPregnancyOutcome }));
 			}
 
 			return false;
@@ -132,7 +144,7 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_PREGNANCY_OUTCOME_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_OTHER_PREGNANCY_OUTCOME_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,27 +160,34 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	public static boolean validateOtherPregnancyOutcomeClassCode(OtherPregnancyOutcome otherPregnancyOutcome,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME);
 			try {
-				VALIDATE_OTHER_PREGNANCY_OUTCOME_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OTHER_PREGNANCY_OUTCOME_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OTHER_PREGNANCY_OUTCOME_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_PREGNANCY_OUTCOME_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			otherPregnancyOutcome)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OTHER_PREGNANCY_OUTCOME_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				otherPregnancyOutcome)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OtherPregnancyOutcomeClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									otherPregnancyOutcome, context) }), new Object[] { otherPregnancyOutcome }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OtherPregnancyOutcomeOtherPregnancyOutcomeClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										otherPregnancyOutcome, context) }),
+						new Object[] { otherPregnancyOutcome }));
 			}
 
 			return false;
@@ -195,7 +214,7 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_PREGNANCY_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_OTHER_PREGNANCY_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,27 +230,33 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	public static boolean validateOtherPregnancyOutcomeMoodCode(OtherPregnancyOutcome otherPregnancyOutcome,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME);
 			try {
-				VALIDATE_OTHER_PREGNANCY_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OTHER_PREGNANCY_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_PREGNANCY_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			otherPregnancyOutcome)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OTHER_PREGNANCY_OUTCOME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				otherPregnancyOutcome)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OtherPregnancyOutcomeMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									otherPregnancyOutcome, context) }), new Object[] { otherPregnancyOutcome }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OtherPregnancyOutcomeOtherPregnancyOutcomeMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										otherPregnancyOutcome, context) }),
+						new Object[] { otherPregnancyOutcome }));
 			}
 
 			return false;
@@ -258,7 +283,7 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,27 +299,33 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	public static boolean validateOtherPregnancyOutcomeCodeP(OtherPregnancyOutcome otherPregnancyOutcome,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME);
 			try {
-				VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			otherPregnancyOutcome)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				otherPregnancyOutcome)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OtherPregnancyOutcomeCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									otherPregnancyOutcome, context) }), new Object[] { otherPregnancyOutcome }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OtherPregnancyOutcomeOtherPregnancyOutcomeCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										otherPregnancyOutcome, context) }),
+						new Object[] { otherPregnancyOutcome }));
 			}
 
 			return false;
@@ -310,9 +341,9 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69043-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '69043-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOtherPregnancyOutcomeCode(OtherPregnancyOutcome, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Other Pregnancy Outcome Code</em>}' invariant operation.
@@ -323,7 +354,7 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,27 +370,32 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	public static boolean validateOtherPregnancyOutcomeCode(OtherPregnancyOutcome otherPregnancyOutcome,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME);
 			try {
-				VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			otherPregnancyOutcome)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OTHER_PREGNANCY_OUTCOME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(otherPregnancyOutcome)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OtherPregnancyOutcomeCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									otherPregnancyOutcome, context) }), new Object[] { otherPregnancyOutcome }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OtherPregnancyOutcomeOtherPregnancyOutcomeCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										otherPregnancyOutcome, context) }),
+						new Object[] { otherPregnancyOutcome }));
 			}
 
 			return false;
@@ -386,7 +422,7 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -402,27 +438,34 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	public static boolean validateOtherPregnancyOutcomeEffectiveTime(OtherPregnancyOutcome otherPregnancyOutcome,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME);
 			try {
-				VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			otherPregnancyOutcome)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				otherPregnancyOutcome)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OtherPregnancyOutcomeEffectiveTime",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									otherPregnancyOutcome, context) }), new Object[] { otherPregnancyOutcome }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_EFFECTIVE_TIME,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OtherPregnancyOutcomeOtherPregnancyOutcomeEffectiveTime",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										otherPregnancyOutcome, context) }),
+						new Object[] { otherPregnancyOutcome }));
 			}
 
 			return false;
@@ -449,7 +492,7 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OTHER_PREGNANCY_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_OTHER_PREGNANCY_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -465,27 +508,33 @@ public class OtherPregnancyOutcomeOperations extends ClinicalStatementOperations
 	public static boolean validateOtherPregnancyOutcomeValue(OtherPregnancyOutcome otherPregnancyOutcome,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_OTHER_PREGNANCY_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.OTHER_PREGNANCY_OUTCOME);
 			try {
-				VALIDATE_OTHER_PREGNANCY_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_OTHER_PREGNANCY_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_OTHER_PREGNANCY_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OTHER_PREGNANCY_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			otherPregnancyOutcome)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_OTHER_PREGNANCY_OUTCOME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				otherPregnancyOutcome)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"OtherPregnancyOutcomeValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									otherPregnancyOutcome, context) }), new Object[] { otherPregnancyOutcome }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.OTHER_PREGNANCY_OUTCOME__OTHER_PREGNANCY_OUTCOME_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"OtherPregnancyOutcomeOtherPregnancyOutcomeValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										otherPregnancyOutcome, context) }),
+						new Object[] { otherPregnancyOutcome }));
 			}
 
 			return false;

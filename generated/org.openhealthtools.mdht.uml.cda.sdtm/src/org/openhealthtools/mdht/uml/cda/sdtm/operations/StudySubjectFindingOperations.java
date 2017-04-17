@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.AssayQuantitation;
 import org.openhealthtools.mdht.uml.cda.sdtm.BodySystemorOrganClass;
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
@@ -41,7 +34,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectFinding;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.Toxicity;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -107,7 +99,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class StudySubjectFindingOperations extends ClinicalStatementOperations {
+public class StudySubjectFindingOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -136,7 +136,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -151,25 +151,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingTemplateId(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -197,7 +207,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -212,25 +222,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingClassCode(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -258,7 +278,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -273,25 +293,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingMoodCode(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -319,7 +349,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -334,25 +364,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingId(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -380,7 +420,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -395,25 +435,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingCode(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -441,7 +491,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -456,25 +506,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingText(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -502,7 +562,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -517,25 +577,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingStatusCode(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -563,7 +633,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -578,25 +648,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingValue(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -624,7 +704,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -639,25 +719,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingMethodCodeP(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_METHOD_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -687,7 +777,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -702,25 +792,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingMethodCode(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_METHOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -748,7 +848,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -763,25 +863,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingInterpretationCodeP(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_INTERPRETATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -811,7 +921,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -826,25 +936,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingInterpretationCode(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -872,7 +992,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -887,25 +1007,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingTargetSiteCodeP(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_TARGET_SITE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingTargetSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingTargetSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -935,7 +1065,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -950,25 +1080,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingTargetSiteCode(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_TARGET_SITE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -996,7 +1136,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1011,25 +1151,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingNonPerformanceReason(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1057,7 +1207,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1072,25 +1222,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingStudyTestOrganization(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_STUDY_TEST_ORGANIZATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudyTestOrganization", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingStudyTestOrganization", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1118,7 +1278,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1133,25 +1293,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingGroupIdentifier(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1179,7 +1349,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1194,25 +1364,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingSpecimenInformation(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_SPECIMEN_INFORMATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1240,7 +1420,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1255,25 +1435,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingComment(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1301,7 +1491,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1316,25 +1506,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingDomainAssignment(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1362,7 +1562,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1377,25 +1577,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingRelatedRecord(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1423,7 +1633,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1438,25 +1648,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingSupplementalValue(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1484,7 +1704,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1499,25 +1719,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingToxicity(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_TOXICITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingToxicity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingToxicity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1545,7 +1775,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1560,25 +1790,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingCategory(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1606,7 +1846,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1621,25 +1861,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingSubCategory(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1667,7 +1917,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1682,25 +1932,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingPositionofSubject(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_POSITIONOF_SUBJECT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingPositionofSubject", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingPositionofSubject", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1728,7 +1988,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1743,25 +2003,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingBodySystemorOrganClass(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_BODY_SYSTEMOR_ORGAN_CLASS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingBodySystemorOrganClass", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingBodySystemorOrganClass", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1789,7 +2059,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1804,25 +2074,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingFastingStatus(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_FASTING_STATUS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingFastingStatus", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingFastingStatus", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1850,7 +2130,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1865,25 +2145,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingStudyFindingEvaluator(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_STUDY_FINDING_EVALUATOR,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudyFindingEvaluator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingStudyFindingEvaluator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1911,7 +2201,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1926,25 +2216,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingEventorFindingSeverity(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_EVENTOR_FINDING_SEVERITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingEventorFindingSeverity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingEventorFindingSeverity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -1972,7 +2272,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1987,25 +2287,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingDeathRelationship(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_DEATH_RELATIONSHIP,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingDeathRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingDeathRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -2033,7 +2343,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2048,25 +2358,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingAssayQuantitation(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_ASSAY_QUANTITATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingAssayQuantitation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingAssayQuantitation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -2094,7 +2414,7 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_SUBJECT_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_SUBJECT_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2109,25 +2429,35 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateStudySubjectFindingFindingAbout(StudySubjectFinding studySubjectFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_SUBJECT_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_SUBJECT_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING);
 			try {
-				VALIDATE_STUDY_SUBJECT_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_SUBJECT_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_SUBJECT_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_SUBJECT_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studySubjectFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_SUBJECT_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studySubjectFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_SUBJECT_FINDING__STUDY_SUBJECT_FINDING_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudySubjectFindingStudySubjectFindingFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studySubjectFinding, context) }),
 						 new Object [] { studySubjectFinding }));
 			}
 			 
@@ -2163,8 +2493,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(84));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -2172,8 +2507,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(studySubjectFinding);
 	}
 
@@ -2204,8 +2540,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(85));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -2213,8 +2554,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(studySubjectFinding);
 	}
 
@@ -2245,8 +2587,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SpecimenInformation getSpecimenInformation(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_SPECIMEN_INFORMATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(86));
 			try {
 				GET_SPECIMEN_INFORMATION__EOCL_QRY = helper.createQuery(GET_SPECIMEN_INFORMATION__EOCL_EXP);
@@ -2254,8 +2601,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
 		return (SpecimenInformation) query.evaluate(studySubjectFinding);
 	}
 
@@ -2286,8 +2634,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<Comment> getComments(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(87));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -2295,8 +2648,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(studySubjectFinding);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -2329,8 +2683,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(88));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -2338,8 +2697,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(studySubjectFinding);
 	}
 
@@ -2370,8 +2730,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(89));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -2379,8 +2744,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(studySubjectFinding);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -2413,8 +2779,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(90));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -2422,8 +2793,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(studySubjectFinding);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -2456,8 +2828,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Toxicity getToxicity(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_TOXICITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(91));
 			try {
 				GET_TOXICITY__EOCL_QRY = helper.createQuery(GET_TOXICITY__EOCL_EXP);
@@ -2465,8 +2842,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TOXICITY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TOXICITY__EOCL_QRY);
 		return (Toxicity) query.evaluate(studySubjectFinding);
 	}
 
@@ -2497,8 +2875,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Category getCategory(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(92));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -2506,8 +2889,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(studySubjectFinding);
 	}
 
@@ -2538,8 +2922,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SubCategory getSubCategory(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(93));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -2547,8 +2936,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(studySubjectFinding);
 	}
 
@@ -2579,8 +2969,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  PositionofSubject getPositionofSubject(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_POSITIONOF_SUBJECT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(94));
 			try {
 				GET_POSITIONOF_SUBJECT__EOCL_QRY = helper.createQuery(GET_POSITIONOF_SUBJECT__EOCL_EXP);
@@ -2588,8 +2983,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_POSITIONOF_SUBJECT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_POSITIONOF_SUBJECT__EOCL_QRY);
 		return (PositionofSubject) query.evaluate(studySubjectFinding);
 	}
 
@@ -2620,8 +3016,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  BodySystemorOrganClass getBodySystemorOrganClass(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(95));
 			try {
 				GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY = helper.createQuery(GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_EXP);
@@ -2629,8 +3030,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY);
 		return (BodySystemorOrganClass) query.evaluate(studySubjectFinding);
 	}
 
@@ -2661,8 +3063,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  FastingStatus getFastingStatus(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_FASTING_STATUS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(96));
 			try {
 				GET_FASTING_STATUS__EOCL_QRY = helper.createQuery(GET_FASTING_STATUS__EOCL_EXP);
@@ -2670,8 +3077,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FASTING_STATUS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FASTING_STATUS__EOCL_QRY);
 		return (FastingStatus) query.evaluate(studySubjectFinding);
 	}
 
@@ -2702,8 +3110,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EventorFindingSeverity getEventorFindingSeverity(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_EVENTOR_FINDING_SEVERITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(97));
 			try {
 				GET_EVENTOR_FINDING_SEVERITY__EOCL_QRY = helper.createQuery(GET_EVENTOR_FINDING_SEVERITY__EOCL_EXP);
@@ -2711,8 +3124,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENTOR_FINDING_SEVERITY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENTOR_FINDING_SEVERITY__EOCL_QRY);
 		return (EventorFindingSeverity) query.evaluate(studySubjectFinding);
 	}
 
@@ -2743,8 +3157,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DeathRelationship getDeathRelationship(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_DEATH_RELATIONSHIP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(98));
 			try {
 				GET_DEATH_RELATIONSHIP__EOCL_QRY = helper.createQuery(GET_DEATH_RELATIONSHIP__EOCL_EXP);
@@ -2752,8 +3171,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DEATH_RELATIONSHIP__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DEATH_RELATIONSHIP__EOCL_QRY);
 		return (DeathRelationship) query.evaluate(studySubjectFinding);
 	}
 
@@ -2784,8 +3204,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  AssayQuantitation getAssayQuantitation(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_ASSAY_QUANTITATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(99));
 			try {
 				GET_ASSAY_QUANTITATION__EOCL_QRY = helper.createQuery(GET_ASSAY_QUANTITATION__EOCL_EXP);
@@ -2793,8 +3218,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ASSAY_QUANTITATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ASSAY_QUANTITATION__EOCL_QRY);
 		return (AssayQuantitation) query.evaluate(studySubjectFinding);
 	}
 
@@ -2825,8 +3251,13 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(StudySubjectFinding studySubjectFinding) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.STUDY_SUBJECT_FINDING, SdtmPackage.Literals.STUDY_SUBJECT_FINDING.getEAllOperations().get(100));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -2834,8 +3265,9 @@ public class StudySubjectFindingOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(studySubjectFinding);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

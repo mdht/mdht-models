@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.NewbornsVitalSignsObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NewbornsVitalSignsObserv
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Newborns Vital Signs Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NewbornsVitalSignsObservationImpl extends ObservationImpl implements NewbornsVitalSignsObservation {
+public class NewbornsVitalSignsObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements NewbornsVitalSignsObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -87,7 +82,8 @@ public class NewbornsVitalSignsObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNewbornsVitalSignsObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNewbornsVitalSignsObservationCodeP(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationCodeP(
 			this, diagnostics, context);
 	}
@@ -107,7 +103,8 @@ public class NewbornsVitalSignsObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNewbornsVitalSignsObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateNewbornsVitalSignsObservationValue(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return NewbornsVitalSignsObservationOperations.validateNewbornsVitalSignsObservationValue(
 			this, diagnostics, context);
 	}
@@ -118,7 +115,7 @@ public class NewbornsVitalSignsObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public NewbornsVitalSignsObservation init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -126,8 +123,9 @@ public class NewbornsVitalSignsObservationImpl extends ObservationImpl implement
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NewbornsVitalSignsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public NewbornsVitalSignsObservation init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // NewbornsVitalSignsObservationImpl

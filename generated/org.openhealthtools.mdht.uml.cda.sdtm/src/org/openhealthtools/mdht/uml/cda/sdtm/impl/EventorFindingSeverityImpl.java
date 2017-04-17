@@ -2,34 +2,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.EventorFindingSeverity;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.EventorFindingSeverityOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Eventor Finding Severity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EventorFindingSeverityImpl extends ObservationImpl implements EventorFindingSeverity {
+public class EventorFindingSeverityImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements EventorFindingSeverity {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -126,7 +115,7 @@ public class EventorFindingSeverityImpl extends ObservationImpl implements Event
 	 */
 	@Override
 	public EventorFindingSeverity init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -134,8 +123,8 @@ public class EventorFindingSeverityImpl extends ObservationImpl implements Event
      * @generated
      */
     @Override
-	public EventorFindingSeverity init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public EventorFindingSeverity init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //EventorFindingSeverityImpl

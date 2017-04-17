@@ -10,11 +10,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.EIVL_event;
+import org.eclipse.mdht.uml.hl7.datatypes.operations.EIVL_eventOperations;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.EIVL_event;
-import org.openhealthtools.mdht.uml.hl7.datatypes.operations.EIVL_eventOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -79,8 +79,8 @@ public class EIVL_eventTest extends CDAValidationTest {
 	@Test
 	public void testValidateTranslation() {
 		OperationsTestCase<EIVL_event> validateTranslationTestCase = new OperationsTestCase<EIVL_event>(
-			"validateTranslation",
-			operationsForOCL.getOCLValue("VALIDATE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			"validateTranslation", operationsForOCL.getOCLValue("VALIDATE_TRANSLATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 			{
 				skipNullTest();
 			}
@@ -270,8 +270,7 @@ public class EIVL_eventTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

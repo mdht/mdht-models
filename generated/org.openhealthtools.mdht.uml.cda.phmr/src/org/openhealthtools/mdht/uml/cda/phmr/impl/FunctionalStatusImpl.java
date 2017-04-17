@@ -22,70 +22,62 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.FunctionalStatusSectionImpl;
-
 import org.openhealthtools.mdht.uml.cda.phmr.FunctionalStatus;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.FunctionalStatusOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class FunctionalStatusImpl extends FunctionalStatusSectionImpl implements FunctionalStatus {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected FunctionalStatusImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.FUNCTIONAL_STATUS;
-  }
+		return PhmrPackage.Literals.FUNCTIONAL_STATUS;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateFunctionalStatusSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return FunctionalStatusOperations.validateFunctionalStatusSectionTemplateId(this, diagnostics, context);
-  }
+		return FunctionalStatusOperations.validateFunctionalStatusSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public FunctionalStatus init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -93,8 +85,8 @@ public class FunctionalStatusImpl extends FunctionalStatusSectionImpl implements
      * @generated
      */
     @Override
-	public FunctionalStatus init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public FunctionalStatus init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //FunctionalStatusImpl

@@ -10,9 +10,7 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
 
 /**
@@ -25,8 +23,8 @@ import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
  * @model
  * @generated
  */
-public interface UnstructuredOrScannedDocument extends UnstructuredDocument,
-		org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredDocument {
+public interface UnstructuredOrScannedDocument
+		extends UnstructuredDocument, org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredDocument {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -39,5 +37,6 @@ public interface UnstructuredOrScannedDocument extends UnstructuredDocument,
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public UnstructuredOrScannedDocument init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public UnstructuredOrScannedDocument init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // UnstructuredOrScannedDocument

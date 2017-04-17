@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.qfdd/src" modelPluginID="org.openhealthtools.mdht.uml.cda.qfdd"
+    templateDirectory="/org.eclipse.mdht.uml.cda/templates" dynamicTemplates="true"
+    modelName="qfdd_Ecore" modelPluginClass="QFDDPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="../../org.eclipse.mdht.uml.cda/model/cda.genmodel#//cda ../../org.eclipse.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+  </genAnnotations>
+  <foreignModel>qfdd_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="QFDD" basePackage="org.openhealthtools.mdht.uml.cda"
+      disposableProviderFactory="true" ecorePackage="qfdd.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.qfdd.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//Questionaire">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//Questionaire/QuestionaireCopyRightSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//Questionaire/QuestionaireCopyRightSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//Questionaire/QuestionaireCopyRightSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//Questionaire/QuestionaireQuestionnaireFormDefinitionSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//Questionaire/QuestionaireQuestionnaireFormDefinitionSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//Questionaire/QuestionaireQuestionnaireFormDefinitionSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//Questionaire/getCopyRightSections"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//Questionaire/getQuestionnaireFormDefinitionSections"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//QuestionaireHeader">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderConfidentialityCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderConfidentialityCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderConfidentialityCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderConfidentialityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderConfidentialityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderConfidentialityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderLanguageCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderLanguageCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderLanguageCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRealmCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRealmCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRealmCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRealmCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRealmCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRealmCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTypeId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTypeId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTypeId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTarget/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTypeIdExtension">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTypeIdExtension/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTypeIdExtension/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTypeIdRoot">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTypeIdRoot/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderTypeIdRoot/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAuthoringDeviceManufacturerModelName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAuthoringDeviceManufacturerModelName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAuthoringDeviceManufacturerModelName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAuthoringDeviceSoftwareName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAuthoringDeviceSoftwareName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAuthoringDeviceSoftwareName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorPersonName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorPersonName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorPersonName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAssignedAuthoringDevice">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAssignedAuthoringDevice/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAssignedAuthoringDevice/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAssignedPerson">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAssignedPerson/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorAssignedPerson/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorRepresentedOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorRepresentedOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorAssignedAuthorRepresentedOrganization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderAuthorTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationAddr">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationAddr/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationAddr/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationTelecom">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationTelecom/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianCustodianOrganizationTelecom/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianRepresentedCustodianOrganization">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianRepresentedCustodianOrganization/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodianRepresentedCustodianOrganization/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderCustodianAssignedCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTargetPatientRoleIINullFlavor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTargetPatientRoleIINullFlavor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTargetPatientRoleIINullFlavor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTargetPatientRoleId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTargetPatientRoleId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTargetPatientRoleId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTargetPatientRole">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTargetPatientRole/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionaireHeader/QuestionaireHeaderRecordTargetPatientRole/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//CopyRightSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightSection/CopyRightSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightSection/CopyRightSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightSection/CopyRightSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightSection/CopyRightSectionLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightSection/CopyRightSectionLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightSection/CopyRightSectionLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightSection/CopyRightSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightSection/CopyRightSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightSection/CopyRightSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightSection/CopyRightSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightSection/CopyRightSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightSection/CopyRightSectionTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightSection/CopyRightSectionCopyRightPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightSection/CopyRightSectionCopyRightPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightSection/CopyRightSectionCopyRightPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightSection/getCopyRightPatternObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//CopyRightPatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CopyRightPatternObservation/CopyRightPatternObservationLanguageCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//QuestionnaireFormDefinitionSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionLanguageCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionLanguageCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionLanguageCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionQuestionsOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionQuestionsOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionnaireFormDefinitionSection/QuestionnaireFormDefinitionSectionQuestionsOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionnaireFormDefinitionSection/getQuestionsOrganizers"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//QuestionsOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerPrecondition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerPrecondition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerPrecondition/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerNumericQuestionPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerNumericQuestionPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerNumericQuestionPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerMultipleChoiceQuestionPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerMultipleChoiceQuestionPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerMultipleChoiceQuestionPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerTextQuestionPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerTextQuestionPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerTextQuestionPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerAnalogSliderQuestionPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerAnalogSliderQuestionPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerAnalogSliderQuestionPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerDiscreteSliderQuestionPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerDiscreteSliderQuestionPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionsOrganizer/QuestionsOrganizerDiscreteSliderQuestionPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/getNumericQuestionPatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/getMultipleChoiceQuestionPatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/getTextQuestionPatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/getAnalogSliderQuestionPatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionsOrganizer/getDiscreteSliderQuestionPatternObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//NumericQuestionPatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationQuestionHelpTextPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationQuestionHelpTextPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationQuestionHelpTextPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationQuestionFeedbackPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationQuestionFeedbackPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationQuestionFeedbackPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationPrecondition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationPrecondition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationPrecondition/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationReferenceRange">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationReferenceRange/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//NumericQuestionPatternObservation/NumericQuestionPatternObservationReferenceRange/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//NumericQuestionPatternObservation/getQuestionHelpTextPatternObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//QuestionHelpTextPatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationLanguageCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationLanguageCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationLanguageCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionHelpTextPatternObservation/QuestionHelpTextPatternObservationLanguageCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//MultipleChoiceQuestionPatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionHelpTextPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionHelpTextPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionHelpTextPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionOptionsPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionOptionsPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionOptionsPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionMediaPattern">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionMediaPattern/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionMediaPattern/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionFeedbackPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionFeedbackPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationQuestionFeedbackPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationTextQuestionPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationTextQuestionPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationTextQuestionPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationPrecondition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationPrecondition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationPrecondition/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCECode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCECode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCECode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCECodeSystem">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCECodeSystem/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCECodeSystem/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCEDisplayName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCEDisplayName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/MultipleChoiceQuestionPatternObservationCEDisplayName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/getQuestionHelpTextPatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/getQuestionOptionsPatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/getQuestionMediaPatterns"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/getQuestionFeedbackPatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//MultipleChoiceQuestionPatternObservation/getTextQuestionPatternObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//QuestionOptionsPatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionOptionsPatternObservation/QuestionOptionsPatternObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//QuestionMediaPattern">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionMediaPattern/QuestionMediaPatternTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionMediaPattern/QuestionMediaPatternTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionMediaPattern/QuestionMediaPatternTemplateId/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//QuestionFeedbackPatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionFeedbackPatternObservation/QuestionFeedbackPatternObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//TextQuestionPatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationQuestionHelpTextPatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationQuestionHelpTextPatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationQuestionHelpTextPatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationQuestionMediaPattern">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationQuestionMediaPattern/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationQuestionMediaPattern/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationPrecondition">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationPrecondition/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//TextQuestionPatternObservation/TextQuestionPatternObservationPrecondition/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/getQuestionHelpTextPatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//TextQuestionPatternObservation/getQuestionMediaPatterns"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//AnalogSliderQuestionPatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//AnalogSliderQuestionPatternObservation/AnalogSliderQuestionPatternObservationReferenceRange">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//AnalogSliderQuestionPatternObservation/AnalogSliderQuestionPatternObservationReferenceRange/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//AnalogSliderQuestionPatternObservation/AnalogSliderQuestionPatternObservationReferenceRange/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//AnalogSliderQuestionPatternObservation/AnalogSliderQuestionPatternObservationReferenceRangeObservationRangeValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//AnalogSliderQuestionPatternObservation/AnalogSliderQuestionPatternObservationReferenceRangeObservationRangeValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//AnalogSliderQuestionPatternObservation/AnalogSliderQuestionPatternObservationReferenceRangeObservationRangeValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//AnalogSliderQuestionPatternObservation/AnalogSliderQuestionPatternObservationReferenceRangeTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//AnalogSliderQuestionPatternObservation/AnalogSliderQuestionPatternObservationReferenceRangeTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//AnalogSliderQuestionPatternObservation/AnalogSliderQuestionPatternObservationReferenceRangeTypeCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//DiscreteSliderQuestionPatternObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//QuestionReferenceRangePattern">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRange">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRange/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRange/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeIVLINTHigh">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeIVLINTHigh/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeIVLINTHigh/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeIVLINTLow">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeIVLINTLow/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeIVLINTLow/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//QuestionReferenceRangePattern/QuestionReferenceRangePatternObservationRangeValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//PreconditionPattern">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//PreconditionPattern/PreconditionPatternTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//PreconditionPattern/PreconditionPatternTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//PreconditionPattern/PreconditionPatternTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//PreconditionPattern/PreconditionPatternTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//PreconditionPattern/PreconditionPatternTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//PreconditionPattern/PreconditionPatternTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//PreconditionPattern/PreconditionPatternCriterion">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//PreconditionPattern/PreconditionPatternCriterion/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//PreconditionPattern/PreconditionPatternCriterion/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qfdd.ecore#//CriterionPattern">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CriterionPattern/CriterionPatternTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CriterionPattern/CriterionPatternTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CriterionPattern/CriterionPatternTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CriterionPattern/CriterionPatternClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CriterionPattern/CriterionPatternClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CriterionPattern/CriterionPatternClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CriterionPattern/CriterionPatternCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CriterionPattern/CriterionPatternCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CriterionPattern/CriterionPatternCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CriterionPattern/CriterionPatternMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CriterionPattern/CriterionPatternMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CriterionPattern/CriterionPatternMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qfdd.ecore#//CriterionPattern/CriterionPatternValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CriterionPattern/CriterionPatternValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qfdd.ecore#//CriterionPattern/CriterionPatternValue/context"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -3,8 +3,8 @@
     xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.hl7.security.ds4p.contentprofile/src" modelPluginID="org.hl7.security.ds4p.contentprofile"
     templateDirectory="/org.eclipse.mdht.uml.cda/templates" dynamicTemplates="true"
     modelName="contentprofile_Ecore" modelPluginClass="CONTENTPROFILEPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
-    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" usedGenPackages="../../org.eclipse.mdht.uml.cda/model/cda.genmodel#//cda ../../org.eclipse.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
-    pluralizedGetters="true" invariantPrefix="validate">
+    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" pluralizedGetters="true"
+    invariantPrefix="validate">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
     <details key="UNION_PROPERTIES" value="PROCESS"/>

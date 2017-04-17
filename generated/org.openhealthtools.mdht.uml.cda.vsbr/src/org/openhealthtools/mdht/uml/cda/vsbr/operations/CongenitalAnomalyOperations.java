@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.CongenitalAnomaly;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -43,7 +41,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
+public class CongenitalAnomalyOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +77,7 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONGENITAL_ANOMALY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONGENITAL_ANOMALY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,28 +93,32 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	public static boolean validateCongenitalAnomalyTemplateId(CongenitalAnomaly congenitalAnomaly,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CONGENITAL_ANOMALY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONGENITAL_ANOMALY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.CONGENITAL_ANOMALY);
 			try {
-				VALIDATE_CONGENITAL_ANOMALY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONGENITAL_ANOMALY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONGENITAL_ANOMALY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			congenitalAnomaly)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONGENITAL_ANOMALY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(congenitalAnomaly)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CongenitalAnomalyTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(congenitalAnomaly, context) }),
-					new Object[] { congenitalAnomaly }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"CongenitalAnomalyCongenitalAnomalyTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										congenitalAnomaly, context) }),
+						new Object[] { congenitalAnomaly }));
 			}
 
 			return false;
@@ -136,7 +145,7 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONGENITAL_ANOMALY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONGENITAL_ANOMALY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,28 +161,32 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	public static boolean validateCongenitalAnomalyClassCode(CongenitalAnomaly congenitalAnomaly,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CONGENITAL_ANOMALY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONGENITAL_ANOMALY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.CONGENITAL_ANOMALY);
 			try {
-				VALIDATE_CONGENITAL_ANOMALY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONGENITAL_ANOMALY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONGENITAL_ANOMALY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			congenitalAnomaly)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONGENITAL_ANOMALY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(congenitalAnomaly)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CongenitalAnomalyClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(congenitalAnomaly, context) }),
-					new Object[] { congenitalAnomaly }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"CongenitalAnomalyCongenitalAnomalyClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										congenitalAnomaly, context) }),
+						new Object[] { congenitalAnomaly }));
 			}
 
 			return false;
@@ -200,7 +213,7 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONGENITAL_ANOMALY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONGENITAL_ANOMALY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -216,28 +229,32 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	public static boolean validateCongenitalAnomalyMoodCode(CongenitalAnomaly congenitalAnomaly,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CONGENITAL_ANOMALY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONGENITAL_ANOMALY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.CONGENITAL_ANOMALY);
 			try {
-				VALIDATE_CONGENITAL_ANOMALY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONGENITAL_ANOMALY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONGENITAL_ANOMALY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			congenitalAnomaly)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONGENITAL_ANOMALY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(congenitalAnomaly)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CongenitalAnomalyMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(congenitalAnomaly, context) }),
-					new Object[] { congenitalAnomaly }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"CongenitalAnomalyCongenitalAnomalyMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										congenitalAnomaly, context) }),
+						new Object[] { congenitalAnomaly }));
 			}
 
 			return false;
@@ -264,7 +281,7 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONGENITAL_ANOMALY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONGENITAL_ANOMALY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -280,28 +297,32 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	public static boolean validateCongenitalAnomalyCodeP(CongenitalAnomaly congenitalAnomaly,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CONGENITAL_ANOMALY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONGENITAL_ANOMALY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.CONGENITAL_ANOMALY);
 			try {
-				VALIDATE_CONGENITAL_ANOMALY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONGENITAL_ANOMALY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONGENITAL_ANOMALY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONGENITAL_ANOMALY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			congenitalAnomaly)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CongenitalAnomalyCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(congenitalAnomaly, context) }),
-					new Object[] { congenitalAnomaly }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"CongenitalAnomalyCongenitalAnomalyCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										congenitalAnomaly, context) }),
+						new Object[] { congenitalAnomaly }));
 			}
 
 			return false;
@@ -317,9 +338,9 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73780-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73780-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCongenitalAnomalyCode(CongenitalAnomaly, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Congenital Anomaly Code</em>}' invariant operation.
@@ -330,7 +351,7 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -346,28 +367,32 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	public static boolean validateCongenitalAnomalyCode(CongenitalAnomaly congenitalAnomaly,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.CONGENITAL_ANOMALY);
 			try {
-				VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONGENITAL_ANOMALY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			congenitalAnomaly)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CongenitalAnomalyCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(congenitalAnomaly, context) }),
-					new Object[] { congenitalAnomaly }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"CongenitalAnomalyCongenitalAnomalyCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										congenitalAnomaly, context) }),
+						new Object[] { congenitalAnomaly }));
 			}
 
 			return false;
@@ -383,9 +408,9 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '89369001' or value.code = '67531005' or value.code = '12770006' or value.code = '17190001' or value.code = '18735004' or value.code = '72951007' or value.code = '67341007' or value.code = '80281008' or value.code = '87979003' or value.code = '70156005' or value.code = '409709004' or value.code = '416010008' or value.code = '260413007'))";
+	protected static final String VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '89369001' or value.code = '67531005' or value.code = '12770006' or value.code = '17190001' or value.code = '18735004' or value.code = '72951007' or value.code = '67341007' or value.code = '80281008' or value.code = '87979003' or value.code = '70156005' or value.code = '409709004' or value.code = '416010008' or value.code = '260413007'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCongenitalAnomalyCodeVS(CongenitalAnomaly, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Congenital Anomaly Code VS</em>}' invariant operation.
@@ -396,7 +421,7 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -412,28 +437,32 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	public static boolean validateCongenitalAnomalyCodeVS(CongenitalAnomaly congenitalAnomaly,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.CONGENITAL_ANOMALY);
 			try {
-				VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			congenitalAnomaly)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONGENITAL_ANOMALY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(congenitalAnomaly)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_CODE_VS,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CongenitalAnomalyCodeVS",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(congenitalAnomaly, context) }),
-					new Object[] { congenitalAnomaly }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_CODE_VS,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"CongenitalAnomalyCongenitalAnomalyCodeVS",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										congenitalAnomaly, context) }),
+						new Object[] { congenitalAnomaly }));
 			}
 
 			return false;
@@ -449,9 +478,9 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '89369001' or value.code = '67531005' or value.code = '12770006' or value.code = '17190001' or value.code = '18735004' or value.code = '72951007' or value.code = '67341007' or value.code = '80281008' or value.code = '87979003' or value.code = '70156005' or value.code = '409709004' or value.code = '416010008' or value.code = '260413007')))";
+	protected static final String VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '89369001' or value.code = '67531005' or value.code = '12770006' or value.code = '17190001' or value.code = '18735004' or value.code = '72951007' or value.code = '67341007' or value.code = '80281008' or value.code = '87979003' or value.code = '70156005' or value.code = '409709004' or value.code = '416010008' or value.code = '260413007')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateCongenitalAnomalyValue(CongenitalAnomaly, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Congenital Anomaly Value</em>}' invariant operation.
@@ -462,7 +491,7 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -478,28 +507,32 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	public static boolean validateCongenitalAnomalyValue(CongenitalAnomaly congenitalAnomaly,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.CONGENITAL_ANOMALY);
 			try {
-				VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CONGENITAL_ANOMALY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			congenitalAnomaly)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CongenitalAnomalyValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(congenitalAnomaly, context) }),
-					new Object[] { congenitalAnomaly }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"CongenitalAnomalyCongenitalAnomalyValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										congenitalAnomaly, context) }),
+						new Object[] { congenitalAnomaly }));
 			}
 
 			return false;
@@ -526,7 +559,7 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONGENITAL_ANOMALY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONGENITAL_ANOMALY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -542,28 +575,32 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	public static boolean validateCongenitalAnomalyValueP(CongenitalAnomaly congenitalAnomaly,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CONGENITAL_ANOMALY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONGENITAL_ANOMALY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.CONGENITAL_ANOMALY);
 			try {
-				VALIDATE_CONGENITAL_ANOMALY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONGENITAL_ANOMALY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CONGENITAL_ANOMALY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			congenitalAnomaly)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONGENITAL_ANOMALY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(congenitalAnomaly)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_VALUE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CongenitalAnomalyValueP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(congenitalAnomaly, context) }),
-					new Object[] { congenitalAnomaly }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_VALUE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"CongenitalAnomalyCongenitalAnomalyValueP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										congenitalAnomaly, context) }),
+						new Object[] { congenitalAnomaly }));
 			}
 
 			return false;
@@ -590,7 +627,7 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -606,29 +643,34 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	public static boolean validateCongenitalAnomalyDownConfirmationAssociation(CongenitalAnomaly congenitalAnomaly,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.CONGENITAL_ANOMALY);
 			try {
-				VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			congenitalAnomaly)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				congenitalAnomaly)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CongenitalAnomalyDownConfirmationAssociation",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(congenitalAnomaly, context) }),
-					new Object[] { congenitalAnomaly }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_DOWN_CONFIRMATION_ASSOCIATION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"CongenitalAnomalyCongenitalAnomalyDownConfirmationAssociation",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										congenitalAnomaly, context) }),
+						new Object[] { congenitalAnomaly }));
 			}
 
 			return false;
@@ -655,7 +697,7 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -671,29 +713,34 @@ public class CongenitalAnomalyOperations extends ClinicalStatementOperations {
 	public static boolean validateCongenitalAnomalyChromosomalDisorderConfirmationAssociation(
 			CongenitalAnomaly congenitalAnomaly, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.CONGENITAL_ANOMALY);
 			try {
-				VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			congenitalAnomaly)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				congenitalAnomaly)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"CongenitalAnomalyChromosomalDisorderConfirmationAssociation",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(congenitalAnomaly, context) }),
-					new Object[] { congenitalAnomaly }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.CONGENITAL_ANOMALY__CONGENITAL_ANOMALY_CHROMOSOMAL_DISORDER_CONFIRMATION_ASSOCIATION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"CongenitalAnomalyCongenitalAnomalyChromosomalDisorderConfirmationAssociation",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										congenitalAnomaly, context) }),
+						new Object[] { congenitalAnomaly }));
 			}
 
 			return false;

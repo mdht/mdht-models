@@ -7,17 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -41,6 +36,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class DeathLocationTypeOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +72,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_LOCATION_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +87,35 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDeathLocationTypeTemplateId(DeathLocationType deathLocationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_LOCATION_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_LOCATION_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_LOCATION_TYPE);
 			try {
-				VALIDATE_DEATH_LOCATION_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_LOCATION_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_LOCATION_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathLocationType)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_LOCATION_TYPE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathLocationType)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeDeathLocationTypeTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
 						 new Object [] { deathLocationType }));
 			}
 			 
@@ -130,7 +143,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_LOCATION_TYPE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +158,35 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDeathLocationTypeClassCode(DeathLocationType deathLocationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_LOCATION_TYPE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_LOCATION_TYPE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_LOCATION_TYPE);
 			try {
-				VALIDATE_DEATH_LOCATION_TYPE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_LOCATION_TYPE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_LOCATION_TYPE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathLocationType)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_LOCATION_TYPE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathLocationType)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeDeathLocationTypeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
 						 new Object [] { deathLocationType }));
 			}
 			 
@@ -191,7 +214,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +229,35 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDeathLocationTypeMoodCode(DeathLocationType deathLocationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_LOCATION_TYPE);
 			try {
-				VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathLocationType)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_LOCATION_TYPE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathLocationType)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeDeathLocationTypeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
 						 new Object [] { deathLocationType }));
 			}
 			 
@@ -252,7 +285,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +300,35 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDeathLocationTypeCodeP(DeathLocationType deathLocationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_LOCATION_TYPE);
 			try {
-				VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathLocationType)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_LOCATION_TYPE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathLocationType)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeDeathLocationTypeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
 						 new Object [] { deathLocationType }));
 			}
 			 
@@ -315,7 +358,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +373,35 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDeathLocationTypeCode(DeathLocationType deathLocationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_LOCATION_TYPE);
 			try {
-				VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathLocationType)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_LOCATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathLocationType)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeDeathLocationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
 						 new Object [] { deathLocationType }));
 			}
 			 
@@ -378,7 +431,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -393,25 +446,35 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDeathLocationTypeValue(DeathLocationType deathLocationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_LOCATION_TYPE);
 			try {
-				VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathLocationType)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_LOCATION_TYPE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathLocationType)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeDeathLocationTypeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
 						 new Object [] { deathLocationType }));
 			}
 			 
@@ -439,7 +502,7 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -454,25 +517,35 @@ public class DeathLocationTypeOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDeathLocationTypeValueP(DeathLocationType deathLocationType, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_LOCATION_TYPE);
 			try {
-				VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathLocationType)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_LOCATION_TYPE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathLocationType)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_LOCATION_TYPE__DEATH_LOCATION_TYPE_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathLocationTypeDeathLocationTypeValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathLocationType, context) }),
 						 new Object [] { deathLocationType }));
 			}
 			 

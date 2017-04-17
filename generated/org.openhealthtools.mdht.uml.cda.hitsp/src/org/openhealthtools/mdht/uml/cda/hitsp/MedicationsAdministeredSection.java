@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * <!-- begin-model-doc -->
  * <p>
  *     The Medications Administered Section contains information about the relevant medications administered to
- *     a patient during the course of an encounter. 
+ *     a patient during the course of an encounter.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -34,8 +32,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPMedicationsAdministeredSectionTemplateId' templateId.root='2.16.840.1.113883.3.88.11.83.115'"
  * @generated
  */
-public interface MedicationsAdministeredSection extends
-		org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection {
+public interface MedicationsAdministeredSection
+		extends org.openhealthtools.mdht.uml.cda.ihe.MedicationsAdministeredSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -61,5 +59,6 @@ public interface MedicationsAdministeredSection extends
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public MedicationsAdministeredSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // MedicationsAdministeredSection

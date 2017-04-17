@@ -42,8 +42,15 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
  *
  * @generated
  */
-public class HospitalDischargeMedicationsSectionOperations extends
-		org.openhealthtools.mdht.uml.cda.ihe.operations.HospitalDischargeMedicationsSectionOperations {
+public class HospitalDischargeMedicationsSectionOperations
+		extends org.openhealthtools.mdht.uml.cda.ihe.operations.HospitalDischargeMedicationsSectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +79,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,25 +96,30 @@ public class HospitalDischargeMedicationsSectionOperations extends
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
 			try {
-				VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalDischargeMedicationsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				hospitalDischargeMedicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPHospitalDischargeMedicationsSectionTemplateId"),
-					new Object[] { hospitalDischargeMedicationsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString(
+							"HospitalDischargeMedicationsSectionHITSPHospitalDischargeMedicationsSectionTemplateId"),
+						new Object[] { hospitalDischargeMedicationsSection }));
 			}
 
 			return false;
@@ -134,7 +146,7 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,25 +163,30 @@ public class HospitalDischargeMedicationsSectionOperations extends
 			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION);
 			try {
-				VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			hospitalDischargeMedicationsSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				hospitalDischargeMedicationsSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION,
-					HITSPPlugin.INSTANCE.getString("HITSPHospitalDischargeMedicationsSectionMedication"),
-					new Object[] { hospitalDischargeMedicationsSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION__HITSP_HOSPITAL_DISCHARGE_MEDICATIONS_SECTION_MEDICATION,
+						HITSPPlugin.INSTANCE.getString(
+							"HospitalDischargeMedicationsSectionHITSPHospitalDischargeMedicationsSectionMedication"),
+						new Object[] { hospitalDischargeMedicationsSection }));
 			}
 
 			return false;
@@ -202,9 +219,12 @@ public class HospitalDischargeMedicationsSectionOperations extends
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static Medication getHITSPMedication(HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection) {
+	public static Medication getHITSPMedication(
+			HospitalDischargeMedicationsSection hospitalDischargeMedicationsSection) {
+
 		if (GET_HITSP_MEDICATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION,
 				HITSPPackage.Literals.HOSPITAL_DISCHARGE_MEDICATIONS_SECTION.getEAllOperations().get(61));
@@ -214,7 +234,8 @@ public class HospitalDischargeMedicationsSectionOperations extends
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HITSP_MEDICATION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_HITSP_MEDICATION__EOCL_QRY);
 		return (Medication) query.evaluate(hospitalDischargeMedicationsSection);
 	}
 

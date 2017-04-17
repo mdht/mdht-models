@@ -22,121 +22,112 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceAccuracyObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.DeviceAccuracyObservationOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Device Accuracy Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class DeviceAccuracyObservationImpl extends ObservationImpl implements DeviceAccuracyObservation {
+public class DeviceAccuracyObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements DeviceAccuracyObservation {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected DeviceAccuracyObservationImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.DEVICE_ACCURACY_OBSERVATION;
-  }
+		return PhmrPackage.Literals.DEVICE_ACCURACY_OBSERVATION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceAccuracyObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationTemplateId(this, diagnostics, context);
-  }
+		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceAccuracyObservationClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationClassCode(this, diagnostics, context);
-  }
+		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
 public boolean validateDeviceAccuracyObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCodeP(this, diagnostics, context);
-  }
+		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCodeP(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceAccuracyObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCode(this, diagnostics, context);
-  }
+		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceAccuracyObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationMoodCode(this, diagnostics, context);
-  }
+		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceAccuracyObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationValue(this, diagnostics, context);
-  }
+		return DeviceAccuracyObservationOperations.validateDeviceAccuracyObservationValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public DeviceAccuracyObservation init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -144,8 +135,8 @@ public boolean validateDeviceAccuracyObservationCodeP(DiagnosticChain diagnostic
      * @generated
      */
     @Override
-	public DeviceAccuracyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public DeviceAccuracyObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //DeviceAccuracyObservationImpl

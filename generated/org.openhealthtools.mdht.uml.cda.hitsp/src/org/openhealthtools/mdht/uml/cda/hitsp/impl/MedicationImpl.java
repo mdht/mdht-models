@@ -10,14 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.Medication;
@@ -29,8 +27,6 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.MedicationOperations;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -98,7 +94,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationHasStatusOfMedication(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationHasStatusOfMedication(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationHasStatusOfMedication(this, diagnostics, context);
 	}
 
@@ -145,7 +142,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationHasMedicationVehicle(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationHasMedicationVehicle(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationHasMedicationVehicle(this, diagnostics, context);
 	}
 
@@ -154,7 +152,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationMedicationVehicleType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationMedicationVehicleType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationMedicationVehicleType(this, diagnostics, context);
 	}
 
@@ -173,7 +172,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationMedicationVehicleCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationMedicationVehicleCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationMedicationVehicleCode(this, diagnostics, context);
 	}
 
@@ -182,7 +182,8 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPMedicationMedicationVehicleName(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPMedicationMedicationVehicleName(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return MedicationOperations.validateHITSPMedicationMedicationVehicleName(this, diagnostics, context);
 	}
 
@@ -334,7 +335,7 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 */
 	@Override
 	public Medication init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -343,8 +344,9 @@ public class MedicationImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.Me
 	 * @generated
 	 */
 	@Override
-	public Medication init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public Medication init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // MedicationImpl

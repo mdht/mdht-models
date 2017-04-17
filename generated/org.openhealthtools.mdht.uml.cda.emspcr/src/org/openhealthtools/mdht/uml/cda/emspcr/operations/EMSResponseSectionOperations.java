@@ -11,16 +11,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.DelayOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.DispatchLocationOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSResponseSection;
@@ -28,10 +23,7 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.ResponseModeToScene;
 import org.openhealthtools.mdht.uml.cda.emspcr.ResponseOdometerReadingOrganizer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -59,7 +51,14 @@ import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
  *
  * @generated
  */
-public class EMSResponseSectionOperations extends SectionOperations {
+public class EMSResponseSectionOperations extends org.eclipse.mdht.uml.cda.operations.SectionOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -88,7 +87,7 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -103,26 +102,38 @@ public class EMSResponseSectionOperations extends SectionOperations {
 
 	public static boolean validateEMSResponseSectionTemplateId(EMSResponseSection emsResponseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION);
 			try {
-				VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsResponseSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("EMSResponseSectionTemplateId"),
-					new Object[] { emsResponseSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EMS_RESPONSE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(emsResponseSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("EMSResponseSectionEMSResponseSectionTemplateId"),
+						 new Object [] { emsResponseSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -136,9 +147,9 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '67664-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "+
+"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "+
+"value.code = '67664-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateEMSResponseSectionCode(EMSResponseSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate EMS Response Section Code</em>}' invariant operation.
@@ -149,7 +160,7 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -164,25 +175,38 @@ public class EMSResponseSectionOperations extends SectionOperations {
 
 	public static boolean validateEMSResponseSectionCode(EMSResponseSection emsResponseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION);
 			try {
-				VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsResponseSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_CODE,
-					EmspcrPlugin.INSTANCE.getString("EMSResponseSectionCode"), new Object[] { emsResponseSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EMS_RESPONSE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(emsResponseSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("EMSResponseSectionEMSResponseSectionCode"),
+						 new Object [] { emsResponseSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -207,7 +231,7 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -222,25 +246,38 @@ public class EMSResponseSectionOperations extends SectionOperations {
 
 	public static boolean validateEMSResponseSectionCodeP(EMSResponseSection emsResponseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION);
 			try {
-				VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsResponseSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("EMSResponseSectionCodeP"), new Object[] { emsResponseSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EMS_RESPONSE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(emsResponseSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("EMSResponseSectionEMSResponseSectionCodeP"),
+						 new Object [] { emsResponseSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -265,7 +302,7 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -280,25 +317,38 @@ public class EMSResponseSectionOperations extends SectionOperations {
 
 	public static boolean validateEMSResponseSectionTitle(EMSResponseSection emsResponseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION);
 			try {
-				VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsResponseSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_TITLE,
-					EmspcrPlugin.INSTANCE.getString("EMSResponseSectionTitle"), new Object[] { emsResponseSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EMS_RESPONSE_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(emsResponseSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_TITLE,
+						 EmspcrPlugin.INSTANCE.getString("EMSResponseSectionEMSResponseSectionTitle"),
+						 new Object [] { emsResponseSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -323,7 +373,7 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -338,25 +388,38 @@ public class EMSResponseSectionOperations extends SectionOperations {
 
 	public static boolean validateEMSResponseSectionText(EMSResponseSection emsResponseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION);
 			try {
-				VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsResponseSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_TEXT,
-					EmspcrPlugin.INSTANCE.getString("EMSResponseSectionText"), new Object[] { emsResponseSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EMS_RESPONSE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(emsResponseSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_TEXT,
+						 EmspcrPlugin.INSTANCE.getString("EMSResponseSectionEMSResponseSectionText"),
+						 new Object [] { emsResponseSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -381,7 +444,7 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -396,26 +459,38 @@ public class EMSResponseSectionOperations extends SectionOperations {
 
 	public static boolean validateEMSResponseSectionDelayOrganizer(EMSResponseSection emsResponseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION);
 			try {
-				VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsResponseSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_DELAY_ORGANIZER,
-					EmspcrPlugin.INSTANCE.getString("EMSResponseSectionDelayOrganizer"),
-					new Object[] { emsResponseSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EMS_RESPONSE_SECTION_DELAY_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(emsResponseSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_DELAY_ORGANIZER,
+						 EmspcrPlugin.INSTANCE.getString("EMSResponseSectionEMSResponseSectionDelayOrganizer"),
+						 new Object [] { emsResponseSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -440,7 +515,7 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -455,27 +530,38 @@ public class EMSResponseSectionOperations extends SectionOperations {
 
 	public static boolean validateEMSResponseSectionDispatchLocationOrganizer(EMSResponseSection emsResponseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION);
 			try {
-				VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsResponseSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER,
-					EmspcrPlugin.INSTANCE.getString("EMSResponseSectionDispatchLocationOrganizer"),
-					new Object[] { emsResponseSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(emsResponseSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_DISPATCH_LOCATION_ORGANIZER,
+						 EmspcrPlugin.INSTANCE.getString("EMSResponseSectionEMSResponseSectionDispatchLocationOrganizer"),
+						 new Object [] { emsResponseSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -500,7 +586,7 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -515,27 +601,38 @@ public class EMSResponseSectionOperations extends SectionOperations {
 
 	public static boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(
 			EMSResponseSection emsResponseSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION);
 			try {
-				VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsResponseSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER,
-					EmspcrPlugin.INSTANCE.getString("EMSResponseSectionResponseOdometerReadingOrganizer"),
-					new Object[] { emsResponseSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(emsResponseSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_RESPONSE_ODOMETER_READING_ORGANIZER,
+						 EmspcrPlugin.INSTANCE.getString("EMSResponseSectionEMSResponseSectionResponseOdometerReadingOrganizer"),
+						 new Object [] { emsResponseSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -560,7 +657,7 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -575,26 +672,38 @@ public class EMSResponseSectionOperations extends SectionOperations {
 
 	public static boolean validateEMSResponseSectionResponseModeToScene(EMSResponseSection emsResponseSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION);
 			try {
-				VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			emsResponseSection)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE,
-					EmspcrPlugin.INSTANCE.getString("EMSResponseSectionResponseModeToScene"),
-					new Object[] { emsResponseSection }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(emsResponseSection)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.EMS_RESPONSE_SECTION__EMS_RESPONSE_SECTION_RESPONSE_MODE_TO_SCENE,
+						 EmspcrPlugin.INSTANCE.getString("EMSResponseSectionEMSResponseSectionResponseModeToScene"),
+						 new Object [] { emsResponseSection }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -627,18 +736,23 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 */
 
 	public static DelayOrganizer getDelayOrganizer(EMSResponseSection emsResponseSection) {
+	
+	
+	
 		if (GET_DELAY_ORGANIZER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_RESPONSE_SECTION,
-				EmspcrPackage.Literals.EMS_RESPONSE_SECTION.getEAllOperations().get(64));
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION, EmspcrPackage.Literals.EMS_RESPONSE_SECTION.getEAllOperations().get(64));
 			try {
 				GET_DELAY_ORGANIZER__EOCL_QRY = helper.createQuery(GET_DELAY_ORGANIZER__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DELAY_ORGANIZER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DELAY_ORGANIZER__EOCL_QRY);
 		return (DelayOrganizer) query.evaluate(emsResponseSection);
 	}
 
@@ -669,18 +783,23 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 */
 
 	public static DispatchLocationOrganizer getDispatchLocationOrganizer(EMSResponseSection emsResponseSection) {
+	
+	
+	
 		if (GET_DISPATCH_LOCATION_ORGANIZER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_RESPONSE_SECTION,
-				EmspcrPackage.Literals.EMS_RESPONSE_SECTION.getEAllOperations().get(65));
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION, EmspcrPackage.Literals.EMS_RESPONSE_SECTION.getEAllOperations().get(65));
 			try {
 				GET_DISPATCH_LOCATION_ORGANIZER__EOCL_QRY = helper.createQuery(GET_DISPATCH_LOCATION_ORGANIZER__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DISPATCH_LOCATION_ORGANIZER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DISPATCH_LOCATION_ORGANIZER__EOCL_QRY);
 		return (DispatchLocationOrganizer) query.evaluate(emsResponseSection);
 	}
 
@@ -712,18 +831,23 @@ public class EMSResponseSectionOperations extends SectionOperations {
 
 	public static ResponseOdometerReadingOrganizer getResponseOdometerReadingOrganizer(
 			EMSResponseSection emsResponseSection) {
+	
+	
+	
 		if (GET_RESPONSE_ODOMETER_READING_ORGANIZER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_RESPONSE_SECTION,
-				EmspcrPackage.Literals.EMS_RESPONSE_SECTION.getEAllOperations().get(66));
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION, EmspcrPackage.Literals.EMS_RESPONSE_SECTION.getEAllOperations().get(66));
 			try {
 				GET_RESPONSE_ODOMETER_READING_ORGANIZER__EOCL_QRY = helper.createQuery(GET_RESPONSE_ODOMETER_READING_ORGANIZER__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RESPONSE_ODOMETER_READING_ORGANIZER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESPONSE_ODOMETER_READING_ORGANIZER__EOCL_QRY);
 		return (ResponseOdometerReadingOrganizer) query.evaluate(emsResponseSection);
 	}
 
@@ -754,18 +878,23 @@ public class EMSResponseSectionOperations extends SectionOperations {
 	 */
 
 	public static ResponseModeToScene getResponseModeToScene(EMSResponseSection emsResponseSection) {
+	
+	
+	
 		if (GET_RESPONSE_MODE_TO_SCENE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
-			helper.setOperationContext(
-				EmspcrPackage.Literals.EMS_RESPONSE_SECTION,
-				EmspcrPackage.Literals.EMS_RESPONSE_SECTION.getEAllOperations().get(67));
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setOperationContext(EmspcrPackage.Literals.EMS_RESPONSE_SECTION, EmspcrPackage.Literals.EMS_RESPONSE_SECTION.getEAllOperations().get(67));
 			try {
 				GET_RESPONSE_MODE_TO_SCENE__EOCL_QRY = helper.createQuery(GET_RESPONSE_MODE_TO_SCENE__EOCL_EXP);
-			} catch (ParserException pe) {
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RESPONSE_MODE_TO_SCENE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESPONSE_MODE_TO_SCENE__EOCL_QRY);
 		return (ResponseModeToScene) query.evaluate(emsResponseSection);
 	}
 

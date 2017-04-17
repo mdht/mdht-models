@@ -9,24 +9,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
 import org.eclipse.emf.ecore.EObject;
-
+import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.Query;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.OrganizerOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.Injury;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPlugin;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -93,6 +86,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class InjuryOperations extends OrganizerOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -121,7 +122,7 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -136,25 +137,35 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateInjuryTemplateId(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
-				VALIDATE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injury)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injury)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_TEMPLATE_ID,
-						 VsdrPlugin.INSTANCE.getString("InjuryTemplateId"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryTemplateId"),
 						 new Object [] { injury }));
 			}
 			 
@@ -182,7 +193,7 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -197,25 +208,35 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateInjuryClassCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
-				VALIDATE_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injury)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injury)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_CLASS_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryClassCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryClassCode"),
 						 new Object [] { injury }));
 			}
 			 
@@ -243,7 +264,7 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -258,25 +279,35 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateInjuryMoodCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
-				VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injury)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injury)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_MOOD_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryMoodCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryMoodCode"),
 						 new Object [] { injury }));
 			}
 			 
@@ -306,7 +337,7 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -321,25 +352,35 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateInjuryCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
-				VALIDATE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injury)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injury)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryCode"),
 						 new Object [] { injury }));
 			}
 			 
@@ -367,7 +408,7 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -382,25 +423,35 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateInjuryCodeP(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
-				VALIDATE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injury)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injury)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_CODE_P,
-						 VsdrPlugin.INSTANCE.getString("InjuryCodeP"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryCodeP"),
 						 new Object [] { injury }));
 			}
 			 
@@ -428,7 +479,7 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INJURY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -443,25 +494,35 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateInjuryStatusCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
-				VALIDATE_INJURY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INJURY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injury)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injury)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_STATUS_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryStatusCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryStatusCode"),
 						 new Object [] { injury }));
 			}
 			 
@@ -489,7 +550,7 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -504,25 +565,35 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateInjuryComponentInjuryInformation(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injury)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injury)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformation"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformation"),
 						 new Object [] { injury }));
 			}
 			 
@@ -550,7 +621,7 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -565,25 +636,35 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateInjuryComponentWorkAssociation(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
-				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injury)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injury)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_WORK_ASSOCIATION,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentWorkAssociation"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentWorkAssociation"),
 						 new Object [] { injury }));
 			}
 			 
@@ -611,7 +692,7 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -626,25 +707,35 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateInjuryComponentTransportationAssociation(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injury)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injury)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationAssociation"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationAssociation"),
 						 new Object [] { injury }));
 			}
 			 
@@ -672,7 +763,7 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -687,25 +778,35 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	
 	public static  boolean validateInjuryComponentTransportationRelationship(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(injury)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injury)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.INFO,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationRelationship"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationRelationship"),
 						 new Object [] { injury }));
 			}
 			 
@@ -733,8 +834,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -748,19 +853,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -771,7 +886,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_CLASS_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -800,8 +915,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -815,19 +934,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -838,7 +967,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -867,8 +996,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -882,19 +1015,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -905,7 +1048,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DESC,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -934,8 +1077,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -949,19 +1096,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -972,7 +1129,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_ADDR,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1001,8 +1158,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1016,19 +1177,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1039,7 +1210,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_CLASS_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1068,8 +1239,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1083,19 +1258,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1106,7 +1291,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1135,8 +1320,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1150,19 +1339,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1173,7 +1372,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_TYPE_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1202,8 +1401,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1217,19 +1420,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1240,7 +1453,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1269,8 +1482,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1284,19 +1501,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationClassCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1307,7 +1534,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CLASS_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationClassCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationClassCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1336,8 +1563,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1351,19 +1582,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationMoodCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1374,7 +1615,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationMoodCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationMoodCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1403,8 +1644,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1418,19 +1663,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationCodeP(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1441,7 +1696,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE_P,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationCodeP"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationCodeP"),
 						 new Object [] { eObject }));
 				}
 				
@@ -1483,8 +1738,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1498,19 +1757,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1528,7 +1797,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1557,8 +1826,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1572,19 +1845,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationText(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1595,7 +1878,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_TEXT,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationText"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationText"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1624,8 +1907,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1639,19 +1926,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationEffectiveTime(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1662,7 +1959,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_EFFECTIVE_TIME,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationEffectiveTime"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationEffectiveTime"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1691,8 +1988,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1706,19 +2007,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationValue(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1729,7 +2040,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationValue"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationValue"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1758,8 +2069,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1773,19 +2088,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformationLocationParticipation(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1796,7 +2121,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformationLocationParticipation"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformationLocationParticipation"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1825,8 +2150,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1840,19 +2169,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationTypeCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1863,7 +2202,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_TYPE_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationTypeCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationTypeCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1892,8 +2231,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1907,19 +2250,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentInjuryInformationInjuryInformation(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1930,7 +2283,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentInjuryInformationInjuryInformation"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentInjuryInformationInjuryInformation"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -1959,8 +2312,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -1974,19 +2331,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentWorkAssociationWorkAssociationClassCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -1997,7 +2364,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CLASS_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentWorkAssociationWorkAssociationClassCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentWorkAssociationWorkAssociationClassCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2026,8 +2393,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2041,19 +2412,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentWorkAssociationWorkAssociationMoodCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2064,7 +2445,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentWorkAssociationWorkAssociationMoodCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentWorkAssociationWorkAssociationMoodCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2093,8 +2474,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2108,19 +2493,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentWorkAssociationWorkAssociationCodeP(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2131,7 +2526,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE_P,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentWorkAssociationWorkAssociationCodeP"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentWorkAssociationWorkAssociationCodeP"),
 						 new Object [] { eObject }));
 				}
 				
@@ -2173,8 +2568,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2188,19 +2587,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentWorkAssociationWorkAssociationCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2218,7 +2627,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentWorkAssociationWorkAssociationCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentWorkAssociationWorkAssociationCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2247,8 +2656,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2262,19 +2675,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentWorkAssociationWorkAssociationValue(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2285,7 +2708,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_VALUE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentWorkAssociationWorkAssociationValue"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentWorkAssociationWorkAssociationValue"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2314,8 +2737,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2329,19 +2756,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentWorkAssociationTypeCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2352,7 +2789,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_TYPE_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentWorkAssociationTypeCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentWorkAssociationTypeCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2381,8 +2818,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2396,19 +2837,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentWorkAssociationWorkAssociation(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2419,7 +2870,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentWorkAssociationWorkAssociation"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentWorkAssociationWorkAssociation"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2448,8 +2899,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2463,19 +2918,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationAssociationTransportationAssociationClassCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2486,7 +2951,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CLASS_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationAssociationTransportationAssociationClassCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationAssociationTransportationAssociationClassCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2515,8 +2980,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2530,19 +2999,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationAssociationTransportationAssociationMoodCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2553,7 +3032,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationAssociationTransportationAssociationMoodCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationAssociationTransportationAssociationMoodCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2582,8 +3061,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2597,19 +3080,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationAssociationTransportationAssociationCodeP(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2620,7 +3113,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE_P,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationAssociationTransportationAssociationCodeP"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationAssociationTransportationAssociationCodeP"),
 						 new Object [] { eObject }));
 				}
 				
@@ -2662,8 +3155,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2677,19 +3174,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationAssociationTransportationAssociationCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2707,7 +3214,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationAssociationTransportationAssociationCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationAssociationTransportationAssociationCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2736,8 +3243,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2751,19 +3262,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationAssociationTransportationAssociationValue(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2774,7 +3295,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_VALUE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationAssociationTransportationAssociationValue"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationAssociationTransportationAssociationValue"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2803,8 +3324,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2818,19 +3343,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationAssociationTypeCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2841,7 +3376,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TYPE_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationAssociationTypeCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationAssociationTypeCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2870,8 +3405,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2885,19 +3424,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationAssociationTransportationAssociation(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2908,7 +3457,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationAssociationTransportationAssociation"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationAssociationTransportationAssociation"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -2937,8 +3486,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -2952,19 +3505,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationRelationshipTransportationRelationshipClassCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -2975,7 +3538,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CLASS_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationRelationshipTransportationRelationshipClassCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationRelationshipTransportationRelationshipClassCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -3004,8 +3567,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3019,19 +3586,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -3042,7 +3619,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationRelationshipTransportationRelationshipMoodCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -3071,8 +3648,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3086,19 +3667,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationRelationshipTransportationRelationshipCodeP(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -3109,7 +3700,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE_P,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationRelationshipTransportationRelationshipCodeP"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationRelationshipTransportationRelationshipCodeP"),
 						 new Object [] { eObject }));
 				}
 				
@@ -3151,8 +3742,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3166,19 +3761,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationRelationshipTransportationRelationshipCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -3196,7 +3801,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationRelationshipTransportationRelationshipCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationRelationshipTransportationRelationshipCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -3227,8 +3832,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3242,19 +3851,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationRelationshipTransportationRelationshipValue(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -3265,7 +3884,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationRelationshipTransportationRelationshipValue"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationRelationshipTransportationRelationshipValue"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -3294,8 +3913,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3309,19 +3932,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationRelationshipTransportationRelationshipValueP(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -3332,7 +3965,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationRelationshipTransportationRelationshipValueP"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationRelationshipTransportationRelationshipValueP"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -3361,8 +3994,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3376,19 +4013,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationRelationshipTypeCode(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -3399,7 +4046,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TYPE_CODE,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationRelationshipTypeCode"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationRelationshipTypeCode"),
 						 new Object [] { eObject }));
 				}
 				 
@@ -3428,8 +4075,12 @@ public class InjuryOperations extends OrganizerOperations {
 	 * @ordered
 	 */
 	
-	protected static Query<?, ?, ?> VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY;
 	
+	
+	
+	
+	
+	protected static ThreadLocal< Query<?, ?, ?> > VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY= new ThreadLocal< Query<?, ?, ?> >();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -3443,19 +4094,29 @@ public class InjuryOperations extends OrganizerOperations {
 	 */
 	@SuppressWarnings("unchecked")
 	public static  boolean validateInjuryComponentTransportationRelationshipTransportationRelationship(Injury injury, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.INJURY);
 			try {
 				OCLExpression<EClassifier> oclExpression = helper.createQuery(VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY = EOCL_ENV.createQuery(oclExpression);
+				VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.set(EOCL_ENV.get().createQuery(oclExpression));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.evaluate(injury);		
+			}
+		 
+		Object oclResult = VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_QRY.get().evaluate(injury);		
 		if (oclResult != null && oclResult instanceof Collection) {
 			Collection<? extends EObject> oclResultSet = (Collection<? extends EObject>) oclResult;
   			
@@ -3466,7 +4127,7 @@ public class InjuryOperations extends OrganizerOperations {
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.INJURY__INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP,
-						 VsdrPlugin.INSTANCE.getString("InjuryComponentTransportationRelationshipTransportationRelationship"),
+						 VsdrPlugin.INSTANCE.getString("InjuryInjuryComponentTransportationRelationshipTransportationRelationship"),
 						 new Object [] { eObject }));
 				}
 				 

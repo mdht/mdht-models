@@ -39,6 +39,13 @@ import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
  * @generated
  */
 public class ProblemHealthStatusObservationOperations extends StatusObservationOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56,9 +63,9 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '11323-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '11323-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateProblemHealthStatusObservationCode(ProblemHealthStatusObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Problem Health Status Observation Code</em>}' invariant operation.
@@ -69,7 +76,7 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,23 +93,30 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 			ProblemHealthStatusObservation problemHealthStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_HEALTH_STATUS_OBSERVATION);
 			try {
-				VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemHealthStatusObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PROBLEM_HEALTH_STATUS_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemHealthStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.PROBLEM_HEALTH_STATUS_OBSERVATION__PROBLEM_HEALTH_STATUS_OBSERVATION_CODE,
-					CCDPlugin.INSTANCE.getString("ProblemHealthStatusObservationCode"),
-					new Object[] { problemHealthStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.PROBLEM_HEALTH_STATUS_OBSERVATION__PROBLEM_HEALTH_STATUS_OBSERVATION_CODE,
+						CCDPlugin.INSTANCE.getString(
+							"ProblemHealthStatusObservationProblemHealthStatusObservationCode"),
+						new Object[] { problemHealthStatusObservation }));
 			}
 
 			return false;
@@ -128,7 +142,7 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,23 +158,28 @@ public class ProblemHealthStatusObservationOperations extends StatusObservationO
 			ProblemHealthStatusObservation problemHealthStatusObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.PROBLEM_HEALTH_STATUS_OBSERVATION);
 			try {
-				VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			problemHealthStatusObservation)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_STATUS_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				problemHealthStatusObservation)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.PROBLEM_HEALTH_STATUS_OBSERVATION__STATUS_OBSERVATION_TEMPLATE_ID,
-					CCDPlugin.INSTANCE.getString("StatusObservationTemplateId"),
-					new Object[] { problemHealthStatusObservation }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.PROBLEM_HEALTH_STATUS_OBSERVATION__STATUS_OBSERVATION_TEMPLATE_ID,
+						CCDPlugin.INSTANCE.getString("ProblemHealthStatusObservationStatusObservationTemplateId"),
+						new Object[] { problemHealthStatusObservation }));
 			}
 
 			return false;

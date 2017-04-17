@@ -14,23 +14,23 @@ import java.io.FileInputStream;
 
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.uml.cda.AssignedAuthor;
-import org.openhealthtools.mdht.uml.cda.Author;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.Patient;
-import org.openhealthtools.mdht.uml.cda.PatientRole;
+import org.eclipse.mdht.uml.cda.AssignedAuthor;
+import org.eclipse.mdht.uml.cda.Author;
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.uml.cda.Patient;
+import org.eclipse.mdht.uml.cda.PatientRole;
+import org.eclipse.mdht.uml.cda.util.CDADiagnostic;
+import org.eclipse.mdht.uml.cda.util.CDAUtil;
+import org.eclipse.mdht.uml.cda.util.ValidationResult;
+import org.eclipse.mdht.uml.hl7.datatypes.AD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.PN;
+import org.eclipse.mdht.uml.hl7.vocab.NullFlavor;
+import org.eclipse.mdht.uml.hl7.vocab.PostalAddressUse;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolFactory;
 import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
 import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument;
-import org.openhealthtools.mdht.uml.cda.util.CDADiagnostic;
-import org.openhealthtools.mdht.uml.cda.util.CDAUtil;
-import org.openhealthtools.mdht.uml.cda.util.ValidationResult;
-import org.openhealthtools.mdht.uml.hl7.datatypes.AD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PN;
-import org.openhealthtools.mdht.uml.hl7.vocab.NullFlavor;
-import org.openhealthtools.mdht.uml.hl7.vocab.PostalAddressUse;
 
 public class TestDischargeSummary {
 	public static void main(String[] args) {
@@ -69,8 +69,9 @@ public class TestDischargeSummary {
 			CDAUtil.load((new FileInputStream(path + fileName + ".xml")), result);
 			for (Diagnostic dq : result.getErrorDiagnostics()) {
 				CDADiagnostic cdaDiagnosticq = new CDADiagnostic(dq);
-				sb.append("ERROR|" + cdaDiagnosticq.getMessage() + "|" + cdaDiagnosticq.getPath() + "|" +
-						cdaDiagnosticq.getCode() + "|" + cdaDiagnosticq.getSource());
+				sb.append(
+					"ERROR|" + cdaDiagnosticq.getMessage() + "|" + cdaDiagnosticq.getPath() + "|" +
+							cdaDiagnosticq.getCode() + "|" + cdaDiagnosticq.getSource());
 				sb.append("\n");
 			}
 		} catch (Exception e) {

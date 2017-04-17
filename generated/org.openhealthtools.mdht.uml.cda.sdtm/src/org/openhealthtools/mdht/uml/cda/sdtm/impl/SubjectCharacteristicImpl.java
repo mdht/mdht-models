@@ -2,20 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -28,19 +20,16 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubjectCharacteristic;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.SubjectCharacteristicOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Subject Characteristic</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class SubjectCharacteristicImpl extends ObservationImpl implements SubjectCharacteristic {
+public class SubjectCharacteristicImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements SubjectCharacteristic {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -347,7 +336,7 @@ public class SubjectCharacteristicImpl extends ObservationImpl implements Subjec
 	 */
 	@Override
 	public SubjectCharacteristic init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -355,8 +344,8 @@ public class SubjectCharacteristicImpl extends ObservationImpl implements Subjec
      * @generated
      */
     @Override
-	public SubjectCharacteristic init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public SubjectCharacteristic init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //SubjectCharacteristicImpl

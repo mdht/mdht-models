@@ -2,20 +2,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
 import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanDisposition;
@@ -24,19 +16,16 @@ import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.NonhumanDispositionOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Nonhuman Disposition</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NonhumanDispositionImpl extends ActImpl implements NonhumanDisposition {
+public class NonhumanDispositionImpl extends org.eclipse.mdht.uml.cda.impl.ActImpl implements NonhumanDisposition {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -243,7 +232,7 @@ public class NonhumanDispositionImpl extends ActImpl implements NonhumanDisposit
 	 */
 	@Override
 	public NonhumanDisposition init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -251,8 +240,8 @@ public class NonhumanDispositionImpl extends ActImpl implements NonhumanDisposit
      * @generated
      */
     @Override
-	public NonhumanDisposition init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public NonhumanDisposition init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //NonhumanDispositionImpl

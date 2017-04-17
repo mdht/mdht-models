@@ -16,17 +16,17 @@ import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClassifier;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.ParticipantRole;
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 import org.eclipse.ocl.expressions.OCLExpression;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPlugin;
 import org.openhealthtools.mdht.uml.cda.ccd.PolicyActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -60,6 +60,13 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  * @generated
  */
 public class PolicyActivityOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -87,7 +94,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -102,23 +109,29 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityPayerEntityIsRequired(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED,
-					CCDPlugin.INSTANCE.getString("PolicyActivityPayerEntityIsRequired"),
-					new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_ENTITY_IS_REQUIRED,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityPayerEntityIsRequired"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -144,7 +157,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -159,23 +172,29 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityCoveredPartyIsRequired(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED,
-					CCDPlugin.INSTANCE.getString("PolicyActivityCoveredPartyIsRequired"),
-					new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERED_PARTY_IS_REQUIRED,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoveredPartyIsRequired"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -191,8 +210,8 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV"
-			+ "  implies not part.time.oclIsUndefined())";
+	protected static final String VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::COV" +
+			"  implies not part.time.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePolicyActivityCoveredPartyTime(PolicyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Covered Party Time</em>}' invariant operation.
@@ -202,7 +221,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,22 +236,28 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityCoveredPartyTime(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_COVERED_PARTY_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERED_PARTY_TIME,
-					CCDPlugin.INSTANCE.getString("PolicyActivityCoveredPartyTime"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERED_PARTY_TIME,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoveredPartyTime"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -258,7 +283,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,22 +298,29 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivitySubscriberIsAllowed(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED,
-					CCDPlugin.INSTANCE.getString("PolicyActivitySubscriberIsAllowed"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_SUBSCRIBER_IS_ALLOWED,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivitySubscriberIsAllowed"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -304,8 +336,8 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD"
-			+ "  implies not part.time.oclIsUndefined())";
+	protected static final String VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.participant->one(part : cda::Participant2 | part.typeCode = vocab::ParticipationType::HLD" +
+			"  implies not part.time.oclIsUndefined())";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePolicyActivitySubscriberTime(PolicyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Subscriber Time</em>}' invariant operation.
@@ -315,7 +347,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -330,22 +362,27 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivitySubscriberTime(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_SUBSCRIBER_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_SUBSCRIBER_TIME,
-					CCDPlugin.INSTANCE.getString("PolicyActivitySubscriberTime"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_SUBSCRIBER_TIME,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivitySubscriberTime"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -371,7 +408,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -386,23 +423,29 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityEntryRelationshipREFR(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR,
-					CCDPlugin.INSTANCE.getString("PolicyActivityEntryRelationshipREFR"),
-					new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ENTRY_RELATIONSHIP_REFR,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityEntryRelationshipREFR"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -418,8 +461,8 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)"
-			+ "  or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))";
+	protected static final String VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->forAll(rel : cda::EntryRelationship | rel.act.oclIsKindOf(ccd::AuthorizationActivity)" +
+			"  or rel.act.oclIsKindOf(ccd::CoveragePlanDescription))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePolicyActivityEntryRelationshipTarget(PolicyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Entry Relationship Target</em>}' invariant operation.
@@ -429,7 +472,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -444,23 +487,29 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityEntryRelationshipTarget(PolicyActivity policyActivity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET,
-					CCDPlugin.INSTANCE.getString("PolicyActivityEntryRelationshipTarget"),
-					new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ENTRY_RELATIONSHIP_TARGET,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityEntryRelationshipTarget"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -486,7 +535,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -501,22 +550,27 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityTemplateId(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_TEMPLATE_ID,
-					CCDPlugin.INSTANCE.getString("PolicyActivityTemplateId"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_TEMPLATE_ID,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityTemplateId"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -542,7 +596,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -557,22 +611,27 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityClassCode(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_CLASS_CODE,
-					CCDPlugin.INSTANCE.getString("PolicyActivityClassCode"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_CLASS_CODE,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityClassCode"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -598,7 +657,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -613,22 +672,27 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityMoodCode(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_POLICY_ACTIVITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_MOOD_CODE,
-					CCDPlugin.INSTANCE.getString("PolicyActivityMoodCode"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_MOOD_CODE,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityMoodCode"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -654,7 +718,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -669,20 +733,27 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityId(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_POLICY_ACTIVITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE, CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ID,
-					CCDPlugin.INSTANCE.getString("PolicyActivityId"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_ID,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityId"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -698,8 +769,8 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and "
-			+ "let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
+	protected static final String VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined() and self.statusCode.oclIsKindOf(datatypes::CS) and " +
+			"let value : datatypes::CS = self.statusCode.oclAsType(datatypes::CS) in " + "value.code = 'completed')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePolicyActivityStatusCode(PolicyActivity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Policy Activity Status Code</em>}' invariant operation.
@@ -709,7 +780,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -724,22 +795,27 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityStatusCode(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_STATUS_CODE,
-					CCDPlugin.INSTANCE.getString("PolicyActivityStatusCode"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_STATUS_CODE,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityStatusCode"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -765,7 +841,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -780,22 +856,27 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivityPayerEntity(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_PAYER_ENTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_ENTITY,
-					CCDPlugin.INSTANCE.getString("PolicyActivityPayerEntity"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_PAYER_ENTITY,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityPayerEntity"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -821,7 +902,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -833,25 +914,30 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * <!-- end-model-doc -->
 	 * @generated
 	 */
-	public static boolean validatePolicyActivityCoveredParty(PolicyActivity policyActivity,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validatePolicyActivityCoveredParty(PolicyActivity policyActivity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_COVERED_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERED_PARTY,
-					CCDPlugin.INSTANCE.getString("PolicyActivityCoveredParty"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_COVERED_PARTY,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivityCoveredParty"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -877,7 +963,7 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -892,22 +978,27 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	public static boolean validatePolicyActivitySubscriber(PolicyActivity policyActivity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CCDPackage.Literals.POLICY_ACTIVITY);
 			try {
-				VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			policyActivity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_POLICY_ACTIVITY_SUBSCRIBER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(policyActivity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
-					CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_SUBSCRIBER,
-					CCDPlugin.INSTANCE.getString("PolicyActivitySubscriber"), new Object[] { policyActivity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, CCDValidator.DIAGNOSTIC_SOURCE,
+						CCDValidator.POLICY_ACTIVITY__POLICY_ACTIVITY_SUBSCRIBER,
+						CCDPlugin.INSTANCE.getString("PolicyActivityPolicyActivitySubscriber"),
+						new Object[] { policyActivity }));
 			}
 
 			return false;
@@ -941,8 +1032,10 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 	public static AssignedEntity getPayerEntity(PolicyActivity policyActivity) {
+
 		if (GET_PAYER_ENTITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.POLICY_ACTIVITY, CCDPackage.Literals.POLICY_ACTIVITY.getEAllOperations().get(66));
 			try {
@@ -951,7 +1044,8 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PAYER_ENTITY__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PAYER_ENTITY__EOCL_QRY);
 		return (AssignedEntity) query.evaluate(policyActivity);
 	}
 
@@ -981,8 +1075,10 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 	public static ParticipantRole getCoveredParty(PolicyActivity policyActivity) {
+
 		if (GET_COVERED_PARTY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.POLICY_ACTIVITY, CCDPackage.Literals.POLICY_ACTIVITY.getEAllOperations().get(67));
 			try {
@@ -991,7 +1087,8 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COVERED_PARTY__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COVERED_PARTY__EOCL_QRY);
 		return (ParticipantRole) query.evaluate(policyActivity);
 	}
 
@@ -1021,8 +1118,10 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 */
 	public static ParticipantRole getSubscriber(PolicyActivity policyActivity) {
+
 		if (GET_SUBSCRIBER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				CCDPackage.Literals.POLICY_ACTIVITY, CCDPackage.Literals.POLICY_ACTIVITY.getEAllOperations().get(68));
 			try {
@@ -1031,7 +1130,8 @@ public class PolicyActivityOperations extends ClinicalStatementOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUBSCRIBER__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUBSCRIBER__EOCL_QRY);
 		return (ParticipantRole) query.evaluate(policyActivity);
 	}
 

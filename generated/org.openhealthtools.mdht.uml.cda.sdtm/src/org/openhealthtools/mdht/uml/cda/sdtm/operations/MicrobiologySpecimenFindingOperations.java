@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -35,7 +28,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SpecimenInformation;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -86,7 +78,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOperations {
+public class MicrobiologySpecimenFindingOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -115,7 +115,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -130,25 +130,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingTemplateId(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -176,7 +186,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -191,25 +201,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingClassCode(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -237,7 +257,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -252,25 +272,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingMoodCode(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -298,7 +328,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -313,25 +343,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingId(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -359,7 +399,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -374,25 +414,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingCodeP(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -422,7 +472,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -437,25 +487,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingCode(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -483,7 +543,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -498,25 +558,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingStatusCode(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -544,7 +614,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -559,25 +629,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingValue(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -605,7 +685,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -620,25 +700,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingMethodCodeP(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -668,7 +758,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -683,25 +773,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingMethodCode(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_METHOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -729,7 +829,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -744,25 +844,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingInterpretationCodeP(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -792,7 +902,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -807,25 +917,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingInterpretationCode(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -853,7 +973,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -868,25 +988,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingGroupIdentifier(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -914,7 +1044,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -929,25 +1059,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingStudyTestPerformer(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_STUDY_TEST_PERFORMER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -975,7 +1115,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -990,25 +1130,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingNonPerformanceReason(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -1036,7 +1186,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1051,25 +1201,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingSpecimenInformation(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_SPECIMEN_INFORMATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -1097,7 +1257,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1112,25 +1272,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingComment(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -1158,7 +1328,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1173,25 +1343,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingDomainAssignment(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -1219,7 +1399,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1234,25 +1414,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingRelatedRecord(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -1280,7 +1470,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1295,25 +1485,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingSupplementalValue(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -1341,7 +1541,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1356,25 +1556,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingCategory(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -1402,7 +1612,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1417,25 +1627,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingSubCategory(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -1463,7 +1683,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1478,25 +1698,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingResultCategory(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_RESULT_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingResultCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingResultCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -1524,7 +1754,7 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1539,25 +1769,35 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  boolean validateMicrobiologySpecimenFindingFindingAbout(MicrobiologySpecimenFinding microbiologySpecimenFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING);
 			try {
-				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(microbiologySpecimenFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(microbiologySpecimenFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.MICROBIOLOGY_SPECIMEN_FINDING__MICROBIOLOGY_SPECIMEN_FINDING_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "MicrobiologySpecimenFindingMicrobiologySpecimenFindingFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(microbiologySpecimenFinding, context) }),
 						 new Object [] { microbiologySpecimenFinding }));
 			}
 			 
@@ -1593,8 +1833,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(75));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1602,8 +1847,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(microbiologySpecimenFinding);
 	}
 
@@ -1634,8 +1880,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(76));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1643,8 +1894,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(microbiologySpecimenFinding);
 	}
 
@@ -1675,8 +1927,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  SpecimenInformation getSpecimenInformation(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_SPECIMEN_INFORMATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(77));
 			try {
 				GET_SPECIMEN_INFORMATION__EOCL_QRY = helper.createQuery(GET_SPECIMEN_INFORMATION__EOCL_EXP);
@@ -1684,8 +1941,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
 		return (SpecimenInformation) query.evaluate(microbiologySpecimenFinding);
 	}
 
@@ -1716,8 +1974,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  EList<Comment> getComments(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(78));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1725,8 +1988,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(microbiologySpecimenFinding);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1759,8 +2023,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(79));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1768,8 +2037,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(microbiologySpecimenFinding);
 	}
 
@@ -1800,8 +2070,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(80));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1809,8 +2084,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(microbiologySpecimenFinding);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1843,8 +2119,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(81));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1852,8 +2133,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(microbiologySpecimenFinding);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -1886,8 +2168,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  Category getCategory(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(82));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -1895,8 +2182,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(microbiologySpecimenFinding);
 	}
 
@@ -1927,8 +2215,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  SubCategory getSubCategory(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(83));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -1936,8 +2229,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(microbiologySpecimenFinding);
 	}
 
@@ -1968,8 +2262,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  ResultCategory getResultCategory(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_RESULT_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(84));
 			try {
 				GET_RESULT_CATEGORY__EOCL_QRY = helper.createQuery(GET_RESULT_CATEGORY__EOCL_EXP);
@@ -1977,8 +2276,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RESULT_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESULT_CATEGORY__EOCL_QRY);
 		return (ResultCategory) query.evaluate(microbiologySpecimenFinding);
 	}
 
@@ -2009,8 +2309,13 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(MicrobiologySpecimenFinding microbiologySpecimenFinding) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING, SdtmPackage.Literals.MICROBIOLOGY_SPECIMEN_FINDING.getEAllOperations().get(85));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -2018,8 +2323,9 @@ public class MicrobiologySpecimenFindingOperations extends ClinicalStatementOper
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(microbiologySpecimenFinding);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

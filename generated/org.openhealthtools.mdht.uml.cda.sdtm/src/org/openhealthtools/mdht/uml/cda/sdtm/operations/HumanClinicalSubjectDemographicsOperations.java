@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -32,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StudyArm;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -79,7 +71,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatementOperations {
+public class HumanClinicalSubjectDemographicsOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -108,7 +108,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -123,25 +123,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsTemplateId(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -169,7 +179,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -184,25 +194,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsMoodCode(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -230,7 +250,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -245,25 +265,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsCodeP(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -293,7 +323,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -308,25 +338,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsCode(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -354,7 +394,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -369,25 +409,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsDataCollection(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DATA_COLLECTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -415,7 +465,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -430,25 +480,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsStudyArm(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_STUDY_ARM,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsStudyArm", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsStudyArm", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -476,7 +536,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -491,25 +551,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsParticipant(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_PARTICIPANT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsParticipant", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsParticipant", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -537,7 +607,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -552,25 +622,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsComment(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -598,7 +678,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -613,25 +693,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsDomainAssignment(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -659,7 +749,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -674,25 +764,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsRelatedRecord(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -720,7 +820,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -735,25 +835,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsSupplementalValue(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -781,7 +891,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -796,25 +906,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsReferencePeriod(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_REFERENCE_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -842,7 +962,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -857,25 +977,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsFindingAbout(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -903,7 +1033,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -918,25 +1048,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeClassCode(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAgeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -964,7 +1104,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -979,25 +1119,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeMoodCode(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAgeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -1025,7 +1175,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1040,25 +1190,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCodeP(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -1088,7 +1248,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1103,25 +1263,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCode(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -1149,7 +1319,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1164,25 +1334,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeValue(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAgeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsAgeAssociationSubjectAgeValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -1210,7 +1390,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1225,25 +1405,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationTypeCode(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsAgeAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -1271,7 +1461,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1286,25 +1476,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsAgeAssociationSubjectAge(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_AGE_ASSOCIATION_SUBJECT_AGE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsAgeAssociationSubjectAge", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsAgeAssociationSubjectAge", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -1332,7 +1532,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1347,25 +1547,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsLocationParticipationStudySiteClassCode(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsLocationParticipationStudySiteClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsLocationParticipationStudySiteClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -1393,7 +1603,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1408,25 +1618,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsLocationParticipationStudySiteAddr(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_STUDY_SITE_ADDR,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsLocationParticipationStudySiteAddr", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsLocationParticipationStudySiteAddr", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -1454,7 +1674,7 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1469,25 +1689,35 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  boolean validateHumanClinicalSubjectDemographicsLocationParticipationTypeCode(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS);
 			try {
-				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(humanClinicalSubjectDemographics)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(humanClinicalSubjectDemographics)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS__HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS_LOCATION_PARTICIPATION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsLocationParticipationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "HumanClinicalSubjectDemographicsHumanClinicalSubjectDemographicsLocationParticipationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(humanClinicalSubjectDemographics, context) }),
 						 new Object [] { humanClinicalSubjectDemographics }));
 			}
 			 
@@ -1523,8 +1753,13 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  DataCollection getDataCollection(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics) {
+	
+	
+	
 		if (GET_DATA_COLLECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS, SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS.getEAllOperations().get(74));
 			try {
 				GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);
@@ -1532,8 +1767,9 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DATA_COLLECTION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DATA_COLLECTION__EOCL_QRY);
 		return (DataCollection) query.evaluate(humanClinicalSubjectDemographics);
 	}
 
@@ -1564,8 +1800,13 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  EList<StudyArm> getStudyArms(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics) {
+	
+	
+	
 		if (GET_STUDY_ARMS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS, SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS.getEAllOperations().get(75));
 			try {
 				GET_STUDY_ARMS__EOCL_QRY = helper.createQuery(GET_STUDY_ARMS__EOCL_EXP);
@@ -1573,8 +1814,9 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_ARMS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_ARMS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<StudyArm> result = (Collection<StudyArm>) query.evaluate(humanClinicalSubjectDemographics);
 		return new BasicEList.UnmodifiableEList<StudyArm>(result.size(), result.toArray());
@@ -1607,8 +1849,13 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  EList<Comment> getComments(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS, SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS.getEAllOperations().get(76));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1616,8 +1863,9 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(humanClinicalSubjectDemographics);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1650,8 +1898,13 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS, SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS.getEAllOperations().get(77));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1659,8 +1912,9 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(humanClinicalSubjectDemographics);
 	}
 
@@ -1691,8 +1945,13 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS, SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS.getEAllOperations().get(78));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1700,8 +1959,9 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(humanClinicalSubjectDemographics);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1734,8 +1994,13 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS, SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS.getEAllOperations().get(79));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1743,8 +2008,9 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(humanClinicalSubjectDemographics);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -1777,8 +2043,13 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  ReferencePeriod getReferencePeriod(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics) {
+	
+	
+	
 		if (GET_REFERENCE_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS, SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS.getEAllOperations().get(80));
 			try {
 				GET_REFERENCE_PERIOD__EOCL_QRY = helper.createQuery(GET_REFERENCE_PERIOD__EOCL_EXP);
@@ -1786,8 +2057,9 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_REFERENCE_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_REFERENCE_PERIOD__EOCL_QRY);
 		return (ReferencePeriod) query.evaluate(humanClinicalSubjectDemographics);
 	}
 
@@ -1818,8 +2090,13 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(HumanClinicalSubjectDemographics humanClinicalSubjectDemographics) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS, SdtmPackage.Literals.HUMAN_CLINICAL_SUBJECT_DEMOGRAPHICS.getEAllOperations().get(81));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -1827,8 +2104,9 @@ public class HumanClinicalSubjectDemographicsOperations extends ClinicalStatemen
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(humanClinicalSubjectDemographics);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

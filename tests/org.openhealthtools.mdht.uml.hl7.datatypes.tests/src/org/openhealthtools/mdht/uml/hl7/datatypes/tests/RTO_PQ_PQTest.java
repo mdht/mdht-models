@@ -11,12 +11,12 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.PQ;
+import org.eclipse.mdht.uml.hl7.datatypes.RTO_PQ_PQ;
+import org.eclipse.mdht.uml.hl7.datatypes.operations.RTO_PQ_PQOperations;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.PQ;
-import org.openhealthtools.mdht.uml.hl7.datatypes.RTO_PQ_PQ;
-import org.openhealthtools.mdht.uml.hl7.datatypes.operations.RTO_PQ_PQOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,8 +42,8 @@ public class RTO_PQ_PQTest extends CDAValidationTest {
 	@Test
 	public void testValidateDenominator() {
 		OperationsTestCase<RTO_PQ_PQ> validateDenominatorTestCase = new OperationsTestCase<RTO_PQ_PQ>(
-			"validateDenominator",
-			operationsForOCL.getOCLValue("VALIDATE_DENOMINATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			"validateDenominator", operationsForOCL.getOCLValue("VALIDATE_DENOMINATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 			{
 				skipNullTest();
 			}
@@ -127,8 +127,7 @@ public class RTO_PQ_PQTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

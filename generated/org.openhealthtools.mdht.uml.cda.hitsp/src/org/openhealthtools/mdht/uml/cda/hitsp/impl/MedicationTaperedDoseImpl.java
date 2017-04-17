@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationTaperedDose;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.MedicationTaperedDoseOperations;
@@ -26,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.TaperedDoseOperations;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Tapered Dose</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,7 +54,8 @@ public class MedicationTaperedDoseImpl extends MedicationImpl implements Medicat
 	 */
 	public boolean validateTaperedDoseTaperedDosingSubstanceAdministration(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return TaperedDoseOperations.validateTaperedDoseTaperedDosingSubstanceAdministration(this, diagnostics, context);
+		return TaperedDoseOperations.validateTaperedDoseTaperedDosingSubstanceAdministration(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -87,7 +84,7 @@ public class MedicationTaperedDoseImpl extends MedicationImpl implements Medicat
 	 */
 	@Override
 	public MedicationTaperedDose init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -96,8 +93,9 @@ public class MedicationTaperedDoseImpl extends MedicationImpl implements Medicat
 	 * @generated
 	 */
 	@Override
-	public MedicationTaperedDose init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public MedicationTaperedDose init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // MedicationTaperedDoseImpl

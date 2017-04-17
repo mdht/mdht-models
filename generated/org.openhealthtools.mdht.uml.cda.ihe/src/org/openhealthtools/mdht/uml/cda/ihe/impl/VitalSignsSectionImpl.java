@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.VitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.VitalSignsSectionOperations;
@@ -25,46 +25,44 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.VitalSignsSectionOperatio
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Vital Signs Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.VitalSignsSectionImpl implements
-		VitalSignsSection {
+public class VitalSignsSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.VitalSignsSectionImpl
+		implements VitalSignsSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected VitalSignsSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.VITAL_SIGNS_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIHEVitalSignsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return VitalSignsSectionOperations.validateIHEVitalSignsSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public VitalSignsSection init() {
 		return Initializer.Util.init(this);

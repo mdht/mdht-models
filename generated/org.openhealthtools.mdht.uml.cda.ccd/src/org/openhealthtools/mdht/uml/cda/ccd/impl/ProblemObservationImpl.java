@@ -16,21 +16,19 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.AgeObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemHealthStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ProblemObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -59,7 +57,8 @@ public class ProblemObservationImpl extends ObservationImpl implements ProblemOb
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemObservationInformationSource(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemObservationInformationSource(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemObservationOperations.validateProblemObservationInformationSource(this, diagnostics, context);
 	}
 

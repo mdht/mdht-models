@@ -15,8 +15,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.ClinicalDocument;
 
 /**
  * <!-- begin-user-doc -->
@@ -78,7 +78,8 @@ public interface ContinuityOfCareDocument extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.languageCode.matches(\'code\',\'(([a-z]{2})(-[A-Z]{2})?)\')'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocumentLanguageCodeFormat(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateContinuityOfCareDocumentLanguageCodeFormat(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -266,7 +267,8 @@ public interface ContinuityOfCareDocument extends ClinicalDocument {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(ccd::MedicationsSection))'"
 	 * @generated
 	 */
-	boolean validateContinuityOfCareDocumentMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateContinuityOfCareDocumentMedicationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

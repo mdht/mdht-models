@@ -1,8 +1,4 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,13 +7,19 @@ import java.io.IOException;
 
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.URI;
+
 import org.eclipse.emf.ecore.EObject;
+
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
+
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+
 import org.eclipse.emf.ecore.util.Diagnostician;
+
 import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
-import org.openhealthtools.mdht.uml.cda.vsdr.Reportingdeathinformationfromaclinicalsettingtovitalrecords;
+
+import org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
 
@@ -58,7 +60,7 @@ public class VsdrExample {
 			System.out.println("Enter a list of file paths or URIs that have content like this:");
 			try {
 				Resource resource = resourceSet.createResource(URI.createURI("http:///My.vsdr"));
-				Reportingdeathinformationfromaclinicalsettingtovitalrecords root = VsdrFactory.eINSTANCE.createReportingdeathinformationfromaclinicalsettingtovitalrecords();
+				ReportingDeathInformationfromaClinicalSettingtoVitalRecords root = VsdrFactory.eINSTANCE.createReportingDeathInformationfromaClinicalSettingtoVitalRecords();
 				resource.getContents().add(root);
 				resource.save(System.out, null);
 			}

@@ -51,6 +51,13 @@ import org.openhealthtools.mdht.uml.cda.cdt.util.CDTValidator;
  * @generated
  */
 public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -78,7 +85,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -93,23 +100,29 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentPatientRoleHasId(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentPatientRoleHasId"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_PATIENT_ROLE_HAS_ID,
+						CDTPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentPatientRoleHasId"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -135,7 +148,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,24 +163,29 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentAssignedAuthorHasAddr(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentAssignedAuthorHasAddr"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_ADDR,
+						CDTPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentAssignedAuthorHasAddr"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -193,7 +211,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -208,24 +226,30 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentAssignedAuthorHasTelecom(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentAssignedAuthorHasTelecom"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_ASSIGNED_AUTHOR_HAS_TELECOM,
+						CDTPlugin.INSTANCE.getString(
+							"UnstructuredDocumentUnstructuredDocumentAssignedAuthorHasTelecom"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -251,7 +275,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -266,24 +290,30 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentHasRepresentedCustodianOrganization(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganization"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION,
+						CDTPlugin.INSTANCE.getString(
+							"UnstructuredDocumentUnstructuredDocumentHasRepresentedCustodianOrganization"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -309,7 +339,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -324,25 +354,30 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationId(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationId"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ID,
+						CDTPlugin.INSTANCE.getString(
+							"UnstructuredDocumentUnstructuredDocumentHasRepresentedCustodianOrganizationId"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -368,7 +403,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -383,25 +418,30 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationName(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationName"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_NAME,
+						CDTPlugin.INSTANCE.getString(
+							"UnstructuredDocumentUnstructuredDocumentHasRepresentedCustodianOrganizationName"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -427,7 +467,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -442,25 +482,30 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationTelecom(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationTelecom"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_TELECOM,
+						CDTPlugin.INSTANCE.getString(
+							"UnstructuredDocumentUnstructuredDocumentHasRepresentedCustodianOrganizationTelecom"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -486,7 +531,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -501,25 +546,30 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentHasRepresentedCustodianOrganizationAddr(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasRepresentedCustodianOrganizationAddr"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_REPRESENTED_CUSTODIAN_ORGANIZATION_ADDR,
+						CDTPlugin.INSTANCE.getString(
+							"UnstructuredDocumentUnstructuredDocumentHasRepresentedCustodianOrganizationAddr"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -545,7 +595,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -560,23 +610,29 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentHasNonXMLBodyText(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasNonXMLBodyText"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_NON_XML_BODY_TEXT,
+						CDTPlugin.INSTANCE.getString("UnstructuredDocumentUnstructuredDocumentHasNonXMLBodyText"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -602,7 +658,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -617,24 +673,30 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentHasTextReferenceOrRepresentation(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasTextReferenceOrRepresentation"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_REFERENCE_OR_REPRESENTATION,
+						CDTPlugin.INSTANCE.getString(
+							"UnstructuredDocumentUnstructuredDocumentHasTextReferenceOrRepresentation"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -660,7 +722,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -675,24 +737,30 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateUnstructuredDocumentHasTextMediaTypeValueSet(
 			UnstructuredDocument unstructuredDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET,
-					CDTPlugin.INSTANCE.getString("UnstructuredDocumentHasTextMediaTypeValueSet"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__UNSTRUCTURED_DOCUMENT_HAS_TEXT_MEDIA_TYPE_VALUE_SET,
+						CDTPlugin.INSTANCE.getString(
+							"UnstructuredDocumentUnstructuredDocumentHasTextMediaTypeValueSet"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -719,7 +787,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -735,23 +803,29 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateGeneralHeaderConstraintsCustodian(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GENERAL_HEADER_CONSTRAINTS_CUSTODIAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_CUSTODIAN,
-					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsCustodian"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_CUSTODIAN,
+						CDTPlugin.INSTANCE.getString("UnstructuredDocumentGeneralHeaderConstraintsCustodian"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -777,7 +851,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @generated
 	 * @ordered
 	 */
-	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -792,23 +866,29 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateGeneralHeaderConstraintsTemplateId(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
-					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsTemplateId"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID,
+						CDTPlugin.INSTANCE.getString("UnstructuredDocumentGeneralHeaderConstraintsTemplateId"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;
@@ -835,7 +915,7 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -851,23 +931,29 @@ public class UnstructuredDocumentOperations extends GeneralHeaderConstraintsOper
 	public static boolean validateGeneralHeaderConstraintsEffectiveTime(UnstructuredDocument unstructuredDocument,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(CDTPackage.Literals.UNSTRUCTURED_DOCUMENT);
 			try {
-				VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unstructuredDocument)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				unstructuredDocument)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
-					CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME,
-					CDTPlugin.INSTANCE.getString("GeneralHeaderConstraintsEffectiveTime"),
-					new Object[] { unstructuredDocument }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, CDTValidator.DIAGNOSTIC_SOURCE,
+						CDTValidator.UNSTRUCTURED_DOCUMENT__GENERAL_HEADER_CONSTRAINTS_EFFECTIVE_TIME,
+						CDTPlugin.INSTANCE.getString("UnstructuredDocumentGeneralHeaderConstraintsEffectiveTime"),
+						new Object[] { unstructuredDocument }));
 			}
 
 			return false;

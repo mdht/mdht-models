@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.LastMenstrualPeriodDate;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -39,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperations {
+public class LastMenstrualPeriodDateOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +73,7 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,27 +89,34 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	public static boolean validateLastMenstrualPeriodDateTemplateId(LastMenstrualPeriodDate lastMenstrualPeriodDate,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LAST_MENSTRUAL_PERIOD_DATE);
 			try {
-				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			lastMenstrualPeriodDate)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				lastMenstrualPeriodDate)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LastMenstrualPeriodDateTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									lastMenstrualPeriodDate, context) }), new Object[] { lastMenstrualPeriodDate }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LastMenstrualPeriodDateLastMenstrualPeriodDateTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										lastMenstrualPeriodDate, context) }),
+						new Object[] { lastMenstrualPeriodDate }));
 			}
 
 			return false;
@@ -131,7 +143,7 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,27 +159,34 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	public static boolean validateLastMenstrualPeriodDateClassCode(LastMenstrualPeriodDate lastMenstrualPeriodDate,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LAST_MENSTRUAL_PERIOD_DATE);
 			try {
-				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			lastMenstrualPeriodDate)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				lastMenstrualPeriodDate)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LastMenstrualPeriodDateClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									lastMenstrualPeriodDate, context) }), new Object[] { lastMenstrualPeriodDate }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LastMenstrualPeriodDateLastMenstrualPeriodDateClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										lastMenstrualPeriodDate, context) }),
+						new Object[] { lastMenstrualPeriodDate }));
 			}
 
 			return false;
@@ -194,7 +213,7 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -210,27 +229,34 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	public static boolean validateLastMenstrualPeriodDateMoodCode(LastMenstrualPeriodDate lastMenstrualPeriodDate,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LAST_MENSTRUAL_PERIOD_DATE);
 			try {
-				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			lastMenstrualPeriodDate)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				lastMenstrualPeriodDate)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LastMenstrualPeriodDateMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									lastMenstrualPeriodDate, context) }), new Object[] { lastMenstrualPeriodDate }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LastMenstrualPeriodDateLastMenstrualPeriodDateMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										lastMenstrualPeriodDate, context) }),
+						new Object[] { lastMenstrualPeriodDate }));
 			}
 
 			return false;
@@ -257,7 +283,7 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,27 +299,33 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	public static boolean validateLastMenstrualPeriodDateCodeP(LastMenstrualPeriodDate lastMenstrualPeriodDate,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LAST_MENSTRUAL_PERIOD_DATE);
 			try {
-				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			lastMenstrualPeriodDate)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				lastMenstrualPeriodDate)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LastMenstrualPeriodDateCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									lastMenstrualPeriodDate, context) }), new Object[] { lastMenstrualPeriodDate }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LastMenstrualPeriodDateLastMenstrualPeriodDateCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										lastMenstrualPeriodDate, context) }),
+						new Object[] { lastMenstrualPeriodDate }));
 			}
 
 			return false;
@@ -309,9 +341,9 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '8665-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '8665-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLastMenstrualPeriodDateCode(LastMenstrualPeriodDate, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Last Menstrual Period Date Code</em>}' invariant operation.
@@ -322,7 +354,7 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -338,27 +370,33 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	public static boolean validateLastMenstrualPeriodDateCode(LastMenstrualPeriodDate lastMenstrualPeriodDate,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LAST_MENSTRUAL_PERIOD_DATE);
 			try {
-				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			lastMenstrualPeriodDate)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				lastMenstrualPeriodDate)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LastMenstrualPeriodDateCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									lastMenstrualPeriodDate, context) }), new Object[] { lastMenstrualPeriodDate }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LastMenstrualPeriodDateLastMenstrualPeriodDateCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										lastMenstrualPeriodDate, context) }),
+						new Object[] { lastMenstrualPeriodDate }));
 			}
 
 			return false;
@@ -385,7 +423,7 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -401,27 +439,33 @@ public class LastMenstrualPeriodDateOperations extends ClinicalStatementOperatio
 	public static boolean validateLastMenstrualPeriodDateValue(LastMenstrualPeriodDate lastMenstrualPeriodDate,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LAST_MENSTRUAL_PERIOD_DATE);
 			try {
-				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			lastMenstrualPeriodDate)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				lastMenstrualPeriodDate)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LastMenstrualPeriodDateValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									lastMenstrualPeriodDate, context) }), new Object[] { lastMenstrualPeriodDate }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LAST_MENSTRUAL_PERIOD_DATE__LAST_MENSTRUAL_PERIOD_DATE_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LastMenstrualPeriodDateLastMenstrualPeriodDateValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										lastMenstrualPeriodDate, context) }),
+						new Object[] { lastMenstrualPeriodDate }));
 			}
 
 			return false;

@@ -2,21 +2,14 @@
  */
 package org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
-import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HPOCPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareDocument;
-
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareSection;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingScreeningSection;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.ProblemsSection;
@@ -24,300 +17,297 @@ import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.ProcedureSection;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.RiskIndicatorsForHearingLossSection;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.operations.HearingPlanOfCareDocumentOperations;
 
-import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
-
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hearing Plan Of Care Document</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class HearingPlanOfCareDocumentImpl extends HearingPlanOfCareHeaderImpl implements HearingPlanOfCareDocument
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected HearingPlanOfCareDocumentImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return HPOCPackage.Literals.HEARING_PLAN_OF_CARE_DOCUMENT;
-  }
+		return HPOCPackage.Literals.HEARING_PLAN_OF_CARE_DOCUMENT;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentTypeIdRoot(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentTypeIdRoot(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentTypeIdRoot(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentTypeIdExtension(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentTypeIdExtension(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentTypeIdExtension(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentSetIdAndVersionNumber(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentSetIdAndVersionNumber(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentSetIdAndVersionNumber(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentRealmCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentRealmCode(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentRealmCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentRealmCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentRealmCodeP(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentRealmCodeP(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentTypeId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentTypeId(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentTypeId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentId(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentCode(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentTitle(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentTitle(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentTitle(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentEffectiveTime(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentEffectiveTime(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentConfidentialityCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentConfidentialityCode(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentConfidentialityCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentLanguageCode(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentLanguageCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentSetId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentSetId(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentSetId(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentVersionNumber(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentVersionNumber(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentVersionNumber(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentHearingPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentHearingPlanOfCareSection(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentHearingPlanOfCareSection(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentHearingScreeningSection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentHearingScreeningSection(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentHearingScreeningSection(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentRiskIndicatorsForHearingLossSection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentRiskIndicatorsForHearingLossSection(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentRiskIndicatorsForHearingLossSection(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentProblemsSection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentProblemsSection(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentProblemsSection(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareDocumentProcedureSection(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentProcedureSection(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareDocumentProcedureSection(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public HearingPlanOfCareSection getHearingPlanOfCareSection()
   {
-    return HearingPlanOfCareDocumentOperations.getHearingPlanOfCareSection(this);
-  }
+		return HearingPlanOfCareDocumentOperations.getHearingPlanOfCareSection(this);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public HearingScreeningSection getHearingScreeningSection()
   {
-    return HearingPlanOfCareDocumentOperations.getHearingScreeningSection(this);
-  }
+		return HearingPlanOfCareDocumentOperations.getHearingScreeningSection(this);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public RiskIndicatorsForHearingLossSection getRiskIndicatorsForHearingLossSection()
   {
-    return HearingPlanOfCareDocumentOperations.getRiskIndicatorsForHearingLossSection(this);
-  }
+		return HearingPlanOfCareDocumentOperations.getRiskIndicatorsForHearingLossSection(this);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public ProblemsSection getProblemsSection()
   {
-    return HearingPlanOfCareDocumentOperations.getProblemsSection(this);
-  }
+		return HearingPlanOfCareDocumentOperations.getProblemsSection(this);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public ProcedureSection getProcedureSection()
   {
-    return HearingPlanOfCareDocumentOperations.getProcedureSection(this);
-  }
+		return HearingPlanOfCareDocumentOperations.getProcedureSection(this);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean validateHearingPlanOfCareHeaderTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareHeaderTemplateId(this, diagnostics, context);
-  }
+		return HearingPlanOfCareDocumentOperations.validateHearingPlanOfCareHeaderTemplateId(this, diagnostics, context);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public HearingPlanOfCareDocument init() {
-      return Initializer.Util.init(this);
-  }
-    /**
+		/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HearingPlanOfCareDocument init() {
+	    return Initializer.Util.init(this);
+	}
+
+		/**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated

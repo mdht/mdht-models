@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.CodedVitalSignsSection;
 
 /**
@@ -25,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.CodedVitalSignsSection;
  *
  * <!-- begin-model-doc -->
  * <p>
- *     The Vital Signs Section contains information documenting the patient vital signs. 
+ *     The Vital Signs Section contains information documenting the patient vital signs.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -71,5 +69,6 @@ public interface VitalSignsSection extends CodedVitalSignsSection {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public VitalSignsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public VitalSignsSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // VitalSignsSection

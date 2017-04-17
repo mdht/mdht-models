@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofInfantsBornAlive;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.NumberofInfantsBornAliveOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,10 +48,11 @@ public class NumberofInfantsBornAliveTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNumberofInfantsBornAliveTemplateId() {
 		OperationsTestCase<NumberofInfantsBornAlive> validateNumberofInfantsBornAliveTemplateIdTestCase = new OperationsTestCase<NumberofInfantsBornAlive>(
-			"validateNumberofInfantsBornAliveTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBEROF_INFANTS_BORN_ALIVE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNumberofInfantsBornAliveTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBEROF_INFANTS_BORN_ALIVE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -79,10 +83,11 @@ public class NumberofInfantsBornAliveTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNumberofInfantsBornAliveClassCode() {
 		OperationsTestCase<NumberofInfantsBornAlive> validateNumberofInfantsBornAliveClassCodeTestCase = new OperationsTestCase<NumberofInfantsBornAlive>(
-			"validateNumberofInfantsBornAliveClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBEROF_INFANTS_BORN_ALIVE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNumberofInfantsBornAliveClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBEROF_INFANTS_BORN_ALIVE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -113,10 +118,11 @@ public class NumberofInfantsBornAliveTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNumberofInfantsBornAliveMoodCode() {
 		OperationsTestCase<NumberofInfantsBornAlive> validateNumberofInfantsBornAliveMoodCodeTestCase = new OperationsTestCase<NumberofInfantsBornAlive>(
-			"validateNumberofInfantsBornAliveMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBEROF_INFANTS_BORN_ALIVE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateNumberofInfantsBornAliveMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBEROF_INFANTS_BORN_ALIVE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -147,6 +153,7 @@ public class NumberofInfantsBornAliveTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNumberofInfantsBornAliveCodeP() {
 		OperationsTestCase<NumberofInfantsBornAlive> validateNumberofInfantsBornAliveCodePTestCase = new OperationsTestCase<NumberofInfantsBornAlive>(
 			"validateNumberofInfantsBornAliveCodeP",
@@ -181,6 +188,7 @@ public class NumberofInfantsBornAliveTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNumberofInfantsBornAliveCode() {
 		OperationsTestCase<NumberofInfantsBornAlive> validateNumberofInfantsBornAliveCodeTestCase = new OperationsTestCase<NumberofInfantsBornAlive>(
 			"validateNumberofInfantsBornAliveCode",
@@ -215,6 +223,7 @@ public class NumberofInfantsBornAliveTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateNumberofInfantsBornAliveValue() {
 		OperationsTestCase<NumberofInfantsBornAlive> validateNumberofInfantsBornAliveValueTestCase = new OperationsTestCase<NumberofInfantsBornAlive>(
 			"validateNumberofInfantsBornAliveValue",
@@ -300,8 +309,7 @@ public class NumberofInfantsBornAliveTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

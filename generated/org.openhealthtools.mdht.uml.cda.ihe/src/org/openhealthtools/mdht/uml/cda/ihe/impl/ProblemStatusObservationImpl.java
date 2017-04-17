@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.ProblemStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ProblemStatusObservationOperations;
@@ -25,37 +25,35 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ProblemStatusObservationO
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Status Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ProblemStatusObservationImpl extends
-		org.openhealthtools.mdht.uml.cda.ccd.impl.ProblemStatusObservationImpl implements ProblemStatusObservation {
+public class ProblemStatusObservationImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.ProblemStatusObservationImpl
+		implements ProblemStatusObservation {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ProblemStatusObservationImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.PROBLEM_STATUS_OBSERVATION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIHEProblemStatusObservationHasTextReference(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationHasTextReference(
@@ -63,10 +61,10 @@ public class ProblemStatusObservationImpl extends
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIHEProblemStatusObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationTemplateId(
@@ -74,19 +72,19 @@ public class ProblemStatusObservationImpl extends
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIHEProblemStatusObservationText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusObservationOperations.validateIHEProblemStatusObservationText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateProblemStatusObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ProblemStatusObservationOperations.validateProblemStatusObservationValue(this, diagnostics, context);
 	}

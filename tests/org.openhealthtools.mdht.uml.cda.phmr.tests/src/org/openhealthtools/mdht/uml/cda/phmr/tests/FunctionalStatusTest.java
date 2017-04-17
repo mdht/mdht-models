@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.FunctionalStatus;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.FunctionalStatusOperations;
@@ -63,66 +63,69 @@ public class FunctionalStatusTest extends  CDAValidationTest {
  
 									
 public void testValidateFunctionalStatusSectionTemplateId() {
-      OperationsTestCase<FunctionalStatus> validateFunctionalStatusSectionTemplateIdTestCase = new OperationsTestCase<FunctionalStatus>(
-      "validateFunctionalStatusSectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<FunctionalStatus> validateFunctionalStatusSectionTemplateIdTestCase = new OperationsTestCase<FunctionalStatus>(
+			"validateFunctionalStatusSectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(FunctionalStatus target) {
+			@Override
+			protected void updateToFail(FunctionalStatus target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(FunctionalStatus target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(FunctionalStatus target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return FunctionalStatusOperations.validateFunctionalStatusSectionTemplateId(
-          (FunctionalStatus) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return FunctionalStatusOperations.validateFunctionalStatusSectionTemplateId(
+					(FunctionalStatus) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateFunctionalStatusSectionTemplateIdTestCase.doValidationTest();
+		validateFunctionalStatusSectionTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -151,6 +154,7 @@ public void testValidateFunctionalStatusSectionTemplateId() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<FunctionalStatus> {
+		@Override
 		public FunctionalStatus create() {		
 			return PhmrFactory.eINSTANCE.createFunctionalStatus();
 		}
@@ -182,9 +186,9 @@ public void testValidateFunctionalStatusSectionTemplateId() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -194,8 +198,8 @@ public void testValidateFunctionalStatusSectionTemplateId() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

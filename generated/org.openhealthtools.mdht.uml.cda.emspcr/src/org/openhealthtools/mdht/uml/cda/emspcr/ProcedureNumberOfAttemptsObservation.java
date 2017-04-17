@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ProcedureNumberOfAttemptsObservationTemplateId ProcedureNumberOfAttemptsObservationMoodCode ProcedureNumberOfAttemptsObservationCode ProcedureNumberOfAttemptsObservationCodeP ProcedureNumberOfAttemptsObservationValue' templateId.root='2.16.840.1.1133883.17.3.10.1.132' moodCode='EVN' code.code='67543-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Procedure attempts [#] NEMSIS' constraints.validation.dependOn.ProcedureNumberOfAttemptsObservationCode='ProcedureNumberOfAttemptsObservationCodeP'"
  * @generated
  */
-public interface ProcedureNumberOfAttemptsObservation extends Observation {
+public interface ProcedureNumberOfAttemptsObservation extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -99,9 +92,9 @@ public interface ProcedureNumberOfAttemptsObservation extends Observation {
 	public ProcedureNumberOfAttemptsObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureNumberOfAttemptsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public ProcedureNumberOfAttemptsObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // ProcedureNumberOfAttemptsObservation

@@ -2,17 +2,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,12 +14,13 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage#getTumorFinding()
- * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Tumor FindingTemplateId Tumor FindingId Tumor FindingCode Tumor FindingCodeP Tumor FindingMethodCode Tumor FindingDetectionDelayAssociation Tumor FindingDomain Assignment Tumor FindingResult Category Tumor FindingDeath Relationship Tumor FindingdetectionDelayAssociationdetectionDelayClassCode Tumor FindingdetectionDelayAssociationdetectionDelayCode Tumor FindingdetectionDelayAssociationdetectionDelayMoodCode Tumor FindingdetectionDelayAssociationdetectionDelayValue Tumor FindingdetectionDelayAssociationTypeCode' templateId.root='2.16.840.1.113883.10.20.23.99' classCode='OBS' moodCode='EVN' code.codeSystem='unknown' code.codeSystemName='Tumor Examination Type'"
+ * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor Finding'"
+ *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='Tumor FindingTemplateId Tumor FindingId Tumor FindingCode Tumor FindingCodeP Tumor FindingMethodCode Tumor FindingDetectionDelayAssociation Tumor FindingDomain Assignment Tumor FindingResult Category Tumor FindingDeath Relationship Tumor FindingdetectionDelayAssociationdetectionDelayClassCode Tumor FindingdetectionDelayAssociationdetectionDelayCode Tumor FindingdetectionDelayAssociationdetectionDelayMoodCode Tumor FindingdetectionDelayAssociationdetectionDelayValue Tumor FindingdetectionDelayAssociationTypeCode' templateId.root='2.16.840.1.113883.10.20.23.99' classCode='OBS' moodCode='EVN' code.codeSystem='unknown' code.codeSystemName='Tumor Examination Type'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmTumorFindingdetectionDelayAssociation typeCode='COMP' constraints.validation.error='Tumor FindingdetectionDelayAssociationTypeCode'"
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/sdtmTumorFindingdetectionDelayAssociationdetectionDelay classCode='OBS' constraints.validation.error='Tumor FindingdetectionDelayAssociationdetectionDelayClassCode Tumor FindingdetectionDelayAssociationdetectionDelayCode Tumor FindingdetectionDelayAssociationdetectionDelayMoodCode Tumor FindingdetectionDelayAssociationdetectionDelayValue' moodCode='EVN'"
  * @generated
  */
-public interface TumorFinding extends Observation {
+public interface TumorFinding extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -34,7 +28,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.23.99\')'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingTemplateId'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.templateId->exists(id : datatypes::II | id.root = \'2.16.840.1.113883.10.20.23.99\')'"
 	 * @generated
 	 */
 	boolean validateTumorFindingTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -46,7 +41,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingId'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (self.id->size() = 1)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingId(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -58,7 +54,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingCodeP'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateTumorFindingCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -70,7 +67,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'unknown\' and not value.code.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and \nlet value : datatypes::CD = self.code.oclAsType(datatypes::CD) in \nvalue.codeSystem = \'unknown\' and not value.code.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateTumorFindingCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -82,7 +80,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingStatusCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.statusCode.oclIsUndefined() or self.statusCode.isNullFlavorUndefined()) implies (not self.statusCode.oclIsUndefined())'"
 	 * @generated
 	 */
 	boolean validateTumorFindingStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -94,7 +93,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingValue'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->forAll(element | element.oclIsTypeOf(datatypes::CD)))'"
 	 * @generated
 	 */
 	boolean validateTumorFindingValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -106,7 +106,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingMethodCodeP'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (not self.methodCode->isEmpty())'"
 	 * @generated
 	 */
 	boolean validateTumorFindingMethodCodeP(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -118,7 +119,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = element.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\' and not value.code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingMethodCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.methodCode->isEmpty() or self.methodCode->exists(element | element.isNullFlavorUndefined())) implies (self.methodCode->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CE) and \nlet value : datatypes::CE = element.oclAsType(datatypes::CE) in \nvalue.codeSystem = \'2.16.840.1.113883.3.26.1.1\' and not value.code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateTumorFindingMethodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -130,7 +132,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::GroupIdentifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingGroup Identifier'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::GroupIdentifier) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingGroupIdentifier(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -142,7 +145,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.procedure.oclIsUndefined() and entryRelationship.procedure.oclIsKindOf(sdtm::SpecimenInformation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingSpecimen Information'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.procedure.oclIsUndefined() and entryRelationship.procedure.oclIsKindOf(sdtm::SpecimenInformation) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingSpecimenInformation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -154,7 +158,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(sdtm::MassIdentification))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingMass Identification'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(sdtm::MassIdentification))'"
 	 * @generated
 	 */
 	boolean validateTumorFindingMassIdentification(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -166,7 +171,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::NonPerformanceReason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingNon Performance Reason'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::NonPerformanceReason) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingNonPerformanceReason(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -178,7 +184,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(sdtm::StudyTestOrganization))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingStudy Test Performer'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->one(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(sdtm::StudyTestOrganization))'"
 	 * @generated
 	 */
 	boolean validateTumorFindingStudyTestPerformer(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -190,7 +197,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingDetectionDelayAssociation'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.oclIsUndefined() and entryRelationship.oclIsKindOf(cda::EntryRelationship))'"
 	 * @generated
 	 */
 	boolean validateTumorFindingDetectionDelayAssociation(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -202,7 +210,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Comment) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingComment'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::Comment) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingComment(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -214,7 +223,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::DomainAssignment) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingDomain Assignment'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::DomainAssignment) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingDomainAssignment(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -226,7 +236,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::RelatedRecord) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingRelated Record'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(sdtm::RelatedRecord) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::REFR)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingRelatedRecord(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -238,7 +249,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::SupplementalValue) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingSupplemental Value'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::SupplementalValue) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingSupplementalValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -250,7 +262,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::ResultCategory) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingResult Category'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::ResultCategory) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingResultCategory(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -262,7 +275,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::DeathRelationship) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingDeath Relationship'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(sdtm::DeathRelationship) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingDeathRelationship(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -274,7 +288,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingdetectionDelayAssociationdetectionDelayClassCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(classCode=vocab::ActClassObservation::OBS)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingdetectionDelayAssociationdetectionDelayClassCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -286,7 +301,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingdetectionDelayAssociationdetectionDelayCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((code.oclIsUndefined() or code.isNullFlavorUndefined()) implies (not code.oclIsUndefined()))'"
 	 * @generated
 	 */
 	boolean validateTumorFindingdetectionDelayAssociationdetectionDelayCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -298,7 +314,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingdetectionDelayAssociationdetectionDelayMoodCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject(moodCode=vocab::x_ActMoodDocumentObservation::EVN)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingdetectionDelayAssociationdetectionDelayMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -310,7 +327,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1))'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingdetectionDelayAssociationdetectionDelayValue'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null).observation->excluding(null)->reject((value->isEmpty() or value->exists(element | element.isNullFlavorUndefined())) implies (value->size() = 1))'"
 	 * @generated
 	 */
 	boolean validateTumorFindingdetectionDelayAssociationdetectionDelayValue(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -322,7 +340,8 @@ public interface TumorFinding extends Observation {
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
 	 * @param context The cache of context-specific information.
 	 * <!-- end-model-doc -->
-	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
+	 * @model annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='Tumor FindingdetectionDelayAssociationTypeCode'"
+	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entryRelationship->excluding(null)->reject(typeCode=vocab::x_ActRelationshipEntryRelationship::COMP)'"
 	 * @generated
 	 */
 	boolean validateTumorFindingdetectionDelayAssociationTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context);
@@ -331,6 +350,7 @@ public interface TumorFinding extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='getGroup Identifier'"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::GroupIdentifier))->asSequence()->any(true).oclAsType(sdtm::GroupIdentifier)'"
 	 * @generated
 	 */
@@ -340,6 +360,7 @@ public interface TumorFinding extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='getSpecimen Information'"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getProcedures()->select(procedure : cda::Procedure | not procedure.oclIsUndefined() and procedure.oclIsKindOf(sdtm::SpecimenInformation))->asSequence()->any(true).oclAsType(sdtm::SpecimenInformation)'"
 	 * @generated
 	 */
@@ -349,6 +370,7 @@ public interface TumorFinding extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='getNon Performance Reason'"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::NonPerformanceReason))->asSequence()->any(true).oclAsType(sdtm::NonPerformanceReason)'"
 	 * @generated
 	 */
@@ -367,6 +389,7 @@ public interface TumorFinding extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='getDomain Assignment'"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::DomainAssignment))->asSequence()->any(true).oclAsType(sdtm::DomainAssignment)'"
 	 * @generated
 	 */
@@ -376,6 +399,7 @@ public interface TumorFinding extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='getRelated Record'"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(sdtm::RelatedRecord))->asSequence()->any(true).oclAsType(sdtm::RelatedRecord)'"
 	 * @generated
 	 */
@@ -385,6 +409,7 @@ public interface TumorFinding extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='getSupplemental Value'"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::SupplementalValue))->asSequence()->any(true).oclAsType(sdtm::SupplementalValue)'"
 	 * @generated
 	 */
@@ -394,6 +419,7 @@ public interface TumorFinding extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='getResult Category'"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::ResultCategory))->asSequence()->any(true).oclAsType(sdtm::ResultCategory)'"
 	 * @generated
 	 */
@@ -403,6 +429,7 @@ public interface TumorFinding extends Observation {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @model kind="operation" required="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/uml2/2.0.0/UML originalName='getDeath Relationship'"
 	 *        annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(sdtm::DeathRelationship))->asSequence()->any(true).oclAsType(sdtm::DeathRelationship)'"
 	 * @generated
 	 */
@@ -419,5 +446,5 @@ public interface TumorFinding extends Observation {
      * <!-- end-user-doc -->
      * @generated
      */
-    public TumorFinding init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    public TumorFinding init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // TumorFinding

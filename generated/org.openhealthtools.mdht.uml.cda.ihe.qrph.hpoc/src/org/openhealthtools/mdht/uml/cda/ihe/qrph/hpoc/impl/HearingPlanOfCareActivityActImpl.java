@@ -2,138 +2,117 @@
  */
 package org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.consol.impl.PlanOfCareActivityActImpl;
+import org.eclipse.emf.ecore.impl.EObjectImpl;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HPOCPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareActivityAct;
-
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.operations.HearingPlanOfCareActivityActOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-import org.openhealthtools.mdht.uml.cda.impl.EntryImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Hearing Plan Of Care Activity Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class HearingPlanOfCareActivityActImpl extends PlanOfCareActivityActImpl implements HearingPlanOfCareActivityAct
+public class HearingPlanOfCareActivityActImpl extends EObjectImpl implements HearingPlanOfCareActivityAct
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected HearingPlanOfCareActivityActImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return HPOCPackage.Literals.HEARING_PLAN_OF_CARE_ACTIVITY_ACT;
-  }
+		return HPOCPackage.Literals.HEARING_PLAN_OF_CARE_ACTIVITY_ACT;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareActivityActEffectiveTimeLowHigh(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActEffectiveTimeLowHigh(this, diagnostics, context);
-  }
+		return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActEffectiveTimeLowHigh(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareActivityActCodeP(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActCodeP(this, diagnostics, context);
-  }
+		return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActCodeP(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareActivityActCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActCode(this, diagnostics, context);
-  }
+		return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareActivityActText(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActText(this, diagnostics, context);
-  }
+		return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActText(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareActivityActStatusCode(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActStatusCode(this, diagnostics, context);
-  }
+		return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActStatusCode(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public boolean validateHearingPlanOfCareActivityActEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActEffectiveTime(this, diagnostics, context);
-  }
+		return HearingPlanOfCareActivityActOperations.validateHearingPlanOfCareActivityActEffectiveTime(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  @Override
-  public boolean validatePlanOfCareActivityActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
-  {
-    return HearingPlanOfCareActivityActOperations.validatePlanOfCareActivityActTemplateId(this, diagnostics, context);
-  }
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public HearingPlanOfCareActivityAct init() {
+	    return Initializer.Util.init(this);
+	}
 
-  /**
-   * <!-- begin-user-doc -->
-   * <!-- end-user-doc -->
-   * @generated
-   */
-  public HearingPlanOfCareActivityAct init() {
-      return Initializer.Util.init(this);
-  }
-    /**
+		/**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
@@ -142,4 +121,15 @@ public class HearingPlanOfCareActivityActImpl extends PlanOfCareActivityActImpl 
         Initializer.Util.init(this, initializers);
         return this;
     }
+
+		/**
+	 * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+	 * @generated
+	 */
+  @Override
+  public boolean validatePlanOfCareActivityActTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context)
+  {
+		return HearingPlanOfCareActivityActOperations.validatePlanOfCareActivityActTemplateId(this, diagnostics, context);
+	}
 } //HearingPlanOfCareActivityActImpl

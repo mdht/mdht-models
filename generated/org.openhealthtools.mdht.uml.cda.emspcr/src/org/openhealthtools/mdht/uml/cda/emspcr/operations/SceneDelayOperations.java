@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.SceneDelay;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,7 +39,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class SceneDelayOperations extends ClinicalStatementOperations {
+public class SceneDelayOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,7 +75,7 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_SCENE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -89,24 +90,38 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSceneDelayTemplateId(SceneDelay sceneDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_SCENE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SCENE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_DELAY);
 			try {
-				VALIDATE_SCENE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SCENE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SCENE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sceneDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.SCENE_DELAY__SCENE_DELAY_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("SceneDelayTemplateId"), new Object[] { sceneDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SCENE_DELAY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sceneDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_DELAY__SCENE_DELAY_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("SceneDelaySceneDelayTemplateId"),
+						 new Object [] { sceneDelay }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -131,7 +146,7 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_SCENE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,24 +161,38 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSceneDelayMoodCode(SceneDelay sceneDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_SCENE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SCENE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_DELAY);
 			try {
-				VALIDATE_SCENE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SCENE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SCENE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sceneDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.SCENE_DELAY__SCENE_DELAY_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("SceneDelayMoodCode"), new Object[] { sceneDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SCENE_DELAY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sceneDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_DELAY__SCENE_DELAY_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("SceneDelaySceneDelayMoodCode"),
+						 new Object [] { sceneDelay }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -188,7 +217,7 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_SCENE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,24 +232,38 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSceneDelayCodeP(SceneDelay sceneDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_SCENE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SCENE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_DELAY);
 			try {
-				VALIDATE_SCENE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SCENE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SCENE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sceneDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.SCENE_DELAY__SCENE_DELAY_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("SceneDelayCodeP"), new Object[] { sceneDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SCENE_DELAY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sceneDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_DELAY__SCENE_DELAY_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("SceneDelaySceneDelayCodeP"),
+						 new Object [] { sceneDelay }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -232,7 +275,7 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 				}
 				passToken.add(sceneDelay);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -246,9 +289,9 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67558-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67558-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSceneDelayCode(SceneDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scene Delay Code</em>}' invariant operation.
@@ -259,7 +302,7 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,31 +317,44 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSceneDelayCode(SceneDelay sceneDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.SceneDelayCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.SceneDelayCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(sceneDelay)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_DELAY);
 			try {
-				VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sceneDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE, EmspcrValidator.SCENE_DELAY__SCENE_DELAY_CODE,
-					EmspcrPlugin.INSTANCE.getString("SceneDelayCode"), new Object[] { sceneDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SCENE_DELAY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sceneDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_DELAY__SCENE_DELAY_CODE,
+						 EmspcrPlugin.INSTANCE.getString("SceneDelaySceneDelayCode"),
+						 new Object [] { sceneDelay }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -312,9 +368,9 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17585-3' or value.code = 'LA17586-1' or value.code = 'LA17587-9' or value.code = 'LA17588-7' or value.code = 'LA17590-3' or value.code = 'LA17591-1' or value.code = 'LA17592-9' or value.code = 'LA17593-7' or value.code = 'LA17594-5' or value.code = 'LA17595-2' or value.code = 'LA17596-0' or value.code = 'LA17597-8' or value.code = 'LA18081-2' or value.code = 'LA18272-7' or value.code = 'LA18273-5' or value.code = 'LA18275-0' or value.code = 'LA18276-8' or value.code = 'LA7540-3')))";
+	protected static final String VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17059-9' or value.code = 'LA17585-3' or value.code = 'LA17586-1' or value.code = 'LA17587-9' or value.code = 'LA17588-7' or value.code = 'LA17590-3' or value.code = 'LA17591-1' or value.code = 'LA17592-9' or value.code = 'LA17593-7' or value.code = 'LA17594-5' or value.code = 'LA17595-2' or value.code = 'LA17596-0' or value.code = 'LA17597-8' or value.code = 'LA18081-2' or value.code = 'LA18272-7' or value.code = 'LA18273-5' or value.code = 'LA18275-0' or value.code = 'LA18276-8' or value.code = 'LA7540-3')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateSceneDelayValue(SceneDelay, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Scene Delay Value</em>}' invariant operation.
@@ -325,7 +381,7 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,24 +396,38 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSceneDelayValue(SceneDelay sceneDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_DELAY);
 			try {
-				VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sceneDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.SCENE_DELAY__SCENE_DELAY_VALUE, EmspcrPlugin.INSTANCE.getString("SceneDelayValue"),
-					new Object[] { sceneDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SCENE_DELAY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sceneDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_DELAY__SCENE_DELAY_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("SceneDelaySceneDelayValue"),
+						 new Object [] { sceneDelay }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -382,7 +452,7 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_SCENE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SCENE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -397,24 +467,38 @@ public class SceneDelayOperations extends ClinicalStatementOperations {
 
 	public static boolean validateSceneDelayValueP(SceneDelay sceneDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_SCENE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SCENE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.SCENE_DELAY);
 			try {
-				VALIDATE_SCENE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SCENE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_SCENE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SCENE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SCENE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(sceneDelay)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.SCENE_DELAY__SCENE_DELAY_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("SceneDelayValueP"), new Object[] { sceneDelay }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SCENE_DELAY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(sceneDelay)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.SCENE_DELAY__SCENE_DELAY_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("SceneDelaySceneDelayValueP"),
+						 new Object [] { sceneDelay }));
+			}
+			 
 			return false;
 		}
 		return true;

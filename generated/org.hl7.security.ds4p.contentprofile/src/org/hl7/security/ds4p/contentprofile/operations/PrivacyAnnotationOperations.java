@@ -13,8 +13,6 @@ import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClassifier;
 
-import org.eclipse.mdht.uml.cda.operations.OrganizerOperations;
-
 import org.eclipse.ocl.ParserException;
 
 import org.eclipse.ocl.ecore.Constraint;
@@ -58,7 +56,7 @@ import org.hl7.security.ds4p.contentprofile.util.CONTENTPROFILEValidator;
  *
  * @generated
  */
-public class PrivacyAnnotationOperations extends OrganizerOperations {
+public class PrivacyAnnotationOperations {
 	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
 		@Override
 		public OCL initialValue() {
@@ -769,7 +767,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(61));
+			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(9));
 			try {
 				GET_OBLIGATION_POLICY_SECURITY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_OBLIGATION_POLICY_SECURITY_OBSERVATIONS__EOCL_EXP);
 			}
@@ -818,7 +816,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(62));
+			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(10));
 			try {
 				GET_REFRAIN_POLICY_SECURITY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_REFRAIN_POLICY_SECURITY_OBSERVATIONS__EOCL_EXP);
 			}
@@ -867,7 +865,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(63));
+			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(11));
 			try {
 				GET_PURPOSE_OF_USE_SECURITY_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_PURPOSE_OF_USE_SECURITY_OBSERVATIONS__EOCL_EXP);
 			}
@@ -916,7 +914,7 @@ public class PrivacyAnnotationOperations extends OrganizerOperations {
 		
 	 
 			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
-			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(64));
+			helper.setOperationContext(CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION, CONTENTPROFILEPackage.Literals.PRIVACY_ANNOTATION.getEAllOperations().get(12));
 			try {
 				GET_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__EOCL_QRY = helper.createQuery(GET_CONFIDENTIALITY_CODE_SECURITY_OBSERVATION__EOCL_EXP);
 			}

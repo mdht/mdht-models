@@ -1,21 +1,24 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.PriorPregnancyHistorySection;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.PriorPregnancyHistorySectionOperations;
 
 /**
@@ -57,10 +60,12 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionTemplateId() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionTemplateIdTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
 			"validatePriorPregnancyHistorySectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -91,10 +96,11 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionClassCode() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionClassCodeTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
-			"validatePriorPregnancyHistorySectionClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePriorPregnancyHistorySectionClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -125,10 +131,11 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionMoodCode() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionMoodCodeTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
-			"validatePriorPregnancyHistorySectionMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePriorPregnancyHistorySectionMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -159,10 +166,11 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionCode() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionCodeTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
-			"validatePriorPregnancyHistorySectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePriorPregnancyHistorySectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -193,10 +201,11 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionCodeP() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionCodePTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
-			"validatePriorPregnancyHistorySectionCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePriorPregnancyHistorySectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -227,10 +236,11 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionText() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionTextTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
-			"validatePriorPregnancyHistorySectionText",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePriorPregnancyHistorySectionText", operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -264,10 +274,12 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionDateofLastLiveBirth() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionDateofLastLiveBirthTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
 			"validatePriorPregnancyHistorySectionDateofLastLiveBirth",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_DATEOF_LAST_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_DATEOF_LAST_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -298,10 +310,12 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionLastMenstrualPeriodDate() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionLastMenstrualPeriodDateTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
 			"validatePriorPregnancyHistorySectionLastMenstrualPeriodDate",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_LAST_MENSTRUAL_PERIOD_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_LAST_MENSTRUAL_PERIOD_DATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -332,10 +346,12 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionNumberofBirthsStillLiving() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionNumberofBirthsStillLivingTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
 			"validatePriorPregnancyHistorySectionNumberofBirthsStillLiving",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_NUMBEROF_BIRTHS_STILL_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_NUMBEROF_BIRTHS_STILL_LIVING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -366,10 +382,12 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionNumberofLiveBirthsnowDead() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionNumberofLiveBirthsnowDeadTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
 			"validatePriorPregnancyHistorySectionNumberofLiveBirthsnowDead",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_NUMBEROF_LIVE_BIRTHSNOW_DEAD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_NUMBEROF_LIVE_BIRTHSNOW_DEAD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -400,10 +418,12 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionOtherPregnancyOutcomes() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionOtherPregnancyOutcomesTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
 			"validatePriorPregnancyHistorySectionOtherPregnancyOutcomes",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_OTHER_PREGNANCY_OUTCOMES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_OTHER_PREGNANCY_OUTCOMES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -434,10 +454,12 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePriorPregnancyHistorySectionEstimateofGestation() {
 		OperationsTestCase<PriorPregnancyHistorySection> validatePriorPregnancyHistorySectionEstimateofGestationTestCase = new OperationsTestCase<PriorPregnancyHistorySection>(
 			"validatePriorPregnancyHistorySectionEstimateofGestation",
-			operationsForOCL.getOCLValue("VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_ESTIMATEOF_GESTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_PRIOR_PREGNANCY_HISTORY_SECTION_ESTIMATEOF_GESTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -468,6 +490,7 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetDateofLastLiveBirth() {
 
 		PriorPregnancyHistorySection target = objectFactory.create();
@@ -480,6 +503,7 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetLastMenstrualPeriodDate() {
 
 		PriorPregnancyHistorySection target = objectFactory.create();
@@ -492,6 +516,7 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetNumberofBirthsStillLiving() {
 
 		PriorPregnancyHistorySection target = objectFactory.create();
@@ -504,6 +529,7 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetNumberofLiveBirthsnowDead() {
 
 		PriorPregnancyHistorySection target = objectFactory.create();
@@ -516,6 +542,7 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetOtherPregnancyOutcomes() {
 
 		PriorPregnancyHistorySection target = objectFactory.create();
@@ -528,6 +555,7 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testGetEstimateofGestation() {
 
 		PriorPregnancyHistorySection target = objectFactory.create();
@@ -588,8 +616,7 @@ public class PriorPregnancyHistorySectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

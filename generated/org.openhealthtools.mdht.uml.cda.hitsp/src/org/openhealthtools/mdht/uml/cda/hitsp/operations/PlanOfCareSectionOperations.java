@@ -53,6 +53,13 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
  * @generated
  */
 public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -81,7 +88,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -97,23 +104,29 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	public static boolean validateHITSPPlanOfCareSectionTemplateId(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PLAN_OF_CARE_SECTION);
 			try {
-				VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			planOfCareSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				planOfCareSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPPlanOfCareSectionTemplateId"),
-					new Object[] { planOfCareSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString("PlanOfCareSectionHITSPPlanOfCareSectionTemplateId"),
+						new Object[] { planOfCareSection }));
 			}
 
 			return false;
@@ -140,7 +153,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -156,23 +169,29 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	public static boolean validateHITSPPlanOfCareSectionMedication(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PLAN_OF_CARE_SECTION);
 			try {
-				VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			planOfCareSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_PLAN_OF_CARE_SECTION_MEDICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				planOfCareSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_MEDICATION,
-					HITSPPlugin.INSTANCE.getString("HITSPPlanOfCareSectionMedication"),
-					new Object[] { planOfCareSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_MEDICATION,
+						HITSPPlugin.INSTANCE.getString("PlanOfCareSectionHITSPPlanOfCareSectionMedication"),
+						new Object[] { planOfCareSection }));
 			}
 
 			return false;
@@ -199,7 +218,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,23 +234,29 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	public static boolean validateHITSPPlanOfCareSectionImmunization(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PLAN_OF_CARE_SECTION);
 			try {
-				VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			planOfCareSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				planOfCareSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION,
-					HITSPPlugin.INSTANCE.getString("HITSPPlanOfCareSectionImmunization"),
-					new Object[] { planOfCareSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_IMMUNIZATION,
+						HITSPPlugin.INSTANCE.getString("PlanOfCareSectionHITSPPlanOfCareSectionImmunization"),
+						new Object[] { planOfCareSection }));
 			}
 
 			return false;
@@ -258,7 +283,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,23 +299,29 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	public static boolean validateHITSPPlanOfCareSectionEncounter(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PLAN_OF_CARE_SECTION);
 			try {
-				VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			planOfCareSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				planOfCareSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER,
-					HITSPPlugin.INSTANCE.getString("HITSPPlanOfCareSectionEncounter"),
-					new Object[] { planOfCareSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_ENCOUNTER,
+						HITSPPlugin.INSTANCE.getString("PlanOfCareSectionHITSPPlanOfCareSectionEncounter"),
+						new Object[] { planOfCareSection }));
 			}
 
 			return false;
@@ -317,7 +348,7 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -333,23 +364,29 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	public static boolean validateHITSPPlanOfCareSectionProcedure(PlanOfCareSection planOfCareSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PLAN_OF_CARE_SECTION);
 			try {
-				VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			planOfCareSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_PLAN_OF_CARE_SECTION_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				planOfCareSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_PROCEDURE,
-					HITSPPlugin.INSTANCE.getString("HITSPPlanOfCareSectionProcedure"),
-					new Object[] { planOfCareSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.PLAN_OF_CARE_SECTION__HITSP_PLAN_OF_CARE_SECTION_PROCEDURE,
+						HITSPPlugin.INSTANCE.getString("PlanOfCareSectionHITSPPlanOfCareSectionProcedure"),
+						new Object[] { planOfCareSection }));
 			}
 
 			return false;
@@ -383,8 +420,10 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @generated
 	 */
 	public static Medication getMedication(PlanOfCareSection planOfCareSection) {
+
 		if (GET_MEDICATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION,
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(80));
@@ -394,7 +433,8 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MEDICATION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MEDICATION__EOCL_QRY);
 		return (Medication) query.evaluate(planOfCareSection);
 	}
 
@@ -424,8 +464,10 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @generated
 	 */
 	public static Immunization getImmunization(PlanOfCareSection planOfCareSection) {
+
 		if (GET_IMMUNIZATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION,
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(81));
@@ -435,7 +477,8 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_IMMUNIZATION__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_IMMUNIZATION__EOCL_QRY);
 		return (Immunization) query.evaluate(planOfCareSection);
 	}
 
@@ -465,8 +508,10 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @generated
 	 */
 	public static Encounter getEncounter(PlanOfCareSection planOfCareSection) {
+
 		if (GET_ENCOUNTER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION,
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(82));
@@ -476,7 +521,8 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ENCOUNTER__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ENCOUNTER__EOCL_QRY);
 		return (Encounter) query.evaluate(planOfCareSection);
 	}
 
@@ -506,8 +552,10 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 	 * @generated
 	 */
 	public static Procedure getProcedure(PlanOfCareSection planOfCareSection) {
+
 		if (GET_PROCEDURE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION,
 				HITSPPackage.Literals.PLAN_OF_CARE_SECTION.getEAllOperations().get(83));
@@ -517,7 +565,8 @@ public class PlanOfCareSectionOperations extends AssessmentAndPlanSectionOperati
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PROCEDURE__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PROCEDURE__EOCL_QRY);
 		return (Procedure) query.evaluate(planOfCareSection);
 	}
 

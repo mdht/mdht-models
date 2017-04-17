@@ -6,37 +6,26 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSPastMedicalHistorySection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfHistoryOfCondition;
 import org.openhealthtools.mdht.uml.cda.emspcr.HistoryOfCondition;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSPastMedicalHistorySectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Past Medical History Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMSPastMedicalHistorySection {
+public class EMSPastMedicalHistorySectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl implements EMSPastMedicalHistorySection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -63,8 +52,7 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 */
 	public boolean validateEMSPastMedicalHistorySectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionTemplateId(
-			this, diagnostics, context);
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -73,8 +61,7 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 * @generated
 	 */
 	public boolean validateEMSPastMedicalHistorySectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionCode(
-			this, diagnostics, context);
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +70,7 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 * @generated
 	 */
 	public boolean validateEMSPastMedicalHistorySectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionCodeP(
-			this, diagnostics, context);
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +79,7 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 * @generated
 	 */
 	public boolean validateEMSPastMedicalHistorySectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionTitle(
-			this, diagnostics, context);
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +88,7 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 * @generated
 	 */
 	public boolean validateEMSPastMedicalHistorySectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionText(
-			this, diagnostics, context);
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionText(this, diagnostics, context);
 	}
 
 	/**
@@ -114,8 +98,7 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 */
 	public boolean validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(
-			this, diagnostics, context);
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(this, diagnostics, context);
 	}
 
 	/**
@@ -125,8 +108,7 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 */
 	public boolean validateEMSPastMedicalHistorySectionHistoryOfCondition(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionHistoryOfCondition(
-			this, diagnostics, context);
+		return EMSPastMedicalHistorySectionOperations.validateEMSPastMedicalHistorySectionHistoryOfCondition(this, diagnostics, context);
 	}
 
 	/**
@@ -153,16 +135,16 @@ public class EMSPastMedicalHistorySectionImpl extends SectionImpl implements EMS
 	 * @generated
 	 */
 	public EMSPastMedicalHistorySection init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSPastMedicalHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public EMSPastMedicalHistorySection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EMSPastMedicalHistorySectionImpl

@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.UnstructuredDocumentOperations;
@@ -27,8 +25,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.ScannedDocumentOperations
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Unstructured Document</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -93,7 +89,8 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasPatientRoleAddress(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasPatientRoleAddress(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasPatientRoleAddress(this, diagnostics, context);
 	}
 
@@ -111,7 +108,8 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasPatientGenderCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasPatientGenderCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasPatientGenderCode(this, diagnostics, context);
 	}
 
@@ -120,7 +118,8 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentHasPatientBirthYear(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedDocumentHasPatientBirthYear(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentHasPatientBirthYear(this, diagnostics, context);
 	}
 
@@ -247,7 +246,8 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateScannedDocumentConfidentialityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateScannedDocumentConfidentialityCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ScannedDocumentOperations.validateScannedDocumentConfidentialityCode(this, diagnostics, context);
 	}
 
@@ -346,7 +346,8 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateUnstructuredDocumentNoStructuredData(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateUnstructuredDocumentNoStructuredData(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return UnstructuredDocumentOperations.validateUnstructuredDocumentNoStructuredData(this, diagnostics, context);
 	}
 
@@ -368,7 +369,7 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 */
 	@Override
 	public UnstructuredDocument init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -377,8 +378,9 @@ public class UnstructuredDocumentImpl extends MedicalDocumentImpl implements Uns
 	 * @generated
 	 */
 	@Override
-	public UnstructuredDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public UnstructuredDocument init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // UnstructuredDocumentImpl

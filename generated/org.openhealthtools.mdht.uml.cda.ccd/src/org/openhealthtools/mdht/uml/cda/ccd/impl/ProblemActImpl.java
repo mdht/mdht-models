@@ -16,19 +16,17 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.EpisodeObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.ProblemAct;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ProblemActOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Problem Act</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -57,7 +55,8 @@ public class ProblemActImpl extends ActImpl implements ProblemAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemActEntryRelationshipRequired(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemActEntryRelationshipRequired(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemActOperations.validateProblemActEntryRelationshipRequired(this, diagnostics, context);
 	}
 
@@ -75,7 +74,8 @@ public class ProblemActImpl extends ActImpl implements ProblemAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemActContainsProblemObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemActContainsProblemObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemActOperations.validateProblemActContainsProblemObservation(this, diagnostics, context);
 	}
 
@@ -84,7 +84,8 @@ public class ProblemActImpl extends ActImpl implements ProblemAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemActContainsAlertObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemActContainsAlertObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemActOperations.validateProblemActContainsAlertObservation(this, diagnostics, context);
 	}
 
@@ -93,7 +94,8 @@ public class ProblemActImpl extends ActImpl implements ProblemAct {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemActContainsPatientAwareness(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProblemActContainsPatientAwareness(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProblemActOperations.validateProblemActContainsPatientAwareness(this, diagnostics, context);
 	}
 

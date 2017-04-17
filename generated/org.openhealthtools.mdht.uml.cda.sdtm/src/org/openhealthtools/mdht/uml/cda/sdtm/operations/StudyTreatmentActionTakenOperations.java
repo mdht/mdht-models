@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StudyTreatmentActionTaken;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -40,7 +34,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperations {
+public class StudyTreatmentActionTakenOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +71,7 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +86,35 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 */
 	
 	public static  boolean validateStudyTreatmentActionTakenTemplateId(StudyTreatmentActionTaken studyTreatmentActionTaken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_TREATMENT_ACTION_TAKEN);
 			try {
-				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyTreatmentActionTaken)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyTreatmentActionTaken)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_TREATMENT_ACTION_TAKEN__STUDY_TREATMENT_ACTION_TAKEN_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenStudyTreatmentActionTakenTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
 						 new Object [] { studyTreatmentActionTaken }));
 			}
 			 
@@ -130,7 +142,7 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +157,35 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 */
 	
 	public static  boolean validateStudyTreatmentActionTakenClassCode(StudyTreatmentActionTaken studyTreatmentActionTaken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_TREATMENT_ACTION_TAKEN);
 			try {
-				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyTreatmentActionTaken)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyTreatmentActionTaken)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_TREATMENT_ACTION_TAKEN__STUDY_TREATMENT_ACTION_TAKEN_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenStudyTreatmentActionTakenClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
 						 new Object [] { studyTreatmentActionTaken }));
 			}
 			 
@@ -191,7 +213,7 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +228,35 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 */
 	
 	public static  boolean validateStudyTreatmentActionTakenMoodCode(StudyTreatmentActionTaken studyTreatmentActionTaken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_TREATMENT_ACTION_TAKEN);
 			try {
-				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyTreatmentActionTaken)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyTreatmentActionTaken)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_TREATMENT_ACTION_TAKEN__STUDY_TREATMENT_ACTION_TAKEN_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenStudyTreatmentActionTakenMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
 						 new Object [] { studyTreatmentActionTaken }));
 			}
 			 
@@ -252,7 +284,7 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +299,35 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 */
 	
 	public static  boolean validateStudyTreatmentActionTakenCodeP(StudyTreatmentActionTaken studyTreatmentActionTaken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_TREATMENT_ACTION_TAKEN);
 			try {
-				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyTreatmentActionTaken)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyTreatmentActionTaken)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_TREATMENT_ACTION_TAKEN__STUDY_TREATMENT_ACTION_TAKEN_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenStudyTreatmentActionTakenCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
 						 new Object [] { studyTreatmentActionTaken }));
 			}
 			 
@@ -315,7 +357,7 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +372,35 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 */
 	
 	public static  boolean validateStudyTreatmentActionTakenCode(StudyTreatmentActionTaken studyTreatmentActionTaken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_TREATMENT_ACTION_TAKEN);
 			try {
-				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyTreatmentActionTaken)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyTreatmentActionTaken)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_TREATMENT_ACTION_TAKEN__STUDY_TREATMENT_ACTION_TAKEN_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenStudyTreatmentActionTakenCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
 						 new Object [] { studyTreatmentActionTaken }));
 			}
 			 
@@ -378,7 +430,7 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -393,25 +445,35 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 */
 	
 	public static  boolean validateStudyTreatmentActionTakenValue(StudyTreatmentActionTaken studyTreatmentActionTaken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_TREATMENT_ACTION_TAKEN);
 			try {
-				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyTreatmentActionTaken)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyTreatmentActionTaken)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_TREATMENT_ACTION_TAKEN__STUDY_TREATMENT_ACTION_TAKEN_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenStudyTreatmentActionTakenValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
 						 new Object [] { studyTreatmentActionTaken }));
 			}
 			 
@@ -439,7 +501,7 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -454,25 +516,35 @@ public class StudyTreatmentActionTakenOperations extends ClinicalStatementOperat
 	 */
 	
 	public static  boolean validateStudyTreatmentActionTakenValueP(StudyTreatmentActionTaken studyTreatmentActionTaken, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_TREATMENT_ACTION_TAKEN);
 			try {
-				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyTreatmentActionTaken)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_TREATMENT_ACTION_TAKEN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyTreatmentActionTaken)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_TREATMENT_ACTION_TAKEN__STUDY_TREATMENT_ACTION_TAKEN_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTreatmentActionTakenStudyTreatmentActionTakenValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTreatmentActionTaken, context) }),
 						 new Object [] { studyTreatmentActionTaken }));
 			}
 			 

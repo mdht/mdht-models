@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -34,7 +27,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -79,7 +71,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class DrugAccountabilityOperations extends ClinicalStatementOperations {
+public class DrugAccountabilityOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -108,7 +108,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -123,25 +123,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityTemplateId(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -169,7 +179,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -184,25 +194,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityClassCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -230,7 +250,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -245,25 +265,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityMoodCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -291,7 +321,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -306,25 +336,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityId(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -352,7 +392,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -367,25 +407,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityCodeP(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -415,7 +465,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -430,25 +480,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -476,7 +536,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -491,25 +551,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityStatusCode(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -537,7 +607,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -552,25 +622,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityEffectiveTime(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -598,7 +678,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -613,25 +693,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityValue(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -659,7 +749,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -674,25 +764,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityGroupIdentifier(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -720,7 +820,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -735,25 +835,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityNonPerformanceReason(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -781,7 +891,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -796,25 +906,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityEventStudyDay(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_EVENT_STUDY_DAY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -842,7 +962,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -857,25 +977,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityCategory(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -903,7 +1033,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -918,25 +1048,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilitySubCategory(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitySubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilitySubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -964,7 +1104,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -979,25 +1119,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityComment(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -1025,7 +1175,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1040,25 +1190,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityDomainAssignment(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -1086,7 +1246,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1101,25 +1261,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityRelatedRecord(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -1147,7 +1317,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1162,25 +1332,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilitySupplementalValue(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilitySupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilitySupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -1208,7 +1388,7 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DRUG_ACCOUNTABILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DRUG_ACCOUNTABILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1223,25 +1403,35 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDrugAccountabilityFindingAbout(DrugAccountability drugAccountability, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DRUG_ACCOUNTABILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DRUG_ACCOUNTABILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY);
 			try {
-				VALIDATE_DRUG_ACCOUNTABILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DRUG_ACCOUNTABILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DRUG_ACCOUNTABILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DRUG_ACCOUNTABILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(drugAccountability)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DRUG_ACCOUNTABILITY_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(drugAccountability)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DRUG_ACCOUNTABILITY__DRUG_ACCOUNTABILITY_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DrugAccountabilityDrugAccountabilityFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(drugAccountability, context) }),
 						 new Object [] { drugAccountability }));
 			}
 			 
@@ -1277,8 +1467,13 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(DrugAccountability drugAccountability) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(70));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1286,8 +1481,9 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(drugAccountability);
 	}
 
@@ -1318,8 +1514,13 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(DrugAccountability drugAccountability) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(71));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1327,8 +1528,9 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(drugAccountability);
 	}
 
@@ -1359,8 +1561,13 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EventStudyDay getEventStudyDay(DrugAccountability drugAccountability) {
+	
+	
+	
 		if (GET_EVENT_STUDY_DAY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(72));
 			try {
 				GET_EVENT_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_EVENT_STUDY_DAY__EOCL_EXP);
@@ -1368,8 +1575,9 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_STUDY_DAY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_STUDY_DAY__EOCL_QRY);
 		return (EventStudyDay) query.evaluate(drugAccountability);
 	}
 
@@ -1400,8 +1608,13 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Category getCategory(DrugAccountability drugAccountability) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(73));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -1409,8 +1622,9 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(drugAccountability);
 	}
 
@@ -1441,8 +1655,13 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SubCategory getSubCategory(DrugAccountability drugAccountability) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(74));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -1450,8 +1669,9 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(drugAccountability);
 	}
 
@@ -1482,8 +1702,13 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Comment getComment(DrugAccountability drugAccountability) {
+	
+	
+	
 		if (GET_COMMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(75));
 			try {
 				GET_COMMENT__EOCL_QRY = helper.createQuery(GET_COMMENT__EOCL_EXP);
@@ -1491,8 +1716,9 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENT__EOCL_QRY);
 		return (Comment) query.evaluate(drugAccountability);
 	}
 
@@ -1523,8 +1749,13 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(DrugAccountability drugAccountability) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(76));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1532,8 +1763,9 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(drugAccountability);
 	}
 
@@ -1564,8 +1796,13 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(DrugAccountability drugAccountability) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(77));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1573,8 +1810,9 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(drugAccountability);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1607,8 +1845,13 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(DrugAccountability drugAccountability) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(78));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1616,8 +1859,9 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(drugAccountability);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -1650,8 +1894,13 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(DrugAccountability drugAccountability) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.DRUG_ACCOUNTABILITY, SdtmPackage.Literals.DRUG_ACCOUNTABILITY.getEAllOperations().get(79));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -1659,8 +1908,9 @@ public class DrugAccountabilityOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(drugAccountability);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

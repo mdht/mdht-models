@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.PregnancyRiskFactor;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.PregnancyRiskFactorOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -48,6 +51,7 @@ public class PregnancyRiskFactorTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePregnancyRiskFactorTemplateId() {
 		OperationsTestCase<PregnancyRiskFactor> validatePregnancyRiskFactorTemplateIdTestCase = new OperationsTestCase<PregnancyRiskFactor>(
 			"validatePregnancyRiskFactorTemplateId",
@@ -82,6 +86,7 @@ public class PregnancyRiskFactorTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePregnancyRiskFactorClassCode() {
 		OperationsTestCase<PregnancyRiskFactor> validatePregnancyRiskFactorClassCodeTestCase = new OperationsTestCase<PregnancyRiskFactor>(
 			"validatePregnancyRiskFactorClassCode",
@@ -116,6 +121,7 @@ public class PregnancyRiskFactorTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePregnancyRiskFactorMoodCode() {
 		OperationsTestCase<PregnancyRiskFactor> validatePregnancyRiskFactorMoodCodeTestCase = new OperationsTestCase<PregnancyRiskFactor>(
 			"validatePregnancyRiskFactorMoodCode",
@@ -150,6 +156,7 @@ public class PregnancyRiskFactorTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePregnancyRiskFactorCodeP() {
 		OperationsTestCase<PregnancyRiskFactor> validatePregnancyRiskFactorCodePTestCase = new OperationsTestCase<PregnancyRiskFactor>(
 			"validatePregnancyRiskFactorCodeP",
@@ -184,6 +191,7 @@ public class PregnancyRiskFactorTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePregnancyRiskFactorCode() {
 		OperationsTestCase<PregnancyRiskFactor> validatePregnancyRiskFactorCodeTestCase = new OperationsTestCase<PregnancyRiskFactor>(
 			"validatePregnancyRiskFactorCode",
@@ -218,6 +226,7 @@ public class PregnancyRiskFactorTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePregnancyRiskFactorCodeVS() {
 		OperationsTestCase<PregnancyRiskFactor> validatePregnancyRiskFactorCodeVSTestCase = new OperationsTestCase<PregnancyRiskFactor>(
 			"validatePregnancyRiskFactorCodeVS",
@@ -252,6 +261,7 @@ public class PregnancyRiskFactorTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePregnancyRiskFactorValue() {
 		OperationsTestCase<PregnancyRiskFactor> validatePregnancyRiskFactorValueTestCase = new OperationsTestCase<PregnancyRiskFactor>(
 			"validatePregnancyRiskFactorValue",
@@ -289,6 +299,7 @@ public class PregnancyRiskFactorTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePregnancyRiskFactorValueP() {
 		OperationsTestCase<PregnancyRiskFactor> validatePregnancyRiskFactorValuePTestCase = new OperationsTestCase<PregnancyRiskFactor>(
 			"validatePregnancyRiskFactorValueP",
@@ -323,10 +334,11 @@ public class PregnancyRiskFactorTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePregnancyRiskFactorEntryRelationship() {
 		OperationsTestCase<PregnancyRiskFactor> validatePregnancyRiskFactorEntryRelationshipTestCase = new OperationsTestCase<PregnancyRiskFactor>(
-			"validatePregnancyRiskFactorEntryRelationship",
-			operationsForOCL.getOCLValue("VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validatePregnancyRiskFactorEntryRelationship", operationsForOCL.getOCLValue(
+				"VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -405,8 +417,7 @@ public class PregnancyRiskFactorTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.PrenatalCare;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.PrenatalCareOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,6 +50,7 @@ public class PrenatalCareTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePrenatalCareTemplateId() {
 		OperationsTestCase<PrenatalCare> validatePrenatalCareTemplateIdTestCase = new OperationsTestCase<PrenatalCare>(
 			"validatePrenatalCareTemplateId",
@@ -81,6 +85,7 @@ public class PrenatalCareTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePrenatalCareClassCode() {
 		OperationsTestCase<PrenatalCare> validatePrenatalCareClassCodeTestCase = new OperationsTestCase<PrenatalCare>(
 			"validatePrenatalCareClassCode",
@@ -115,6 +120,7 @@ public class PrenatalCareTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePrenatalCareMoodCode() {
 		OperationsTestCase<PrenatalCare> validatePrenatalCareMoodCodeTestCase = new OperationsTestCase<PrenatalCare>(
 			"validatePrenatalCareMoodCode",
@@ -149,6 +155,7 @@ public class PrenatalCareTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePrenatalCareNegationInd() {
 		OperationsTestCase<PrenatalCare> validatePrenatalCareNegationIndTestCase = new OperationsTestCase<PrenatalCare>(
 			"validatePrenatalCareNegationInd",
@@ -183,6 +190,7 @@ public class PrenatalCareTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePrenatalCareCodeP() {
 		OperationsTestCase<PrenatalCare> validatePrenatalCareCodePTestCase = new OperationsTestCase<PrenatalCare>(
 			"validatePrenatalCareCodeP",
@@ -203,7 +211,8 @@ public class PrenatalCareTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return PrenatalCareOperations.validatePrenatalCareCodeP((PrenatalCare) objectToTest, diagnostician, map);
+				return PrenatalCareOperations.validatePrenatalCareCodeP(
+					(PrenatalCare) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -216,10 +225,12 @@ public class PrenatalCareTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePrenatalCareCode() {
 		OperationsTestCase<PrenatalCare> validatePrenatalCareCodeTestCase = new OperationsTestCase<PrenatalCare>(
 			"validatePrenatalCareCode",
-			operationsForOCL.getOCLValue("VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(PrenatalCare target) {
@@ -248,6 +259,7 @@ public class PrenatalCareTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePrenatalCareEffectiveTime() {
 		OperationsTestCase<PrenatalCare> validatePrenatalCareEffectiveTimeTestCase = new OperationsTestCase<PrenatalCare>(
 			"validatePrenatalCareEffectiveTime",
@@ -285,6 +297,7 @@ public class PrenatalCareTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePrenatalCareEntryRelationship() {
 		OperationsTestCase<PrenatalCare> validatePrenatalCareEntryRelationshipTestCase = new OperationsTestCase<PrenatalCare>(
 			"validatePrenatalCareEntryRelationship",
@@ -367,8 +380,7 @@ public class PrenatalCareTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

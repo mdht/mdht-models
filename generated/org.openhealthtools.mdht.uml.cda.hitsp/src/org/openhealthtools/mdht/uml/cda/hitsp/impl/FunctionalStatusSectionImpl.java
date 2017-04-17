@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.FunctionalStatusSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.FunctionalStatusSectionOperations;
@@ -25,8 +23,6 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.FunctionalStatusSection
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Functional Status Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -69,7 +65,7 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 */
 	@Override
 	public FunctionalStatusSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -78,8 +74,9 @@ public class FunctionalStatusSectionImpl extends org.openhealthtools.mdht.uml.cd
 	 * @generated
 	 */
 	@Override
-	public FunctionalStatusSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public FunctionalStatusSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // FunctionalStatusSectionImpl

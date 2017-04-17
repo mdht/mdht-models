@@ -11,9 +11,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
-import org.eclipse.mdht.uml.cda.impl.EntryRelationshipImpl;
 
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.PrivacyAnnotationEntryRelationship;
@@ -27,7 +26,7 @@ import org.hl7.security.ds4p.contentprofile.operations.PrivacyAnnotationEntryRel
  *
  * @generated
  */
-public class PrivacyAnnotationEntryRelationshipImpl extends EntryRelationshipImpl implements PrivacyAnnotationEntryRelationship {
+public class PrivacyAnnotationEntryRelationshipImpl extends EObjectImpl implements PrivacyAnnotationEntryRelationship {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

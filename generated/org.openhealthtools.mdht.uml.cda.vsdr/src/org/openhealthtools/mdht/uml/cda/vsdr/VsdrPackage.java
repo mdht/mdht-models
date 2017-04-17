@@ -4,8 +4,7 @@ package org.openhealthtools.mdht.uml.cda.vsdr;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
-
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
+import org.eclipse.mdht.uml.cda.CDAPackage;
 
 /**
  * <!-- begin-user-doc -->

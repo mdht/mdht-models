@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.AdvanceDirectivesSectionOperations;
@@ -25,37 +25,35 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.AdvanceDirectivesSectionO
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directives Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AdvanceDirectivesSectionImpl extends
-		org.openhealthtools.mdht.uml.cda.ccd.impl.AdvanceDirectivesSectionImpl implements AdvanceDirectivesSection {
+public class AdvanceDirectivesSectionImpl extends org.openhealthtools.mdht.uml.cda.ccd.impl.AdvanceDirectivesSectionImpl
+		implements AdvanceDirectivesSection {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected AdvanceDirectivesSectionImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.ADVANCE_DIRECTIVES_SECTION;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateIHEAdvanceDirectivesSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return AdvanceDirectivesSectionOperations.validateIHEAdvanceDirectivesSectionTemplateId(
@@ -63,10 +61,10 @@ public class AdvanceDirectivesSectionImpl extends
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public AdvanceDirectivesSection init() {
 		return Initializer.Util.init(this);

@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.LastMenstrualPeriodDate;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.LastMenstrualPeriodDateOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,10 +48,11 @@ public class LastMenstrualPeriodDateTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateLastMenstrualPeriodDateTemplateId() {
 		OperationsTestCase<LastMenstrualPeriodDate> validateLastMenstrualPeriodDateTemplateIdTestCase = new OperationsTestCase<LastMenstrualPeriodDate>(
-			"validateLastMenstrualPeriodDateTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateLastMenstrualPeriodDateTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -79,10 +83,11 @@ public class LastMenstrualPeriodDateTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateLastMenstrualPeriodDateClassCode() {
 		OperationsTestCase<LastMenstrualPeriodDate> validateLastMenstrualPeriodDateClassCodeTestCase = new OperationsTestCase<LastMenstrualPeriodDate>(
-			"validateLastMenstrualPeriodDateClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateLastMenstrualPeriodDateClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -113,10 +118,11 @@ public class LastMenstrualPeriodDateTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateLastMenstrualPeriodDateMoodCode() {
 		OperationsTestCase<LastMenstrualPeriodDate> validateLastMenstrualPeriodDateMoodCodeTestCase = new OperationsTestCase<LastMenstrualPeriodDate>(
-			"validateLastMenstrualPeriodDateMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateLastMenstrualPeriodDateMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_LAST_MENSTRUAL_PERIOD_DATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -147,6 +153,7 @@ public class LastMenstrualPeriodDateTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateLastMenstrualPeriodDateCodeP() {
 		OperationsTestCase<LastMenstrualPeriodDate> validateLastMenstrualPeriodDateCodePTestCase = new OperationsTestCase<LastMenstrualPeriodDate>(
 			"validateLastMenstrualPeriodDateCodeP",
@@ -181,6 +188,7 @@ public class LastMenstrualPeriodDateTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateLastMenstrualPeriodDateCode() {
 		OperationsTestCase<LastMenstrualPeriodDate> validateLastMenstrualPeriodDateCodeTestCase = new OperationsTestCase<LastMenstrualPeriodDate>(
 			"validateLastMenstrualPeriodDateCode",
@@ -215,6 +223,7 @@ public class LastMenstrualPeriodDateTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateLastMenstrualPeriodDateValue() {
 		OperationsTestCase<LastMenstrualPeriodDate> validateLastMenstrualPeriodDateValueTestCase = new OperationsTestCase<LastMenstrualPeriodDate>(
 			"validateLastMenstrualPeriodDateValue",
@@ -300,8 +309,7 @@ public class LastMenstrualPeriodDateTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

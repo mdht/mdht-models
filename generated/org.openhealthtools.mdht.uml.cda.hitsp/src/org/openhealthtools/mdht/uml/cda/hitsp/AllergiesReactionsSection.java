@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,7 +25,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * <p>
  *     The Allergies and Other Adverse Reactions Section contains data on the substance intolerances and the
  *     associated adverse reactions suffered by the patient. At a minimum, currently active and any relevant historical
- *     allergies and adverse reactions shall be listed. 
+ *     allergies and adverse reactions shall be listed.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -83,5 +81,6 @@ public interface AllergiesReactionsSection extends org.openhealthtools.mdht.uml.
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergiesReactionsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public AllergiesReactionsSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // AllergiesReactionsSection

@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.MaternalMorbidity;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -41,7 +39,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class MaternalMorbidityOperations extends ClinicalStatementOperations {
+public class MaternalMorbidityOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,7 +75,7 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_MORBIDITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_MORBIDITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,28 +91,32 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalMorbidityTemplateId(MaternalMorbidity maternalMorbidity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_MORBIDITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_MORBIDITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_MORBIDITY);
 			try {
-				VALIDATE_MATERNAL_MORBIDITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_MORBIDITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_MORBIDITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			maternalMorbidity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MATERNAL_MORBIDITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(maternalMorbidity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalMorbidityTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalMorbidity, context) }),
-					new Object[] { maternalMorbidity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalMorbidityMaternalMorbidityTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalMorbidity, context) }),
+						new Object[] { maternalMorbidity }));
 			}
 
 			return false;
@@ -134,7 +143,7 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_MORBIDITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_MORBIDITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,28 +159,32 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalMorbidityClassCode(MaternalMorbidity maternalMorbidity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_MORBIDITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_MORBIDITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_MORBIDITY);
 			try {
-				VALIDATE_MATERNAL_MORBIDITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_MORBIDITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_MORBIDITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			maternalMorbidity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MATERNAL_MORBIDITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(maternalMorbidity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalMorbidityClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalMorbidity, context) }),
-					new Object[] { maternalMorbidity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalMorbidityMaternalMorbidityClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalMorbidity, context) }),
+						new Object[] { maternalMorbidity }));
 			}
 
 			return false;
@@ -198,7 +211,7 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_MORBIDITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_MORBIDITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,28 +227,32 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalMorbidityMoodCode(MaternalMorbidity maternalMorbidity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_MORBIDITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_MORBIDITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_MORBIDITY);
 			try {
-				VALIDATE_MATERNAL_MORBIDITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_MORBIDITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_MORBIDITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			maternalMorbidity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MATERNAL_MORBIDITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(maternalMorbidity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalMorbidityMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalMorbidity, context) }),
-					new Object[] { maternalMorbidity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalMorbidityMaternalMorbidityMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalMorbidity, context) }),
+						new Object[] { maternalMorbidity }));
 			}
 
 			return false;
@@ -262,7 +279,7 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_MORBIDITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_MORBIDITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,28 +295,32 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalMorbidityCodeP(MaternalMorbidity maternalMorbidity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_MORBIDITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_MORBIDITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_MORBIDITY);
 			try {
-				VALIDATE_MATERNAL_MORBIDITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_MORBIDITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_MORBIDITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MATERNAL_MORBIDITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			maternalMorbidity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalMorbidityCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalMorbidity, context) }),
-					new Object[] { maternalMorbidity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalMorbidityMaternalMorbidityCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalMorbidity, context) }),
+						new Object[] { maternalMorbidity }));
 			}
 
 			return false;
@@ -315,9 +336,9 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73781-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73781-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMaternalMorbidityCode(MaternalMorbidity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Maternal Morbidity Code</em>}' invariant operation.
@@ -328,7 +349,7 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -344,28 +365,32 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalMorbidityCode(MaternalMorbidity maternalMorbidity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_MORBIDITY);
 			try {
-				VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MATERNAL_MORBIDITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			maternalMorbidity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalMorbidityCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalMorbidity, context) }),
-					new Object[] { maternalMorbidity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalMorbidityMaternalMorbidityCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalMorbidity, context) }),
+						new Object[] { maternalMorbidity }));
 			}
 
 			return false;
@@ -381,9 +406,9 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '116859006' or value.code = '398019008' or value.code = '34430009' or value.code = '625654015' or value.code = '309904001' or value.code = '177217006' or value.code = '260413007'))";
+	protected static final String VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '116859006' or value.code = '398019008' or value.code = '34430009' or value.code = '625654015' or value.code = '309904001' or value.code = '177217006' or value.code = '260413007'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMaternalMorbidityCodeVS(MaternalMorbidity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Maternal Morbidity Code VS</em>}' invariant operation.
@@ -394,7 +419,7 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -410,28 +435,32 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalMorbidityCodeVS(MaternalMorbidity maternalMorbidity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_MORBIDITY);
 			try {
-				VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			maternalMorbidity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MATERNAL_MORBIDITY_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(maternalMorbidity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE_VS,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalMorbidityCodeVS",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalMorbidity, context) }),
-					new Object[] { maternalMorbidity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE_VS,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalMorbidityMaternalMorbidityCodeVS",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalMorbidity, context) }),
+						new Object[] { maternalMorbidity }));
 			}
 
 			return false;
@@ -447,9 +476,9 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '116859006' or value.code = '398019008' or value.code = '34430009' or value.code = '625654015' or value.code = '309904001' or value.code = '177217006' or value.code = '260413007')))";
+	protected static final String VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '116859006' or value.code = '398019008' or value.code = '34430009' or value.code = '625654015' or value.code = '309904001' or value.code = '177217006' or value.code = '260413007')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMaternalMorbidityValue(MaternalMorbidity, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Maternal Morbidity Value</em>}' invariant operation.
@@ -460,7 +489,7 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -476,28 +505,32 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalMorbidityValue(MaternalMorbidity maternalMorbidity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_MORBIDITY);
 			try {
-				VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MATERNAL_MORBIDITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			maternalMorbidity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalMorbidityValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalMorbidity, context) }),
-					new Object[] { maternalMorbidity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalMorbidityMaternalMorbidityValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalMorbidity, context) }),
+						new Object[] { maternalMorbidity }));
 			}
 
 			return false;
@@ -524,7 +557,7 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_MORBIDITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_MORBIDITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -540,28 +573,32 @@ public class MaternalMorbidityOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalMorbidityValueP(MaternalMorbidity maternalMorbidity,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_MORBIDITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_MORBIDITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_MORBIDITY);
 			try {
-				VALIDATE_MATERNAL_MORBIDITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_MORBIDITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_MORBIDITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_MORBIDITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			maternalMorbidity)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MATERNAL_MORBIDITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(maternalMorbidity)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_VALUE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalMorbidityValueP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalMorbidity, context) }),
-					new Object[] { maternalMorbidity }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_VALUE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalMorbidityMaternalMorbidityValueP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalMorbidity, context) }),
+						new Object[] { maternalMorbidity }));
 			}
 
 			return false;

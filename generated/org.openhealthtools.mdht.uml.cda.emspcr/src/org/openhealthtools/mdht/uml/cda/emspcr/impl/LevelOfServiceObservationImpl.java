@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.LevelOfServiceObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.LevelOfServiceObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Level Of Service Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class LevelOfServiceObservationImpl extends ObservationImpl implements LevelOfServiceObservation {
+public class LevelOfServiceObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements LevelOfServiceObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,8 +48,7 @@ public class LevelOfServiceObservationImpl extends ObservationImpl implements Le
 	 * @generated
 	 */
 	public boolean validateLevelOfServiceObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return LevelOfServiceObservationOperations.validateLevelOfServiceObservationTemplateId(
-			this, diagnostics, context);
+		return LevelOfServiceObservationOperations.validateLevelOfServiceObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -114,16 +102,16 @@ public class LevelOfServiceObservationImpl extends ObservationImpl implements Le
 	 * @generated
 	 */
 	public LevelOfServiceObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LevelOfServiceObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public LevelOfServiceObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // LevelOfServiceObservationImpl

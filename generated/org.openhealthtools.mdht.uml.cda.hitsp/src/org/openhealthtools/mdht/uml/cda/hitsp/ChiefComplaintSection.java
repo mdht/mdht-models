@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,7 +22,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  *
  * <!-- begin-model-doc -->
  * <p>
- *     The Chief Complaint Section contains information about the patient's chief complaint. 
+ *     The Chief Complaint Section contains information about the patient's chief complaint.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -80,5 +78,6 @@ public interface ChiefComplaintSection extends org.openhealthtools.mdht.uml.cda.
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ChiefComplaintSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ChiefComplaintSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // ChiefComplaintSection

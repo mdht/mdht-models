@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.MedicationNotAdministeredReasonObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.MedicationNotAdministeredReasonObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Not Administered Reason Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MedicationNotAdministeredReasonObservationImpl extends ObservationImpl implements
+public class MedicationNotAdministeredReasonObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements
 		MedicationNotAdministeredReasonObservation {
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,8 +50,7 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 */
 	public boolean validateMedicationNotAdministeredReasonObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationTemplateId(
-			this, diagnostics, context);
+		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +60,7 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 */
 	public boolean validateMedicationNotAdministeredReasonObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationMoodCode(
-			this, diagnostics, context);
+		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +70,7 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 */
 	public boolean validateMedicationNotAdministeredReasonObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationCode(
-			this, diagnostics, context);
+		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +80,7 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 */
 	public boolean validateMedicationNotAdministeredReasonObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValue(
-			this, diagnostics, context);
+		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +90,7 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 */
 	public boolean validateMedicationNotAdministeredReasonObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValueP(
-			this, diagnostics, context);
+		return MedicationNotAdministeredReasonObservationOperations.validateMedicationNotAdministeredReasonObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -115,17 +99,17 @@ public class MedicationNotAdministeredReasonObservationImpl extends ObservationI
 	 * @generated
 	 */
 	public MedicationNotAdministeredReasonObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	public MedicationNotAdministeredReasonObservation init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationNotAdministeredReasonObservationImpl

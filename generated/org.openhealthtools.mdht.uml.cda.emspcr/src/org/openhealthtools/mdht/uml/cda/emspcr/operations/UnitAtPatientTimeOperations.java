@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.UnitAtPatientTime;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
+public class UnitAtPatientTimeOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +73,7 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_UNIT_AT_PATIENT_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_AT_PATIENT_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,25 +88,38 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 
 	public static boolean validateUnitAtPatientTimeTemplateId(UnitAtPatientTime unitAtPatientTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_UNIT_AT_PATIENT_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_UNIT_AT_PATIENT_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_AT_PATIENT_TIME);
 			try {
-				VALIDATE_UNIT_AT_PATIENT_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_AT_PATIENT_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_UNIT_AT_PATIENT_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UNIT_AT_PATIENT_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_AT_PATIENT_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unitAtPatientTime)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.UNIT_AT_PATIENT_TIME__UNIT_AT_PATIENT_TIME_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("UnitAtPatientTimeTemplateId"), new Object[] { unitAtPatientTime }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UNIT_AT_PATIENT_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(unitAtPatientTime)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.UNIT_AT_PATIENT_TIME__UNIT_AT_PATIENT_TIME_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("UnitAtPatientTimeUnitAtPatientTimeTemplateId"),
+						 new Object [] { unitAtPatientTime }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -130,7 +144,7 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_UNIT_AT_PATIENT_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_AT_PATIENT_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,25 +159,38 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 
 	public static boolean validateUnitAtPatientTimeMoodCode(UnitAtPatientTime unitAtPatientTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_UNIT_AT_PATIENT_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_UNIT_AT_PATIENT_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_AT_PATIENT_TIME);
 			try {
-				VALIDATE_UNIT_AT_PATIENT_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_AT_PATIENT_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_UNIT_AT_PATIENT_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UNIT_AT_PATIENT_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_AT_PATIENT_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unitAtPatientTime)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.UNIT_AT_PATIENT_TIME__UNIT_AT_PATIENT_TIME_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("UnitAtPatientTimeMoodCode"), new Object[] { unitAtPatientTime }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UNIT_AT_PATIENT_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(unitAtPatientTime)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.UNIT_AT_PATIENT_TIME__UNIT_AT_PATIENT_TIME_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("UnitAtPatientTimeUnitAtPatientTimeMoodCode"),
+						 new Object [] { unitAtPatientTime }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -188,7 +215,7 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_UNIT_AT_PATIENT_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_AT_PATIENT_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,25 +230,38 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 
 	public static boolean validateUnitAtPatientTimeCodeP(UnitAtPatientTime unitAtPatientTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_UNIT_AT_PATIENT_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_UNIT_AT_PATIENT_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_AT_PATIENT_TIME);
 			try {
-				VALIDATE_UNIT_AT_PATIENT_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_AT_PATIENT_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_UNIT_AT_PATIENT_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UNIT_AT_PATIENT_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_AT_PATIENT_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unitAtPatientTime)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.UNIT_AT_PATIENT_TIME__UNIT_AT_PATIENT_TIME_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("UnitAtPatientTimeCodeP"), new Object[] { unitAtPatientTime }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UNIT_AT_PATIENT_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(unitAtPatientTime)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.UNIT_AT_PATIENT_TIME__UNIT_AT_PATIENT_TIME_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("UnitAtPatientTimeUnitAtPatientTimeCodeP"),
+						 new Object [] { unitAtPatientTime }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -235,9 +275,9 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '69474-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '69474-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateUnitAtPatientTimeCode(UnitAtPatientTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Unit At Patient Time Code</em>}' invariant operation.
@@ -248,7 +288,7 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -263,25 +303,38 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 
 	public static boolean validateUnitAtPatientTimeCode(UnitAtPatientTime unitAtPatientTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_AT_PATIENT_TIME);
 			try {
-				VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unitAtPatientTime)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.UNIT_AT_PATIENT_TIME__UNIT_AT_PATIENT_TIME_CODE,
-					EmspcrPlugin.INSTANCE.getString("UnitAtPatientTimeCode"), new Object[] { unitAtPatientTime }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UNIT_AT_PATIENT_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(unitAtPatientTime)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.UNIT_AT_PATIENT_TIME__UNIT_AT_PATIENT_TIME_CODE,
+						 EmspcrPlugin.INSTANCE.getString("UnitAtPatientTimeUnitAtPatientTimeCode"),
+						 new Object [] { unitAtPatientTime }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -306,7 +359,7 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_UNIT_AT_PATIENT_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_UNIT_AT_PATIENT_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -321,25 +374,38 @@ public class UnitAtPatientTimeOperations extends ClinicalStatementOperations {
 
 	public static boolean validateUnitAtPatientTimeValue(UnitAtPatientTime unitAtPatientTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_UNIT_AT_PATIENT_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_UNIT_AT_PATIENT_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.UNIT_AT_PATIENT_TIME);
 			try {
-				VALIDATE_UNIT_AT_PATIENT_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_UNIT_AT_PATIENT_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_UNIT_AT_PATIENT_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_UNIT_AT_PATIENT_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_UNIT_AT_PATIENT_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			unitAtPatientTime)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.UNIT_AT_PATIENT_TIME__UNIT_AT_PATIENT_TIME_VALUE,
-					EmspcrPlugin.INSTANCE.getString("UnitAtPatientTimeValue"), new Object[] { unitAtPatientTime }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_UNIT_AT_PATIENT_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(unitAtPatientTime)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.UNIT_AT_PATIENT_TIME__UNIT_AT_PATIENT_TIME_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("UnitAtPatientTimeUnitAtPatientTimeValue"),
+						 new Object [] { unitAtPatientTime }));
+			}
+			 
 			return false;
 		}
 		return true;

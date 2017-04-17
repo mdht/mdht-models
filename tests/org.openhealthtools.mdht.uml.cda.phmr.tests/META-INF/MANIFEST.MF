@@ -11,12 +11,13 @@ Export-Package: org.openhealthtools.mdht.uml.cda.phmr.tests
 Require-Bundle: org.eclipse.core.runtime,
  org.openhealthtools.mdht.uml.cda.phmr;visibility:=reexport,
  org.openhealthtools.mdht.uml.cda.ccd;visibility:=reexport,
- org.openhealthtools.mdht.uml.cda;visibility:=reexport,
- org.openhealthtools.mdht.uml.hl7.datatypes;visibility:=reexport,
+ org.eclipse.mdht.uml.cda;visibility:=reexport,
+ org.eclipse.mdht.uml.hl7.datatypes;visibility:=reexport,
  org.eclipse.emf.ecore;visibility:=reexport,
- org.openhealthtools.mdht.uml.hl7.rim;visibility:=reexport,
- org.openhealthtools.mdht.uml.hl7.vocab;visibility:=reexport,
+ org.eclipse.uml2.types;visibility:=reexport,
+ org.eclipse.mdht.uml.hl7.rim;visibility:=reexport,
+ org.eclipse.mdht.uml.hl7.vocab;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
- org.openhealthtools.mdht.uml.cda.test;visibility:=reexport,
+ org.eclipse.mdht.uml.cda.test,
  org.junit;visibility:=reexport
 Bundle-ActivationPolicy: lazy

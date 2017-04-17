@@ -22,100 +22,91 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationMediaImpl;
-
 import org.openhealthtools.mdht.uml.cda.phmr.ObservationMediaJPG;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ObservationMediaJPGOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Observation Media JPG</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ObservationMediaJPGImpl extends ObservationMediaImpl implements ObservationMediaJPG {
+public class ObservationMediaJPGImpl extends org.eclipse.mdht.uml.cda.impl.ObservationMediaImpl implements ObservationMediaJPG {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ObservationMediaJPGImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.OBSERVATION_MEDIA_JPG;
-  }
+		return PhmrPackage.Literals.OBSERVATION_MEDIA_JPG;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateObservationMediaJPGTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObservationMediaJPGOperations.validateObservationMediaJPGTemplateId(this, diagnostics, context);
-  }
+		return ObservationMediaJPGOperations.validateObservationMediaJPGTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateObservationMediaJPGClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObservationMediaJPGOperations.validateObservationMediaJPGClassCode(this, diagnostics, context);
-  }
+		return ObservationMediaJPGOperations.validateObservationMediaJPGClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateObservationMediaJPGMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObservationMediaJPGOperations.validateObservationMediaJPGMoodCode(this, diagnostics, context);
-  }
+		return ObservationMediaJPGOperations.validateObservationMediaJPGMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateObservationMediaJPGValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObservationMediaJPGOperations.validateObservationMediaJPGValue(this, diagnostics, context);
-  }
+		return ObservationMediaJPGOperations.validateObservationMediaJPGValue(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public ObservationMediaJPG init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -123,8 +114,8 @@ public class ObservationMediaJPGImpl extends ObservationMediaImpl implements Obs
      * @generated
      */
     @Override
-	public ObservationMediaJPG init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public ObservationMediaJPG init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //ObservationMediaJPGImpl

@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.AssayQuantitation;
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
@@ -38,7 +31,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SpecimenInformation;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -95,7 +87,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class PharmacokineticConcentrationFindingOperations extends ClinicalStatementOperations {
+public class PharmacokineticConcentrationFindingOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -124,7 +124,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -139,25 +139,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingTemplateId(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -185,7 +195,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -200,25 +210,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingClassCode(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -246,7 +266,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -261,25 +281,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingMoodCode(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -307,7 +337,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -322,25 +352,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingId(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -368,7 +408,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -383,25 +423,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingCodeP(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -431,7 +481,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -446,25 +496,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingCode(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -492,7 +552,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -507,25 +567,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingStatusCode(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -553,7 +623,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -568,25 +638,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingValue(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -614,7 +694,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -629,25 +709,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingMethodCodeP(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -677,7 +767,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -692,25 +782,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingMethodCode(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_METHOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -738,7 +838,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -753,25 +853,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingInterpretationCodeP(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -801,7 +911,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -816,25 +926,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingInterpretationCode(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -862,7 +982,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -877,25 +997,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingGroupIdentifier(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -923,7 +1053,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -938,25 +1068,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingSpecimenInformation(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_SPECIMEN_INFORMATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingSpecimenInformation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -984,7 +1124,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -999,25 +1139,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingNonPerformanceReason(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1045,7 +1195,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1060,25 +1210,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingStudyTestPerformer(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_STUDY_TEST_PERFORMER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1106,7 +1266,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1121,25 +1281,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingPlannedStudyDay(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_PLANNED_STUDY_DAY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1167,7 +1337,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1182,25 +1352,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingExclusionReason(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_EXCLUSION_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingExclusionReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingExclusionReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1228,7 +1408,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1243,25 +1423,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingComment(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1289,7 +1479,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1304,25 +1494,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingDomainAssignment(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1350,7 +1550,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1365,25 +1565,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingRelatedRecord(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1411,7 +1621,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1426,25 +1636,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingSupplementalValue(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1472,7 +1692,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1487,25 +1707,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingCategory(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1533,7 +1763,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1548,25 +1778,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingSubCategory(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1594,7 +1834,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1609,25 +1849,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingFastingStatus(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_FASTING_STATUS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingFastingStatus", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingFastingStatus", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1655,7 +1905,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1670,25 +1920,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingAssayQuantitation(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_ASSAY_QUANTITATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingAssayQuantitation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingAssayQuantitation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1716,7 +1976,7 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1731,25 +1991,35 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  boolean validatePharmacokineticConcentrationFindingFindingAbout(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING);
 			try {
-				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pharmacokineticConcentrationFinding)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pharmacokineticConcentrationFinding)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.PHARMACOKINETIC_CONCENTRATION_FINDING__PHARMACOKINETIC_CONCENTRATION_FINDING_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PharmacokineticConcentrationFindingPharmacokineticConcentrationFindingFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pharmacokineticConcentrationFinding, context) }),
 						 new Object [] { pharmacokineticConcentrationFinding }));
 			}
 			 
@@ -1785,8 +2055,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(78));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1794,8 +2069,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(pharmacokineticConcentrationFinding);
 	}
 
@@ -1826,8 +2102,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  SpecimenInformation getSpecimenInformation(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_SPECIMEN_INFORMATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(79));
 			try {
 				GET_SPECIMEN_INFORMATION__EOCL_QRY = helper.createQuery(GET_SPECIMEN_INFORMATION__EOCL_EXP);
@@ -1835,8 +2116,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SPECIMEN_INFORMATION__EOCL_QRY);
 		return (SpecimenInformation) query.evaluate(pharmacokineticConcentrationFinding);
 	}
 
@@ -1867,8 +2149,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(80));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1876,8 +2163,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(pharmacokineticConcentrationFinding);
 	}
 
@@ -1908,8 +2196,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  PlannedStudyDay getPlannedStudyDay(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_PLANNED_STUDY_DAY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(81));
 			try {
 				GET_PLANNED_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_PLANNED_STUDY_DAY__EOCL_EXP);
@@ -1917,8 +2210,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
 		return (PlannedStudyDay) query.evaluate(pharmacokineticConcentrationFinding);
 	}
 
@@ -1949,8 +2243,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  ExclusionReason getExclusionReason(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_EXCLUSION_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(82));
 			try {
 				GET_EXCLUSION_REASON__EOCL_QRY = helper.createQuery(GET_EXCLUSION_REASON__EOCL_EXP);
@@ -1958,8 +2257,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EXCLUSION_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EXCLUSION_REASON__EOCL_QRY);
 		return (ExclusionReason) query.evaluate(pharmacokineticConcentrationFinding);
 	}
 
@@ -1990,8 +2290,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  EList<Comment> getComments(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(83));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1999,8 +2304,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(pharmacokineticConcentrationFinding);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -2033,8 +2339,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(84));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -2042,8 +2353,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(pharmacokineticConcentrationFinding);
 	}
 
@@ -2074,8 +2386,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(85));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -2083,8 +2400,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(pharmacokineticConcentrationFinding);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -2117,8 +2435,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(86));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -2126,8 +2449,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(pharmacokineticConcentrationFinding);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -2160,8 +2484,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  Category getCategory(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(87));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -2169,8 +2498,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(pharmacokineticConcentrationFinding);
 	}
 
@@ -2201,8 +2531,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  SubCategory getSubCategory(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(88));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -2210,8 +2545,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(pharmacokineticConcentrationFinding);
 	}
 
@@ -2242,8 +2578,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  FastingStatus getFastingStatus(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_FASTING_STATUS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(89));
 			try {
 				GET_FASTING_STATUS__EOCL_QRY = helper.createQuery(GET_FASTING_STATUS__EOCL_EXP);
@@ -2251,8 +2592,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FASTING_STATUS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FASTING_STATUS__EOCL_QRY);
 		return (FastingStatus) query.evaluate(pharmacokineticConcentrationFinding);
 	}
 
@@ -2283,8 +2625,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  AssayQuantitation getAssayQuantitation(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_ASSAY_QUANTITATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(90));
 			try {
 				GET_ASSAY_QUANTITATION__EOCL_QRY = helper.createQuery(GET_ASSAY_QUANTITATION__EOCL_EXP);
@@ -2292,8 +2639,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ASSAY_QUANTITATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ASSAY_QUANTITATION__EOCL_QRY);
 		return (AssayQuantitation) query.evaluate(pharmacokineticConcentrationFinding);
 	}
 
@@ -2324,8 +2672,13 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(PharmacokineticConcentrationFinding pharmacokineticConcentrationFinding) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING, SdtmPackage.Literals.PHARMACOKINETIC_CONCENTRATION_FINDING.getEAllOperations().get(91));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -2333,8 +2686,9 @@ public class PharmacokineticConcentrationFindingOperations extends ClinicalState
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(pharmacokineticConcentrationFinding);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

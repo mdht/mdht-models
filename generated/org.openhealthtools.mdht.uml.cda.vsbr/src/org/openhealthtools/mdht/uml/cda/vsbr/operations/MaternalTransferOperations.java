@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.MaternalTransfer;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -40,7 +38,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class MaternalTransferOperations extends ClinicalStatementOperations {
+public class MaternalTransferOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +74,7 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,28 +90,32 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalTransferTemplateId(MaternalTransfer maternalTransfer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_TRANSFER);
 			try {
-				VALIDATE_MATERNAL_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			maternalTransfer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MATERNAL_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(maternalTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalTransferTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalTransfer, context) }),
-					new Object[] { maternalTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalTransferMaternalTransferTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalTransfer, context) }),
+						new Object[] { maternalTransfer }));
 			}
 
 			return false;
@@ -133,7 +142,7 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,28 +158,32 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalTransferClassCode(MaternalTransfer maternalTransfer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_TRANSFER);
 			try {
-				VALIDATE_MATERNAL_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			maternalTransfer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MATERNAL_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(maternalTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalTransferClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalTransfer, context) }),
-					new Object[] { maternalTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalTransferMaternalTransferClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalTransfer, context) }),
+						new Object[] { maternalTransfer }));
 			}
 
 			return false;
@@ -197,7 +210,7 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -213,28 +226,32 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalTransferMoodCode(MaternalTransfer maternalTransfer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_TRANSFER);
 			try {
-				VALIDATE_MATERNAL_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			maternalTransfer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MATERNAL_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(maternalTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalTransferMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalTransfer, context) }),
-					new Object[] { maternalTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalTransferMaternalTransferMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalTransfer, context) }),
+						new Object[] { maternalTransfer }));
 			}
 
 			return false;
@@ -261,7 +278,7 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -277,28 +294,32 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalTransferCodeP(MaternalTransfer maternalTransfer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_TRANSFER);
 			try {
-				VALIDATE_MATERNAL_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MATERNAL_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			maternalTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalTransferCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalTransfer, context) }),
-					new Object[] { maternalTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalTransferMaternalTransferCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalTransfer, context) }),
+						new Object[] { maternalTransfer }));
 			}
 
 			return false;
@@ -314,9 +335,9 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73763-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73763-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMaternalTransferCode(MaternalTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Maternal Transfer Code</em>}' invariant operation.
@@ -327,7 +348,7 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,28 +364,32 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalTransferCode(MaternalTransfer maternalTransfer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_TRANSFER);
 			try {
-				VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MATERNAL_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			maternalTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalTransferCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalTransfer, context) }),
-					new Object[] { maternalTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalTransferMaternalTransferCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalTransfer, context) }),
+						new Object[] { maternalTransfer }));
 			}
 
 			return false;
@@ -391,7 +416,7 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -407,28 +432,32 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalTransferValue(MaternalTransfer maternalTransfer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_TRANSFER);
 			try {
-				VALIDATE_MATERNAL_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MATERNAL_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			maternalTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalTransferValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalTransfer, context) }),
-					new Object[] { maternalTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalTransferMaternalTransferValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalTransfer, context) }),
+						new Object[] { maternalTransfer }));
 			}
 
 			return false;
@@ -455,7 +484,7 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MATERNAL_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_MATERNAL_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -471,28 +500,32 @@ public class MaternalTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateMaternalTransferParticipant(MaternalTransfer maternalTransfer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_MATERNAL_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_MATERNAL_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.MATERNAL_TRANSFER);
 			try {
-				VALIDATE_MATERNAL_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_MATERNAL_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_MATERNAL_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MATERNAL_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			maternalTransfer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_MATERNAL_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(maternalTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_PARTICIPANT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"MaternalTransferParticipant",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(maternalTransfer, context) }),
-					new Object[] { maternalTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.MATERNAL_TRANSFER__MATERNAL_TRANSFER_PARTICIPANT,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"MaternalTransferMaternalTransferParticipant",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										maternalTransfer, context) }),
+						new Object[] { maternalTransfer }));
 			}
 
 			return false;

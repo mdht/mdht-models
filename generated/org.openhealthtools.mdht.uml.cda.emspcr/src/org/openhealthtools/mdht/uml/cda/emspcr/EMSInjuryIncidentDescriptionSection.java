@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSInjuryIncidentDescriptionSectionTemplateId EMSInjuryIncidentDescriptionSectionCode EMSInjuryIncidentDescriptionSectionTitle EMSInjuryIncidentDescriptionSectionText EMSInjuryIncidentDescriptionSectionInjuryCauseCategory EMSInjuryIncidentDescriptionSectionInjuryMechanism EMSInjuryIncidentDescriptionSectionTraumaCenterCriteria EMSInjuryIncidentDescriptionSectionInjuryRiskFactor EMSInjuryIncidentDescriptionSectionVehicleImpactArea EMSInjuryIncidentDescriptionSectionPatientLocationInVehicle EMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment EMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus EMSInjuryIncidentDescriptionSectionHeightOfFall EMSInjuryIncidentDescriptionSectionDisasterType' templateId.root='2.16.840.1.113883.17.3.10.1.17' code.code='67800-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS injury incident description Narrative NEMSIS' title.mixed='Injury Incident Description Section'"
  * @generated
  */
-public interface EMSInjuryIncidentDescriptionSection extends Section {
+public interface EMSInjuryIncidentDescriptionSection extends org.eclipse.mdht.uml.cda.Section {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -306,9 +299,9 @@ public interface EMSInjuryIncidentDescriptionSection extends Section {
 	public EMSInjuryIncidentDescriptionSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSInjuryIncidentDescriptionSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public EMSInjuryIncidentDescriptionSection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // EMSInjuryIncidentDescriptionSection

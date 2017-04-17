@@ -7,18 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
+import org.eclipse.mdht.uml.cda.operations.SectionOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyPerformance;
 import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults;
 import org.openhealthtools.mdht.uml.cda.vsdr.CertifyingDeath;
@@ -35,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus;
 import org.openhealthtools.mdht.uml.cda.vsdr.PronouncingDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -84,6 +77,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class DeathReportDocumentBodyOperations extends SectionOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -112,7 +113,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -127,25 +128,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyTemplateId(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -175,7 +186,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -190,25 +201,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyCode(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -236,7 +257,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -251,25 +272,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyCodeP(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -297,7 +328,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -312,25 +343,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyText(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -358,7 +399,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -373,25 +414,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyTimeofDeath(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TIMEOF_DEATH,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyTimeofDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyTimeofDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -419,7 +470,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -434,25 +485,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyLocationOfDeath(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyLocationOfDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyLocationOfDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -480,7 +541,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -495,25 +556,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyCertifyingDeath(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyCertifyingDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyCertifyingDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -541,7 +612,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -556,25 +627,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyMannerOfDeath(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyMannerOfDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyMannerOfDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -602,7 +683,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -617,25 +698,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyPregnancyStatus(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_PREGNANCY_STATUS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyPregnancyStatus", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyPregnancyStatus", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -663,7 +754,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -678,25 +769,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyTobaccoUse(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_TOBACCO_USE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyTobaccoUse", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyTobaccoUse", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -724,7 +825,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -739,25 +840,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyInjury(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_INJURY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_INJURY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyInjury", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyInjury", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -785,7 +896,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -800,25 +911,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyCauseOfDeath(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyCauseOfDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyCauseOfDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -846,7 +967,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -861,25 +982,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyAutopsyPerformance(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_PERFORMANCE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyAutopsyPerformance", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyAutopsyPerformance", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -907,7 +1038,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -922,25 +1053,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyAutopsyResults(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_AUTOPSY_RESULTS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyAutopsyResults", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyAutopsyResults", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -968,7 +1109,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -983,25 +1124,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyCoronerReferral(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CORONER_REFERRAL,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyCoronerReferral", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyCoronerReferral", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -1029,7 +1180,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1044,25 +1195,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyCoronerCaseTransfer(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_CORONER_CASE_TRANSFER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyCoronerCaseTransfer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyCoronerCaseTransfer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -1090,7 +1251,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1105,25 +1266,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyDeathLocationType(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_DEATH_LOCATION_TYPE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathLocationType", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyDeathLocationType", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -1151,7 +1322,7 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1166,25 +1337,35 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  boolean validateDeathReportDocumentBodyPronouncingDeath(DeathReportDocumentBody deathReportDocumentBody, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY);
 			try {
-				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deathReportDocumentBody)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deathReportDocumentBody)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DEATH_REPORT_DOCUMENT_BODY__DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyPronouncingDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DeathReportDocumentBodyDeathReportDocumentBodyPronouncingDeath", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(deathReportDocumentBody, context) }),
 						 new Object [] { deathReportDocumentBody }));
 			}
 			 
@@ -1220,8 +1401,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  DateandTimeofDeath getTimeofDeath(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_TIMEOF_DEATH__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(73));
 			try {
 				GET_TIMEOF_DEATH__EOCL_QRY = helper.createQuery(GET_TIMEOF_DEATH__EOCL_EXP);
@@ -1229,8 +1415,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TIMEOF_DEATH__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TIMEOF_DEATH__EOCL_QRY);
 		return (DateandTimeofDeath) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1261,8 +1448,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  LocationofDeath getLocationOfDeath(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_LOCATION_OF_DEATH__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(74));
 			try {
 				GET_LOCATION_OF_DEATH__EOCL_QRY = helper.createQuery(GET_LOCATION_OF_DEATH__EOCL_EXP);
@@ -1270,8 +1462,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_LOCATION_OF_DEATH__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_LOCATION_OF_DEATH__EOCL_QRY);
 		return (LocationofDeath) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1302,8 +1495,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  CertifyingDeath getCertifyingDeath(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_CERTIFYING_DEATH__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(75));
 			try {
 				GET_CERTIFYING_DEATH__EOCL_QRY = helper.createQuery(GET_CERTIFYING_DEATH__EOCL_EXP);
@@ -1311,8 +1509,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CERTIFYING_DEATH__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CERTIFYING_DEATH__EOCL_QRY);
 		return (CertifyingDeath) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1343,8 +1542,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  MannerofDeath getMannerOfDeath(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_MANNER_OF_DEATH__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(76));
 			try {
 				GET_MANNER_OF_DEATH__EOCL_QRY = helper.createQuery(GET_MANNER_OF_DEATH__EOCL_EXP);
@@ -1352,8 +1556,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MANNER_OF_DEATH__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MANNER_OF_DEATH__EOCL_QRY);
 		return (MannerofDeath) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1384,8 +1589,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  PregnancyStatus getPregnancyStatus(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_PREGNANCY_STATUS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(77));
 			try {
 				GET_PREGNANCY_STATUS__EOCL_QRY = helper.createQuery(GET_PREGNANCY_STATUS__EOCL_EXP);
@@ -1393,8 +1603,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PREGNANCY_STATUS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PREGNANCY_STATUS__EOCL_QRY);
 		return (PregnancyStatus) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1425,8 +1636,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  TobaccoUse getTobaccoUse(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_TOBACCO_USE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(78));
 			try {
 				GET_TOBACCO_USE__EOCL_QRY = helper.createQuery(GET_TOBACCO_USE__EOCL_EXP);
@@ -1434,8 +1650,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TOBACCO_USE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TOBACCO_USE__EOCL_QRY);
 		return (TobaccoUse) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1466,8 +1683,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  Injury getInjury(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_INJURY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(79));
 			try {
 				GET_INJURY__EOCL_QRY = helper.createQuery(GET_INJURY__EOCL_EXP);
@@ -1475,8 +1697,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INJURY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_INJURY__EOCL_QRY);
 		return (Injury) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1507,8 +1730,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  DeathCausalInformation getCauseOfDeath(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_CAUSE_OF_DEATH__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(80));
 			try {
 				GET_CAUSE_OF_DEATH__EOCL_QRY = helper.createQuery(GET_CAUSE_OF_DEATH__EOCL_EXP);
@@ -1516,8 +1744,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CAUSE_OF_DEATH__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CAUSE_OF_DEATH__EOCL_QRY);
 		return (DeathCausalInformation) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1548,8 +1777,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  AutopsyPerformance getAutopsyPerformance(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_AUTOPSY_PERFORMANCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(81));
 			try {
 				GET_AUTOPSY_PERFORMANCE__EOCL_QRY = helper.createQuery(GET_AUTOPSY_PERFORMANCE__EOCL_EXP);
@@ -1557,8 +1791,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_AUTOPSY_PERFORMANCE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_AUTOPSY_PERFORMANCE__EOCL_QRY);
 		return (AutopsyPerformance) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1589,8 +1824,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  AutopsyResults getAutopsyResults(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_AUTOPSY_RESULTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(82));
 			try {
 				GET_AUTOPSY_RESULTS__EOCL_QRY = helper.createQuery(GET_AUTOPSY_RESULTS__EOCL_EXP);
@@ -1598,8 +1838,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_AUTOPSY_RESULTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_AUTOPSY_RESULTS__EOCL_QRY);
 		return (AutopsyResults) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1630,8 +1871,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  CoronerReferral getCoronerReferral(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_CORONER_REFERRAL__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(83));
 			try {
 				GET_CORONER_REFERRAL__EOCL_QRY = helper.createQuery(GET_CORONER_REFERRAL__EOCL_EXP);
@@ -1639,8 +1885,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CORONER_REFERRAL__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CORONER_REFERRAL__EOCL_QRY);
 		return (CoronerReferral) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1671,8 +1918,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  CoronerCaseTransfer getCoronerCaseTransfer(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_CORONER_CASE_TRANSFER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(84));
 			try {
 				GET_CORONER_CASE_TRANSFER__EOCL_QRY = helper.createQuery(GET_CORONER_CASE_TRANSFER__EOCL_EXP);
@@ -1680,8 +1932,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CORONER_CASE_TRANSFER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CORONER_CASE_TRANSFER__EOCL_QRY);
 		return (CoronerCaseTransfer) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1712,8 +1965,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  DeathLocationType getDeathLocationType(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_DEATH_LOCATION_TYPE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(85));
 			try {
 				GET_DEATH_LOCATION_TYPE__EOCL_QRY = helper.createQuery(GET_DEATH_LOCATION_TYPE__EOCL_EXP);
@@ -1721,8 +1979,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DEATH_LOCATION_TYPE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DEATH_LOCATION_TYPE__EOCL_QRY);
 		return (DeathLocationType) query.evaluate(deathReportDocumentBody);
 	}
 
@@ -1753,8 +2012,13 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 	 */
 	
 	public static  PronouncingDeath getPronouncingDeath(DeathReportDocumentBody deathReportDocumentBody) {
+	
+	
+	
 		if (GET_PRONOUNCING_DEATH__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY, VsdrPackage.Literals.DEATH_REPORT_DOCUMENT_BODY.getEAllOperations().get(86));
 			try {
 				GET_PRONOUNCING_DEATH__EOCL_QRY = helper.createQuery(GET_PRONOUNCING_DEATH__EOCL_EXP);
@@ -1762,8 +2026,9 @@ public class DeathReportDocumentBodyOperations extends SectionOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PRONOUNCING_DEATH__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRONOUNCING_DEATH__EOCL_QRY);
 		return (PronouncingDeath) query.evaluate(deathReportDocumentBody);
 	}
 

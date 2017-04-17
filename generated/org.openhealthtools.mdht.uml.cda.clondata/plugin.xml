@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated clondata -->
+      <package
+            uri="http://www.openhealthtools.org/mdht/uml/cda/clondata"
+            class="org.openhealthtools.mdht.uml.cda.clondata.CLONDATAPackage"
+            genModel="model/clondata.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <!-- @generated clondata -->
+      <parser
+            type="clondata"
+            class="org.openhealthtools.mdht.uml.cda.clondata.util.CLONDATAResourceFactoryImpl"/>
+   </extension>
+</plugin>

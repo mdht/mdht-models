@@ -16,64 +16,62 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.ExternalReference;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.operations.ExternalReferenceOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>External Reference</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class ExternalReferenceImpl extends ActImpl implements ExternalReference {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ExternalReferenceImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.EXTERNAL_REFERENCE;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExternalReferenceHasNoCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalReferenceOperations.validateExternalReferenceHasNoCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExternalReferenceHasReference(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalReferenceOperations.validateExternalReferenceHasReference(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExternalReferenceHasReferenceExternalDocument(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocument(
@@ -81,10 +79,10 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExternalReferenceHasReferenceExternalDocumentID(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentID(
@@ -92,10 +90,10 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExternalReferenceHasReferenceExternalDocumentText(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ExternalReferenceOperations.validateExternalReferenceHasReferenceExternalDocumentText(
@@ -103,55 +101,55 @@ public class ExternalReferenceImpl extends ActImpl implements ExternalReference 
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExternalReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalReferenceOperations.validateExternalReferenceTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExternalReferenceClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalReferenceOperations.validateExternalReferenceClassCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExternalReferenceMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalReferenceOperations.validateExternalReferenceMoodCode(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExternalReferenceId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalReferenceOperations.validateExternalReferenceId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateExternalReferenceText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ExternalReferenceOperations.validateExternalReferenceText(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ExternalReference init() {
 		return Initializer.Util.init(this);
 	}

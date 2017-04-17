@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.AssignedEntityImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.PayerEntity;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.PayerEntityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.AssignedEntityImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Payer Entity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */

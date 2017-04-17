@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.InsuranceProvider;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.InsuranceProviderOperations;
@@ -26,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.CoverageEntryImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Insurance Provider</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -74,7 +70,8 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderHealthInsuranceType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInsuranceProviderHealthInsuranceType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderHealthInsuranceType(this, diagnostics, context);
 	}
 
@@ -135,7 +132,8 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderPatientInformation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInsuranceProviderPatientInformation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderPatientInformation(this, diagnostics, context);
 	}
 
@@ -164,7 +162,8 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	 */
 	public boolean validateInsuranceProviderRelationshipToSubscriber(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriber(this, diagnostics, context);
+		return InsuranceProviderOperations.validateInsuranceProviderRelationshipToSubscriber(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -220,7 +219,8 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInsuranceProviderSubscriberAddress(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInsuranceProviderSubscriberAddress(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InsuranceProviderOperations.validateInsuranceProviderSubscriberAddress(this, diagnostics, context);
 	}
 
@@ -282,7 +282,7 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	 */
 	@Override
 	public InsuranceProvider init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -291,8 +291,9 @@ public class InsuranceProviderImpl extends CoverageEntryImpl implements Insuranc
 	 * @generated
 	 */
 	@Override
-	public InsuranceProvider init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public InsuranceProvider init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // InsuranceProviderImpl

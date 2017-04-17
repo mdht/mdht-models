@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ManufacturedProductImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.Product;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.ProductOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ManufacturedProductImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Product</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -83,7 +81,8 @@ public class ProductImpl extends ManufacturedProductImpl implements Product {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProductHasMaterialCodeOriginalText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProductHasMaterialCodeOriginalText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProductOperations.validateProductHasMaterialCodeOriginalText(this, diagnostics, context);
 	}
 
@@ -101,7 +100,8 @@ public class ProductImpl extends ManufacturedProductImpl implements Product {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProductMayHaveMaterialManufacturer(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProductMayHaveMaterialManufacturer(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return ProductOperations.validateProductMayHaveMaterialManufacturer(this, diagnostics, context);
 	}
 

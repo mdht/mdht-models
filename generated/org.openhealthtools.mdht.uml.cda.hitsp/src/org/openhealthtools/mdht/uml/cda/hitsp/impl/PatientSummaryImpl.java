@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.ContinuityOfCareDocumentImpl;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.GeneralHeaderConstraintsOperations;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
@@ -40,8 +38,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.MedicalDocumentOperations
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Patient Summary</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -180,7 +176,8 @@ public class PatientSummaryImpl extends ContinuityOfCareDocumentImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsIdRootFormat(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsIdRootFormat(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsIdRootFormat(
 			this, diagnostics, context);
 	}
@@ -342,7 +339,8 @@ public class PatientSummaryImpl extends ContinuityOfCareDocumentImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsHasInformant(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsHasInformant(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsHasInformant(
 			this, diagnostics, context);
 	}
@@ -407,8 +405,10 @@ public class PatientSummaryImpl extends ContinuityOfCareDocumentImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -445,7 +445,8 @@ public class PatientSummaryImpl extends ContinuityOfCareDocumentImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateGeneralHeaderConstraintsLanguageCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsLanguageCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return GeneralHeaderConstraintsOperations.validateGeneralHeaderConstraintsLanguageCode(
 			this, diagnostics, context);
 	}
@@ -547,7 +548,8 @@ public class PatientSummaryImpl extends ContinuityOfCareDocumentImpl implements 
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientSummaryImmunizationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientSummaryImmunizationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PatientSummaryOperations.validatePatientSummaryImmunizationsSection(this, diagnostics, context);
 	}
 
@@ -749,7 +751,7 @@ public class PatientSummaryImpl extends ContinuityOfCareDocumentImpl implements 
 	 */
 	@Override
 	public PatientSummary init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -758,8 +760,9 @@ public class PatientSummaryImpl extends ContinuityOfCareDocumentImpl implements 
 	 * @generated
 	 */
 	@Override
-	public PatientSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public PatientSummary init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // PatientSummaryImpl

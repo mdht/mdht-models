@@ -24,17 +24,18 @@
 package org.openhealthtools.mdht.uml.cda.phmr.tests;
 
 
+import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.SamplingFrequencyObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.SamplingFrequencyObservationOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -69,66 +70,69 @@ public class SamplingFrequencyObservationTest extends  CDAValidationTest {
  
 									
 public void testValidateSamplingFrequencyObservationTemplateId() {
-      OperationsTestCase<SamplingFrequencyObservation> validateSamplingFrequencyObservationTemplateIdTestCase = new OperationsTestCase<SamplingFrequencyObservation>(
-      "validateSamplingFrequencyObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_SAMPLING_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<SamplingFrequencyObservation> validateSamplingFrequencyObservationTemplateIdTestCase = new OperationsTestCase<SamplingFrequencyObservation>(
+			"validateSamplingFrequencyObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_SAMPLING_FREQUENCY_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(SamplingFrequencyObservation target) {
+			@Override
+			protected void updateToFail(SamplingFrequencyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SamplingFrequencyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SamplingFrequencyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationTemplateId(
-          (SamplingFrequencyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationTemplateId(
+					(SamplingFrequencyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSamplingFrequencyObservationTemplateIdTestCase.doValidationTest();
+		validateSamplingFrequencyObservationTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -143,66 +147,69 @@ public void testValidateSamplingFrequencyObservationTemplateId() {
  
 									
 public void testValidateSamplingFrequencyObservationCodeP() {
-      OperationsTestCase<SamplingFrequencyObservation> validateSamplingFrequencyObservationCodePTestCase = new OperationsTestCase<SamplingFrequencyObservation>(
-      "validateSamplingFrequencyObservationCodeP",
-      operationsForOCL.getOCLValue("VALIDATE_SAMPLING_FREQUENCY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<SamplingFrequencyObservation> validateSamplingFrequencyObservationCodePTestCase = new OperationsTestCase<SamplingFrequencyObservation>(
+			"validateSamplingFrequencyObservationCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_SAMPLING_FREQUENCY_OBSERVATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(SamplingFrequencyObservation target) {
+			@Override
+			protected void updateToFail(SamplingFrequencyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SamplingFrequencyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SamplingFrequencyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationCodeP(
-          (SamplingFrequencyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationCodeP(
+					(SamplingFrequencyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSamplingFrequencyObservationCodePTestCase.doValidationTest();
+		validateSamplingFrequencyObservationCodePTestCase.doValidationTest();
 }		
 
 
@@ -217,69 +224,80 @@ public void testValidateSamplingFrequencyObservationCodeP() {
  
 									
 public void testValidateSamplingFrequencyObservationCode() {
-      OperationsTestCase<SamplingFrequencyObservation> validateSamplingFrequencyObservationCodeTestCase = new OperationsTestCase<SamplingFrequencyObservation>(
-      "validateSamplingFrequencyObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_SAMPLING_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<SamplingFrequencyObservation> validateSamplingFrequencyObservationCodeTestCase = new OperationsTestCase<SamplingFrequencyObservation>(
+			"validateSamplingFrequencyObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_SAMPLING_FREQUENCY_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(SamplingFrequencyObservation target) {
+			@Override
+			protected void updateToFail(SamplingFrequencyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SamplingFrequencyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SamplingFrequencyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+			
+				CD cd  = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		
         
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+        @Override
+            protected void setDependency(SamplingFrequencyObservation target) {
+                Collection<Object> passToken = new java.util.ArrayList<Object>(3);
+                passToken.add(target);
+                map.put("org.openhealthtools.mdht.uml.cda.phmr.SamplingFrequencyObservationCodeP", passToken);
+            }
+         
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationCode(
-          (SamplingFrequencyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationCode(
+					(SamplingFrequencyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSamplingFrequencyObservationCodeTestCase.doValidationTest();
+		validateSamplingFrequencyObservationCodeTestCase.doValidationTest();
 }		
 
 
@@ -294,66 +312,69 @@ public void testValidateSamplingFrequencyObservationCode() {
  
 									
 public void testValidateSamplingFrequencyObservationMoodCode() {
-      OperationsTestCase<SamplingFrequencyObservation> validateSamplingFrequencyObservationMoodCodeTestCase = new OperationsTestCase<SamplingFrequencyObservation>(
-      "validateSamplingFrequencyObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_SAMPLING_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<SamplingFrequencyObservation> validateSamplingFrequencyObservationMoodCodeTestCase = new OperationsTestCase<SamplingFrequencyObservation>(
+			"validateSamplingFrequencyObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_SAMPLING_FREQUENCY_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(SamplingFrequencyObservation target) {
+			@Override
+			protected void updateToFail(SamplingFrequencyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SamplingFrequencyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SamplingFrequencyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationMoodCode(
-          (SamplingFrequencyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationMoodCode(
+					(SamplingFrequencyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSamplingFrequencyObservationMoodCodeTestCase.doValidationTest();
+		validateSamplingFrequencyObservationMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -368,69 +389,72 @@ public void testValidateSamplingFrequencyObservationMoodCode() {
  
 									
 public void testValidateSamplingFrequencyObservationValue() {
-      OperationsTestCase<SamplingFrequencyObservation> validateSamplingFrequencyObservationValueTestCase = new OperationsTestCase<SamplingFrequencyObservation>(
-      "validateSamplingFrequencyObservationValue",
-      operationsForOCL.getOCLValue("VALIDATE_SAMPLING_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<SamplingFrequencyObservation> validateSamplingFrequencyObservationValueTestCase = new OperationsTestCase<SamplingFrequencyObservation>(
+			"validateSamplingFrequencyObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_SAMPLING_FREQUENCY_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(SamplingFrequencyObservation target) {
+			@Override
+			protected void updateToFail(SamplingFrequencyObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(SamplingFrequencyObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(SamplingFrequencyObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-      
-        CD value = DatatypesFactory.eINSTANCE.createCD();
-        target.getValues().add(value);
-        
+				
+			
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationValue(
-          (SamplingFrequencyObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return SamplingFrequencyObservationOperations.validateSamplingFrequencyObservationValue(
+					(SamplingFrequencyObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateSamplingFrequencyObservationValueTestCase.doValidationTest();
+		validateSamplingFrequencyObservationValueTestCase.doValidationTest();
 }		
 
 
@@ -459,6 +483,7 @@ public void testValidateSamplingFrequencyObservationValue() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<SamplingFrequencyObservation> {
+		@Override
 		public SamplingFrequencyObservation create() {		
 			return PhmrFactory.eINSTANCE.createSamplingFrequencyObservation();
 		}
@@ -490,9 +515,9 @@ public void testValidateSamplingFrequencyObservationValue() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -502,8 +527,8 @@ public void testValidateSamplingFrequencyObservationValue() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

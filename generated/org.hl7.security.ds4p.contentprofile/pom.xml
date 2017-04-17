@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-   <parent>
-    <groupId>org.openhealthtools.mdht.cda</groupId>
-    <artifactId>org.openhealthtools.mdht.cda.generated</artifactId>
-    <version>2.5.17-SNAPSHOT</version>
-  </parent>
-  <groupId>org.hl7.security.ds4p</groupId>
-  <artifactId>org.hl7.security.ds4p.contentprofile</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
-  <packaging>eclipse-plugin</packaging>
-  
- 
- 
-   
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.openhealthtools.mdht.cda</groupId>
+		<artifactId>org.openhealthtools.mdht.cda.generated</artifactId>
+		<version>3.0.0-SNAPSHOT</version>
+	</parent>
+	<groupId>org.hl7.security.ds4p</groupId>
+	<artifactId>org.hl7.security.ds4p.contentprofile</artifactId>
+	<packaging>eclipse-plugin</packaging>
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-source-plugin</artifactId>
+				<version>${org.apache.maven.version}</version>
 				<executions>
 					<execution>
 						<id>attach-sources</id>
@@ -33,6 +30,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${maven-javadoc-plugin.version}</version>
 				<executions>
 					<execution>
 						<id>attach-javadocs</id>
@@ -42,11 +40,11 @@
 					</execution>
 				</executions>
 			</plugin>
-			
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
-				<version>2.10</version>
+				<version>${maven-dependency-plugin.version}</version>
 				<executions>
 					<execution>
 						<id>copy</id>
@@ -55,16 +53,16 @@
 							<goal>copy</goal>
 						</goals>
 						<configuration>
-						 <artifactItems>
-			                <artifactItem>
-			                  <groupId>${project.groupId}</groupId>
-			                  <artifactId>${project.artifactId}</artifactId>
-			                  <version>${project.version}</version>
-			                  <type>jar</type>
-			                  <overWrite>true</overWrite>
-			                  <outputDirectory>${project.build.directory}/dependencies</outputDirectory>
-			                </artifactItem>
-			              </artifactItems>
+							<artifactItems>
+								<artifactItem>
+									<groupId>${project.groupId}</groupId>
+									<artifactId>${project.artifactId}</artifactId>
+									<version>${project.version}</version>
+									<type>jar</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${project.build.directory}/dependencies</outputDirectory>
+								</artifactItem>
+							</artifactItems>
 							<outputDirectory>${project.build.directory}/dependencies</outputDirectory>
 							<overWriteReleases>true</overWriteReleases>
 							<overWriteSnapshots>true</overWriteSnapshots>
@@ -90,7 +88,7 @@
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
 				<inherited>true</inherited>
-				<version>2.5.4</version>
+				<version>${maven-assembly-plugin.version}</version>
 				<configuration>
 					<descriptors>
 						<descriptor>${project.parent.basedir}/runtimeassembly.xml</descriptor>
@@ -107,5 +105,4 @@
 			</plugin>
 		</plugins>
 	</build>
-	
 </project>

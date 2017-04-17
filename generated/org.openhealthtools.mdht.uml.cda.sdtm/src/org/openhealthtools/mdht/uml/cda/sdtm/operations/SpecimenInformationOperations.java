@@ -7,23 +7,15 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.EventStudyDay;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SpecimenInformation;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -84,7 +76,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class SpecimenInformationOperations extends ClinicalStatementOperations {
+public class SpecimenInformationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -113,7 +113,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -128,25 +128,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationTemplateId(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -174,7 +184,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -189,25 +199,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationClassCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -235,7 +255,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -250,25 +270,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationMoodCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -298,7 +328,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -313,25 +343,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -359,7 +399,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -374,25 +414,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationCodeP(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -420,7 +470,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -435,25 +485,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationEffectiveTime(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -481,7 +541,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -496,25 +556,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationTargetSiteCodeP(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_TARGET_SITE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationTargetSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationTargetSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -544,7 +614,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -559,25 +629,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationTargetSiteCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_TARGET_SITE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -605,7 +685,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -620,25 +700,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationParticipatingSpecimen(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_PARTICIPATING_SPECIMEN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationParticipatingSpecimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationParticipatingSpecimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -666,7 +756,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -681,25 +771,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationEventStudyDay(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_EVENT_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_EVENT_STUDY_DAY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationEventStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -727,7 +827,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -742,25 +842,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationTimingReference(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_TIMING_REFERENCE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -788,7 +898,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_PORTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_PORTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -803,25 +913,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationPortionAssociation(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_PORTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_PORTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_PORTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_PORTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_PORTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_PORTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_PORTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_PORTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_PORTION_ASSOCIATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationPortionAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationPortionAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -849,7 +969,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_USABILITY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_USABILITY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -864,25 +984,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationUsabilityAssociation(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_USABILITY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_USABILITY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_USABILITY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_USABILITY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_USABILITY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_USABILITY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_USABILITY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_USABILITY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_USABILITY_ASSOCIATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationUsabilityAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationUsabilityAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -910,7 +1040,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATION_CONDITION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATION_CONDITION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -925,25 +1055,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationConditionAssociation(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATION_CONDITION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATION_CONDITION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATION_CONDITION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_CONDITION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATION_CONDITION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATION_CONDITION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATION_CONDITION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATION_CONDITION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATION_CONDITION_ASSOCIATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationConditionAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationConditionAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -971,7 +1111,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -986,25 +1126,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityClassCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1032,7 +1182,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1047,25 +1197,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_DETERMINER_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityDeterminerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1095,7 +1255,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1110,25 +1270,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1156,7 +1326,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1171,25 +1341,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityCodeP(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMENSPECIMEN_ENTITY_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationparticipatingSpecimenroleOfSpecimenspecimenEntityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1217,7 +1397,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1232,25 +1412,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationparticipatingSpecimenroleOfSpecimenClassCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationparticipatingSpecimenroleOfSpecimenClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationparticipatingSpecimenroleOfSpecimenClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1278,7 +1468,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1293,25 +1483,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationparticipatingSpecimenroleOfSpecimenId(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPARTICIPATING_SPECIMENROLE_OF_SPECIMEN_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationparticipatingSpecimenroleOfSpecimenId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationparticipatingSpecimenroleOfSpecimenId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1339,7 +1539,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1354,25 +1554,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationparticipatingSpecimenTemplateId(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationparticipatingSpecimenTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationparticipatingSpecimenTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1400,7 +1610,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1415,25 +1625,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationparticipatingSpecimenTypeCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationparticipatingSpecimenTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationparticipatingSpecimenTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1461,7 +1681,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1476,25 +1696,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationparticipatingSpecimenRoleOfSpecimen(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPARTICIPATING_SPECIMEN_ROLE_OF_SPECIMEN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationparticipatingSpecimenRoleOfSpecimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationparticipatingSpecimenRoleOfSpecimen", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1522,7 +1752,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1537,25 +1767,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationportionAssociationportionOrTotalityMoodCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationportionAssociationportionOrTotalityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationportionAssociationportionOrTotalityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1583,7 +1823,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1598,25 +1838,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationportionAssociationportionOrTotalityCodeP(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationportionAssociationportionOrTotalityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationportionAssociationportionOrTotalityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1646,7 +1896,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1661,25 +1911,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationportionAssociationportionOrTotalityCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationportionAssociationportionOrTotalityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationportionAssociationportionOrTotalityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1709,7 +1969,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1724,25 +1984,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationportionAssociationportionOrTotalityValue(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationportionAssociationportionOrTotalityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationportionAssociationportionOrTotalityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1770,7 +2040,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1785,25 +2055,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationportionAssociationportionOrTotalityValueP(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPORTION_ASSOCIATIONPORTION_OR_TOTALITY_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationportionAssociationportionOrTotalityValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationportionAssociationportionOrTotalityValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1831,7 +2111,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1846,25 +2126,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationportionAssociationTypeCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPORTION_ASSOCIATION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationportionAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationportionAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1892,7 +2182,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1907,25 +2197,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationportionAssociationSpecimenCondition(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONPORTION_ASSOCIATION_SPECIMEN_CONDITION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationportionAssociationSpecimenCondition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationportionAssociationSpecimenCondition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -1953,7 +2253,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1968,25 +2268,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityMoodCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationusabilityAssociationspecimenUsabilityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationusabilityAssociationspecimenUsabilityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2014,7 +2324,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2029,25 +2339,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityCodeP(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationusabilityAssociationspecimenUsabilityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationusabilityAssociationspecimenUsabilityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2077,7 +2397,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2092,25 +2412,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationusabilityAssociationspecimenUsabilityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationusabilityAssociationspecimenUsabilityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2138,7 +2468,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2153,25 +2483,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationusabilityAssociationspecimenUsabilityValue(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONUSABILITY_ASSOCIATIONSPECIMEN_USABILITY_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationusabilityAssociationspecimenUsabilityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationusabilityAssociationspecimenUsabilityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2199,7 +2539,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2214,25 +2554,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationusabilityAssociationTypeCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationusabilityAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationusabilityAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2260,7 +2610,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2275,25 +2625,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationusabilityAssociationSpecimenUsability(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONUSABILITY_ASSOCIATION_SPECIMEN_USABILITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationusabilityAssociationSpecimenUsability", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationusabilityAssociationSpecimenUsability", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2321,7 +2681,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2336,25 +2696,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationconditionAssociationspecimenConditionMoodCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationconditionAssociationspecimenConditionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationconditionAssociationspecimenConditionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2382,7 +2752,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2397,25 +2767,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationconditionAssociationspecimenConditionCodeP(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationconditionAssociationspecimenConditionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationconditionAssociationspecimenConditionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2445,7 +2825,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2460,25 +2840,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationconditionAssociationspecimenConditionCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationconditionAssociationspecimenConditionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationconditionAssociationspecimenConditionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2508,7 +2898,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2523,25 +2913,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationconditionAssociationspecimenConditionValue(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationconditionAssociationspecimenConditionValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationconditionAssociationspecimenConditionValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2569,7 +2969,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2584,25 +2984,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationconditionAssociationspecimenConditionValueP(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONCONDITION_ASSOCIATIONSPECIMEN_CONDITION_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationconditionAssociationspecimenConditionValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationconditionAssociationspecimenConditionValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2630,7 +3040,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2645,25 +3055,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationconditionAssociationTypeCode(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationconditionAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationconditionAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2691,7 +3111,7 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2706,25 +3126,35 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateSpecimenInformationconditionAssociationSpecimenCondition(SpecimenInformation specimenInformation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SPECIMEN_INFORMATION);
 			try {
-				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(specimenInformation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(specimenInformation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SPECIMEN_INFORMATION__SPECIMEN_INFORMATIONCONDITION_ASSOCIATION_SPECIMEN_CONDITION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationconditionAssociationSpecimenCondition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SpecimenInformationSpecimenInformationconditionAssociationSpecimenCondition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(specimenInformation, context) }),
 						 new Object [] { specimenInformation }));
 			}
 			 
@@ -2760,8 +3190,13 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EventStudyDay getEventStudyDay(SpecimenInformation specimenInformation) {
+	
+	
+	
 		if (GET_EVENT_STUDY_DAY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SPECIMEN_INFORMATION, SdtmPackage.Literals.SPECIMEN_INFORMATION.getEAllOperations().get(94));
 			try {
 				GET_EVENT_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_EVENT_STUDY_DAY__EOCL_EXP);
@@ -2769,8 +3204,9 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_STUDY_DAY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_STUDY_DAY__EOCL_QRY);
 		return (EventStudyDay) query.evaluate(specimenInformation);
 	}
 
@@ -2801,8 +3237,13 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  TimingReference getTimingReference(SpecimenInformation specimenInformation) {
+	
+	
+	
 		if (GET_TIMING_REFERENCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SPECIMEN_INFORMATION, SdtmPackage.Literals.SPECIMEN_INFORMATION.getEAllOperations().get(95));
 			try {
 				GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -2810,8 +3251,9 @@ public class SpecimenInformationOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
 		return (TimingReference) query.evaluate(specimenInformation);
 	}
 

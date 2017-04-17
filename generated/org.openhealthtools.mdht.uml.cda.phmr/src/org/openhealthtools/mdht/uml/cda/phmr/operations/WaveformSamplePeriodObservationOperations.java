@@ -27,18 +27,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPlugin;
 import org.openhealthtools.mdht.uml.cda.phmr.WaveformSamplePeriodObservation;
-
 import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
 
 /**
@@ -59,326 +53,363 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  *
  * @generated
  */
-public class WaveformSamplePeriodObservationOperations extends ClinicalStatementOperations {
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	protected WaveformSamplePeriodObservationOperations() {
-    super();
-  }
+public class WaveformSamplePeriodObservationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
 
 	/**
-   * The cached OCL expression body for the '{@link #validateWaveformSamplePeriodObservationTemplateId(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateWaveformSamplePeriodObservationTemplateId(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 */
+	protected WaveformSamplePeriodObservationOperations() {
+		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateWaveformSamplePeriodObservationTemplateId(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateWaveformSamplePeriodObservationTemplateId(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9.13')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateWaveformSamplePeriodObservationTemplateId(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateWaveformSamplePeriodObservationTemplateId(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateWaveformSamplePeriodObservationTemplateId(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateWaveformSamplePeriodObservationTemplateId(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param waveformSamplePeriodObservation The receiving '<em><b>Waveform Sample Period Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param waveformSamplePeriodObservation The receiving '<em><b>Waveform Sample Period Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateWaveformSamplePeriodObservationTemplateId(WaveformSamplePeriodObservation waveformSamplePeriodObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION);
-      try
-      {
-        VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformSamplePeriodObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.WAVEFORM_SAMPLE_PERIOD_OBSERVATION__WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID,
-             PhmrPlugin.INSTANCE.getString("WaveformSamplePeriodObservationTemplateId"),
-             new Object [] { waveformSamplePeriodObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION);
+			try {
+				VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(waveformSamplePeriodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.WAVEFORM_SAMPLE_PERIOD_OBSERVATION__WAVEFORM_SAMPLE_PERIOD_OBSERVATION_TEMPLATE_ID,
+						 PhmrPlugin.INSTANCE.getString("WaveformSamplePeriodObservationWaveformSamplePeriodObservationTemplateId"),
+						 new Object [] { waveformSamplePeriodObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateWaveformSamplePeriodObservationClassCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Class Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateWaveformSamplePeriodObservationClassCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateWaveformSamplePeriodObservationClassCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateWaveformSamplePeriodObservationClassCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateWaveformSamplePeriodObservationClassCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Class Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateWaveformSamplePeriodObservationClassCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateWaveformSamplePeriodObservationClassCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateWaveformSamplePeriodObservationClassCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param waveformSamplePeriodObservation The receiving '<em><b>Waveform Sample Period Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param waveformSamplePeriodObservation The receiving '<em><b>Waveform Sample Period Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateWaveformSamplePeriodObservationClassCode(WaveformSamplePeriodObservation waveformSamplePeriodObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION);
-      try
-      {
-        VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformSamplePeriodObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.WAVEFORM_SAMPLE_PERIOD_OBSERVATION__WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE,
-             PhmrPlugin.INSTANCE.getString("WaveformSamplePeriodObservationClassCode"),
-             new Object [] { waveformSamplePeriodObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION);
+			try {
+				VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(waveformSamplePeriodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.WAVEFORM_SAMPLE_PERIOD_OBSERVATION__WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CLASS_CODE,
+						 PhmrPlugin.INSTANCE.getString("WaveformSamplePeriodObservationWaveformSamplePeriodObservationClassCode"),
+						 new Object [] { waveformSamplePeriodObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateWaveformSamplePeriodObservationCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateWaveformSamplePeriodObservationCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateWaveformSamplePeriodObservationCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateWaveformSamplePeriodObservationCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
 "value.code = 'TIME_ABSOLUTE' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateWaveformSamplePeriodObservationCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateWaveformSamplePeriodObservationCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateWaveformSamplePeriodObservationCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateWaveformSamplePeriodObservationCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param waveformSamplePeriodObservation The receiving '<em><b>Waveform Sample Period Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param waveformSamplePeriodObservation The receiving '<em><b>Waveform Sample Period Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateWaveformSamplePeriodObservationCode(WaveformSamplePeriodObservation waveformSamplePeriodObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION);
-      try
-      {
-        VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformSamplePeriodObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.WAVEFORM_SAMPLE_PERIOD_OBSERVATION__WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE,
-             PhmrPlugin.INSTANCE.getString("WaveformSamplePeriodObservationCode"),
-             new Object [] { waveformSamplePeriodObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION);
+			try {
+				VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(waveformSamplePeriodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.WAVEFORM_SAMPLE_PERIOD_OBSERVATION__WAVEFORM_SAMPLE_PERIOD_OBSERVATION_CODE,
+						 PhmrPlugin.INSTANCE.getString("WaveformSamplePeriodObservationWaveformSamplePeriodObservationCode"),
+						 new Object [] { waveformSamplePeriodObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateWaveformSamplePeriodObservationMoodCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Mood Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateWaveformSamplePeriodObservationMoodCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateWaveformSamplePeriodObservationMoodCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateWaveformSamplePeriodObservationMoodCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::EVN";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateWaveformSamplePeriodObservationMoodCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Mood Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateWaveformSamplePeriodObservationMoodCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateWaveformSamplePeriodObservationMoodCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateWaveformSamplePeriodObservationMoodCode(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param waveformSamplePeriodObservation The receiving '<em><b>Waveform Sample Period Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param waveformSamplePeriodObservation The receiving '<em><b>Waveform Sample Period Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateWaveformSamplePeriodObservationMoodCode(WaveformSamplePeriodObservation waveformSamplePeriodObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION);
-      try
-      {
-        VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformSamplePeriodObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.WAVEFORM_SAMPLE_PERIOD_OBSERVATION__WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE,
-             PhmrPlugin.INSTANCE.getString("WaveformSamplePeriodObservationMoodCode"),
-             new Object [] { waveformSamplePeriodObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION);
+			try {
+				VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(waveformSamplePeriodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.WAVEFORM_SAMPLE_PERIOD_OBSERVATION__WAVEFORM_SAMPLE_PERIOD_OBSERVATION_MOOD_CODE,
+						 PhmrPlugin.INSTANCE.getString("WaveformSamplePeriodObservationWaveformSamplePeriodObservationMoodCode"),
+						 new Object [] { waveformSamplePeriodObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateWaveformSamplePeriodObservationValue(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Value</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateWaveformSamplePeriodObservationValue(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateWaveformSamplePeriodObservationValue(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateWaveformSamplePeriodObservationValue(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateWaveformSamplePeriodObservationValue(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Value</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateWaveformSamplePeriodObservationValue(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Waveform Sample Period Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateWaveformSamplePeriodObservationValue(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateWaveformSamplePeriodObservationValue(WaveformSamplePeriodObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param waveformSamplePeriodObservation The receiving '<em><b>Waveform Sample Period Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param waveformSamplePeriodObservation The receiving '<em><b>Waveform Sample Period Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateWaveformSamplePeriodObservationValue(WaveformSamplePeriodObservation waveformSamplePeriodObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION);
-      try
-      {
-        VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(waveformSamplePeriodObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.WAVEFORM_SAMPLE_PERIOD_OBSERVATION__WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE,
-             PhmrPlugin.INSTANCE.getString("WaveformSamplePeriodObservationValue"),
-             new Object [] { waveformSamplePeriodObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.WAVEFORM_SAMPLE_PERIOD_OBSERVATION);
+			try {
+				VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(waveformSamplePeriodObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.WAVEFORM_SAMPLE_PERIOD_OBSERVATION__WAVEFORM_SAMPLE_PERIOD_OBSERVATION_VALUE,
+						 PhmrPlugin.INSTANCE.getString("WaveformSamplePeriodObservationWaveformSamplePeriodObservationValue"),
+						 new Object [] { waveformSamplePeriodObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 } // WaveformSamplePeriodObservationOperations

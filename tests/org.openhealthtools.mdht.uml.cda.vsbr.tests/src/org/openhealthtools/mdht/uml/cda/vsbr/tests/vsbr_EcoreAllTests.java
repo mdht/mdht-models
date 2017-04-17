@@ -1,13 +1,10 @@
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import junit.framework.Test;
 import junit.framework.TestSuite;
+
 import junit.textui.TestRunner;
 
 /**

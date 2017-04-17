@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliveryTime;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -39,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
+public class FetalDeliveryTimeOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +73,7 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DELIVERY_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DELIVERY_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,28 +89,32 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	public static boolean validateFetalDeliveryTimeTemplateId(FetalDeliveryTime fetalDeliveryTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DELIVERY_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DELIVERY_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DELIVERY_TIME);
 			try {
-				VALIDATE_FETAL_DELIVERY_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DELIVERY_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DELIVERY_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeliveryTime)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DELIVERY_TIME_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(fetalDeliveryTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeliveryTimeTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(fetalDeliveryTime, context) }),
-					new Object[] { fetalDeliveryTime }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeliveryTimeFetalDeliveryTimeTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeliveryTime, context) }),
+						new Object[] { fetalDeliveryTime }));
 			}
 
 			return false;
@@ -132,7 +141,7 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DELIVERY_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DELIVERY_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,28 +157,32 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	public static boolean validateFetalDeliveryTimeMoodCode(FetalDeliveryTime fetalDeliveryTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DELIVERY_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DELIVERY_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DELIVERY_TIME);
 			try {
-				VALIDATE_FETAL_DELIVERY_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DELIVERY_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DELIVERY_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeliveryTime)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DELIVERY_TIME_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(fetalDeliveryTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeliveryTimeMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(fetalDeliveryTime, context) }),
-					new Object[] { fetalDeliveryTime }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeliveryTimeFetalDeliveryTimeMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeliveryTime, context) }),
+						new Object[] { fetalDeliveryTime }));
 			}
 
 			return false;
@@ -196,7 +209,7 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DELIVERY_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DELIVERY_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -212,28 +225,32 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	public static boolean validateFetalDeliveryTimeCodeP(FetalDeliveryTime fetalDeliveryTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DELIVERY_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DELIVERY_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DELIVERY_TIME);
 			try {
-				VALIDATE_FETAL_DELIVERY_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DELIVERY_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DELIVERY_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeliveryTime)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DELIVERY_TIME_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(fetalDeliveryTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeliveryTimeCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(fetalDeliveryTime, context) }),
-					new Object[] { fetalDeliveryTime }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeliveryTimeFetalDeliveryTimeCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeliveryTime, context) }),
+						new Object[] { fetalDeliveryTime }));
 			}
 
 			return false;
@@ -249,9 +266,9 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '11778-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '11778-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFetalDeliveryTimeCode(FetalDeliveryTime, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Delivery Time Code</em>}' invariant operation.
@@ -262,7 +279,7 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,28 +295,32 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	public static boolean validateFetalDeliveryTimeCode(FetalDeliveryTime fetalDeliveryTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DELIVERY_TIME);
 			try {
-				VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FETAL_DELIVERY_TIME_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			fetalDeliveryTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeliveryTimeCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(fetalDeliveryTime, context) }),
-					new Object[] { fetalDeliveryTime }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeliveryTimeFetalDeliveryTimeCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeliveryTime, context) }),
+						new Object[] { fetalDeliveryTime }));
 			}
 
 			return false;
@@ -326,7 +347,7 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DELIVERY_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DELIVERY_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -342,28 +363,32 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	public static boolean validateFetalDeliveryTimeValue(FetalDeliveryTime fetalDeliveryTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DELIVERY_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DELIVERY_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DELIVERY_TIME);
 			try {
-				VALIDATE_FETAL_DELIVERY_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DELIVERY_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DELIVERY_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_FETAL_DELIVERY_TIME_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			fetalDeliveryTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeliveryTimeValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(fetalDeliveryTime, context) }),
-					new Object[] { fetalDeliveryTime }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeliveryTimeFetalDeliveryTimeValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeliveryTime, context) }),
+						new Object[] { fetalDeliveryTime }));
 			}
 
 			return false;
@@ -390,7 +415,7 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -406,28 +431,34 @@ public class FetalDeliveryTimeOperations extends ClinicalStatementOperations {
 	public static boolean validateFetalDeliveryTimeParticipatingLocation(FetalDeliveryTime fetalDeliveryTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DELIVERY_TIME);
 			try {
-				VALIDATE_FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeliveryTime)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				fetalDeliveryTime)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeliveryTimeParticipatingLocation",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(fetalDeliveryTime, context) }),
-					new Object[] { fetalDeliveryTime }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeliveryTimeFetalDeliveryTimeParticipatingLocation",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeliveryTime, context) }),
+						new Object[] { fetalDeliveryTime }));
 			}
 
 			return false;

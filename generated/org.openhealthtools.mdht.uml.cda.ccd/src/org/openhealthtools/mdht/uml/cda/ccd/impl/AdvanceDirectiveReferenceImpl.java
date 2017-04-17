@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ReferenceImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.AdvanceDirectiveReferenceOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ReferenceImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directive Reference</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -65,7 +63,8 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveReferenceHasMIMEType(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveReferenceHasMIMEType(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceHasMIMEType(
 			this, diagnostics, context);
 	}
@@ -86,7 +85,8 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAdvanceDirectiveReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAdvanceDirectiveReferenceTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceTemplateId(
 			this, diagnostics, context);
 	}
@@ -97,7 +97,8 @@ public class AdvanceDirectiveReferenceImpl extends ReferenceImpl implements Adva
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveReferenceTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceTypeCode(this, diagnostics, context);
+		return AdvanceDirectiveReferenceOperations.validateAdvanceDirectiveReferenceTypeCode(
+			this, diagnostics, context);
 	}
 
 	/**

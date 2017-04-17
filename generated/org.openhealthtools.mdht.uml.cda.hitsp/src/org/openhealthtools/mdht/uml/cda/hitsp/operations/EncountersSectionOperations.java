@@ -47,6 +47,13 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.EncounterHistorySectionOp
  * @generated
  */
 public class EncountersSectionOperations extends EncounterHistorySectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -75,7 +82,7 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -91,23 +98,29 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	public static boolean validateHITSPEncountersSectionTemplateId(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ENCOUNTERS_SECTION);
 			try {
-				VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encountersSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				encountersSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPEncountersSectionTemplateId"),
-					new Object[] { encountersSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.ENCOUNTERS_SECTION__HITSP_ENCOUNTERS_SECTION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString("EncountersSectionHITSPEncountersSectionTemplateId"),
+						new Object[] { encountersSection }));
 			}
 
 			return false;
@@ -141,8 +154,10 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	 * @generated
 	 */
 	public static EList<Encounter> getHITSPEncounterEntries(EncountersSection encountersSection) {
+
 		if (GET_HITSP_ENCOUNTER_ENTRIES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.ENCOUNTERS_SECTION,
 				HITSPPackage.Literals.ENCOUNTERS_SECTION.getEAllOperations().get(65));
@@ -152,7 +167,8 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HITSP_ENCOUNTER_ENTRIES__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_HITSP_ENCOUNTER_ENTRIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Encounter> result = (Collection<Encounter>) query.evaluate(encountersSection);
 		return new BasicEList.UnmodifiableEList<Encounter>(result.size(), result.toArray());
@@ -177,7 +193,7 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -193,23 +209,29 @@ public class EncountersSectionOperations extends EncounterHistorySectionOperatio
 	public static boolean validateEncounterHistorySectionEncounterEntry(EncountersSection encountersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.ENCOUNTERS_SECTION);
 			try {
-				VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			encountersSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				encountersSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.ENCOUNTERS_SECTION__ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY,
-					HITSPPlugin.INSTANCE.getString("EncounterHistorySectionEncounterEntry"),
-					new Object[] { encountersSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.ENCOUNTERS_SECTION__ENCOUNTER_HISTORY_SECTION_ENCOUNTER_ENTRY,
+						HITSPPlugin.INSTANCE.getString("EncountersSectionEncounterHistorySectionEncounterEntry"),
+						new Object[] { encountersSection }));
 			}
 
 			return false;

@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResponseModeToSceneTemplateId ResponseModeToSceneMoodCode ResponseModeToSceneCode ResponseModeToSceneCodeP ResponseModeToSceneValue ResponseModeToSceneValueP' templateId.root='2.16.840.1.1133883.17.3.10.1.182' moodCode='EVN' code.code='67482-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Response mode to scene NEMSIS' constraints.validation.dependOn.ResponseModeToSceneCode='ResponseModeToSceneCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
  * @generated
  */
-public interface ResponseModeToScene extends Observation {
+public interface ResponseModeToScene extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,9 +102,9 @@ public interface ResponseModeToScene extends Observation {
 	public ResponseModeToScene init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResponseModeToScene init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public ResponseModeToScene init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // ResponseModeToScene

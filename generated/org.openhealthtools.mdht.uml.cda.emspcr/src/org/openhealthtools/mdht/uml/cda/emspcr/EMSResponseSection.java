@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EMSResponseSectionTemplateId EMSResponseSectionCode EMSResponseSectionCodeP EMSResponseSectionTitle EMSResponseSectionText EMSResponseSectionDelayOrganizer EMSResponseSectionDispatchLocationOrganizer EMSResponseSectionResponseOdometerReadingOrganizer EMSResponseSectionResponseModeToScene' templateId.root='2.16.840.1.113883.17.3.10.1.3' code.code='67664-3' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='EMS response Narrative NEMSIS' title.mixed='EMS Response'"
  * @generated
  */
-public interface EMSResponseSection extends Section {
+public interface EMSResponseSection extends org.eclipse.mdht.uml.cda.Section {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -182,9 +175,9 @@ public interface EMSResponseSection extends Section {
 	public EMSResponseSection init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSResponseSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public EMSResponseSection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // EMSResponseSection

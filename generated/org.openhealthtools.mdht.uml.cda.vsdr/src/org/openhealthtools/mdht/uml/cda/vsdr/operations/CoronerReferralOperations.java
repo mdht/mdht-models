@@ -7,17 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -40,6 +35,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class CoronerReferralOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +71,7 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_REFERRAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_REFERRAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -83,25 +86,35 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerReferralTemplateId(CoronerReferral coronerReferral, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_REFERRAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_REFERRAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_REFERRAL);
 			try {
-				VALIDATE_CORONER_REFERRAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_REFERRAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_REFERRAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_REFERRAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_REFERRAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerReferral)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_REFERRAL_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerReferral)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_REFERRAL__CORONER_REFERRAL_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralCoronerReferralTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
 						 new Object [] { coronerReferral }));
 			}
 			 
@@ -129,7 +142,7 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_REFERRAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_REFERRAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -144,25 +157,35 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerReferralClassCode(CoronerReferral coronerReferral, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_REFERRAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_REFERRAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_REFERRAL);
 			try {
-				VALIDATE_CORONER_REFERRAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_REFERRAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_REFERRAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_REFERRAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_REFERRAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerReferral)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_REFERRAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerReferral)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_REFERRAL__CORONER_REFERRAL_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralCoronerReferralClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
 						 new Object [] { coronerReferral }));
 			}
 			 
@@ -190,7 +213,7 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -205,25 +228,35 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerReferralMoodCode(CoronerReferral coronerReferral, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_REFERRAL);
 			try {
-				VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerReferral)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerReferral)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_REFERRAL__CORONER_REFERRAL_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralCoronerReferralMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
 						 new Object [] { coronerReferral }));
 			}
 			 
@@ -251,7 +284,7 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -266,25 +299,35 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerReferralCodeP(CoronerReferral coronerReferral, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_REFERRAL);
 			try {
-				VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerReferral)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_REFERRAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerReferral)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_REFERRAL__CORONER_REFERRAL_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralCoronerReferralCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
 						 new Object [] { coronerReferral }));
 			}
 			 
@@ -314,7 +357,7 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -329,25 +372,35 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerReferralCode(CoronerReferral coronerReferral, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_REFERRAL);
 			try {
-				VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerReferral)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_REFERRAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerReferral)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_REFERRAL__CORONER_REFERRAL_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralCoronerReferralCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
 						 new Object [] { coronerReferral }));
 			}
 			 
@@ -375,7 +428,7 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_REFERRAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_REFERRAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -390,25 +443,35 @@ public class CoronerReferralOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerReferralValue(CoronerReferral coronerReferral, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_REFERRAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_REFERRAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_REFERRAL);
 			try {
-				VALIDATE_CORONER_REFERRAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_REFERRAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_REFERRAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_REFERRAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_REFERRAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerReferral)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_REFERRAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerReferral)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_REFERRAL__CORONER_REFERRAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerReferralCoronerReferralValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerReferral, context) }),
 						 new Object [] { coronerReferral }));
 			}
 			 

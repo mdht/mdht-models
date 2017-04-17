@@ -1,8 +1,5 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
@@ -10,14 +7,20 @@ import java.util.Collection;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.InfantTransfer;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfantTransferOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,6 +50,7 @@ public class InfantTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantTransferTemplateId() {
 		OperationsTestCase<InfantTransfer> validateInfantTransferTemplateIdTestCase = new OperationsTestCase<InfantTransfer>(
 			"validateInfantTransferTemplateId",
@@ -81,6 +85,7 @@ public class InfantTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantTransferClassCode() {
 		OperationsTestCase<InfantTransfer> validateInfantTransferClassCodeTestCase = new OperationsTestCase<InfantTransfer>(
 			"validateInfantTransferClassCode",
@@ -115,6 +120,7 @@ public class InfantTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantTransferMoodCode() {
 		OperationsTestCase<InfantTransfer> validateInfantTransferMoodCodeTestCase = new OperationsTestCase<InfantTransfer>(
 			"validateInfantTransferMoodCode",
@@ -149,6 +155,7 @@ public class InfantTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantTransferCodeP() {
 		OperationsTestCase<InfantTransfer> validateInfantTransferCodePTestCase = new OperationsTestCase<InfantTransfer>(
 			"validateInfantTransferCodeP",
@@ -183,6 +190,7 @@ public class InfantTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantTransferCode() {
 		OperationsTestCase<InfantTransfer> validateInfantTransferCodeTestCase = new OperationsTestCase<InfantTransfer>(
 			"validateInfantTransferCode",
@@ -224,6 +232,7 @@ public class InfantTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantTransferValue() {
 		OperationsTestCase<InfantTransfer> validateInfantTransferValueTestCase = new OperationsTestCase<InfantTransfer>(
 			"validateInfantTransferValue",
@@ -261,6 +270,7 @@ public class InfantTransferTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantTransferParticipant() {
 		OperationsTestCase<InfantTransfer> validateInfantTransferParticipantTestCase = new OperationsTestCase<InfantTransfer>(
 			"validateInfantTransferParticipant",
@@ -343,8 +353,7 @@ public class InfantTransferTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

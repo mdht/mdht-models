@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.FetalDeathOccurrance;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.FetalDeathOccurranceOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -46,6 +49,7 @@ public class FetalDeathOccurranceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeathOccurranceTemplateId() {
 		OperationsTestCase<FetalDeathOccurrance> validateFetalDeathOccurranceTemplateIdTestCase = new OperationsTestCase<FetalDeathOccurrance>(
 			"validateFetalDeathOccurranceTemplateId",
@@ -80,6 +84,7 @@ public class FetalDeathOccurranceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeathOccurranceClassCode() {
 		OperationsTestCase<FetalDeathOccurrance> validateFetalDeathOccurranceClassCodeTestCase = new OperationsTestCase<FetalDeathOccurrance>(
 			"validateFetalDeathOccurranceClassCode",
@@ -114,6 +119,7 @@ public class FetalDeathOccurranceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeathOccurranceMoodCode() {
 		OperationsTestCase<FetalDeathOccurrance> validateFetalDeathOccurranceMoodCodeTestCase = new OperationsTestCase<FetalDeathOccurrance>(
 			"validateFetalDeathOccurranceMoodCode",
@@ -148,6 +154,7 @@ public class FetalDeathOccurranceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeathOccurranceCodeP() {
 		OperationsTestCase<FetalDeathOccurrance> validateFetalDeathOccurranceCodePTestCase = new OperationsTestCase<FetalDeathOccurrance>(
 			"validateFetalDeathOccurranceCodeP",
@@ -182,6 +189,7 @@ public class FetalDeathOccurranceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeathOccurranceCode() {
 		OperationsTestCase<FetalDeathOccurrance> validateFetalDeathOccurranceCodeTestCase = new OperationsTestCase<FetalDeathOccurrance>(
 			"validateFetalDeathOccurranceCode",
@@ -216,6 +224,7 @@ public class FetalDeathOccurranceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeathOccurranceValue() {
 		OperationsTestCase<FetalDeathOccurrance> validateFetalDeathOccurranceValueTestCase = new OperationsTestCase<FetalDeathOccurrance>(
 			"validateFetalDeathOccurranceValue",
@@ -253,6 +262,7 @@ public class FetalDeathOccurranceTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateFetalDeathOccurranceValueP() {
 		OperationsTestCase<FetalDeathOccurrance> validateFetalDeathOccurranceValuePTestCase = new OperationsTestCase<FetalDeathOccurrance>(
 			"validateFetalDeathOccurranceValueP",
@@ -335,8 +345,7 @@ public class FetalDeathOccurranceTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

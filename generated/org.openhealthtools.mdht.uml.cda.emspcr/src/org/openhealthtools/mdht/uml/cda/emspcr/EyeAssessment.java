@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='EyeAssessmentTemplateId EyeAssessmentMoodCode EyeAssessmentCode EyeAssessmentCodeP EyeAssessmentEffectiveTime EyeAssessmentValue EyeAssessmentValueP EyeAssessmentTargetSiteCode EyeAssessmentTargetSiteCodeP' templateId.root='2.16.840.1.1133883.17.3.10.1.121' moodCode='EVN' code.code='67534-8' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Physical findings of Eye NEMSIS' constraints.validation.dependOn.EyeAssessmentCode='EyeAssessmentCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' targetSiteCode.codeSystem='2.16.840.1.113883.6.1' targetSiteCode.codeSystemName='LOINC'"
  * @generated
  */
-public interface EyeAssessment extends Observation {
+public interface EyeAssessment extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -145,9 +138,9 @@ public interface EyeAssessment extends Observation {
 	public EyeAssessment init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EyeAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public EyeAssessment init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // EyeAssessment

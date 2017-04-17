@@ -7,16 +7,7 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.Switch;
 
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.Procedure;
-import org.openhealthtools.mdht.uml.cda.Section;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.*;
-
-import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
 
 /**
  * <!-- begin-user-doc -->
@@ -56,7 +47,7 @@ public class VsbrSwitch<T> extends Switch<T> {
 	 * Checks whether this is a switch for the given package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @parameter ePackage the package in question.
+	 * @param ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
 	 */
@@ -77,7 +68,8 @@ public class VsbrSwitch<T> extends Switch<T> {
 		switch (classifierID) {
 			case VsbrPackage.REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS: {
 				ReportingBirthInformationfromaclinicalsettingtovitalrecords reportingBirthInformationfromaclinicalsettingtovitalrecords = (ReportingBirthInformationfromaclinicalsettingtovitalrecords) theEObject;
-				T result = caseReportingBirthInformationfromaclinicalsettingtovitalrecords(reportingBirthInformationfromaclinicalsettingtovitalrecords);
+				T result = caseReportingBirthInformationfromaclinicalsettingtovitalrecords(
+					reportingBirthInformationfromaclinicalsettingtovitalrecords);
 				if (result == null) {
 					result = caseClinicalDocument(reportingBirthInformationfromaclinicalsettingtovitalrecords);
 				}
@@ -884,7 +876,8 @@ public class VsbrSwitch<T> extends Switch<T> {
 			}
 			case VsbrPackage.REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS: {
 				ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords reportingFetalDeathInformationfromaclinicalsettingtovitalrecords = (ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords) theEObject;
-				T result = caseReportingFetalDeathInformationfromaclinicalsettingtovitalrecords(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
+				T result = caseReportingFetalDeathInformationfromaclinicalsettingtovitalrecords(
+					reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
 				if (result == null) {
 					result = caseClinicalDocument(reportingFetalDeathInformationfromaclinicalsettingtovitalrecords);
 				}
@@ -1629,7 +1622,7 @@ public class VsbrSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInfrastructureRoot(InfrastructureRoot object) {
+	public T caseInfrastructureRoot(org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot object) {
 		return null;
 	}
 
@@ -1644,7 +1637,7 @@ public class VsbrSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAct(Act object) {
+	public T caseAct(org.eclipse.mdht.uml.hl7.rim.Act object) {
 		return null;
 	}
 
@@ -1659,7 +1652,7 @@ public class VsbrSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClinicalDocument(ClinicalDocument object) {
+	public T caseClinicalDocument(org.eclipse.mdht.uml.cda.ClinicalDocument object) {
 		return null;
 	}
 
@@ -1674,7 +1667,7 @@ public class VsbrSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSection(Section object) {
+	public T caseSection(org.eclipse.mdht.uml.cda.Section object) {
 		return null;
 	}
 
@@ -1689,7 +1682,7 @@ public class VsbrSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClinicalStatement(ClinicalStatement object) {
+	public T caseClinicalStatement(org.eclipse.mdht.uml.cda.ClinicalStatement object) {
 		return null;
 	}
 
@@ -1704,7 +1697,7 @@ public class VsbrSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCDA_Act(org.openhealthtools.mdht.uml.cda.Act object) {
+	public T caseCDA_Act(org.eclipse.mdht.uml.cda.Act object) {
 		return null;
 	}
 
@@ -1719,7 +1712,7 @@ public class VsbrSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseObservation(Observation object) {
+	public T caseObservation(org.eclipse.mdht.uml.cda.Observation object) {
 		return null;
 	}
 
@@ -1734,7 +1727,7 @@ public class VsbrSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProcedure(Procedure object) {
+	public T caseProcedure(org.eclipse.mdht.uml.cda.Procedure object) {
 		return null;
 	}
 

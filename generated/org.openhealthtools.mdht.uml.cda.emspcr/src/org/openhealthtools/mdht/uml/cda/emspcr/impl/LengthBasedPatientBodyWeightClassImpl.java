@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.LengthBasedPatientBodyWeightClass;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.LengthBasedPatientBodyWeightClassOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Length Based Patient Body Weight Class</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class LengthBasedPatientBodyWeightClassImpl extends ObservationImpl implements LengthBasedPatientBodyWeightClass {
+public class LengthBasedPatientBodyWeightClassImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements LengthBasedPatientBodyWeightClass {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class LengthBasedPatientBodyWeightClassImpl extends ObservationImpl imple
 	 */
 	public boolean validateLengthBasedPatientBodyWeightClassTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassTemplateId(
-			this, diagnostics, context);
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class LengthBasedPatientBodyWeightClassImpl extends ObservationImpl imple
 	 */
 	public boolean validateLengthBasedPatientBodyWeightClassMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassMoodCode(
-			this, diagnostics, context);
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +69,7 @@ public class LengthBasedPatientBodyWeightClassImpl extends ObservationImpl imple
 	 */
 	public boolean validateLengthBasedPatientBodyWeightClassCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassCodeP(
-			this, diagnostics, context);
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +79,7 @@ public class LengthBasedPatientBodyWeightClassImpl extends ObservationImpl imple
 	 */
 	public boolean validateLengthBasedPatientBodyWeightClassCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassCode(
-			this, diagnostics, context);
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassCode(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +89,7 @@ public class LengthBasedPatientBodyWeightClassImpl extends ObservationImpl imple
 	 */
 	public boolean validateLengthBasedPatientBodyWeightClassEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassEffectiveTime(
-			this, diagnostics, context);
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -115,8 +99,7 @@ public class LengthBasedPatientBodyWeightClassImpl extends ObservationImpl imple
 	 */
 	public boolean validateLengthBasedPatientBodyWeightClassValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassValue(
-			this, diagnostics, context);
+		return LengthBasedPatientBodyWeightClassOperations.validateLengthBasedPatientBodyWeightClassValue(this, diagnostics, context);
 	}
 
 	/**
@@ -125,16 +108,16 @@ public class LengthBasedPatientBodyWeightClassImpl extends ObservationImpl imple
 	 * @generated
 	 */
 	public LengthBasedPatientBodyWeightClass init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public LengthBasedPatientBodyWeightClass init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public LengthBasedPatientBodyWeightClass init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // LengthBasedPatientBodyWeightClassImpl

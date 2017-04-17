@@ -1,63 +1,67 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead;
+
+import org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
-import org.openhealthtools.mdht.uml.cda.vsbr.operations.NumberofLiveBirthsnowDeadOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
+
+import org.openhealthtools.mdht.uml.cda.vsbr.operations.NumberofLiveBirthsNowDeadOperations;
 
 /**
  * <!-- begin-user-doc -->
- * A static utility class that provides operations related to '<em><b>Numberof Live Birthsnow Dead</b></em>' model objects.
+ * A static utility class that provides operations related to '<em><b>Numberof Live Births Now Dead</b></em>' model objects.
  * <!-- end-user-doc -->
  *
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead#validateNumberofLiveBirthsnowDeadTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Birthsnow Dead Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead#validateNumberofLiveBirthsnowDeadClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Birthsnow Dead Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead#validateNumberofLiveBirthsnowDeadMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Birthsnow Dead Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead#validateNumberofLiveBirthsnowDeadCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Birthsnow Dead Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead#validateNumberofLiveBirthsnowDeadCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Birthsnow Dead Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsnowDead#validateNumberofLiveBirthsnowDeadValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Birthsnow Dead Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead#validateNumberofLiveBirthsNowDeadTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Births Now Dead Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead#validateNumberofLiveBirthsNowDeadClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Births Now Dead Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead#validateNumberofLiveBirthsNowDeadMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Births Now Dead Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead#validateNumberofLiveBirthsNowDeadCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Births Now Dead Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead#validateNumberofLiveBirthsNowDeadCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Births Now Dead Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.NumberofLiveBirthsNowDead#validateNumberofLiveBirthsNowDeadValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Numberof Live Births Now Dead Value</em>}</li>
  * </ul>
  * </p>
  *
  * @generated
  */
 
-public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
+public class NumberofLiveBirthsNowDeadTest extends CDAValidationTest {
 
 	/**
 	*
 	* @generated
 	*/
 	@Test
-	public void testValidateNumberofLiveBirthsnowDeadTemplateId() {
-		OperationsTestCase<NumberofLiveBirthsnowDead> validateNumberofLiveBirthsnowDeadTemplateIdTestCase = new OperationsTestCase<NumberofLiveBirthsnowDead>(
-			"validateNumberofLiveBirthsnowDeadTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBEROF_LIVE_BIRTHSNOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNumberofLiveBirthsNowDeadTemplateId() {
+		OperationsTestCase<NumberofLiveBirthsNowDead> validateNumberofLiveBirthsNowDeadTemplateIdTestCase = new OperationsTestCase<NumberofLiveBirthsNowDead>(
+			"validateNumberofLiveBirthsNowDeadTemplateId", operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(NumberofLiveBirthsnowDead target) {
+			protected void updateToFail(NumberofLiveBirthsNowDead target) {
 
 			}
 
 			@Override
-			protected void updateToPass(NumberofLiveBirthsnowDead target) {
+			protected void updateToPass(NumberofLiveBirthsNowDead target) {
 				target.init();
 
 			}
@@ -65,13 +69,13 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadTemplateId(
-					(NumberofLiveBirthsnowDead) objectToTest, diagnostician, map);
+				return NumberofLiveBirthsNowDeadOperations.validateNumberofLiveBirthsNowDeadTemplateId(
+					(NumberofLiveBirthsNowDead) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNumberofLiveBirthsnowDeadTemplateIdTestCase.doValidationTest();
+		validateNumberofLiveBirthsNowDeadTemplateIdTestCase.doValidationTest();
 	}
 
 	/**
@@ -79,19 +83,20 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateNumberofLiveBirthsnowDeadClassCode() {
-		OperationsTestCase<NumberofLiveBirthsnowDead> validateNumberofLiveBirthsnowDeadClassCodeTestCase = new OperationsTestCase<NumberofLiveBirthsnowDead>(
-			"validateNumberofLiveBirthsnowDeadClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBEROF_LIVE_BIRTHSNOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNumberofLiveBirthsNowDeadClassCode() {
+		OperationsTestCase<NumberofLiveBirthsNowDead> validateNumberofLiveBirthsNowDeadClassCodeTestCase = new OperationsTestCase<NumberofLiveBirthsNowDead>(
+			"validateNumberofLiveBirthsNowDeadClassCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(NumberofLiveBirthsnowDead target) {
+			protected void updateToFail(NumberofLiveBirthsNowDead target) {
 
 			}
 
 			@Override
-			protected void updateToPass(NumberofLiveBirthsnowDead target) {
+			protected void updateToPass(NumberofLiveBirthsNowDead target) {
 				target.init();
 
 			}
@@ -99,13 +104,13 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadClassCode(
-					(NumberofLiveBirthsnowDead) objectToTest, diagnostician, map);
+				return NumberofLiveBirthsNowDeadOperations.validateNumberofLiveBirthsNowDeadClassCode(
+					(NumberofLiveBirthsNowDead) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNumberofLiveBirthsnowDeadClassCodeTestCase.doValidationTest();
+		validateNumberofLiveBirthsNowDeadClassCodeTestCase.doValidationTest();
 	}
 
 	/**
@@ -113,19 +118,20 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateNumberofLiveBirthsnowDeadMoodCode() {
-		OperationsTestCase<NumberofLiveBirthsnowDead> validateNumberofLiveBirthsnowDeadMoodCodeTestCase = new OperationsTestCase<NumberofLiveBirthsnowDead>(
-			"validateNumberofLiveBirthsnowDeadMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBEROF_LIVE_BIRTHSNOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNumberofLiveBirthsNowDeadMoodCode() {
+		OperationsTestCase<NumberofLiveBirthsNowDead> validateNumberofLiveBirthsNowDeadMoodCodeTestCase = new OperationsTestCase<NumberofLiveBirthsNowDead>(
+			"validateNumberofLiveBirthsNowDeadMoodCode", operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(NumberofLiveBirthsnowDead target) {
+			protected void updateToFail(NumberofLiveBirthsNowDead target) {
 
 			}
 
 			@Override
-			protected void updateToPass(NumberofLiveBirthsnowDead target) {
+			protected void updateToPass(NumberofLiveBirthsNowDead target) {
 				target.init();
 
 			}
@@ -133,13 +139,13 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadMoodCode(
-					(NumberofLiveBirthsnowDead) objectToTest, diagnostician, map);
+				return NumberofLiveBirthsNowDeadOperations.validateNumberofLiveBirthsNowDeadMoodCode(
+					(NumberofLiveBirthsNowDead) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNumberofLiveBirthsnowDeadMoodCodeTestCase.doValidationTest();
+		validateNumberofLiveBirthsNowDeadMoodCodeTestCase.doValidationTest();
 	}
 
 	/**
@@ -147,19 +153,20 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateNumberofLiveBirthsnowDeadCodeP() {
-		OperationsTestCase<NumberofLiveBirthsnowDead> validateNumberofLiveBirthsnowDeadCodePTestCase = new OperationsTestCase<NumberofLiveBirthsnowDead>(
-			"validateNumberofLiveBirthsnowDeadCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBEROF_LIVE_BIRTHSNOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNumberofLiveBirthsNowDeadCodeP() {
+		OperationsTestCase<NumberofLiveBirthsNowDead> validateNumberofLiveBirthsNowDeadCodePTestCase = new OperationsTestCase<NumberofLiveBirthsNowDead>(
+			"validateNumberofLiveBirthsNowDeadCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(NumberofLiveBirthsnowDead target) {
+			protected void updateToFail(NumberofLiveBirthsNowDead target) {
 
 			}
 
 			@Override
-			protected void updateToPass(NumberofLiveBirthsnowDead target) {
+			protected void updateToPass(NumberofLiveBirthsNowDead target) {
 				target.init();
 
 			}
@@ -167,13 +174,13 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadCodeP(
-					(NumberofLiveBirthsnowDead) objectToTest, diagnostician, map);
+				return NumberofLiveBirthsNowDeadOperations.validateNumberofLiveBirthsNowDeadCodeP(
+					(NumberofLiveBirthsNowDead) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNumberofLiveBirthsnowDeadCodePTestCase.doValidationTest();
+		validateNumberofLiveBirthsNowDeadCodePTestCase.doValidationTest();
 	}
 
 	/**
@@ -181,19 +188,20 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateNumberofLiveBirthsnowDeadCode() {
-		OperationsTestCase<NumberofLiveBirthsnowDead> validateNumberofLiveBirthsnowDeadCodeTestCase = new OperationsTestCase<NumberofLiveBirthsnowDead>(
-			"validateNumberofLiveBirthsnowDeadCode",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBEROF_LIVE_BIRTHSNOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNumberofLiveBirthsNowDeadCode() {
+		OperationsTestCase<NumberofLiveBirthsNowDead> validateNumberofLiveBirthsNowDeadCodeTestCase = new OperationsTestCase<NumberofLiveBirthsNowDead>(
+			"validateNumberofLiveBirthsNowDeadCode",
+			operationsForOCL.getOCLValue("VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(NumberofLiveBirthsnowDead target) {
+			protected void updateToFail(NumberofLiveBirthsNowDead target) {
 
 			}
 
 			@Override
-			protected void updateToPass(NumberofLiveBirthsnowDead target) {
+			protected void updateToPass(NumberofLiveBirthsNowDead target) {
 				target.init();
 
 			}
@@ -201,13 +209,13 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadCode(
-					(NumberofLiveBirthsnowDead) objectToTest, diagnostician, map);
+				return NumberofLiveBirthsNowDeadOperations.validateNumberofLiveBirthsNowDeadCode(
+					(NumberofLiveBirthsNowDead) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNumberofLiveBirthsnowDeadCodeTestCase.doValidationTest();
+		validateNumberofLiveBirthsNowDeadCodeTestCase.doValidationTest();
 	}
 
 	/**
@@ -215,19 +223,20 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateNumberofLiveBirthsnowDeadValue() {
-		OperationsTestCase<NumberofLiveBirthsnowDead> validateNumberofLiveBirthsnowDeadValueTestCase = new OperationsTestCase<NumberofLiveBirthsnowDead>(
-			"validateNumberofLiveBirthsnowDeadValue",
-			operationsForOCL.getOCLValue("VALIDATE_NUMBEROF_LIVE_BIRTHSNOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateNumberofLiveBirthsNowDeadValue() {
+		OperationsTestCase<NumberofLiveBirthsNowDead> validateNumberofLiveBirthsNowDeadValueTestCase = new OperationsTestCase<NumberofLiveBirthsNowDead>(
+			"validateNumberofLiveBirthsNowDeadValue", operationsForOCL.getOCLValue(
+				"VALIDATE_NUMBEROF_LIVE_BIRTHS_NOW_DEAD_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
-			protected void updateToFail(NumberofLiveBirthsnowDead target) {
+			protected void updateToFail(NumberofLiveBirthsNowDead target) {
 
 			}
 
 			@Override
-			protected void updateToPass(NumberofLiveBirthsnowDead target) {
+			protected void updateToPass(NumberofLiveBirthsNowDead target) {
 				target.init();
 
 				CD value = DatatypesFactory.eINSTANCE.createCD();
@@ -238,20 +247,20 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return NumberofLiveBirthsnowDeadOperations.validateNumberofLiveBirthsnowDeadValue(
-					(NumberofLiveBirthsnowDead) objectToTest, diagnostician, map);
+				return NumberofLiveBirthsNowDeadOperations.validateNumberofLiveBirthsNowDeadValue(
+					(NumberofLiveBirthsNowDead) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateNumberofLiveBirthsnowDeadValueTestCase.doValidationTest();
+		validateNumberofLiveBirthsNowDeadValueTestCase.doValidationTest();
 	}
 
 	/**
 	*
 	* @generated
 	*/
-	private static class OperationsForOCL extends NumberofLiveBirthsnowDeadOperations {
+	private static class OperationsForOCL extends NumberofLiveBirthsNowDeadOperations {
 		public String getOCLValue(String fieldName) {
 
 			String oclValue = null;
@@ -269,9 +278,9 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 	*
 	* @generated
 	*/
-	private static class ObjectFactory implements TestObjectFactory<NumberofLiveBirthsnowDead> {
-		public NumberofLiveBirthsnowDead create() {
-			return VsbrFactory.eINSTANCE.createNumberofLiveBirthsnowDead();
+	private static class ObjectFactory implements TestObjectFactory<NumberofLiveBirthsNowDead> {
+		public NumberofLiveBirthsNowDead create() {
+			return VsbrFactory.eINSTANCE.createNumberofLiveBirthsNowDead();
 		}
 	}
 
@@ -291,7 +300,7 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 	* Tests Operations Constructor for 100% coverage
 	* @generated
 	*/
-	private static class ConstructorTestClass extends NumberofLiveBirthsnowDeadOperations {
+	private static class ConstructorTestClass extends NumberofLiveBirthsNowDeadOperations {
 	};
 
 	/**
@@ -300,8 +309,7 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**
@@ -313,4 +321,4 @@ public class NumberofLiveBirthsnowDeadTest extends CDAValidationTest {
 		return null;
 	}
 
-} // NumberofLiveBirthsnowDeadOperations
+} // NumberofLiveBirthsNowDeadOperations

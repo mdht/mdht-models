@@ -1,9 +1,5 @@
 
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,11 +7,16 @@ package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.DeathReportDocumentBodyOperations;
 
 
@@ -28,34 +29,37 @@ import org.openhealthtools.mdht.uml.cda.vsdr.operations.DeathReportDocumentBodyO
  * The following operations are supported:
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Text</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyTimeofDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Timeof Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyLocationofDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Locationof Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyDeathCertification(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Death Certification</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyMannerofDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Mannerof Death</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyLocationOfDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Location Of Death</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCertifyingDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Certifying Death</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyMannerOfDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Manner Of Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyPregnancyStatus(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Pregnancy Status</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyTobaccoUse(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Tobacco Use</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyInjury(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Injury</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCauseofDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Causeof Death</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCauseOfDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Cause Of Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyAutopsyPerformance(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Autopsy Performance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyAutopsyResults(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Autopsy Results</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCoronerReferral(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Coroner Referral</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyCoronerCaseTransfer(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Coroner Case Transfer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyDeathLocationType(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Death Location Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#validateDeathReportDocumentBodyPronouncingDeath(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Report Document Body Pronouncing Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getTimeofDeath() <em>Get Timeof Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getLocationofDeath() <em>Get Locationof Death</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getDeathCertification() <em>Get Death Certification</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getMannerofDeath() <em>Get Mannerof Death</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getLocationOfDeath() <em>Get Location Of Death</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getCertifyingDeath() <em>Get Certifying Death</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getMannerOfDeath() <em>Get Manner Of Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getPregnancyStatus() <em>Get Pregnancy Status</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getTobaccoUse() <em>Get Tobacco Use</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getInjury() <em>Get Injury</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getCauseofDeath() <em>Get Causeof Death</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getCauseOfDeath() <em>Get Cause Of Death</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getAutopsyPerformance() <em>Get Autopsy Performance</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getAutopsyResults() <em>Get Autopsy Results</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getCoronerReferral() <em>Get Coroner Referral</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getCoronerCaseTransfer() <em>Get Coroner Case Transfer</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getDeathLocationType() <em>Get Death Location Type</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody#getPronouncingDeath() <em>Get Pronouncing Death</em>}</li>
  * </ul>
  * </p>
  *
@@ -122,6 +126,9 @@ public void testValidateDeathReportDocumentBodyTemplateId() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -135,80 +142,6 @@ public void testValidateDeathReportDocumentBodyTemplateId() {
 		};
 
 		validateDeathReportDocumentBodyTemplateIdTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateDeathReportDocumentBodyCodeP() {
-			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyCodePTestCase = new OperationsTestCase<DeathReportDocumentBody>(
-			"validateDeathReportDocumentBodyCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathReportDocumentBody target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathReportDocumentBody target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyCodeP(
-					(DeathReportDocumentBody) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathReportDocumentBodyCodePTestCase.doValidationTest();
 }		
 
 
@@ -270,6 +203,9 @@ public void testValidateDeathReportDocumentBodyCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -283,6 +219,162 @@ public void testValidateDeathReportDocumentBodyCode() {
 		};
 
 		validateDeathReportDocumentBodyCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathReportDocumentBodyCodeP() {
+			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyCodePTestCase = new OperationsTestCase<DeathReportDocumentBody>(
+			"validateDeathReportDocumentBodyCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathReportDocumentBody target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathReportDocumentBody target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyCodeP(
+					(DeathReportDocumentBody) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathReportDocumentBodyCodePTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathReportDocumentBodyText() {
+			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyTextTestCase = new OperationsTestCase<DeathReportDocumentBody>(
+			"validateDeathReportDocumentBodyText",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathReportDocumentBody target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathReportDocumentBody target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+//		ED text = DatatypesFactory.eINSTANCE.createED();
+//		target.setText(text );	
+//				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyText(
+					(DeathReportDocumentBody) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathReportDocumentBodyTextTestCase.doValidationTest();
 }		
 
 
@@ -344,6 +436,9 @@ public void testValidateDeathReportDocumentBodyTimeofDeath() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -370,10 +465,10 @@ public void testValidateDeathReportDocumentBodyTimeofDeath() {
 
  
 									
-public void testValidateDeathReportDocumentBodyLocationofDeath() {
-			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyLocationofDeathTestCase = new OperationsTestCase<DeathReportDocumentBody>(
-			"validateDeathReportDocumentBodyLocationofDeath",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATIONOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateDeathReportDocumentBodyLocationOfDeath() {
+			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyLocationOfDeathTestCase = new OperationsTestCase<DeathReportDocumentBody>(
+			"validateDeathReportDocumentBodyLocationOfDeath",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_LOCATION_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
@@ -418,19 +513,22 @@ public void testValidateDeathReportDocumentBodyLocationofDeath() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyLocationofDeath(
+				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyLocationOfDeath(
 					(DeathReportDocumentBody) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateDeathReportDocumentBodyLocationofDeathTestCase.doValidationTest();
+		validateDeathReportDocumentBodyLocationOfDeathTestCase.doValidationTest();
 }		
 
 
@@ -444,10 +542,10 @@ public void testValidateDeathReportDocumentBodyLocationofDeath() {
 
  
 									
-public void testValidateDeathReportDocumentBodyDeathCertification() {
-			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyDeathCertificationTestCase = new OperationsTestCase<DeathReportDocumentBody>(
-			"validateDeathReportDocumentBodyDeathCertification",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_DEATH_CERTIFICATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateDeathReportDocumentBodyCertifyingDeath() {
+			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyCertifyingDeathTestCase = new OperationsTestCase<DeathReportDocumentBody>(
+			"validateDeathReportDocumentBodyCertifyingDeath",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CERTIFYING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
@@ -492,19 +590,22 @@ public void testValidateDeathReportDocumentBodyDeathCertification() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyDeathCertification(
+				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyCertifyingDeath(
 					(DeathReportDocumentBody) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateDeathReportDocumentBodyDeathCertificationTestCase.doValidationTest();
+		validateDeathReportDocumentBodyCertifyingDeathTestCase.doValidationTest();
 }		
 
 
@@ -518,10 +619,10 @@ public void testValidateDeathReportDocumentBodyDeathCertification() {
 
  
 									
-public void testValidateDeathReportDocumentBodyMannerofDeath() {
-			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyMannerofDeathTestCase = new OperationsTestCase<DeathReportDocumentBody>(
-			"validateDeathReportDocumentBodyMannerofDeath",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNEROF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateDeathReportDocumentBodyMannerOfDeath() {
+			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyMannerOfDeathTestCase = new OperationsTestCase<DeathReportDocumentBody>(
+			"validateDeathReportDocumentBodyMannerOfDeath",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_MANNER_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
@@ -566,19 +667,22 @@ public void testValidateDeathReportDocumentBodyMannerofDeath() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyMannerofDeath(
+				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyMannerOfDeath(
 					(DeathReportDocumentBody) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateDeathReportDocumentBodyMannerofDeathTestCase.doValidationTest();
+		validateDeathReportDocumentBodyMannerOfDeathTestCase.doValidationTest();
 }		
 
 
@@ -640,6 +744,9 @@ public void testValidateDeathReportDocumentBodyPregnancyStatus() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -714,6 +821,9 @@ public void testValidateDeathReportDocumentBodyTobaccoUse() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -788,6 +898,9 @@ public void testValidateDeathReportDocumentBodyInjury() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -814,10 +927,10 @@ public void testValidateDeathReportDocumentBodyInjury() {
 
  
 									
-public void testValidateDeathReportDocumentBodyCauseofDeath() {
-			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyCauseofDeathTestCase = new OperationsTestCase<DeathReportDocumentBody>(
-			"validateDeathReportDocumentBodyCauseofDeath",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSEOF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateDeathReportDocumentBodyCauseOfDeath() {
+			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyCauseOfDeathTestCase = new OperationsTestCase<DeathReportDocumentBody>(
+			"validateDeathReportDocumentBodyCauseOfDeath",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_CAUSE_OF_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
@@ -862,19 +975,22 @@ public void testValidateDeathReportDocumentBodyCauseofDeath() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyCauseofDeath(
+				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyCauseOfDeath(
 					(DeathReportDocumentBody) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateDeathReportDocumentBodyCauseofDeathTestCase.doValidationTest();
+		validateDeathReportDocumentBodyCauseOfDeathTestCase.doValidationTest();
 }		
 
 
@@ -936,6 +1052,9 @@ public void testValidateDeathReportDocumentBodyAutopsyPerformance() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1010,6 +1129,9 @@ public void testValidateDeathReportDocumentBodyAutopsyResults() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1084,6 +1206,9 @@ public void testValidateDeathReportDocumentBodyCoronerReferral() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1158,6 +1283,9 @@ public void testValidateDeathReportDocumentBodyCoronerCaseTransfer() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1232,6 +1360,9 @@ public void testValidateDeathReportDocumentBodyDeathLocationType() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1245,6 +1376,83 @@ public void testValidateDeathReportDocumentBodyDeathLocationType() {
 		};
 
 		validateDeathReportDocumentBodyDeathLocationTypeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathReportDocumentBodyPronouncingDeath() {
+			OperationsTestCase<DeathReportDocumentBody> validateDeathReportDocumentBodyPronouncingDeathTestCase = new OperationsTestCase<DeathReportDocumentBody>(
+			"validateDeathReportDocumentBodyPronouncingDeath",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_REPORT_DOCUMENT_BODY_PRONOUNCING_DEATH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathReportDocumentBody target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathReportDocumentBody target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathReportDocumentBodyOperations.validateDeathReportDocumentBodyPronouncingDeath(
+					(DeathReportDocumentBody) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathReportDocumentBodyPronouncingDeathTestCase.doValidationTest();
 }		
 
 
@@ -1283,11 +1491,11 @@ target.getTimeofDeath();
 
  
 									
-public void testGetLocationofDeath() {
+public void testGetLocationOfDeath() {
 
 
 DeathReportDocumentBody target = objectFactory.create();
-target.getLocationofDeath();
+target.getLocationOfDeath();
 
 
 
@@ -1306,11 +1514,11 @@ target.getLocationofDeath();
 
  
 									
-public void testGetDeathCertification() {
+public void testGetCertifyingDeath() {
 
 
 DeathReportDocumentBody target = objectFactory.create();
-target.getDeathCertification();
+target.getCertifyingDeath();
 
 
 
@@ -1329,11 +1537,11 @@ target.getDeathCertification();
 
  
 									
-public void testGetMannerofDeath() {
+public void testGetMannerOfDeath() {
 
 
 DeathReportDocumentBody target = objectFactory.create();
-target.getMannerofDeath();
+target.getMannerOfDeath();
 
 
 
@@ -1421,11 +1629,11 @@ target.getInjury();
 
  
 									
-public void testGetCauseofDeath() {
+public void testGetCauseOfDeath() {
 
 
 DeathReportDocumentBody target = objectFactory.create();
-target.getCauseofDeath();
+target.getCauseOfDeath();
 
 
 
@@ -1549,6 +1757,29 @@ target.getDeathLocationType();
 
 
 
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testGetPronouncingDeath() {
+
+
+DeathReportDocumentBody target = objectFactory.create();
+target.getPronouncingDeath();
+
+
+
+}
+
+
+
+
 /**
 *
 * @generated
@@ -1572,6 +1803,7 @@ target.getDeathLocationType();
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<DeathReportDocumentBody> {
+		@Override
 		public DeathReportDocumentBody create() {		
 			return VsdrFactory.eINSTANCE.createDeathReportDocumentBody();
 		}

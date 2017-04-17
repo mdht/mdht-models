@@ -12,9 +12,8 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
-import org.eclipse.mdht.uml.cda.impl.OrganizerImpl;
 
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.ConfidentialitySecurityObservation;
@@ -32,7 +31,7 @@ import org.hl7.security.ds4p.contentprofile.operations.PrivacyAnnotationOperatio
  *
  * @generated
  */
-public class PrivacyAnnotationImpl extends OrganizerImpl implements PrivacyAnnotation {
+public class PrivacyAnnotationImpl extends EObjectImpl implements PrivacyAnnotation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

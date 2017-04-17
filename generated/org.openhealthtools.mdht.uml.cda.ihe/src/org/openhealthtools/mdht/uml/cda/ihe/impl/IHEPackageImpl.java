@@ -22,12 +22,12 @@ import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.xmi.impl.EcoreResourceFactoryImpl;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEFactory;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
-import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -918,9 +918,10 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 		}
 
 		// Obtain or create and register package
-		IHEPackageImpl theIHEPackage = (IHEPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof IHEPackageImpl
-				? EPackage.Registry.INSTANCE.get(eNS_URI)
-				: new IHEPackageImpl());
+		IHEPackageImpl theIHEPackage = (IHEPackageImpl) (EPackage.Registry.INSTANCE.get(
+			eNS_URI) instanceof IHEPackageImpl
+					? EPackage.Registry.INSTANCE.get(eNS_URI)
+					: new IHEPackageImpl());
 
 		isInited = true;
 
@@ -960,8 +961,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getImmunizationsSection() {
 		if (immunizationsSectionEClass == null) {
-			immunizationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				0);
+			immunizationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(0);
 		}
 		return immunizationsSectionEClass;
 	}
@@ -973,8 +974,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getMedicationsAdministeredSection() {
 		if (medicationsAdministeredSectionEClass == null) {
-			medicationsAdministeredSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				2);
+			medicationsAdministeredSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(2);
 		}
 		return medicationsAdministeredSectionEClass;
 	}
@@ -986,8 +987,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getConcernEntry() {
 		if (concernEntryEClass == null) {
-			concernEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				3);
+			concernEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(3);
 		}
 		return concernEntryEClass;
 	}
@@ -999,8 +1000,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getMedicalDocument() {
 		if (medicalDocumentEClass == null) {
-			medicalDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				4);
+			medicalDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(4);
 		}
 		return medicalDocumentEClass;
 	}
@@ -1012,8 +1013,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getActiveProblemsSection() {
 		if (activeProblemsSectionEClass == null) {
-			activeProblemsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				5);
+			activeProblemsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(5);
 		}
 		return activeProblemsSectionEClass;
 	}
@@ -1025,8 +1026,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getProblemConcernEntry() {
 		if (problemConcernEntryEClass == null) {
-			problemConcernEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				6);
+			problemConcernEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(6);
 		}
 		return problemConcernEntryEClass;
 	}
@@ -1038,8 +1039,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getProblemEntry() {
 		if (problemEntryEClass == null) {
-			problemEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				7);
+			problemEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(7);
 		}
 		return problemEntryEClass;
 	}
@@ -1064,8 +1065,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getProblemStatusObservation() {
 		if (problemStatusObservationEClass == null) {
-			problemStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				9);
+			problemStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(9);
 		}
 		return problemStatusObservationEClass;
 	}
@@ -1077,8 +1078,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getHealthStatusObservation() {
 		if (healthStatusObservationEClass == null) {
-			healthStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				10);
+			healthStatusObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(10);
 		}
 		return healthStatusObservationEClass;
 	}
@@ -1090,8 +1091,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getMedication() {
 		if (medicationEClass == null) {
-			medicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				12);
+			medicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(12);
 		}
 		return medicationEClass;
 	}
@@ -1103,8 +1104,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getInternalReference() {
 		if (internalReferenceEClass == null) {
-			internalReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				13);
+			internalReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(13);
 		}
 		return internalReferenceEClass;
 	}
@@ -1116,8 +1117,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPatientMedicalInstructions() {
 		if (patientMedicalInstructionsEClass == null) {
-			patientMedicalInstructionsEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				14);
+			patientMedicalInstructionsEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(14);
 		}
 		return patientMedicalInstructionsEClass;
 	}
@@ -1129,8 +1130,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getMedicationsSection() {
 		if (medicationsSectionEClass == null) {
-			medicationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				17);
+			medicationsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(17);
 		}
 		return medicationsSectionEClass;
 	}
@@ -1142,8 +1143,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getAllergyIntoleranceConcern() {
 		if (allergyIntoleranceConcernEClass == null) {
-			allergyIntoleranceConcernEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				18);
+			allergyIntoleranceConcernEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(18);
 		}
 		return allergyIntoleranceConcernEClass;
 	}
@@ -1155,8 +1156,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getAllergyIntolerance() {
 		if (allergyIntoleranceEClass == null) {
-			allergyIntoleranceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				19);
+			allergyIntoleranceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(19);
 		}
 		return allergyIntoleranceEClass;
 	}
@@ -1181,8 +1182,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getAllergiesReactionsSection() {
 		if (allergiesReactionsSectionEClass == null) {
-			allergiesReactionsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				21);
+			allergiesReactionsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(21);
 		}
 		return allergiesReactionsSectionEClass;
 	}
@@ -1194,8 +1195,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getNormalDose() {
 		if (normalDoseEClass == null) {
-			normalDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				22);
+			normalDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(22);
 		}
 		return normalDoseEClass;
 	}
@@ -1207,8 +1208,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getTaperedDose() {
 		if (taperedDoseEClass == null) {
-			taperedDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				23);
+			taperedDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(23);
 		}
 		return taperedDoseEClass;
 	}
@@ -1233,8 +1234,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getConditionalDose() {
 		if (conditionalDoseEClass == null) {
-			conditionalDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				25);
+			conditionalDoseEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(25);
 		}
 		return conditionalDoseEClass;
 	}
@@ -1246,8 +1247,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getCombinationMedication() {
 		if (combinationMedicationEClass == null) {
-			combinationMedicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				26);
+			combinationMedicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(26);
 		}
 		return combinationMedicationEClass;
 	}
@@ -1259,8 +1260,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getVitalSignsSection() {
 		if (vitalSignsSectionEClass == null) {
-			vitalSignsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				27);
+			vitalSignsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(27);
 		}
 		return vitalSignsSectionEClass;
 	}
@@ -1272,8 +1273,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getCodedVitalSignsSection() {
 		if (codedVitalSignsSectionEClass == null) {
-			codedVitalSignsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				28);
+			codedVitalSignsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(28);
 		}
 		return codedVitalSignsSectionEClass;
 	}
@@ -1285,8 +1286,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getVitalSignObservation() {
 		if (vitalSignObservationEClass == null) {
-			vitalSignObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				30);
+			vitalSignObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(30);
 		}
 		return vitalSignObservationEClass;
 	}
@@ -1298,8 +1299,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getSimpleObservation() {
 		if (simpleObservationEClass == null) {
-			simpleObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				31);
+			simpleObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(31);
 		}
 		return simpleObservationEClass;
 	}
@@ -1311,8 +1312,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getVitalSignsOrganizer() {
 		if (vitalSignsOrganizerEClass == null) {
-			vitalSignsOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				29);
+			vitalSignsOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(29);
 		}
 		return vitalSignsOrganizerEClass;
 	}
@@ -1324,8 +1325,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPayersSection() {
 		if (payersSectionEClass == null) {
-			payersSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				32);
+			payersSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(32);
 		}
 		return payersSectionEClass;
 	}
@@ -1337,8 +1338,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getHistoryOfPastIllnessSection() {
 		if (historyOfPastIllnessSectionEClass == null) {
-			historyOfPastIllnessSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				35);
+			historyOfPastIllnessSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(35);
 		}
 		return historyOfPastIllnessSectionEClass;
 	}
@@ -1350,8 +1351,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getChiefComplaintSection() {
 		if (chiefComplaintSectionEClass == null) {
-			chiefComplaintSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				36);
+			chiefComplaintSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(36);
 		}
 		return chiefComplaintSectionEClass;
 	}
@@ -1363,8 +1364,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getReasonForReferralSection() {
 		if (reasonForReferralSectionEClass == null) {
-			reasonForReferralSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				37);
+			reasonForReferralSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(37);
 		}
 		return reasonForReferralSectionEClass;
 	}
@@ -1376,8 +1377,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getHistoryOfPresentIllness() {
 		if (historyOfPresentIllnessEClass == null) {
-			historyOfPresentIllnessEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				38);
+			historyOfPresentIllnessEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(38);
 		}
 		return historyOfPresentIllnessEClass;
 	}
@@ -1389,8 +1390,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getSurgeriesSection() {
 		if (surgeriesSectionEClass == null) {
-			surgeriesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				39);
+			surgeriesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(39);
 		}
 		return surgeriesSectionEClass;
 	}
@@ -1402,8 +1403,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getCodedSurgeriesSection() {
 		if (codedSurgeriesSectionEClass == null) {
-			codedSurgeriesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				40);
+			codedSurgeriesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(40);
 		}
 		return codedSurgeriesSectionEClass;
 	}
@@ -1428,8 +1429,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getDischargeDiagnosisSection() {
 		if (dischargeDiagnosisSectionEClass == null) {
-			dischargeDiagnosisSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				45);
+			dischargeDiagnosisSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(45);
 		}
 		return dischargeDiagnosisSectionEClass;
 	}
@@ -1467,8 +1468,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getCodedAdvanceDirectivesSection() {
 		if (codedAdvanceDirectivesSectionEClass == null) {
-			codedAdvanceDirectivesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				48);
+			codedAdvanceDirectivesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(48);
 		}
 		return codedAdvanceDirectivesSectionEClass;
 	}
@@ -1480,8 +1481,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getAdvanceDirectivesSection() {
 		if (advanceDirectivesSectionEClass == null) {
-			advanceDirectivesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				49);
+			advanceDirectivesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(49);
 		}
 		return advanceDirectivesSectionEClass;
 	}
@@ -1493,8 +1494,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getAdvanceDirectiveObservation() {
 		if (advanceDirectiveObservationEClass == null) {
-			advanceDirectiveObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				50);
+			advanceDirectiveObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(50);
 		}
 		return advanceDirectiveObservationEClass;
 	}
@@ -1506,8 +1507,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPhysicalExamNarrativeSection() {
 		if (physicalExamNarrativeSectionEClass == null) {
-			physicalExamNarrativeSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				51);
+			physicalExamNarrativeSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(51);
 		}
 		return physicalExamNarrativeSectionEClass;
 	}
@@ -1519,8 +1520,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPhysicalExamSection() {
 		if (physicalExamSectionEClass == null) {
-			physicalExamSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				52);
+			physicalExamSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(52);
 		}
 		return physicalExamSectionEClass;
 	}
@@ -1532,8 +1533,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getGeneralAppearanceSection() {
 		if (generalAppearanceSectionEClass == null) {
-			generalAppearanceSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				53);
+			generalAppearanceSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(53);
 		}
 		return generalAppearanceSectionEClass;
 	}
@@ -1558,8 +1559,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getIntegumentarySystemSection() {
 		if (integumentarySystemSectionEClass == null) {
-			integumentarySystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				55);
+			integumentarySystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(55);
 		}
 		return integumentarySystemSectionEClass;
 	}
@@ -1571,8 +1572,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getHeadSection() {
 		if (headSectionEClass == null) {
-			headSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				56);
+			headSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(56);
 		}
 		return headSectionEClass;
 	}
@@ -1584,8 +1585,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getEyesSection() {
 		if (eyesSectionEClass == null) {
-			eyesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				57);
+			eyesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(57);
 		}
 		return eyesSectionEClass;
 	}
@@ -1597,8 +1598,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getEarsNoseMouthThroatSection() {
 		if (earsNoseMouthThroatSectionEClass == null) {
-			earsNoseMouthThroatSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				58);
+			earsNoseMouthThroatSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(58);
 		}
 		return earsNoseMouthThroatSectionEClass;
 	}
@@ -1610,8 +1611,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getEarsSection() {
 		if (earsSectionEClass == null) {
-			earsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				59);
+			earsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(59);
 		}
 		return earsSectionEClass;
 	}
@@ -1623,8 +1624,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getNoseSection() {
 		if (noseSectionEClass == null) {
-			noseSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				60);
+			noseSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(60);
 		}
 		return noseSectionEClass;
 	}
@@ -1636,8 +1637,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getMouthThroatTeethSection() {
 		if (mouthThroatTeethSectionEClass == null) {
-			mouthThroatTeethSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				61);
+			mouthThroatTeethSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(61);
 		}
 		return mouthThroatTeethSectionEClass;
 	}
@@ -1649,8 +1650,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getNeckSection() {
 		if (neckSectionEClass == null) {
-			neckSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				62);
+			neckSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(62);
 		}
 		return neckSectionEClass;
 	}
@@ -1662,8 +1663,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getEndocrineSystemSection() {
 		if (endocrineSystemSectionEClass == null) {
-			endocrineSystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				63);
+			endocrineSystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(63);
 		}
 		return endocrineSystemSectionEClass;
 	}
@@ -1675,8 +1676,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getThoraxLungsSection() {
 		if (thoraxLungsSectionEClass == null) {
-			thoraxLungsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				64);
+			thoraxLungsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(64);
 		}
 		return thoraxLungsSectionEClass;
 	}
@@ -1688,8 +1689,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getChestWallSection() {
 		if (chestWallSectionEClass == null) {
-			chestWallSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				65);
+			chestWallSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(65);
 		}
 		return chestWallSectionEClass;
 	}
@@ -1701,8 +1702,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getBreastSection() {
 		if (breastSectionEClass == null) {
-			breastSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				66);
+			breastSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(66);
 		}
 		return breastSectionEClass;
 	}
@@ -1714,8 +1715,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getHeartSection() {
 		if (heartSectionEClass == null) {
-			heartSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				67);
+			heartSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(67);
 		}
 		return heartSectionEClass;
 	}
@@ -1727,8 +1728,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getRespiratorySystemSection() {
 		if (respiratorySystemSectionEClass == null) {
-			respiratorySystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				68);
+			respiratorySystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(68);
 		}
 		return respiratorySystemSectionEClass;
 	}
@@ -1740,8 +1741,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getAbdomenSection() {
 		if (abdomenSectionEClass == null) {
-			abdomenSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				69);
+			abdomenSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(69);
 		}
 		return abdomenSectionEClass;
 	}
@@ -1753,8 +1754,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getLymphaticSection() {
 		if (lymphaticSectionEClass == null) {
-			lymphaticSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				70);
+			lymphaticSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(70);
 		}
 		return lymphaticSectionEClass;
 	}
@@ -1766,8 +1767,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getVesselsSection() {
 		if (vesselsSectionEClass == null) {
-			vesselsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				71);
+			vesselsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(71);
 		}
 		return vesselsSectionEClass;
 	}
@@ -1779,8 +1780,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getMusculoskeletalSystemSection() {
 		if (musculoskeletalSystemSectionEClass == null) {
-			musculoskeletalSystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				72);
+			musculoskeletalSystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(72);
 		}
 		return musculoskeletalSystemSectionEClass;
 	}
@@ -1792,8 +1793,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getNeurologicSystemSection() {
 		if (neurologicSystemSectionEClass == null) {
-			neurologicSystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				73);
+			neurologicSystemSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(73);
 		}
 		return neurologicSystemSectionEClass;
 	}
@@ -1805,8 +1806,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getGenitaliaSection() {
 		if (genitaliaSectionEClass == null) {
-			genitaliaSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				74);
+			genitaliaSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(74);
 		}
 		return genitaliaSectionEClass;
 	}
@@ -1818,8 +1819,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getRectumSection() {
 		if (rectumSectionEClass == null) {
-			rectumSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				75);
+			rectumSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(75);
 		}
 		return rectumSectionEClass;
 	}
@@ -1831,8 +1832,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getExtremitiesSection() {
 		if (extremitiesSectionEClass == null) {
-			extremitiesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				76);
+			extremitiesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(76);
 		}
 		return extremitiesSectionEClass;
 	}
@@ -1844,8 +1845,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getReviewOfSystemsSection() {
 		if (reviewOfSystemsSectionEClass == null) {
-			reviewOfSystemsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				77);
+			reviewOfSystemsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(77);
 		}
 		return reviewOfSystemsSectionEClass;
 	}
@@ -1857,8 +1858,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getHospitalCourseSection() {
 		if (hospitalCourseSectionEClass == null) {
-			hospitalCourseSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				78);
+			hospitalCourseSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(78);
 		}
 		return hospitalCourseSectionEClass;
 	}
@@ -1870,8 +1871,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getCodedResultsSection() {
 		if (codedResultsSectionEClass == null) {
-			codedResultsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				79);
+			codedResultsSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(79);
 		}
 		return codedResultsSectionEClass;
 	}
@@ -1883,8 +1884,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getExternalReference() {
 		if (externalReferenceEClass == null) {
-			externalReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				41);
+			externalReferenceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(41);
 		}
 		return externalReferenceEClass;
 	}
@@ -1896,8 +1897,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getAssessmentAndPlanSection() {
 		if (assessmentAndPlanSectionEClass == null) {
-			assessmentAndPlanSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				80);
+			assessmentAndPlanSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(80);
 		}
 		return assessmentAndPlanSectionEClass;
 	}
@@ -1909,8 +1910,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getCarePlanSection() {
 		if (carePlanSectionEClass == null) {
-			carePlanSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				81);
+			carePlanSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(81);
 		}
 		return carePlanSectionEClass;
 	}
@@ -1922,8 +1923,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getFamilyMedicalHistorySection() {
 		if (familyMedicalHistorySectionEClass == null) {
-			familyMedicalHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				82);
+			familyMedicalHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(82);
 		}
 		return familyMedicalHistorySectionEClass;
 	}
@@ -1935,8 +1936,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getSocialHistorySection() {
 		if (socialHistorySectionEClass == null) {
-			socialHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				83);
+			socialHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(83);
 		}
 		return socialHistorySectionEClass;
 	}
@@ -1948,8 +1949,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getEncounterHistorySection() {
 		if (encounterHistorySectionEClass == null) {
-			encounterHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				84);
+			encounterHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(84);
 		}
 		return encounterHistorySectionEClass;
 	}
@@ -1961,8 +1962,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getEncounterEntry() {
 		if (encounterEntryEClass == null) {
-			encounterEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				85);
+			encounterEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(85);
 		}
 		return encounterEntryEClass;
 	}
@@ -1974,8 +1975,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getMedicalDevicesSection() {
 		if (medicalDevicesSectionEClass == null) {
-			medicalDevicesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				86);
+			medicalDevicesSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(86);
 		}
 		return medicalDevicesSectionEClass;
 	}
@@ -1987,8 +1988,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getLanguageCommunication() {
 		if (languageCommunicationEClass == null) {
-			languageCommunicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				87);
+			languageCommunicationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(87);
 		}
 		return languageCommunicationEClass;
 	}
@@ -2000,8 +2001,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getMedicalSummary() {
 		if (medicalSummaryEClass == null) {
-			medicalSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				88);
+			medicalSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(88);
 		}
 		return medicalSummaryEClass;
 	}
@@ -2013,8 +2014,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getDischargeSummary() {
 		if (dischargeSummaryEClass == null) {
-			dischargeSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				89);
+			dischargeSummaryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(89);
 		}
 		return dischargeSummaryEClass;
 	}
@@ -2026,8 +2027,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getCoverageEntry() {
 		if (coverageEntryEClass == null) {
-			coverageEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				33);
+			coverageEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(33);
 		}
 		return coverageEntryEClass;
 	}
@@ -2039,8 +2040,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getHealthcareProvidersPharmacies() {
 		if (healthcareProvidersPharmaciesEClass == null) {
-			healthcareProvidersPharmaciesEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				90);
+			healthcareProvidersPharmaciesEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(90);
 		}
 		return healthcareProvidersPharmaciesEClass;
 	}
@@ -2052,8 +2053,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getImmunization() {
 		if (immunizationEClass == null) {
-			immunizationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				1);
+			immunizationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(1);
 		}
 		return immunizationEClass;
 	}
@@ -2065,8 +2066,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getObservationRequestEntry() {
 		if (observationRequestEntryEClass == null) {
-			observationRequestEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				91);
+			observationRequestEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(91);
 		}
 		return observationRequestEntryEClass;
 	}
@@ -2078,8 +2079,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getProductEntry() {
 		if (productEntryEClass == null) {
-			productEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				92);
+			productEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(92);
 		}
 		return productEntryEClass;
 	}
@@ -2091,8 +2092,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getProcedureEntry() {
 		if (procedureEntryEClass == null) {
-			procedureEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				43);
+			procedureEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(43);
 		}
 		return procedureEntryEClass;
 	}
@@ -2143,8 +2144,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPayerEntry() {
 		if (payerEntryEClass == null) {
-			payerEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				34);
+			payerEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(34);
 		}
 		return payerEntryEClass;
 	}
@@ -2156,8 +2157,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPHRExtract() {
 		if (phrExtractEClass == null) {
-			phrExtractEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				94);
+			phrExtractEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(94);
 		}
 		return phrExtractEClass;
 	}
@@ -2182,8 +2183,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getEncounterActivity() {
 		if (encounterActivityEClass == null) {
-			encounterActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				96);
+			encounterActivityEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(96);
 		}
 		return encounterActivityEClass;
 	}
@@ -2195,8 +2196,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getEncounterPlanOfCare() {
 		if (encounterPlanOfCareEClass == null) {
-			encounterPlanOfCareEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				97);
+			encounterPlanOfCareEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(97);
 		}
 		return encounterPlanOfCareEClass;
 	}
@@ -2208,8 +2209,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getIntakeOutputSection() {
 		if (intakeOutputSectionEClass == null) {
-			intakeOutputSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				98);
+			intakeOutputSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(98);
 		}
 		return intakeOutputSectionEClass;
 	}
@@ -2221,8 +2222,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getSupplyEntry() {
 		if (supplyEntryEClass == null) {
-			supplyEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				15);
+			supplyEntryEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(15);
 		}
 		return supplyEntryEClass;
 	}
@@ -2247,8 +2248,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPregnancyHistorySection() {
 		if (pregnancyHistorySectionEClass == null) {
-			pregnancyHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				99);
+			pregnancyHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(99);
 		}
 		return pregnancyHistorySectionEClass;
 	}
@@ -2260,8 +2261,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPregnancyObservation() {
 		if (pregnancyObservationEClass == null) {
-			pregnancyObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				100);
+			pregnancyObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(100);
 		}
 		return pregnancyObservationEClass;
 	}
@@ -2273,8 +2274,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPatientContact() {
 		if (patientContactEClass == null) {
-			patientContactEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				101);
+			patientContactEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(101);
 		}
 		return patientContactEClass;
 	}
@@ -2286,8 +2287,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPatientContactGuardian() {
 		if (patientContactGuardianEClass == null) {
-			patientContactGuardianEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				102);
+			patientContactGuardianEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(102);
 		}
 		return patientContactGuardianEClass;
 	}
@@ -2299,8 +2300,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getPatientContactParticipant() {
 		if (patientContactParticipantEClass == null) {
-			patientContactParticipantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				103);
+			patientContactParticipantEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(103);
 		}
 		return patientContactParticipantEClass;
 	}
@@ -2312,8 +2313,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getScannedDocument() {
 		if (scannedDocumentEClass == null) {
-			scannedDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				104);
+			scannedDocumentEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(104);
 		}
 		return scannedDocumentEClass;
 	}
@@ -2325,8 +2326,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getScanOriginalAuthor() {
 		if (scanOriginalAuthorEClass == null) {
-			scanOriginalAuthorEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				105);
+			scanOriginalAuthorEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(105);
 		}
 		return scanOriginalAuthorEClass;
 	}
@@ -2338,8 +2339,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getScanningDevice() {
 		if (scanningDeviceEClass == null) {
-			scanningDeviceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				106);
+			scanningDeviceEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(106);
 		}
 		return scanningDeviceEClass;
 	}
@@ -2351,8 +2352,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getScanDataEnterer() {
 		if (scanDataEntererEClass == null) {
-			scanDataEntererEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				107);
+			scanDataEntererEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(107);
 		}
 		return scanDataEntererEClass;
 	}
@@ -2364,8 +2365,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getDischargeDiet() {
 		if (dischargeDietEClass == null) {
-			dischargeDietEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				108);
+			dischargeDietEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(108);
 		}
 		return dischargeDietEClass;
 	}
@@ -2377,8 +2378,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getHospitalDischargePhysical() {
 		if (hospitalDischargePhysicalEClass == null) {
-			hospitalDischargePhysicalEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				109);
+			hospitalDischargePhysicalEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(109);
 		}
 		return hospitalDischargePhysicalEClass;
 	}
@@ -2390,8 +2391,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getCodedFamilyMedicalHistorySection() {
 		if (codedFamilyMedicalHistorySectionEClass == null) {
-			codedFamilyMedicalHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				110);
+			codedFamilyMedicalHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(110);
 		}
 		return codedFamilyMedicalHistorySectionEClass;
 	}
@@ -2403,8 +2404,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getFamilyHistoryOrganizer() {
 		if (familyHistoryOrganizerEClass == null) {
-			familyHistoryOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				111);
+			familyHistoryOrganizerEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(111);
 		}
 		return familyHistoryOrganizerEClass;
 	}
@@ -2416,8 +2417,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getFamilyHistoryObservation() {
 		if (familyHistoryObservationEClass == null) {
-			familyHistoryObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				112);
+			familyHistoryObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(112);
 		}
 		return familyHistoryObservationEClass;
 	}
@@ -2429,8 +2430,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getSocialHistoryObservation() {
 		if (socialHistoryObservationEClass == null) {
-			socialHistoryObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				113);
+			socialHistoryObservationEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(113);
 		}
 		return socialHistoryObservationEClass;
 	}
@@ -2442,8 +2443,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getCodedReasonForReferralSection() {
 		if (codedReasonForReferralSectionEClass == null) {
-			codedReasonForReferralSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				114);
+			codedReasonForReferralSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(114);
 		}
 		return codedReasonForReferralSectionEClass;
 	}
@@ -2455,8 +2456,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getCodedSocialHistorySection() {
 		if (codedSocialHistorySectionEClass == null) {
-			codedSocialHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				115);
+			codedSocialHistorySectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(115);
 		}
 		return codedSocialHistorySectionEClass;
 	}
@@ -2468,8 +2469,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getFunctionalStatusSection() {
 		if (functionalStatusSectionEClass == null) {
-			functionalStatusSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				116);
+			functionalStatusSectionEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(116);
 		}
 		return functionalStatusSectionEClass;
 	}
@@ -2494,8 +2495,8 @@ public class IHEPackageImpl extends EPackageImpl implements IHEPackage {
 	 */
 	public EClass getIHERegistryDelegate() {
 		if (iheRegistryDelegateEClass == null) {
-			iheRegistryDelegateEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(IHEPackage.eNS_URI).getEClassifiers().get(
-				118);
+			iheRegistryDelegateEClass = (EClass) EPackage.Registry.INSTANCE.getEPackage(
+				IHEPackage.eNS_URI).getEClassifiers().get(118);
 		}
 		return iheRegistryDelegateEClass;
 	}

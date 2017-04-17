@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.BodyWeightGain;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -32,7 +25,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -75,7 +67,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class BodyWeightGainOperations extends ClinicalStatementOperations {
+public class BodyWeightGainOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -104,7 +104,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -119,25 +119,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainTemplateId(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -165,7 +175,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -180,25 +190,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainClassCode(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -226,7 +246,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -241,25 +261,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainMoodCode(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -287,7 +317,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -302,25 +332,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainId(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -348,7 +388,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -363,25 +403,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainCodeP(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -411,7 +461,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -426,25 +476,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainCode(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -472,7 +532,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -487,25 +547,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainStatusCode(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -533,7 +603,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -548,25 +618,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainEffectiveTime(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -594,7 +674,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -609,25 +689,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainValue(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -655,7 +745,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -670,25 +760,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainInterpretationCodeP(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_INTERPRETATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -718,7 +818,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -733,25 +833,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainInterpretationCode(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -779,7 +889,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -794,25 +904,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainNonPerformanceReason(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -840,7 +960,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -855,25 +975,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainStudyDayPeriod(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_STUDY_DAY_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -901,7 +1031,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -916,25 +1046,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainTimingReference(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_TIMING_REFERENCE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -962,7 +1102,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -977,25 +1117,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainExclusionReason(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_EXCLUSION_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_EXCLUSION_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainExclusionReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainExclusionReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -1023,7 +1173,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1038,25 +1188,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainComment(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -1084,7 +1244,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1099,25 +1259,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainDomainAssignment(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -1145,7 +1315,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1160,25 +1330,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainRelatedRecord(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -1206,7 +1386,7 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1221,25 +1401,35 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateBodyWeightGainSupplementalValue(BodyWeightGain bodyWeightGain, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN);
 			try {
-				VALIDATE_BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodyWeightGain)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodyWeightGain)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_WEIGHT_GAIN__BODY_WEIGHT_GAIN_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodyWeightGainBodyWeightGainSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodyWeightGain, context) }),
 						 new Object [] { bodyWeightGain }));
 			}
 			 
@@ -1275,8 +1465,13 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(BodyWeightGain bodyWeightGain) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN, SdtmPackage.Literals.BODY_WEIGHT_GAIN.getEAllOperations().get(70));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1284,8 +1479,9 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(bodyWeightGain);
 	}
 
@@ -1316,8 +1512,13 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StudyDayPeriod getStudyDayPeriod(BodyWeightGain bodyWeightGain) {
+	
+	
+	
 		if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN, SdtmPackage.Literals.BODY_WEIGHT_GAIN.getEAllOperations().get(71));
 			try {
 				GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);
@@ -1325,8 +1526,9 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
 		return (StudyDayPeriod) query.evaluate(bodyWeightGain);
 	}
 
@@ -1357,8 +1559,13 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  TimingReference getTimingReference(BodyWeightGain bodyWeightGain) {
+	
+	
+	
 		if (GET_TIMING_REFERENCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN, SdtmPackage.Literals.BODY_WEIGHT_GAIN.getEAllOperations().get(72));
 			try {
 				GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -1366,8 +1573,9 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
 		return (TimingReference) query.evaluate(bodyWeightGain);
 	}
 
@@ -1398,8 +1606,13 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  ExclusionReason getExclusionReason(BodyWeightGain bodyWeightGain) {
+	
+	
+	
 		if (GET_EXCLUSION_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN, SdtmPackage.Literals.BODY_WEIGHT_GAIN.getEAllOperations().get(73));
 			try {
 				GET_EXCLUSION_REASON__EOCL_QRY = helper.createQuery(GET_EXCLUSION_REASON__EOCL_EXP);
@@ -1407,8 +1620,9 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EXCLUSION_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EXCLUSION_REASON__EOCL_QRY);
 		return (ExclusionReason) query.evaluate(bodyWeightGain);
 	}
 
@@ -1439,8 +1653,13 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<Comment> getComments(BodyWeightGain bodyWeightGain) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN, SdtmPackage.Literals.BODY_WEIGHT_GAIN.getEAllOperations().get(74));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1448,8 +1667,9 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(bodyWeightGain);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1482,8 +1702,13 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(BodyWeightGain bodyWeightGain) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN, SdtmPackage.Literals.BODY_WEIGHT_GAIN.getEAllOperations().get(75));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1491,8 +1716,9 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(bodyWeightGain);
 	}
 
@@ -1523,8 +1749,13 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(BodyWeightGain bodyWeightGain) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN, SdtmPackage.Literals.BODY_WEIGHT_GAIN.getEAllOperations().get(76));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1532,8 +1763,9 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(bodyWeightGain);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1566,8 +1798,13 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(BodyWeightGain bodyWeightGain) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.BODY_WEIGHT_GAIN, SdtmPackage.Literals.BODY_WEIGHT_GAIN.getEAllOperations().get(77));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1575,8 +1812,9 @@ public class BodyWeightGainOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(bodyWeightGain);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());

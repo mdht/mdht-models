@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.ReturnOfSpontaneousCirculation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementOperations {
+public class ReturnOfSpontaneousCirculationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +73,7 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,27 +89,38 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	public static boolean validateReturnOfSpontaneousCirculationTemplateId(
 			ReturnOfSpontaneousCirculation returnOfSpontaneousCirculation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RETURN_OF_SPONTANEOUS_CIRCULATION);
 			try {
-				VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			returnOfSpontaneousCirculation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.RETURN_OF_SPONTANEOUS_CIRCULATION__RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("ReturnOfSpontaneousCirculationTemplateId"),
-					new Object[] { returnOfSpontaneousCirculation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(returnOfSpontaneousCirculation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.RETURN_OF_SPONTANEOUS_CIRCULATION__RETURN_OF_SPONTANEOUS_CIRCULATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("ReturnOfSpontaneousCirculationReturnOfSpontaneousCirculationTemplateId"),
+						 new Object [] { returnOfSpontaneousCirculation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -133,7 +145,7 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,26 +161,38 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	public static boolean validateReturnOfSpontaneousCirculationMoodCode(
 			ReturnOfSpontaneousCirculation returnOfSpontaneousCirculation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RETURN_OF_SPONTANEOUS_CIRCULATION);
 			try {
-				VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			returnOfSpontaneousCirculation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.RETURN_OF_SPONTANEOUS_CIRCULATION__RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("ReturnOfSpontaneousCirculationMoodCode"),
-					new Object[] { returnOfSpontaneousCirculation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(returnOfSpontaneousCirculation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.RETURN_OF_SPONTANEOUS_CIRCULATION__RETURN_OF_SPONTANEOUS_CIRCULATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ReturnOfSpontaneousCirculationReturnOfSpontaneousCirculationMoodCode"),
+						 new Object [] { returnOfSpontaneousCirculation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -182,9 +206,9 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67513-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67513-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReturnOfSpontaneousCirculationCode(ReturnOfSpontaneousCirculation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Return Of Spontaneous Circulation Code</em>}' invariant operation.
@@ -195,7 +219,7 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,26 +235,38 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	public static boolean validateReturnOfSpontaneousCirculationCode(
 			ReturnOfSpontaneousCirculation returnOfSpontaneousCirculation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RETURN_OF_SPONTANEOUS_CIRCULATION);
 			try {
-				VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			returnOfSpontaneousCirculation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.RETURN_OF_SPONTANEOUS_CIRCULATION__RETURN_OF_SPONTANEOUS_CIRCULATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("ReturnOfSpontaneousCirculationCode"),
-					new Object[] { returnOfSpontaneousCirculation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(returnOfSpontaneousCirculation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.RETURN_OF_SPONTANEOUS_CIRCULATION__RETURN_OF_SPONTANEOUS_CIRCULATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ReturnOfSpontaneousCirculationReturnOfSpontaneousCirculationCode"),
+						 new Object [] { returnOfSpontaneousCirculation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -244,9 +280,9 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17075-5' or value.code = 'LA17076-3' or value.code = 'LA17077-1' or value.code = 'LA32-8')))";
+	protected static final String VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17075-5' or value.code = 'LA17076-3' or value.code = 'LA17077-1' or value.code = 'LA32-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateReturnOfSpontaneousCirculationValue(ReturnOfSpontaneousCirculation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Return Of Spontaneous Circulation Value</em>}' invariant operation.
@@ -257,7 +293,7 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,26 +309,38 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	public static boolean validateReturnOfSpontaneousCirculationValue(
 			ReturnOfSpontaneousCirculation returnOfSpontaneousCirculation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RETURN_OF_SPONTANEOUS_CIRCULATION);
 			try {
-				VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			returnOfSpontaneousCirculation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.RETURN_OF_SPONTANEOUS_CIRCULATION__RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("ReturnOfSpontaneousCirculationValue"),
-					new Object[] { returnOfSpontaneousCirculation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(returnOfSpontaneousCirculation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.RETURN_OF_SPONTANEOUS_CIRCULATION__RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("ReturnOfSpontaneousCirculationReturnOfSpontaneousCirculationValue"),
+						 new Object [] { returnOfSpontaneousCirculation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -317,7 +365,7 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -333,26 +381,38 @@ public class ReturnOfSpontaneousCirculationOperations extends ClinicalStatementO
 	public static boolean validateReturnOfSpontaneousCirculationValueP(
 			ReturnOfSpontaneousCirculation returnOfSpontaneousCirculation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.RETURN_OF_SPONTANEOUS_CIRCULATION);
 			try {
-				VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			returnOfSpontaneousCirculation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.RETURN_OF_SPONTANEOUS_CIRCULATION__RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("ReturnOfSpontaneousCirculationValueP"),
-					new Object[] { returnOfSpontaneousCirculation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(returnOfSpontaneousCirculation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.RETURN_OF_SPONTANEOUS_CIRCULATION__RETURN_OF_SPONTANEOUS_CIRCULATION_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("ReturnOfSpontaneousCirculationReturnOfSpontaneousCirculationValueP"),
+						 new Object [] { returnOfSpontaneousCirculation }));
+			}
+			 
 			return false;
 		}
 		return true;

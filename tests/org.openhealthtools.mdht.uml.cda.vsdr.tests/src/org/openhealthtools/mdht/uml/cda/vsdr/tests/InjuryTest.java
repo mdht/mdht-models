@@ -1,9 +1,5 @@
 
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,17 +7,21 @@ package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.Injury;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.InjuryOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 
 /**
@@ -34,47 +34,52 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentWorkAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Work Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Relationship</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Place Of Injury Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Place Of Injury Determiner Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Place Of Injury Desc</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Addr</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role Place Of Injury</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Location Participation Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Location Participation Injury Location Role</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationEffectiveTime(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Effective Time</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformationLocationParticipation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information Location Participation</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentInjuryInformationInjuryInformation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Injury Information Injury Information</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentWorkAssociationWorkAssociationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Work Association Work Association Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentWorkAssociationWorkAssociationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Work Association Work Association Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentWorkAssociationWorkAssociationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Work Association Work Association Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentWorkAssociationWorkAssociationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Work Association Work Association Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentWorkAssociationWorkAssociationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Work Association Work Association Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentWorkAssociationWorkAssociationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Work Association Work Association Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentWorkAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Work Association Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentWorkAssociationWorkAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Work Association Work Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationAssociationTransportationAssociationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Association Transportation Association Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationAssociationTransportationAssociationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Association Transportation Association Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationAssociationTransportationAssociationCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Association Transportation Association Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationAssociationTransportationAssociationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Association Transportation Association Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationAssociationTransportationAssociationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Association Transportation Association Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationAssociationTransportationAssociationValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Association Transportation Association Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationAssociationTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Association Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationAssociationTransportationAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Association Transportation Association</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationRelationshipTransportationRelationshipClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Relationship Transportation Relationship Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Relationship Transportation Relationship Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationRelationshipTransportationRelationshipCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Relationship Transportation Relationship Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationRelationshipTransportationRelationshipCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Relationship Transportation Relationship Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Relationship Transportation Relationship Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationRelationshipTransportationRelationshipValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Relationship Transportation Relationship Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationRelationshipTransportationRelationshipValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Relationship Transportation Relationship Value P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationRelationshipTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Relationship Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.Injury#validateInjuryComponentTransportationRelationshipTransportationRelationship(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Component Transportation Relationship Transportation Relationship</em>}</li>
  * </ul>
@@ -143,6 +148,9 @@ public void testValidateInjuryTemplateId() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -217,6 +225,9 @@ public void testValidateInjuryClassCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -230,6 +241,83 @@ public void testValidateInjuryClassCode() {
 		};
 
 		validateInjuryClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryMoodCode() {
+			OperationsTestCase<Injury> validateInjuryMoodCodeTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryMoodCode(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -291,6 +379,9 @@ public void testValidateInjuryCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -365,6 +456,9 @@ public void testValidateInjuryCodeP() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -378,80 +472,6 @@ public void testValidateInjuryCodeP() {
 		};
 
 		validateInjuryCodePTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateInjuryMoodCode() {
-			OperationsTestCase<Injury> validateInjuryMoodCodeTestCase = new OperationsTestCase<Injury>(
-			"validateInjuryMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_INJURY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Injury target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Injury target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return InjuryOperations.validateInjuryMoodCode(
-					(Injury) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInjuryMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -516,6 +536,9 @@ public void testValidateInjuryStatusCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -590,6 +613,9 @@ public void testValidateInjuryComponentInjuryInformation() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -664,6 +690,9 @@ public void testValidateInjuryComponentWorkAssociation() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -738,6 +767,9 @@ public void testValidateInjuryComponentTransportationAssociation() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -812,6 +844,9 @@ public void testValidateInjuryComponentTransportationRelationship() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -886,6 +921,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationLocatio
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -899,6 +937,83 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationLocatio
 		};
 
 		validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode() {
+			OperationsTestCase<Injury> validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCodeTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE_PLACE_OF_INJURY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCodeTestCase.doValidationTest();
 }		
 
 
@@ -960,6 +1075,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationLocatio
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1034,6 +1152,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationLocatio
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1108,6 +1229,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationLocatio
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1182,6 +1306,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationLocatio
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1256,6 +1383,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationLocatio
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1269,6 +1399,83 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationLocatio
 		};
 
 		validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole() {
+			OperationsTestCase<Injury> validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_LOCATION_PARTICIPATION_INJURY_LOCATION_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleTestCase.doValidationTest();
 }		
 
 
@@ -1330,6 +1537,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationClassCo
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1343,6 +1553,83 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationClassCo
 		};
 
 		validateInjuryComponentInjuryInformationInjuryInformationClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryComponentInjuryInformationInjuryInformationMoodCode() {
+			OperationsTestCase<Injury> validateInjuryComponentInjuryInformationInjuryInformationMoodCodeTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryComponentInjuryInformationInjuryInformationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformationMoodCode(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryComponentInjuryInformationInjuryInformationMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -1404,6 +1691,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationCodeP()
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1478,6 +1768,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationCode() 
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1499,80 +1792,6 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationCode() 
 /**
 *
 * @generated
-*/
-@Test
-
- 
-									
-public void testValidateInjuryComponentInjuryInformationInjuryInformationMoodCode() {
-			OperationsTestCase<Injury> validateInjuryComponentInjuryInformationInjuryInformationMoodCodeTestCase = new OperationsTestCase<Injury>(
-			"validateInjuryComponentInjuryInformationInjuryInformationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Injury target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Injury target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformationMoodCode(
-					(Injury) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInjuryComponentInjuryInformationInjuryInformationMoodCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated not
 */
 @Test
 
@@ -1608,8 +1827,8 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationText() 
 		
 		
 			
-		ED text = DatatypesFactory.eINSTANCE.createED();
-		
+//		ED text = DatatypesFactory.eINSTANCE.createED();
+//		target.setText(text );	
 				
 		
 			
@@ -1628,6 +1847,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationText() 
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1641,83 +1863,6 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationText() 
 		};
 
 		validateInjuryComponentInjuryInformationInjuryInformationTextTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated not
-*/
-@Test
-
- 
-									
-public void testValidateInjuryComponentInjuryInformationInjuryInformationValue() {
-			OperationsTestCase<Injury> validateInjuryComponentInjuryInformationInjuryInformationValueTestCase = new OperationsTestCase<Injury>(
-			"validateInjuryComponentInjuryInformationInjuryInformationValue",
-			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Injury target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Injury target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-			
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-			
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformationValue(
-					(Injury) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInjuryComponentInjuryInformationInjuryInformationValueTestCase.doValidationTest();
 }		
 
 
@@ -1782,6 +1927,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationEffecti
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1795,6 +1943,86 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationEffecti
 		};
 
 		validateInjuryComponentInjuryInformationInjuryInformationEffectiveTimeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryComponentInjuryInformationInjuryInformationValue() {
+			OperationsTestCase<Injury> validateInjuryComponentInjuryInformationInjuryInformationValueTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryComponentInjuryInformationInjuryInformationValue",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+//			
+//				CD value = DatatypesFactory.eINSTANCE.createCD();
+//				target.getValues().add(value);
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformationValue(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryComponentInjuryInformationInjuryInformationValueTestCase.doValidationTest();
 }		
 
 
@@ -1856,6 +2084,9 @@ public void testValidateInjuryComponentInjuryInformationInjuryInformationLocatio
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1930,6 +2161,9 @@ public void testValidateInjuryComponentInjuryInformationTypeCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1943,6 +2177,83 @@ public void testValidateInjuryComponentInjuryInformationTypeCode() {
 		};
 
 		validateInjuryComponentInjuryInformationTypeCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryComponentInjuryInformationInjuryInformation() {
+			OperationsTestCase<Injury> validateInjuryComponentInjuryInformationInjuryInformationTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryComponentInjuryInformationInjuryInformation",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_INJURY_INFORMATION_INJURY_INFORMATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryComponentInjuryInformationInjuryInformation(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryComponentInjuryInformationInjuryInformationTestCase.doValidationTest();
 }		
 
 
@@ -2004,6 +2315,9 @@ public void testValidateInjuryComponentWorkAssociationWorkAssociationClassCode()
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2017,6 +2331,83 @@ public void testValidateInjuryComponentWorkAssociationWorkAssociationClassCode()
 		};
 
 		validateInjuryComponentWorkAssociationWorkAssociationClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryComponentWorkAssociationWorkAssociationMoodCode() {
+			OperationsTestCase<Injury> validateInjuryComponentWorkAssociationWorkAssociationMoodCodeTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryComponentWorkAssociationWorkAssociationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryComponentWorkAssociationWorkAssociationMoodCode(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryComponentWorkAssociationWorkAssociationMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -2078,6 +2469,9 @@ public void testValidateInjuryComponentWorkAssociationWorkAssociationCodeP() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2152,6 +2546,9 @@ public void testValidateInjuryComponentWorkAssociationWorkAssociationCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2173,80 +2570,6 @@ public void testValidateInjuryComponentWorkAssociationWorkAssociationCode() {
 /**
 *
 * @generated
-*/
-@Test
-
- 
-									
-public void testValidateInjuryComponentWorkAssociationWorkAssociationMoodCode() {
-			OperationsTestCase<Injury> validateInjuryComponentWorkAssociationWorkAssociationMoodCodeTestCase = new OperationsTestCase<Injury>(
-			"validateInjuryComponentWorkAssociationWorkAssociationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_WORK_ASSOCIATION_WORK_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Injury target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Injury target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return InjuryOperations.validateInjuryComponentWorkAssociationWorkAssociationMoodCode(
-					(Injury) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInjuryComponentWorkAssociationWorkAssociationMoodCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated not
 */
 @Test
 
@@ -2274,7 +2597,8 @@ public void testValidateInjuryComponentWorkAssociationWorkAssociationValue() {
 
 				
 			
-				CD value = DatatypesFactory.eINSTANCE.createCD();
+//				CD value = DatatypesFactory.eINSTANCE.createCD();
+//				target.getValues().add(value);
 				
 
 	
@@ -2302,6 +2626,9 @@ public void testValidateInjuryComponentWorkAssociationWorkAssociationValue() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2376,6 +2703,9 @@ public void testValidateInjuryComponentWorkAssociationTypeCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2450,6 +2780,9 @@ public void testValidateInjuryComponentWorkAssociationWorkAssociation() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2524,6 +2857,9 @@ public void testValidateInjuryComponentTransportationAssociationTransportationAs
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2537,6 +2873,83 @@ public void testValidateInjuryComponentTransportationAssociationTransportationAs
 		};
 
 		validateInjuryComponentTransportationAssociationTransportationAssociationClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryComponentTransportationAssociationTransportationAssociationMoodCode() {
+			OperationsTestCase<Injury> validateInjuryComponentTransportationAssociationTransportationAssociationMoodCodeTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryComponentTransportationAssociationTransportationAssociationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryComponentTransportationAssociationTransportationAssociationMoodCode(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryComponentTransportationAssociationTransportationAssociationMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -2598,6 +3011,9 @@ public void testValidateInjuryComponentTransportationAssociationTransportationAs
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2672,6 +3088,9 @@ public void testValidateInjuryComponentTransportationAssociationTransportationAs
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2693,80 +3112,6 @@ public void testValidateInjuryComponentTransportationAssociationTransportationAs
 /**
 *
 * @generated
-*/
-@Test
-
- 
-									
-public void testValidateInjuryComponentTransportationAssociationTransportationAssociationMoodCode() {
-			OperationsTestCase<Injury> validateInjuryComponentTransportationAssociationTransportationAssociationMoodCodeTestCase = new OperationsTestCase<Injury>(
-			"validateInjuryComponentTransportationAssociationTransportationAssociationMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Injury target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Injury target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return InjuryOperations.validateInjuryComponentTransportationAssociationTransportationAssociationMoodCode(
-					(Injury) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInjuryComponentTransportationAssociationTransportationAssociationMoodCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated not
 */
 @Test
 
@@ -2794,9 +3139,9 @@ public void testValidateInjuryComponentTransportationAssociationTransportationAs
 
 				
 			
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-			
-				
+//				CD value = DatatypesFactory.eINSTANCE.createCD();
+//				target.getValues().add(value);
+//				
 
 	
 			
@@ -2823,6 +3168,9 @@ public void testValidateInjuryComponentTransportationAssociationTransportationAs
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2897,6 +3245,9 @@ public void testValidateInjuryComponentTransportationAssociationTypeCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2910,6 +3261,83 @@ public void testValidateInjuryComponentTransportationAssociationTypeCode() {
 		};
 
 		validateInjuryComponentTransportationAssociationTypeCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryComponentTransportationAssociationTransportationAssociation() {
+			OperationsTestCase<Injury> validateInjuryComponentTransportationAssociationTransportationAssociationTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryComponentTransportationAssociationTransportationAssociation",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_TRANSPORTATION_ASSOCIATION_TRANSPORTATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryComponentTransportationAssociationTransportationAssociation(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryComponentTransportationAssociationTransportationAssociationTestCase.doValidationTest();
 }		
 
 
@@ -2971,6 +3399,9 @@ public void testValidateInjuryComponentTransportationRelationshipTransportationR
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -2984,6 +3415,83 @@ public void testValidateInjuryComponentTransportationRelationshipTransportationR
 		};
 
 		validateInjuryComponentTransportationRelationshipTransportationRelationshipClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode() {
+			OperationsTestCase<Injury> validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCodeTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -3045,6 +3553,9 @@ public void testValidateInjuryComponentTransportationRelationshipTransportationR
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -3119,6 +3630,9 @@ public void testValidateInjuryComponentTransportationRelationshipTransportationR
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -3140,80 +3654,6 @@ public void testValidateInjuryComponentTransportationRelationshipTransportationR
 /**
 *
 * @generated
-*/
-@Test
-
- 
-									
-public void testValidateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode() {
-			OperationsTestCase<Injury> validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCodeTestCase = new OperationsTestCase<Injury>(
-			"validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(Injury target) {
-
-			}
-
-			@Override
-			protected void updateToPass(Injury target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return InjuryOperations.validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCode(
-					(Injury) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateInjuryComponentTransportationRelationshipTransportationRelationshipMoodCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated not
 */
 @Test
 
@@ -3241,7 +3681,85 @@ public void testValidateInjuryComponentTransportationRelationshipTransportationR
 
 				
 			
-				CD value = DatatypesFactory.eINSTANCE.createCD();
+//				CD value = DatatypesFactory.eINSTANCE.createCD();
+//				target.getValues().add(value);
+//				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return InjuryOperations.validateInjuryComponentTransportationRelationshipTransportationRelationshipValue(
+					(Injury) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateInjuryComponentTransportationRelationshipTransportationRelationshipValueTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateInjuryComponentTransportationRelationshipTransportationRelationshipValueP() {
+			OperationsTestCase<Injury> validateInjuryComponentTransportationRelationshipTransportationRelationshipValuePTestCase = new OperationsTestCase<Injury>(
+			"validateInjuryComponentTransportationRelationshipTransportationRelationshipValueP",
+			operationsForOCL.getOCLValue("VALIDATE_INJURY_COMPONENT_TRANSPORTATION_RELATIONSHIP_TRANSPORTATION_RELATIONSHIP_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(Injury target) {
+
+			}
+
+			@Override
+			protected void updateToPass(Injury target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
 				
 
 	
@@ -3269,19 +3787,22 @@ public void testValidateInjuryComponentTransportationRelationshipTransportationR
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return InjuryOperations.validateInjuryComponentTransportationRelationshipTransportationRelationshipValue(
+				return InjuryOperations.validateInjuryComponentTransportationRelationshipTransportationRelationshipValueP(
 					(Injury) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateInjuryComponentTransportationRelationshipTransportationRelationshipValueTestCase.doValidationTest();
+		validateInjuryComponentTransportationRelationshipTransportationRelationshipValuePTestCase.doValidationTest();
 }		
 
 
@@ -3343,6 +3864,9 @@ public void testValidateInjuryComponentTransportationRelationshipTypeCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -3417,6 +3941,9 @@ public void testValidateInjuryComponentTransportationRelationshipTransportationR
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -3458,6 +3985,7 @@ public void testValidateInjuryComponentTransportationRelationshipTransportationR
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<Injury> {
+		@Override
 		public Injury create() {		
 			return VsdrFactory.eINSTANCE.createInjury();
 		}

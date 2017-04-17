@@ -10,8 +10,6 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Registry Delegate</b></em>'.
@@ -22,5 +20,5 @@ import org.openhealthtools.mdht.uml.cda.RegistryDelegate;
  * @model
  * @generated
  */
-public interface HITSPRegistryDelegate extends RegistryDelegate {
+public interface HITSPRegistryDelegate extends org.eclipse.mdht.uml.cda.RegistryDelegate {
 } // HITSPRegistryDelegate

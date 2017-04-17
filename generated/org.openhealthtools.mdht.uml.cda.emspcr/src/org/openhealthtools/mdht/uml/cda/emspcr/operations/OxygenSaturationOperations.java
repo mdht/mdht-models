@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.OxygenSaturation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +36,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class OxygenSaturationOperations extends ClinicalStatementOperations {
+public class OxygenSaturationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +72,7 @@ public class OxygenSaturationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OXYGEN_SATURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_OXYGEN_SATURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,25 +87,38 @@ public class OxygenSaturationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOxygenSaturationTemplateId(OxygenSaturation oxygenSaturation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_OXYGEN_SATURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OXYGEN_SATURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.OXYGEN_SATURATION);
 			try {
-				VALIDATE_OXYGEN_SATURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OXYGEN_SATURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_OXYGEN_SATURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OXYGEN_SATURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OXYGEN_SATURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			oxygenSaturation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.OXYGEN_SATURATION__OXYGEN_SATURATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("OxygenSaturationTemplateId"), new Object[] { oxygenSaturation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OXYGEN_SATURATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(oxygenSaturation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.OXYGEN_SATURATION__OXYGEN_SATURATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("OxygenSaturationOxygenSaturationTemplateId"),
+						 new Object [] { oxygenSaturation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -129,7 +143,7 @@ public class OxygenSaturationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OXYGEN_SATURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_OXYGEN_SATURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,25 +158,38 @@ public class OxygenSaturationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOxygenSaturationMoodCode(OxygenSaturation oxygenSaturation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_OXYGEN_SATURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OXYGEN_SATURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.OXYGEN_SATURATION);
 			try {
-				VALIDATE_OXYGEN_SATURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OXYGEN_SATURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_OXYGEN_SATURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OXYGEN_SATURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OXYGEN_SATURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			oxygenSaturation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.OXYGEN_SATURATION__OXYGEN_SATURATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("OxygenSaturationMoodCode"), new Object[] { oxygenSaturation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OXYGEN_SATURATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(oxygenSaturation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.OXYGEN_SATURATION__OXYGEN_SATURATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("OxygenSaturationOxygenSaturationMoodCode"),
+						 new Object [] { oxygenSaturation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -176,9 +203,9 @@ public class OxygenSaturationOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '2708-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '2708-6' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateOxygenSaturationCode(OxygenSaturation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Oxygen Saturation Code</em>}' invariant operation.
@@ -189,7 +216,7 @@ public class OxygenSaturationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,25 +231,38 @@ public class OxygenSaturationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOxygenSaturationCode(OxygenSaturation oxygenSaturation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.OXYGEN_SATURATION);
 			try {
-				VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			oxygenSaturation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.OXYGEN_SATURATION__OXYGEN_SATURATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("OxygenSaturationCode"), new Object[] { oxygenSaturation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OXYGEN_SATURATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(oxygenSaturation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.OXYGEN_SATURATION__OXYGEN_SATURATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("OxygenSaturationOxygenSaturationCode"),
+						 new Object [] { oxygenSaturation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -247,7 +287,7 @@ public class OxygenSaturationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_OXYGEN_SATURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_OXYGEN_SATURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -262,25 +302,38 @@ public class OxygenSaturationOperations extends ClinicalStatementOperations {
 
 	public static boolean validateOxygenSaturationValue(OxygenSaturation oxygenSaturation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_OXYGEN_SATURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_OXYGEN_SATURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.OXYGEN_SATURATION);
 			try {
-				VALIDATE_OXYGEN_SATURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_OXYGEN_SATURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_OXYGEN_SATURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_OXYGEN_SATURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_OXYGEN_SATURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			oxygenSaturation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.OXYGEN_SATURATION__OXYGEN_SATURATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("OxygenSaturationValue"), new Object[] { oxygenSaturation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_OXYGEN_SATURATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(oxygenSaturation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.OXYGEN_SATURATION__OXYGEN_SATURATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("OxygenSaturationOxygenSaturationValue"),
+						 new Object [] { oxygenSaturation }));
+			}
+			 
 			return false;
 		}
 		return true;

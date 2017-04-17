@@ -22,195 +22,186 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
-
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceAccuracyObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceDefinitionOrganizer;
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceMeasurementRangeObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceResolutionObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.SamplingFrequencyObservation;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.DeviceDefinitionOrganizerOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Device Definition Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class DeviceDefinitionOrganizerImpl extends OrganizerImpl implements DeviceDefinitionOrganizer {
+public class DeviceDefinitionOrganizerImpl extends org.eclipse.mdht.uml.cda.impl.OrganizerImpl implements DeviceDefinitionOrganizer {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected DeviceDefinitionOrganizerImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.DEVICE_DEFINITION_ORGANIZER;
-  }
+		return PhmrPackage.Literals.DEVICE_DEFINITION_ORGANIZER;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceDefinitionOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerTemplateId(this, diagnostics, context);
-  }
+		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceDefinitionOrganizerClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerClassCode(this, diagnostics, context);
-  }
+		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceDefinitionOrganizerEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerEffectiveTime(this, diagnostics, context);
-  }
+		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerEffectiveTime(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceDefinitionOrganizerMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerMoodCode(this, diagnostics, context);
-  }
+		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceDefinitionOrganizerSamplingFrequencyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerSamplingFrequencyObservation(this, diagnostics, context);
-  }
+		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerSamplingFrequencyObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation(this, diagnostics, context);
-  }
+		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceDefinitionOrganizerDeviceResolutionObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceResolutionObservation(this, diagnostics, context);
-  }
+		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceResolutionObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateDeviceDefinitionOrganizerDeviceAccuracyObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceAccuracyObservation(this, diagnostics, context);
-  }
+		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceAccuracyObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
 public boolean validateDeviceDefinitionOrganizerParticipant(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerParticipant(this, diagnostics, context);
-  }
+		return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerParticipant(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public SamplingFrequencyObservation getSamplingFrequencyObservation() {
-    return DeviceDefinitionOrganizerOperations.getSamplingFrequencyObservation(this);
-  }
+		return DeviceDefinitionOrganizerOperations.getSamplingFrequencyObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public DeviceMeasurementRangeObservation getDeviceMeasurementRangeObservation() {
-    return DeviceDefinitionOrganizerOperations.getDeviceMeasurementRangeObservation(this);
-  }
+		return DeviceDefinitionOrganizerOperations.getDeviceMeasurementRangeObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public DeviceResolutionObservation getDeviceResolutionObservation() {
-    return DeviceDefinitionOrganizerOperations.getDeviceResolutionObservation(this);
-  }
+		return DeviceDefinitionOrganizerOperations.getDeviceResolutionObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public DeviceAccuracyObservation getDeviceAccuracyObservation() {
-    return DeviceDefinitionOrganizerOperations.getDeviceAccuracyObservation(this);
-  }
+		return DeviceDefinitionOrganizerOperations.getDeviceAccuracyObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public DeviceDefinitionOrganizer init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -218,8 +209,8 @@ public boolean validateDeviceDefinitionOrganizerParticipant(DiagnosticChain diag
      * @generated
      */
     @Override
-	public DeviceDefinitionOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public DeviceDefinitionOrganizer init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //DeviceDefinitionOrganizerImpl

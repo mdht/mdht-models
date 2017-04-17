@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ProcedureComplicationsObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ProcedureComplicationsObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure Complications Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ProcedureComplicationsObservationImpl extends ObservationImpl implements ProcedureComplicationsObservation {
+public class ProcedureComplicationsObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ProcedureComplicationsObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class ProcedureComplicationsObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateProcedureComplicationsObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationTemplateId(
-			this, diagnostics, context);
+		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class ProcedureComplicationsObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateProcedureComplicationsObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationMoodCode(
-			this, diagnostics, context);
+		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +69,7 @@ public class ProcedureComplicationsObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateProcedureComplicationsObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationCodeP(
-			this, diagnostics, context);
+		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +79,7 @@ public class ProcedureComplicationsObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateProcedureComplicationsObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationCode(
-			this, diagnostics, context);
+		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -104,8 +89,7 @@ public class ProcedureComplicationsObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateProcedureComplicationsObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationValue(
-			this, diagnostics, context);
+		return ProcedureComplicationsObservationOperations.validateProcedureComplicationsObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -114,16 +98,16 @@ public class ProcedureComplicationsObservationImpl extends ObservationImpl imple
 	 * @generated
 	 */
 	public ProcedureComplicationsObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProcedureComplicationsObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ProcedureComplicationsObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureComplicationsObservationImpl

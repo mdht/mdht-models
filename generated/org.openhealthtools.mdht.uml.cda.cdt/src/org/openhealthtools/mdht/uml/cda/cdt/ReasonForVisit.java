@@ -13,7 +13,7 @@ package org.openhealthtools.mdht.uml.cda.cdt;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-import org.openhealthtools.mdht.uml.cda.Section;
+import org.eclipse.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +43,7 @@ public interface ReasonForVisit extends Section {
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * <!-- begin-model-doc -->
-	 * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and 
+	 * not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and
 	 * let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in (
 	 * value.code = '29299-5' and value.codeSystem = '2.16.840.1.113883.6.1')
 	 * @param diagnostics The chain of diagnostics to which problems are to be appended.

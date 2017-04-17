@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.AdvanceDirectiveObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Advance Directive Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AdvanceDirectiveObservationImpl extends ObservationImpl implements AdvanceDirectiveObservation {
+public class AdvanceDirectiveObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements AdvanceDirectiveObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdvanceDirectiveObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationTemplateId(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +58,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationMoodCode(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -89,8 +76,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationValue(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +85,7 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectiveObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationValueP(
-			this, diagnostics, context);
+		return AdvanceDirectiveObservationOperations.validateAdvanceDirectiveObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -109,16 +94,16 @@ public class AdvanceDirectiveObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public AdvanceDirectiveObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdvanceDirectiveObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public AdvanceDirectiveObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdvanceDirectiveObservationImpl

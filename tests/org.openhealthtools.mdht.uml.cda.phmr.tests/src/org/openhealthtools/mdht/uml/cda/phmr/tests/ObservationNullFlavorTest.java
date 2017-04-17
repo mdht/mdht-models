@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.ObservationNullFlavor;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ObservationNullFlavorOperations;
@@ -69,66 +69,69 @@ public class ObservationNullFlavorTest extends  CDAValidationTest {
  
 									
 public void testValidateObservationNullFlavorTemplateId() {
-      OperationsTestCase<ObservationNullFlavor> validateObservationNullFlavorTemplateIdTestCase = new OperationsTestCase<ObservationNullFlavor>(
-      "validateObservationNullFlavorTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<ObservationNullFlavor> validateObservationNullFlavorTemplateIdTestCase = new OperationsTestCase<ObservationNullFlavor>(
+			"validateObservationNullFlavorTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_OBSERVATION_NULL_FLAVOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ObservationNullFlavor target) {
+			@Override
+			protected void updateToFail(ObservationNullFlavor target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ObservationNullFlavor target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ObservationNullFlavor target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ObservationNullFlavorOperations.validateObservationNullFlavorTemplateId(
-          (ObservationNullFlavor) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ObservationNullFlavorOperations.validateObservationNullFlavorTemplateId(
+					(ObservationNullFlavor) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateObservationNullFlavorTemplateIdTestCase.doValidationTest();
+		validateObservationNullFlavorTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -143,66 +146,69 @@ public void testValidateObservationNullFlavorTemplateId() {
  
 									
 public void testValidateObservationNullFlavorClassCode() {
-      OperationsTestCase<ObservationNullFlavor> validateObservationNullFlavorClassCodeTestCase = new OperationsTestCase<ObservationNullFlavor>(
-      "validateObservationNullFlavorClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<ObservationNullFlavor> validateObservationNullFlavorClassCodeTestCase = new OperationsTestCase<ObservationNullFlavor>(
+			"validateObservationNullFlavorClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_OBSERVATION_NULL_FLAVOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ObservationNullFlavor target) {
+			@Override
+			protected void updateToFail(ObservationNullFlavor target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ObservationNullFlavor target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ObservationNullFlavor target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ObservationNullFlavorOperations.validateObservationNullFlavorClassCode(
-          (ObservationNullFlavor) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ObservationNullFlavorOperations.validateObservationNullFlavorClassCode(
+					(ObservationNullFlavor) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateObservationNullFlavorClassCodeTestCase.doValidationTest();
+		validateObservationNullFlavorClassCodeTestCase.doValidationTest();
 }		
 
 
@@ -217,66 +223,69 @@ public void testValidateObservationNullFlavorClassCode() {
  
 									
 public void testValidateObservationNullFlavorMoodCode() {
-      OperationsTestCase<ObservationNullFlavor> validateObservationNullFlavorMoodCodeTestCase = new OperationsTestCase<ObservationNullFlavor>(
-      "validateObservationNullFlavorMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<ObservationNullFlavor> validateObservationNullFlavorMoodCodeTestCase = new OperationsTestCase<ObservationNullFlavor>(
+			"validateObservationNullFlavorMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_OBSERVATION_NULL_FLAVOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ObservationNullFlavor target) {
+			@Override
+			protected void updateToFail(ObservationNullFlavor target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ObservationNullFlavor target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ObservationNullFlavor target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ObservationNullFlavorOperations.validateObservationNullFlavorMoodCode(
-          (ObservationNullFlavor) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ObservationNullFlavorOperations.validateObservationNullFlavorMoodCode(
+					(ObservationNullFlavor) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateObservationNullFlavorMoodCodeTestCase.doValidationTest();
+		validateObservationNullFlavorMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -291,66 +300,69 @@ public void testValidateObservationNullFlavorMoodCode() {
  
 									
 public void testValidateObservationNullFlavorWaveformObservation() {
-      OperationsTestCase<ObservationNullFlavor> validateObservationNullFlavorWaveformObservationTestCase = new OperationsTestCase<ObservationNullFlavor>(
-      "validateObservationNullFlavorWaveformObservation",
-      operationsForOCL.getOCLValue("VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<ObservationNullFlavor> validateObservationNullFlavorWaveformObservationTestCase = new OperationsTestCase<ObservationNullFlavor>(
+			"validateObservationNullFlavorWaveformObservation",
+			operationsForOCL.getOCLValue("VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ObservationNullFlavor target) {
+			@Override
+			protected void updateToFail(ObservationNullFlavor target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ObservationNullFlavor target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ObservationNullFlavor target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ObservationNullFlavorOperations.validateObservationNullFlavorWaveformObservation(
-          (ObservationNullFlavor) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ObservationNullFlavorOperations.validateObservationNullFlavorWaveformObservation(
+					(ObservationNullFlavor) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateObservationNullFlavorWaveformObservationTestCase.doValidationTest();
+		validateObservationNullFlavorWaveformObservationTestCase.doValidationTest();
 }		
 
 
@@ -365,66 +377,69 @@ public void testValidateObservationNullFlavorWaveformObservation() {
  
 									
 public void testValidateObservationNullFlavorWaveformSamplePeriodObservation() {
-      OperationsTestCase<ObservationNullFlavor> validateObservationNullFlavorWaveformSamplePeriodObservationTestCase = new OperationsTestCase<ObservationNullFlavor>(
-      "validateObservationNullFlavorWaveformSamplePeriodObservation",
-      operationsForOCL.getOCLValue("VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<ObservationNullFlavor> validateObservationNullFlavorWaveformSamplePeriodObservationTestCase = new OperationsTestCase<ObservationNullFlavor>(
+			"validateObservationNullFlavorWaveformSamplePeriodObservation",
+			operationsForOCL.getOCLValue("VALIDATE_OBSERVATION_NULL_FLAVOR_WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ObservationNullFlavor target) {
+			@Override
+			protected void updateToFail(ObservationNullFlavor target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ObservationNullFlavor target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ObservationNullFlavor target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ObservationNullFlavorOperations.validateObservationNullFlavorWaveformSamplePeriodObservation(
-          (ObservationNullFlavor) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ObservationNullFlavorOperations.validateObservationNullFlavorWaveformSamplePeriodObservation(
+					(ObservationNullFlavor) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateObservationNullFlavorWaveformSamplePeriodObservationTestCase.doValidationTest();
+		validateObservationNullFlavorWaveformSamplePeriodObservationTestCase.doValidationTest();
 }		
 
 
@@ -499,6 +514,7 @@ target.getWaveformSamplePeriodObservation();
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<ObservationNullFlavor> {
+		@Override
 		public ObservationNullFlavor create() {		
 			return PhmrFactory.eINSTANCE.createObservationNullFlavor();
 		}
@@ -530,9 +546,9 @@ target.getWaveformSamplePeriodObservation();
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -542,8 +558,8 @@ target.getWaveformSamplePeriodObservation();
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

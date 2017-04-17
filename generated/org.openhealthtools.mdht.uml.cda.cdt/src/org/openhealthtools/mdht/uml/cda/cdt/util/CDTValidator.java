@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
+import org.eclipse.mdht.uml.cda.util.CDAValidator;
 import org.openhealthtools.mdht.uml.cda.ccd.util.CCDValidator;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentAndPlanSectionProcNote;
@@ -51,7 +52,6 @@ import org.openhealthtools.mdht.uml.cda.cdt.ReviewOfSystemsSectionIHE;
 import org.openhealthtools.mdht.uml.cda.cdt.SubjectiveSection;
 import org.openhealthtools.mdht.uml.cda.cdt.UnstructuredDocument;
 import org.openhealthtools.mdht.uml.cda.cdt.VitalSignsSection;
-import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
 
 /**
  * <!-- begin-user-doc -->
@@ -1525,7 +1525,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 			case CDTPackage.GENERAL_HEADER_CONSTRAINTS:
 				return validateGeneralHeaderConstraints((GeneralHeaderConstraints) value, diagnostics, context);
@@ -1807,7 +1808,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsPersonHasName(diagnostics, context);
 	}
 
@@ -1818,7 +1820,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsRolesShallHaveAddrAndTelecom(
 			diagnostics, context);
 	}
@@ -1830,7 +1833,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsRolesShouldHaveAddrAndTelecom(
 			diagnostics, context);
 	}
@@ -1842,7 +1846,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsOrganizationsHaveContactInfo(
 			diagnostics, context);
 	}
@@ -1854,7 +1859,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToDay(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsTimePreciseToDay(diagnostics, context);
 	}
 
@@ -1865,7 +1871,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYear(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsTimePreciseToYear(diagnostics, context);
 	}
 
@@ -1876,7 +1883,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTelephoneMatchesRegex(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsTelephoneMatchesRegex(diagnostics, context);
 	}
 
@@ -1887,7 +1895,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasTelephoneDialingDigits(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasTelephoneDialingDigits(diagnostics, context);
 	}
 
@@ -1898,7 +1907,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsUnknownTelephoneUsesNullFlavor(
 			diagnostics, context);
 	}
@@ -1910,7 +1920,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsTypeIdExtension(diagnostics, context);
 	}
 
@@ -1921,7 +1932,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsIdRootFormat(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsIdRootFormat(diagnostics, context);
 	}
 
@@ -1932,7 +1944,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsOidLength(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsOidLength(diagnostics, context);
 	}
 
@@ -1943,7 +1956,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCodeForm(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsLanguageCodeForm(diagnostics, context);
 	}
 
@@ -1954,7 +1968,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndVersionNumber(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsSetIdAndVersionNumber(diagnostics, context);
 	}
 
@@ -1965,7 +1980,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdAndIdAreUnique(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsSetIdAndIdAreUnique(diagnostics, context);
 	}
 
@@ -1976,7 +1992,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCopyTimeNotPresent(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsCopyTimeNotPresent(diagnostics, context);
 	}
 
@@ -1987,8 +2004,10 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasRecordTargetPatientRole(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasRecordTargetPatientRole(diagnostics, context);
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasRecordTargetPatientRole(
+			diagnostics, context);
 	}
 
 	/**
@@ -1998,7 +2017,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasPatientBirthTime(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasPatientBirthTime(diagnostics, context);
 	}
 
@@ -2009,7 +2029,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAdministrativeGenderCode(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasAdministrativeGenderCode(
 			diagnostics, context);
 	}
@@ -2021,7 +2042,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasProviderOrganization(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasProviderOrganization(diagnostics, context);
 	}
 
@@ -2032,7 +2054,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAuthorTime(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasAuthorTime(diagnostics, context);
 	}
 
@@ -2043,7 +2066,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorId(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasAssignedAuthorId(diagnostics, context);
 	}
 
@@ -2054,7 +2078,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasAssignedAuthorPersonOrDevice(
 			diagnostics, context);
 	}
@@ -2066,7 +2091,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasDataEntererAssignedPerson(
 			diagnostics, context);
 	}
@@ -2078,7 +2104,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasDataEntererTime(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasDataEntererTime(diagnostics, context);
 	}
 
@@ -2089,7 +2116,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformant(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasInformant(diagnostics, context);
 	}
 
@@ -2100,7 +2128,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsHasInformantAssignedPersonOrRelatedPerson(
 			diagnostics, context);
 	}
@@ -2112,7 +2141,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsLegalAuthenticatorHasAssignedPerson(
 			diagnostics, context);
 	}
@@ -2124,7 +2154,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsAuthenticatorHasAssignedPerson(
 			diagnostics, context);
 	}
@@ -2136,7 +2167,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToSecond(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsTimePreciseToSecond(diagnostics, context);
 	}
 
@@ -2147,7 +2179,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTimePreciseToYearAndDay(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsTimePreciseToYearAndDay(diagnostics, context);
 	}
 
@@ -2158,7 +2191,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsTemplateId(diagnostics, context);
 	}
 
@@ -2169,7 +2203,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsCode(diagnostics, context);
 	}
 
@@ -2180,7 +2215,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsEffectiveTime(diagnostics, context);
 	}
 
@@ -2191,7 +2227,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsId(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsId(diagnostics, context);
 	}
 
@@ -2202,7 +2239,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsLanguageCode(diagnostics, context);
 	}
 
@@ -2213,7 +2251,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsRealmCode(diagnostics, context);
 	}
 
@@ -2224,7 +2263,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTitle(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsTitle(diagnostics, context);
 	}
 
@@ -2235,7 +2275,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			GeneralHeaderConstraints generalHeaderConstraints, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return generalHeaderConstraints.validateGeneralHeaderConstraintsTypeId(diagnostics, context);
 	}
 
@@ -3053,8 +3094,8 @@ public class CDTValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote_validateConsultationNoteProceduresSection(
-			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNote_validateConsultationNoteProceduresSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consultationNote.validateConsultationNoteProceduresSection(diagnostics, context);
 	}
 
@@ -3141,8 +3182,8 @@ public class CDTValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateConsultationNote_validateConsultationNoteVitalSignsSection(
-			ConsultationNote consultationNote, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateConsultationNote_validateConsultationNoteVitalSignsSection(ConsultationNote consultationNote,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return consultationNote.validateConsultationNoteVitalSignsSection(diagnostics, context);
 	}
 
@@ -3293,7 +3334,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateReasonForReferralSection_validateReasonForReferralSectionTemplateId(
-			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return reasonForReferralSection.validateReasonForReferralSectionTemplateId(diagnostics, context);
 	}
 
@@ -3304,7 +3346,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateReasonForReferralSection_validateReasonForReferralSectionCode(
-			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ReasonForReferralSection reasonForReferralSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return reasonForReferralSection.validateReasonForReferralSectionCode(diagnostics, context);
 	}
 
@@ -3341,7 +3384,8 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryMapEntryUnique(reasonForVisitSectionConsult, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(reasonForVisitSectionConsult, diagnostics, context);
+			result &= cdaValidator.validateSection_validateClassCode(
+				reasonForVisitSectionConsult, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(reasonForVisitSectionConsult, diagnostics, context);
@@ -3801,7 +3845,8 @@ public class CDTValidator extends EObjectValidator {
 			result &= validateProgressNote_validateProgressNoteAssessmentAndPlan(progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProgressNote_validateProgressNoteBothAssessmentAndPlan(progressNote, diagnostics, context);
+			result &= validateProgressNote_validateProgressNoteBothAssessmentAndPlan(
+				progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateProgressNote_validateProgressNoteHasServiceEvent(progressNote, diagnostics, context);
@@ -3814,7 +3859,8 @@ public class CDTValidator extends EObjectValidator {
 				progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProgressNote_validateProgressNoteHasComponentOfElement(progressNote, diagnostics, context);
+			result &= validateProgressNote_validateProgressNoteHasComponentOfElement(
+				progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateProgressNote_validateProgressNoteHasEncompassingEncounterId(
@@ -3839,7 +3885,8 @@ public class CDTValidator extends EObjectValidator {
 			result &= validateProgressNote_validateProgressNoteAlertsSection(progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateProgressNote_validateProgressNoteChiefComplaintSection(progressNote, diagnostics, context);
+			result &= validateProgressNote_validateProgressNoteChiefComplaintSection(
+				progressNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateProgressNote_validateProgressNoteMedicationsSection(progressNote, diagnostics, context);
@@ -3986,8 +4033,8 @@ public class CDTValidator extends EObjectValidator {
 	* <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProgressNote_validateProgressNoteCode(ProgressNote progressNote,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateProgressNote_validateProgressNoteCode(ProgressNote progressNote, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return progressNote.validateProgressNoteCode(diagnostics, context);
 	}
 
@@ -4174,7 +4221,8 @@ public class CDTValidator extends EObjectValidator {
 	public boolean validateAssessmentAndPlanSectionProcNote_validateAssessmentAndPlanSectionProcNoteTemplateId(
 			AssessmentAndPlanSectionProcNote assessmentAndPlanSectionProcNote, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return assessmentAndPlanSectionProcNote.validateAssessmentAndPlanSectionProcNoteTemplateId(diagnostics, context);
+		return assessmentAndPlanSectionProcNote.validateAssessmentAndPlanSectionProcNoteTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -4299,7 +4347,8 @@ public class CDTValidator extends EObjectValidator {
 				chiefComplaintSectionProcNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(chiefComplaintSectionProcNote, diagnostics, context);
+			result &= cdaValidator.validateSection_validateMoodCode(
+				chiefComplaintSectionProcNote, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateChiefComplaintSectionProcNote_validateChiefComplaintSectionProcNoteTemplateId(
@@ -4599,7 +4648,8 @@ public class CDTValidator extends EObjectValidator {
 				unstructuredDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(unstructuredDocument, diagnostics, context);
+			result &= cdaValidator.validateClinicalDocument_validateMoodCode(
+				unstructuredDocument, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsPersonHasName(
@@ -5201,7 +5251,8 @@ public class CDTValidator extends EObjectValidator {
 	public boolean validatePastMedicalHistorySectionConsult_validatePastMedicalHistorySectionConsultTemplateId(
 			PastMedicalHistorySectionConsult pastMedicalHistorySectionConsult, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return pastMedicalHistorySectionConsult.validatePastMedicalHistorySectionConsultTemplateId(diagnostics, context);
+		return pastMedicalHistorySectionConsult.validatePastMedicalHistorySectionConsultTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -5261,7 +5312,8 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryMapEntryUnique(levelOneConformance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(levelOneConformance, diagnostics, context);
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+				levelOneConformance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateClinicalDocument_validateMoodCode(levelOneConformance, diagnostics, context);
@@ -5317,7 +5369,8 @@ public class CDTValidator extends EObjectValidator {
 			result &= validate_EveryMapEntryUnique(levelTwoConformance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(levelTwoConformance, diagnostics, context);
+			result &= cdaValidator.validateClinicalDocument_validateClassCode(
+				levelTwoConformance, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateClinicalDocument_validateMoodCode(levelTwoConformance, diagnostics, context);
@@ -5993,7 +6046,8 @@ public class CDTValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePlanSection(PlanSection planSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePlanSection(PlanSection planSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(planSection, diagnostics, context)) {
 			return false;
 		}
@@ -6112,7 +6166,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateAssessmentAndPlanSection_validateAssessmentAndPlanSectionTemplateId(
-			AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return assessmentAndPlanSection.validateAssessmentAndPlanSectionTemplateId(diagnostics, context);
 	}
 
@@ -6123,7 +6178,8 @@ public class CDTValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateAssessmentAndPlanSection_validateAssessmentAndPlanSectionCode(
-			AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			AssessmentAndPlanSection assessmentAndPlanSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return assessmentAndPlanSection.validateAssessmentAndPlanSectionCode(diagnostics, context);
 	}
 

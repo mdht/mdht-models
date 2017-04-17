@@ -10,14 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.FamilyHistory;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.FamilyHistoryOperations;
@@ -28,8 +26,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.FamilyHistoryOrganizerImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Family History</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -95,7 +91,8 @@ public class FamilyHistoryImpl extends FamilyHistoryOrganizerImpl implements Fam
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateFamilyHistoryFamilyMemberCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateFamilyHistoryFamilyMemberCondition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return FamilyHistoryOperations.validateFamilyHistoryFamilyMemberCondition(this, diagnostics, context);
 	}
 
@@ -134,7 +131,7 @@ public class FamilyHistoryImpl extends FamilyHistoryOrganizerImpl implements Fam
 	 */
 	@Override
 	public FamilyHistory init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -143,8 +140,9 @@ public class FamilyHistoryImpl extends FamilyHistoryOrganizerImpl implements Fam
 	 * @generated
 	 */
 	@Override
-	public FamilyHistory init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public FamilyHistory init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // FamilyHistoryImpl

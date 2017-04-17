@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.ParticipantRole;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ParticipantRoleOperations;
@@ -43,8 +43,8 @@ import org.openhealthtools.mdht.uml.cda.phmr.operations.ParticipantRoleOperation
  * <p>
  * The following operations are supported:
  * <ul>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ParticipantRole#validatePhmrParticipantRoleTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Template Id</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ParticipantRole#validatePhmrParticipantRoleId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Phmr Participant Role Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ParticipantRole#validatePHMRParticipantRoleTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Participant Role Template Id</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.phmr.ParticipantRole#validatePHMRParticipantRoleId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate PHMR Participant Role Id</em>}</li>
  * </ul>
  * </p>
  *
@@ -63,73 +63,76 @@ public class ParticipantRoleTest extends  CDAValidationTest {
 
  
 									
-public void testValidatePhmrParticipantRoleTemplateId() {
-      OperationsTestCase<ParticipantRole> validatePhmrParticipantRoleTemplateIdTestCase = new OperationsTestCase<ParticipantRole>(
-      "validatePhmrParticipantRoleTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+public void testValidatePHMRParticipantRoleTemplateId() {
+			OperationsTestCase<ParticipantRole> validatePHMRParticipantRoleTemplateIdTestCase = new OperationsTestCase<ParticipantRole>(
+			"validatePHMRParticipantRoleTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PHMR_PARTICIPANT_ROLE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ParticipantRole target) {
+			@Override
+			protected void updateToFail(ParticipantRole target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ParticipantRole target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ParticipantRole target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ParticipantRoleOperations.validatePhmrParticipantRoleTemplateId(
-          (ParticipantRole) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ParticipantRoleOperations.validatePHMRParticipantRoleTemplateId(
+					(ParticipantRole) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhmrParticipantRoleTemplateIdTestCase.doValidationTest();
-}		
-
-
+		validatePHMRParticipantRoleTemplateIdTestCase.doValidationTest();
+}
 
 
-/**
+
+
+	/**
 *
 * @generated
 */
@@ -137,68 +140,71 @@ public void testValidatePhmrParticipantRoleTemplateId() {
 
  
 									
-public void testValidatePhmrParticipantRoleId() {
-      OperationsTestCase<ParticipantRole> validatePhmrParticipantRoleIdTestCase = new OperationsTestCase<ParticipantRole>(
-      "validatePhmrParticipantRoleId",
-      operationsForOCL.getOCLValue("VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+public void testValidatePHMRParticipantRoleId() {
+			OperationsTestCase<ParticipantRole> validatePHMRParticipantRoleIdTestCase = new OperationsTestCase<ParticipantRole>(
+			"validatePHMRParticipantRoleId",
+			operationsForOCL.getOCLValue("VALIDATE_PHMR_PARTICIPANT_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ParticipantRole target) {
+			@Override
+			protected void updateToFail(ParticipantRole target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ParticipantRole target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ParticipantRole target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ParticipantRoleOperations.validatePhmrParticipantRoleId(
-          (ParticipantRole) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ParticipantRoleOperations.validatePHMRParticipantRoleId(
+					(ParticipantRole) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePhmrParticipantRoleIdTestCase.doValidationTest();
-}		
+		validatePHMRParticipantRoleIdTestCase.doValidationTest();
+}
 
 
 
@@ -226,6 +232,7 @@ public void testValidatePhmrParticipantRoleId() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<ParticipantRole> {
+		@Override
 		public ParticipantRole create() {		
 			return PhmrFactory.eINSTANCE.createParticipantRole();
 		}
@@ -257,9 +264,9 @@ public void testValidatePhmrParticipantRoleId() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -269,8 +276,8 @@ public void testValidatePhmrParticipantRoleId() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

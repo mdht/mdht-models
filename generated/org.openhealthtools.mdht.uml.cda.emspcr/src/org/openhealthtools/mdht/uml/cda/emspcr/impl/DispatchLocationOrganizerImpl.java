@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.DispatchLocationOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.DispatchLocationOrganizerOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Dispatch Location Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class DispatchLocationOrganizerImpl extends OrganizerImpl implements DispatchLocationOrganizer {
+public class DispatchLocationOrganizerImpl extends org.eclipse.mdht.uml.cda.impl.OrganizerImpl implements DispatchLocationOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	 */
 	public boolean validateDispatchLocationOrganizerDispatchLocationNameRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationNameRelationship(
-			this, diagnostics, context);
+		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationNameRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	 */
 	public boolean validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(
-			this, diagnostics, context);
+		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +69,7 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	 */
 	public boolean validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(
-			this, diagnostics, context);
+		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +78,7 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	 * @generated
 	 */
 	public boolean validateDispatchLocationOrganizerTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerTemplateId(
-			this, diagnostics, context);
+		return DispatchLocationOrganizerOperations.validateDispatchLocationOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -102,16 +87,16 @@ public class DispatchLocationOrganizerImpl extends OrganizerImpl implements Disp
 	 * @generated
 	 */
 	public DispatchLocationOrganizer init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DispatchLocationOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public DispatchLocationOrganizer init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // DispatchLocationOrganizerImpl

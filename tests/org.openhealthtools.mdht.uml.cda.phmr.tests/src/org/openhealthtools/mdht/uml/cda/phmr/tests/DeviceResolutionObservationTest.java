@@ -28,13 +28,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceResolutionObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.DeviceResolutionObservationOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -69,66 +69,69 @@ public class DeviceResolutionObservationTest extends  CDAValidationTest {
  
 									
 public void testValidateDeviceResolutionObservationTemplateId() {
-      OperationsTestCase<DeviceResolutionObservation> validateDeviceResolutionObservationTemplateIdTestCase = new OperationsTestCase<DeviceResolutionObservation>(
-      "validateDeviceResolutionObservationTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceResolutionObservation> validateDeviceResolutionObservationTemplateIdTestCase = new OperationsTestCase<DeviceResolutionObservation>(
+			"validateDeviceResolutionObservationTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceResolutionObservation target) {
+			@Override
+			protected void updateToFail(DeviceResolutionObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceResolutionObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceResolutionObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceResolutionObservationOperations.validateDeviceResolutionObservationTemplateId(
-          (DeviceResolutionObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceResolutionObservationOperations.validateDeviceResolutionObservationTemplateId(
+					(DeviceResolutionObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceResolutionObservationTemplateIdTestCase.doValidationTest();
+		validateDeviceResolutionObservationTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -143,66 +146,69 @@ public void testValidateDeviceResolutionObservationTemplateId() {
  
 									
 public void testValidateDeviceResolutionObservationClassCode() {
-      OperationsTestCase<DeviceResolutionObservation> validateDeviceResolutionObservationClassCodeTestCase = new OperationsTestCase<DeviceResolutionObservation>(
-      "validateDeviceResolutionObservationClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceResolutionObservation> validateDeviceResolutionObservationClassCodeTestCase = new OperationsTestCase<DeviceResolutionObservation>(
+			"validateDeviceResolutionObservationClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceResolutionObservation target) {
+			@Override
+			protected void updateToFail(DeviceResolutionObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceResolutionObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceResolutionObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceResolutionObservationOperations.validateDeviceResolutionObservationClassCode(
-          (DeviceResolutionObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceResolutionObservationOperations.validateDeviceResolutionObservationClassCode(
+					(DeviceResolutionObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceResolutionObservationClassCodeTestCase.doValidationTest();
+		validateDeviceResolutionObservationClassCodeTestCase.doValidationTest();
 }		
 
 
@@ -217,69 +223,72 @@ public void testValidateDeviceResolutionObservationClassCode() {
  
 									
 public void testValidateDeviceResolutionObservationCode() {
-      OperationsTestCase<DeviceResolutionObservation> validateDeviceResolutionObservationCodeTestCase = new OperationsTestCase<DeviceResolutionObservation>(
-      "validateDeviceResolutionObservationCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceResolutionObservation> validateDeviceResolutionObservationCodeTestCase = new OperationsTestCase<DeviceResolutionObservation>(
+			"validateDeviceResolutionObservationCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceResolutionObservation target) {
+			@Override
+			protected void updateToFail(DeviceResolutionObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceResolutionObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceResolutionObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-      
-        CD cd  = DatatypesFactory.eINSTANCE.createCD();
-        target.setCode(cd);
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+			
+				CD cd  = DatatypesFactory.eINSTANCE.createCD();
+				target.setCode(cd);
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceResolutionObservationOperations.validateDeviceResolutionObservationCode(
-          (DeviceResolutionObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceResolutionObservationOperations.validateDeviceResolutionObservationCode(
+					(DeviceResolutionObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceResolutionObservationCodeTestCase.doValidationTest();
+		validateDeviceResolutionObservationCodeTestCase.doValidationTest();
 }		
 
 
@@ -294,66 +303,69 @@ public void testValidateDeviceResolutionObservationCode() {
  
 									
 public void testValidateDeviceResolutionObservationMoodCode() {
-      OperationsTestCase<DeviceResolutionObservation> validateDeviceResolutionObservationMoodCodeTestCase = new OperationsTestCase<DeviceResolutionObservation>(
-      "validateDeviceResolutionObservationMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceResolutionObservation> validateDeviceResolutionObservationMoodCodeTestCase = new OperationsTestCase<DeviceResolutionObservation>(
+			"validateDeviceResolutionObservationMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceResolutionObservation target) {
+			@Override
+			protected void updateToFail(DeviceResolutionObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceResolutionObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceResolutionObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceResolutionObservationOperations.validateDeviceResolutionObservationMoodCode(
-          (DeviceResolutionObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceResolutionObservationOperations.validateDeviceResolutionObservationMoodCode(
+					(DeviceResolutionObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceResolutionObservationMoodCodeTestCase.doValidationTest();
+		validateDeviceResolutionObservationMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -368,69 +380,72 @@ public void testValidateDeviceResolutionObservationMoodCode() {
  
 									
 public void testValidateDeviceResolutionObservationValue() {
-      OperationsTestCase<DeviceResolutionObservation> validateDeviceResolutionObservationValueTestCase = new OperationsTestCase<DeviceResolutionObservation>(
-      "validateDeviceResolutionObservationValue",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceResolutionObservation> validateDeviceResolutionObservationValueTestCase = new OperationsTestCase<DeviceResolutionObservation>(
+			"validateDeviceResolutionObservationValue",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceResolutionObservation target) {
+			@Override
+			protected void updateToFail(DeviceResolutionObservation target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceResolutionObservation target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceResolutionObservation target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-      
-        CD value = DatatypesFactory.eINSTANCE.createCD();
-        target.getValues().add(value);
-        
+				
+			
+				CD value = DatatypesFactory.eINSTANCE.createCD();
+				target.getValues().add(value);
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceResolutionObservationOperations.validateDeviceResolutionObservationValue(
-          (DeviceResolutionObservation) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceResolutionObservationOperations.validateDeviceResolutionObservationValue(
+					(DeviceResolutionObservation) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceResolutionObservationValueTestCase.doValidationTest();
+		validateDeviceResolutionObservationValueTestCase.doValidationTest();
 }		
 
 
@@ -459,6 +474,7 @@ public void testValidateDeviceResolutionObservationValue() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<DeviceResolutionObservation> {
+		@Override
 		public DeviceResolutionObservation create() {		
 			return PhmrFactory.eINSTANCE.createDeviceResolutionObservation();
 		}
@@ -490,9 +506,9 @@ public void testValidateDeviceResolutionObservationValue() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -502,8 +518,8 @@ public void testValidateDeviceResolutionObservationValue() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

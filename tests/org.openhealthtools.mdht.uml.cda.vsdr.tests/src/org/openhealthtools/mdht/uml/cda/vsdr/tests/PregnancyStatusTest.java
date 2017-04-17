@@ -1,9 +1,5 @@
 
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,15 +7,21 @@ package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.PregnancyStatusOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -32,9 +34,9 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus#validatePregnancyStatusTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Status Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus#validatePregnancyStatusClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Status Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus#validatePregnancyStatusMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Status Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus#validatePregnancyStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus#validatePregnancyStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Status Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus#validatePregnancyStatusMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Status Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus#validatePregnancyStatusValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Status Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus#validatePregnancyStatusValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Status Value P</em>}</li>
  * </ul>
@@ -103,6 +105,9 @@ public void testValidatePregnancyStatusTemplateId() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -177,6 +182,9 @@ public void testValidatePregnancyStatusClassCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -190,6 +198,83 @@ public void testValidatePregnancyStatusClassCode() {
 		};
 
 		validatePregnancyStatusClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidatePregnancyStatusMoodCode() {
+			OperationsTestCase<PregnancyStatus> validatePregnancyStatusMoodCodeTestCase = new OperationsTestCase<PregnancyStatus>(
+			"validatePregnancyStatusMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_PREGNANCY_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(PregnancyStatus target) {
+
+			}
+
+			@Override
+			protected void updateToPass(PregnancyStatus target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PregnancyStatusOperations.validatePregnancyStatusMoodCode(
+					(PregnancyStatus) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validatePregnancyStatusMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -251,6 +336,9 @@ public void testValidatePregnancyStatusCodeP() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -328,6 +416,9 @@ public void testValidatePregnancyStatusCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -341,80 +432,6 @@ public void testValidatePregnancyStatusCode() {
 		};
 
 		validatePregnancyStatusCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidatePregnancyStatusMoodCode() {
-			OperationsTestCase<PregnancyStatus> validatePregnancyStatusMoodCodeTestCase = new OperationsTestCase<PregnancyStatus>(
-			"validatePregnancyStatusMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_PREGNANCY_STATUS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(PregnancyStatus target) {
-
-			}
-
-			@Override
-			protected void updateToPass(PregnancyStatus target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return PregnancyStatusOperations.validatePregnancyStatusMoodCode(
-					(PregnancyStatus) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validatePregnancyStatusMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -479,6 +496,9 @@ public void testValidatePregnancyStatusValue() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -553,6 +573,9 @@ public void testValidatePregnancyStatusValueP() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -594,6 +617,7 @@ public void testValidatePregnancyStatusValueP() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<PregnancyStatus> {
+		@Override
 		public PregnancyStatus create() {		
 			return VsdrFactory.eINSTANCE.createPregnancyStatus();
 		}

@@ -47,64 +47,76 @@ import org.openhealthtools.mdht.uml.cda.ihe.util.IHEValidator;
  * @generated
  */
 public class CoverageEntryOperations extends CoverageActivityOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected CoverageEntryOperations() {
 		super();
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCoverageEntryTemplateId(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Entry Template Id</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCoverageEntryTemplateId(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Entry Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCoverageEntryTemplateId(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCoverageEntryTemplateId(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '1.3.6.1.4.1.19376.1.5.3.1.4.17')";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCoverageEntryTemplateId(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Entry Template Id</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCoverageEntryTemplateId(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Entry Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCoverageEntryTemplateId(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateCoverageEntryTemplateId(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<Constraint> VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param coverageEntry The receiving '<em><b>Coverage Entry</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param coverageEntry The receiving '<em><b>Coverage Entry</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateCoverageEntryTemplateId(CoverageEntry coverageEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COVERAGE_ENTRY);
 			try {
-				VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			coverageEntry)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COVERAGE_ENTRY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coverageEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.COVERAGE_ENTRY__COVERAGE_ENTRY_TEMPLATE_ID,
-					IHEPlugin.INSTANCE.getString("CoverageEntryTemplateId"), new Object[] { coverageEntry }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+						IHEValidator.COVERAGE_ENTRY__COVERAGE_ENTRY_TEMPLATE_ID,
+						IHEPlugin.INSTANCE.getString("CoverageEntryCoverageEntryTemplateId"),
+						new Object[] { coverageEntry }));
 			}
 
 			return false;
@@ -113,54 +125,59 @@ public class CoverageEntryOperations extends CoverageActivityOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #validateCoverageEntryPayerEntry(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Entry Payer Entry</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateCoverageEntryPayerEntry(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Entry Payer Entry</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCoverageEntryPayerEntry(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
+	 * @see #validateCoverageEntryPayerEntry(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.act.oclIsUndefined() and entryRelationship.act.oclIsKindOf(ihe::PayerEntry) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
-	* The cached OCL invariant for the '{@link #validateCoverageEntryPayerEntry(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Entry Payer Entry</em>}' invariant operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateCoverageEntryPayerEntry(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coverage Entry Payer Entry</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #validateCoverageEntryPayerEntry(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	* @generated
-	* @ordered
-	*/
-	protected static Constraint VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateCoverageEntryPayerEntry(CoverageEntry, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<Constraint> VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* <!-- begin-model-doc -->
-	* @param coverageEntry The receiving '<em><b>Coverage Entry</b></em>' model object.
-	* @param diagnostics The chain of diagnostics to which problems are to be appended.
-	* @param context The cache of context-specific information.
-	* <!-- end-model-doc -->
-	* @generated
-	*/
+	 * <!-- begin-model-doc -->
+	 * @param coverageEntry The receiving '<em><b>Coverage Entry</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static boolean validateCoverageEntryPayerEntry(CoverageEntry coverageEntry, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(IHEPackage.Literals.COVERAGE_ENTRY);
 			try {
-				VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			coverageEntry)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_COVERAGE_ENTRY_PAYER_ENTRY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coverageEntry)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
-					IHEValidator.COVERAGE_ENTRY__COVERAGE_ENTRY_PAYER_ENTRY,
-					IHEPlugin.INSTANCE.getString("CoverageEntryPayerEntry"), new Object[] { coverageEntry }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, IHEValidator.DIAGNOSTIC_SOURCE,
+						IHEValidator.COVERAGE_ENTRY__COVERAGE_ENTRY_PAYER_ENTRY,
+						IHEPlugin.INSTANCE.getString("CoverageEntryCoverageEntryPayerEntry"),
+						new Object[] { coverageEntry }));
 			}
 
 			return false;
@@ -169,33 +186,35 @@ public class CoverageEntryOperations extends CoverageActivityOperations {
 	}
 
 	/**
-	* The cached OCL expression body for the '{@link #getPayerEntries(CoverageEntry) <em>Get Payer Entries</em>}' operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #getPayerEntries(CoverageEntry) <em>Get Payer Entries</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getPayerEntries(CoverageEntry)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getPayerEntries(CoverageEntry)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String GET_PAYER_ENTRIES__EOCL_EXP = "self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(ihe::PayerEntry)).oclAsType(ihe::PayerEntry)";
 
 	/**
-	* The cached OCL query for the '{@link #getPayerEntries(CoverageEntry) <em>Get Payer Entries</em>}' query operation.
-	* <!-- begin-user-doc -->
+	 * The cached OCL query for the '{@link #getPayerEntries(CoverageEntry) <em>Get Payer Entries</em>}' query operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @see #getPayerEntries(CoverageEntry)
-	* @generated
-	* @ordered
-	*/
+	 * @see #getPayerEntries(CoverageEntry)
+	 * @generated
+	 * @ordered
+	 */
 	protected static OCLExpression<EClassifier> GET_PAYER_ENTRIES__EOCL_QRY;
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public static EList<PayerEntry> getPayerEntries(CoverageEntry coverageEntry) {
+
 		if (GET_PAYER_ENTRIES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				IHEPackage.Literals.COVERAGE_ENTRY, IHEPackage.Literals.COVERAGE_ENTRY.getEAllOperations().get(63));
 			try {
@@ -204,7 +223,8 @@ public class CoverageEntryOperations extends CoverageActivityOperations {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PAYER_ENTRIES__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PAYER_ENTRIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PayerEntry> result = (Collection<PayerEntry>) query.evaluate(coverageEntry);
 		return new BasicEList.UnmodifiableEList<PayerEntry>(result.size(), result.toArray());

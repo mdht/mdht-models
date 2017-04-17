@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.impl.SupplyActivityImpl;
 import org.openhealthtools.mdht.uml.cda.ihe.IHEPackage;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicationFullfillmentInstructions;
@@ -27,167 +27,165 @@ import org.openhealthtools.mdht.uml.cda.ihe.operations.SupplyEntryOperations;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Supply Entry</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class SupplyEntryImpl extends SupplyActivityImpl implements SupplyEntry {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected SupplyEntryImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return IHEPackage.Literals.SUPPLY_ENTRY;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryHasIntentAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryHasIntentAuthor(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryHasAuthorTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryHasAuthorTime(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryHasAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryHasAssignedAuthor(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryHasAssignedAuthorID(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryHasAssignedAuthorID(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryHasAssignedAuthorPersonOrOrg(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryHasAssignedAuthorPersonOrOrg(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryHasPerformerTimeEvent(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryHasPerformerTimeEvent(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryHasPerformerTimeIntent(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryHasPerformerTimeIntent(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryHasPerformerAssignedEntity(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryHasPerformerAssignedEntity(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryHasPerformerAssignedEntityID(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryHasPerformerAssignedEntityID(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryHasPerformerEntityPersonOrOrg(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryHasPerformerEntityPersonOrOrg(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryQuantityHasValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryQuantityHasValue(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateSupplyEntryMedicationFullfillmentInstructions(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyEntryMedicationFullfillmentInstructions(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationFullfillmentInstructions getMedicationFullfillmentInstructions() {
 		return SupplyEntryOperations.getMedicationFullfillmentInstructions(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateSupplyActivityQuantity(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SupplyEntryOperations.validateSupplyActivityQuantity(this, diagnostics, context);

@@ -6,14 +6,28 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.EObjectValidator;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
-
+import org.eclipse.mdht.uml.cda.util.CDAValidator;
 import org.openhealthtools.mdht.uml.cda.vsdr.*;
+import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyPerformance;
+import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults;
+import org.openhealthtools.mdht.uml.cda.vsdr.CertifyingDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer;
+import org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral;
+import org.openhealthtools.mdht.uml.cda.vsdr.DateandTimeofDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation;
+import org.openhealthtools.mdht.uml.cda.vsdr.DeathLocationType;
+import org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody;
+import org.openhealthtools.mdht.uml.cda.vsdr.Injury;
+import org.openhealthtools.mdht.uml.cda.vsdr.LocationofDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.MannerofDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.PregnancyStatus;
+import org.openhealthtools.mdht.uml.cda.vsdr.PronouncingDeath;
+import org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords;
+import org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse;
+import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
+import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPlugin;
 
 /**
  * <!-- begin-user-doc -->
