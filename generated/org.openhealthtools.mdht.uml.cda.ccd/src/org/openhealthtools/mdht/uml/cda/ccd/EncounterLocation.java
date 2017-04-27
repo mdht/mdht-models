@@ -15,8 +15,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Participant2;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Participant2;
 
 /**
  * <!-- begin-user-doc -->
@@ -51,7 +51,8 @@ public interface EncounterLocation extends Participant2 {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participantRole.classCode =  vocab::RoleClassRoot::SDLOC'"
 	 * @generated
 	 */
-	boolean validateEncounterLocationHasParticipantRoleLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateEncounterLocationHasParticipantRoleLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

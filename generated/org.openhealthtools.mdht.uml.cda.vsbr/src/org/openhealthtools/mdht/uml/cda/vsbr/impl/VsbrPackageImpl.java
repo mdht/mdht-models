@@ -10,12 +10,6 @@ import org.eclipse.emf.ecore.EValidator;
 
 import org.eclipse.emf.ecore.impl.EPackageImpl;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
-
-import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.AbnormalConditionoftheNewborn;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentObservation;
 import org.openhealthtools.mdht.uml.cda.vsbr.AssessmentsSection;
@@ -416,7 +410,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
-	 * 
+	 *
 	 * <p>This method is used to initialize {@link VsbrPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
@@ -432,14 +426,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		}
 
 		// Obtain or create and register package
-		VsbrPackageImpl theVsbrPackage = (VsbrPackageImpl) (EPackage.Registry.INSTANCE.get(eNS_URI) instanceof VsbrPackageImpl
-				? EPackage.Registry.INSTANCE.get(eNS_URI)
-				: new VsbrPackageImpl());
+		VsbrPackageImpl theVsbrPackage = (VsbrPackageImpl) (EPackage.Registry.INSTANCE.get(
+			eNS_URI) instanceof VsbrPackageImpl
+					? EPackage.Registry.INSTANCE.get(eNS_URI)
+					: new VsbrPackageImpl());
 
 		isInited = true;
 
 		// Initialize simple dependencies
-		CDAPackage.eINSTANCE.eClass();
+		org.eclipse.mdht.uml.cda.CDAPackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
 		theVsbrPackage.createPackageContents();
@@ -458,9 +453,9 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		theVsbrPackage.freeze();
 
 		// publish my initializers in the registry
-		Initializer.Registry.INSTANCE.registerFactory(
-			"org.openhealthtools.mdht.uml.cda.vsbr", AnnotationBasedInitializer.FACTORY);
-		Initializer.Registry.INSTANCE.initializeEPackage(theVsbrPackage);
+		org.eclipse.mdht.emf.runtime.util.Initializer.Registry.INSTANCE.registerFactory(
+			"org.openhealthtools.mdht.uml.cda.vsbr", org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer.FACTORY);
+		org.eclipse.mdht.emf.runtime.util.Initializer.Registry.INSTANCE.initializeEPackage(theVsbrPackage);
 
 		// Update the registry and return the package
 		EPackage.Registry.INSTANCE.put(VsbrPackage.eNS_URI, theVsbrPackage);
@@ -902,7 +897,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		isCreated = true;
 
 		// Create classes and their features
-		reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass = createEClass(REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
+		reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass = createEClass(
+			REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 
 		prenatalTestingandSurveillanceSectionEClass = createEClass(PRENATAL_TESTINGAND_SURVEILLANCE_SECTION);
 
@@ -986,7 +982,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 		fetalDeliveryTimeEClass = createEClass(FETAL_DELIVERY_TIME);
 
-		reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass = createEClass(REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
+		reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass = createEClass(
+			REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS);
 
 		historyofInfectionFetalDeathSectionEClass = createEClass(HISTORYOF_INFECTION_FETAL_DEATH_SECTION);
 
@@ -1019,7 +1016,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		setNsURI(eNS_URI);
 
 		// Obtain other dependent packages
-		CDAPackage theCDAPackage = (CDAPackage) EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
+		org.eclipse.mdht.uml.cda.CDAPackage theCDAPackage = (org.eclipse.mdht.uml.cda.CDAPackage) EPackage.Registry.INSTANCE.getEPackage(
+			org.eclipse.mdht.uml.cda.CDAPackage.eNS_URI);
 
 		// Create type parameters
 
@@ -1106,7 +1104,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 		op = addEOperation(
 			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(),
-			"validateReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+			"validateReportingBirthInformationfromaclinicalsettingtovitalrecordsRealmCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1243,7 +1242,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 		op = addEOperation(
 			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(),
-			"validateReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodian", 0, 1, IS_UNIQUE, IS_ORDERED);
+			"validateReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodian", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1447,7 +1447,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			prenatalCareEClass, ecorePackage.getEBoolean(), "validatePrenatalCareMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+			prenatalCareEClass, ecorePackage.getEBoolean(), "validatePrenatalCareMoodCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1558,8 +1559,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			priorPregnancyHistorySectionEClass, ecorePackage.getEBoolean(),
-			"validatePriorPregnancyHistorySectionCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+			priorPregnancyHistorySectionEClass, ecorePackage.getEBoolean(), "validatePriorPregnancyHistorySectionCodeP",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1654,8 +1655,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 			IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
-			priorPregnancyHistorySectionEClass, this.getNumberofBirthsNowLiving(), "getNumberofBirthsStillLiving", 1,
-			1, IS_UNIQUE, !IS_ORDERED);
+			priorPregnancyHistorySectionEClass, this.getNumberofBirthsNowLiving(), "getNumberofBirthsStillLiving", 1, 1,
+			IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
 			priorPregnancyHistorySectionEClass, this.getNumberofLiveBirthsNowDead(), "getNumberofLiveBirthsnowDead", 1,
@@ -1744,8 +1745,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			lastMenstrualPeriodDateEClass, ecorePackage.getEBoolean(), "validateLastMenstrualPeriodDateClassCode", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			lastMenstrualPeriodDateEClass, ecorePackage.getEBoolean(), "validateLastMenstrualPeriodDateClassCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1814,8 +1815,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			numberofBirthsNowLivingEClass, ecorePackage.getEBoolean(), "validateNumberofBirthsNowLivingClassCode", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			numberofBirthsNowLivingEClass, ecorePackage.getEBoolean(), "validateNumberofBirthsNowLivingClassCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1869,8 +1870,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
-			numberofLiveBirthsNowDeadEClass, NumberofLiveBirthsNowDead.class, "NumberofLiveBirthsNowDead",
-			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			numberofLiveBirthsNowDeadEClass, NumberofLiveBirthsNowDead.class, "NumberofLiveBirthsNowDead", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadTemplateId",
@@ -1895,8 +1896,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadMoodCode",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadMoodCode", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1906,8 +1907,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadCodeP", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadCodeP", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1928,8 +1929,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadValue", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			numberofLiveBirthsNowDeadEClass, ecorePackage.getEBoolean(), "validateNumberofLiveBirthsNowDeadValue", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1998,8 +1999,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			otherPregnancyOutcomeEClass, ecorePackage.getEBoolean(), "validateOtherPregnancyOutcomeEffectiveTime", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			otherPregnancyOutcomeEClass, ecorePackage.getEBoolean(), "validateOtherPregnancyOutcomeEffectiveTime", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2237,8 +2238,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			newbornDeliverySectionEClass, ecorePackage.getEBoolean(), "validateNewbornDeliverySectionInfantTransfer",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			newbornDeliverySectionEClass, ecorePackage.getEBoolean(), "validateNewbornDeliverySectionInfantTransfer", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2316,8 +2317,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 		op = addEOperation(
 			newbornDeliverySectionEClass, ecorePackage.getEBoolean(),
-			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			"validateNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2404,7 +2405,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		g1.getETypeArguments().add(g2);
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
-		addEOperation(newbornDeliverySectionEClass, this.getBirthOrder(), "getBirthOrder", 1, 1, IS_UNIQUE, !IS_ORDERED);
+		addEOperation(
+			newbornDeliverySectionEClass, this.getBirthOrder(), "getBirthOrder", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
 			newbornDeliverySectionEClass, this.getNumberofInfantsBornAlive(), "getNumberOfInfantsBornAlive", 1, 1,
@@ -2419,14 +2421,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 			IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
-			newbornDeliverySectionEClass, this.getAbnormalConditionoftheNewborn(),
-			"getAbnormalConditionsOfTheNewborns", 1, -1, IS_UNIQUE, !IS_ORDERED);
+			newbornDeliverySectionEClass, this.getAbnormalConditionoftheNewborn(), "getAbnormalConditionsOfTheNewborns",
+			1, -1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
 			newbornDeliverySectionEClass, this.getInfantLiving(), "getInfantLiving", 1, 1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
-			newbornDeliverySectionEClass, this.getInfantBreastfed(), "getInfantBreastfed", 1, 1, IS_UNIQUE, !IS_ORDERED);
+			newbornDeliverySectionEClass, this.getInfantBreastfed(), "getInfantBreastfed", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
 		addEOperation(
 			newbornDeliverySectionEClass, this.getInfantTransfer(), "getInfantTransfer", 1, 1, IS_UNIQUE, !IS_ORDERED);
@@ -2505,8 +2508,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			numberofInfantsBornAliveEClass, ecorePackage.getEBoolean(), "validateNumberofInfantsBornAliveTemplateId",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			numberofInfantsBornAliveEClass, ecorePackage.getEBoolean(), "validateNumberofInfantsBornAliveTemplateId", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2575,8 +2578,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			congenitalAnomalyEClass, ecorePackage.getEBoolean(), "validateCongenitalAnomalyTemplateId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			congenitalAnomalyEClass, ecorePackage.getEBoolean(), "validateCongenitalAnomalyTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2663,8 +2666,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			congenitalAnomalyEClass, ecorePackage.getEBoolean(),
-			"validateCongenitalAnomalyDownConfirmationAssociation", 0, 1, IS_UNIQUE, IS_ORDERED);
+			congenitalAnomalyEClass, ecorePackage.getEBoolean(), "validateCongenitalAnomalyDownConfirmationAssociation",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2685,8 +2688,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
-			newbornsVitalSignsSectionEClass, NewbornsVitalSignsSection.class, "NewbornsVitalSignsSection",
-			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			newbornsVitalSignsSectionEClass, NewbornsVitalSignsSection.class, "NewbornsVitalSignsSection", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			newbornsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateNewbornsVitalSignsSectionTemplateId",
@@ -2711,8 +2714,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			newbornsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateNewbornsVitalSignsSectionMoodCode",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			newbornsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateNewbornsVitalSignsSectionMoodCode", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2733,8 +2736,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			newbornsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateNewbornsVitalSignsSectionCodeP", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			newbornsVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateNewbornsVitalSignsSectionCodeP", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2958,7 +2961,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			infantLivingEClass, ecorePackage.getEBoolean(), "validateInfantLivingMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+			infantLivingEClass, ecorePackage.getEBoolean(), "validateInfantLivingMoodCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3116,7 +3120,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			infantTransferEClass, ecorePackage.getEBoolean(), "validateInfantTransferCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+			infantTransferEClass, ecorePackage.getEBoolean(), "validateInfantTransferCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3237,8 +3242,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			assessmentsSectionEClass, ecorePackage.getEBoolean(), "validateAssessmentsSectionMoodCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			assessmentsSectionEClass, ecorePackage.getEBoolean(), "validateAssessmentsSectionMoodCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3271,6 +3276,17 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 		op = addEOperation(
 			assessmentsSectionEClass, ecorePackage.getEBoolean(), "validateAssessmentsSectionText", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
+		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+		g1 = createEGenericType(ecorePackage.getEMap());
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		g2 = createEGenericType(ecorePackage.getEJavaObject());
+		g1.getETypeArguments().add(g2);
+		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+		op = addEOperation(
+			assessmentsSectionEClass, ecorePackage.getEBoolean(), "validateAssessmentsSectionTitle", 0, 1, IS_UNIQUE,
 			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
@@ -3381,8 +3397,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			laborandDeliverySectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliverySectionClassCode", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			laborandDeliverySectionEClass, ecorePackage.getEBoolean(), "validateLaborandDeliverySectionClassCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3499,8 +3515,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessClassCode", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			laborandDeliveryProcessEClass, ecorePackage.getEBoolean(), "validateLaborandDeliveryProcessClassCode", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -3635,7 +3651,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 			"getCharacteristicsOfLaborAndDeliveries", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
 		addEOperation(
-			laborandDeliveryProcessEClass, this.getPlannedHomeBirth(), "getHomeBirthPlan", 1, 1, IS_UNIQUE, !IS_ORDERED);
+			laborandDeliveryProcessEClass, this.getPlannedHomeBirth(), "getHomeBirthPlan", 1, 1, IS_UNIQUE,
+			!IS_ORDERED);
 
 		addEOperation(
 			laborandDeliveryProcessEClass, this.getMaternalTransfer(), "getMaternalTransfer", 1, 1, IS_UNIQUE,
@@ -3897,8 +3914,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			maternalMorbidityEClass, ecorePackage.getEBoolean(), "validateMaternalMorbidityTemplateId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			maternalMorbidityEClass, ecorePackage.getEBoolean(), "validateMaternalMorbidityTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4044,8 +4061,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			pregnancyRiskFactorEClass, ecorePackage.getEBoolean(), "validatePregnancyRiskFactorCodeVS", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			pregnancyRiskFactorEClass, ecorePackage.getEBoolean(), "validatePregnancyRiskFactorCodeVS", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4066,8 +4083,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			pregnancyRiskFactorEClass, ecorePackage.getEBoolean(), "validatePregnancyRiskFactorValueP", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			pregnancyRiskFactorEClass, ecorePackage.getEBoolean(), "validatePregnancyRiskFactorValueP", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4077,8 +4094,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			pregnancyRiskFactorEClass, ecorePackage.getEBoolean(), "validatePregnancyRiskFactorEntryRelationship", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			pregnancyRiskFactorEClass, ecorePackage.getEBoolean(), "validatePregnancyRiskFactorEntryRelationship", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4214,8 +4231,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			obstetricProcedureEClass, ecorePackage.getEBoolean(), "validateObstetricProcedureMoodCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			obstetricProcedureEClass, ecorePackage.getEBoolean(), "validateObstetricProcedureMoodCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4376,7 +4393,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			onsetofLaborEClass, ecorePackage.getEBoolean(), "validateOnsetofLaborMoodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+			onsetofLaborEClass, ecorePackage.getEBoolean(), "validateOnsetofLaborMoodCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4440,8 +4458,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			mothersVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateMothersVitalSignsSectionTemplateId",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			mothersVitalSignsSectionEClass, ecorePackage.getEBoolean(), "validateMothersVitalSignsSectionTemplateId", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4558,8 +4576,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			mothersVitalSignsObservationEClass, ecorePackage.getEBoolean(),
-			"validateMothersVitalSignsObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+			mothersVitalSignsObservationEClass, ecorePackage.getEBoolean(), "validateMothersVitalSignsObservationCodeP",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4580,8 +4598,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			mothersVitalSignsObservationEClass, ecorePackage.getEBoolean(),
-			"validateMothersVitalSignsObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
+			mothersVitalSignsObservationEClass, ecorePackage.getEBoolean(), "validateMothersVitalSignsObservationValue",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4643,8 +4661,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 			"getInfectionPresentLiveBirths", 1, -1, IS_UNIQUE, !IS_ORDERED);
 
 		initEClass(
-			infectionPresentLiveBirthEClass, InfectionPresentLiveBirth.class, "InfectionPresentLiveBirth",
-			!IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			infectionPresentLiveBirthEClass, InfectionPresentLiveBirth.class, "InfectionPresentLiveBirth", !IS_ABSTRACT,
+			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			infectionPresentLiveBirthEClass, ecorePackage.getEBoolean(), "validateInfectionPresentLiveBirthTemplateId",
@@ -4669,8 +4687,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			infectionPresentLiveBirthEClass, ecorePackage.getEBoolean(), "validateInfectionPresentLiveBirthMoodCode",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			infectionPresentLiveBirthEClass, ecorePackage.getEBoolean(), "validateInfectionPresentLiveBirthMoodCode", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4680,8 +4698,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			infectionPresentLiveBirthEClass, ecorePackage.getEBoolean(), "validateInfectionPresentLiveBirthCodeP", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			infectionPresentLiveBirthEClass, ecorePackage.getEBoolean(), "validateInfectionPresentLiveBirthCodeP", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4713,8 +4731,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			infectionPresentLiveBirthEClass, ecorePackage.getEBoolean(), "validateInfectionPresentLiveBirthValue", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			infectionPresentLiveBirthEClass, ecorePackage.getEBoolean(), "validateInfectionPresentLiveBirthValue", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4735,8 +4753,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
-			fetalDeliverySectionEClass, FetalDeliverySection.class, "FetalDeliverySection", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			fetalDeliverySectionEClass, FetalDeliverySection.class, "FetalDeliverySection", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionTemplateId", 0, 1,
@@ -4772,8 +4790,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4783,8 +4801,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionText", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionText", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4816,8 +4834,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionAutopsyPerformance",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			fetalDeliverySectionEClass, ecorePackage.getEBoolean(), "validateFetalDeliverySectionAutopsyPerformance", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -4917,8 +4935,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 		op = addEOperation(
 			fetalDeliverySectionEClass, ecorePackage.getEBoolean(),
-			"validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			"validateFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5034,8 +5052,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			autopsyPerformanceEClass, ecorePackage.getEBoolean(), "validateAutopsyPerformanceMoodCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			autopsyPerformanceEClass, ecorePackage.getEBoolean(), "validateAutopsyPerformanceMoodCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5111,8 +5129,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		initEClass(
-			fetalDeathOccurranceEClass, FetalDeathOccurrance.class, "FetalDeathOccurrance", !IS_ABSTRACT,
-			!IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+			fetalDeathOccurranceEClass, FetalDeathOccurrance.class, "FetalDeathOccurrance", !IS_ABSTRACT, !IS_INTERFACE,
+			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
 			fetalDeathOccurranceEClass, ecorePackage.getEBoolean(), "validateFetalDeathOccurranceTemplateId", 0, 1,
@@ -5159,8 +5177,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			fetalDeathOccurranceEClass, ecorePackage.getEBoolean(), "validateFetalDeathOccurranceCode", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			fetalDeathOccurranceEClass, ecorePackage.getEBoolean(), "validateFetalDeathOccurranceCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5196,8 +5214,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 			IS_GENERATED_INSTANCE_CLASS);
 
 		op = addEOperation(
-			fetalDeliveryTimeEClass, ecorePackage.getEBoolean(), "validateFetalDeliveryTimeTemplateId", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			fetalDeliveryTimeEClass, ecorePackage.getEBoolean(), "validateFetalDeliveryTimeTemplateId", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5251,8 +5269,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			fetalDeliveryTimeEClass, ecorePackage.getEBoolean(), "validateFetalDeliveryTimeParticipatingLocation", 0,
-			1, IS_UNIQUE, IS_ORDERED);
+			fetalDeliveryTimeEClass, ecorePackage.getEBoolean(), "validateFetalDeliveryTimeParticipatingLocation", 0, 1,
+			IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5364,7 +5382,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 		op = addEOperation(
 			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(),
-			"validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+			"validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCode", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5495,8 +5514,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 		op = addEOperation(
 			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(),
-			"validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			"validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPrenatalTestingAndSurveillance", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5507,8 +5526,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 
 		op = addEOperation(
 			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(),
-			"validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPregnancyHistory", 0, 1,
-			IS_UNIQUE, IS_ORDERED);
+			"validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsPregnancyHistory", 0, 1, IS_UNIQUE,
+			IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5518,8 +5537,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass,
-			ecorePackage.getEBoolean(),
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, ecorePackage.getEBoolean(),
 			"validateReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsHistoryOfInfectionFetalDeathSection",
 			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -5609,8 +5627,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			infectionPresentFetalDeathEClass, ecorePackage.getEBoolean(),
-			"validateInfectionPresentFetalDeathClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+			infectionPresentFetalDeathEClass, ecorePackage.getEBoolean(), "validateInfectionPresentFetalDeathClassCode",
+			0, 1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5653,8 +5671,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			infectionPresentFetalDeathEClass, ecorePackage.getEBoolean(), "validateInfectionPresentFetalDeathCodeVS",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			infectionPresentFetalDeathEClass, ecorePackage.getEBoolean(), "validateInfectionPresentFetalDeathCodeVS", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5675,8 +5693,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
 		op = addEOperation(
-			infectionPresentFetalDeathEClass, ecorePackage.getEBoolean(), "validateInfectionPresentFetalDeathValueP",
-			0, 1, IS_UNIQUE, IS_ORDERED);
+			infectionPresentFetalDeathEClass, ecorePackage.getEBoolean(), "validateInfectionPresentFetalDeathValueP", 0,
+			1, IS_UNIQUE, IS_ORDERED);
 		addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
 		g1 = createEGenericType(ecorePackage.getEMap());
 		g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -5691,6 +5709,8 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 		// Create annotations
 		// http://www.openhealthtools.org/mdht/uml
 		createUmlAnnotations();
+		// http://www.eclipse.org/uml2/2.0.0/UML
+		createUMLAnnotations();
 		// http://www.openhealthtools.org/mdht/uml/cda/annotation
 		createAnnotationAnnotations();
 		// http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthor
@@ -5821,6 +5841,1296 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	}
 
 	/**
+	 * Initializes the annotations for <b>http://www.eclipse.org/uml2/2.0.0/UML</b>.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void createUMLAnnotations() {
+		String source = "http://www.eclipse.org/uml2/2.0.0/UML";
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] { "originalName", "Reporting Birth Information from a clinical setting to vital records" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(0), source,
+			new String[] {
+					"originalName", "Reporting Birth Information from a clinical setting to vital recordsTemplateId" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(1), source,
+			new String[] {
+					"originalName", "Reporting Birth Information from a clinical setting to vital recordsMoodCode" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(2), source,
+			new String[] {
+					"originalName", "Reporting Birth Information from a clinical setting to vital recordsRealmCode" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(3), source,
+			new String[] {
+					"originalName", "Reporting Birth Information from a clinical setting to vital recordsRealmCodeP" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(4), source,
+			new String[] {
+					"originalName", "Reporting Birth Information from a clinical setting to vital recordsTypeId" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Reporting Birth Information from a clinical setting to vital recordsId" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(6), source,
+			new String[] {
+					"originalName", "Reporting Birth Information from a clinical setting to vital recordsCodeP" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(7), source,
+			new String[] {
+					"originalName", "Reporting Birth Information from a clinical setting to vital recordsCode" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(8), source,
+			new String[] {
+					"originalName", "Reporting Birth Information from a clinical setting to vital recordsTitle" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(9), source,
+			new String[] {
+					"originalName",
+					"Reporting Birth Information from a clinical setting to vital recordsEffectiveTime" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(10), source,
+			new String[] {
+					"originalName",
+					"Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(11), source,
+			new String[] {
+					"originalName",
+					"Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(12), source,
+			new String[] {
+					"originalName",
+					"Reporting Birth Information from a clinical setting to vital recordsLanguageCode" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(13), source,
+			new String[] {
+					"originalName", "Reporting Birth Information from a clinical setting to vital recordsAuthor" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(14), source,
+			new String[] {
+					"originalName", "Reporting Birth Information from a clinical setting to vital recordsCustodian" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(15), source,
+			new String[] {
+					"originalName",
+					"Reporting Birth Information from a clinical setting to vital recordsRecordTarget" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(16), source,
+			new String[] {
+					"originalName",
+					"Reporting Birth Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(17), source,
+			new String[] {
+					"originalName",
+					"Reporting Birth Information from a clinical setting to vital recordsPregnancyHistory" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(18), source,
+			new String[] {
+					"originalName",
+					"Reporting Birth Information from a clinical setting to vital recordsNewbornDeliverySection" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(19), source,
+			new String[] {
+					"originalName",
+					"Reporting Birth Information from a clinical setting to vital recordsLaborAndDeliverySection" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(20), source,
+			new String[] {
+					"originalName",
+					"Reporting Birth Information from a clinical setting to vital recordsHistoryOfInfectionLiveBirthSection" });
+		addAnnotation(
+			prenatalTestingandSurveillanceSectionEClass, source,
+			new String[] { "originalName", "Prenatal Testing and Surveillance Section" });
+		addAnnotation(
+			prenatalTestingandSurveillanceSectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Prenatal Testing and Surveillance SectionTemplateId" });
+		addAnnotation(
+			prenatalTestingandSurveillanceSectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Prenatal Testing and Surveillance SectionClassCode" });
+		addAnnotation(
+			prenatalTestingandSurveillanceSectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Prenatal Testing and Surveillance SectionMoodCode" });
+		addAnnotation(
+			prenatalTestingandSurveillanceSectionEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Prenatal Testing and Surveillance SectionCode" });
+		addAnnotation(
+			prenatalTestingandSurveillanceSectionEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Prenatal Testing and Surveillance SectionText" });
+		addAnnotation(
+			prenatalTestingandSurveillanceSectionEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Prenatal Testing and Surveillance SectionPrenatalCare" });
+		addAnnotation(prenatalCareEClass, source, new String[] { "originalName", "Prenatal Care" });
+		addAnnotation(
+			prenatalCareEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Prenatal CareTemplateId" });
+		addAnnotation(
+			prenatalCareEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Prenatal CareClassCode" });
+		addAnnotation(
+			prenatalCareEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Prenatal CareMoodCode" });
+		addAnnotation(
+			prenatalCareEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Prenatal CareNegationInd" });
+		addAnnotation(
+			prenatalCareEClass.getEOperations().get(4), source, new String[] { "originalName", "Prenatal CareCodeP" });
+		addAnnotation(
+			prenatalCareEClass.getEOperations().get(5), source, new String[] { "originalName", "Prenatal CareCode" });
+		addAnnotation(
+			prenatalCareEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Prenatal CareEffectiveTime" });
+		addAnnotation(
+			prenatalCareEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Prenatal CareEntryRelationship" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass, source,
+			new String[] { "originalName", "Prior Pregnancy History Section" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionTemplateId" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionClassCode" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionMoodCode" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionCode" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionCodeP" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionText" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionDate of Last Live Birth" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionLast Menstrual Period Date" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(8), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionNumber of Births Still Living" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(9), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionNumber of Live Births now Dead" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(10), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionOther Pregnancy Outcomes" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(11), source,
+			new String[] { "originalName", "Prior Pregnancy History SectionEstimate of Gestation" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(12), source,
+			new String[] { "originalName", "getDate of Last Live Birth" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(13), source,
+			new String[] { "originalName", "getLast Menstrual Period Date" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(14), source,
+			new String[] { "originalName", "getNumber of Births Still Living" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(15), source,
+			new String[] { "originalName", "getNumber of Live Births now Dead" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(16), source,
+			new String[] { "originalName", "getOther Pregnancy Outcomes" });
+		addAnnotation(
+			priorPregnancyHistorySectionEClass.getEOperations().get(17), source,
+			new String[] { "originalName", "getEstimate of Gestation" });
+		addAnnotation(dateofLastLiveBirthEClass, source, new String[] { "originalName", "Date of Last Live Birth" });
+		addAnnotation(
+			dateofLastLiveBirthEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Date of Last Live BirthTemplateId" });
+		addAnnotation(
+			dateofLastLiveBirthEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Date of Last Live BirthMoodCode" });
+		addAnnotation(
+			dateofLastLiveBirthEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Date of Last Live BirthCodeP" });
+		addAnnotation(
+			dateofLastLiveBirthEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Date of Last Live BirthCode" });
+		addAnnotation(
+			dateofLastLiveBirthEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Date of Last Live BirthValue" });
+		addAnnotation(
+			lastMenstrualPeriodDateEClass, source, new String[] { "originalName", "Last Menstrual Period Date" });
+		addAnnotation(
+			lastMenstrualPeriodDateEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Last Menstrual Period DateTemplateId" });
+		addAnnotation(
+			lastMenstrualPeriodDateEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Last Menstrual Period DateClassCode" });
+		addAnnotation(
+			lastMenstrualPeriodDateEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Last Menstrual Period DateMoodCode" });
+		addAnnotation(
+			lastMenstrualPeriodDateEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Last Menstrual Period DateCodeP" });
+		addAnnotation(
+			lastMenstrualPeriodDateEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Last Menstrual Period DateCode" });
+		addAnnotation(
+			lastMenstrualPeriodDateEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Last Menstrual Period DateValue" });
+		addAnnotation(
+			numberofBirthsNowLivingEClass, source, new String[] { "originalName", "Number of Births Now Living" });
+		addAnnotation(
+			numberofBirthsNowLivingEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Number of Births Now LivingTemplateId" });
+		addAnnotation(
+			numberofBirthsNowLivingEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Number of Births Now LivingClassCode" });
+		addAnnotation(
+			numberofBirthsNowLivingEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Number of Births Now LivingMoodCode" });
+		addAnnotation(
+			numberofBirthsNowLivingEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Number of Births Now LivingCodeP" });
+		addAnnotation(
+			numberofBirthsNowLivingEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Number of Births Now LivingCode" });
+		addAnnotation(
+			numberofBirthsNowLivingEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Number of Births Now LivingValue" });
+		addAnnotation(
+			numberofLiveBirthsNowDeadEClass, source, new String[] { "originalName", "Number of Live Births Now Dead" });
+		addAnnotation(
+			numberofLiveBirthsNowDeadEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Number of Live Births Now DeadTemplateId" });
+		addAnnotation(
+			numberofLiveBirthsNowDeadEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Number of Live Births Now DeadClassCode" });
+		addAnnotation(
+			numberofLiveBirthsNowDeadEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Number of Live Births Now DeadMoodCode" });
+		addAnnotation(
+			numberofLiveBirthsNowDeadEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Number of Live Births Now DeadCodeP" });
+		addAnnotation(
+			numberofLiveBirthsNowDeadEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Number of Live Births Now DeadCode" });
+		addAnnotation(
+			numberofLiveBirthsNowDeadEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Number of Live Births Now DeadValue" });
+		addAnnotation(otherPregnancyOutcomeEClass, source, new String[] { "originalName", "Other Pregnancy Outcome" });
+		addAnnotation(
+			otherPregnancyOutcomeEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Other Pregnancy OutcomeTemplateId" });
+		addAnnotation(
+			otherPregnancyOutcomeEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Other Pregnancy OutcomeClassCode" });
+		addAnnotation(
+			otherPregnancyOutcomeEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Other Pregnancy OutcomeMoodCode" });
+		addAnnotation(
+			otherPregnancyOutcomeEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Other Pregnancy OutcomeCodeP" });
+		addAnnotation(
+			otherPregnancyOutcomeEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Other Pregnancy OutcomeCode" });
+		addAnnotation(
+			otherPregnancyOutcomeEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Other Pregnancy OutcomeEffectiveTime" });
+		addAnnotation(
+			otherPregnancyOutcomeEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Other Pregnancy OutcomeValue" });
+		addAnnotation(estimateofGestationEClass, source, new String[] { "originalName", "Estimate of Gestation" });
+		addAnnotation(
+			estimateofGestationEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Estimate of GestationTemplateId" });
+		addAnnotation(
+			estimateofGestationEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Estimate of GestationClassCode" });
+		addAnnotation(
+			estimateofGestationEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Estimate of GestationMoodCode" });
+		addAnnotation(
+			estimateofGestationEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Estimate of GestationCodeP" });
+		addAnnotation(
+			estimateofGestationEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Estimate of GestationCode" });
+		addAnnotation(
+			estimateofGestationEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Estimate of GestationValue" });
+		addAnnotation(
+			newbornDeliverySectionEClass, source, new String[] { "originalName", "Newborn Delivery Section" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Newborn Delivery SectionTemplateId" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Newborn Delivery SectionClassCode" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Newborn Delivery SectionMoodCode" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Newborn Delivery SectionCode" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Newborn Delivery SectionText" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Newborn Delivery SectionSubject" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Newborn Delivery SectionBirthOrder" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Newborn Delivery SectionNumberOfInfantsBornAlive" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(8), source,
+			new String[] { "originalName", "Newborn Delivery SectionCongenitalAnomalies" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(9), source,
+			new String[] { "originalName", "Newborn Delivery SectionNewbornsVitalSignsSection" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(10), source,
+			new String[] { "originalName", "Newborn Delivery SectionAbnormalConditionsOfTheNewborn" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(11), source,
+			new String[] { "originalName", "Newborn Delivery SectionInfantLiving" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(12), source,
+			new String[] { "originalName", "Newborn Delivery SectionInfantBreastfed" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(13), source,
+			new String[] { "originalName", "Newborn Delivery SectionInfantTransfer" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(14), source,
+			new String[] { "originalName", "Newborn Delivery SectionPlurality" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(15), source,
+			new String[] { "originalName", "Newborn Delivery SectionAssessmentsSection" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(16), source,
+			new String[] { "originalName", "Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornClassCode" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(17), source, new String[] {
+					"originalName", "Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(18), source,
+			new String[] { "originalName", "Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornSDTCId" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(19), source,
+			new String[] { "originalName", "Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornName" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(20), source,
+			new String[] {
+					"originalName",
+					"Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(21), source,
+			new String[] {
+					"originalName",
+					"Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(22), source,
+			new String[] { "originalName", "Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornBirthTime" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(23), source,
+			new String[] { "originalName", "Newborn Delivery SectionNewbornSubjectRoleOfNewbornClassCode" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(24), source,
+			new String[] { "originalName", "Newborn Delivery SectionNewbornSubjectRoleOfNewbornCode" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(25), source,
+			new String[] { "originalName", "Newborn Delivery SectionNewbornSubjectRoleOfNewbornSubject" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(26), source,
+			new String[] { "originalName", "Newborn Delivery SectionNewbornSubjectTypeCode" });
+		addAnnotation(
+			newbornDeliverySectionEClass.getEOperations().get(27), source,
+			new String[] { "originalName", "Newborn Delivery SectionNewbornSubjectRelatedSubject" });
+		addAnnotation(birthOrderEClass, source, new String[] { "originalName", "Birth Order" });
+		addAnnotation(
+			birthOrderEClass.getEOperations().get(0), source, new String[] { "originalName", "Birth OrderTemplateId" });
+		addAnnotation(
+			birthOrderEClass.getEOperations().get(1), source, new String[] { "originalName", "Birth OrderClassCode" });
+		addAnnotation(
+			birthOrderEClass.getEOperations().get(2), source, new String[] { "originalName", "Birth OrderMoodCode" });
+		addAnnotation(
+			birthOrderEClass.getEOperations().get(3), source, new String[] { "originalName", "Birth OrderCodeP" });
+		addAnnotation(
+			birthOrderEClass.getEOperations().get(4), source, new String[] { "originalName", "Birth OrderCode" });
+		addAnnotation(
+			birthOrderEClass.getEOperations().get(5), source, new String[] { "originalName", "Birth OrderValue" });
+		addAnnotation(
+			numberofInfantsBornAliveEClass, source, new String[] { "originalName", "Number of Infants Born Alive" });
+		addAnnotation(
+			numberofInfantsBornAliveEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Number of Infants Born AliveTemplateId" });
+		addAnnotation(
+			numberofInfantsBornAliveEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Number of Infants Born AliveClassCode" });
+		addAnnotation(
+			numberofInfantsBornAliveEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Number of Infants Born AliveMoodCode" });
+		addAnnotation(
+			numberofInfantsBornAliveEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Number of Infants Born AliveCodeP" });
+		addAnnotation(
+			numberofInfantsBornAliveEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Number of Infants Born AliveCode" });
+		addAnnotation(
+			numberofInfantsBornAliveEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Number of Infants Born AliveValue" });
+		addAnnotation(congenitalAnomalyEClass, source, new String[] { "originalName", "Congenital Anomaly" });
+		addAnnotation(
+			congenitalAnomalyEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Congenital AnomalyTemplateId" });
+		addAnnotation(
+			congenitalAnomalyEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Congenital AnomalyClassCode" });
+		addAnnotation(
+			congenitalAnomalyEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Congenital AnomalyMoodCode" });
+		addAnnotation(
+			congenitalAnomalyEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Congenital AnomalyCodeP" });
+		addAnnotation(
+			congenitalAnomalyEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Congenital AnomalyCode" });
+		addAnnotation(
+			congenitalAnomalyEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Congenital AnomalyCodeVS" });
+		addAnnotation(
+			congenitalAnomalyEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Congenital AnomalyValue" });
+		addAnnotation(
+			congenitalAnomalyEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Congenital AnomalyValueP" });
+		addAnnotation(
+			congenitalAnomalyEClass.getEOperations().get(8), source,
+			new String[] { "originalName", "Congenital AnomalyDownConfirmationAssociation" });
+		addAnnotation(
+			congenitalAnomalyEClass.getEOperations().get(9), source,
+			new String[] { "originalName", "Congenital AnomalyChromosomalDisorderConfirmationAssociation" });
+		addAnnotation(
+			newbornsVitalSignsSectionEClass, source, new String[] { "originalName", "Newborns Vital Signs Section" });
+		addAnnotation(
+			newbornsVitalSignsSectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Newborns Vital Signs SectionTemplateId" });
+		addAnnotation(
+			newbornsVitalSignsSectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Newborns Vital Signs SectionClassCode" });
+		addAnnotation(
+			newbornsVitalSignsSectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Newborns Vital Signs SectionMoodCode" });
+		addAnnotation(
+			newbornsVitalSignsSectionEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Newborns Vital Signs SectionCode" });
+		addAnnotation(
+			newbornsVitalSignsSectionEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Newborns Vital Signs SectionCodeP" });
+		addAnnotation(
+			newbornsVitalSignsSectionEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Newborns Vital Signs SectionText" });
+		addAnnotation(
+			newbornsVitalSignsSectionEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Newborns Vital Signs SectionNewbornsVitalSignsObservation" });
+		addAnnotation(
+			newbornsVitalSignsObservationEClass, source,
+			new String[] { "originalName", "Newborns Vital Signs Observation" });
+		addAnnotation(
+			newbornsVitalSignsObservationEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Newborns Vital Signs ObservationTemplateId" });
+		addAnnotation(
+			newbornsVitalSignsObservationEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Newborns Vital Signs ObservationClassCode" });
+		addAnnotation(
+			newbornsVitalSignsObservationEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Newborns Vital Signs ObservationMoodCode" });
+		addAnnotation(
+			newbornsVitalSignsObservationEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Newborns Vital Signs ObservationCodeP" });
+		addAnnotation(
+			newbornsVitalSignsObservationEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Newborns Vital Signs ObservationCode" });
+		addAnnotation(
+			newbornsVitalSignsObservationEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Newborns Vital Signs ObservationValue" });
+		addAnnotation(
+			abnormalConditionoftheNewbornEClass, source,
+			new String[] { "originalName", "Abnormal Condition of the Newborn" });
+		addAnnotation(
+			abnormalConditionoftheNewbornEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Abnormal Condition of the NewbornTemplateId" });
+		addAnnotation(
+			abnormalConditionoftheNewbornEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Abnormal Condition of the NewbornClassCode" });
+		addAnnotation(
+			abnormalConditionoftheNewbornEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Abnormal Condition of the NewbornMoodCode" });
+		addAnnotation(
+			abnormalConditionoftheNewbornEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Abnormal Condition of the NewbornCodeP" });
+		addAnnotation(
+			abnormalConditionoftheNewbornEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Abnormal Condition of the NewbornCode" });
+		addAnnotation(
+			abnormalConditionoftheNewbornEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Abnormal Condition of the NewbornCodeVS" });
+		addAnnotation(
+			abnormalConditionoftheNewbornEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Abnormal Condition of the NewbornValue" });
+		addAnnotation(
+			abnormalConditionoftheNewbornEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Abnormal Condition of the NewbornValueP" });
+		addAnnotation(infantLivingEClass, source, new String[] { "originalName", "Infant Living" });
+		addAnnotation(
+			infantLivingEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Infant LivingTemplateId" });
+		addAnnotation(
+			infantLivingEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Infant LivingClassCode" });
+		addAnnotation(
+			infantLivingEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Infant LivingMoodCode" });
+		addAnnotation(
+			infantLivingEClass.getEOperations().get(3), source, new String[] { "originalName", "Infant LivingCodeP" });
+		addAnnotation(
+			infantLivingEClass.getEOperations().get(4), source, new String[] { "originalName", "Infant LivingCode" });
+		addAnnotation(
+			infantLivingEClass.getEOperations().get(5), source, new String[] { "originalName", "Infant LivingValue" });
+		addAnnotation(infantBreastfedEClass, source, new String[] { "originalName", "Infant Breastfed" });
+		addAnnotation(
+			infantBreastfedEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Infant BreastfedTemplateId" });
+		addAnnotation(
+			infantBreastfedEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Infant BreastfedClassCode" });
+		addAnnotation(
+			infantBreastfedEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Infant BreastfedMoodCode" });
+		addAnnotation(
+			infantBreastfedEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Infant BreastfedCodeP" });
+		addAnnotation(
+			infantBreastfedEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Infant BreastfedCode" });
+		addAnnotation(
+			infantBreastfedEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Infant BreastfedValue" });
+		addAnnotation(assessmentsSectionEClass, source, new String[] { "originalName", "Assessments Section" });
+		addAnnotation(
+			assessmentsSectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Assessments SectionTemplateId" });
+		addAnnotation(
+			assessmentsSectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Assessments SectionClassCode" });
+		addAnnotation(
+			assessmentsSectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Assessments SectionMoodCode" });
+		addAnnotation(
+			assessmentsSectionEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Assessments SectionCode" });
+		addAnnotation(
+			assessmentsSectionEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Assessments SectionCodeP" });
+		addAnnotation(
+			assessmentsSectionEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Assessments SectionText" });
+		addAnnotation(
+			assessmentsSectionEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Assessments SectionTitle" });
+		addAnnotation(
+			assessmentsSectionEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Assessments SectionAssessmentObservation" });
+		addAnnotation(assessmentObservationEClass, source, new String[] { "originalName", "Assessment Observation" });
+		addAnnotation(
+			assessmentObservationEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Assessment ObservationTemplateId" });
+		addAnnotation(
+			assessmentObservationEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Assessment ObservationClassCode" });
+		addAnnotation(
+			assessmentObservationEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Assessment ObservationMoodCode" });
+		addAnnotation(
+			assessmentObservationEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Assessment ObservationCodeP" });
+		addAnnotation(
+			assessmentObservationEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Assessment ObservationCode" });
+		addAnnotation(
+			assessmentObservationEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Assessment ObservationValue" });
+		addAnnotation(
+			laborandDeliverySectionEClass, source, new String[] { "originalName", "Labor and Delivery Section" });
+		addAnnotation(
+			laborandDeliverySectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Labor and Delivery SectionTemplateId" });
+		addAnnotation(
+			laborandDeliverySectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Labor and Delivery SectionClassCode" });
+		addAnnotation(
+			laborandDeliverySectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Labor and Delivery SectionMoodCode" });
+		addAnnotation(
+			laborandDeliverySectionEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Labor and Delivery SectionCode" });
+		addAnnotation(
+			laborandDeliverySectionEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Labor and Delivery SectionText" });
+		addAnnotation(
+			laborandDeliverySectionEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Labor and Delivery SectionLaborAndDeliveryProcess" });
+		addAnnotation(
+			laborandDeliverySectionEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Labor and Delivery SectionLaborAndDeliveryProcedures Section" });
+		addAnnotation(
+			laborandDeliverySectionEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Labor and Delivery SectionLaborOnsets" });
+		addAnnotation(
+			laborandDeliverySectionEClass.getEOperations().get(8), source,
+			new String[] { "originalName", "Labor and Delivery SectionMothersVitalSignsSection" });
+		addAnnotation(
+			laborandDeliverySectionEClass.getEOperations().get(10), source,
+			new String[] { "originalName", "getLaborAndDeliveryProcedures Section" });
+		addAnnotation(
+			laborandDeliveryProcessEClass, source, new String[] { "originalName", "Labor and Delivery Process" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Labor and Delivery ProcessTemplateId" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Labor and Delivery ProcessClassCode" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Labor and Delivery ProcessMoodCode" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Labor and Delivery ProcessCodeP" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Labor and Delivery ProcessCode" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Labor and Delivery ProcessAttendantParticipation" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Labor and Delivery ProcessEntryRelationship" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Labor and Delivery ProcessCharacteristicsOfLaborAndDelivery" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(8), source,
+			new String[] { "originalName", "Labor and Delivery ProcessHomeBirthPlan" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(9), source,
+			new String[] { "originalName", "Labor and Delivery ProcessMaternalTransfer" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(10), source,
+			new String[] { "originalName", "Labor and Delivery ProcessParticipatingLocation" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(11), source,
+			new String[] { "originalName", "Labor and Delivery ProcessMaternalMorbidities" });
+		addAnnotation(
+			laborandDeliveryProcessEClass.getEOperations().get(12), source,
+			new String[] { "originalName", "Labor and Delivery ProcessRiskFactors" });
+		addAnnotation(
+			characteristicofLaborandDeliveryEClass, source,
+			new String[] { "originalName", "Characteristic of Labor and Delivery" });
+		addAnnotation(
+			characteristicofLaborandDeliveryEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Characteristic of Labor and DeliveryTemplateId" });
+		addAnnotation(
+			characteristicofLaborandDeliveryEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Characteristic of Labor and DeliveryClassCode" });
+		addAnnotation(
+			characteristicofLaborandDeliveryEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Characteristic of Labor and DeliveryMoodCode" });
+		addAnnotation(
+			characteristicofLaborandDeliveryEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Characteristic of Labor and DeliveryCodeP" });
+		addAnnotation(
+			characteristicofLaborandDeliveryEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Characteristic of Labor and DeliveryCode" });
+		addAnnotation(
+			characteristicofLaborandDeliveryEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Characteristic of Labor and DeliveryCodeVS" });
+		addAnnotation(
+			characteristicofLaborandDeliveryEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Characteristic of Labor and DeliveryValue" });
+		addAnnotation(
+			characteristicofLaborandDeliveryEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Characteristic of Labor and DeliveryValueP" });
+		addAnnotation(plannedHomeBirthEClass, source, new String[] { "originalName", "Planned Home Birth" });
+		addAnnotation(
+			plannedHomeBirthEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Planned Home BirthTemplateId" });
+		addAnnotation(
+			plannedHomeBirthEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Planned Home BirthClassCode" });
+		addAnnotation(
+			plannedHomeBirthEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Planned Home BirthMoodCode" });
+		addAnnotation(
+			plannedHomeBirthEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Planned Home BirthCodeP" });
+		addAnnotation(
+			plannedHomeBirthEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Planned Home BirthCode" });
+		addAnnotation(
+			plannedHomeBirthEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Planned Home BirthValue" });
+		addAnnotation(maternalTransferEClass, source, new String[] { "originalName", "Maternal Transfer" });
+		addAnnotation(
+			maternalTransferEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Maternal TransferTemplateId" });
+		addAnnotation(
+			maternalTransferEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Maternal TransferClassCode" });
+		addAnnotation(
+			maternalTransferEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Maternal TransferMoodCode" });
+		addAnnotation(
+			maternalTransferEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Maternal TransferCodeP" });
+		addAnnotation(
+			maternalTransferEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Maternal TransferCode" });
+		addAnnotation(
+			maternalTransferEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Maternal TransferValue" });
+		addAnnotation(
+			maternalTransferEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Maternal TransferParticipant" });
+		addAnnotation(maternalMorbidityEClass, source, new String[] { "originalName", "Maternal Morbidity" });
+		addAnnotation(
+			maternalMorbidityEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Maternal MorbidityTemplateId" });
+		addAnnotation(
+			maternalMorbidityEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Maternal MorbidityClassCode" });
+		addAnnotation(
+			maternalMorbidityEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Maternal MorbidityMoodCode" });
+		addAnnotation(
+			maternalMorbidityEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Maternal MorbidityCodeP" });
+		addAnnotation(
+			maternalMorbidityEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Maternal MorbidityCode" });
+		addAnnotation(
+			maternalMorbidityEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Maternal MorbidityCodeVS" });
+		addAnnotation(
+			maternalMorbidityEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Maternal MorbidityValue" });
+		addAnnotation(
+			maternalMorbidityEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Maternal MorbidityValueP" });
+		addAnnotation(pregnancyRiskFactorEClass, source, new String[] { "originalName", "Pregnancy Risk Factor" });
+		addAnnotation(
+			pregnancyRiskFactorEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Pregnancy Risk FactorTemplateId" });
+		addAnnotation(
+			pregnancyRiskFactorEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Pregnancy Risk FactorClassCode" });
+		addAnnotation(
+			pregnancyRiskFactorEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Pregnancy Risk FactorMoodCode" });
+		addAnnotation(
+			pregnancyRiskFactorEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Pregnancy Risk FactorCodeP" });
+		addAnnotation(
+			pregnancyRiskFactorEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Pregnancy Risk FactorCode" });
+		addAnnotation(
+			pregnancyRiskFactorEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Pregnancy Risk FactorCodeVS" });
+		addAnnotation(
+			pregnancyRiskFactorEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Pregnancy Risk FactorValue" });
+		addAnnotation(
+			pregnancyRiskFactorEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Pregnancy Risk FactorValueP" });
+		addAnnotation(
+			pregnancyRiskFactorEClass.getEOperations().get(8), source,
+			new String[] { "originalName", "Pregnancy Risk FactorEntryRelationship" });
+		addAnnotation(
+			laborandDeliveryProcedureSectionEClass, source,
+			new String[] { "originalName", "Labor and Delivery Procedure Section" });
+		addAnnotation(
+			laborandDeliveryProcedureSectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Labor and Delivery Procedure SectionTemplateId" });
+		addAnnotation(
+			laborandDeliveryProcedureSectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Labor and Delivery Procedure SectionClassCode" });
+		addAnnotation(
+			laborandDeliveryProcedureSectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Labor and Delivery Procedure SectionMoodCode" });
+		addAnnotation(
+			laborandDeliveryProcedureSectionEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Labor and Delivery Procedure SectionCode" });
+		addAnnotation(
+			laborandDeliveryProcedureSectionEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Labor and Delivery Procedure SectionCodeP" });
+		addAnnotation(
+			laborandDeliveryProcedureSectionEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Labor and Delivery Procedure SectionText" });
+		addAnnotation(
+			laborandDeliveryProcedureSectionEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Labor and Delivery Procedure SectionObstetricProcedure" });
+		addAnnotation(
+			laborandDeliveryProcedureSectionEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Labor and Delivery Procedure SectionMethodOfDelivery" });
+		addAnnotation(obstetricProcedureEClass, source, new String[] { "originalName", "Obstetric Procedure" });
+		addAnnotation(
+			obstetricProcedureEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Obstetric ProcedureTemplateId" });
+		addAnnotation(
+			obstetricProcedureEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Obstetric ProcedureClassCode" });
+		addAnnotation(
+			obstetricProcedureEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Obstetric ProcedureMoodCode" });
+		addAnnotation(
+			obstetricProcedureEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Obstetric ProcedureNegationInd" });
+		addAnnotation(
+			obstetricProcedureEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Obstetric ProcedureCode" });
+		addAnnotation(
+			obstetricProcedureEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Obstetric ProcedureCodeP" });
+		addAnnotation(methodofDeliveryEClass, source, new String[] { "originalName", "Method of Delivery" });
+		addAnnotation(
+			methodofDeliveryEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Method of DeliveryTemplateId" });
+		addAnnotation(
+			methodofDeliveryEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Method of DeliveryClassCode" });
+		addAnnotation(
+			methodofDeliveryEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Method of DeliveryMoodCode" });
+		addAnnotation(
+			methodofDeliveryEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Method of DeliveryCode" });
+		addAnnotation(
+			methodofDeliveryEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Method of DeliveryCodeP" });
+		addAnnotation(
+			methodofDeliveryEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Method of DeliveryFinalRouteAndMethod" });
+		addAnnotation(
+			methodofDeliveryEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Method of DeliveryFetalPresentation" });
+		addAnnotation(
+			methodofDeliveryEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Method of DeliveryHysterotomyHysterectomyAssociation" });
+		addAnnotation(onsetofLaborEClass, source, new String[] { "originalName", "Onset of Labor" });
+		addAnnotation(
+			onsetofLaborEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Onset of LaborTemplateId" });
+		addAnnotation(
+			onsetofLaborEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Onset of LaborClassCode" });
+		addAnnotation(
+			onsetofLaborEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Onset of LaborMoodCode" });
+		addAnnotation(
+			onsetofLaborEClass.getEOperations().get(3), source, new String[] { "originalName", "Onset of LaborCodeP" });
+		addAnnotation(
+			onsetofLaborEClass.getEOperations().get(4), source, new String[] { "originalName", "Onset of LaborCode" });
+		addAnnotation(
+			onsetofLaborEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Onset of LaborCodeVS" });
+		addAnnotation(
+			onsetofLaborEClass.getEOperations().get(6), source, new String[] { "originalName", "Onset of LaborValue" });
+		addAnnotation(
+			onsetofLaborEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Onset of LaborValueP" });
+		addAnnotation(
+			mothersVitalSignsSectionEClass, source, new String[] { "originalName", "Mothers Vital Signs Section" });
+		addAnnotation(
+			mothersVitalSignsSectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Mothers Vital Signs SectionTemplateId" });
+		addAnnotation(
+			mothersVitalSignsSectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Mothers Vital Signs SectionClassCode" });
+		addAnnotation(
+			mothersVitalSignsSectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Mothers Vital Signs SectionMoodCode" });
+		addAnnotation(
+			mothersVitalSignsSectionEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Mothers Vital Signs SectionCode" });
+		addAnnotation(
+			mothersVitalSignsSectionEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Mothers Vital Signs SectionCodeP" });
+		addAnnotation(
+			mothersVitalSignsSectionEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Mothers Vital Signs SectionText" });
+		addAnnotation(
+			mothersVitalSignsSectionEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Mothers Vital Signs SectionMothersVitalSignsObservation" });
+		addAnnotation(
+			mothersVitalSignsObservationEClass, source,
+			new String[] { "originalName", "Mothers Vital Signs Observation" });
+		addAnnotation(
+			mothersVitalSignsObservationEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Mothers Vital Signs ObservationTemplateId" });
+		addAnnotation(
+			mothersVitalSignsObservationEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Mothers Vital Signs ObservationClassCode" });
+		addAnnotation(
+			mothersVitalSignsObservationEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Mothers Vital Signs ObservationMoodCode" });
+		addAnnotation(
+			mothersVitalSignsObservationEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Mothers Vital Signs ObservationCodeP" });
+		addAnnotation(
+			mothersVitalSignsObservationEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Mothers Vital Signs ObservationCode" });
+		addAnnotation(
+			mothersVitalSignsObservationEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Mothers Vital Signs ObservationValue" });
+		addAnnotation(
+			historyofInfectionLiveBirthSectionEClass, source,
+			new String[] { "originalName", "History of Infection: Live Birth Section" });
+		addAnnotation(
+			historyofInfectionLiveBirthSectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "History of Infection: Live Birth SectionTemplateId" });
+		addAnnotation(
+			historyofInfectionLiveBirthSectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "History of Infection: Live Birth SectionCode" });
+		addAnnotation(
+			historyofInfectionLiveBirthSectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "History of Infection: Live Birth SectionText" });
+		addAnnotation(
+			historyofInfectionLiveBirthSectionEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "History of Infection: Live Birth SectionInfectionPresentLiveBirth" });
+		addAnnotation(
+			infectionPresentLiveBirthEClass, source, new String[] { "originalName", "Infection Present: Live Birth" });
+		addAnnotation(
+			infectionPresentLiveBirthEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Infection Present: Live BirthTemplateId" });
+		addAnnotation(
+			infectionPresentLiveBirthEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Infection Present: Live BirthClassCode" });
+		addAnnotation(
+			infectionPresentLiveBirthEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Infection Present: Live BirthMoodCode" });
+		addAnnotation(
+			infectionPresentLiveBirthEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Infection Present: Live BirthCodeP" });
+		addAnnotation(
+			infectionPresentLiveBirthEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Infection Present: Live BirthCode" });
+		addAnnotation(
+			infectionPresentLiveBirthEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Infection Present: Live BirthCodeVS" });
+		addAnnotation(
+			infectionPresentLiveBirthEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Infection Present: Live BirthValue" });
+		addAnnotation(
+			infectionPresentLiveBirthEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Infection Present: Live BirthValueP" });
+		addAnnotation(fetalDeliverySectionEClass, source, new String[] { "originalName", "Fetal Delivery Section" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Fetal Delivery SectionTemplateId" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Fetal Delivery SectionClassCode" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Fetal Delivery SectionMoodCode" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Fetal Delivery SectionCode" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Fetal Delivery SectionText" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Fetal Delivery SectionBirthOrder" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Fetal Delivery SectionNumberOfInfantsBornAlive" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Fetal Delivery SectionAutopsyPerformance" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(8), source,
+			new String[] { "originalName", "Fetal Delivery SectionFetalDeathOccurrance" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(9), source,
+			new String[] { "originalName", "Fetal Delivery SectionPlurality" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(10), source,
+			new String[] { "originalName", "Fetal Delivery SectionCongenitalAnomaly" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(11), source,
+			new String[] { "originalName", "Fetal Delivery SectionFetalDeliveryTime" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(12), source,
+			new String[] { "originalName", "Fetal Delivery SectionFetalDeliverySubject" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(13), source,
+			new String[] { "originalName", "Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(14), source, new String[] {
+					"originalName", "Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(15), source,
+			new String[] { "originalName", "Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(16), source,
+			new String[] {
+					"originalName",
+					"Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(17), source,
+			new String[] {
+					"originalName",
+					"Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(18), source,
+			new String[] { "originalName", "Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(19), source,
+			new String[] { "originalName", "Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(20), source,
+			new String[] { "originalName", "Fetal Delivery SectionFetalDeliverySubjectTypeCode" });
+		addAnnotation(
+			fetalDeliverySectionEClass.getEOperations().get(21), source,
+			new String[] { "originalName", "Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus" });
+		addAnnotation(autopsyPerformanceEClass, source, new String[] { "originalName", "Autopsy Performance" });
+		addAnnotation(
+			autopsyPerformanceEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Autopsy PerformanceTemplateId" });
+		addAnnotation(
+			autopsyPerformanceEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Autopsy PerformanceClassCode" });
+		addAnnotation(
+			autopsyPerformanceEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Autopsy PerformanceMoodCode" });
+		addAnnotation(
+			autopsyPerformanceEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Autopsy PerformanceCodeP" });
+		addAnnotation(
+			autopsyPerformanceEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Autopsy PerformanceCode" });
+		addAnnotation(
+			autopsyPerformanceEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Autopsy PerformanceValue" });
+		addAnnotation(
+			autopsyPerformanceEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Autopsy PerformanceValueP" });
+		addAnnotation(
+			autopsyPerformanceEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Autopsy PerformanceUseAssociation" });
+		addAnnotation(
+			autopsyPerformanceEClass.getEOperations().get(8), source,
+			new String[] { "originalName", "Autopsy PerformanceHistologicalExamAssociation" });
+		addAnnotation(fetalDeathOccurranceEClass, source, new String[] { "originalName", "Fetal Death Occurrance" });
+		addAnnotation(
+			fetalDeathOccurranceEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Fetal Death OccurranceTemplateId" });
+		addAnnotation(
+			fetalDeathOccurranceEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Fetal Death OccurranceClassCode" });
+		addAnnotation(
+			fetalDeathOccurranceEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Fetal Death OccurranceMoodCode" });
+		addAnnotation(
+			fetalDeathOccurranceEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Fetal Death OccurranceCodeP" });
+		addAnnotation(
+			fetalDeathOccurranceEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Fetal Death OccurranceCode" });
+		addAnnotation(
+			fetalDeathOccurranceEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Fetal Death OccurranceValue" });
+		addAnnotation(
+			fetalDeathOccurranceEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Fetal Death OccurranceValueP" });
+		addAnnotation(fetalDeliveryTimeEClass, source, new String[] { "originalName", "Fetal Delivery Time" });
+		addAnnotation(
+			fetalDeliveryTimeEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Fetal Delivery TimeTemplateId" });
+		addAnnotation(
+			fetalDeliveryTimeEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Fetal Delivery TimeMoodCode" });
+		addAnnotation(
+			fetalDeliveryTimeEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Fetal Delivery TimeCodeP" });
+		addAnnotation(
+			fetalDeliveryTimeEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Fetal Delivery TimeCode" });
+		addAnnotation(
+			fetalDeliveryTimeEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Fetal Delivery TimeValue" });
+		addAnnotation(
+			fetalDeliveryTimeEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Fetal Delivery TimeParticipatingLocation" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
+					"originalName", "Reporting Fetal Death Information from a clinical setting to vital records" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(0), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsTemplateId" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(1), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsClassCode" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(2), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsMoodCode" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(3), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsRealmCode" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(4), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsRealmCodeP" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(5), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsTypeId" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(6), source,
+			new String[] {
+					"originalName", "Reporting Fetal Death Information from a clinical setting to vital recordsId" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(7), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsCodeP" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(8), source,
+			new String[] {
+					"originalName", "Reporting Fetal Death Information from a clinical setting to vital recordsCode" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(9), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsTitle" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(10), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsEffectiveTime" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(11), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCodeP" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(12), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCode" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(13), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsLanguageCode" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(14), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsAuthor" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(15), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsCustodian" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(16), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsRecordTarget" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(17), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsLaborAndDeliverySection" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(18), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsFetalDeliverySection" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(19), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(20), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsPregnancyHistory" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass.getEOperations().get(21), source,
+			new String[] {
+					"originalName",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsHistoryOfInfectionFetalDeathSection" });
+		addAnnotation(
+			historyofInfectionFetalDeathSectionEClass, source,
+			new String[] { "originalName", "History of Infection: Fetal Death Section" });
+		addAnnotation(
+			historyofInfectionFetalDeathSectionEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "History of Infection: Fetal Death SectionTemplateId" });
+		addAnnotation(
+			historyofInfectionFetalDeathSectionEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "History of Infection: Fetal Death SectionCode" });
+		addAnnotation(
+			historyofInfectionFetalDeathSectionEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "History of Infection: Fetal Death SectionInfectionPresentFetalDeath" });
+		addAnnotation(
+			infectionPresentFetalDeathEClass, source,
+			new String[] { "originalName", "Infection Present: Fetal Death" });
+		addAnnotation(
+			infectionPresentFetalDeathEClass.getEOperations().get(0), source,
+			new String[] { "originalName", "Infection Present: Fetal DeathTemplateId" });
+		addAnnotation(
+			infectionPresentFetalDeathEClass.getEOperations().get(1), source,
+			new String[] { "originalName", "Infection Present: Fetal DeathClassCode" });
+		addAnnotation(
+			infectionPresentFetalDeathEClass.getEOperations().get(2), source,
+			new String[] { "originalName", "Infection Present: Fetal DeathMoodCode" });
+		addAnnotation(
+			infectionPresentFetalDeathEClass.getEOperations().get(3), source,
+			new String[] { "originalName", "Infection Present: Fetal DeathCodeP" });
+		addAnnotation(
+			infectionPresentFetalDeathEClass.getEOperations().get(4), source,
+			new String[] { "originalName", "Infection Present: Fetal DeathCode" });
+		addAnnotation(
+			infectionPresentFetalDeathEClass.getEOperations().get(5), source,
+			new String[] { "originalName", "Infection Present: Fetal DeathCodeVS" });
+		addAnnotation(
+			infectionPresentFetalDeathEClass.getEOperations().get(6), source,
+			new String[] { "originalName", "Infection Present: Fetal DeathValue" });
+		addAnnotation(
+			infectionPresentFetalDeathEClass.getEOperations().get(7), source,
+			new String[] { "originalName", "Infection Present: Fetal DeathValueP" });
+	}
+
+	/**
 	 * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation</b>.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -5829,8 +7139,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createAnnotationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";
 		addAnnotation(
-			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass,
-			source,
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Reporting Birth Information from a clinical setting to vital recordsTemplateId Reporting Birth Information from a clinical setting to vital recordsMoodCode Reporting Birth Information from a clinical setting to vital recordsRealmCode Reporting Birth Information from a clinical setting to vital recordsRealmCodeP Reporting Birth Information from a clinical setting to vital recordsTypeId Reporting Birth Information from a clinical setting to vital recordsId Reporting Birth Information from a clinical setting to vital recordsCode Reporting Birth Information from a clinical setting to vital recordsCodeP Reporting Birth Information from a clinical setting to vital recordsTitle Reporting Birth Information from a clinical setting to vital recordsEffectiveTime Reporting Birth Information from a clinical setting to vital recordsConfidentialityCode Reporting Birth Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Birth Information from a clinical setting to vital recordsLanguageCode Reporting Birth Information from a clinical setting to vital recordsAuthor Reporting Birth Information from a clinical setting to vital recordsCustodian Reporting Birth Information from a clinical setting to vital recordsRecordTarget Reporting Birth Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance Reporting Birth Information from a clinical setting to vital recordsPregnancyHistory Reporting Birth Information from a clinical setting to vital recordsNewbornDeliverySection Reporting Birth Information from a clinical setting to vital recordsLaborAndDeliverySection Reporting Birth Information from a clinical setting to vital recordsHistoryOfInfectionLiveBirthSection",
@@ -5839,8 +7148,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.codeSystemName", "LOINC", "code.displayName",
 					"U.S. standard certificate of live birth - 2003 revision" });
 		addAnnotation(
-			prenatalTestingandSurveillanceSectionEClass,
-			source,
+			prenatalTestingandSurveillanceSectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Prenatal Testing and Surveillance SectionTemplateId Prenatal Testing and Surveillance SectionClassCode Prenatal Testing and Surveillance SectionMoodCode Prenatal Testing and Surveillance SectionCode Prenatal Testing and Surveillance SectionText Prenatal Testing and Surveillance SectionPrenatalCare",
@@ -5848,8 +7156,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "57078-8", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Antenatal testing and surveillance" });
 		addAnnotation(
-			prenatalCareEClass,
-			source,
+			prenatalCareEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Prenatal CareTemplateId Prenatal CareClassCode Prenatal CareMoodCode Prenatal CareNegationInd Prenatal CareCode Prenatal CareCodeP",
@@ -5857,8 +7164,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73776-7", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "No-prenatal care" });
 		addAnnotation(
-			priorPregnancyHistorySectionEClass,
-			source,
+			priorPregnancyHistorySectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Prior Pregnancy History SectionTemplateId Prior Pregnancy History SectionClassCode Prior Pregnancy History SectionMoodCode Prior Pregnancy History SectionCode Prior Pregnancy History SectionCodeP Prior Pregnancy History SectionText Prior Pregnancy History SectionDate of Last Live Birth Prior Pregnancy History SectionLast Menstrual Period Date Prior Pregnancy History SectionNumber of Births Still Living Prior Pregnancy History SectionNumber of Live Births now Dead Prior Pregnancy History SectionOther Pregnancy Outcomes Prior Pregnancy History SectionEstimate of Gestation",
@@ -5866,8 +7172,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "57073-9", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Prenatal events" });
 		addAnnotation(
-			dateofLastLiveBirthEClass,
-			source,
+			dateofLastLiveBirthEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Date of Last Live BirthTemplateId Date of Last Live BirthMoodCode Date of Last Live BirthCode Date of Last Live BirthCodeP Date of Last Live BirthValue",
@@ -5875,8 +7180,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "68499-3", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Date last live birth" });
 		addAnnotation(
-			lastMenstrualPeriodDateEClass,
-			source,
+			lastMenstrualPeriodDateEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Last Menstrual Period DateTemplateId Last Menstrual Period DateClassCode Last Menstrual Period DateMoodCode Last Menstrual Period DateCode Last Menstrual Period DateCodeP Last Menstrual Period DateValue",
@@ -5884,8 +7188,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "8665-2", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Date last menstrual period" });
 		addAnnotation(
-			numberofBirthsNowLivingEClass,
-			source,
+			numberofBirthsNowLivingEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Number of Births Now LivingTemplateId Number of Births Now LivingClassCode Number of Births Now LivingMoodCode Number of Births Now LivingCode Number of Births Now LivingCodeP Number of Births Now LivingValue",
@@ -5893,8 +7196,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
 					"Births still living" });
 		addAnnotation(
-			numberofLiveBirthsNowDeadEClass,
-			source,
+			numberofLiveBirthsNowDeadEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Number of Live Births Now DeadTemplateId Number of Live Births Now DeadClassCode Number of Live Births Now DeadMoodCode Number of Live Births Now DeadCode Number of Live Births Now DeadCodeP Number of Live Births Now DeadValue",
@@ -5902,8 +7204,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "68496-9", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Live births now dead" });
 		addAnnotation(
-			otherPregnancyOutcomeEClass,
-			source,
+			otherPregnancyOutcomeEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Other Pregnancy OutcomeTemplateId Other Pregnancy OutcomeClassCode Other Pregnancy OutcomeMoodCode Other Pregnancy OutcomeCode Other Pregnancy OutcomeCodeP Other Pregnancy OutcomeValue",
@@ -5911,8 +7212,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "69043-8", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Other pregnancy outcomes" });
 		addAnnotation(
-			estimateofGestationEClass,
-			source,
+			estimateofGestationEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Estimate of GestationTemplateId Estimate of GestationClassCode Estimate of GestationMoodCode Estimate of GestationCode Estimate of GestationCodeP Estimate of GestationValue",
@@ -5920,32 +7220,19 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "11884-4", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Gestational age Estimated" });
 		addAnnotation(
-			newbornDeliverySectionEClass,
-			source,
+			newbornDeliverySectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Newborn Delivery SectionTemplateId Newborn Delivery SectionClassCode Newborn Delivery SectionMoodCode Newborn Delivery SectionCode Newborn Delivery SectionText Newborn Delivery SectionSubject Newborn Delivery SectionCongenitalAnomalies Newborn Delivery SectionNewbornsVitalSignsSection Newborn Delivery SectionAbnormalConditionsOfTheNewborn Newborn Delivery SectionInfantLiving Newborn Delivery SectionInfantBreastfed Newborn Delivery SectionPlurality Newborn Delivery SectionAssessmentsSection Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornSDTCId Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornName Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornBirthTime Newborn Delivery SectionNewbornSubjectRoleOfNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornSubject Newborn Delivery SectionNewbornSubjectTypeCode Newborn Delivery SectionNewbornSubjectRelatedSubject",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.26.10",
-					"classCode",
-					"DOCSECT",
-					"moodCode",
-					"EVN",
-					"code.code",
-					"57075-4",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.1",
-					"code.codeSystemName",
-					"LOINC",
-					"code.displayName",
-					"Newborn delivery information from newborn narrative",
+					"templateId.root", "2.16.840.1.113883.10.20.26.10", "classCode", "DOCSECT", "moodCode", "EVN",
+					"code.code", "57075-4", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
+					"code.displayName", "Newborn delivery information from newborn narrative",
 					"constraints.validation.info",
 					"Newborn Delivery SectionBirthOrder Newborn Delivery SectionNumberOfInfantsBornAlive Newborn Delivery SectionInfantTransfer",
 					"constraints.validation.query",
 					"Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornSDTCId Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornName Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornBirthTime Newborn Delivery SectionNewbornSubjectRoleOfNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornSubject Newborn Delivery SectionNewbornSubjectTypeCode Newborn Delivery SectionNewbornSubjectRelatedSubject" });
 		addAnnotation(
-			birthOrderEClass,
-			source,
+			birthOrderEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Birth OrderTemplateId Birth OrderClassCode Birth OrderMoodCode Birth OrderCode Birth OrderCodeP Birth OrderValue",
@@ -5953,8 +7240,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73771-8", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Birth order" });
 		addAnnotation(
-			numberofInfantsBornAliveEClass,
-			source,
+			numberofInfantsBornAliveEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Number of Infants Born AliveTemplateId Number of Infants Born AliveClassCode Number of Infants Born AliveMoodCode Number of Infants Born AliveCode Number of Infants Born AliveCodeP Number of Infants Born AliveValue",
@@ -5962,8 +7248,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73773-4", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Number of infants in this delivery born alive" });
 		addAnnotation(
-			congenitalAnomalyEClass,
-			source,
+			congenitalAnomalyEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Congenital AnomalyTemplateId Congenital AnomalyClassCode Congenital AnomalyMoodCode Congenital AnomalyCode Congenital AnomalyCodeVS Congenital AnomalyCodeP Congenital AnomalyValue Congenital AnomalyValueP",
@@ -5971,8 +7256,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73780-9", "code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName",
 					"SNOMEDCT", "code.displayName", "Congenital anomalies of the newborn" });
 		addAnnotation(
-			newbornsVitalSignsSectionEClass,
-			source,
+			newbornsVitalSignsSectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Newborns Vital Signs SectionTemplateId Newborns Vital Signs SectionClassCode Newborns Vital Signs SectionMoodCode Newborns Vital Signs SectionCode Newborns Vital Signs SectionCodeP Newborns Vital Signs SectionText Newborns Vital Signs SectionNewbornsVitalSignsObservation",
@@ -5980,16 +7264,14 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "8716-3", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Vital Signs" });
 		addAnnotation(
-			newbornsVitalSignsObservationEClass,
-			source,
+			newbornsVitalSignsObservationEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Newborns Vital Signs ObservationTemplateId Newborns Vital Signs ObservationClassCode Newborns Vital Signs ObservationMoodCode Newborns Vital Signs ObservationCode Newborns Vital Signs ObservationCodeP Newborns Vital Signs ObservationValue",
-					"templateId.root", "2.16.840.1.113883.10.20.26.46", "classCode", "OBS", "moodCode", "EVN",
+					"templateId.root", "2.16.840.1.113883.10.20.26.50", "classCode", "OBS", "moodCode", "EVN",
 					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC" });
 		addAnnotation(
-			abnormalConditionoftheNewbornEClass,
-			source,
+			abnormalConditionoftheNewbornEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Abnormal Condition of the NewbornTemplateId Abnormal Condition of the NewbornClassCode Abnormal Condition of the NewbornMoodCode Abnormal Condition of the NewbornCode Abnormal Condition of the NewbornCodeVS Abnormal Condition of the NewbornCodeP Abnormal Condition of the NewbornValue Abnormal Condition of the NewbornValueP",
@@ -5997,8 +7279,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73812-0", "code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName",
 					"SNOMEDCT", "code.displayName", "Abnormal conditions of the newborn" });
 		addAnnotation(
-			infantLivingEClass,
-			source,
+			infantLivingEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Infant LivingTemplateId Infant LivingClassCode Infant LivingMoodCode Infant LivingCode Infant LivingCodeP Infant LivingValue",
@@ -6006,8 +7287,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73757-7", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Infant living at time of report" });
 		addAnnotation(
-			infantBreastfedEClass,
-			source,
+			infantBreastfedEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Infant BreastfedTemplateId Infant BreastfedClassCode Infant BreastfedMoodCode Infant BreastfedCode Infant BreastfedCodeP Infant BreastfedValue",
@@ -6015,8 +7295,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73756-9", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Infant is being breastfed at discharge" });
 		addAnnotation(
-			infantTransferEClass,
-			source,
+			infantTransferEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"InfantTransferTemplateId InfantTransferClassCode InfantTransferMoodCode InfantTransferCode InfantTransferCodeP InfantTransferValue",
@@ -6025,33 +7304,32 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.displayName", "Infant was transferred within 24 hours of delivery",
 					"constraints.validation.dependOn.InfantTransferCode", "InfantTransferCodeP",
 					"constraints.validation.info", "InfantTransferParticipant" });
-		addAnnotation(pluralityEClass, source, new String[] {
-				"constraints.validation.error",
-				"PluralityTemplateId PluralityClassCode PluralityMoodCode PluralityCode PluralityCodeP PluralityValue",
-				"templateId.root", "2.16.840.1.113883.10.20.26.41", "classCode", "OBS", "moodCode", "EVN", "code.code",
-				"57722-1", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
-				"code.displayName", "Birth plurality", "constraints.validation.dependOn.PluralityCode",
-				"PluralityCodeP" });
 		addAnnotation(
-			assessmentsSectionEClass,
-			source,
+			pluralityEClass, source,
 			new String[] {
 					"constraints.validation.error",
-					"Assessments SectionTemplateId Assessments SectionClassCode Assessments SectionMoodCode Assessments SectionCode Assessments SectionCodeP Assessments SectionText Assessments SectionAssessmentObservation",
+					"PluralityTemplateId PluralityClassCode PluralityMoodCode PluralityCode PluralityCodeP PluralityValue",
+					"templateId.root", "2.16.840.1.113883.10.20.26.41", "classCode", "OBS", "moodCode", "EVN",
+					"code.code", "57722-1", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
+					"code.displayName", "Birth plurality", "constraints.validation.dependOn.PluralityCode",
+					"PluralityCodeP" });
+		addAnnotation(
+			assessmentsSectionEClass, source,
+			new String[] {
+					"constraints.validation.error",
+					"Assessments SectionTemplateId Assessments SectionClassCode Assessments SectionMoodCode Assessments SectionCode Assessments SectionCodeP Assessments SectionText Assessments SectionTitle Assessments SectionAssessmentObservation",
 					"templateId.root", "2.16.840.1.113883.10.20.26.9", "classCode", "DOCSECT", "moodCode", "EVN",
 					"code.code", "51848-0", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Assessment Note" });
 		addAnnotation(
-			assessmentObservationEClass,
-			source,
+			assessmentObservationEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Assessment ObservationTemplateId Assessment ObservationClassCode Assessment ObservationMoodCode Assessment ObservationCode Assessment ObservationCodeP Assessment ObservationValue",
 					"templateId.root", "2.16.840.1.113883.10.20.26.47", "classCode", "OBS", "moodCode", "EVN",
 					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC" });
 		addAnnotation(
-			laborandDeliverySectionEClass,
-			source,
+			laborandDeliverySectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Labor and Delivery SectionTemplateId Labor and Delivery SectionClassCode Labor and Delivery SectionMoodCode Labor and Delivery SectionCode Labor and Delivery SectionText Labor and Delivery SectionLaborAndDeliveryProcess Labor and Delivery SectionLaborAndDeliveryProcedures Section Labor and Delivery SectionMothersVitalSignsSection",
@@ -6060,8 +7338,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.displayName", "Labor and delivery section", "constraints.validation.info",
 					"Labor and Delivery SectionLaborOnsets" });
 		addAnnotation(
-			laborandDeliveryProcessEClass,
-			source,
+			laborandDeliveryProcessEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Labor and Delivery ProcessTemplateId Labor and Delivery ProcessClassCode Labor and Delivery ProcessMoodCode Labor and Delivery ProcessCode Labor and Delivery ProcessCodeP Labor and Delivery ProcessAttendantParticipation Labor and Delivery ProcessEntryRelationship Labor and Delivery ProcessMaternalTransfer Labor and Delivery ProcessParticipatingLocation Labor and Delivery ProcessMaternalMorbidities Labor and Delivery ProcessRiskFactors",
@@ -6069,8 +7346,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "57074-7", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Labor and delivery process" });
 		addAnnotation(
-			characteristicofLaborandDeliveryEClass,
-			source,
+			characteristicofLaborandDeliveryEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Characteristic of Labor and DeliveryTemplateId Characteristic of Labor and DeliveryClassCode Characteristic of Labor and DeliveryMoodCode Characteristic of Labor and DeliveryCode Characteristic of Labor and DeliveryCodeVS Characteristic of Labor and DeliveryCodeP Characteristic of Labor and DeliveryValue Characteristic of Labor and DeliveryValueP",
@@ -6078,26 +7354,24 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73813-8", "code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName",
 					"SNOMEDCT", "code.displayName", "Characteristics of labor and delivery" });
 		addAnnotation(
-			plannedHomeBirthEClass,
-			source,
+			plannedHomeBirthEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Planned Home BirthTemplateId Planned Home BirthClassCode Planned Home BirthMoodCode Planned Home BirthCode Planned Home BirthCodeP Planned Home BirthValue",
 					"templateId.root", "2.16.840.1.113883.10.20.26.26", "classCode", "OBS", "moodCode", "EVN",
 					"code.code", "73765-0", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
-					"code.displayName", "Planned to delivery at home" });
+					"code.displayName", "Planned to deliver at home" });
 		addAnnotation(
-			maternalTransferEClass,
-			source,
+			maternalTransferEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Maternal TransferTemplateId Maternal TransferClassCode Maternal TransferMoodCode Maternal TransferCode Maternal TransferCodeP Maternal TransferValue",
 					"templateId.root", "2.16.840.1.113883.10.20.26.35", "classCode", "OBS", "moodCode", "EVN",
 					"code.code", "73763-5", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
-					"code.displayName", "Mother was transferred for maternal medical or fetal indications for delivery" });
+					"code.displayName",
+					"Mother was transferred for maternal medical or fetal indications for delivery" });
 		addAnnotation(
-			maternalMorbidityEClass,
-			source,
+			maternalMorbidityEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Maternal MorbidityTemplateId Maternal MorbidityClassCode Maternal MorbidityMoodCode Maternal MorbidityCode Maternal MorbidityCodeVS Maternal MorbidityCodeP Maternal MorbidityValue Maternal MorbidityValueP",
@@ -6105,8 +7379,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73781-7", "code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName",
 					"SNOMEDCT", "code.displayName", "Maternal morbidity" });
 		addAnnotation(
-			pregnancyRiskFactorEClass,
-			source,
+			pregnancyRiskFactorEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Pregnancy Risk FactorTemplateId Pregnancy Risk FactorClassCode Pregnancy Risk FactorMoodCode Pregnancy Risk FactorCode Pregnancy Risk FactorCodeVS Pregnancy Risk FactorCodeP Pregnancy Risk FactorValue Pregnancy Risk FactorValueP",
@@ -6114,8 +7387,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73775-9", "code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName",
 					"SNOMEDCT", "code.displayName", "Risk factors in this pregnancy" });
 		addAnnotation(
-			laborandDeliveryProcedureSectionEClass,
-			source,
+			laborandDeliveryProcedureSectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Labor and Delivery Procedure SectionTemplateId Labor and Delivery Procedure SectionClassCode Labor and Delivery Procedure SectionMoodCode Labor and Delivery Procedure SectionCode Labor and Delivery Procedure SectionCodeP Labor and Delivery Procedure SectionText Labor and Delivery Procedure SectionMethodOfDelivery",
@@ -6124,16 +7396,14 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.displayName", "Procedure", "constraints.validation.info",
 					"Labor and Delivery Procedure SectionObstetricProcedure" });
 		addAnnotation(
-			obstetricProcedureEClass,
-			source,
+			obstetricProcedureEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Obstetric ProcedureTemplateId Obstetric ProcedureClassCode Obstetric ProcedureMoodCode Obstetric ProcedureNegationInd Obstetric ProcedureCode Obstetric ProcedureCodeP",
 					"templateId.root", "2.16.840.1.113883.10.20.26.39", "classCode", "PROC", "moodCode", "EVN",
 					"code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName", "SNOMEDCT" });
 		addAnnotation(
-			methodofDeliveryEClass,
-			source,
+			methodofDeliveryEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Method of DeliveryTemplateId Method of DeliveryClassCode Method of DeliveryMoodCode Method of DeliveryCode Method of DeliveryCodeP Method of DeliveryFinalRouteAndMethod Method of DeliveryFetalPresentation Method of DeliveryHysterotomyHysterectomyAssociation",
@@ -6141,8 +7411,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "72149-8", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Delivery method" });
 		addAnnotation(
-			onsetofLaborEClass,
-			source,
+			onsetofLaborEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Onset of LaborTemplateId Onset of LaborClassCode Onset of LaborMoodCode Onset of LaborCode Onset of LaborCodeVS Onset of LaborCodeP Onset of LaborValue Onset of LaborValueP",
@@ -6150,33 +7419,29 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73774-2", "code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName",
 					"SNOMEDCT", "code.displayName", "Onset of labor" });
 		addAnnotation(
-			mothersVitalSignsSectionEClass,
-			source,
+			mothersVitalSignsSectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Mothers Vital Signs SectionTemplateId Mothers Vital Signs SectionClassCode Mothers Vital Signs SectionMoodCode Mothers Vital Signs SectionCode Mothers Vital Signs SectionCodeP Mothers Vital Signs SectionText Mothers Vital Signs SectionMothersVitalSignsObservation",
-					"templateId.root", "2.16.840.1.113883.10.20.26.9", "classCode", "DOCSECT", "moodCode", "EVN",
+					"templateId.root", "2.16.840.1.113883.10.20.26.14", "classCode", "DOCSECT", "moodCode", "EVN",
 					"code.code", "8716-3", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Vital Signs" });
 		addAnnotation(
-			mothersVitalSignsObservationEClass,
-			source,
+			mothersVitalSignsObservationEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Mothers Vital Signs ObservationTemplateId Mothers Vital Signs ObservationClassCode Mothers Vital Signs ObservationMoodCode Mothers Vital Signs ObservationCode Mothers Vital Signs ObservationCodeP Mothers Vital Signs ObservationValue",
 					"templateId.root", "2.16.840.1.113883.10.20.26.46", "classCode", "OBS", "moodCode", "EVN",
 					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC" });
 		addAnnotation(
-			historyofInfectionLiveBirthSectionEClass,
-			source,
+			historyofInfectionLiveBirthSectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"History of Infection: Live Birth SectionTemplateId History of Infection: Live Birth SectionCode History of Infection: Live Birth SectionText History of Infection: Live Birth SectionInfectionPresentLiveBirth",
 					"templateId.root", "2.16.840.1.113883.10.20.26.5", "classCode", "DOCSECT", "moodCode", "EVN",
 					"code.code", "71459-2", "code.codeSystemName", "LOINC", "code.displayName", "Infection panel" });
 		addAnnotation(
-			infectionPresentLiveBirthEClass,
-			source,
+			infectionPresentLiveBirthEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Infection Present: Live BirthTemplateId Infection Present: Live BirthClassCode Infection Present: Live BirthMoodCode Infection Present: Live BirthCode Infection Present: Live BirthCodeVS Infection Present: Live BirthCodeP Infection Present: Live BirthValue Infection Present: Live BirthValueP",
@@ -6185,29 +7450,17 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"SNOMEDCT", "code.displayName",
 					"InfeInfections present and or treated during this pregnancy for live birth" });
 		addAnnotation(
-			fetalDeliverySectionEClass,
-			source,
+			fetalDeliverySectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
-					"Fetal Delivery SectionTemplateId Fetal Delivery SectionClassCode Fetal Delivery SectionMoodCode Fetal Delivery SectionCode Fetal Delivery SectionText Fetal Delivery SectionBirthOrder Fetal Delivery SectionNumberOfInfantsBornAlive Fetal Delivery SectionFetalDeathOccurrance Fetal Delivery SectionPlurality Fetal Delivery SectionCongenitalAnomaly Fetal Delivery SectionFetalDeliveryTime Fetal Delivery SectionFetalDeliverySubject Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus",
-					"templateId.root",
-					"2.16.840.1.113883.10.20.26.4",
-					"classCode",
-					"DOCSECT",
-					"moodCode",
-					"EVN",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.1",
-					"code.codeSystemName",
-					"LOINC",
-					"constraints.validation.warning",
-					"Fetal Delivery SectionAutopsyPerformance",
+					"Fetal Delivery SectionTemplateId Fetal Delivery SectionClassCode Fetal Delivery SectionMoodCode Fetal Delivery SectionCode Fetal Delivery SectionText Fetal Delivery SectionBirthOrder Fetal Delivery SectionNumberOfInfantsBornAlive Fetal Delivery SectionFetalDeathOccurrance Fetal Delivery SectionPlurality Fetal Delivery SectionCongenitalAnomaly Fetal Delivery SectionFetalDeliveryTime Fetal Delivery SectionFetalDeliverySubject Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus",
+					"templateId.root", "2.16.840.1.113883.10.20.26.4", "classCode", "DOCSECT", "moodCode", "EVN",
+					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
+					"constraints.validation.warning", "Fetal Delivery SectionAutopsyPerformance",
 					"constraints.validation.query",
-					"Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus",
-					"constraints.validation.info", "Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName" });
+					"Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus" });
 		addAnnotation(
-			autopsyPerformanceEClass,
-			source,
+			autopsyPerformanceEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Autopsy PerformanceTemplateId Autopsy PerformanceClassCode Autopsy PerformanceMoodCode Autopsy PerformanceCode Autopsy PerformanceCodeP Autopsy PerformanceValue Autopsy PerformanceValueP Autopsy PerformanceHistologicalExamAssociation",
@@ -6215,8 +7468,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73768-4", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Autopsy was performed" });
 		addAnnotation(
-			fetalDeathOccurranceEClass,
-			source,
+			fetalDeathOccurranceEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Fetal Death OccurranceTemplateId Fetal Death OccurranceClassCode Fetal Death OccurranceMoodCode Fetal Death OccurranceCode Fetal Death OccurranceCodeP Fetal Death OccurranceValue Fetal Death OccurranceValueP",
@@ -6224,8 +7476,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "73811-2", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Estimated time of fetal death" });
 		addAnnotation(
-			fetalDeliveryTimeEClass,
-			source,
+			fetalDeliveryTimeEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Fetal Delivery TimeTemplateId Fetal Delivery TimeMoodCode Fetal Delivery TimeCode Fetal Delivery TimeCodeP Fetal Delivery TimeValue Fetal Delivery TimeParticipatingLocation",
@@ -6234,8 +7485,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.displayName",
 					"Delivery date for patient selected by practitioner using all pertinent information" });
 		addAnnotation(
-			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass,
-			source,
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Reporting Fetal Death Information from a clinical setting to vital recordsTemplateId Reporting Fetal Death Information from a clinical setting to vital recordsClassCode Reporting Fetal Death Information from a clinical setting to vital recordsMoodCode Reporting Fetal Death Information from a clinical setting to vital recordsRealmCode Reporting Fetal Death Information from a clinical setting to vital recordsRealmCodeP Reporting Fetal Death Information from a clinical setting to vital recordsTypeId Reporting Fetal Death Information from a clinical setting to vital recordsId Reporting Fetal Death Information from a clinical setting to vital recordsCode Reporting Fetal Death Information from a clinical setting to vital recordsCodeP Reporting Fetal Death Information from a clinical setting to vital recordsTitle Reporting Fetal Death Information from a clinical setting to vital recordsEffectiveTime Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCode Reporting Fetal Death Information from a clinical setting to vital recordsConfidentialityCodeP Reporting Fetal Death Information from a clinical setting to vital recordsLanguageCode Reporting Fetal Death Information from a clinical setting to vital recordsAuthor Reporting Fetal Death Information from a clinical setting to vital recordsCustodian Reporting Fetal Death Information from a clinical setting to vital recordsRecordTarget Reporting Fetal Death Information from a clinical setting to vital recordsLaborAndDeliverySection Reporting Fetal Death Information from a clinical setting to vital recordsFetalDeliverySection Reporting Fetal Death Information from a clinical setting to vital recordsPrenatalTestingAndSurveillance Reporting Fetal Death Information from a clinical setting to vital recordsPregnancyHistory Reporting Fetal Death Information from a clinical setting to vital recordsHistoryOfInfectionFetalDeathSection",
@@ -6244,8 +7494,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.codeSystemName", "LOINC", "code.displayName",
 					"U.S. stanard report of fetal death - 2003 revision" });
 		addAnnotation(
-			historyofInfectionFetalDeathSectionEClass,
-			source,
+			historyofInfectionFetalDeathSectionEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"History of Infection: Fetal Death SectionTemplateId History of Infection: Fetal Death SectionCode History of Infection: Fetal Death SectionInfectionPresentFetalDeath",
@@ -6253,8 +7502,7 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 					"code.code", "71459-2", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
 					"code.displayName", "Infection Panel" });
 		addAnnotation(
-			infectionPresentFetalDeathEClass,
-			source,
+			infectionPresentFetalDeathEClass, source,
 			new String[] {
 					"constraints.validation.error",
 					"Infection Present: Fetal DeathTemplateId Infection Present: Fetal DeathClassCode Infection Present: Fetal DeathMoodCode Infection Present: Fetal DeathCode Infection Present: Fetal DeathCodeVS Infection Present: Fetal DeathCodeP Infection Present: Fetal DeathValue Infection Present: Fetal DeathValueP",
@@ -6272,8 +7520,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthor";
-		addAnnotation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"typeCode", "AUT", "constraints.validation.error", "AuthorAssignedAuthor" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"typeCode", "AUT", "constraints.validation.error",
+					"Reporting Birth Information from a clinical setting to vital recordsAuthorAssignedAuthor" });
 	}
 
 	/**
@@ -6284,8 +7535,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor";
-		addAnnotation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"constraints.validation.error", "AssignedAuthorId AssignedAuthorClassCode", "classCode", "ASSIGNED" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"constraints.validation.error",
+					"Reporting Birth Information from a clinical setting to vital recordsAuthorAssignedAuthorId Reporting Birth Information from a clinical setting to vital recordsAuthorAssignedAuthorClassCode",
+					"classCode", "ASSIGNED" });
 	}
 
 	/**
@@ -6296,8 +7551,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTarget";
-		addAnnotation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"typeCode", "RCT", "constraints.validation.error", "RecordTargetTypeCode RecordTargetPatientRole" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"typeCode", "RCT", "constraints.validation.error",
+					"Reporting Birth Information from a clinical setting to vital recordsRecordTargetTypeCode Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRole" });
 	}
 
 	/**
@@ -6308,10 +7566,13 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole";
-		addAnnotation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"classCode", "PAT", "constraints.validation.error",
-				"PatientRoleClassCode PatientRoleId PatientRolePatient", "constraints.validation.warning",
-				"PatientRoleAddr" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"classCode", "PAT", "constraints.validation.error",
+					"Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRoleClassCode Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRoleId Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRolePatient",
+					"constraints.validation.warning",
+					"Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRoleAddr" });
 	}
 
 	/**
@@ -6322,9 +7583,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatientAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient";
-		addAnnotation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"classCode", "PSN", "constraints.validation.error",
-				"PatientClassCode PatientDeterminerCode PatientName", "determinerCode", "INSTANCE" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"classCode", "PSN", "constraints.validation.error",
+					"Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRolePatientClassCode Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRolePatientDeterminerCode Reporting Birth Information from a clinical setting to vital recordsRecordTargetPatientRolePatientName",
+					"determinerCode", "INSTANCE" });
 	}
 
 	/**
@@ -6335,8 +7599,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodianAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodian";
-		addAnnotation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"typeCode", "CST", "constraints.validation.error", "CustodianTypeCode CustodianAssignedCustodian" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"typeCode", "CST", "constraints.validation.error",
+					"Reporting Birth Information from a clinical setting to vital recordsCustodianTypeCode Reporting Birth Information from a clinical setting to vital recordsCustodianAssignedCustodian" });
 	}
 
 	/**
@@ -6347,8 +7614,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian";
-		addAnnotation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"classCode", "ASSIGNED", "constraints.validation.error", "AssignedCustodianClassCode" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"classCode", "ASSIGNED", "constraints.validation.error",
+					"Reporting Birth Information from a clinical setting to vital recordsCustodianAssignedCustodianClassCode" });
 	}
 
 	/**
@@ -6359,10 +7629,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingBirthInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganization";
-		addAnnotation(reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"classCode", "ORG", "constraints.validation.error",
-				"CustodianOrganizationClassCode CustodianOrganizationDeterminerCode CustodianOrganizationId",
-				"determinerCode", "INSTANCE" });
+		addAnnotation(
+			reportingBirthInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"classCode", "ORG", "constraints.validation.error",
+					"Reporting Birth Information from a clinical setting to vital recordsCustodianAssignedCustodianCustodianOrganizationClassCode Reporting Birth Information from a clinical setting to vital recordsCustodianAssignedCustodianCustodianOrganizationDeterminerCode Reporting Birth Information from a clinical setting to vital recordsCustodianAssignedCustodianCustodianOrganizationId",
+					"determinerCode", "INSTANCE" });
 	}
 
 	/**
@@ -6373,9 +7645,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrPrenatalCareprenatalVisitsAssociationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrPrenatalCareprenatalVisitsAssociation";
-		addAnnotation(prenatalCareEClass, source, new String[] {
-				"typeCode", "COMP", "constraints.validation.error",
-				"prenatalVisitsAssociationTypeCode prenatalVisitsAssociationObservation" });
+		addAnnotation(
+			prenatalCareEClass, source,
+			new String[] {
+					"typeCode", "COMP", "constraints.validation.error",
+					"Prenatal CareprenatalVisitsAssociationTypeCode Prenatal CareprenatalVisitsAssociationObservation" });
 	}
 
 	/**
@@ -6387,16 +7661,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrPrenatalCareprenatalVisitsAssociationpreNatalVisitNumberAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrPrenatalCareprenatalVisitsAssociationpreNatalVisitNumber";
 		addAnnotation(
-			prenatalCareEClass,
-			source,
+			prenatalCareEClass, source,
 			new String[] {
-					"classCode",
-					"OBS",
-					"constraints.validation.error",
-					"preNatalVisitNumberClassCode preNatalVisitNumberMoodCode preNatalVisitNumberCode preNatalVisitNumberCodeP preNatalVisitNumberValue",
+					"classCode", "OBS", "constraints.validation.error",
+					"Prenatal CareprenatalVisitsAssociationpreNatalVisitNumberClassCode Prenatal CareprenatalVisitsAssociationpreNatalVisitNumberMoodCode Prenatal CareprenatalVisitsAssociationpreNatalVisitNumberCode Prenatal CareprenatalVisitsAssociationpreNatalVisitNumberCodeP Prenatal CareprenatalVisitsAssociationpreNatalVisitNumberValue",
 					"moodCode", "EVN", "code.code", "68493-6", "code.codeSystem", "2.16.840.1.113883.6.1",
-					"code.codeSystemName", "LOINC", "code.displayName", "Prenatal visits for this pregnancy",
-					"constraints.validation.dependOn.preNatalVisitNumberCode", "preNatalVisitNumberCodeP" });
+					"code.codeSystemName", "LOINC", "code.displayName", "Prenatal visits for this pregnancy" });
 	}
 
 	/**
@@ -6407,9 +7677,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrNewbornDeliverySectionNewbornSubjectAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrNewbornDeliverySectionNewbornSubject";
-		addAnnotation(newbornDeliverySectionEClass, source, new String[] {
-				"typeCode", "SBJ", "constraints.validation.error",
-				"NewbornSubjectTypeCode NewbornSubjectRelatedSubject" });
+		addAnnotation(
+			newbornDeliverySectionEClass, source,
+			new String[] {
+					"typeCode", "SBJ", "constraints.validation.error",
+					"Newborn Delivery SectionNewbornSubjectTypeCode Newborn Delivery SectionNewbornSubjectRelatedSubject" });
 	}
 
 	/**
@@ -6420,10 +7692,13 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrNewbornDeliverySectionNewbornSubjectRoleOfNewbornAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrNewbornDeliverySectionNewbornSubjectRoleOfNewborn";
-		addAnnotation(newbornDeliverySectionEClass, source, new String[] {
-				"classCode", "PRS", "constraints.validation.error",
-				"RoleOfNewbornClassCode RoleOfNewbornCode RoleOfNewbornSubject", "code.code", "CHILD",
-				"code.codeSystem", "2.16.840.1.113883.5.111", "code.codeSystemName", "RoleCode" });
+		addAnnotation(
+			newbornDeliverySectionEClass, source,
+			new String[] {
+					"classCode", "PRS", "constraints.validation.error",
+					"Newborn Delivery SectionNewbornSubjectRoleOfNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornSubject",
+					"code.code", "CHILD", "code.codeSystem", "2.16.840.1.113883.5.111", "code.codeSystemName",
+					"RoleCode" });
 	}
 
 	/**
@@ -6435,13 +7710,10 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewbornAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrNewbornDeliverySectionNewbornSubjectRoleOfNewbornNewborn";
 		addAnnotation(
-			newbornDeliverySectionEClass,
-			source,
+			newbornDeliverySectionEClass, source,
 			new String[] {
-					"classCode",
-					"PSN",
-					"constraints.validation.error",
-					"NewbornClassCode NewbornDeterminerCode NewbornSDTCId NewbornName NewbornAdministrativeGenderCode NewbornAdministrativeGenderCodeP NewbornBirthTime",
+					"classCode", "PSN", "constraints.validation.error",
+					"Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornClassCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornDeterminerCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornSDTCId Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornName Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCode Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornAdministrativeGenderCodeP Newborn Delivery SectionNewbornSubjectRoleOfNewbornNewbornBirthTime",
 					"determinerCode", "INSTANCE", "administrativeGenderCode.codeSystem", "2.16.840.1.113883.5.1",
 					"administrativeGenderCode.codeSystemName", "AdministrativeGenderCode" });
 	}
@@ -6454,9 +7726,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrCongenitalAnomalyDownConfirmationAssociationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrCongenitalAnomalyDownConfirmationAssociation";
-		addAnnotation(congenitalAnomalyEClass, source, new String[] {
-				"typeCode", "COMP", "constraints.validation.error",
-				"DownConfirmationAssociationTypeCode DownConfirmationAssociationDownConfirmation" });
+		addAnnotation(
+			congenitalAnomalyEClass, source,
+			new String[] {
+					"typeCode", "COMP", "constraints.validation.error",
+					"Congenital AnomalyDownConfirmationAssociationTypeCode Congenital AnomalyDownConfirmationAssociationDownConfirmation" });
 	}
 
 	/**
@@ -6468,17 +7742,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrCongenitalAnomalyDownConfirmationAssociationDownConfirmationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrCongenitalAnomalyDownConfirmationAssociationDownConfirmation";
 		addAnnotation(
-			congenitalAnomalyEClass,
-			source,
+			congenitalAnomalyEClass, source,
 			new String[] {
-					"classCode",
-					"OBS",
-					"constraints.validation.error",
-					"DownConfirmationClassCode DownConfirmationCode DownConfirmationCodeP DownConfirmationMoodCode DownConfirmationValue DownConfirmationValueP",
+					"classCode", "OBS", "constraints.validation.error",
+					"Congenital AnomalyDownConfirmationAssociationDownConfirmationClassCode Congenital AnomalyDownConfirmationAssociationDownConfirmationCode Congenital AnomalyDownConfirmationAssociationDownConfirmationCodeP Congenital AnomalyDownConfirmationAssociationDownConfirmationMoodCode Congenital AnomalyDownConfirmationAssociationDownConfirmationValue Congenital AnomalyDownConfirmationAssociationDownConfirmationValueP",
 					"code.code", "73779-1", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
-					"code.displayName", "Down syndrome karyotype status",
-					"constraints.validation.dependOn.DownConfirmationCode", "DownConfirmationCodeP", "moodCode", "EVN",
-					"value.codeSystem", "2.16.840.1.113883.6.96", "value.codeSystemName", "SNOMEDCT" });
+					"code.displayName", "Down syndrome karyotype status" });
 	}
 
 	/**
@@ -6490,13 +7759,10 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrCongenitalAnomalyChromosomalDisorderConfirmationAssociationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrCongenitalAnomalyChromosomalDisorderConfirmationAssociation";
 		addAnnotation(
-			congenitalAnomalyEClass,
-			source,
+			congenitalAnomalyEClass, source,
 			new String[] {
-					"typeCode",
-					"COMP",
-					"constraints.validation.error",
-					"ChromosomalDisorderConfirmationAssociationTypeCode ChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmation" });
+					"typeCode", "COMP", "constraints.validation.error",
+					"Congenital AnomalyChromosomalDisorderConfirmationAssociationTypeCode Congenital AnomalyChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmation" });
 	}
 
 	/**
@@ -6508,18 +7774,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrCongenitalAnomalyChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrCongenitalAnomalyChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmation";
 		addAnnotation(
-			congenitalAnomalyEClass,
-			source,
+			congenitalAnomalyEClass, source,
 			new String[] {
-					"classCode",
-					"OBS",
-					"constraints.validation.error",
-					"ChromosomalDisorderConfirmationClassCode ChromosomalDisorderConfirmationCode ChromosomalDisorderConfirmationCodeP ChromosomalDisorderConfirmationMoodCode ChromosomalDisorderConfirmationValue ChromosomalDisorderConfirmationValueP",
+					"classCode", "OBS", "constraints.validation.error",
+					"Congenital AnomalyChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmationClassCode Congenital AnomalyChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmationCode Congenital AnomalyChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmationCodeP Congenital AnomalyChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmationMoodCode Congenital AnomalyChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmationValue Congenital AnomalyChromosomalDisorderConfirmationAssociationChromosomalDisorderConfirmationValueP",
 					"code.code", "73778-3", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
-					"code.displayName", "Suspected chromosomal disorder karyotype status",
-					"constraints.validation.dependOn.ChromosomalDisorderConfirmationCode",
-					"ChromosomalDisorderConfirmationCodeP", "moodCode", "EVN", "value.codeSystem",
-					"2.16.840.1.113883.6.96", "value.codeSystemName", "SNOMEDCT" });
+					"code.displayName", "Suspected chromosomal disorder karyotype status" });
 	}
 
 	/**
@@ -6530,9 +7790,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrInfantTransferTransferFacilityAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrInfantTransferTransferFacility";
-		addAnnotation(infantTransferEClass, source, new String[] {
-				"typeCode", "DST", "constraints.validation.error",
-				"TransferFacilityTypeCode TransferFacilityParticipantRole" });
+		addAnnotation(
+			infantTransferEClass, source,
+			new String[] {
+					"typeCode", "DST", "constraints.validation.error",
+					"InfantTransferTransferFacilityTypeCode InfantTransferTransferFacilityParticipantRole" });
 	}
 
 	/**
@@ -6544,9 +7806,10 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrInfantTransferTransferFacilityFacilityRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrInfantTransferTransferFacilityFacilityRole";
 		addAnnotation(
-			infantTransferEClass, source, new String[] {
+			infantTransferEClass, source,
+			new String[] {
 					"classCode", "SDLOC", "constraints.validation.error",
-					"FacilityRoleClassCode FacilityRoleScopingEntity" });
+					"InfantTransferTransferFacilityFacilityRoleClassCode InfantTransferTransferFacilityFacilityRoleScopingEntity" });
 	}
 
 	/**
@@ -6557,9 +7820,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrInfantTransferTransferFacilityFacilityRoleFacilityAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrInfantTransferTransferFacilityFacilityRoleFacility";
-		addAnnotation(infantTransferEClass, source, new String[] {
-				"classCode", "ORG", "constraints.validation.error",
-				"FacilityClassCode FacilityDeterminerCode FacilityName", "determinerCode", "INSTANCE" });
+		addAnnotation(
+			infantTransferEClass, source,
+			new String[] {
+					"classCode", "ORG", "constraints.validation.error",
+					"InfantTransferTransferFacilityFacilityRoleFacilityClassCode InfantTransferTransferFacilityFacilityRoleFacilityDeterminerCode InfantTransferTransferFacilityFacilityRoleFacilityName",
+					"determinerCode", "INSTANCE" });
 	}
 
 	/**
@@ -6570,9 +7836,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrLaborandDeliveryProcessattendantParticipationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipation";
-		addAnnotation(laborandDeliveryProcessEClass, source, new String[] {
-				"typeCode", "PRF", "constraints.validation.error",
-				"attendantParticipationTypeCode attendantParticipationAssignedEntity" });
+		addAnnotation(
+			laborandDeliveryProcessEClass, source,
+			new String[] {
+					"typeCode", "PRF", "constraints.validation.error",
+					"Labor and Delivery ProcessattendantParticipationTypeCode Labor and Delivery ProcessattendantParticipationAssignedEntity" });
 	}
 
 	/**
@@ -6583,11 +7851,13 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrLaborandDeliveryProcessattendantParticipationattendantRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipationattendantRole";
-		addAnnotation(laborandDeliveryProcessEClass, source, new String[] {
-				"classCode", "ASSIGNED", "constraints.validation.error",
-				"attendantRoleClassCode attendantRoleCode attendantRoleCodeP attendantRoleAttendant",
-				"constraints.validation.warning", "attendantRoleId", "code.codeSystem", "2.16.840.1.113883.6.96",
-				"code.codeSystemName", "SNOMEDCT" });
+		addAnnotation(
+			laborandDeliveryProcessEClass, source,
+			new String[] {
+					"classCode", "ASSIGNED", "constraints.validation.error",
+					"Labor and Delivery ProcessattendantParticipationattendantRoleClassCode Labor and Delivery ProcessattendantParticipationattendantRoleCode Labor and Delivery ProcessattendantParticipationattendantRoleCodeP Labor and Delivery ProcessattendantParticipationattendantRoleAttendant",
+					"constraints.validation.warning", "Labor and Delivery ProcessattendantParticipationattendantRoleId",
+					"code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName", "SNOMEDCT" });
 	}
 
 	/**
@@ -6598,9 +7868,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrLaborandDeliveryProcessattendantParticipationattendantRoleAttendantAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessattendantParticipationattendantRoleAttendant";
-		addAnnotation(laborandDeliveryProcessEClass, source, new String[] {
-				"classCode", "PSN", "constraints.validation.error",
-				"AttendantClassCode AttendantDeterminerCode AttendantName", "determinerCode", "INSTANCE" });
+		addAnnotation(
+			laborandDeliveryProcessEClass, source,
+			new String[] {
+					"classCode", "PSN", "constraints.validation.error",
+					"Labor and Delivery ProcessattendantParticipationattendantRoleAttendantClassCode Labor and Delivery ProcessattendantParticipationattendantRoleAttendantDeterminerCode Labor and Delivery ProcessattendantParticipationattendantRoleAttendantName",
+					"determinerCode", "INSTANCE" });
 	}
 
 	/**
@@ -6611,9 +7884,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrLaborandDeliveryProcesspaymentSourceAssociationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcesspaymentSourceAssociation";
-		addAnnotation(laborandDeliveryProcessEClass, source, new String[] {
-				"typeCode", "COMP", "constraints.validation.error",
-				"paymentSourceAssociationTypeCode paymentSourceAssociationObservation" });
+		addAnnotation(
+			laborandDeliveryProcessEClass, source,
+			new String[] {
+					"typeCode", "COMP", "constraints.validation.error",
+					"Labor and Delivery ProcesspaymentSourceAssociationTypeCode Labor and Delivery ProcesspaymentSourceAssociationObservation" });
 	}
 
 	/**
@@ -6625,17 +7900,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrLaborandDeliveryProcesspaymentSourceAssociationpaymentSourceAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcesspaymentSourceAssociationpaymentSource";
 		addAnnotation(
-			laborandDeliveryProcessEClass,
-			source,
+			laborandDeliveryProcessEClass, source,
 			new String[] {
-					"classCode",
-					"OBS",
-					"constraints.validation.error",
-					"paymentSourceClassCode paymentSourceMoodCode paymentSourceCode paymentSourceCodeP paymentSourceValue paymentSourceValueP",
+					"classCode", "OBS", "constraints.validation.error",
+					"Labor and Delivery ProcesspaymentSourceAssociationpaymentSourceClassCode Labor and Delivery ProcesspaymentSourceAssociationpaymentSourceMoodCode Labor and Delivery ProcesspaymentSourceAssociationpaymentSourceCode Labor and Delivery ProcesspaymentSourceAssociationpaymentSourceCodeP Labor and Delivery ProcesspaymentSourceAssociationpaymentSourceValue Labor and Delivery ProcesspaymentSourceAssociationpaymentSourceValueP",
 					"moodCode", "EVN", "code.code", "68461-3", "code.codeSystem", "2.16.840.1.113883.6.1",
-					"code.codeSystemName", "LOINC", "code.displayName", "Payment source",
-					"constraints.validation.dependOn.paymentSourceCode", "paymentSourceCodeP", "value.codeSystem",
-					"2.16.840.1.113883.221.5", "value.codeSystemName", "Source of Payment Typology" });
+					"code.codeSystemName", "LOINC", "code.displayName", "Payment source" });
 	}
 
 	/**
@@ -6646,9 +7916,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrLaborandDeliveryProcessparticipatingLocationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocation";
-		addAnnotation(laborandDeliveryProcessEClass, source, new String[] {
-				"typeCode", "LOC", "constraints.validation.error",
-				"participatingLocationTypeCode participatingLocationLocationRole" });
+		addAnnotation(
+			laborandDeliveryProcessEClass, source,
+			new String[] {
+					"typeCode", "LOC", "constraints.validation.error",
+					"Labor and Delivery ProcessparticipatingLocationTypeCode Labor and Delivery ProcessparticipatingLocationLocationRole" });
 	}
 
 	/**
@@ -6659,11 +7931,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrLaborandDeliveryProcessparticipatingLocationLocationRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocationLocationRole";
-		addAnnotation(laborandDeliveryProcessEClass, source, new String[] {
-				"classCode", "BIRTHPL", "constraints.validation.error",
-				"LocationRoleClassCode LocationRoleCode LocationRoleCodeP", "constraints.validation.warning",
-				"LocationRoleId LocationRolePlayingEntity", "code.codeSystem", "2.16.840.1.113883.6.96",
-				"code.codeSystemName", "SNOMEDCT", "constraints.validation.info", "LocationRoleAddr" });
+		addAnnotation(
+			laborandDeliveryProcessEClass, source,
+			new String[] {
+					"classCode", "BIRTHPL", "constraints.validation.error",
+					"Labor and Delivery ProcessparticipatingLocationLocationRoleClassCode Labor and Delivery ProcessparticipatingLocationLocationRoleCode Labor and Delivery ProcessparticipatingLocationLocationRoleCodeP",
+					"constraints.validation.warning",
+					"Labor and Delivery ProcessparticipatingLocationLocationRoleId Labor and Delivery ProcessparticipatingLocationLocationRolePlayingEntity",
+					"code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName", "SNOMEDCT",
+					"constraints.validation.info", "Labor and Delivery ProcessparticipatingLocationLocationRoleAddr" });
 	}
 
 	/**
@@ -6674,10 +7950,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrLaborandDeliveryProcessparticipatingLocationLocationRoleLocationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrLaborandDeliveryProcessparticipatingLocationLocationRoleLocation";
-		addAnnotation(laborandDeliveryProcessEClass, source, new String[] {
-				"classCode", "PLC", "constraints.validation.error", "LocationClassCode LocationDeterminerCode",
-				"determinerCode", "INSTANCE", "constraints.validation.warning", "LocationName",
-				"constraints.validation.info", "LocationDesc" });
+		addAnnotation(
+			laborandDeliveryProcessEClass, source,
+			new String[] {
+					"classCode", "PLC", "constraints.validation.error",
+					"Labor and Delivery ProcessparticipatingLocationLocationRoleLocationClassCode Labor and Delivery ProcessparticipatingLocationLocationRoleLocationDeterminerCode",
+					"determinerCode", "INSTANCE", "constraints.validation.warning",
+					"Labor and Delivery ProcessparticipatingLocationLocationRoleLocationName",
+					"constraints.validation.info",
+					"Labor and Delivery ProcessparticipatingLocationLocationRoleLocationDesc" });
 	}
 
 	/**
@@ -6688,9 +7969,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrMaternalTransfertransferSourceAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMaternalTransfertransferSource";
-		addAnnotation(maternalTransferEClass, source, new String[] {
-				"typeCode", "ORG", "constraints.validation.error",
-				"transferSourceTypeCode transferSourceParticipantRole" });
+		addAnnotation(
+			maternalTransferEClass, source,
+			new String[] {
+					"typeCode", "ORG", "constraints.validation.error",
+					"Maternal TransfertransferSourceTypeCode Maternal TransfertransferSourceParticipantRole" });
 	}
 
 	/**
@@ -6702,9 +7985,10 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrMaternalTransfertransferSourcetransferRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMaternalTransfertransferSourcetransferRole";
 		addAnnotation(
-			maternalTransferEClass, source, new String[] {
+			maternalTransferEClass, source,
+			new String[] {
 					"classCode", "SDLOC", "constraints.validation.error",
-					"transferRoleClassCode transferRoleScopingEntity" });
+					"Maternal TransfertransferSourcetransferRoleClassCode Maternal TransfertransferSourcetransferRoleScopingEntity" });
 	}
 
 	/**
@@ -6715,9 +7999,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrMaternalTransfertransferSourcetransferRoleFacilityAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMaternalTransfertransferSourcetransferRoleFacility";
-		addAnnotation(maternalTransferEClass, source, new String[] {
-				"classCode", "ORG", "constraints.validation.error",
-				"FacilityClassCode FacilityDeterminerCode FacilityName", "determinerCode", "INSTANCE" });
+		addAnnotation(
+			maternalTransferEClass, source,
+			new String[] {
+					"classCode", "ORG", "constraints.validation.error",
+					"Maternal TransfertransferSourcetransferRoleFacilityClassCode Maternal TransfertransferSourcetransferRoleFacilityDeterminerCode Maternal TransfertransferSourcetransferRoleFacilityName",
+					"determinerCode", "INSTANCE" });
 	}
 
 	/**
@@ -6728,9 +8015,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrPregnancyRiskFactorCesareanAssociationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrPregnancyRiskFactorCesareanAssociation";
-		addAnnotation(pregnancyRiskFactorEClass, source, new String[] {
-				"typeCode", "COMP", "constraints.validation.error",
-				"CesareanAssociationTypeCode CesareanAssociationObservation" });
+		addAnnotation(
+			pregnancyRiskFactorEClass, source,
+			new String[] {
+					"typeCode", "COMP", "constraints.validation.error",
+					"Pregnancy Risk FactorCesareanAssociationTypeCode Pregnancy Risk FactorCesareanAssociationObservation" });
 	}
 
 	/**
@@ -6742,17 +8031,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrPregnancyRiskFactorCesareanAssociationNumberOfCesarianDeliveriesAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrPregnancyRiskFactorCesareanAssociationNumberOfCesarianDeliveries";
 		addAnnotation(
-			pregnancyRiskFactorEClass,
-			source,
+			pregnancyRiskFactorEClass, source,
 			new String[] {
-					"classCode",
-					"OBS",
-					"constraints.validation.error",
-					"NumberOfCesarianDeliveriesClassCode NumberOfCesarianDeliveriesCode NumberOfCesarianDeliveriesCodeP NumberOfCesarianDeliveriesMoodCode NumberOfCesarianDeliveriesValue",
+					"classCode", "OBS", "constraints.validation.error",
+					"Pregnancy Risk FactorCesareanAssociationNumberOfCesarianDeliveriesClassCode Pregnancy Risk FactorCesareanAssociationNumberOfCesarianDeliveriesCode Pregnancy Risk FactorCesareanAssociationNumberOfCesarianDeliveriesCodeP Pregnancy Risk FactorCesareanAssociationNumberOfCesarianDeliveriesMoodCode Pregnancy Risk FactorCesareanAssociationNumberOfCesarianDeliveriesValue",
 					"code.code", "68497-7", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
-					"code.displayName", "Previous cesarean deliveries",
-					"constraints.validation.dependOn.NumberOfCesarianDeliveriesCode",
-					"NumberOfCesarianDeliveriesCodeP", "moodCode", "EVN" });
+					"code.displayName", "Previous cesarean deliveries" });
 	}
 
 	/**
@@ -6764,11 +8048,10 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrMethodofDeliveryFinalRouteandMethodAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFinalRouteandMethod";
 		addAnnotation(
-			methodofDeliveryEClass,
-			source,
+			methodofDeliveryEClass, source,
 			new String[] {
 					"constraints.validation.error",
-					"Final Route and MethodTemplateId Final Route and MethodClassCode Final Route and MethodMoodCode Final Route and MethodCode Final Route and MethodCodeP Final Route and MethodValue Final Route and MethodValueP Final Route and MethodTrialOfLaborAssociationTrialOfLaborClassCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborMoodCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborCodeP Final Route and MethodTrialOfLaborAssociationTrialOfLaborCode Final Route and MethodTrialOfLaborAssociationTrialOfLaborValue Final Route and MethodTrialOfLaborAssociationTypeCode Final Route and MethodTrialOfLaborAssociationTrialOfLabor",
+					"Method of DeliveryFinal Route and MethodTemplateId Method of DeliveryFinal Route and MethodClassCode Method of DeliveryFinal Route and MethodMoodCode Method of DeliveryFinal Route and MethodCode Method of DeliveryFinal Route and MethodCodeP Method of DeliveryFinal Route and MethodValue Method of DeliveryFinal Route and MethodValueP Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLaborClassCode Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLaborMoodCode Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLaborCodeP Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLaborCode Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLaborValue Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTypeCode Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLabor",
 					"templateId.root", "null", "classCode", "OBS", "moodCode", "EVN", "code.code", "73762-7",
 					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
 					"Final route and method of delivery" });
@@ -6782,9 +8065,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrMethodofDeliveryFinalRouteandMethodTrialOfLaborAssociationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFinalRouteandMethodTrialOfLaborAssociation";
-		addAnnotation(methodofDeliveryEClass, source, new String[] {
-				"typeCode", "COMP", "constraints.validation.error",
-				"TrialOfLaborAssociationTypeCode TrialOfLaborAssociationTrialOfLabor" });
+		addAnnotation(
+			methodofDeliveryEClass, source,
+			new String[] {
+					"typeCode", "COMP", "constraints.validation.error",
+					"Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTypeCode Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLabor" });
 	}
 
 	/**
@@ -6795,12 +8080,14 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrMethodofDeliveryFinalRouteandMethodTrialOfLaborAssociationTrialOfLaborAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFinalRouteandMethodTrialOfLaborAssociationTrialOfLabor";
-		addAnnotation(methodofDeliveryEClass, source, new String[] {
-				"classCode", "OBS", "constraints.validation.error",
-				"TrialOfLaborClassCode TrialOfLaborMoodCode TrialOfLaborCode TrialOfLaborCodeP TrialOfLaborValue",
-				"moodCode", "EVN", "code.code", "73760-1", "code.codeSystem", "2.16.840.1.113883.6.1",
-				"code.codeSystemName", "LOINC", "code.displayName", "If cesarean, a trial of labor was attempted",
-				"constraints.validation.dependOn.TrialOfLaborCode", "TrialOfLaborCodeP" });
+		addAnnotation(
+			methodofDeliveryEClass, source,
+			new String[] {
+					"classCode", "OBS", "constraints.validation.error",
+					"Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLaborClassCode Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLaborMoodCode Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLaborCode Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLaborCodeP Method of DeliveryFinal Route and MethodTrialOfLaborAssociationTrialOfLaborValue",
+					"moodCode", "EVN", "code.code", "73760-1", "code.codeSystem", "2.16.840.1.113883.6.1",
+					"code.codeSystemName", "LOINC", "code.displayName",
+					"If cesarean, a trial of labor was attempted" });
 	}
 
 	/**
@@ -6812,11 +8099,10 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrMethodofDeliveryhysterotomyHysterectomyAssociationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryhysterotomyHysterectomyAssociation";
 		addAnnotation(
-			methodofDeliveryEClass,
-			source,
+			methodofDeliveryEClass, source,
 			new String[] {
 					"typeCode", "COMP", "constraints.validation.error",
-					"hysterotomyHysterectomyAssociationTypeCode hysterotomyHysterectomyAssociationHysterotomyHysterectomy" });
+					"Method of DeliveryhysterotomyHysterectomyAssociationTypeCode Method of DeliveryhysterotomyHysterectomyAssociationHysterotomyHysterectomy" });
 	}
 
 	/**
@@ -6828,17 +8114,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrMethodofDeliveryhysterotomyHysterectomyAssociationhysterotomyHysterectomyAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryhysterotomyHysterectomyAssociationhysterotomyHysterectomy";
 		addAnnotation(
-			methodofDeliveryEClass,
-			source,
+			methodofDeliveryEClass, source,
 			new String[] {
-					"classCode",
-					"OBS",
-					"constraints.validation.error",
-					"hysterotomyHysterectomyClassCode hysterotomyHysterectomyCode hysterotomyHysterectomyCodeP hysterotomyHysterectomyMoodCode hysterotomyHysterectomyValue",
+					"classCode", "OBS", "constraints.validation.error",
+					"Method of DeliveryhysterotomyHysterectomyAssociationhysterotomyHysterectomyClassCode Method of DeliveryhysterotomyHysterectomyAssociationhysterotomyHysterectomyCode Method of DeliveryhysterotomyHysterectomyAssociationhysterotomyHysterectomyCodeP Method of DeliveryhysterotomyHysterectomyAssociationhysterotomyHysterectomyMoodCode Method of DeliveryhysterotomyHysterectomyAssociationhysterotomyHysterectomyValue",
 					"code.code", "73759-3", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
-					"code.displayName", "Hysterotomy or hysterectomy was performed at delivery",
-					"constraints.validation.dependOn.hysterotomyHysterectomyCode", "hysterotomyHysterectomyCodeP",
-					"moodCode", "EVN" });
+					"code.displayName", "Hysterotomy or hysterectomy was performed at delivery" });
 	}
 
 	/**
@@ -6850,11 +8131,10 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrMethodofDeliveryFetalPresentationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrMethodofDeliveryFetalPresentation";
 		addAnnotation(
-			methodofDeliveryEClass,
-			source,
+			methodofDeliveryEClass, source,
 			new String[] {
 					"constraints.validation.error",
-					"Fetal PresentationTemplateId Fetal PresentationClassCode Fetal PresentationMoodCode Fetal PresentationCode Fetal PresentationCodeP Fetal PresentationValue Fetal PresentationValueP",
+					"Method of DeliveryFetal PresentationTemplateId Method of DeliveryFetal PresentationClassCode Method of DeliveryFetal PresentationMoodCode Method of DeliveryFetal PresentationCode Method of DeliveryFetal PresentationCodeP Method of DeliveryFetal PresentationValue Method of DeliveryFetal PresentationValueP",
 					"templateId.root", "null", "classCode", "OBS", "moodCode", "EVN", "code.code", "73761-9",
 					"code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC", "code.displayName",
 					"Fetal presentation at birth" });
@@ -6868,9 +8148,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrFetalDeliverySectionFetalDeliverySubjectAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubject";
-		addAnnotation(fetalDeliverySectionEClass, source, new String[] {
-				"typeCode", "SBJ", "constraints.validation.error",
-				"FetalDeliverySubjectTypeCode FetalDeliverySubjectRoleOfFetus" });
+		addAnnotation(
+			fetalDeliverySectionEClass, source,
+			new String[] {
+					"typeCode", "SBJ", "constraints.validation.error",
+					"Fetal Delivery SectionFetalDeliverySubjectTypeCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetus" });
 	}
 
 	/**
@@ -6881,8 +8163,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetusAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetus";
-		addAnnotation(fetalDeliverySectionEClass, source, new String[] {
-				"classCode", "PRS", "constraints.validation.error", "RoleOfFetusClassCode RoleOfFetusFetus" });
+		addAnnotation(
+			fetalDeliverySectionEClass, source,
+			new String[] {
+					"classCode", "PRS", "constraints.validation.error",
+					"Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetus" });
 	}
 
 	/**
@@ -6893,12 +8178,15 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetusAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliverySectionFetalDeliverySubjectRoleOfFetusFetus";
-		addAnnotation(fetalDeliverySectionEClass, source, new String[] {
-				"classCode", "PSN", "constraints.validation.error",
-				"FetusClassCode FetusDeterminerCode FetusAdministrativeGenderCode FetusAdministrativeGenderCodeP",
-				"determinerCode", "INSTANCE", "constraints.validation.info", "FetusName",
-				"administrativeGenderCode.codeSystem", "2.16.840.1.113883.5.1",
-				"administrativeGenderCode.codeSystemName", "AdministrativeGenderCode" });
+		addAnnotation(
+			fetalDeliverySectionEClass, source,
+			new String[] {
+					"classCode", "PSN", "constraints.validation.error",
+					"Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusClassCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusDeterminerCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCode Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusAdministrativeGenderCodeP",
+					"determinerCode", "INSTANCE", "constraints.validation.info",
+					"Fetal Delivery SectionFetalDeliverySubjectRoleOfFetusFetusName",
+					"administrativeGenderCode.codeSystem", "2.16.840.1.113883.5.1",
+					"administrativeGenderCode.codeSystemName", "AdministrativeGenderCode" });
 	}
 
 	/**
@@ -6909,8 +8197,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrAutopsyPerformanceUseAssociationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceUseAssociation";
-		addAnnotation(autopsyPerformanceEClass, source, new String[] {
-				"typeCode", "COMP", "constraints.validation.error", "UseAssociationTypeCode UseAssociationAutopsyUse" });
+		addAnnotation(
+			autopsyPerformanceEClass, source,
+			new String[] {
+					"typeCode", "COMP", "constraints.validation.error",
+					"Autopsy PerformanceUseAssociationTypeCode Autopsy PerformanceUseAssociationAutopsyUse" });
 	}
 
 	/**
@@ -6921,10 +8212,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrAutopsyPerformanceUseAssociationAutopsyUseAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceUseAssociationAutopsyUse";
-		addAnnotation(autopsyPerformanceEClass, source, new String[] {
-				"code.code", "TBD", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
-				"constraints.validation.error", "AutopsyUseCode AutopsyUseCodeP AutopsyUseValue",
-				"constraints.validation.dependOn.AutopsyUseCode", "AutopsyUseCodeP" });
+		addAnnotation(
+			autopsyPerformanceEClass, source,
+			new String[] {
+					"code.code", "LOINC_TBD", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName",
+					"LOINC", "code.displayName", "Autopsy or Histological Results Used", "constraints.validation.error",
+					"Autopsy PerformanceUseAssociationAutopsyUseCode Autopsy PerformanceUseAssociationAutopsyUseCodeP Autopsy PerformanceUseAssociationAutopsyUseValue" });
 	}
 
 	/**
@@ -6935,9 +8228,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrAutopsyPerformanceHistologicalExamAssociationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceHistologicalExamAssociation";
-		addAnnotation(autopsyPerformanceEClass, source, new String[] {
-				"typeCode", "COMP", "constraints.validation.error",
-				"HistologicalExamAssociationTypeCode HistologicalExamAssociationHistologicalPlacentalExam" });
+		addAnnotation(
+			autopsyPerformanceEClass, source,
+			new String[] {
+					"typeCode", "COMP", "constraints.validation.error",
+					"Autopsy PerformanceHistologicalExamAssociationTypeCode Autopsy PerformanceHistologicalExamAssociationHistologicalPlacentalExam" });
 	}
 
 	/**
@@ -6949,21 +8244,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	protected void createVsbrAutopsyPerformanceHistologicalExamAssociationHistologicalPlacentalExamAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrAutopsyPerformanceHistologicalExamAssociationHistologicalPlacentalExam";
 		addAnnotation(
-			autopsyPerformanceEClass,
-			source,
+			autopsyPerformanceEClass, source,
 			new String[] {
-					"code.code",
-					"73767-6",
-					"code.codeSystem",
-					"2.16.840.1.113883.6.1",
-					"code.codeSystemName",
-					"LOINC",
-					"code.displayName",
-					"Histological placental examination was performed",
+					"code.code", "73767-6", "code.codeSystem", "2.16.840.1.113883.6.1", "code.codeSystemName", "LOINC",
+					"code.displayName", "Histological placental examination was performed",
 					"constraints.validation.error",
-					"HistologicalPlacentalExamCode HistologicalPlacentalExamCodeP HistologicalPlacentalExamValue HistologicalPlacentalExamValueP",
-					"constraints.validation.dependOn.HistologicalPlacentalExamCode", "HistologicalPlacentalExamCodeP",
-					"value.codeSystem", "2.16.840.1.113883.6.96", "value.codeSystemName", "SNOMEDCT" });
+					"Autopsy PerformanceHistologicalExamAssociationHistologicalPlacentalExamCode Autopsy PerformanceHistologicalExamAssociationHistologicalPlacentalExamCodeP Autopsy PerformanceHistologicalExamAssociationHistologicalPlacentalExamValue Autopsy PerformanceHistologicalExamAssociationHistologicalPlacentalExamValueP" });
 	}
 
 	/**
@@ -6974,9 +8260,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrFetalDeliveryTimeparticipatingLocationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliveryTimeparticipatingLocation";
-		addAnnotation(fetalDeliveryTimeEClass, source, new String[] {
-				"typeCode", "LOC", "constraints.validation.error",
-				"participatingLocationTypeCode participatingLocationLocationRole" });
+		addAnnotation(
+			fetalDeliveryTimeEClass, source,
+			new String[] {
+					"typeCode", "LOC", "constraints.validation.error",
+					"Fetal Delivery TimeparticipatingLocationTypeCode Fetal Delivery TimeparticipatingLocationLocationRole" });
 	}
 
 	/**
@@ -6987,11 +8275,14 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrFetalDeliveryTimeparticipatingLocationLocationRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliveryTimeparticipatingLocationLocationRole";
-		addAnnotation(fetalDeliveryTimeEClass, source, new String[] {
-				"classCode", "SDLOC", "constraints.validation.error",
-				"LocationRoleClassCode LocationRoleCode LocationRoleCodeP LocationRoleLocation",
-				"constraints.validation.warning", "LocationRoleId", "code.codeSystem", "2.16.840.1.113883.6.96",
-				"code.codeSystemName", "SNOMEDCT", "constraints.validation.info", "LocationRoleAddr" });
+		addAnnotation(
+			fetalDeliveryTimeEClass, source,
+			new String[] {
+					"classCode", "SDLOC", "constraints.validation.error",
+					"Fetal Delivery TimeparticipatingLocationLocationRoleClassCode Fetal Delivery TimeparticipatingLocationLocationRoleCode Fetal Delivery TimeparticipatingLocationLocationRoleCodeP Fetal Delivery TimeparticipatingLocationLocationRoleLocation",
+					"constraints.validation.warning", "Fetal Delivery TimeparticipatingLocationLocationRoleId",
+					"code.codeSystem", "2.16.840.1.113883.6.96", "code.codeSystemName", "SNOMEDCT",
+					"constraints.validation.info", "Fetal Delivery TimeparticipatingLocationLocationRoleAddr" });
 	}
 
 	/**
@@ -7002,10 +8293,14 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrFetalDeliveryTimeparticipatingLocationLocationRoleLocationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrFetalDeliveryTimeparticipatingLocationLocationRoleLocation";
-		addAnnotation(fetalDeliveryTimeEClass, source, new String[] {
-				"classCode", "PLC", "constraints.validation.error", "LocationClassCode LocationDeterminerCode",
-				"determinerCode", "INSTANCE", "constraints.validation.warning", "LocationName",
-				"constraints.validation.info", "LocationDesc" });
+		addAnnotation(
+			fetalDeliveryTimeEClass, source,
+			new String[] {
+					"classCode", "PLC", "constraints.validation.error",
+					"Fetal Delivery TimeparticipatingLocationLocationRoleLocationClassCode Fetal Delivery TimeparticipatingLocationLocationRoleLocationDeterminerCode",
+					"determinerCode", "INSTANCE", "constraints.validation.warning",
+					"Fetal Delivery TimeparticipatingLocationLocationRoleLocationName", "constraints.validation.info",
+					"Fetal Delivery TimeparticipatingLocationLocationRoleLocationDesc" });
 	}
 
 	/**
@@ -7016,8 +8311,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTarget";
-		addAnnotation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"typeCode", "RCT", "constraints.validation.error", "RecordTargetTypeCode RecordTargetPatientRole" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"typeCode", "RCT", "constraints.validation.error",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsRecordTargetTypeCode Reporting Fetal Death Information from a clinical setting to vital recordsRecordTargetPatientRole" });
 	}
 
 	/**
@@ -7028,10 +8326,13 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRoleAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRole";
-		addAnnotation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"classCode", "PAT", "constraints.validation.error",
-				"PatientRoleClassCode PatientRoleId PatientRolePatient", "constraints.validation.warning",
-				"PatientRoleAddr" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"classCode", "PAT", "constraints.validation.error",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsRecordTargetPatientRoleClassCode Reporting Fetal Death Information from a clinical setting to vital recordsRecordTargetPatientRoleId Reporting Fetal Death Information from a clinical setting to vital recordsRecordTargetPatientRolePatient",
+					"constraints.validation.warning",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsRecordTargetPatientRoleAddr" });
 	}
 
 	/**
@@ -7042,9 +8343,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatientAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsRecordTargetPatientRolePatient";
-		addAnnotation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"classCode", "PSN", "constraints.validation.error",
-				"PatientClassCode PatientDeterminerCode PatientName", "determinerCode", "INSTANCE" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"classCode", "PSN", "constraints.validation.error",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsRecordTargetPatientRolePatientClassCode Reporting Fetal Death Information from a clinical setting to vital recordsRecordTargetPatientRolePatientDeterminerCode Reporting Fetal Death Information from a clinical setting to vital recordsRecordTargetPatientRolePatientName",
+					"determinerCode", "INSTANCE" });
 	}
 
 	/**
@@ -7055,8 +8359,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthor";
-		addAnnotation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"typeCode", "AUT", "constraints.validation.error", "AuthorTypeCode AuthorAssignedAuthor" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"typeCode", "AUT", "constraints.validation.error",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsAuthorTypeCode Reporting Fetal Death Information from a clinical setting to vital recordsAuthorAssignedAuthor" });
 	}
 
 	/**
@@ -7067,8 +8374,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthorAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsAuthorAssignedAuthor";
-		addAnnotation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"classCode", "ASSIGNED", "constraints.validation.error", "AssignedAuthorClassCode AssignedAuthorId" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"classCode", "ASSIGNED", "constraints.validation.error",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsAuthorAssignedAuthorClassCode Reporting Fetal Death Information from a clinical setting to vital recordsAuthorAssignedAuthorId" });
 	}
 
 	/**
@@ -7079,8 +8389,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodian";
-		addAnnotation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"typeCode", "CST", "constraints.validation.error", "CustodianTypeCode CustodianAssignedCustodian" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"typeCode", "CST", "constraints.validation.error",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsCustodianTypeCode Reporting Fetal Death Information from a clinical setting to vital recordsCustodianAssignedCustodian" });
 	}
 
 	/**
@@ -7091,9 +8404,11 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodian";
-		addAnnotation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"classCode", "ASSIGNED", "constraints.validation.error",
-				"AssignedCustodianClassCode AssignedCustodianRepresentedCustodianOrganization" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"classCode", "ASSIGNED", "constraints.validation.error",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsCustodianAssignedCustodianClassCode Reporting Fetal Death Information from a clinical setting to vital recordsCustodianAssignedCustodianRepresentedCustodianOrganization" });
 	}
 
 	/**
@@ -7104,10 +8419,12 @@ public class VsbrPackageImpl extends EPackageImpl implements VsbrPackage {
 	 */
 	protected void createVsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganizationAnnotations() {
 		String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsbrReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsCustodianAssignedCustodianCustodianOrganization";
-		addAnnotation(reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source, new String[] {
-				"classCode", "ORG", "constraints.validation.error",
-				"CustodianOrganizationClassCode CustodianOrganizationDeterminerCode CustodianOrganizationId",
-				"determinerCode", "INSTANCE" });
+		addAnnotation(
+			reportingFetalDeathInformationfromaclinicalsettingtovitalrecordsEClass, source,
+			new String[] {
+					"classCode", "ORG", "constraints.validation.error",
+					"Reporting Fetal Death Information from a clinical setting to vital recordsCustodianAssignedCustodianCustodianOrganizationClassCode Reporting Fetal Death Information from a clinical setting to vital recordsCustodianAssignedCustodianCustodianOrganizationDeterminerCode Reporting Fetal Death Information from a clinical setting to vital recordsCustodianAssignedCustodianCustodianOrganizationId",
+					"determinerCode", "INSTANCE" });
 	}
 
 } // VsbrPackageImpl

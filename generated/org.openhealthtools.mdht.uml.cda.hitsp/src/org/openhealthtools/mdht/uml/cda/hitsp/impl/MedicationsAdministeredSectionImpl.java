@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.MedicationsAdministeredSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.operations.MedicationsAdministeredSectionOperations;
@@ -25,14 +23,12 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.MedicationsAdministered
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medications Administered Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MedicationsAdministeredSectionImpl extends
-		org.openhealthtools.mdht.uml.cda.ihe.impl.MedicationsAdministeredSectionImpl implements
-		MedicationsAdministeredSection {
+public class MedicationsAdministeredSectionImpl
+		extends org.openhealthtools.mdht.uml.cda.ihe.impl.MedicationsAdministeredSectionImpl
+		implements MedicationsAdministeredSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,7 +66,7 @@ public class MedicationsAdministeredSectionImpl extends
 	 */
 	@Override
 	public MedicationsAdministeredSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -79,8 +75,9 @@ public class MedicationsAdministeredSectionImpl extends
 	 * @generated
 	 */
 	@Override
-	public MedicationsAdministeredSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public MedicationsAdministeredSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // MedicationsAdministeredSectionImpl

@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.VitalSignsOrganizerOperations;
@@ -63,66 +63,69 @@ public class VitalSignsOrganizerTest extends  CDAValidationTest {
  
 									
 public void testValidateVitalSignsOrganizerTemplateId() {
-      OperationsTestCase<VitalSignsOrganizer> validateVitalSignsOrganizerTemplateIdTestCase = new OperationsTestCase<VitalSignsOrganizer>(
-      "validateVitalSignsOrganizerTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<VitalSignsOrganizer> validateVitalSignsOrganizerTemplateIdTestCase = new OperationsTestCase<VitalSignsOrganizer>(
+			"validateVitalSignsOrganizerTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_VITAL_SIGNS_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(VitalSignsOrganizer target) {
+			@Override
+			protected void updateToFail(VitalSignsOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(VitalSignsOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(VitalSignsOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return VitalSignsOrganizerOperations.validateVitalSignsOrganizerTemplateId(
-          (VitalSignsOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return VitalSignsOrganizerOperations.validateVitalSignsOrganizerTemplateId(
+					(VitalSignsOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateVitalSignsOrganizerTemplateIdTestCase.doValidationTest();
+		validateVitalSignsOrganizerTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -151,6 +154,7 @@ public void testValidateVitalSignsOrganizerTemplateId() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<VitalSignsOrganizer> {
+		@Override
 		public VitalSignsOrganizer create() {		
 			return PhmrFactory.eINSTANCE.createVitalSignsOrganizer();
 		}
@@ -182,9 +186,9 @@ public void testValidateVitalSignsOrganizerTemplateId() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -194,8 +198,8 @@ public void testValidateVitalSignsOrganizerTemplateId() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

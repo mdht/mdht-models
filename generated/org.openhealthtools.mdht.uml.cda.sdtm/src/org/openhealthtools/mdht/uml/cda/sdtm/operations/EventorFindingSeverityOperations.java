@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.EventorFindingSeverity;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -40,7 +34,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class EventorFindingSeverityOperations extends ClinicalStatementOperations {
+public class EventorFindingSeverityOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +71,7 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EVENTOR_FINDING_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EVENTOR_FINDING_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +86,35 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateEventorFindingSeverityTemplateId(EventorFindingSeverity eventorFindingSeverity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EVENTOR_FINDING_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EVENTOR_FINDING_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EVENTOR_FINDING_SEVERITY);
 			try {
-				VALIDATE_EVENTOR_FINDING_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EVENTOR_FINDING_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventorFindingSeverity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(eventorFindingSeverity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EVENTOR_FINDING_SEVERITY__EVENTOR_FINDING_SEVERITY_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityEventorFindingSeverityTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
 						 new Object [] { eventorFindingSeverity }));
 			}
 			 
@@ -130,7 +142,7 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EVENTOR_FINDING_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EVENTOR_FINDING_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +157,35 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateEventorFindingSeverityClassCode(EventorFindingSeverity eventorFindingSeverity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EVENTOR_FINDING_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EVENTOR_FINDING_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EVENTOR_FINDING_SEVERITY);
 			try {
-				VALIDATE_EVENTOR_FINDING_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EVENTOR_FINDING_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventorFindingSeverity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(eventorFindingSeverity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EVENTOR_FINDING_SEVERITY__EVENTOR_FINDING_SEVERITY_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityEventorFindingSeverityClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
 						 new Object [] { eventorFindingSeverity }));
 			}
 			 
@@ -191,7 +213,7 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EVENTOR_FINDING_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EVENTOR_FINDING_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +228,35 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateEventorFindingSeverityMoodCode(EventorFindingSeverity eventorFindingSeverity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EVENTOR_FINDING_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EVENTOR_FINDING_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EVENTOR_FINDING_SEVERITY);
 			try {
-				VALIDATE_EVENTOR_FINDING_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EVENTOR_FINDING_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventorFindingSeverity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(eventorFindingSeverity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EVENTOR_FINDING_SEVERITY__EVENTOR_FINDING_SEVERITY_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityEventorFindingSeverityMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
 						 new Object [] { eventorFindingSeverity }));
 			}
 			 
@@ -252,7 +284,7 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EVENTOR_FINDING_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EVENTOR_FINDING_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +299,35 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateEventorFindingSeverityCodeP(EventorFindingSeverity eventorFindingSeverity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EVENTOR_FINDING_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EVENTOR_FINDING_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EVENTOR_FINDING_SEVERITY);
 			try {
-				VALIDATE_EVENTOR_FINDING_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EVENTOR_FINDING_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventorFindingSeverity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(eventorFindingSeverity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EVENTOR_FINDING_SEVERITY__EVENTOR_FINDING_SEVERITY_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityEventorFindingSeverityCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
 						 new Object [] { eventorFindingSeverity }));
 			}
 			 
@@ -315,7 +357,7 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EVENTOR_FINDING_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EVENTOR_FINDING_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +372,35 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateEventorFindingSeverityCode(EventorFindingSeverity eventorFindingSeverity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EVENTOR_FINDING_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EVENTOR_FINDING_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EVENTOR_FINDING_SEVERITY);
 			try {
-				VALIDATE_EVENTOR_FINDING_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EVENTOR_FINDING_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventorFindingSeverity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(eventorFindingSeverity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EVENTOR_FINDING_SEVERITY__EVENTOR_FINDING_SEVERITY_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityEventorFindingSeverityCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
 						 new Object [] { eventorFindingSeverity }));
 			}
 			 
@@ -378,7 +430,7 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -393,25 +445,35 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateEventorFindingSeverityValue(EventorFindingSeverity eventorFindingSeverity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EVENTOR_FINDING_SEVERITY);
 			try {
-				VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventorFindingSeverity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(eventorFindingSeverity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EVENTOR_FINDING_SEVERITY__EVENTOR_FINDING_SEVERITY_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityEventorFindingSeverityValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
 						 new Object [] { eventorFindingSeverity }));
 			}
 			 
@@ -439,7 +501,7 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -454,25 +516,35 @@ public class EventorFindingSeverityOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateEventorFindingSeverityValueP(EventorFindingSeverity eventorFindingSeverity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EVENTOR_FINDING_SEVERITY);
 			try {
-				VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(eventorFindingSeverity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EVENTOR_FINDING_SEVERITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(eventorFindingSeverity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EVENTOR_FINDING_SEVERITY__EVENTOR_FINDING_SEVERITY_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "EventorFindingSeverityEventorFindingSeverityValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(eventorFindingSeverity, context) }),
 						 new Object [] { eventorFindingSeverity }));
 			}
 			 

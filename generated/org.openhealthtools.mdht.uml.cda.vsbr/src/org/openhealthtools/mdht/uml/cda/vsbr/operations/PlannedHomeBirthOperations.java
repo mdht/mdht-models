@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.PlannedHomeBirth;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -39,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
+public class PlannedHomeBirthOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +73,7 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PLANNED_HOME_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_HOME_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -84,28 +89,32 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedHomeBirthTemplateId(PlannedHomeBirth plannedHomeBirth,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PLANNED_HOME_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PLANNED_HOME_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PLANNED_HOME_BIRTH);
 			try {
-				VALIDATE_PLANNED_HOME_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_HOME_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_HOME_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedHomeBirth)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_HOME_BIRTH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedHomeBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PlannedHomeBirthTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(plannedHomeBirth, context) }),
-					new Object[] { plannedHomeBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PlannedHomeBirthPlannedHomeBirthTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										plannedHomeBirth, context) }),
+						new Object[] { plannedHomeBirth }));
 			}
 
 			return false;
@@ -132,7 +141,7 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PLANNED_HOME_BIRTH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_HOME_BIRTH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,28 +157,32 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedHomeBirthClassCode(PlannedHomeBirth plannedHomeBirth,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PLANNED_HOME_BIRTH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PLANNED_HOME_BIRTH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PLANNED_HOME_BIRTH);
 			try {
-				VALIDATE_PLANNED_HOME_BIRTH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_HOME_BIRTH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_HOME_BIRTH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedHomeBirth)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_HOME_BIRTH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedHomeBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PlannedHomeBirthClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(plannedHomeBirth, context) }),
-					new Object[] { plannedHomeBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PlannedHomeBirthPlannedHomeBirthClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										plannedHomeBirth, context) }),
+						new Object[] { plannedHomeBirth }));
 			}
 
 			return false;
@@ -196,7 +209,7 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PLANNED_HOME_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_HOME_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -212,28 +225,32 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedHomeBirthMoodCode(PlannedHomeBirth plannedHomeBirth,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PLANNED_HOME_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PLANNED_HOME_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PLANNED_HOME_BIRTH);
 			try {
-				VALIDATE_PLANNED_HOME_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_HOME_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_HOME_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			plannedHomeBirth)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PLANNED_HOME_BIRTH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(plannedHomeBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PlannedHomeBirthMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(plannedHomeBirth, context) }),
-					new Object[] { plannedHomeBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PlannedHomeBirthPlannedHomeBirthMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										plannedHomeBirth, context) }),
+						new Object[] { plannedHomeBirth }));
 			}
 
 			return false;
@@ -260,7 +277,7 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PLANNED_HOME_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_HOME_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -276,28 +293,32 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedHomeBirthCodeP(PlannedHomeBirth plannedHomeBirth, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PLANNED_HOME_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PLANNED_HOME_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PLANNED_HOME_BIRTH);
 			try {
-				VALIDATE_PLANNED_HOME_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_HOME_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_HOME_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_HOME_BIRTH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			plannedHomeBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PlannedHomeBirthCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(plannedHomeBirth, context) }),
-					new Object[] { plannedHomeBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PlannedHomeBirthPlannedHomeBirthCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										plannedHomeBirth, context) }),
+						new Object[] { plannedHomeBirth }));
 			}
 
 			return false;
@@ -313,9 +334,9 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73765-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73765-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePlannedHomeBirthCode(PlannedHomeBirth, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Planned Home Birth Code</em>}' invariant operation.
@@ -326,7 +347,7 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -342,28 +363,32 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedHomeBirthCode(PlannedHomeBirth plannedHomeBirth, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PLANNED_HOME_BIRTH);
 			try {
-				VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_HOME_BIRTH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			plannedHomeBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PlannedHomeBirthCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(plannedHomeBirth, context) }),
-					new Object[] { plannedHomeBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PlannedHomeBirthPlannedHomeBirthCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										plannedHomeBirth, context) }),
+						new Object[] { plannedHomeBirth }));
 			}
 
 			return false;
@@ -390,7 +415,7 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PLANNED_HOME_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PLANNED_HOME_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -406,28 +431,32 @@ public class PlannedHomeBirthOperations extends ClinicalStatementOperations {
 	public static boolean validatePlannedHomeBirthValue(PlannedHomeBirth plannedHomeBirth, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PLANNED_HOME_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PLANNED_HOME_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PLANNED_HOME_BIRTH);
 			try {
-				VALIDATE_PLANNED_HOME_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PLANNED_HOME_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PLANNED_HOME_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PLANNED_HOME_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PLANNED_HOME_BIRTH_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			plannedHomeBirth)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PlannedHomeBirthValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(plannedHomeBirth, context) }),
-					new Object[] { plannedHomeBirth }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PlannedHomeBirthPlannedHomeBirthValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										plannedHomeBirth, context) }),
+						new Object[] { plannedHomeBirth }));
 			}
 
 			return false;

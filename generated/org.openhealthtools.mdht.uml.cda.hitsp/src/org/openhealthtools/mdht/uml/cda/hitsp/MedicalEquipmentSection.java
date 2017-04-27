@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.MedicalDevicesSection;
 
 /**
@@ -26,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.MedicalDevicesSection;
  * <!-- begin-model-doc -->
  * <p>
  *     The Medical Equipment section contains information describing a patient's implanted and external medical
- *     devices and equipment that their health status depends on, as well as any pertinent equipment or device history. 
+ *     devices and equipment that their health status depends on, as well as any pertinent equipment or device history.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -60,5 +58,6 @@ public interface MedicalEquipmentSection extends MedicalDevicesSection {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public MedicalEquipmentSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public MedicalEquipmentSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // MedicalEquipmentSection

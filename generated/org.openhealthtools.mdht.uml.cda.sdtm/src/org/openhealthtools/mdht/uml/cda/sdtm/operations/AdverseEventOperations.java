@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.AdverseEvent;
 import org.openhealthtools.mdht.uml.cda.sdtm.BodySystemorOrganClass;
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
@@ -48,7 +41,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudyTreatmentCausality;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.Toxicity;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -123,7 +115,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class AdverseEventOperations extends ClinicalStatementOperations {
+public class AdverseEventOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -152,7 +152,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -167,25 +167,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventTemplateId(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -213,7 +223,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -228,25 +238,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventClassCode(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -274,7 +294,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -289,25 +309,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventMoodCode(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -335,7 +365,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -350,25 +380,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventId(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -396,7 +436,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -411,25 +451,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventCodeP(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -459,7 +509,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -474,25 +524,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventCode(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -520,7 +580,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -535,25 +595,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventEffectiveTime(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -583,7 +653,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -598,25 +668,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventValue(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -644,7 +724,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -659,25 +739,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventValueP(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -705,7 +795,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -720,25 +810,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventTargetSiteCodeP(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_TARGET_SITE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventTargetSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventTargetSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -768,7 +868,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -783,25 +883,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventTargetSiteCode(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_TARGET_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_TARGET_SITE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventTargetSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -829,7 +939,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -844,25 +954,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventGroupIdentifier(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -890,7 +1010,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -905,25 +1025,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventBodySystemorOrganClass(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_BODY_SYSTEMOR_ORGAN_CLASS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventBodySystemorOrganClass", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventBodySystemorOrganClass", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -951,7 +1081,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -966,25 +1096,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventEventSeverity(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_EVENT_SEVERITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_EVENT_SEVERITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventEventSeverity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventEventSeverity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1012,7 +1152,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1027,25 +1167,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventPreSpecifiedEvent(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_PRE_SPECIFIED_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_PRE_SPECIFIED_EVENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventPreSpecifiedEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventPreSpecifiedEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1073,7 +1223,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1088,25 +1238,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventStudyDayPeriod(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_STUDY_DAY_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1134,7 +1294,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1149,25 +1309,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventDomainAssignment(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1195,7 +1365,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1210,25 +1380,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventComment(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1256,7 +1436,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1271,25 +1451,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventRelatedRecord(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1317,7 +1507,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1332,25 +1522,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventSupplementalValue(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1378,7 +1578,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1393,25 +1593,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventStartRelativetoReferencePeriod(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_START_RELATIVETO_REFERENCE_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventStartRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventStartRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1439,7 +1649,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1454,25 +1664,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventStopRelativetoReferencePeriod(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_STOP_RELATIVETO_REFERENCE_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventStopRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventStopRelativetoReferencePeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1500,7 +1720,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_SERIOUS_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_SERIOUS_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1515,25 +1735,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventSeriousEvent(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_SERIOUS_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_SERIOUS_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_SERIOUS_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_SERIOUS_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_SERIOUS_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_SERIOUS_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_SERIOUS_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_SERIOUS_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_SERIOUS_EVENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventSeriousEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventSeriousEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1561,7 +1791,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1576,25 +1806,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventStudyTreatmentActionTaken(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_STUDY_TREATMENT_ACTION_TAKEN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventStudyTreatmentActionTaken", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventStudyTreatmentActionTaken", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1622,7 +1862,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1637,25 +1877,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventOtherTreatmentActionTaken(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_OTHER_TREATMENT_ACTION_TAKEN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventOtherTreatmentActionTaken", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventOtherTreatmentActionTaken", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1683,7 +1933,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1698,25 +1948,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventStudyTreatmentCausality(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_STUDY_TREATMENT_CAUSALITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventStudyTreatmentCausality", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventStudyTreatmentCausality", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1744,7 +2004,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1759,25 +2019,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventNonStudyTreatmentRelationship(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_NON_STUDY_TREATMENT_RELATIONSHIP,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventNonStudyTreatmentRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventNonStudyTreatmentRelationship", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1805,7 +2075,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_EVENT_PATTERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_EVENT_PATTERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1820,25 +2090,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventEventPattern(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_EVENT_PATTERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_EVENT_PATTERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_EVENT_PATTERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_EVENT_PATTERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_EVENT_PATTERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_EVENT_PATTERN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_EVENT_PATTERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_EVENT_PATTERN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_EVENT_PATTERN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventEventPattern", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventEventPattern", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1866,7 +2146,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_EVENT_OUTCOME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_EVENT_OUTCOME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1881,25 +2161,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventEventOutcome(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_EVENT_OUTCOME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_EVENT_OUTCOME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_EVENT_OUTCOME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_EVENT_OUTCOME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_EVENT_OUTCOME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_EVENT_OUTCOME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_EVENT_OUTCOME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_EVENT_OUTCOME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_EVENT_OUTCOME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventEventOutcome", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventEventOutcome", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1927,7 +2217,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_CONCOMITANT_TREATMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_CONCOMITANT_TREATMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1942,25 +2232,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventConcomitantTreatment(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_CONCOMITANT_TREATMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_CONCOMITANT_TREATMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_CONCOMITANT_TREATMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_CONCOMITANT_TREATMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_CONCOMITANT_TREATMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_CONCOMITANT_TREATMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_CONCOMITANT_TREATMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_CONCOMITANT_TREATMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_CONCOMITANT_TREATMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventConcomitantTreatment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventConcomitantTreatment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -1988,7 +2288,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2003,25 +2303,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventToxicity(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_TOXICITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_TOXICITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventToxicity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventToxicity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -2049,7 +2359,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2064,25 +2374,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventCategory(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -2110,7 +2430,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2125,25 +2445,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventSubCategory(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -2171,7 +2501,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2186,25 +2516,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventFindingAbout(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -2232,7 +2572,7 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ADVERSE_EVENT_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ADVERSE_EVENT_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2247,25 +2587,35 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAdverseEventEventDuration(AdverseEvent adverseEvent, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ADVERSE_EVENT_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ADVERSE_EVENT_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ADVERSE_EVENT);
 			try {
-				VALIDATE_ADVERSE_EVENT_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ADVERSE_EVENT_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ADVERSE_EVENT_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ADVERSE_EVENT_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ADVERSE_EVENT_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(adverseEvent)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ADVERSE_EVENT_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(adverseEvent)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ADVERSE_EVENT__ADVERSE_EVENT_EVENT_DURATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventEventDuration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AdverseEventAdverseEventEventDuration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(adverseEvent, context) }),
 						 new Object [] { adverseEvent }));
 			}
 			 
@@ -2301,8 +2651,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(86));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -2310,8 +2665,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(adverseEvent);
 	}
 
@@ -2342,8 +2698,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  BodySystemorOrganClass getBodySystemorOrganClass(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(87));
 			try {
 				GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY = helper.createQuery(GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_EXP);
@@ -2351,8 +2712,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_BODY_SYSTEMOR_ORGAN_CLASS__EOCL_QRY);
 		return (BodySystemorOrganClass) query.evaluate(adverseEvent);
 	}
 
@@ -2383,8 +2745,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EventorFindingSeverity getEventSeverity(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_EVENT_SEVERITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(88));
 			try {
 				GET_EVENT_SEVERITY__EOCL_QRY = helper.createQuery(GET_EVENT_SEVERITY__EOCL_EXP);
@@ -2392,8 +2759,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_SEVERITY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_SEVERITY__EOCL_QRY);
 		return (EventorFindingSeverity) query.evaluate(adverseEvent);
 	}
 
@@ -2424,8 +2792,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  PreSpecifiedEvent getPreSpecifiedEvent(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_PRE_SPECIFIED_EVENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(89));
 			try {
 				GET_PRE_SPECIFIED_EVENT__EOCL_QRY = helper.createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_EXP);
@@ -2433,8 +2806,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PRE_SPECIFIED_EVENT__EOCL_QRY);
 		return (PreSpecifiedEvent) query.evaluate(adverseEvent);
 	}
 
@@ -2465,8 +2839,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StudyDayPeriod getStudyDayPeriod(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(90));
 			try {
 				GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);
@@ -2474,8 +2853,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
 		return (StudyDayPeriod) query.evaluate(adverseEvent);
 	}
 
@@ -2506,8 +2886,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(91));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -2515,8 +2900,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(adverseEvent);
 	}
 
@@ -2547,8 +2933,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<Comment> getComments(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(92));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -2556,8 +2947,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(adverseEvent);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -2590,8 +2982,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(93));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -2599,8 +2996,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(adverseEvent);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -2633,8 +3031,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(94));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -2642,8 +3045,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(adverseEvent);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -2676,8 +3080,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StartRelativetoReferencePeriod getStartRelativetoReferencePeriod(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(95));
 			try {
 				GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY = helper.createQuery(GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_EXP);
@@ -2685,8 +3094,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_START_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
 		return (StartRelativetoReferencePeriod) query.evaluate(adverseEvent);
 	}
 
@@ -2717,8 +3127,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StopRelativetoReferencePeriod getStopRelativetoReferencePeriod(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(96));
 			try {
 				GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY = helper.createQuery(GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_EXP);
@@ -2726,8 +3141,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STOP_RELATIVETO_REFERENCE_PERIOD__EOCL_QRY);
 		return (StopRelativetoReferencePeriod) query.evaluate(adverseEvent);
 	}
 
@@ -2758,8 +3174,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SeriousEvent getSeriousEvent(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_SERIOUS_EVENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(97));
 			try {
 				GET_SERIOUS_EVENT__EOCL_QRY = helper.createQuery(GET_SERIOUS_EVENT__EOCL_EXP);
@@ -2767,8 +3188,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SERIOUS_EVENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SERIOUS_EVENT__EOCL_QRY);
 		return (SeriousEvent) query.evaluate(adverseEvent);
 	}
 
@@ -2799,8 +3221,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StudyTreatmentActionTaken getStudyTreatmentActionTaken(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_STUDY_TREATMENT_ACTION_TAKEN__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(98));
 			try {
 				GET_STUDY_TREATMENT_ACTION_TAKEN__EOCL_QRY = helper.createQuery(GET_STUDY_TREATMENT_ACTION_TAKEN__EOCL_EXP);
@@ -2808,8 +3235,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_TREATMENT_ACTION_TAKEN__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_TREATMENT_ACTION_TAKEN__EOCL_QRY);
 		return (StudyTreatmentActionTaken) query.evaluate(adverseEvent);
 	}
 
@@ -2840,8 +3268,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  OtherTreatmentActionTaken getOtherTreatmentActionTaken(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_OTHER_TREATMENT_ACTION_TAKEN__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(99));
 			try {
 				GET_OTHER_TREATMENT_ACTION_TAKEN__EOCL_QRY = helper.createQuery(GET_OTHER_TREATMENT_ACTION_TAKEN__EOCL_EXP);
@@ -2849,8 +3282,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_OTHER_TREATMENT_ACTION_TAKEN__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_OTHER_TREATMENT_ACTION_TAKEN__EOCL_QRY);
 		return (OtherTreatmentActionTaken) query.evaluate(adverseEvent);
 	}
 
@@ -2881,8 +3315,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StudyTreatmentCausality getStudyTreatmentCausality(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_STUDY_TREATMENT_CAUSALITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(100));
 			try {
 				GET_STUDY_TREATMENT_CAUSALITY__EOCL_QRY = helper.createQuery(GET_STUDY_TREATMENT_CAUSALITY__EOCL_EXP);
@@ -2890,8 +3329,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_TREATMENT_CAUSALITY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_TREATMENT_CAUSALITY__EOCL_QRY);
 		return (StudyTreatmentCausality) query.evaluate(adverseEvent);
 	}
 
@@ -2922,8 +3362,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  NonStudyTreatmentRelationship getNonStudyTreatmentRelationship(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_NON_STUDY_TREATMENT_RELATIONSHIP__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(101));
 			try {
 				GET_NON_STUDY_TREATMENT_RELATIONSHIP__EOCL_QRY = helper.createQuery(GET_NON_STUDY_TREATMENT_RELATIONSHIP__EOCL_EXP);
@@ -2931,8 +3376,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_STUDY_TREATMENT_RELATIONSHIP__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_STUDY_TREATMENT_RELATIONSHIP__EOCL_QRY);
 		return (NonStudyTreatmentRelationship) query.evaluate(adverseEvent);
 	}
 
@@ -2963,8 +3409,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EventPattern getEventPattern(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_EVENT_PATTERN__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(102));
 			try {
 				GET_EVENT_PATTERN__EOCL_QRY = helper.createQuery(GET_EVENT_PATTERN__EOCL_EXP);
@@ -2972,8 +3423,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_PATTERN__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_PATTERN__EOCL_QRY);
 		return (EventPattern) query.evaluate(adverseEvent);
 	}
 
@@ -3004,8 +3456,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EventOutcome getEventOutcome(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_EVENT_OUTCOME__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(103));
 			try {
 				GET_EVENT_OUTCOME__EOCL_QRY = helper.createQuery(GET_EVENT_OUTCOME__EOCL_EXP);
@@ -3013,8 +3470,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_OUTCOME__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_OUTCOME__EOCL_QRY);
 		return (EventOutcome) query.evaluate(adverseEvent);
 	}
 
@@ -3045,8 +3503,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  ConcomitantTreatment getConcomitantTreatment(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_CONCOMITANT_TREATMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(104));
 			try {
 				GET_CONCOMITANT_TREATMENT__EOCL_QRY = helper.createQuery(GET_CONCOMITANT_TREATMENT__EOCL_EXP);
@@ -3054,8 +3517,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CONCOMITANT_TREATMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CONCOMITANT_TREATMENT__EOCL_QRY);
 		return (ConcomitantTreatment) query.evaluate(adverseEvent);
 	}
 
@@ -3086,8 +3550,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Toxicity getToxicity(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_TOXICITY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(105));
 			try {
 				GET_TOXICITY__EOCL_QRY = helper.createQuery(GET_TOXICITY__EOCL_EXP);
@@ -3095,8 +3564,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TOXICITY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TOXICITY__EOCL_QRY);
 		return (Toxicity) query.evaluate(adverseEvent);
 	}
 
@@ -3127,8 +3597,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Category getCategory(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(106));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -3136,8 +3611,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(adverseEvent);
 	}
 
@@ -3168,8 +3644,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SubCategory getSubCategory(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(107));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -3177,8 +3658,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(adverseEvent);
 	}
 
@@ -3209,8 +3691,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  FindingAbout getFindingAbout(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_FINDING_ABOUT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(108));
 			try {
 				GET_FINDING_ABOUT__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUT__EOCL_EXP);
@@ -3218,8 +3705,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUT__EOCL_QRY);
 		return (FindingAbout) query.evaluate(adverseEvent);
 	}
 
@@ -3250,8 +3738,13 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EventDuration getEventDuration(AdverseEvent adverseEvent) {
+	
+	
+	
 		if (GET_EVENT_DURATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ADVERSE_EVENT, SdtmPackage.Literals.ADVERSE_EVENT.getEAllOperations().get(109));
 			try {
 				GET_EVENT_DURATION__EOCL_QRY = helper.createQuery(GET_EVENT_DURATION__EOCL_EXP);
@@ -3259,8 +3752,9 @@ public class AdverseEventOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_DURATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_DURATION__EOCL_QRY);
 		return (EventDuration) query.evaluate(adverseEvent);
 	}
 

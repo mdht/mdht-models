@@ -50,6 +50,7 @@ public class RefrainPolicySecurityObservationImpl extends SecurityObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateRefrainPolicySecurityObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return RefrainPolicySecurityObservationOperations.validateRefrainPolicySecurityObservationCodeP(this, diagnostics, context);
 	}
@@ -59,6 +60,7 @@ public class RefrainPolicySecurityObservationImpl extends SecurityObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateRefrainPolicySecurityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return RefrainPolicySecurityObservationOperations.validateRefrainPolicySecurityObservationCode(this, diagnostics, context);
 	}
@@ -68,6 +70,7 @@ public class RefrainPolicySecurityObservationImpl extends SecurityObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateRefrainPolicySecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return RefrainPolicySecurityObservationOperations.validateRefrainPolicySecurityObservationValueP(this, diagnostics, context);
 	}
@@ -77,6 +80,7 @@ public class RefrainPolicySecurityObservationImpl extends SecurityObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateRefrainPolicySecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return RefrainPolicySecurityObservationOperations.validateRefrainPolicySecurityObservationValue(this, diagnostics, context);
 	}
@@ -96,6 +100,7 @@ public class RefrainPolicySecurityObservationImpl extends SecurityObservationImp
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RefrainPolicySecurityObservation init() {
 	    return Initializer.Util.init(this);
 	}
@@ -104,7 +109,8 @@ public class RefrainPolicySecurityObservationImpl extends SecurityObservationImp
      * <!-- end-user-doc -->
      * @generated
      */
-    public RefrainPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public RefrainPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

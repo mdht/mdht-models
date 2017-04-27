@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.MaternalMorbidity;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.MaternalMorbidityOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -47,6 +50,7 @@ public class MaternalMorbidityTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalMorbidityTemplateId() {
 		OperationsTestCase<MaternalMorbidity> validateMaternalMorbidityTemplateIdTestCase = new OperationsTestCase<MaternalMorbidity>(
 			"validateMaternalMorbidityTemplateId",
@@ -81,6 +85,7 @@ public class MaternalMorbidityTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalMorbidityClassCode() {
 		OperationsTestCase<MaternalMorbidity> validateMaternalMorbidityClassCodeTestCase = new OperationsTestCase<MaternalMorbidity>(
 			"validateMaternalMorbidityClassCode",
@@ -115,6 +120,7 @@ public class MaternalMorbidityTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalMorbidityMoodCode() {
 		OperationsTestCase<MaternalMorbidity> validateMaternalMorbidityMoodCodeTestCase = new OperationsTestCase<MaternalMorbidity>(
 			"validateMaternalMorbidityMoodCode",
@@ -149,6 +155,7 @@ public class MaternalMorbidityTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalMorbidityCodeP() {
 		OperationsTestCase<MaternalMorbidity> validateMaternalMorbidityCodePTestCase = new OperationsTestCase<MaternalMorbidity>(
 			"validateMaternalMorbidityCodeP",
@@ -183,6 +190,7 @@ public class MaternalMorbidityTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalMorbidityCode() {
 		OperationsTestCase<MaternalMorbidity> validateMaternalMorbidityCodeTestCase = new OperationsTestCase<MaternalMorbidity>(
 			"validateMaternalMorbidityCode",
@@ -217,6 +225,7 @@ public class MaternalMorbidityTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalMorbidityCodeVS() {
 		OperationsTestCase<MaternalMorbidity> validateMaternalMorbidityCodeVSTestCase = new OperationsTestCase<MaternalMorbidity>(
 			"validateMaternalMorbidityCodeVS",
@@ -251,6 +260,7 @@ public class MaternalMorbidityTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalMorbidityValue() {
 		OperationsTestCase<MaternalMorbidity> validateMaternalMorbidityValueTestCase = new OperationsTestCase<MaternalMorbidity>(
 			"validateMaternalMorbidityValue",
@@ -288,6 +298,7 @@ public class MaternalMorbidityTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMaternalMorbidityValueP() {
 		OperationsTestCase<MaternalMorbidity> validateMaternalMorbidityValuePTestCase = new OperationsTestCase<MaternalMorbidity>(
 			"validateMaternalMorbidityValueP",
@@ -370,8 +381,7 @@ public class MaternalMorbidityTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.InfantBreastfed;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,10 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfantBreastfedOperation
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Infant Breastfed</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class InfantBreastfedImpl extends ObservationImpl implements InfantBreastfed {
+public class InfantBreastfedImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements InfantBreastfed {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,7 +103,7 @@ public class InfantBreastfedImpl extends ObservationImpl implements InfantBreast
 	 * @generated
 	 */
 	public InfantBreastfed init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -117,8 +111,9 @@ public class InfantBreastfedImpl extends ObservationImpl implements InfantBreast
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InfantBreastfed init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public InfantBreastfed init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // InfantBreastfedImpl

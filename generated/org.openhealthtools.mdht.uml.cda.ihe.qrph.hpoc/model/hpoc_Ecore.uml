@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Package xmi:id="_KhKkcIoCEeSU9N5UlpYCQg" name="hpoc">
-    <packageImport xmi:id="_KkQ7wIoCEeSU9N5UlpYCQg">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+      <packageImport xmi:id="_PKZrwE3jEeGVaJScxwOy7g">
+      <importedPackage href="pathmap://CDA_MODEL/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packageImport xmi:id="_KkRi0IoCEeSU9N5UlpYCQg">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    <packageImport xmi:id="_hPUsgNcZEeGfQ6frO0B-Jg">
+      <importedPackage href="pathmap://DATATYPES_MODEL/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_q3SeUD49EeKUq_Bmx5Topg">
+      <importedPackage href="pathmap://VOCAB_MODEL/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
     </packageImport>
     <packageImport xmi:id="_KkRi0YoCEeSU9N5UlpYCQg">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.model/model/hpoc-vocab.uml#_KhWKoIoCEeSU9N5UlpYCQg"/>
@@ -254,7 +257,7 @@ This template constrains only the recordTarget, author, custodian, documentation
         </specification>
       </ownedRule>
       <generalization xmi:id="_7WJuoYoIEeSU9N5UlpYCQg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_S9OzADxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_h2qUUIo7EeSbNtjrMRlm3A" name="HearingPlanOfCareSection">
@@ -342,7 +345,7 @@ value.code = '18776-5' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_h2q7YIo7EeSbNtjrMRlm3A">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_eL9b0IpJEeSv-cXc3yJXYA" name="HearingScreeningSection">
@@ -449,7 +452,7 @@ value.code = '58232-0' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_5TNV8YpJEeSv-cXc3yJXYA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_GYTj8IpKEeSv-cXc3yJXYA" name="ProblemsSection">
@@ -507,7 +510,7 @@ value.code = '11450-4' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_GYTj8YpKEeSv-cXc3yJXYA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_OzTaUIpKEeSv-cXc3yJXYA" name="ProcedureSection">
@@ -565,7 +568,7 @@ value.code = '47519-4' and value.codeSystem = '2.16.840.1.113883.6.1')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_OzTaUYpKEeSv-cXc3yJXYA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_Kab-kIr4EeSOlJzRSfkI0g" name="HearingPlanOfCareActivityAct">
@@ -1265,7 +1268,7 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '89644007' or valu
         </specification>
       </ownedRule>
       <generalization xmi:id="_PEkX8I1UEeSvh9GlsbVgGg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_E4gLkI1fEeSvh9GlsbVgGg" name="ReasonNotScreened">
@@ -1315,7 +1318,7 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '410534003' or val
         </specification>
       </ownedRule>
       <generalization xmi:id="_E4gyoI1fEeSvh9GlsbVgGg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_YiANsDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="__LReUJEUEeSaOItn9Hi5XA" name="HearingScreeningOutcomeObservationRight">
@@ -1443,7 +1446,7 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '89644007' or valu
         </specification>
       </ownedRule>
       <generalization xmi:id="__LReUZEUEeSaOItn9Hi5XA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_nG7wAJEeEeSaOItn9Hi5XA" name="HearingScreeningResultsOrganizer">
@@ -1684,7 +1687,7 @@ value.code = 'completed')</body>
         </specification>
       </ownedRule>
       <generalization xmi:id="_yjuo0JExEeSaOItn9Hi5XA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_6hC5IJE7EeSdydvp_jSYIw" name="ProblemConcern">
@@ -1806,7 +1809,7 @@ value.code = '11450-4-HPOC' and value.codeSystem = '2.16.840.1.113883.6.1')</bod
         </specification>
       </ownedRule>
       <generalization xmi:id="_1nPeUZFLEeSR6bgRlsdOYg">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_rQmLwJLZEeSCoLKO4-Zpdg" name="ProcedureActivityProcedure">
@@ -1960,7 +1963,7 @@ value.code = '47519-4-HPOC' and value.codeSystem = '2.16.840.1.113883.6.1')</bod
         </specification>
       </ownedRule>
       <generalization xmi:id="_q_TDUZheEeSHcaaGvzOCaw">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_qIf_wDxXEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_xI5pYJhfEeSHcaaGvzOCaw" name="HearingPlanOfCareProcedureActivityProcedure">

@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.OtherPregnancyOutcome;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.OtherPregnancyOutcomeOpe
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Other Pregnancy Outcome</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class OtherPregnancyOutcomeImpl extends ObservationImpl implements OtherPregnancyOutcome {
+public class OtherPregnancyOutcomeImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements OtherPregnancyOutcome {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -99,7 +94,8 @@ public class OtherPregnancyOutcomeImpl extends ObservationImpl implements OtherP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOtherPregnancyOutcomeEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOtherPregnancyOutcomeEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return OtherPregnancyOutcomeOperations.validateOtherPregnancyOutcomeEffectiveTime(this, diagnostics, context);
 	}
 
@@ -118,7 +114,7 @@ public class OtherPregnancyOutcomeImpl extends ObservationImpl implements OtherP
 	 * @generated
 	 */
 	public OtherPregnancyOutcome init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -126,8 +122,9 @@ public class OtherPregnancyOutcomeImpl extends ObservationImpl implements OtherP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public OtherPregnancyOutcome init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public OtherPregnancyOutcome init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // OtherPregnancyOutcomeImpl

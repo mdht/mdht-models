@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ReturnOfSpontaneousCirculation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ReturnOfSpontaneousCirculationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Return Of Spontaneous Circulation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implements ReturnOfSpontaneousCirculation {
+public class ReturnOfSpontaneousCirculationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ReturnOfSpontaneousCirculation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateReturnOfSpontaneousCirculationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationTemplateId(
-			this, diagnostics, context);
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 */
 	public boolean validateReturnOfSpontaneousCirculationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationMoodCode(
-			this, diagnostics, context);
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +68,7 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateReturnOfSpontaneousCirculationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationCode(
-			this, diagnostics, context);
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +77,7 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateReturnOfSpontaneousCirculationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValue(
-			this, diagnostics, context);
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +86,7 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public boolean validateReturnOfSpontaneousCirculationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValueP(
-			this, diagnostics, context);
+		return ReturnOfSpontaneousCirculationOperations.validateReturnOfSpontaneousCirculationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -111,16 +95,16 @@ public class ReturnOfSpontaneousCirculationImpl extends ObservationImpl implemen
 	 * @generated
 	 */
 	public ReturnOfSpontaneousCirculation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ReturnOfSpontaneousCirculation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ReturnOfSpontaneousCirculation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ReturnOfSpontaneousCirculationImpl

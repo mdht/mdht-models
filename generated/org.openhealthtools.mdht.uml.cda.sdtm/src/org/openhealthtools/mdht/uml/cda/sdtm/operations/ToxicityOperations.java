@@ -8,18 +8,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPlugin;
 import org.openhealthtools.mdht.uml.cda.sdtm.Toxicity;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -42,7 +36,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class ToxicityOperations extends ClinicalStatementOperations {
+public class ToxicityOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +73,7 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TOXICITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TOXICITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -86,25 +88,35 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateToxicityTemplateId(Toxicity toxicity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TOXICITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TOXICITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TOXICITY);
 			try {
-				VALIDATE_TOXICITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOXICITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOXICITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TOXICITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TOXICITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(toxicity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TOXICITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(toxicity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TOXICITY__TOXICITY_TEMPLATE_ID,
-						 SdtmPlugin.INSTANCE.getString("ToxicityTemplateId"),
+						 SdtmPlugin.INSTANCE.getString("ToxicityToxicityTemplateId"),
 						 new Object [] { toxicity }));
 			}
 			 
@@ -132,7 +144,7 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TOXICITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TOXICITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -147,25 +159,35 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateToxicityClassCode(Toxicity toxicity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TOXICITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TOXICITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TOXICITY);
 			try {
-				VALIDATE_TOXICITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOXICITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOXICITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TOXICITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TOXICITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(toxicity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TOXICITY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(toxicity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TOXICITY__TOXICITY_CLASS_CODE,
-						 SdtmPlugin.INSTANCE.getString("ToxicityClassCode"),
+						 SdtmPlugin.INSTANCE.getString("ToxicityToxicityClassCode"),
 						 new Object [] { toxicity }));
 			}
 			 
@@ -193,7 +215,7 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TOXICITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TOXICITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -208,25 +230,35 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateToxicityMoodCode(Toxicity toxicity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TOXICITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TOXICITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TOXICITY);
 			try {
-				VALIDATE_TOXICITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOXICITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOXICITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TOXICITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TOXICITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(toxicity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TOXICITY_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(toxicity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TOXICITY__TOXICITY_MOOD_CODE,
-						 SdtmPlugin.INSTANCE.getString("ToxicityMoodCode"),
+						 SdtmPlugin.INSTANCE.getString("ToxicityToxicityMoodCode"),
 						 new Object [] { toxicity }));
 			}
 			 
@@ -254,7 +286,7 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TOXICITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TOXICITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -269,25 +301,35 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateToxicityCodeP(Toxicity toxicity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TOXICITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TOXICITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TOXICITY);
 			try {
-				VALIDATE_TOXICITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOXICITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOXICITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TOXICITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TOXICITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(toxicity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TOXICITY_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(toxicity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TOXICITY__TOXICITY_CODE_P,
-						 SdtmPlugin.INSTANCE.getString("ToxicityCodeP"),
+						 SdtmPlugin.INSTANCE.getString("ToxicityToxicityCodeP"),
 						 new Object [] { toxicity }));
 			}
 			
@@ -329,7 +371,7 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TOXICITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TOXICITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -344,6 +386,9 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateToxicityCode(Toxicity toxicity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
 		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.sdtm.ToxicityCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(toxicity)) {
@@ -351,24 +396,31 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 			return true;
 		}
   	  
-		if (VALIDATE_TOXICITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TOXICITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TOXICITY);
 			try {
-				VALIDATE_TOXICITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOXICITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOXICITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TOXICITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TOXICITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(toxicity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TOXICITY_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(toxicity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TOXICITY__TOXICITY_CODE,
-						 SdtmPlugin.INSTANCE.getString("ToxicityCode"),
+						 SdtmPlugin.INSTANCE.getString("ToxicityToxicityCode"),
 						 new Object [] { toxicity }));
 			}
 			 
@@ -398,7 +450,7 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TOXICITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TOXICITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -413,25 +465,35 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateToxicityValue(Toxicity toxicity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TOXICITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TOXICITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TOXICITY);
 			try {
-				VALIDATE_TOXICITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOXICITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOXICITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TOXICITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TOXICITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(toxicity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TOXICITY_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(toxicity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TOXICITY__TOXICITY_VALUE,
-						 SdtmPlugin.INSTANCE.getString("ToxicityValue"),
+						 SdtmPlugin.INSTANCE.getString("ToxicityToxicityValue"),
 						 new Object [] { toxicity }));
 			}
 			 
@@ -459,7 +521,7 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_TOXICITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_TOXICITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -474,25 +536,35 @@ public class ToxicityOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateToxicityValueP(Toxicity toxicity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_TOXICITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_TOXICITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.TOXICITY);
 			try {
-				VALIDATE_TOXICITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_TOXICITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_TOXICITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_TOXICITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_TOXICITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(toxicity)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_TOXICITY_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(toxicity)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.TOXICITY__TOXICITY_VALUE_P,
-						 SdtmPlugin.INSTANCE.getString("ToxicityValueP"),
+						 SdtmPlugin.INSTANCE.getString("ToxicityToxicityValueP"),
 						 new Object [] { toxicity }));
 			}
 			 

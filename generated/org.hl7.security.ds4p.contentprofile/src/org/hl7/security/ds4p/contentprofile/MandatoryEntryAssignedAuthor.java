@@ -12,8 +12,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.AssignedAuthor;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Mandatory Entry Assigned Author</b></em>'.
@@ -24,7 +22,7 @@ import org.eclipse.mdht.uml.cda.AssignedAuthor;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MandatoryEntryAssignedAuthorTemplateId MandatoryEntryAssignedAuthorAssignedAuthoringDevice MandatoryEntryAssignedAuthorAssignedPerson MandatoryEntryAssignedAuthorRepresentedOrganization' templateId.root='2.16.840.1.113883.3.3251.1.7'"
  * @generated
  */
-public interface MandatoryEntryAssignedAuthor extends AssignedAuthor {
+public interface MandatoryEntryAssignedAuthor extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

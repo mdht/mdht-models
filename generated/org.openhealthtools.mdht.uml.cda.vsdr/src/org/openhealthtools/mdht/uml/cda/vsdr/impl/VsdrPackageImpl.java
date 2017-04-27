@@ -7,15 +7,10 @@ import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
-
-import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.CDAPackage;
+import org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer;
 import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyPerformance;
 import org.openhealthtools.mdht.uml.cda.vsdr.AutopsyResults;
 import org.openhealthtools.mdht.uml.cda.vsdr.CertifyingDeath;
@@ -34,7 +29,6 @@ import org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClini
 import org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -215,8 +209,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
         EValidator.Registry.INSTANCE.put
             (theVsdrPackage, 
              new EValidator.Descriptor() {
-                 @Override
-				public EValidator getEValidator() {
+                 public EValidator getEValidator() {
                      return VsdrValidator.INSTANCE;
                  }
              });
@@ -2490,6 +2483,8 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
         // Create annotations
         // http://www.openhealthtools.org/mdht/uml
         createUmlAnnotations();
+        // http://www.eclipse.org/uml2/2.0.0/UML
+        createUMLAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation
         createAnnotationAnnotations();
         // http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian
@@ -2583,17 +2578,1101 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
            source, 
            new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.vsdr"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     }
 
     /**
+     * Initializes the annotations for <b>http://www.eclipse.org/uml2/2.0.0/UML</b>.
+     * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+     * @generated
+     */
+	protected void createUMLAnnotations() {
+        String source = "http://www.eclipse.org/uml2/2.0.0/UML";      
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass, 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital Records"
+           });              
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsTemplateId"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsClassCode"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsMoodCode"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsCodeP"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsCode"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsConfidentialityCodeP"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsConfidentialityCode"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(7), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsId"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(8), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsLanguageCode"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(9), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsRealmCode"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(10), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsRealmCodeP"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(11), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsTitle"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(12), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsEffectiveTime"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(13), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsCustodian"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(14), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsDeathReportDocumentBody"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(15), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsAuthor"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(16), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsRecordTarget"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(17), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationName"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(18), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationId"
+           });        
+        addAnnotation
+          (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass.getEOperations().get(19), 
+           source, 
+           new String[] {
+             "originalName", "Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodian"
+           });         
+        addAnnotation
+          (deathReportDocumentBodyEClass, 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document Body"
+           });      
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyTemplateId"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyCode"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyCodeP"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyText"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyTime of Death"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyLocationOfDeath"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyCertifyingDeath"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(7), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyMannerOfDeath"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(8), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyPregnancyStatus"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(9), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyTobaccoUse"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(10), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyInjury"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(11), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyCauseOfDeath"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(12), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyAutopsyPerformance"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(13), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyAutopsyResults"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(14), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyCoronerReferral"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(15), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyCoronerCaseTransfer"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(16), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyDeathLocationType"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(17), 
+           source, 
+           new String[] {
+             "originalName", "Death Report Document BodyPronouncingDeath"
+           });        
+        addAnnotation
+          (deathReportDocumentBodyEClass.getEOperations().get(18), 
+           source, 
+           new String[] {
+             "originalName", "getTime of Death"
+           });                   
+        addAnnotation
+          (dateandTimeofDeathEClass, 
+           source, 
+           new String[] {
+             "originalName", "Date and Time of Death"
+           });      
+        addAnnotation
+          (dateandTimeofDeathEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Date and Time of DeathTemplateId"
+           });        
+        addAnnotation
+          (dateandTimeofDeathEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Date and Time of DeathClassCode"
+           });        
+        addAnnotation
+          (dateandTimeofDeathEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Date and Time of DeathMoodCode"
+           });        
+        addAnnotation
+          (dateandTimeofDeathEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Date and Time of DeathCodeP"
+           });        
+        addAnnotation
+          (dateandTimeofDeathEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Date and Time of DeathCode"
+           });        
+        addAnnotation
+          (dateandTimeofDeathEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Date and Time of DeathEffectiveTime"
+           });        
+        addAnnotation
+          (dateandTimeofDeathEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Date and Time of DeathText"
+           });        
+        addAnnotation
+          (locationofDeathEClass, 
+           source, 
+           new String[] {
+             "originalName", "Location of Death"
+           });      
+        addAnnotation
+          (locationofDeathEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Location of DeathTemplateId"
+           });        
+        addAnnotation
+          (locationofDeathEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Location of DeathClassCode"
+           });        
+        addAnnotation
+          (locationofDeathEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Location of DeathMoodCode"
+           });        
+        addAnnotation
+          (locationofDeathEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Location of DeathCodeP"
+           });        
+        addAnnotation
+          (locationofDeathEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Location of DeathCode"
+           });        
+        addAnnotation
+          (locationofDeathEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Location of DeathText"
+           });        
+        addAnnotation
+          (locationofDeathEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Location of DeathValue"
+           });        
+        addAnnotation
+          (certifyingDeathEClass, 
+           source, 
+           new String[] {
+             "originalName", "Certifying Death"
+           });         
+        addAnnotation
+          (certifyingDeathEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Certifying DeathTemplateId"
+           });        
+        addAnnotation
+          (certifyingDeathEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Certifying DeathClassCode"
+           });        
+        addAnnotation
+          (certifyingDeathEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Certifying DeathMoodCode"
+           });        
+        addAnnotation
+          (certifyingDeathEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Certifying DeathCode"
+           });        
+        addAnnotation
+          (certifyingDeathEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Certifying DeathEffectiveTime"
+           });        
+        addAnnotation
+          (certifyingDeathEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Certifying DeathCertificationPerformer"
+           });        
+        addAnnotation
+          (mannerofDeathEClass, 
+           source, 
+           new String[] {
+             "originalName", "Manner of Death"
+           });      
+        addAnnotation
+          (mannerofDeathEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Manner of DeathTemplateId"
+           });        
+        addAnnotation
+          (mannerofDeathEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Manner of DeathClassCode"
+           });        
+        addAnnotation
+          (mannerofDeathEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Manner of DeathMoodCode"
+           });        
+        addAnnotation
+          (mannerofDeathEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Manner of DeathCodeP"
+           });        
+        addAnnotation
+          (mannerofDeathEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Manner of DeathCode"
+           });        
+        addAnnotation
+          (mannerofDeathEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Manner of DeathValue"
+           });        
+        addAnnotation
+          (mannerofDeathEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Manner of DeathValueP"
+           });        
+        addAnnotation
+          (pregnancyStatusEClass, 
+           source, 
+           new String[] {
+             "originalName", "Pregnancy Status"
+           });      
+        addAnnotation
+          (pregnancyStatusEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Pregnancy StatusTemplateId"
+           });        
+        addAnnotation
+          (pregnancyStatusEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Pregnancy StatusClassCode"
+           });        
+        addAnnotation
+          (pregnancyStatusEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Pregnancy StatusMoodCode"
+           });        
+        addAnnotation
+          (pregnancyStatusEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Pregnancy StatusCodeP"
+           });        
+        addAnnotation
+          (pregnancyStatusEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Pregnancy StatusCode"
+           });        
+        addAnnotation
+          (pregnancyStatusEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Pregnancy StatusValue"
+           });        
+        addAnnotation
+          (pregnancyStatusEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Pregnancy StatusValueP"
+           });        
+        addAnnotation
+          (tobaccoUseEClass, 
+           source, 
+           new String[] {
+             "originalName", "Tobacco Use"
+           });      
+        addAnnotation
+          (tobaccoUseEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Tobacco UseTemplateId"
+           });        
+        addAnnotation
+          (tobaccoUseEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Tobacco UseClassCode"
+           });        
+        addAnnotation
+          (tobaccoUseEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Tobacco UseMoodCode"
+           });        
+        addAnnotation
+          (tobaccoUseEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Tobacco UseCode"
+           });        
+        addAnnotation
+          (tobaccoUseEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Tobacco UseValue"
+           });                                                                                                                                                                          
+        addAnnotation
+          (deathCausalInformationEClass, 
+           source, 
+           new String[] {
+             "originalName", "Death Causal Information"
+           });            
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationTemplateId"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationClassCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationMoodCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationStatusCodeP"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationStatusCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCause"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(7), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentOtherSignificantCondition"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(8), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(9), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(10), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(11), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(12), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(13), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(14), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(15), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseClassCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(16), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseCodeP"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(17), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(18), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseMoodCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(19), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCauseValue"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(20), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseSequenceNumber"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(21), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseTypeCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(22), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentCauseDeathCause"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(23), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionClassCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(24), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(25), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCodeP"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(26), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(27), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionValue"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(28), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentOtherSignificantConditionTypeCode"
+           });        
+        addAnnotation
+          (deathCausalInformationEClass.getEOperations().get(29), 
+           source, 
+           new String[] {
+             "originalName", "Death Causal InformationComponentOtherSignificantConditionOtherSignificantCondition"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass, 
+           source, 
+           new String[] {
+             "originalName", "Autopsy Performance"
+           });         
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceTemplateId"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceClassCode"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceMoodCode"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceCodeP"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceCode"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceEffectiveTime"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceValue"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(7), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceAutopsyPerformer"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(8), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(9), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(10), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(11), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleClassCode"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(12), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(13), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceAutopsyPerformerTypeCode"
+           });        
+        addAnnotation
+          (autopsyPerformanceEClass.getEOperations().get(14), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy PerformanceAutopsyPerformerAutopsyPerformerRole"
+           });        
+        addAnnotation
+          (autopsyResultsEClass, 
+           source, 
+           new String[] {
+             "originalName", "Autopsy Results"
+           });        
+        addAnnotation
+          (autopsyResultsEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy ResultsTemplateId"
+           });        
+        addAnnotation
+          (autopsyResultsEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy ResultsClassCode"
+           });        
+        addAnnotation
+          (autopsyResultsEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy ResultsMoodCode"
+           });        
+        addAnnotation
+          (autopsyResultsEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy ResultsCodeP"
+           });        
+        addAnnotation
+          (autopsyResultsEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy ResultsCode"
+           });        
+        addAnnotation
+          (autopsyResultsEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy ResultsValue"
+           });        
+        addAnnotation
+          (autopsyResultsEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Autopsy ResultsAutopsyReportRelationship"
+           });        
+        addAnnotation
+          (coronerReferralEClass, 
+           source, 
+           new String[] {
+             "originalName", "Coroner Referral"
+           });      
+        addAnnotation
+          (coronerReferralEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Coroner ReferralTemplateId"
+           });        
+        addAnnotation
+          (coronerReferralEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Coroner ReferralClassCode"
+           });        
+        addAnnotation
+          (coronerReferralEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Coroner ReferralMoodCode"
+           });        
+        addAnnotation
+          (coronerReferralEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Coroner ReferralCodeP"
+           });        
+        addAnnotation
+          (coronerReferralEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Coroner ReferralCode"
+           });        
+        addAnnotation
+          (coronerReferralEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Coroner ReferralValue"
+           });        
+        addAnnotation
+          (coronerCaseTransferEClass, 
+           source, 
+           new String[] {
+             "originalName", "Coroner Case Transfer"
+           });        
+        addAnnotation
+          (coronerCaseTransferEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Coroner Case TransferTemplateId"
+           });        
+        addAnnotation
+          (coronerCaseTransferEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Coroner Case TransferClassCode"
+           });        
+        addAnnotation
+          (coronerCaseTransferEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Coroner Case TransferMoodCode"
+           });        
+        addAnnotation
+          (coronerCaseTransferEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Coroner Case TransferCodeP"
+           });        
+        addAnnotation
+          (coronerCaseTransferEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Coroner Case TransferCode"
+           });        
+        addAnnotation
+          (coronerCaseTransferEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Coroner Case TransferValue"
+           });        
+        addAnnotation
+          (coronerCaseTransferEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Coroner Case TransferCoronerCase"
+           });        
+        addAnnotation
+          (deathLocationTypeEClass, 
+           source, 
+           new String[] {
+             "originalName", "Death LocationType"
+           });      
+        addAnnotation
+          (deathLocationTypeEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Death LocationTypeTemplateId"
+           });        
+        addAnnotation
+          (deathLocationTypeEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Death LocationTypeClassCode"
+           });        
+        addAnnotation
+          (deathLocationTypeEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Death LocationTypeMoodCode"
+           });        
+        addAnnotation
+          (deathLocationTypeEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Death LocationTypeCodeP"
+           });        
+        addAnnotation
+          (deathLocationTypeEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Death LocationTypeCode"
+           });        
+        addAnnotation
+          (deathLocationTypeEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Death LocationTypeValue"
+           });        
+        addAnnotation
+          (deathLocationTypeEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Death LocationTypeValueP"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass, 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing Death"
+           });         
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(0), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathTemplateId"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(1), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathClassCode"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(2), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathMoodCode"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(3), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathCode"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(4), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathEffectiveTime"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(5), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathPronouncer"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(6), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathPronouncerPronouncerRolePronouncingPartyClassCode"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(7), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathPronouncerPronouncerRolePronouncingPartyDeterminerCode"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(8), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathPronouncerPronouncerRolePronouncingPartyName"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(9), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathPronouncerPronouncerRoleClassCode"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(10), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathPronouncerPronouncerRoleId"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(11), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathPronouncerPronouncerRolePronouncingParty"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(12), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathPronouncerTypeCode"
+           });        
+        addAnnotation
+          (pronouncingDeathEClass.getEOperations().get(13), 
+           source, 
+           new String[] {
+             "originalName", "Pronouncing DeathPronouncerPronouncerRole"
+           });   
+    }
+
+				/**
      * Initializes the annotations for <b>http://www.openhealthtools.org/mdht/uml/cda/annotation</b>.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
     protected void createAnnotationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";      
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation";       
         addAnnotation
           (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass, 
            source, 
@@ -2606,7 +3685,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "U.S. standard certificate of death - 2003 revision"
-           });                                                                          
+           });                                                                                               
         addAnnotation
           (deathReportDocumentBodyEClass, 
            source, 
@@ -2619,7 +3698,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.displayName", "U.S. standard certificate of death - 2003 revision",
              "constraints.validation.warning", "Death Report Document BodyCertifyingDeath Death Report Document BodyInjury",
              "constraints.validation.info", "Death Report Document BodyAutopsyResults Death Report Document BodyCoronerReferral"
-           });                                                                         
+           });                                                                                             
         addAnnotation
           (dateandTimeofDeathEClass, 
            source, 
@@ -2632,7 +3711,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Date of Death"
-           });                          
+           });                                  
         addAnnotation
           (locationofDeathEClass, 
            source, 
@@ -2645,7 +3724,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Location of Death"
-           });                          
+           });                                  
         addAnnotation
           (certifyingDeathEClass, 
            source, 
@@ -2656,7 +3735,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Death Certifier"
-           });                          
+           });                                 
         addAnnotation
           (mannerofDeathEClass, 
            source, 
@@ -2669,7 +3748,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Manner of Death"
-           });                          
+           });                                  
         addAnnotation
           (pregnancyStatusEClass, 
            source, 
@@ -2682,7 +3761,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Timing of recent pregancy related to death"
-           });                          
+           });                                  
         addAnnotation
           (tobaccoUseEClass, 
            source, 
@@ -2695,7 +3774,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Tobacco Use"
-           });                    
+           });                         
         addAnnotation
           (injuryEClass, 
            source, 
@@ -2714,7 +3793,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "constraints.validation.dependOn.InjuryComponentWorkAssociationWorkAssociationCode", "InjuryComponentWorkAssociationWorkAssociationCodeP",
              "constraints.validation.dependOn.InjuryComponentTransportationAssociationTransportationAssociationCode", "InjuryComponentTransportationAssociationTransportationAssociationCodeP",
              "constraints.validation.dependOn.InjuryComponentTransportationRelationshipTransportationRelationshipCode", "InjuryComponentTransportationRelationshipTransportationRelationshipCodeP"
-           });                                                                                                                                                                      
+           });                                                                                                                                                                       
         addAnnotation
           (deathCausalInformationEClass, 
            source, 
@@ -2728,7 +3807,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystemName", "LOINC",
              "code.displayName", "Cause Of Death (US Standard Certificate of Death)",
              "statusCode.code", "Active"
-           });                                                                                                     
+           });                                                                                                                                    
         addAnnotation
           (autopsyPerformanceEClass, 
            source, 
@@ -2741,7 +3820,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Autopsy Status"
-           });                                                     
+           });                                                                     
         addAnnotation
           (autopsyResultsEClass, 
            source, 
@@ -2754,7 +3833,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Autopsy results available"
-           });                            
+           });                                    
         addAnnotation
           (coronerReferralEClass, 
            source, 
@@ -2767,7 +3846,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Referral note Forensic medicine"
-           });                       
+           });                              
         addAnnotation
           (coronerCaseTransferEClass, 
            source, 
@@ -2780,7 +3859,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Coroner Indicator"
-           });                            
+           });                                    
         addAnnotation
           (deathLocationTypeEClass, 
            source, 
@@ -2793,7 +3872,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Location of Death"
-           });                          
+           });                                  
         addAnnotation
           (pronouncingDeathEClass, 
            source, 
@@ -2806,7 +3885,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.displayName", "Death Pronouncer",
              "constraints.validation.info", "Pronouncing DeathPronouncer",
              "constraints.validation.query", "Pronouncing DeathPronouncerPronouncerRolePronouncingPartyClassCode Pronouncing DeathPronouncerPronouncerRolePronouncingPartyDeterminerCode Pronouncing DeathPronouncerPronouncerRolePronouncingPartyName Pronouncing DeathPronouncerPronouncerRoleClassCode Pronouncing DeathPronouncerPronouncerRoleId Pronouncing DeathPronouncerPronouncerRolePronouncingParty Pronouncing DeathPronouncerTypeCode Pronouncing DeathPronouncerPronouncerRole"
-           });                                             
+           });                                                           
     }
 
     /**
@@ -2816,14 +3895,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian";       
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodian";        
         addAnnotation
           (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass, 
            source, 
            new String[] {
              "constraints.validation.error", "Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodian Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationName Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationId",
              "constraints.validation.query", "Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationName Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationId"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
     /**
@@ -2833,13 +3912,13 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganizationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganization";        
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsCustodianAssignedCustodianCustodianOrganization";         
         addAnnotation
           (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass, 
            source, 
            new String[] {
              "constraints.validation.error", "Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationName Reporting Death Information from a Clinical Setting to Vital RecordsCustodianAssignedCustodianCustodianOrganizationId"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
     /**
@@ -2849,14 +3928,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor";         
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthor";          
         addAnnotation
           (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass, 
            source, 
            new String[] {
              "typeCode", "AUT",
              "constraints.validation.error", "Reporting Death Information from a Clinical Setting to Vital RecordsAuthorTypeCode Reporting Death Information from a Clinical Setting to Vital RecordsAuthorTime Reporting Death Information from a Clinical Setting to Vital RecordsAuthorAssignedAuthor"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
     /**
@@ -2866,14 +3945,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorAssignedAuthorAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorAssignedAuthor";          
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorAssignedAuthor";           
         addAnnotation
           (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass, 
            source, 
            new String[] {
              "classCode", "ASSIGNED",
              "constraints.validation.error", "Reporting Death Information from a Clinical Setting to Vital RecordsAuthorAssignedAuthorClassCode Reporting Death Information from a Clinical Setting to Vital RecordsAuthorAssignedAuthorId Reporting Death Information from a Clinical Setting to Vital RecordsAuthorAssignedAuthorAuthoringPerson"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
     /**
@@ -2883,7 +3962,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorAssignedAuthorAuthoringPersonAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorAssignedAuthorAuthoringPerson";           
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsAuthorAssignedAuthorAuthoringPerson";            
         addAnnotation
           (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass, 
            source, 
@@ -2891,7 +3970,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "classCode", "PSN",
              "constraints.validation.error", "Reporting Death Information from a Clinical Setting to Vital RecordsAuthorAssignedAuthorAuthoringPersonClassCode Reporting Death Information from a Clinical Setting to Vital RecordsAuthorAssignedAuthorAuthoringPersonDeterminerCode Reporting Death Information from a Clinical Setting to Vital RecordsAuthorAssignedAuthorAuthoringPersonName",
              "determinerCode", "INSTANCE"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     }
 
     /**
@@ -2901,14 +3980,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget";            
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTarget";             
         addAnnotation
           (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass, 
            source, 
            new String[] {
              "typeCode", "RCT",
              "constraints.validation.error", "Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetTypeCode Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetPatient"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     }
 
     /**
@@ -2918,14 +3997,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetPatientAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetPatient";             
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetPatient";              
         addAnnotation
           (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass, 
            source, 
            new String[] {
              "classCode", "PAT",
              "constraints.validation.error", "Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetPatientClassCode Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetPatientId Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetPatientAddr Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetPatientPerson"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     }
 
     /**
@@ -2935,7 +4014,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetPatientPersonAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetPatientPerson";              
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrReportingDeathInformationfromaClinicalSettingtoVitalRecordsRecordTargetPatientPerson";               
         addAnnotation
           (reportingDeathInformationfromaClinicalSettingtoVitalRecordsEClass, 
            source, 
@@ -2945,7 +4024,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "constraints.validation.error", "Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetPatientPersonAdministrativeGenderCode Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetPatientPersonAdministrativeGenderCodeP Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetPatientPersonClassCode Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetPatientPersonDeterminerCode Reporting Death Information from a Clinical Setting to Vital RecordsRecordTargetPatientPersonName",
              "classCode", "PSN",
              "determinerCode", "INSTANCE"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     }
 
     /**
@@ -2955,7 +4034,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrCertifyingDeathCertificationPerformerAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCertifyingDeathCertificationPerformer";                                                                                                                                                                                              
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCertifyingDeathCertificationPerformer";                                                                                                                                                                                                                                                        
         addAnnotation
           (certifyingDeathEClass, 
            source, 
@@ -2963,7 +4042,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "typeCode", "PRF",
              "constraints.validation.error", "Certifying DeathCertificationPerformerTypeCode Certifying DeathCertificationPerformerCertifierRole Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyClassCode Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyDeterminerCode Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyName Certifying DeathCertificationPerformerCertifierRoleClassCode Certifying DeathCertificationPerformerCertifierRoleId Certifying DeathCertificationPerformerCertifierRoleCode Certifying DeathCertificationPerformerCertifierRoleCodeP Certifying DeathCertificationPerformerCertifierRoleAddr Certifying DeathCertificationPerformerCertifierRoleCertifyingParty",
              "constraints.validation.query", "Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyClassCode Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyDeterminerCode Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyName Certifying DeathCertificationPerformerCertifierRoleClassCode Certifying DeathCertificationPerformerCertifierRoleId Certifying DeathCertificationPerformerCertifierRoleCode Certifying DeathCertificationPerformerCertifierRoleCodeP Certifying DeathCertificationPerformerCertifierRoleAddr Certifying DeathCertificationPerformerCertifierRoleCertifyingParty"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
     /**
@@ -2973,7 +4052,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrCertifyingDeathCertificationPerformerCertifierRoleAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCertifyingDeathCertificationPerformerCertifierRole";                                                                                                                                                                                               
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCertifyingDeathCertificationPerformerCertifierRole";                                                                                                                                                                                                                                                         
         addAnnotation
           (certifyingDeathEClass, 
            source, 
@@ -2983,7 +4062,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.114222.4.5.274",
              "code.codeSystemName", "PHIN VS (CDC Local Coding System)",
              "constraints.validation.query", "Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyClassCode Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyDeterminerCode Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyName"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
     /**
@@ -2993,7 +4072,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrCertifyingDeathCertificationPerformerCertifierRoleCertifyingPartyAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCertifyingDeathCertificationPerformerCertifierRoleCertifyingParty";                                                                                                                                                                                                
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCertifyingDeathCertificationPerformerCertifierRoleCertifyingParty";                                                                                                                                                                                                                                                          
         addAnnotation
           (certifyingDeathEClass, 
            source, 
@@ -3001,7 +4080,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "classCode", "PSN",
              "constraints.validation.error", "Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyClassCode Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyDeterminerCode Certifying DeathCertificationPerformerCertifierRoleCertifyingPartyName",
              "determinerCode", "INSTANCE"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
     /**
@@ -3011,14 +4090,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentInjuryInformationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformation";                                                                                                                                                                                                                                                                                
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformation";                                                                                                                                                                                                                                                                                                                                                                      
         addAnnotation
           (injuryEClass, 
            source, 
            new String[] {
              "typeCode", "COMP",
              "constraints.validation.error", "InjuryComponentInjuryInformationTypeCode InjuryComponentInjuryInformationInjuryInformation"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     }
 
     /**
@@ -3028,7 +4107,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentInjuryInformationInjuryInformationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformation";                                                                                                                                                                                                                                                                                 
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformation";                                                                                                                                                                                                                                                                                                                                                                       
         addAnnotation
           (injuryEClass, 
            source, 
@@ -3042,7 +4121,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.displayName", "Injury incident description",
              "constraints.validation.dependOn.InjuryComponentInjuryInformationInjuryInformationCode", "InjuryComponentInjuryInformationInjuryInformationCodeP",
              "constraints.validation.query", "InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury InjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     }
 
     /**
@@ -3052,7 +4131,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipation";                                                                                                                                                                                                                                                                                  
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipation";                                                                                                                                                                                                                                                                                                                                                                        
         addAnnotation
           (injuryEClass, 
            source, 
@@ -3060,7 +4139,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "typeCode", "LOC",
              "constraints.validation.error", "InjuryComponentInjuryInformationInjuryInformationLocationParticipationTypeCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury",
              "constraints.validation.query", "InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
     /**
@@ -3070,7 +4149,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole";                                                                                                                                                                                                                                                                                   
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRole";                                                                                                                                                                                                                                                                                                                                                                         
         addAnnotation
           (injuryEClass, 
            source, 
@@ -3078,7 +4157,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "constraints.validation.error", "InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleAddr InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRoleClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc",
              "classCode", "ISDLOC",
              "constraints.validation.query", "InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
     /**
@@ -3088,7 +4167,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury";                                                                                                                                                                                                                                                                                    
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjury";                                                                                                                                                                                                                                                                                                                                                                          
         addAnnotation
           (injuryEClass, 
            source, 
@@ -3096,7 +4175,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "classCode", "PLC",
              "constraints.validation.error", "InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryClassCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDeterminerCode InjuryComponentInjuryInformationInjuryInformationLocationParticipationInjuryLocationRolePlaceOfInjuryDesc",
              "determinerCode", "INSTANCE"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
     /**
@@ -3106,14 +4185,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentWorkAssociationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentWorkAssociation";                                                                                                                                                                                                                                                                                     
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentWorkAssociation";                                                                                                                                                                                                                                                                                                                                                                           
         addAnnotation
           (injuryEClass, 
            source, 
            new String[] {
              "typeCode", "COMP",
              "constraints.validation.error", "InjuryComponentWorkAssociationTypeCode InjuryComponentWorkAssociationWorkAssociation"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
     /**
@@ -3123,7 +4202,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentWorkAssociationWorkAssociationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentWorkAssociationWorkAssociation";                                                                                                                                                                                                                                                                                      
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentWorkAssociationWorkAssociation";                                                                                                                                                                                                                                                                                                                                                                            
         addAnnotation
           (injuryEClass, 
            source, 
@@ -3136,7 +4215,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystemName", "LOINC",
              "code.displayName", "Did death result from injury at work",
              "constraints.validation.dependOn.InjuryComponentWorkAssociationWorkAssociationCode", "InjuryComponentWorkAssociationWorkAssociationCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     }
 
     /**
@@ -3146,7 +4225,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentTransportationAssociationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationAssociation";                                                                                                                                                                                                                                                                                       
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationAssociation";                                                                                                                                                                                                                                                                                                                                                                             
         addAnnotation
           (injuryEClass, 
            source, 
@@ -3155,7 +4234,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "constraints.validation.error", "InjuryComponentTransportationAssociationTypeCode InjuryComponentTransportationAssociationTransportationAssociation InjuryComponentTransportationAssociationTransportationAssociationClassCode InjuryComponentTransportationAssociationTransportationAssociationMoodCode InjuryComponentTransportationAssociationTransportationAssociationCodeP InjuryComponentTransportationAssociationTransportationAssociationCode InjuryComponentTransportationAssociationTransportationAssociationValue",
              "constraints.validation.query", "InjuryComponentTransportationAssociationTransportationAssociationClassCode InjuryComponentTransportationAssociationTransportationAssociationMoodCode InjuryComponentTransportationAssociationTransportationAssociationCodeP InjuryComponentTransportationAssociationTransportationAssociationCode InjuryComponentTransportationAssociationTransportationAssociationValue",
              "constraints.validation.dependOn.InjuryComponentTransportationAssociationTransportationAssociationCode", "InjuryComponentTransportationAssociationTransportationAssociationCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     }
 
     /**
@@ -3165,7 +4244,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentTransportationAssociationTransportationAssociationAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationAssociationTransportationAssociation";                                                                                                                                                                                                                                                                                        
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationAssociationTransportationAssociation";                                                                                                                                                                                                                                                                                                                                                                              
         addAnnotation
           (injuryEClass, 
            source, 
@@ -3178,7 +4257,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystemName", "LOINC",
              "code.displayName", "Injury leading to death associated with transportation event",
              "constraints.validation.dependOn.InjuryComponentTransportationAssociationTransportationAssociationCode", "InjuryComponentTransportationAssociationTransportationAssociationCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     }
 
     /**
@@ -3188,14 +4267,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentTransportationRelationshipAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationRelationship";                                                                                                                                                                                                                                                                                         
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationRelationship";                                                                                                                                                                                                                                                                                                                                                                               
         addAnnotation
           (injuryEClass, 
            source, 
            new String[] {
              "typeCode", "COMP",
              "constraints.validation.error", "InjuryComponentTransportationRelationshipTypeCode InjuryComponentTransportationRelationshipTransportationRelationship"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     }
 
     /**
@@ -3205,7 +4284,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrInjuryComponentTransportationRelationshipTransportationRelationshipAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationRelationshipTransportationRelationship";                                                                                                                                                                                                                                                                                          
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrInjuryComponentTransportationRelationshipTransportationRelationship";                                                                                                                                                                                                                                                                                                                                                                                
         addAnnotation
           (injuryEClass, 
            source, 
@@ -3220,7 +4299,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "constraints.validation.dependOn.InjuryComponentTransportationRelationshipTransportationRelationshipCode", "InjuryComponentTransportationRelationshipTransportationRelationshipCodeP",
              "value.codeSystem", "2.16.840.1.113883.6.96",
              "value.codeSystemName", "SNOMEDCT"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
     }
 
     /**
@@ -3230,7 +4309,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrDeathCausalInformationComponentOtherSignificantConditionAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentOtherSignificantCondition";                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentOtherSignificantCondition";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
         addAnnotation
           (deathCausalInformationEClass, 
            source, 
@@ -3238,7 +4317,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "typeCode", "COMP",
              "constraints.validation.error", "Death Causal InformationComponentOtherSignificantConditionTypeCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantCondition Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionClassCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCodeP Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionValue",
              "constraints.validation.query", "Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionClassCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCodeP Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionCode Death Causal InformationComponentOtherSignificantConditionOtherSignificantConditionValue"
-           });                                                                                                                                                                                                                                                                                       
+           });                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
     /**
@@ -3248,7 +4327,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition";                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         addAnnotation
           (deathCausalInformationEClass, 
            source, 
@@ -3260,7 +4339,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Other Significant Condition"
-           });                                                                                                                                                                                                                                                                                      
+           });                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
     /**
@@ -3270,7 +4349,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrDeathCausalInformationComponentCauseAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCause";                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCause";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
         addAnnotation
           (deathCausalInformationEClass, 
            source, 
@@ -3278,7 +4357,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "constraints.validation.error", "Death Causal InformationComponentCauseSequenceNumber Death Causal InformationComponentCauseTypeCode Death Causal InformationComponentCauseDeathCause Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval Death Causal InformationComponentCauseDeathCauseClassCode Death Causal InformationComponentCauseDeathCauseCodeP Death Causal InformationComponentCauseDeathCauseCode Death Causal InformationComponentCauseDeathCauseMoodCode Death Causal InformationComponentCauseDeathCauseValue",
              "typeCode", "COMP",
              "constraints.validation.query", "Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval Death Causal InformationComponentCauseDeathCauseClassCode Death Causal InformationComponentCauseDeathCauseCodeP Death Causal InformationComponentCauseDeathCauseCode Death Causal InformationComponentCauseDeathCauseMoodCode Death Causal InformationComponentCauseDeathCauseValue"
-           });                                                                                                                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
     /**
@@ -3288,7 +4367,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrDeathCausalInformationComponentCauseDeathCauseAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCauseDeathCause";                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCauseDeathCause";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
         addAnnotation
           (deathCausalInformationEClass, 
            source, 
@@ -3299,7 +4378,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Cause of Death"
-           });                                                                                                                                                                                                                                                                                    
+           });                                                                                                                                                                                                                                                                                                                                                                                
     }
 
     /**
@@ -3309,7 +4388,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseInterval";                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseInterval";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
         addAnnotation
           (deathCausalInformationEClass, 
            source, 
@@ -3317,7 +4396,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "typeCode", "COMP",
              "constraints.validation.error", "Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue",
              "constraints.validation.query", "Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode Death Causal InformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue"
-           });                                                                                                                                                                                                                                                                                   
+           });                                                                                                                                                                                                                                                                                                                                                                               
     }
 
     /**
@@ -3327,7 +4406,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval";                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
         addAnnotation
           (deathCausalInformationEClass, 
            source, 
@@ -3338,7 +4417,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Disease onset to death interval"
-           });                                                                                                                                                                                                                                                                                  
+           });                                                                                                                                                                                                                                                                                                                                                                              
     }
 
     /**
@@ -3348,7 +4427,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrAutopsyPerformanceAutopsyPerformerAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyPerformanceAutopsyPerformer";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyPerformanceAutopsyPerformer";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
         addAnnotation
           (autopsyPerformanceEClass, 
            source, 
@@ -3356,7 +4435,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "typeCode", "PRF",
              "constraints.validation.error", "Autopsy PerformanceAutopsyPerformerTypeCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRole Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician",
              "constraints.validation.query", "Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician"
-           });                                                                                                                                                                                      
+           });                                                                                                                                                                                                                                                   
     }
 
     /**
@@ -3366,7 +4445,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyPerformanceAutopsyPerformerAutopsyPerformerRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyPerformanceAutopsyPerformerAutopsyPerformerRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         addAnnotation
           (autopsyPerformanceEClass, 
            source, 
@@ -3374,7 +4453,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "classCode", "ASSIGNED",
              "constraints.validation.error", "Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName",
              "constraints.validation.query", "Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName"
-           });                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                  
     }
 
     /**
@@ -3384,7 +4463,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyPerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinician";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
         addAnnotation
           (autopsyPerformanceEClass, 
            source, 
@@ -3392,7 +4471,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "classCode", "PSN",
              "constraints.validation.error", "Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianClassCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianDeterminerCode Autopsy PerformanceAutopsyPerformerAutopsyPerformerRoleAutopsyClinicianName",
              "determinerCode", "INSTANCE"
-           });                                                                                                                                                                                    
+           });                                                                                                                                                                                                                                                 
     }
 
     /**
@@ -3402,14 +4481,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrAutopsyResultsAutopsyReportRelationshipAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyResultsAutopsyReportRelationship";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyResultsAutopsyReportRelationship";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         addAnnotation
           (autopsyResultsEClass, 
            source, 
            new String[] {
              "typeCode", "COMP",
              "constraints.validation.error", "Autopsy ResultsAutopsy Report RelationshipTypeCode Autopsy ResultsAutopsy Report RelationshipAutopsyReport"
-           });                                                                                                                                     
+           });                                                                                                                                                                                  
     }
 
     /**
@@ -3419,7 +4498,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrAutopsyResultsAutopsyReportRelationshipAutopsyReportAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyResultsAutopsyReportRelationshipAutopsyReport";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrAutopsyResultsAutopsyReportRelationshipAutopsyReport";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
         addAnnotation
           (autopsyResultsEClass, 
            source, 
@@ -3431,7 +4510,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Autopsy Report"
-           });                                                                                                                                    
+           });                                                                                                                                                                                 
     }
 
     /**
@@ -3441,14 +4520,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrCoronerCaseTransferCoronerCaseRelationshipAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCoronerCaseTransferCoronerCaseRelationship";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCoronerCaseTransferCoronerCaseRelationship";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
         addAnnotation
           (coronerCaseTransferEClass, 
            source, 
            new String[] {
              "typeCode", "COMP",
              "constraints.validation.error", "Coroner Case TransferCoroner Case RelationshipTypeCode Coroner Case TransferCoroner Case RelationshipCoroner Case"
-           });                                                                                          
+           });                                                                                                                        
     }
 
     /**
@@ -3458,7 +4537,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrCoronerCaseTransferCoronerCaseRelationshipCoronerCaseAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCoronerCaseTransferCoronerCaseRelationshipCoronerCase";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrCoronerCaseTransferCoronerCaseRelationshipCoronerCase";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
         addAnnotation
           (coronerCaseTransferEClass, 
            source, 
@@ -3468,7 +4547,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "code.codeSystem", "2.16.840.1.113883.6.1",
              "code.codeSystemName", "LOINC",
              "code.displayName", "Coroner-medical examiner case number"
-           });                                                                                         
+           });                                                                                                                       
     }
 
     /**
@@ -3478,14 +4557,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrPronouncingDeathPronouncerAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrPronouncingDeathPronouncer";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrPronouncingDeathPronouncer";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
         addAnnotation
           (pronouncingDeathEClass, 
            source, 
            new String[] {
              "typeCode", "PRF",
              "constraints.validation.error", "Pronouncing DeathPronouncerTypeCode Pronouncing DeathPronouncerPronouncerRole"
-           });                                            
+           });                                                          
     }
 
     /**
@@ -3495,14 +4574,14 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrPronouncingDeathPronouncerPronouncerRoleAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrPronouncingDeathPronouncerPronouncerRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrPronouncingDeathPronouncerPronouncerRole";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
         addAnnotation
           (pronouncingDeathEClass, 
            source, 
            new String[] {
              "classCode", "ASSIGNED",
              "constraints.validation.error", "Pronouncing DeathPronouncerPronouncerRoleClassCode Pronouncing DeathPronouncerPronouncerRoleId Pronouncing DeathPronouncerPronouncerRolePronouncingParty"
-           });                                           
+           });                                                         
     }
 
     /**
@@ -3512,7 +4591,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
      * @generated
      */
     protected void createVsdrPronouncingDeathPronouncerPronouncerRolePronouncingPartyAnnotations() {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrPronouncingDeathPronouncerPronouncerRolePronouncingParty";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/vsdrPronouncingDeathPronouncerPronouncerRolePronouncingParty";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
         addAnnotation
           (pronouncingDeathEClass, 
            source, 
@@ -3520,7 +4599,7 @@ public class VsdrPackageImpl extends EPackageImpl implements VsdrPackage {
              "classCode", "PSN",
              "constraints.validation.error", "Pronouncing DeathPronouncerPronouncerRolePronouncingPartyClassCode Pronouncing DeathPronouncerPronouncerRolePronouncingPartyDeterminerCode Pronouncing DeathPronouncerPronouncerRolePronouncingPartyName",
              "determinerCode", "INSTANCE"
-           });                                          
+           });                                                        
     }
 
 } //VsdrPackageImpl

@@ -10,11 +10,11 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_PQ;
+import org.eclipse.mdht.uml.hl7.datatypes.operations.IVL_PQOperations;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_PQ;
-import org.openhealthtools.mdht.uml.hl7.datatypes.operations.IVL_PQOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -99,8 +99,8 @@ public class IVL_PQTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
 			public void addPassTests() {
@@ -191,8 +191,8 @@ public class IVL_PQTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
 			public void addPassTests() {
@@ -244,15 +244,15 @@ public class IVL_PQTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
-			 * 
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
+			 *
 			 * not self.high.oclIsUndefined() implies
 			 * (self.low.oclIsUndefined() and self.center.oclIsUndefined() and self.width.oclIsUndefined()) or
 			 * ((not self.low.oclIsUndefined()) and self.width.oclIsUndefined() and self.center.oclIsUndefined()) or
 			 * ((not self.width.oclIsUndefined()) and self.low.oclIsUndefined() and self.center.oclIsUndefined())
-			 * 
-			 * 
+			 *
+			 *
 			 * Fail States
 			 * high and
 			 * l c w
@@ -261,7 +261,7 @@ public class IVL_PQTest extends CDAValidationTest {
 			 * X - X
 			 * - X X
 			 * - X -
-			 * 
+			 *
 			 * Pass States
 			 * high and
 			 * l c w
@@ -329,8 +329,8 @@ public class IVL_PQTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
 			public void addPassTests() {
@@ -397,8 +397,8 @@ public class IVL_PQTest extends CDAValidationTest {
 			 */
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
 			 */
 			@Override
 			public void addFailTests() {
@@ -436,8 +436,8 @@ public class IVL_PQTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
 			public void addPassTests() {
@@ -535,8 +535,7 @@ public class IVL_PQTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

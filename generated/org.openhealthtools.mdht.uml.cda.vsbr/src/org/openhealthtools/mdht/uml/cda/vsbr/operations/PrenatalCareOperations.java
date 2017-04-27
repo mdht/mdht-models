@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.PrenatalCare;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -41,7 +39,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class PrenatalCareOperations extends ClinicalStatementOperations {
+public class PrenatalCareOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,7 +75,7 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PRENATAL_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PRENATAL_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,27 +91,32 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	public static boolean validatePrenatalCareTemplateId(PrenatalCare prenatalCare, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PRENATAL_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PRENATAL_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PRENATAL_CARE);
 			try {
-				VALIDATE_PRENATAL_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRENATAL_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRENATAL_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PRENATAL_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRENATAL_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRENATAL_CARE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			prenatalCare)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PrenatalCareTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(prenatalCare, context) }),
-					new Object[] { prenatalCare }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PrenatalCarePrenatalCareTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										prenatalCare, context) }),
+						new Object[] { prenatalCare }));
 			}
 
 			return false;
@@ -133,7 +143,7 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PRENATAL_CARE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PRENATAL_CARE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -149,26 +159,32 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	public static boolean validatePrenatalCareClassCode(PrenatalCare prenatalCare, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PRENATAL_CARE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PRENATAL_CARE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PRENATAL_CARE);
 			try {
-				VALIDATE_PRENATAL_CARE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRENATAL_CARE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRENATAL_CARE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PRENATAL_CARE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRENATAL_CARE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prenatalCare)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRENATAL_CARE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			prenatalCare)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PrenatalCareClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(prenatalCare, context) }),
-					new Object[] { prenatalCare }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PrenatalCarePrenatalCareClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										prenatalCare, context) }),
+						new Object[] { prenatalCare }));
 			}
 
 			return false;
@@ -195,7 +211,7 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PRENATAL_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PRENATAL_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,26 +227,32 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	public static boolean validatePrenatalCareMoodCode(PrenatalCare prenatalCare, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PRENATAL_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PRENATAL_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PRENATAL_CARE);
 			try {
-				VALIDATE_PRENATAL_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRENATAL_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRENATAL_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PRENATAL_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRENATAL_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prenatalCare)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRENATAL_CARE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			prenatalCare)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PrenatalCareMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(prenatalCare, context) }),
-					new Object[] { prenatalCare }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PrenatalCarePrenatalCareMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										prenatalCare, context) }),
+						new Object[] { prenatalCare }));
 			}
 
 			return false;
@@ -257,7 +279,7 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PRENATAL_CARE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PRENATAL_CARE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -273,27 +295,32 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	public static boolean validatePrenatalCareNegationInd(PrenatalCare prenatalCare, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PRENATAL_CARE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PRENATAL_CARE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PRENATAL_CARE);
 			try {
-				VALIDATE_PRENATAL_CARE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRENATAL_CARE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRENATAL_CARE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PRENATAL_CARE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRENATAL_CARE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			prenatalCare)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRENATAL_CARE_NEGATION_IND__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prenatalCare)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_NEGATION_IND,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PrenatalCareNegationInd",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(prenatalCare, context) }),
-					new Object[] { prenatalCare }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_NEGATION_IND,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PrenatalCarePrenatalCareNegationInd",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										prenatalCare, context) }),
+						new Object[] { prenatalCare }));
 			}
 
 			return false;
@@ -320,7 +347,7 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PRENATAL_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PRENATAL_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -336,26 +363,32 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	public static boolean validatePrenatalCareCodeP(PrenatalCare prenatalCare, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PRENATAL_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PRENATAL_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PRENATAL_CARE);
 			try {
-				VALIDATE_PRENATAL_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRENATAL_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRENATAL_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PRENATAL_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRENATAL_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prenatalCare)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRENATAL_CARE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			prenatalCare)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PrenatalCareCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(prenatalCare, context) }),
-					new Object[] { prenatalCare }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PrenatalCarePrenatalCareCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										prenatalCare, context) }),
+						new Object[] { prenatalCare }));
 			}
 
 			return false;
@@ -371,9 +404,9 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73776-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73776-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePrenatalCareCode(PrenatalCare, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Prenatal Care Code</em>}' invariant operation.
@@ -384,7 +417,7 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -400,25 +433,32 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	public static boolean validatePrenatalCareCode(PrenatalCare prenatalCare, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PRENATAL_CARE);
 			try {
-				VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(prenatalCare)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRENATAL_CARE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			prenatalCare)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE, VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PrenatalCareCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(prenatalCare, context) }),
-					new Object[] { prenatalCare }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PrenatalCarePrenatalCareCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										prenatalCare, context) }),
+						new Object[] { prenatalCare }));
 			}
 
 			return false;
@@ -445,7 +485,7 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PRENATAL_CARE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PRENATAL_CARE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -461,27 +501,32 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	public static boolean validatePrenatalCareEffectiveTime(PrenatalCare prenatalCare, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PRENATAL_CARE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PRENATAL_CARE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PRENATAL_CARE);
 			try {
-				VALIDATE_PRENATAL_CARE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRENATAL_CARE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRENATAL_CARE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PRENATAL_CARE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRENATAL_CARE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			prenatalCare)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRENATAL_CARE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prenatalCare)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_EFFECTIVE_TIME,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PrenatalCareEffectiveTime",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(prenatalCare, context) }),
-					new Object[] { prenatalCare }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_EFFECTIVE_TIME,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PrenatalCarePrenatalCareEffectiveTime",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										prenatalCare, context) }),
+						new Object[] { prenatalCare }));
 			}
 
 			return false;
@@ -508,7 +553,7 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PRENATAL_CARE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PRENATAL_CARE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -524,27 +569,32 @@ public class PrenatalCareOperations extends ClinicalStatementOperations {
 	public static boolean validatePrenatalCareEntryRelationship(PrenatalCare prenatalCare, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_PRENATAL_CARE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PRENATAL_CARE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PRENATAL_CARE);
 			try {
-				VALIDATE_PRENATAL_CARE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRENATAL_CARE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRENATAL_CARE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PRENATAL_CARE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRENATAL_CARE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			prenatalCare)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PRENATAL_CARE_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(prenatalCare)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_ENTRY_RELATIONSHIP,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PrenatalCareEntryRelationship",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(prenatalCare, context) }),
-					new Object[] { prenatalCare }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PRENATAL_CARE__PRENATAL_CARE_ENTRY_RELATIONSHIP,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PrenatalCarePrenatalCareEntryRelationship",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										prenatalCare, context) }),
+						new Object[] { prenatalCare }));
 			}
 
 			return false;

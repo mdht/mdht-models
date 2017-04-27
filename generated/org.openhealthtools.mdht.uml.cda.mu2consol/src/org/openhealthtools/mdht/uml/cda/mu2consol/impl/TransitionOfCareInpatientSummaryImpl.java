@@ -32,7 +32,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 		implements TransitionOfCareInpatientSummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected TransitionOfCareInpatientSummaryImpl() {
@@ -41,7 +41,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -51,7 +51,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -63,7 +63,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -75,7 +75,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -88,7 +88,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -98,7 +98,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -108,7 +108,7 @@ public class TransitionOfCareInpatientSummaryImpl extends SummaryOfCareRecordImp
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override

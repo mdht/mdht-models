@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.qrdoc/src" modelPluginID="org.openhealthtools.mdht.uml.cda.qrdoc"
+    templateDirectory="/org.eclipse.mdht.uml.cda/templates" dynamicTemplates="true"
+    modelName="qrdoc_Ecore" modelPluginClass="QRDOCPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
+    complianceLevel="5.0" copyrightFields="false" runtimeVersion="2.5" usedGenPackages="platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.openhealthtools.mdht.uml.cda.qfdd/model/qfdd.genmodel#//qfdd ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.eclipse.mdht.uml.cda/model/cda.genmodel#//cda ../../org.eclipse.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+  </genAnnotations>
+  <foreignModel>qrdoc_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="QRDOC" basePackage="org.openhealthtools.mdht.uml.cda"
+      disposableProviderFactory="true" ecorePackage="qrdoc.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.qrdoc.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//QuestionnaireResponseDocumentHeader">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderConfidentialityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderConfidentialityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderConfidentialityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderRealmCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderRealmCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderRealmCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderTitle/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderTypeId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderTypeId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderTypeId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderRecordTarget">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderRecordTarget/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderRecordTarget/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderAuthor">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderAuthor/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderAuthor/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderDataEnterer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderDataEnterer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderDataEnterer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderInformant">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderInformant/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderInformant/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderCustodian">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderCustodian/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderCustodian/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderInformationRecipient">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderInformationRecipient/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderInformationRecipient/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderLegalAuthenticator">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderLegalAuthenticator/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderLegalAuthenticator/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderInFulfillmentOf">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderInFulfillmentOf/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocumentHeader/QuestionnaireResponseDocumentHeaderInFulfillmentOf/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//QuestionnaireResponseDocument">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocument/QuestionnaireResponseDocumentQuestionnaireResponseSection">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocument/QuestionnaireResponseDocumentQuestionnaireResponseSection/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseDocument/QuestionnaireResponseDocumentQuestionnaireResponseSection/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseDocument/getQuestionnaireResponseSection"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//QuestionnaireResponseSection">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//QuestionnaireResponseSection/QuestionnaireResponseSectionTitle/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//ResponsesOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerNumericResponsePatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerNumericResponsePatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerNumericResponsePatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerMultipleChoiceResponsePatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerMultipleChoiceResponsePatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerMultipleChoiceResponsePatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerTextQuestionResponseObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerTextQuestionResponseObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerTextQuestionResponseObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerAnalogSliderResponsePatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerAnalogSliderResponsePatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerAnalogSliderResponsePatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerDiscreteSliderResponsePatternObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerDiscreteSliderResponsePatternObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponsesOrganizer/ResponsesOrganizerDiscreteSliderResponsePatternObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/getNumericResponsePatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/getMultipleChoiceResponsePatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/getTextQuestionResponseObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/getAnalogSliderResponsePatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponsesOrganizer/getDiscreteSliderResponsePatternObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//NumericResponsePatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationReferenceRange">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationReferenceRange/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationReferenceRange/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCDCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCDCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCDCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCDCodeSystem">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCDCodeSystem/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCDCodeSystem/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCDOriginalText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCDOriginalText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//NumericResponsePatternObservation/NumericResponsePatternObservationCDOriginalText/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//MultipleChoiceResponsePatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationLanguageCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationLanguageCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationLanguageCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCDCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCDCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCDCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCDCodeSystem">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCDCodeSystem/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCDCodeSystem/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCDOriginalText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCDOriginalText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCDOriginalText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCECode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCECode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCECode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCECodeSystem">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCECodeSystem/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCECodeSystem/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCEDisplayName">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCEDisplayName/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/MultipleChoiceResponsePatternObservationCEDisplayName/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/getTextQuestionResponseObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/getQuestionHelpTextPatternObservations"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//MultipleChoiceResponsePatternObservation/getQuestionOptionsPatternObservations"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//TextResponsePatternObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationLanguageCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationLanguageCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationLanguageCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationLanguageCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationLanguageCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationLanguageCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//TextResponsePatternObservation/TextResponsePatternObservationMoodCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//AnalogSliderResponsePatternObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//DiscreteSliderResponsePatternObservation"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//ResponseMediaPattern">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponseMediaPattern/ResponseMediaPatternTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseMediaPattern/ResponseMediaPatternTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseMediaPattern/ResponseMediaPatternTemplateId/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="qrdoc.ecore#//ResponseReferenceRangePattern">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRange">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRange/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRange/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeIVLINTHigh">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeIVLINTHigh/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeIVLINTHigh/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeIVLINTLow">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeIVLINTLow/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeIVLINTLow/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="qrdoc.ecore#//ResponseReferenceRangePattern/ResponseReferenceRangePatternObservationRangeValue/context"/>
+      </genOperations>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

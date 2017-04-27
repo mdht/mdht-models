@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * <!-- begin-model-doc -->
  * <p>
  *     The Hospital Course Section contains information about of the sequence of events from admission to
- *     discharge in a hospital facility. 
+ *     discharge in a hospital facility.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -59,5 +57,6 @@ public interface HospitalCourseSection extends org.openhealthtools.mdht.uml.cda.
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HospitalCourseSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public HospitalCourseSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // HospitalCourseSection

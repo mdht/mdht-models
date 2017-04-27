@@ -7,17 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.PronouncingDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -48,6 +43,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class PronouncingDeathOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -76,7 +79,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -91,25 +94,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathTemplateId(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -137,7 +150,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -152,25 +165,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathClassCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -198,7 +221,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -213,25 +236,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathMoodCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -261,7 +294,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -276,25 +309,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -322,7 +365,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -337,25 +380,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathEffectiveTime(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -383,7 +436,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_PRONOUNCER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_PRONOUNCER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -398,25 +451,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathPronouncer(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathPronouncer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -444,7 +507,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -459,25 +522,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyClassCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncerPronouncerRolePronouncingPartyClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathPronouncerPronouncerRolePronouncingPartyClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -505,7 +578,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -520,25 +593,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyDeterminerCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_DETERMINER_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncerPronouncerRolePronouncingPartyDeterminerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathPronouncerPronouncerRolePronouncingPartyDeterminerCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -566,7 +649,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -581,25 +664,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathPronouncerPronouncerRolePronouncingPartyName(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY_NAME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncerPronouncerRolePronouncingPartyName", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathPronouncerPronouncerRolePronouncingPartyName", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -627,7 +720,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -642,25 +735,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathPronouncerPronouncerRoleClassCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncerPronouncerRoleClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathPronouncerPronouncerRoleClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -688,7 +791,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -703,25 +806,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathPronouncerPronouncerRoleId(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncerPronouncerRoleId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathPronouncerPronouncerRoleId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -749,7 +862,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -764,25 +877,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathPronouncerPronouncerRolePronouncingParty(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE_PRONOUNCING_PARTY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncerPronouncerRolePronouncingParty", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathPronouncerPronouncerRolePronouncingParty", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -810,7 +933,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -825,25 +948,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathPronouncerTypeCode(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncerTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathPronouncerTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 
@@ -871,7 +1004,7 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -886,25 +1019,35 @@ public class PronouncingDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validatePronouncingDeathPronouncerPronouncerRole(PronouncingDeath pronouncingDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.PRONOUNCING_DEATH);
 			try {
-				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(pronouncingDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pronouncingDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.PRONOUNCING_DEATH__PRONOUNCING_DEATH_PRONOUNCER_PRONOUNCER_ROLE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncerPronouncerRole", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "PronouncingDeathPronouncingDeathPronouncerPronouncerRole", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pronouncingDeath, context) }),
 						 new Object [] { pronouncingDeath }));
 			}
 			 

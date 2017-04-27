@@ -46,6 +46,13 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
  * @generated
  */
 public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ihe.operations.PayersSectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,7 +81,7 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,25 +94,30 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 	 * @generated
 	 */
 
-	public static boolean validateHITSPPayersSectionTemplateId(PayersSection payersSection,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public static boolean validateHITSPPayersSectionTemplateId(PayersSection payersSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PAYERS_SECTION);
 			try {
-				VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			payersSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_PAYERS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(payersSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.PAYERS_SECTION__HITSP_PAYERS_SECTION_TEMPLATE_ID,
-					HITSPPlugin.INSTANCE.getString("HITSPPayersSectionTemplateId"), new Object[] { payersSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.PAYERS_SECTION__HITSP_PAYERS_SECTION_TEMPLATE_ID,
+						HITSPPlugin.INSTANCE.getString("PayersSectionHITSPPayersSectionTemplateId"),
+						new Object[] { payersSection }));
 			}
 
 			return false;
@@ -132,7 +144,7 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,23 +160,29 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 	public static boolean validateHITSPPayersSectionInsuranceProvider(PayersSection payersSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.PAYERS_SECTION);
 			try {
-				VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			payersSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_PAYERS_SECTION_INSURANCE_PROVIDER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				payersSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.PAYERS_SECTION__HITSP_PAYERS_SECTION_INSURANCE_PROVIDER,
-					HITSPPlugin.INSTANCE.getString("HITSPPayersSectionInsuranceProvider"),
-					new Object[] { payersSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.PAYERS_SECTION__HITSP_PAYERS_SECTION_INSURANCE_PROVIDER,
+						HITSPPlugin.INSTANCE.getString("PayersSectionHITSPPayersSectionInsuranceProvider"),
+						new Object[] { payersSection }));
 			}
 
 			return false;
@@ -198,8 +216,10 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 	 * @generated
 	 */
 	public static EList<InsuranceProvider> getInsuranceProviders(PayersSection payersSection) {
+
 		if (GET_INSURANCE_PROVIDERS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.PAYERS_SECTION, HITSPPackage.Literals.PAYERS_SECTION.getEAllOperations().get(66));
 			try {
@@ -208,7 +228,8 @@ public class PayersSectionOperations extends org.openhealthtools.mdht.uml.cda.ih
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INSURANCE_PROVIDERS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_INSURANCE_PROVIDERS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<InsuranceProvider> result = (Collection<InsuranceProvider>) query.evaluate(payersSection);
 		return new BasicEList.UnmodifiableEList<InsuranceProvider>(result.size(), result.toArray());

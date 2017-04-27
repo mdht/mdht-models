@@ -10,14 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.InsuranceProvider;
 import org.openhealthtools.mdht.uml.cda.hitsp.PayersSection;
@@ -27,13 +25,11 @@ import org.openhealthtools.mdht.uml.cda.hitsp.operations.PayersSectionOperations
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Payers Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PayersSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.PayersSectionImpl implements
-		PayersSection {
+public class PayersSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.PayersSectionImpl
+		implements PayersSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -67,7 +63,8 @@ public class PayersSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPPayersSectionInsuranceProvider(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPPayersSectionInsuranceProvider(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PayersSectionOperations.validateHITSPPayersSectionInsuranceProvider(this, diagnostics, context);
 	}
 
@@ -87,7 +84,7 @@ public class PayersSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl
 	 */
 	@Override
 	public PayersSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -96,8 +93,9 @@ public class PayersSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl
 	 * @generated
 	 */
 	@Override
-	public PayersSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public PayersSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // PayersSectionImpl

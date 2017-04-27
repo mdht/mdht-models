@@ -397,7 +397,7 @@
     <ruleId>R2.0=CONF:1098-16561</ruleId>
   </CDA:PropertyValidation>
   <CDA:CodeSystemConstraint xmi:id="_4hL00OWQEeGKmvzED_He2w" code="completed" displayName="Completed" base_Property="_kh-7cOWQEeGKmvzED_He2w">
-    <reference href="../../../org.openhealthtools.mdht.uml.term.models/model/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
+    <reference href="pathmap://TERM_MODEL/CodeSystems.uml#_e8ZEoCWvEd-iTYfpNb4PkQ"/>
     <ruleId>CONF:16561</ruleId>
     <ruleId>R2.0=CONF:1098-19118</ruleId>
   </CDA:CodeSystemConstraint>
@@ -529,10 +529,9 @@ The smoking status value set includes a special code to communicate if the smoki
   <CDA:PropertyValidation xmi:id="_BYK8QOWUEeGKmvzED_He2w" base_Property="_Yz0EIOWQEeGKmvzED_He2w">
     <ruleId>CONF:14808</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_R6jJcOWUEeGKmvzED_He2w" message="Consol Smoking Status Observation SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot; (CONF:14814, R2.0=CONF:1098-31928, DSTU:596, DSTU:597) Note: This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to just a time stamp, and will approximately correspond with the author/time. " base_Property="_Yz0EIeWQEeGKmvzED_He2w">
+  <CDA:PropertyValidation xmi:id="_R6jJcOWUEeGKmvzED_He2w" message="Consol Smoking Status Observation SHALL contain exactly one [1..1] effectiveTime (CONF:14814, DSTU:596-relaxed-to-warning, DSTU:597)" base_Property="_Yz0EIeWQEeGKmvzED_He2w">
     <ruleId>CONF:14814</ruleId>
-    <ruleId>R2.0=CONF:1098-31928</ruleId>
-    <ruleId>DSTU:596</ruleId>
+    <ruleId>DSTU:596-relaxed-to-warning</ruleId>
     <ruleId>DSTU:597</ruleId>
   </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_GdsEkOWUEeGKmvzED_He2w" base_Property="_Yz0rMeWQEeGKmvzED_He2w"/>
@@ -988,6 +987,39 @@ If the patient's current smoking status is unknown, the value element must be po
       <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iVQjcbnHEeOgPNzo_e4B9A"/>
       <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iVRKgLnHEeOgPNzo_e4B9A" value="*"/>
     </ownedAttribute>
+    <ownedAttribute xmi:id="_EaXh4A8lEeecs5O6JXLprw" name="effectiveTime" visibility="private" type="_a99jQA8oEeecs5O6JXLprw" aggregation="composite" redefinedProperty="_Yz0EIeWQEeGKmvzED_He2w">
+      <ownedComment xmi:id="_NJaOQA8oEeecs5O6JXLprw">
+        <body>Note: This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to just a time stamp, and will approximately correspond with the author/time.</body>
+      </ownedComment>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_EaXh4Q8lEeecs5O6JXLprw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_EaXh4g8lEeecs5O6JXLprw" value="1"/>
+    </ownedAttribute>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_a99jQA8oEeecs5O6JXLprw" name="IVLTS">
+      <ownedComment xmi:id="_k5k30A8oEeecs5O6JXLprw">
+        <body>INLINE</body>
+      </ownedComment>
+      <generalization xmi:id="_a9-KUA8oEeecs5O6JXLprw" general="_itErcO3yEeSQmpVKea6s3Q"/>
+      <ownedAttribute xmi:id="_1WcS4A8oEeecs5O6JXLprw" name="center" visibility="private" aggregation="composite" redefinedProperty="_jfV14O3yEeSQmpVKea6s3Q">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_4ysYYD59Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1WcS4Q8oEeecs5O6JXLprw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1WcS4g8oEeecs5O6JXLprw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1Wf9QA8oEeecs5O6JXLprw" name="high" visibility="private" aggregation="composite" redefinedProperty="_jfV14-3yEeSQmpVKea6s3Q">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1Wf9QQ8oEeecs5O6JXLprw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Wf9Qg8oEeecs5O6JXLprw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1WhycA8oEeecs5O6JXLprw" name="low" visibility="private" aggregation="composite" redefinedProperty="_jfV15u3yEeSQmpVKea6s3Q">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_BY5uUD6AEd6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1WhycQ8oEeecs5O6JXLprw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Whycg8oEeecs5O6JXLprw"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_1WjnoA8oEeecs5O6JXLprw" name="width" visibility="private" aggregation="composite" redefinedProperty="_jfV16e3yEeSQmpVKea6s3Q">
+        <type xmi:type="uml:Class" href="pathmap://DATATYPES_MODEL/datatypes.uml#_3mPzYD59Ed6cla2oXsPtlA"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1WjnoQ8oEeecs5O6JXLprw"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1Wjnog8oEeecs5O6JXLprw"/>
+      </ownedAttribute>
+    </nestedClassifier>
     <nestedClassifier xmi:type="uml:Class" xmi:id="_HxlesOoUEeWB4ufB0cOMzQ" name="CD">
       <ownedComment xmi:id="_JqIUsOoUEeWB4ufB0cOMzQ">
         <body>INLINE</body>
@@ -1307,10 +1339,22 @@ The effectiveTime element is used to describe dates associated with the patient'
   <CDA:PropertyValidation xmi:id="_4rmWYM80EeSJsu9BbhWxmQ" base_Property="_1XI8AM80EeSJsu9BbhWxmQ">
     <ruleId>CONF:1098-32400</ruleId>
   </CDA:PropertyValidation>
-  <CDA:PropertyValidation xmi:id="_pnuJYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a center" base_Property="_jfV14O3yEeSQmpVKea6s3Q"/>
-  <CDA:PropertyValidation xmi:id="_qFj78O3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a high" base_Property="_jfV14-3yEeSQmpVKea6s3Q"/>
-  <CDA:PropertyValidation xmi:id="_qyCAYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a low (DSTU:596, DSTU:597)" base_Property="_jfV15u3yEeSQmpVKea6s3Q"/>
-  <CDA:PropertyValidation xmi:id="_rGOuwO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a width" base_Property="_jfV16e3yEeSQmpVKea6s3Q"/>
+  <CDA:PropertyValidation xmi:id="_pnuJYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a center (DSTU:596-relaxed-to-warning, DSTU:597) Note: This template is encouraged to represent a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime should be a time stamp, and will approximately correspond with the author/time. " severity="WARNING" negationIndicator="true" base_Property="_jfV14O3yEeSQmpVKea6s3Q">
+    <ruleId>DSTU:596-relaxed-to-warning</ruleId>
+    <ruleId>DSTU:597</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qFj78O3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a high (DSTU:596-relaxed-to-warning, DSTU:597) Note: This template is encouraged to represent a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime should be a time stamp, and will approximately correspond with the author/time. " severity="WARNING" negationIndicator="true" base_Property="_jfV14-3yEeSQmpVKea6s3Q">
+    <ruleId>DSTU:596-relaxed-to-warning</ruleId>
+    <ruleId>DSTU:597</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_qyCAYO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a low (DSTU:596-relaxed-to-warning, DSTU:597) Note: This template is encouraged to represent a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime should be a time stamp, and will approximately correspond with the author/time. " severity="WARNING" negationIndicator="true" base_Property="_jfV15u3yEeSQmpVKea6s3Q">
+    <ruleId>DSTU:596-relaxed-to-warning</ruleId>
+    <ruleId>DSTU:597</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_rGOuwO3yEeSQmpVKea6s3Q" message="effectiveTime of type TS cannot include a width (DSTU:596-relaxed-to-warning, DSTU:597) Note: This template is encouraged to represent a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime should be a time stamp, and will approximately correspond with the author/time. " severity="WARNING" negationIndicator="true" base_Property="_jfV16e3yEeSQmpVKea6s3Q">
+    <ruleId>DSTU:596-relaxed-to-warning</ruleId>
+    <ruleId>DSTU:597</ruleId>
+  </CDA:PropertyValidation>
   <CDA:PropertyValidation xmi:id="_F8nwkPmzEeSGHoih4Jm09A" base_Property="_DAqVwPmzEeSGHoih4Jm09A"/>
   <CDA:ValueSetConstraint xmi:id="_OCGp8PmzEeSGHoih4Jm09A" severity="WARNING" base_Property="_DAqVwPmzEeSGHoih4Jm09A">
     <ruleId>CONF:1098-28823</ruleId>
@@ -1433,4 +1477,29 @@ The effectiveTime element is used to describe dates associated with the patient'
     <ruleId>CONF:3250-32947</ruleId>
     <reference href="pathmap://CONSOL_MODEL///consol-vocab.uml#_pJl6gD-uEeaJttsCYk-pKw"/>
   </CDA:ValueSetConstraint>
+  <CDA:PropertyValidation xmi:id="_EaonoA8lEeecs5O6JXLprw" message="Consol Smoking Status Meaningful Use2 SHALL contain exactly one [1..1] effectiveTime with @xsi:type=&quot;TS&quot; (CONF:1098-31928, DSTU:596, DSTU:597) Note: This template represents a &quot;snapshot in time&quot; observation, simply reflecting what the patient's current smoking status is at the time of the observation. As a result, the effectiveTime is constrained to just a time stamp, and will approximately correspond with the author/time. " base_Property="_EaXh4A8lEeecs5O6JXLprw">
+    <ruleId>CONF:1098-31928</ruleId>
+    <ruleId>DSTU:596</ruleId>
+    <ruleId>DSTU:597</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_1Wc58A8oEeecs5O6JXLprw" message="effectiveTime of type TS cannot include a center (CONF:1098-32897, DSTU:596, DSTU:597)" base_Property="_1WcS4A8oEeecs5O6JXLprw">
+    <ruleId>CONF:1098-32897</ruleId>
+    <ruleId>DSTU:596</ruleId>
+    <ruleId>DSTU:597</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_1WgkUA8oEeecs5O6JXLprw" message="effectiveTime of type TS cannot include a high (CONF:1098-32896, DSTU:596, DSTU:597)" base_Property="_1Wf9QA8oEeecs5O6JXLprw">
+    <ruleId>CONF:1098-32896</ruleId>
+    <ruleId>DSTU:596</ruleId>
+    <ruleId>DSTU:597</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_1WiZgA8oEeecs5O6JXLprw" message="effectiveTime of type TS cannot include a low (CONF:1098-32894, DSTU:596, DSTU:597)" base_Property="_1WhycA8oEeecs5O6JXLprw">
+    <ruleId>CONF:1098-32894</ruleId>
+    <ruleId>DSTU:596</ruleId>
+    <ruleId>DSTU:597</ruleId>
+  </CDA:PropertyValidation>
+  <CDA:PropertyValidation xmi:id="_1WkOsA8oEeecs5O6JXLprw" message="effectiveTime of type TS cannot include a width (CONF:1098-32895, DSTU:596, DSTU:597)" base_Property="_1WjnoA8oEeecs5O6JXLprw">
+    <ruleId>CONF:1098-32895</ruleId>
+    <ruleId>DSTU:596</ruleId>
+    <ruleId>DSTU:597</ruleId>
+  </CDA:PropertyValidation>
 </xmi:XMI>

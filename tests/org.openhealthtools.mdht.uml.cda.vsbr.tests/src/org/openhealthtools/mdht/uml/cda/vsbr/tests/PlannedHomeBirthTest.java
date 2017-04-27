@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.PlannedHomeBirth;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.PlannedHomeBirthOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,6 +48,7 @@ public class PlannedHomeBirthTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePlannedHomeBirthTemplateId() {
 		OperationsTestCase<PlannedHomeBirth> validatePlannedHomeBirthTemplateIdTestCase = new OperationsTestCase<PlannedHomeBirth>(
 			"validatePlannedHomeBirthTemplateId",
@@ -79,6 +83,7 @@ public class PlannedHomeBirthTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePlannedHomeBirthClassCode() {
 		OperationsTestCase<PlannedHomeBirth> validatePlannedHomeBirthClassCodeTestCase = new OperationsTestCase<PlannedHomeBirth>(
 			"validatePlannedHomeBirthClassCode",
@@ -113,6 +118,7 @@ public class PlannedHomeBirthTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePlannedHomeBirthMoodCode() {
 		OperationsTestCase<PlannedHomeBirth> validatePlannedHomeBirthMoodCodeTestCase = new OperationsTestCase<PlannedHomeBirth>(
 			"validatePlannedHomeBirthMoodCode",
@@ -147,6 +153,7 @@ public class PlannedHomeBirthTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePlannedHomeBirthCodeP() {
 		OperationsTestCase<PlannedHomeBirth> validatePlannedHomeBirthCodePTestCase = new OperationsTestCase<PlannedHomeBirth>(
 			"validatePlannedHomeBirthCodeP",
@@ -181,6 +188,7 @@ public class PlannedHomeBirthTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePlannedHomeBirthCode() {
 		OperationsTestCase<PlannedHomeBirth> validatePlannedHomeBirthCodeTestCase = new OperationsTestCase<PlannedHomeBirth>(
 			"validatePlannedHomeBirthCode",
@@ -215,6 +223,7 @@ public class PlannedHomeBirthTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidatePlannedHomeBirthValue() {
 		OperationsTestCase<PlannedHomeBirth> validatePlannedHomeBirthValueTestCase = new OperationsTestCase<PlannedHomeBirth>(
 			"validatePlannedHomeBirthValue",
@@ -300,8 +309,7 @@ public class PlannedHomeBirthTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

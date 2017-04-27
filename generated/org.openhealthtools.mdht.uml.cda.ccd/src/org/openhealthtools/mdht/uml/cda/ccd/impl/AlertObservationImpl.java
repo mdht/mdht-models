@@ -17,20 +17,18 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.AlertObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.AlertStatusObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.ReactionObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.AlertObservationOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Alert Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -68,7 +66,8 @@ public class AlertObservationImpl extends ObservationImpl implements AlertObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAlertObservationAgentRepresentation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAlertObservationAgentRepresentation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationAgentRepresentation(this, diagnostics, context);
 	}
 
@@ -182,7 +181,8 @@ public class AlertObservationImpl extends ObservationImpl implements AlertObserv
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAlertObservationReactionObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAlertObservationReactionObservation(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AlertObservationOperations.validateAlertObservationReactionObservation(this, diagnostics, context);
 	}
 

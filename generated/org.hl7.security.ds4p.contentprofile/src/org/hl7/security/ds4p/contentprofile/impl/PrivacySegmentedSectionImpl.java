@@ -11,9 +11,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
-import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.PrivacySegmentedSection;
@@ -27,7 +26,7 @@ import org.hl7.security.ds4p.contentprofile.operations.PrivacySegmentedSectionOp
  *
  * @generated
  */
-public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacySegmentedSection {
+public class PrivacySegmentedSectionImpl extends EObjectImpl implements PrivacySegmentedSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,6 +51,7 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +61,7 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedSectionConfidentialityCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionConfidentialityCode(this, diagnostics, context);
 	}
@@ -70,6 +71,7 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedSectionConfidentialityCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionConfidentialityCodeP(this, diagnostics, context);
 	}
@@ -79,6 +81,7 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedSectionAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedSectionOperations.validatePrivacySegmentedSectionAuthor(this, diagnostics, context);
 	}
@@ -88,6 +91,7 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacySegmentedSection init() {
 	    return Initializer.Util.init(this);
 	}
@@ -96,7 +100,8 @@ public class PrivacySegmentedSectionImpl extends SectionImpl implements PrivacyS
      * <!-- end-user-doc -->
      * @generated
      */
-    public PrivacySegmentedSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PrivacySegmentedSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

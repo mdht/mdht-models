@@ -2,19 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.openhealthtools.mdht.uml.cda.tests</groupId>
-	<artifactId>org.openhealthtools.mdht.uml.cda.consol2.tests</artifactId>
+
+
 	<parent>
 		<groupId>org.openhealthtools.mdht.cda</groupId>
 		<artifactId>org.openhealthtools.mdht.cda.tests</artifactId>
-		<version>2.5.17-SNAPSHOT</version>
+		<version>3.0.0-SNAPSHOT</version>
 	</parent>
-	<version>2.5.17-SNAPSHOT</version>
+	<artifactId>org.openhealthtools.mdht.uml.cda.consol2.tests</artifactId>
 	<packaging>eclipse-plugin</packaging>
 
 	<build>
 		<plugins>
-		
+
 			<plugin>
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<version>2.9</version>
@@ -31,7 +31,7 @@
 					</execution>
 				</executions>
 			</plugin>
-		
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
@@ -92,18 +92,15 @@
 							<tasks>
 								<concat destfile="target/surefire-reports/allvalidationresults.xml"
 									force="no">
-									<filelist dir="src/test/resource"
-										files="start.tag" />
+									<filelist dir="src/test/resource" files="start.tag" />
 									<fileset dir="target/surefire-reports" includes="test*.xml" />
-									<filelist dir="src/test/resource"
-										files="end.tag" />
+									<filelist dir="src/test/resource" files="end.tag" />
 								</concat>
 								<junitreport todir="target/surefire-reports">
 									<fileset dir="target/surefire-reports">
 										<include name="TEST-*.xml" />
 									</fileset>
-									<report  styledir="."
-										format="frames" todir="target/surefire-reports">
+									<report styledir="." format="frames" todir="target/surefire-reports">
 									</report>
 								</junitreport>
 							</tasks>

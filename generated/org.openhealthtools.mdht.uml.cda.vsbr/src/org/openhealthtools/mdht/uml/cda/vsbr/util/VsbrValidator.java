@@ -11,8 +11,6 @@ import org.eclipse.emf.ecore.EPackage;
 
 import org.eclipse.emf.ecore.util.EObjectValidator;
 
-import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.*;
 
 /**
@@ -1522,12 +1520,20 @@ public class VsbrValidator extends EObjectValidator {
 	public static final int ASSESSMENTS_SECTION__ASSESSMENTS_SECTION_TEXT = 185;
 
 	/**
+	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessments Section Title' of 'Assessments Section'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public static final int ASSESSMENTS_SECTION__ASSESSMENTS_SECTION_TITLE = 186;
+
+	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessments Section Assessment Observation' of 'Assessments Section'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENTS_SECTION__ASSESSMENTS_SECTION_ASSESSMENT_OBSERVATION = 186;
+	public static final int ASSESSMENTS_SECTION__ASSESSMENTS_SECTION_ASSESSMENT_OBSERVATION = 187;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Observation Template Id' of 'Assessment Observation'.
@@ -1535,7 +1541,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_TEMPLATE_ID = 187;
+	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_TEMPLATE_ID = 188;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Observation Class Code' of 'Assessment Observation'.
@@ -1543,7 +1549,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_CLASS_CODE = 188;
+	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_CLASS_CODE = 189;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Observation Mood Code' of 'Assessment Observation'.
@@ -1551,7 +1557,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_MOOD_CODE = 189;
+	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_MOOD_CODE = 190;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Observation Code P' of 'Assessment Observation'.
@@ -1559,7 +1565,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_CODE_P = 190;
+	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_CODE_P = 191;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Observation Code' of 'Assessment Observation'.
@@ -1567,7 +1573,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_CODE = 191;
+	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_CODE = 192;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Assessment Observation Value' of 'Assessment Observation'.
@@ -1575,7 +1581,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_VALUE = 192;
+	public static final int ASSESSMENT_OBSERVATION__ASSESSMENT_OBSERVATION_VALUE = 193;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Section Template Id' of 'Laborand Delivery Section'.
@@ -1583,7 +1589,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_TEMPLATE_ID = 193;
+	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_TEMPLATE_ID = 194;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Section Class Code' of 'Laborand Delivery Section'.
@@ -1591,7 +1597,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_CLASS_CODE = 194;
+	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_CLASS_CODE = 195;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Section Mood Code' of 'Laborand Delivery Section'.
@@ -1599,7 +1605,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_MOOD_CODE = 195;
+	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_MOOD_CODE = 196;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Section Code' of 'Laborand Delivery Section'.
@@ -1607,7 +1613,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_CODE = 196;
+	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_CODE = 197;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Section Text' of 'Laborand Delivery Section'.
@@ -1615,7 +1621,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_TEXT = 197;
+	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_TEXT = 198;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Section Labor And Delivery Process' of 'Laborand Delivery Section'.
@@ -1623,7 +1629,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_LABOR_AND_DELIVERY_PROCESS = 198;
+	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_LABOR_AND_DELIVERY_PROCESS = 199;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Section Labor And Delivery Procedures Section' of 'Laborand Delivery Section'.
@@ -1631,7 +1637,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_LABOR_AND_DELIVERY_PROCEDURES_SECTION = 199;
+	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_LABOR_AND_DELIVERY_PROCEDURES_SECTION = 200;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Section Labor Onsets' of 'Laborand Delivery Section'.
@@ -1639,7 +1645,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_LABOR_ONSETS = 200;
+	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_LABOR_ONSETS = 201;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Section Mothers Vital Signs Section' of 'Laborand Delivery Section'.
@@ -1647,7 +1653,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_MOTHERS_VITAL_SIGNS_SECTION = 201;
+	public static final int LABORAND_DELIVERY_SECTION__LABORAND_DELIVERY_SECTION_MOTHERS_VITAL_SIGNS_SECTION = 202;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Template Id' of 'Laborand Delivery Process'.
@@ -1655,7 +1661,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_TEMPLATE_ID = 202;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_TEMPLATE_ID = 203;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Class Code' of 'Laborand Delivery Process'.
@@ -1663,7 +1669,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CLASS_CODE = 203;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CLASS_CODE = 204;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Mood Code' of 'Laborand Delivery Process'.
@@ -1671,7 +1677,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MOOD_CODE = 204;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MOOD_CODE = 205;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Code P' of 'Laborand Delivery Process'.
@@ -1679,7 +1685,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CODE_P = 205;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CODE_P = 206;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Code' of 'Laborand Delivery Process'.
@@ -1687,7 +1693,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CODE = 206;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CODE = 207;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Attendant Participation' of 'Laborand Delivery Process'.
@@ -1695,7 +1701,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION = 207;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION = 208;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Entry Relationship' of 'Laborand Delivery Process'.
@@ -1703,7 +1709,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP = 208;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP = 209;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Characteristics Of Labor And Delivery' of 'Laborand Delivery Process'.
@@ -1711,7 +1717,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY = 209;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY = 210;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Home Birth Plan' of 'Laborand Delivery Process'.
@@ -1719,7 +1725,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN = 210;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN = 211;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Maternal Transfer' of 'Laborand Delivery Process'.
@@ -1727,7 +1733,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER = 211;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER = 212;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Participating Location' of 'Laborand Delivery Process'.
@@ -1735,7 +1741,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION = 212;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION = 213;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Maternal Morbidities' of 'Laborand Delivery Process'.
@@ -1743,7 +1749,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES = 213;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES = 214;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Process Risk Factors' of 'Laborand Delivery Process'.
@@ -1751,7 +1757,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_RISK_FACTORS = 214;
+	public static final int LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_RISK_FACTORS = 215;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristicof Laborand Delivery Template Id' of 'Characteristicof Laborand Delivery'.
@@ -1759,7 +1765,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_TEMPLATE_ID = 215;
+	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_TEMPLATE_ID = 216;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristicof Laborand Delivery Class Code' of 'Characteristicof Laborand Delivery'.
@@ -1767,7 +1773,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_CLASS_CODE = 216;
+	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_CLASS_CODE = 217;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristicof Laborand Delivery Mood Code' of 'Characteristicof Laborand Delivery'.
@@ -1775,7 +1781,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_MOOD_CODE = 217;
+	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_MOOD_CODE = 218;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristicof Laborand Delivery Code P' of 'Characteristicof Laborand Delivery'.
@@ -1783,7 +1789,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_CODE_P = 218;
+	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_CODE_P = 219;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristicof Laborand Delivery Code' of 'Characteristicof Laborand Delivery'.
@@ -1791,7 +1797,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_CODE = 219;
+	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_CODE = 220;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristicof Laborand Delivery Code VS' of 'Characteristicof Laborand Delivery'.
@@ -1799,7 +1805,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_CODE_VS = 220;
+	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_CODE_VS = 221;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristicof Laborand Delivery Value' of 'Characteristicof Laborand Delivery'.
@@ -1807,7 +1813,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_VALUE = 221;
+	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_VALUE = 222;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Characteristicof Laborand Delivery Value P' of 'Characteristicof Laborand Delivery'.
@@ -1815,7 +1821,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_VALUE_P = 222;
+	public static final int CHARACTERISTICOF_LABORAND_DELIVERY__CHARACTERISTICOF_LABORAND_DELIVERY_VALUE_P = 223;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Home Birth Template Id' of 'Planned Home Birth'.
@@ -1823,7 +1829,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_TEMPLATE_ID = 223;
+	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_TEMPLATE_ID = 224;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Home Birth Class Code' of 'Planned Home Birth'.
@@ -1831,7 +1837,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CLASS_CODE = 224;
+	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CLASS_CODE = 225;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Home Birth Mood Code' of 'Planned Home Birth'.
@@ -1839,7 +1845,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_MOOD_CODE = 225;
+	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_MOOD_CODE = 226;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Home Birth Code P' of 'Planned Home Birth'.
@@ -1847,7 +1853,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CODE_P = 226;
+	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CODE_P = 227;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Home Birth Code' of 'Planned Home Birth'.
@@ -1855,7 +1861,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CODE = 227;
+	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_CODE = 228;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Planned Home Birth Value' of 'Planned Home Birth'.
@@ -1863,7 +1869,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_VALUE = 228;
+	public static final int PLANNED_HOME_BIRTH__PLANNED_HOME_BIRTH_VALUE = 229;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Transfer Template Id' of 'Maternal Transfer'.
@@ -1871,7 +1877,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_TEMPLATE_ID = 229;
+	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_TEMPLATE_ID = 230;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Transfer Class Code' of 'Maternal Transfer'.
@@ -1879,7 +1885,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_CLASS_CODE = 230;
+	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_CLASS_CODE = 231;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Transfer Mood Code' of 'Maternal Transfer'.
@@ -1887,7 +1893,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_MOOD_CODE = 231;
+	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_MOOD_CODE = 232;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Transfer Code P' of 'Maternal Transfer'.
@@ -1895,7 +1901,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_CODE_P = 232;
+	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_CODE_P = 233;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Transfer Code' of 'Maternal Transfer'.
@@ -1903,7 +1909,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_CODE = 233;
+	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_CODE = 234;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Transfer Value' of 'Maternal Transfer'.
@@ -1911,7 +1917,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_VALUE = 234;
+	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_VALUE = 235;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Transfer Participant' of 'Maternal Transfer'.
@@ -1919,7 +1925,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_PARTICIPANT = 235;
+	public static final int MATERNAL_TRANSFER__MATERNAL_TRANSFER_PARTICIPANT = 236;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Morbidity Template Id' of 'Maternal Morbidity'.
@@ -1927,7 +1933,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_TEMPLATE_ID = 236;
+	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_TEMPLATE_ID = 237;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Morbidity Class Code' of 'Maternal Morbidity'.
@@ -1935,7 +1941,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CLASS_CODE = 237;
+	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CLASS_CODE = 238;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Morbidity Mood Code' of 'Maternal Morbidity'.
@@ -1943,7 +1949,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_MOOD_CODE = 238;
+	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_MOOD_CODE = 239;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Morbidity Code P' of 'Maternal Morbidity'.
@@ -1951,7 +1957,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE_P = 239;
+	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE_P = 240;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Morbidity Code' of 'Maternal Morbidity'.
@@ -1959,7 +1965,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE = 240;
+	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE = 241;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Morbidity Code VS' of 'Maternal Morbidity'.
@@ -1967,7 +1973,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE_VS = 241;
+	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_CODE_VS = 242;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Morbidity Value' of 'Maternal Morbidity'.
@@ -1975,7 +1981,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_VALUE = 242;
+	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_VALUE = 243;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Maternal Morbidity Value P' of 'Maternal Morbidity'.
@@ -1983,7 +1989,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_VALUE_P = 243;
+	public static final int MATERNAL_MORBIDITY__MATERNAL_MORBIDITY_VALUE_P = 244;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Risk Factor Template Id' of 'Pregnancy Risk Factor'.
@@ -1991,7 +1997,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_TEMPLATE_ID = 244;
+	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_TEMPLATE_ID = 245;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Risk Factor Class Code' of 'Pregnancy Risk Factor'.
@@ -1999,7 +2005,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CLASS_CODE = 245;
+	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CLASS_CODE = 246;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Risk Factor Mood Code' of 'Pregnancy Risk Factor'.
@@ -2007,7 +2013,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_MOOD_CODE = 246;
+	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_MOOD_CODE = 247;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Risk Factor Code P' of 'Pregnancy Risk Factor'.
@@ -2015,7 +2021,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE_P = 247;
+	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE_P = 248;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Risk Factor Code' of 'Pregnancy Risk Factor'.
@@ -2023,7 +2029,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE = 248;
+	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE = 249;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Risk Factor Code VS' of 'Pregnancy Risk Factor'.
@@ -2031,7 +2037,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE_VS = 249;
+	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE_VS = 250;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Risk Factor Value' of 'Pregnancy Risk Factor'.
@@ -2039,7 +2045,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_VALUE = 250;
+	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_VALUE = 251;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Risk Factor Value P' of 'Pregnancy Risk Factor'.
@@ -2047,7 +2053,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_VALUE_P = 251;
+	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_VALUE_P = 252;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Pregnancy Risk Factor Entry Relationship' of 'Pregnancy Risk Factor'.
@@ -2055,7 +2061,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP = 252;
+	public static final int PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP = 253;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Procedure Section Template Id' of 'Laborand Delivery Procedure Section'.
@@ -2063,7 +2069,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID = 253;
+	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID = 254;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Procedure Section Class Code' of 'Laborand Delivery Procedure Section'.
@@ -2071,7 +2077,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE = 254;
+	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE = 255;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Procedure Section Mood Code' of 'Laborand Delivery Procedure Section'.
@@ -2079,7 +2085,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE = 255;
+	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE = 256;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Procedure Section Code' of 'Laborand Delivery Procedure Section'.
@@ -2087,7 +2093,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_CODE = 256;
+	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_CODE = 257;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Procedure Section Code P' of 'Laborand Delivery Procedure Section'.
@@ -2095,7 +2101,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_CODE_P = 257;
+	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_CODE_P = 258;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Procedure Section Text' of 'Laborand Delivery Procedure Section'.
@@ -2103,7 +2109,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT = 258;
+	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT = 259;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Procedure Section Obstetric Procedure' of 'Laborand Delivery Procedure Section'.
@@ -2111,7 +2117,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURE = 259;
+	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURE = 260;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Laborand Delivery Procedure Section Method Of Delivery' of 'Laborand Delivery Procedure Section'.
@@ -2119,7 +2125,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_METHOD_OF_DELIVERY = 260;
+	public static final int LABORAND_DELIVERY_PROCEDURE_SECTION__LABORAND_DELIVERY_PROCEDURE_SECTION_METHOD_OF_DELIVERY = 261;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Obstetric Procedure Template Id' of 'Obstetric Procedure'.
@@ -2127,7 +2133,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_TEMPLATE_ID = 261;
+	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_TEMPLATE_ID = 262;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Obstetric Procedure Class Code' of 'Obstetric Procedure'.
@@ -2135,7 +2141,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_CLASS_CODE = 262;
+	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_CLASS_CODE = 263;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Obstetric Procedure Mood Code' of 'Obstetric Procedure'.
@@ -2143,7 +2149,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_MOOD_CODE = 263;
+	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_MOOD_CODE = 264;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Obstetric Procedure Negation Ind' of 'Obstetric Procedure'.
@@ -2151,7 +2157,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_NEGATION_IND = 264;
+	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_NEGATION_IND = 265;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Obstetric Procedure Code' of 'Obstetric Procedure'.
@@ -2159,7 +2165,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_CODE = 265;
+	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_CODE = 266;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Obstetric Procedure Code P' of 'Obstetric Procedure'.
@@ -2167,7 +2173,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_CODE_P = 266;
+	public static final int OBSTETRIC_PROCEDURE__OBSTETRIC_PROCEDURE_CODE_P = 267;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Methodof Delivery Template Id' of 'Methodof Delivery'.
@@ -2175,7 +2181,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_TEMPLATE_ID = 267;
+	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_TEMPLATE_ID = 268;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Methodof Delivery Class Code' of 'Methodof Delivery'.
@@ -2183,7 +2189,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_CLASS_CODE = 268;
+	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_CLASS_CODE = 269;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Methodof Delivery Mood Code' of 'Methodof Delivery'.
@@ -2191,7 +2197,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_MOOD_CODE = 269;
+	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_MOOD_CODE = 270;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Methodof Delivery Code' of 'Methodof Delivery'.
@@ -2199,7 +2205,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_CODE = 270;
+	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_CODE = 271;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Methodof Delivery Code P' of 'Methodof Delivery'.
@@ -2207,7 +2213,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_CODE_P = 271;
+	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_CODE_P = 272;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Methodof Delivery Final Route And Method' of 'Methodof Delivery'.
@@ -2215,7 +2221,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_FINAL_ROUTE_AND_METHOD = 272;
+	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_FINAL_ROUTE_AND_METHOD = 273;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Methodof Delivery Fetal Presentation' of 'Methodof Delivery'.
@@ -2223,7 +2229,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_FETAL_PRESENTATION = 273;
+	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_FETAL_PRESENTATION = 274;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Methodof Delivery Hysterotomy Hysterectomy Association' of 'Methodof Delivery'.
@@ -2231,7 +2237,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_HYSTEROTOMY_HYSTERECTOMY_ASSOCIATION = 274;
+	public static final int METHODOF_DELIVERY__METHODOF_DELIVERY_HYSTEROTOMY_HYSTERECTOMY_ASSOCIATION = 275;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Onsetof Labor Template Id' of 'Onsetof Labor'.
@@ -2239,7 +2245,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ONSETOF_LABOR__ONSETOF_LABOR_TEMPLATE_ID = 275;
+	public static final int ONSETOF_LABOR__ONSETOF_LABOR_TEMPLATE_ID = 276;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Onsetof Labor Class Code' of 'Onsetof Labor'.
@@ -2247,7 +2253,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ONSETOF_LABOR__ONSETOF_LABOR_CLASS_CODE = 276;
+	public static final int ONSETOF_LABOR__ONSETOF_LABOR_CLASS_CODE = 277;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Onsetof Labor Mood Code' of 'Onsetof Labor'.
@@ -2255,7 +2261,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ONSETOF_LABOR__ONSETOF_LABOR_MOOD_CODE = 277;
+	public static final int ONSETOF_LABOR__ONSETOF_LABOR_MOOD_CODE = 278;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Onsetof Labor Code P' of 'Onsetof Labor'.
@@ -2263,7 +2269,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ONSETOF_LABOR__ONSETOF_LABOR_CODE_P = 278;
+	public static final int ONSETOF_LABOR__ONSETOF_LABOR_CODE_P = 279;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Onsetof Labor Code' of 'Onsetof Labor'.
@@ -2271,7 +2277,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ONSETOF_LABOR__ONSETOF_LABOR_CODE = 279;
+	public static final int ONSETOF_LABOR__ONSETOF_LABOR_CODE = 280;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Onsetof Labor Code VS' of 'Onsetof Labor'.
@@ -2279,7 +2285,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ONSETOF_LABOR__ONSETOF_LABOR_CODE_VS = 280;
+	public static final int ONSETOF_LABOR__ONSETOF_LABOR_CODE_VS = 281;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Onsetof Labor Value' of 'Onsetof Labor'.
@@ -2287,7 +2293,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ONSETOF_LABOR__ONSETOF_LABOR_VALUE = 281;
+	public static final int ONSETOF_LABOR__ONSETOF_LABOR_VALUE = 282;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Onsetof Labor Value P' of 'Onsetof Labor'.
@@ -2295,7 +2301,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int ONSETOF_LABOR__ONSETOF_LABOR_VALUE_P = 282;
+	public static final int ONSETOF_LABOR__ONSETOF_LABOR_VALUE_P = 283;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Section Template Id' of 'Mothers Vital Signs Section'.
@@ -2303,7 +2309,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_TEMPLATE_ID = 283;
+	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_TEMPLATE_ID = 284;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Section Class Code' of 'Mothers Vital Signs Section'.
@@ -2311,7 +2317,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_CLASS_CODE = 284;
+	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_CLASS_CODE = 285;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Section Mood Code' of 'Mothers Vital Signs Section'.
@@ -2319,7 +2325,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_MOOD_CODE = 285;
+	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_MOOD_CODE = 286;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Section Code' of 'Mothers Vital Signs Section'.
@@ -2327,7 +2333,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_CODE = 286;
+	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_CODE = 287;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Section Code P' of 'Mothers Vital Signs Section'.
@@ -2335,7 +2341,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_CODE_P = 287;
+	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_CODE_P = 288;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Section Text' of 'Mothers Vital Signs Section'.
@@ -2343,7 +2349,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_TEXT = 288;
+	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_TEXT = 289;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Section Mothers Vital Signs Observation' of 'Mothers Vital Signs Section'.
@@ -2351,7 +2357,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_MOTHERS_VITAL_SIGNS_OBSERVATION = 289;
+	public static final int MOTHERS_VITAL_SIGNS_SECTION__MOTHERS_VITAL_SIGNS_SECTION_MOTHERS_VITAL_SIGNS_OBSERVATION = 290;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Observation Template Id' of 'Mothers Vital Signs Observation'.
@@ -2359,7 +2365,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_TEMPLATE_ID = 290;
+	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_TEMPLATE_ID = 291;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Observation Class Code' of 'Mothers Vital Signs Observation'.
@@ -2367,7 +2373,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_CLASS_CODE = 291;
+	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_CLASS_CODE = 292;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Observation Mood Code' of 'Mothers Vital Signs Observation'.
@@ -2375,7 +2381,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_MOOD_CODE = 292;
+	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_MOOD_CODE = 293;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Observation Code P' of 'Mothers Vital Signs Observation'.
@@ -2383,7 +2389,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_CODE_P = 293;
+	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_CODE_P = 294;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Observation Code' of 'Mothers Vital Signs Observation'.
@@ -2391,7 +2397,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_CODE = 294;
+	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_CODE = 295;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Mothers Vital Signs Observation Value' of 'Mothers Vital Signs Observation'.
@@ -2399,7 +2405,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_VALUE = 295;
+	public static final int MOTHERS_VITAL_SIGNS_OBSERVATION__MOTHERS_VITAL_SIGNS_OBSERVATION_VALUE = 296;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Historyof Infection Live Birth Section Template Id' of 'Historyof Infection Live Birth Section'.
@@ -2407,7 +2413,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID = 296;
+	public static final int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID = 297;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Historyof Infection Live Birth Section Code' of 'Historyof Infection Live Birth Section'.
@@ -2415,7 +2421,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE = 297;
+	public static final int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE = 298;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Historyof Infection Live Birth Section Text' of 'Historyof Infection Live Birth Section'.
@@ -2423,7 +2429,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT = 298;
+	public static final int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT = 299;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Historyof Infection Live Birth Section Infection Present Live Birth' of 'Historyof Infection Live Birth Section'.
@@ -2431,7 +2437,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH = 299;
+	public static final int HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH = 300;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Live Birth Template Id' of 'Infection Present Live Birth'.
@@ -2439,7 +2445,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_TEMPLATE_ID = 300;
+	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_TEMPLATE_ID = 301;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Live Birth Class Code' of 'Infection Present Live Birth'.
@@ -2447,7 +2453,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_CLASS_CODE = 301;
+	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_CLASS_CODE = 302;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Live Birth Mood Code' of 'Infection Present Live Birth'.
@@ -2455,7 +2461,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_MOOD_CODE = 302;
+	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_MOOD_CODE = 303;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Live Birth Code P' of 'Infection Present Live Birth'.
@@ -2463,7 +2469,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_CODE_P = 303;
+	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_CODE_P = 304;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Live Birth Code' of 'Infection Present Live Birth'.
@@ -2471,7 +2477,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_CODE = 304;
+	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_CODE = 305;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Live Birth Code VS' of 'Infection Present Live Birth'.
@@ -2479,7 +2485,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_CODE_VS = 305;
+	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_CODE_VS = 306;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Live Birth Value' of 'Infection Present Live Birth'.
@@ -2487,7 +2493,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_VALUE = 306;
+	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_VALUE = 307;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Live Birth Value P' of 'Infection Present Live Birth'.
@@ -2495,7 +2501,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_VALUE_P = 307;
+	public static final int INFECTION_PRESENT_LIVE_BIRTH__INFECTION_PRESENT_LIVE_BIRTH_VALUE_P = 308;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Template Id' of 'Fetal Delivery Section'.
@@ -2503,7 +2509,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_TEMPLATE_ID = 308;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_TEMPLATE_ID = 309;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Class Code' of 'Fetal Delivery Section'.
@@ -2511,7 +2517,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_CLASS_CODE = 309;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_CLASS_CODE = 310;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Mood Code' of 'Fetal Delivery Section'.
@@ -2519,7 +2525,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_MOOD_CODE = 310;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_MOOD_CODE = 311;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Code' of 'Fetal Delivery Section'.
@@ -2527,7 +2533,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_CODE = 311;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_CODE = 312;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Text' of 'Fetal Delivery Section'.
@@ -2535,7 +2541,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_TEXT = 312;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_TEXT = 313;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Birth Order' of 'Fetal Delivery Section'.
@@ -2543,7 +2549,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_BIRTH_ORDER = 313;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_BIRTH_ORDER = 314;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Number Of Infants Born Alive' of 'Fetal Delivery Section'.
@@ -2551,7 +2557,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE = 314;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_NUMBER_OF_INFANTS_BORN_ALIVE = 315;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Autopsy Performance' of 'Fetal Delivery Section'.
@@ -2559,7 +2565,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_AUTOPSY_PERFORMANCE = 315;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_AUTOPSY_PERFORMANCE = 316;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Death Occurrance' of 'Fetal Delivery Section'.
@@ -2567,7 +2573,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DEATH_OCCURRANCE = 316;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DEATH_OCCURRANCE = 317;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Plurality' of 'Fetal Delivery Section'.
@@ -2575,7 +2581,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_PLURALITY = 317;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_PLURALITY = 318;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Congenital Anomaly' of 'Fetal Delivery Section'.
@@ -2583,7 +2589,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALY = 318;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_CONGENITAL_ANOMALY = 319;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Time' of 'Fetal Delivery Section'.
@@ -2591,7 +2597,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_TIME = 319;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_TIME = 320;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Subject' of 'Fetal Delivery Section'.
@@ -2599,7 +2605,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT = 320;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT = 321;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus Fetus Class Code' of 'Fetal Delivery Section'.
@@ -2607,7 +2613,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_CLASS_CODE = 321;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_CLASS_CODE = 322;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus Fetus Determiner Code' of 'Fetal Delivery Section'.
@@ -2615,7 +2621,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_DETERMINER_CODE = 322;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_DETERMINER_CODE = 323;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus Fetus Name' of 'Fetal Delivery Section'.
@@ -2623,7 +2629,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_NAME = 323;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_NAME = 324;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus Fetus Administrative Gender Code' of 'Fetal Delivery Section'.
@@ -2631,7 +2637,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_ADMINISTRATIVE_GENDER_CODE = 324;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_ADMINISTRATIVE_GENDER_CODE = 325;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus Fetus Administrative Gender Code P' of 'Fetal Delivery Section'.
@@ -2639,7 +2645,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_ADMINISTRATIVE_GENDER_CODE_P = 325;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS_ADMINISTRATIVE_GENDER_CODE_P = 326;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus Class Code' of 'Fetal Delivery Section'.
@@ -2647,7 +2653,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_CLASS_CODE = 326;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_CLASS_CODE = 327;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus Fetus' of 'Fetal Delivery Section'.
@@ -2655,7 +2661,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS = 327;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS_FETUS = 328;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Subject Type Code' of 'Fetal Delivery Section'.
@@ -2663,7 +2669,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_TYPE_CODE = 328;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_TYPE_CODE = 329;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Section Fetal Delivery Subject Role Of Fetus' of 'Fetal Delivery Section'.
@@ -2671,7 +2677,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS = 329;
+	public static final int FETAL_DELIVERY_SECTION__FETAL_DELIVERY_SECTION_FETAL_DELIVERY_SUBJECT_ROLE_OF_FETUS = 330;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Template Id' of 'Autopsy Performance'.
@@ -2679,7 +2685,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_TEMPLATE_ID = 330;
+	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_TEMPLATE_ID = 331;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Class Code' of 'Autopsy Performance'.
@@ -2687,7 +2693,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CLASS_CODE = 331;
+	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CLASS_CODE = 332;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Mood Code' of 'Autopsy Performance'.
@@ -2695,7 +2701,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_MOOD_CODE = 332;
+	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_MOOD_CODE = 333;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Code P' of 'Autopsy Performance'.
@@ -2703,7 +2709,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE_P = 333;
+	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE_P = 334;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Code' of 'Autopsy Performance'.
@@ -2711,7 +2717,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE = 334;
+	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_CODE = 335;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Value' of 'Autopsy Performance'.
@@ -2719,7 +2725,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_VALUE = 335;
+	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_VALUE = 336;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Value P' of 'Autopsy Performance'.
@@ -2727,7 +2733,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_VALUE_P = 336;
+	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_VALUE_P = 337;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Use Association' of 'Autopsy Performance'.
@@ -2735,7 +2741,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_USE_ASSOCIATION = 337;
+	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_USE_ASSOCIATION = 338;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Autopsy Performance Histological Exam Association' of 'Autopsy Performance'.
@@ -2743,7 +2749,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION = 338;
+	public static final int AUTOPSY_PERFORMANCE__AUTOPSY_PERFORMANCE_HISTOLOGICAL_EXAM_ASSOCIATION = 339;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Death Occurrance Template Id' of 'Fetal Death Occurrance'.
@@ -2751,7 +2757,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_TEMPLATE_ID = 339;
+	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_TEMPLATE_ID = 340;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Death Occurrance Class Code' of 'Fetal Death Occurrance'.
@@ -2759,7 +2765,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CLASS_CODE = 340;
+	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CLASS_CODE = 341;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Death Occurrance Mood Code' of 'Fetal Death Occurrance'.
@@ -2767,7 +2773,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_MOOD_CODE = 341;
+	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_MOOD_CODE = 342;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Death Occurrance Code P' of 'Fetal Death Occurrance'.
@@ -2775,7 +2781,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CODE_P = 342;
+	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CODE_P = 343;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Death Occurrance Code' of 'Fetal Death Occurrance'.
@@ -2783,7 +2789,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CODE = 343;
+	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CODE = 344;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Death Occurrance Value' of 'Fetal Death Occurrance'.
@@ -2791,7 +2797,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_VALUE = 344;
+	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_VALUE = 345;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Death Occurrance Value P' of 'Fetal Death Occurrance'.
@@ -2799,7 +2805,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_VALUE_P = 345;
+	public static final int FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_VALUE_P = 346;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Time Template Id' of 'Fetal Delivery Time'.
@@ -2807,7 +2813,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_TEMPLATE_ID = 346;
+	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_TEMPLATE_ID = 347;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Time Mood Code' of 'Fetal Delivery Time'.
@@ -2815,7 +2821,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_MOOD_CODE = 347;
+	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_MOOD_CODE = 348;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Time Code P' of 'Fetal Delivery Time'.
@@ -2823,7 +2829,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_CODE_P = 348;
+	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_CODE_P = 349;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Time Code' of 'Fetal Delivery Time'.
@@ -2831,7 +2837,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_CODE = 349;
+	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_CODE = 350;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Time Value' of 'Fetal Delivery Time'.
@@ -2839,7 +2845,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_VALUE = 350;
+	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_VALUE = 351;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Fetal Delivery Time Participating Location' of 'Fetal Delivery Time'.
@@ -2847,7 +2853,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION = 351;
+	public static final int FETAL_DELIVERY_TIME__FETAL_DELIVERY_TIME_PARTICIPATING_LOCATION = 352;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Template Id' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2855,7 +2861,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID = 352;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TEMPLATE_ID = 353;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Class Code' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2863,7 +2869,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE = 353;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CLASS_CODE = 354;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Mood Code' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2871,7 +2877,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE = 354;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_MOOD_CODE = 355;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2879,7 +2885,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE = 355;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE = 356;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Realm Code P' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2887,7 +2893,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P = 356;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_REALM_CODE_P = 357;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Type Id' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2895,7 +2901,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID = 357;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TYPE_ID = 358;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Id' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2903,7 +2909,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID = 358;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_ID = 359;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Code P' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2911,7 +2917,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P = 359;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE_P = 360;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Code' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2919,7 +2925,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE = 360;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CODE = 361;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Title' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2927,7 +2933,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE = 361;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_TITLE = 362;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Effective Time' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2935,7 +2941,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME = 362;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_EFFECTIVE_TIME = 363;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Confidentiality Code P' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2943,7 +2949,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P = 363;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE_P = 364;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Confidentiality Code' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2951,7 +2957,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE = 364;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CONFIDENTIALITY_CODE = 365;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Language Code' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2959,7 +2965,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE = 365;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LANGUAGE_CODE = 366;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Author' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2967,7 +2973,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR = 366;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_AUTHOR = 367;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Custodian' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2975,7 +2981,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN = 367;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_CUSTODIAN = 368;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Record Target' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2983,7 +2989,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET = 368;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_RECORD_TARGET = 369;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Labor And Delivery Section' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2991,7 +2997,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION = 369;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_LABOR_AND_DELIVERY_SECTION = 370;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Fetal Delivery Section' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -2999,7 +3005,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION = 370;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_FETAL_DELIVERY_SECTION = 371;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Prenatal Testing And Surveillance' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -3007,7 +3013,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE = 371;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PRENATAL_TESTING_AND_SURVEILLANCE = 372;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords Pregnancy History' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -3015,7 +3021,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY = 372;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_PREGNANCY_HISTORY = 373;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords History Of Infection Fetal Death Section' of 'Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords'.
@@ -3023,7 +3029,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION = 373;
+	public static final int REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS__REPORTING_FETAL_DEATH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS_HISTORY_OF_INFECTION_FETAL_DEATH_SECTION = 374;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Historyof Infection Fetal Death Section Template Id' of 'Historyof Infection Fetal Death Section'.
@@ -3031,7 +3037,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID = 374;
+	public static final int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_TEMPLATE_ID = 375;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Historyof Infection Fetal Death Section Code' of 'Historyof Infection Fetal Death Section'.
@@ -3039,7 +3045,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE = 375;
+	public static final int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_CODE = 376;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Historyof Infection Fetal Death Section Infection Present Fetal Death' of 'Historyof Infection Fetal Death Section'.
@@ -3047,7 +3053,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH = 376;
+	public static final int HISTORYOF_INFECTION_FETAL_DEATH_SECTION__HISTORYOF_INFECTION_FETAL_DEATH_SECTION_INFECTION_PRESENT_FETAL_DEATH = 377;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Fetal Death Template Id' of 'Infection Present Fetal Death'.
@@ -3055,7 +3061,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_TEMPLATE_ID = 377;
+	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_TEMPLATE_ID = 378;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Fetal Death Class Code' of 'Infection Present Fetal Death'.
@@ -3063,7 +3069,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_CLASS_CODE = 378;
+	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_CLASS_CODE = 379;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Fetal Death Mood Code' of 'Infection Present Fetal Death'.
@@ -3071,7 +3077,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_MOOD_CODE = 379;
+	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_MOOD_CODE = 380;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Fetal Death Code P' of 'Infection Present Fetal Death'.
@@ -3079,7 +3085,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_CODE_P = 380;
+	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_CODE_P = 381;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Fetal Death Code' of 'Infection Present Fetal Death'.
@@ -3087,7 +3093,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_CODE = 381;
+	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_CODE = 382;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Fetal Death Code VS' of 'Infection Present Fetal Death'.
@@ -3095,7 +3101,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_CODE_VS = 382;
+	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_CODE_VS = 383;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Fetal Death Value' of 'Infection Present Fetal Death'.
@@ -3103,7 +3109,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_VALUE = 383;
+	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_VALUE = 384;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Infection Present Fetal Death Value P' of 'Infection Present Fetal Death'.
@@ -3111,7 +3117,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_VALUE_P = 384;
+	public static final int INFECTION_PRESENT_FETAL_DEATH__INFECTION_PRESENT_FETAL_DEATH_VALUE_P = 385;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants.
@@ -3119,7 +3125,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 384;
+	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 385;
 
 	/**
 	 * A constant with a fixed name that can be used as the base value for additional hand written constants in a derived class.
@@ -3135,7 +3141,7 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CDAValidator cdaValidator;
+	protected org.eclipse.mdht.uml.cda.util.CDAValidator cdaValidator;
 
 	/**
 	 * Creates an instance of the switch.
@@ -3145,7 +3151,7 @@ public class VsbrValidator extends EObjectValidator {
 	 */
 	public VsbrValidator() {
 		super();
-		cdaValidator = CDAValidator.INSTANCE;
+		cdaValidator = org.eclipse.mdht.uml.cda.util.CDAValidator.INSTANCE;
 	}
 
 	/**
@@ -3166,7 +3172,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 			case VsbrPackage.REPORTING_BIRTH_INFORMATIONFROMACLINICALSETTINGTOVITALRECORDS:
 				return validateReportingBirthInformationfromaclinicalsettingtovitalrecords(
@@ -3693,7 +3700,8 @@ public class VsbrValidator extends EObjectValidator {
 		if (!validate_NoCircularContainment(prenatalTestingandSurveillanceSection, diagnostics, context)) {
 			return false;
 		}
-		boolean result = validate_EveryMultiplicityConforms(prenatalTestingandSurveillanceSection, diagnostics, context);
+		boolean result = validate_EveryMultiplicityConforms(
+			prenatalTestingandSurveillanceSection, diagnostics, context);
 		if (result || diagnostics != null) {
 			result &= validate_EveryDataValueConforms(prenatalTestingandSurveillanceSection, diagnostics, context);
 		}
@@ -3949,8 +3957,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePrenatalCare_validatePrenatalCareCode(PrenatalCare prenatalCare,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePrenatalCare_validatePrenatalCareCode(PrenatalCare prenatalCare, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return prenatalCare.validatePrenatalCareCode(diagnostics, context);
 	}
 
@@ -4009,7 +4017,8 @@ public class VsbrValidator extends EObjectValidator {
 			result &= validate_EveryMapEntryUnique(priorPregnancyHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(priorPregnancyHistorySection, diagnostics, context);
+			result &= cdaValidator.validateSection_validateClassCode(
+				priorPregnancyHistorySection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= cdaValidator.validateSection_validateMoodCode(priorPregnancyHistorySection, diagnostics, context);
@@ -4298,8 +4307,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDateofLastLiveBirth_validateDateofLastLiveBirthCodeP(
-			DateofLastLiveBirth dateofLastLiveBirth, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDateofLastLiveBirth_validateDateofLastLiveBirthCodeP(DateofLastLiveBirth dateofLastLiveBirth,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return dateofLastLiveBirth.validateDateofLastLiveBirthCodeP(diagnostics, context);
 	}
 
@@ -4320,8 +4329,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDateofLastLiveBirth_validateDateofLastLiveBirthValue(
-			DateofLastLiveBirth dateofLastLiveBirth, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateDateofLastLiveBirth_validateDateofLastLiveBirthValue(DateofLastLiveBirth dateofLastLiveBirth,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return dateofLastLiveBirth.validateDateofLastLiveBirthValue(diagnostics, context);
 	}
 
@@ -4944,8 +4953,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEstimateofGestation_validateEstimateofGestationCodeP(
-			EstimateofGestation estimateofGestation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEstimateofGestation_validateEstimateofGestationCodeP(EstimateofGestation estimateofGestation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return estimateofGestation.validateEstimateofGestationCodeP(diagnostics, context);
 	}
 
@@ -4966,8 +4975,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEstimateofGestation_validateEstimateofGestationValue(
-			EstimateofGestation estimateofGestation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEstimateofGestation_validateEstimateofGestationValue(EstimateofGestation estimateofGestation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return estimateofGestation.validateEstimateofGestationValue(diagnostics, context);
 	}
 
@@ -5242,7 +5251,8 @@ public class VsbrValidator extends EObjectValidator {
 	 */
 	public boolean validateNewbornDeliverySection_validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(
 			NewbornDeliverySection newbornDeliverySection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return newbornDeliverySection.validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(diagnostics, context);
+		return newbornDeliverySection.validateNewbornDeliverySectionAbnormalConditionsOfTheNewborn(
+			diagnostics, context);
 	}
 
 	/**
@@ -5626,7 +5636,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateNumberofInfantsBornAlive_validateNumberofInfantsBornAliveTemplateId(
-			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return numberofInfantsBornAlive.validateNumberofInfantsBornAliveTemplateId(diagnostics, context);
 	}
 
@@ -5637,7 +5648,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateNumberofInfantsBornAlive_validateNumberofInfantsBornAliveClassCode(
-			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return numberofInfantsBornAlive.validateNumberofInfantsBornAliveClassCode(diagnostics, context);
 	}
 
@@ -5648,7 +5660,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateNumberofInfantsBornAlive_validateNumberofInfantsBornAliveMoodCode(
-			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return numberofInfantsBornAlive.validateNumberofInfantsBornAliveMoodCode(diagnostics, context);
 	}
 
@@ -5659,7 +5672,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateNumberofInfantsBornAlive_validateNumberofInfantsBornAliveCodeP(
-			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return numberofInfantsBornAlive.validateNumberofInfantsBornAliveCodeP(diagnostics, context);
 	}
 
@@ -5670,7 +5684,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateNumberofInfantsBornAlive_validateNumberofInfantsBornAliveCode(
-			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return numberofInfantsBornAlive.validateNumberofInfantsBornAliveCode(diagnostics, context);
 	}
 
@@ -5681,7 +5696,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateNumberofInfantsBornAlive_validateNumberofInfantsBornAliveValue(
-			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			NumberofInfantsBornAlive numberofInfantsBornAlive, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return numberofInfantsBornAlive.validateNumberofInfantsBornAliveValue(diagnostics, context);
 	}
 
@@ -5736,13 +5752,15 @@ public class VsbrValidator extends EObjectValidator {
 			result &= validateCongenitalAnomaly_validateCongenitalAnomalyCode(congenitalAnomaly, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateCongenitalAnomaly_validateCongenitalAnomalyCodeVS(congenitalAnomaly, diagnostics, context);
+			result &= validateCongenitalAnomaly_validateCongenitalAnomalyCodeVS(
+				congenitalAnomaly, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateCongenitalAnomaly_validateCongenitalAnomalyValue(congenitalAnomaly, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateCongenitalAnomaly_validateCongenitalAnomalyValueP(congenitalAnomaly, diagnostics, context);
+			result &= validateCongenitalAnomaly_validateCongenitalAnomalyValueP(
+				congenitalAnomaly, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateCongenitalAnomaly_validateCongenitalAnomalyDownConfirmationAssociation(
@@ -6417,8 +6435,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInfantLiving_validateInfantLivingCode(InfantLiving infantLiving,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInfantLiving_validateInfantLivingCode(InfantLiving infantLiving, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return infantLiving.validateInfantLivingCode(diagnostics, context);
 	}
 
@@ -6866,6 +6884,10 @@ public class VsbrValidator extends EObjectValidator {
 				assessmentsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
+			result &= validateAssessmentsSection_validateAssessmentsSectionTitle(
+				assessmentsSection, diagnostics, context);
+		}
+		if (result || diagnostics != null) {
 			result &= validateAssessmentsSection_validateAssessmentsSectionAssessmentObservation(
 				assessmentsSection, diagnostics, context);
 		}
@@ -6889,8 +6911,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentsSection_validateAssessmentsSectionClassCode(
-			AssessmentsSection assessmentsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAssessmentsSection_validateAssessmentsSectionClassCode(AssessmentsSection assessmentsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return assessmentsSection.validateAssessmentsSectionClassCode(diagnostics, context);
 	}
 
@@ -6936,6 +6958,17 @@ public class VsbrValidator extends EObjectValidator {
 	public boolean validateAssessmentsSection_validateAssessmentsSectionText(AssessmentsSection assessmentsSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return assessmentsSection.validateAssessmentsSectionText(diagnostics, context);
+	}
+
+	/**
+	 * Validates the validateAssessmentsSectionTitle constraint of '<em>Assessments Section</em>'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean validateAssessmentsSection_validateAssessmentsSectionTitle(AssessmentsSection assessmentsSection,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return assessmentsSection.validateAssessmentsSectionTitle(diagnostics, context);
 	}
 
 	/**
@@ -7560,7 +7593,8 @@ public class VsbrValidator extends EObjectValidator {
 	public boolean validateCharacteristicofLaborandDelivery_validateCharacteristicofLaborandDeliveryTemplateId(
 			CharacteristicofLaborandDelivery characteristicofLaborandDelivery, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return characteristicofLaborandDelivery.validateCharacteristicofLaborandDeliveryTemplateId(diagnostics, context);
+		return characteristicofLaborandDelivery.validateCharacteristicofLaborandDeliveryTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -7684,7 +7718,8 @@ public class VsbrValidator extends EObjectValidator {
 				plannedHomeBirth, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validatePlannedHomeBirth_validatePlannedHomeBirthClassCode(plannedHomeBirth, diagnostics, context);
+			result &= validatePlannedHomeBirth_validatePlannedHomeBirthClassCode(
+				plannedHomeBirth, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validatePlannedHomeBirth_validatePlannedHomeBirthMoodCode(plannedHomeBirth, diagnostics, context);
@@ -7804,7 +7839,8 @@ public class VsbrValidator extends EObjectValidator {
 				maternalTransfer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMaternalTransfer_validateMaternalTransferClassCode(maternalTransfer, diagnostics, context);
+			result &= validateMaternalTransfer_validateMaternalTransferClassCode(
+				maternalTransfer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMaternalTransfer_validateMaternalTransferMoodCode(maternalTransfer, diagnostics, context);
@@ -7953,13 +7989,15 @@ public class VsbrValidator extends EObjectValidator {
 			result &= validateMaternalMorbidity_validateMaternalMorbidityCode(maternalMorbidity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMaternalMorbidity_validateMaternalMorbidityCodeVS(maternalMorbidity, diagnostics, context);
+			result &= validateMaternalMorbidity_validateMaternalMorbidityCodeVS(
+				maternalMorbidity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMaternalMorbidity_validateMaternalMorbidityValue(maternalMorbidity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMaternalMorbidity_validateMaternalMorbidityValueP(maternalMorbidity, diagnostics, context);
+			result &= validateMaternalMorbidity_validateMaternalMorbidityValueP(
+				maternalMorbidity, diagnostics, context);
 		}
 		return result;
 	}
@@ -8162,8 +8200,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyRiskFactor_validatePregnancyRiskFactorCodeP(
-			PregnancyRiskFactor pregnancyRiskFactor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePregnancyRiskFactor_validatePregnancyRiskFactorCodeP(PregnancyRiskFactor pregnancyRiskFactor,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return pregnancyRiskFactor.validatePregnancyRiskFactorCodeP(diagnostics, context);
 	}
 
@@ -8195,8 +8233,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyRiskFactor_validatePregnancyRiskFactorValue(
-			PregnancyRiskFactor pregnancyRiskFactor, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePregnancyRiskFactor_validatePregnancyRiskFactorValue(PregnancyRiskFactor pregnancyRiskFactor,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return pregnancyRiskFactor.validatePregnancyRiskFactorValue(diagnostics, context);
 	}
 
@@ -8308,7 +8346,8 @@ public class VsbrValidator extends EObjectValidator {
 	public boolean validateLaborandDeliveryProcedureSection_validateLaborandDeliveryProcedureSectionTemplateId(
 			LaborandDeliveryProcedureSection laborandDeliveryProcedureSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return laborandDeliveryProcedureSection.validateLaborandDeliveryProcedureSectionTemplateId(diagnostics, context);
+		return laborandDeliveryProcedureSection.validateLaborandDeliveryProcedureSectionTemplateId(
+			diagnostics, context);
 	}
 
 	/**
@@ -8473,8 +8512,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateObstetricProcedure_validateObstetricProcedureClassCode(
-			ObstetricProcedure obstetricProcedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateObstetricProcedure_validateObstetricProcedureClassCode(ObstetricProcedure obstetricProcedure,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return obstetricProcedure.validateObstetricProcedureClassCode(diagnostics, context);
 	}
 
@@ -8559,7 +8598,8 @@ public class VsbrValidator extends EObjectValidator {
 				methodofDelivery, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateMethodofDelivery_validateMethodofDeliveryClassCode(methodofDelivery, diagnostics, context);
+			result &= validateMethodofDelivery_validateMethodofDeliveryClassCode(
+				methodofDelivery, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateMethodofDelivery_validateMethodofDeliveryMoodCode(methodofDelivery, diagnostics, context);
@@ -8657,8 +8697,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMethodofDelivery_validateMethodofDeliveryFetalPresentation(
-			MethodofDelivery methodofDelivery, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMethodofDelivery_validateMethodofDeliveryFetalPresentation(MethodofDelivery methodofDelivery,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return methodofDelivery.validateMethodofDeliveryFetalPresentation(diagnostics, context);
 	}
 
@@ -8782,8 +8822,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateOnsetofLabor_validateOnsetofLaborCode(OnsetofLabor onsetofLabor,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateOnsetofLabor_validateOnsetofLaborCode(OnsetofLabor onsetofLabor, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return onsetofLabor.validateOnsetofLaborCode(diagnostics, context);
 	}
 
@@ -8896,7 +8936,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMothersVitalSignsSection_validateMothersVitalSignsSectionTemplateId(
-			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mothersVitalSignsSection.validateMothersVitalSignsSectionTemplateId(diagnostics, context);
 	}
 
@@ -8907,7 +8948,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMothersVitalSignsSection_validateMothersVitalSignsSectionClassCode(
-			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mothersVitalSignsSection.validateMothersVitalSignsSectionClassCode(diagnostics, context);
 	}
 
@@ -8918,7 +8960,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMothersVitalSignsSection_validateMothersVitalSignsSectionMoodCode(
-			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mothersVitalSignsSection.validateMothersVitalSignsSectionMoodCode(diagnostics, context);
 	}
 
@@ -8929,7 +8972,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMothersVitalSignsSection_validateMothersVitalSignsSectionCode(
-			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mothersVitalSignsSection.validateMothersVitalSignsSectionCode(diagnostics, context);
 	}
 
@@ -8940,7 +8984,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMothersVitalSignsSection_validateMothersVitalSignsSectionCodeP(
-			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mothersVitalSignsSection.validateMothersVitalSignsSectionCodeP(diagnostics, context);
 	}
 
@@ -8951,7 +8996,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMothersVitalSignsSection_validateMothersVitalSignsSectionText(
-			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mothersVitalSignsSection.validateMothersVitalSignsSectionText(diagnostics, context);
 	}
 
@@ -8962,7 +9008,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateMothersVitalSignsSection_validateMothersVitalSignsSectionMothersVitalSignsObservation(
-			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			MothersVitalSignsSection mothersVitalSignsSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return mothersVitalSignsSection.validateMothersVitalSignsSectionMothersVitalSignsObservation(
 			diagnostics, context);
 	}
@@ -9838,8 +9885,8 @@ public class VsbrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAutopsyPerformance_validateAutopsyPerformanceClassCode(
-			AutopsyPerformance autopsyPerformance, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAutopsyPerformance_validateAutopsyPerformanceClassCode(AutopsyPerformance autopsyPerformance,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return autopsyPerformance.validateAutopsyPerformanceClassCode(diagnostics, context);
 	}
 
@@ -10688,7 +10735,8 @@ public class VsbrValidator extends EObjectValidator {
 	public boolean validateHistoryofInfectionFetalDeathSection_validateHistoryofInfectionFetalDeathSectionCode(
 			HistoryofInfectionFetalDeathSection historyofInfectionFetalDeathSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return historyofInfectionFetalDeathSection.validateHistoryofInfectionFetalDeathSectionCode(diagnostics, context);
+		return historyofInfectionFetalDeathSection.validateHistoryofInfectionFetalDeathSectionCode(
+			diagnostics, context);
 	}
 
 	/**

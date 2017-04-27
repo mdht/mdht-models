@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.ChestAndLungsAssessment;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ChestAndLungsAssessmentOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Chest And Lungs Assessment</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ChestAndLungsAssessmentImpl extends ObservationImpl implements ChestAndLungsAssessment {
+public class ChestAndLungsAssessmentImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ChestAndLungsAssessment {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -86,8 +75,7 @@ public class ChestAndLungsAssessmentImpl extends ObservationImpl implements Ches
 	 * @generated
 	 */
 	public boolean validateChestAndLungsAssessmentEffectiveTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentEffectiveTime(
-			this, diagnostics, context);
+		return ChestAndLungsAssessmentOperations.validateChestAndLungsAssessmentEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -105,16 +93,16 @@ public class ChestAndLungsAssessmentImpl extends ObservationImpl implements Ches
 	 * @generated
 	 */
 	public ChestAndLungsAssessment init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ChestAndLungsAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ChestAndLungsAssessment init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ChestAndLungsAssessmentImpl

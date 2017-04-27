@@ -33,7 +33,7 @@ public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.
 		implements ResultsSection {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected ResultsSectionImpl() {
@@ -42,7 +42,7 @@ public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -52,7 +52,7 @@ public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -62,7 +62,7 @@ public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -73,7 +73,7 @@ public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -83,7 +83,7 @@ public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -93,7 +93,7 @@ public class ResultsSectionImpl extends org.openhealthtools.mdht.uml.cda.consol.
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override

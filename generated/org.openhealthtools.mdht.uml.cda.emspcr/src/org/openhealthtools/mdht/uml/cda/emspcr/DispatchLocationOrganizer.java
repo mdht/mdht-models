@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Organizer;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.Organizer;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrDispatchLocationOrganizerDispatchLocationLongitudeRelationship constraints.validation.error='DispatchLocationOrganizerDispatchLocationLongitudeRelationshipObservation DispatchLocationOrganizerDispatchLocationLongitudeRelationshipTemplateId' templateId.root='null'"
  * @generated
  */
-public interface DispatchLocationOrganizer extends Organizer {
+public interface DispatchLocationOrganizer extends org.eclipse.mdht.uml.cda.Organizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -91,9 +84,9 @@ public interface DispatchLocationOrganizer extends Organizer {
 	public DispatchLocationOrganizer init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public DispatchLocationOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public DispatchLocationOrganizer init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // DispatchLocationOrganizer

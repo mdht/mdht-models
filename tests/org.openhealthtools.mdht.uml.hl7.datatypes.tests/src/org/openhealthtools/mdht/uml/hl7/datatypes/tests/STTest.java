@@ -10,15 +10,15 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.BinaryDataEncoding;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.ED;
+import org.eclipse.mdht.uml.hl7.datatypes.ST;
+import org.eclipse.mdht.uml.hl7.datatypes.operations.STOperations;
+import org.eclipse.mdht.uml.hl7.vocab.CompressionAlgorithm;
+import org.eclipse.mdht.uml.hl7.vocab.IntegrityCheckAlgorithm;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.BinaryDataEncoding;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ED;
-import org.openhealthtools.mdht.uml.hl7.datatypes.ST;
-import org.openhealthtools.mdht.uml.hl7.datatypes.operations.STOperations;
-import org.openhealthtools.mdht.uml.hl7.vocab.CompressionAlgorithm;
-import org.openhealthtools.mdht.uml.hl7.vocab.IntegrityCheckAlgorithm;
 
 /**
  * <!-- begin-user-doc -->
@@ -173,8 +173,8 @@ public class STTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
 			public void addPassTests() {
@@ -208,8 +208,8 @@ public class STTest extends CDAValidationTest {
 	@Test
 	public void testValidateCompression() {
 		OperationsTestCase<ST> validateCompressionTestCase = new OperationsTestCase<ST>(
-			"validateCompression",
-			operationsForOCL.getOCLValue("VALIDATE_COMPRESSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			"validateCompression", operationsForOCL.getOCLValue("VALIDATE_COMPRESSION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 			{
 				skipNullTest();
 			}
@@ -365,8 +365,7 @@ public class STTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

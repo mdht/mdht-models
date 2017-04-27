@@ -42,7 +42,7 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ViewDownloadTransmitSummary;
 public class Mu2consolValidator extends EObjectValidator {
 	/**
 	 * The cached model package <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final Mu2consolValidator INSTANCE = new Mu2consolValidator();
@@ -52,7 +52,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * {@link org.eclipse.emf.common.util.Diagnostic#getSource() source} of
 	 * diagnostic {@link org.eclipse.emf.common.util.Diagnostic#getCode() codes}
 	 * from this package. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see org.eclipse.emf.common.util.Diagnostic#getSource()
 	 * @see org.eclipse.emf.common.util.Diagnostic#getCode()
 	 * @generated
@@ -75,7 +75,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Role Patient Language Communication Language Code Term Case Insensitive'
 	 * of 'General Header Constraints'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE_TERM_CASE_INSENSITIVE = 2;
@@ -84,7 +84,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate General Header Constraints Template Id' of 'General
 	 * Header Constraints'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 3;
@@ -104,7 +104,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate General Header Constraints Record Target Patient
 	 * Role Patient Language Communication Language Code' of 'General Header
 	 * Constraints'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION_LANGUAGE_CODE = 5;
@@ -154,7 +154,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate General Header Constraints Record Target Patient
 	 * Role Patient Language Communication' of 'General Header Constraints'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT_LANGUAGE_COMMUNICATION = 10;
@@ -164,7 +164,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate General Header Constraints Record Target Patient
 	 * Role Patient' of 'General Header Constraints'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE_PATIENT = 11;
@@ -174,7 +174,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate General Header Constraints Record Target Patient
 	 * Role' of 'General Header Constraints'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int GENERAL_HEADER_CONSTRAINTS__GENERAL_HEADER_CONSTRAINTS_RECORD_TARGET_PATIENT_ROLE = 12;
@@ -183,7 +183,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Summary Of Care Record Care Planning' of 'Summary Of
 	 * Care Record'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_CARE_PLANNING = 13;
@@ -192,7 +192,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Summary Of Care Record Vital Signs' of 'Summary Of
 	 * Care Record'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_VITAL_SIGNS = 14;
@@ -201,7 +201,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Summary Of Care Record Problem Section' of 'Summary
 	 * Of Care Record'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROBLEM_SECTION = 15;
@@ -210,7 +210,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Summary Of Care Record Allergies Section' of
 	 * 'Summary Of Care Record'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_ALLERGIES_SECTION = 16;
@@ -219,7 +219,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Summary Of Care Record Immunizations Section' of
 	 * 'Summary Of Care Record'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_IMMUNIZATIONS_SECTION = 17;
@@ -228,7 +228,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Summary Of Care Record Social History Section' of
 	 * 'Summary Of Care Record'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_SOCIAL_HISTORY_SECTION = 18;
@@ -237,7 +237,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Summary Of Care Record Results Section' of 'Summary
 	 * Of Care Record'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_RESULTS_SECTION = 19;
@@ -246,7 +246,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Summary Of Care Record Procedures Section' of
 	 * 'Summary Of Care Record'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_PROCEDURES_SECTION = 20;
@@ -255,7 +255,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Summary Of Care Record Functional Status Section' of
 	 * 'Summary Of Care Record'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SUMMARY_OF_CARE_RECORD__SUMMARY_OF_CARE_RECORD_FUNCTIONAL_STATUS_SECTION = 21;
@@ -265,7 +265,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Reasonfor Visit' of
 	 * 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_REASONFOR_VISIT = 37;
@@ -274,7 +274,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Social History Section Template Id' of 'Social
 	 * History Section'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SOCIAL_HISTORY_SECTION__SOCIAL_HISTORY_SECTION_TEMPLATE_ID = 22;
@@ -293,7 +293,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Smoking Status Observation Template Id' of 'Smoking
 	 * Status Observation'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_TEMPLATE_ID = 24;
@@ -302,7 +302,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Smoking Status Observation Value P' of 'Smoking
 	 * Status Observation'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE_P = 25;
@@ -311,7 +311,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Smoking Status Observation Value' of 'Smoking Status
 	 * Observation'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int SMOKING_STATUS_OBSERVATION__SMOKING_STATUS_OBSERVATION_VALUE = 26;
@@ -320,7 +320,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Results Section Entries Optional Template Id' of
 	 * 'Results Section'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int RESULTS_SECTION__RESULTS_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 27;
@@ -329,7 +329,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Results Section Result Organizer' of 'Results
 	 * Section'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int RESULTS_SECTION__RESULTS_SECTION_RESULT_ORGANIZER = 28;
@@ -338,7 +338,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Result Organizer Template Id' of 'Result Organizer'.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 29;
@@ -347,7 +347,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Result Organizer Result Observation' of 'Result
 	 * Organizer'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int RESULT_ORGANIZER__RESULT_ORGANIZER_RESULT_OBSERVATION = 30;
@@ -356,7 +356,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Result Observation Template Id' of 'Result
 	 * Observation'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 31;
@@ -365,7 +365,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Procedures Section Entries Optional Template Id' of
 	 * 'Procedures Section'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_ENTRIES_OPTIONAL_TEMPLATE_ID = 32;
@@ -374,7 +374,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Procedures Section Procedure Activity Procedure' of
 	 * 'Procedures Section'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int PROCEDURES_SECTION__PROCEDURES_SECTION_PROCEDURE_ACTIVITY_PROCEDURE = 33;
@@ -403,7 +403,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Procedure Activity Procedure Code' of 'Procedure
 	 * Activity Procedure'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int PROCEDURE_ACTIVITY_PROCEDURE__PROCEDURE_ACTIVITY_PROCEDURE_CODE = 36;
@@ -413,7 +413,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Care Planning' of
 	 * 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_CARE_PLANNING = 38;
@@ -423,7 +423,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Date Ofvisit' of
 	 * 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_DATE_OFVISIT = 39;
@@ -433,7 +433,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Visit Location' of
 	 * 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_VISIT_LOCATION = 40;
@@ -443,7 +443,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Provider Name And
 	 * Contact Info' of 'Clinical Office Visit Summary'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO = 41;
@@ -453,7 +453,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Vital Signs' of
 	 * 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_VITAL_SIGNS = 42;
@@ -463,7 +463,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Medications
 	 * Administered Section Or Medications Section ER' of 'Clinical Office Visit
 	 * Summary'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_MEDICATIONS_ADMINISTERED_SECTION_OR_MEDICATIONS_SECTION_ER = 43;
@@ -473,7 +473,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Problem Section' of
 	 * 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PROBLEM_SECTION = 44;
@@ -483,7 +483,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Allergies Section' of
 	 * 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_ALLERGIES_SECTION = 45;
@@ -493,7 +493,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Results Section' of
 	 * 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_RESULTS_SECTION = 46;
@@ -503,7 +503,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Procedures Section' of
 	 * 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_PROCEDURES_SECTION = 47;
@@ -513,7 +513,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Immunizations Section'
 	 * of 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_IMMUNIZATIONS_SECTION = 48;
@@ -523,7 +523,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Medications Administered Section Template Id' of
 	 * 'Medications Administered Section'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_TEMPLATE_ID = 51;
@@ -533,7 +533,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Medications Administered Section Medication
 	 * Activity' of 'Medications Administered Section'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int MEDICATIONS_ADMINISTERED_SECTION__MEDICATIONS_ADMINISTERED_SECTION_MEDICATION_ACTIVITY = 52;
@@ -553,7 +553,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Transition Of Care Ambulatory Summary Reason For
 	 * Referral' of 'Transition Of Care Ambulatory Summary'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_REASON_FOR_REFERRAL = 54;
@@ -573,7 +573,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Transition Of Care Ambulatory Summary Medications
 	 * Section' of 'Transition Of Care Ambulatory Summary'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int TRANSITION_OF_CARE_AMBULATORY_SUMMARY__TRANSITION_OF_CARE_AMBULATORY_SUMMARY_MEDICATIONS_SECTION = 56;
@@ -583,7 +583,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Transition Of Care Inpatient Summary Medications' of
 	 * 'Transition Of Care Inpatient Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_MEDICATIONS = 57;
@@ -593,7 +593,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Transition Of Care Inpatient Summary Encounter
 	 * Diagnoses' of 'Transition Of Care Inpatient Summary'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_ENCOUNTER_DIAGNOSES = 58;
@@ -603,7 +603,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Instructions Section'
 	 * of 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_INSTRUCTIONS_SECTION = 49;
@@ -613,7 +613,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Clinical Office Visit Summary Social History
 	 * Section' of 'Clinical Office Visit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int CLINICAL_OFFICE_VISIT_SUMMARY__CLINICAL_OFFICE_VISIT_SUMMARY_SOCIAL_HISTORY_SECTION = 50;
@@ -623,7 +623,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate Transition Of Care Inpatient Summary Hospital
 	 * Discharge Instructions Section' of 'Transition Of Care Inpatient
 	 * Summary'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int TRANSITION_OF_CARE_INPATIENT_SUMMARY__TRANSITION_OF_CARE_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION = 59;
@@ -633,7 +633,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate View Download Transmit Summary Care Planning' of
 	 * 'View Download Transmit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_CARE_PLANNING = 60;
@@ -642,7 +642,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate View Download Transmit Summary Vital Signs' of 'View
 	 * Download Transmit Summary'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_VITAL_SIGNS = 61;
@@ -652,7 +652,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate View Download Transmit Summary Allergies Section' of
 	 * 'View Download Transmit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_ALLERGIES_SECTION = 62;
@@ -662,7 +662,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate View Download Transmit Summary Problem Section' of
 	 * 'View Download Transmit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROBLEM_SECTION = 63;
@@ -672,7 +672,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate View Download Transmit Summary Procedures Section'
 	 * of 'View Download Transmit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_PROCEDURES_SECTION = 64;
@@ -682,7 +682,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate View Download Transmit Summary Results Section' of
 	 * 'View Download Transmit Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_RESULTS_SECTION = 65;
@@ -692,7 +692,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate View Download Transmit Summary Social History
 	 * Section' of 'View Download Transmit Summary'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VIEW_DOWNLOAD_TRANSMIT_SUMMARY__VIEW_DOWNLOAD_TRANSMIT_SUMMARY_SOCIAL_HISTORY_SECTION = 66;
@@ -701,7 +701,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate VDT Inpatient Summary Admission Date' of 'VDT
 	 * Inpatient Summary'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_ADMISSION_DATE = 67;
@@ -710,7 +710,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate VDT Inpatient Summary Discharge Date' of 'VDT
 	 * Inpatient Summary'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_DISCHARGE_DATE = 68;
@@ -719,7 +719,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate VDT Inpatient Summary Admission Discharge Location'
 	 * of 'VDT Inpatient Summary'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_ADMISSION_DISCHARGE_LOCATION = 69;
@@ -728,7 +728,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate VDT Inpatient Summary Medications' of 'VDT Inpatient
 	 * Summary'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_MEDICATIONS = 70;
@@ -737,7 +737,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate VDT Inpatient Summary Reasonfor Hospitalization' of
 	 * 'VDT Inpatient Summary'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_REASONFOR_HOSPITALIZATION = 71;
@@ -747,7 +747,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate VDT Inpatient Summary Hospital Discharge
 	 * Instructions Section' of 'VDT Inpatient Summary'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VDT_INPATIENT_SUMMARY__VDT_INPATIENT_SUMMARY_HOSPITAL_DISCHARGE_INSTRUCTIONS_SECTION = 72;
@@ -757,7 +757,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * constraint 'Validate VDT Ambulatory Summary Provider Name And Contact
 	 * Info' of 'VDT Ambulatory Summary'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_PROVIDER_NAME_AND_CONTACT_INFO = 73;
@@ -766,7 +766,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate VDT Ambulatory Summary Medications Section' of 'VDT
 	 * Ambulatory Summary'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int VDT_AMBULATORY_SUMMARY__VDT_AMBULATORY_SUMMARY_MEDICATIONS_SECTION = 74;
@@ -785,7 +785,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Result Observation Template Id' of 'Cognitive Status
 	 * Result Observation'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int COGNITIVE_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 76;
@@ -794,7 +794,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Result Organizer Template Id' of 'Cognitive Status
 	 * Result Organizer'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int COGNITIVE_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 77;
@@ -803,7 +803,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Result Observation Template Id' of 'Functional
 	 * Status Result Observation'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int FUNCTIONAL_STATUS_RESULT_OBSERVATION__RESULT_OBSERVATION_TEMPLATE_ID = 78;
@@ -812,7 +812,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for
 	 * constraint 'Validate Result Organizer Template Id' of 'Functional Status
 	 * Result Organizer'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public static final int FUNCTIONAL_STATUS_RESULT_ORGANIZER__RESULT_ORGANIZER_TEMPLATE_ID = 79;
@@ -821,7 +821,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * A constant with a fixed name that can be used as the base value for
 	 * additional hand written constants. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	private static final int GENERATED_DIAGNOSTIC_CODE_COUNT = 79;
@@ -830,7 +830,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * A constant with a fixed name that can be used as the base value for
 	 * additional hand written constants in a derived class. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected static final int DIAGNOSTIC_CODE_COUNT = GENERATED_DIAGNOSTIC_CODE_COUNT;
@@ -838,7 +838,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	/**
 	 * The cached base package validator. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected CDAValidator cdaValidator;
@@ -846,7 +846,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	/**
 	 * The cached base package validator. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected ConsolValidator consolValidator;
@@ -854,7 +854,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	/**
 	 * Creates an instance of the switch. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public Mu2consolValidator() {
@@ -866,7 +866,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	/**
 	 * Returns the package of this validator switch. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -877,7 +877,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	/**
 	 * Calls <code>validateXXX</code> for the corresponding classifier of the
 	 * model. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -938,7 +938,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints(GeneralHeaderConstraints generalHeaderConstraints,
@@ -2314,7 +2314,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateGeneralHeaderConstraintsCareTeamMembers constraint
 	 * of '<em>General Header Constraints</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCareTeamMembers(
@@ -2328,7 +2328,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive
 	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeTermCaseInsensitive(
@@ -2340,10 +2340,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateGeneralHeaderConstraintsTemplateId constraint of '
-	 * <em>General Header Constraints</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateGeneralHeaderConstraintsTemplateId constraint of
+	 * '<em>General Header Constraints</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTemplateId(
@@ -2356,7 +2356,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateGeneralHeaderConstraintsRecordTarget constraint of
 	 * '<em>General Header Constraints</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
@@ -2370,7 +2370,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode
 	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
@@ -2386,7 +2386,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode
 	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
@@ -2401,7 +2401,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP
 	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
@@ -2416,7 +2416,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode
 	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
@@ -2431,7 +2431,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP
 	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
@@ -2446,7 +2446,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication
 	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
@@ -2462,7 +2462,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateGeneralHeaderConstraintsRecordTargetPatientRolePatient constraint
 	 * of '<em>General Header Constraints</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
@@ -2476,7 +2476,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateGeneralHeaderConstraintsRecordTargetPatientRole
 	 * constraint of '<em>General Header Constraints</em>'. <!-- begin-user-doc
 	 * --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
@@ -2487,7 +2487,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord(SummaryOfCareRecord summaryOfCareRecord, DiagnosticChain diagnostics,
@@ -3895,10 +3895,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateSummaryOfCareRecordCarePlanning constraint of '
-	 * <em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateSummaryOfCareRecordCarePlanning constraint of
+	 * '<em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordCarePlanning(
@@ -3907,10 +3907,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateSummaryOfCareRecordVitalSigns constraint of '
-	 * <em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateSummaryOfCareRecordVitalSigns constraint of
+	 * '<em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordVitalSigns(
@@ -3919,10 +3919,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateSummaryOfCareRecordProblemSection constraint of '
-	 * <em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateSummaryOfCareRecordProblemSection constraint of
+	 * '<em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordProblemSection(
@@ -3931,10 +3931,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateSummaryOfCareRecordAllergiesSection constraint of '
-	 * <em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateSummaryOfCareRecordAllergiesSection constraint of
+	 * '<em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordAllergiesSection(
@@ -3946,7 +3946,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateSummaryOfCareRecordImmunizationsSection constraint
 	 * of '<em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordImmunizationsSection(
@@ -3958,7 +3958,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateSummaryOfCareRecordSocialHistorySection constraint
 	 * of '<em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordSocialHistorySection(
@@ -3967,10 +3967,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateSummaryOfCareRecordResultsSection constraint of '
-	 * <em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateSummaryOfCareRecordResultsSection constraint of
+	 * '<em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordResultsSection(
@@ -3982,7 +3982,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateSummaryOfCareRecordProceduresSection constraint of
 	 * '<em>Summary Of Care Record</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordProceduresSection(
@@ -3994,7 +3994,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateSummaryOfCareRecordFunctionalStatusSection
 	 * constraint of '<em>Summary Of Care Record</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSummaryOfCareRecord_validateSummaryOfCareRecordFunctionalStatusSection(
@@ -4004,7 +4004,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSocialHistorySection(SocialHistorySection socialHistorySection, DiagnosticChain diagnostics,
@@ -4080,10 +4080,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateSocialHistorySectionTemplateId constraint of '
-	 * <em>Social History Section</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateSocialHistorySectionTemplateId constraint of
+	 * '<em>Social History Section</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSocialHistorySection_validateSocialHistorySectionTemplateId(
@@ -4095,7 +4095,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateSocialHistorySectionSmokingStatusObservation
 	 * constraint of '<em>Social History Section</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSocialHistorySection_validateSocialHistorySectionSmokingStatusObservation(
@@ -4105,7 +4105,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSmokingStatusObservation(SmokingStatusObservation smokingStatusObservation,
@@ -4204,10 +4204,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateSmokingStatusObservationTemplateId constraint of '
-	 * <em>Smoking Status Observation</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateSmokingStatusObservationTemplateId constraint of
+	 * '<em>Smoking Status Observation</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationTemplateId(
@@ -4217,10 +4217,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateSmokingStatusObservationValueP constraint of '
-	 * <em>Smoking Status Observation</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateSmokingStatusObservationValueP constraint of
+	 * '<em>Smoking Status Observation</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationValueP(
@@ -4230,10 +4230,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateSmokingStatusObservationValue constraint of '
-	 * <em>Smoking Status Observation</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateSmokingStatusObservationValue constraint of
+	 * '<em>Smoking Status Observation</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateSmokingStatusObservation_validateSmokingStatusObservationValue(
@@ -4244,7 +4244,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateResultsSection(ResultsSection resultsSection, DiagnosticChain diagnostics,
@@ -4329,9 +4329,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultsSectionResultOrganizer constraint of '
-	 * <em>Results Section</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Validates the validateResultsSectionResultOrganizer constraint of
+	 * '<em>Results Section</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	public boolean validateResultsSection_validateResultsSectionResultOrganizer(ResultsSection resultsSection,
@@ -4341,7 +4341,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateResultOrganizer(ResultOrganizer resultOrganizer, DiagnosticChain diagnostics,
@@ -4414,9 +4414,9 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultOrganizerTemplateId constraint of '
-	 * <em>Result Organizer</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Validates the validateResultOrganizerTemplateId constraint of '<em>Result
+	 * Organizer</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	public boolean validateResultOrganizer_validateResultOrganizerTemplateId(ResultOrganizer resultOrganizer,
@@ -4425,9 +4425,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultOrganizerResultObservation constraint of '
-	 * <em>Result Organizer</em>'. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 * Validates the validateResultOrganizerResultObservation constraint of
+	 * '<em>Result Organizer</em>'. <!-- begin-user-doc --> <!-- end-user-doc
+	 * -->
+	 *
 	 * @generated
 	 */
 	public boolean validateResultOrganizer_validateResultOrganizerResultObservation(ResultOrganizer resultOrganizer,
@@ -4437,7 +4438,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateResultObservation(ResultObservation resultObservation, DiagnosticChain diagnostics,
@@ -4560,7 +4561,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateProceduresSection(ProceduresSection proceduresSection, DiagnosticChain diagnostics,
@@ -4659,7 +4660,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateProceduresSectionEntriesOptionalTemplateId
 	 * constraint of '<em>Procedures Section</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateProceduresSection_validateProceduresSectionEntriesOptionalTemplateId(
@@ -4671,7 +4672,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateProceduresSectionProcedureActivityProcedure
 	 * constraint of '<em>Procedures Section</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateProceduresSection_validateProceduresSectionProcedureActivityProcedure(
@@ -4681,7 +4682,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedure(ProcedureActivityProcedure procedureActivityProcedure,
@@ -4938,10 +4939,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateProcedureActivityProcedureCodeValue constraint of '
-	 * <em>Procedure Activity Procedure</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateProcedureActivityProcedureCodeValue constraint of
+	 * '<em>Procedure Activity Procedure</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedure_validateProcedureActivityProcedureCodeValue(
@@ -4954,7 +4955,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateProcedureActivityProcedureTemplateId constraint of
 	 * '<em>Procedure Activity Procedure</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedure_validateProcedureActivityProcedureTemplateId(
@@ -4964,10 +4965,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateProcedureActivityProcedureCode constraint of '
-	 * <em>Procedure Activity Procedure</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateProcedureActivityProcedureCode constraint of
+	 * '<em>Procedure Activity Procedure</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateProcedureActivityProcedure_validateProcedureActivityProcedureCode(
@@ -4978,7 +4979,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary(ClinicalOfficeVisitSummary clinicalOfficeVisitSummary,
@@ -6410,7 +6411,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateClinicalOfficeVisitSummaryReasonforVisit constraint
 	 * of '<em>Clinical Office Visit Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryReasonforVisit(
@@ -6423,7 +6424,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateClinicalOfficeVisitSummaryCarePlanning constraint
 	 * of '<em>Clinical Office Visit Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryCarePlanning(
@@ -6436,7 +6437,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateClinicalOfficeVisitSummaryDateOfvisit constraint of
 	 * '<em>Clinical Office Visit Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryDateOfvisit(
@@ -6449,7 +6450,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateClinicalOfficeVisitSummaryVisitLocation constraint
 	 * of '<em>Clinical Office Visit Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryVisitLocation(
@@ -6463,7 +6464,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateClinicalOfficeVisitSummaryProviderNameAndContactInfo constraint
 	 * of '<em>Clinical Office Visit Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProviderNameAndContactInfo(
@@ -6477,7 +6478,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateClinicalOfficeVisitSummaryVitalSigns constraint of
 	 * '<em>Clinical Office Visit Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryVitalSigns(
@@ -6506,7 +6507,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateClinicalOfficeVisitSummaryProblemSection constraint
 	 * of '<em>Clinical Office Visit Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryProblemSection(
@@ -6532,7 +6533,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateClinicalOfficeVisitSummaryResultsSection constraint
 	 * of '<em>Clinical Office Visit Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateClinicalOfficeVisitSummary_validateClinicalOfficeVisitSummaryResultsSection(
@@ -6569,7 +6570,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateMedicationsAdministeredSection(MedicationsAdministeredSection medicationsAdministeredSection,
@@ -6641,7 +6642,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateMedicationsAdministeredSectionTemplateId constraint
 	 * of '<em>Medications Administered Section</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateMedicationsAdministeredSection_validateMedicationsAdministeredSectionTemplateId(
@@ -6692,7 +6693,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareAmbulatorySummary(
@@ -8177,7 +8178,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateTransitionOfCareInpatientSummary(
@@ -9644,7 +9645,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateViewDownloadTransmitSummary(ViewDownloadTransmitSummary viewDownloadTransmitSummary,
@@ -11048,7 +11049,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateViewDownloadTransmitSummaryCarePlanning constraint
 	 * of '<em>View Download Transmit Summary</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryCarePlanning(
@@ -11061,7 +11062,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateViewDownloadTransmitSummaryVitalSigns constraint of
 	 * '<em>View Download Transmit Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateViewDownloadTransmitSummary_validateViewDownloadTransmitSummaryVitalSigns(
@@ -11138,7 +11139,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary(VDTInpatientSummary vdtInpatientSummary, DiagnosticChain diagnostics,
@@ -12562,10 +12563,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateVDTInpatientSummaryAdmissionDate constraint of '
-	 * <em>VDT Inpatient Summary</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateVDTInpatientSummaryAdmissionDate constraint of
+	 * '<em>VDT Inpatient Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryAdmissionDate(
@@ -12574,10 +12575,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateVDTInpatientSummaryDischargeDate constraint of '
-	 * <em>VDT Inpatient Summary</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateVDTInpatientSummaryDischargeDate constraint of
+	 * '<em>VDT Inpatient Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryDischargeDate(
@@ -12589,7 +12590,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateVDTInpatientSummaryAdmissionDischargeLocation
 	 * constraint of '<em>VDT Inpatient Summary</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryAdmissionDischargeLocation(
@@ -12598,10 +12599,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateVDTInpatientSummaryMedications constraint of '
-	 * <em>VDT Inpatient Summary</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateVDTInpatientSummaryMedications constraint of
+	 * '<em>VDT Inpatient Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryMedications(
@@ -12613,7 +12614,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateVDTInpatientSummaryReasonforHospitalization
 	 * constraint of '<em>VDT Inpatient Summary</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryReasonforHospitalization(
@@ -12626,7 +12627,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * validateVDTInpatientSummaryHospitalDischargeInstructionsSection
 	 * constraint of '<em>VDT Inpatient Summary</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateVDTInpatientSummary_validateVDTInpatientSummaryHospitalDischargeInstructionsSection(
@@ -12637,7 +12638,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateVDTAmbulatorySummary(VDTAmbulatorySummary vdtAmbulatorySummary, DiagnosticChain diagnostics,
@@ -14049,7 +14050,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateVDTAmbulatorySummaryProviderNameAndContactInfo
 	 * constraint of '<em>VDT Ambulatory Summary</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateVDTAmbulatorySummary_validateVDTAmbulatorySummaryProviderNameAndContactInfo(
@@ -14061,7 +14062,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	 * Validates the validateVDTAmbulatorySummaryMedicationsSection constraint
 	 * of '<em>VDT Ambulatory Summary</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateVDTAmbulatorySummary_validateVDTAmbulatorySummaryMedicationsSection(
@@ -14071,7 +14072,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusSection(FunctionalStatusSection functionalStatusSection,
@@ -14187,10 +14188,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateFunctionalStatusSectionTemplateId constraint of '
-	 * <em>Functional Status Section</em>'. <!-- begin-user-doc --> <!--
+	 * Validates the validateFunctionalStatusSectionTemplateId constraint of
+	 * '<em>Functional Status Section</em>'. <!-- begin-user-doc --> <!--
 	 * end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusSection_validateFunctionalStatusSectionTemplateId(
@@ -14200,7 +14201,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateCognitiveStatusResultObservation(
@@ -14358,10 +14359,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultObservationTemplateId constraint of '
-	 * <em>Cognitive Status Result Observation</em>'. <!-- begin-user-doc -->
+	 * Validates the validateResultObservationTemplateId constraint of
+	 * '<em>Cognitive Status Result Observation</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateCognitiveStatusResultObservation_validateResultObservationTemplateId(
@@ -14372,7 +14373,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateCognitiveStatusResultOrganizer(CognitiveStatusResultOrganizer cognitiveStatusResultOrganizer,
@@ -14452,10 +14453,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultOrganizerTemplateId constraint of '
-	 * <em>Cognitive Status Result Organizer</em>'. <!-- begin-user-doc --> <!--
-	 * end-user-doc -->
-	 * 
+	 * Validates the validateResultOrganizerTemplateId constraint of
+	 * '<em>Cognitive Status Result Organizer</em>'. <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 *
 	 * @generated
 	 */
 	public boolean validateCognitiveStatusResultOrganizer_validateResultOrganizerTemplateId(
@@ -14466,7 +14467,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusResultObservation(
@@ -14624,10 +14625,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultObservationTemplateId constraint of '
-	 * <em>Functional Status Result Observation</em>'. <!-- begin-user-doc -->
+	 * Validates the validateResultObservationTemplateId constraint of
+	 * '<em>Functional Status Result Observation</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusResultObservation_validateResultObservationTemplateId(
@@ -14638,7 +14639,7 @@ public class Mu2consolValidator extends EObjectValidator {
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusResultOrganizer(
@@ -14719,10 +14720,10 @@ public class Mu2consolValidator extends EObjectValidator {
 	}
 
 	/**
-	 * Validates the validateResultOrganizerTemplateId constraint of '
-	 * <em>Functional Status Result Organizer</em>'. <!-- begin-user-doc -->
+	 * Validates the validateResultOrganizerTemplateId constraint of
+	 * '<em>Functional Status Result Organizer</em>'. <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public boolean validateFunctionalStatusResultOrganizer_validateResultOrganizerTemplateId(
@@ -14734,7 +14735,7 @@ public class Mu2consolValidator extends EObjectValidator {
 	/**
 	 * Returns the resource locator that will be used to fetch messages for this
 	 * validator's diagnostics. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override

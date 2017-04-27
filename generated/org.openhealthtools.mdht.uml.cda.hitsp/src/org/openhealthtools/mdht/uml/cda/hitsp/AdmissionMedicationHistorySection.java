@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * <!-- begin-model-doc -->
  * <p>
  *     The Admission Medication Section contains information about the relevant medications of a patient prior
- *     to admission to a facility. 
+ *     to admission to a facility.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -34,8 +32,8 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='HITSPAdmissionMedicationHistorySectionTemplateId' templateId.root='2.16.840.1.113883.3.88.11.83.113'"
  * @generated
  */
-public interface AdmissionMedicationHistorySection extends
-		org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection {
+public interface AdmissionMedicationHistorySection
+		extends org.openhealthtools.mdht.uml.cda.ihe.AdmissionMedicationHistorySection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -61,5 +59,6 @@ public interface AdmissionMedicationHistorySection extends
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AdmissionMedicationHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public AdmissionMedicationHistorySection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // AdmissionMedicationHistorySection

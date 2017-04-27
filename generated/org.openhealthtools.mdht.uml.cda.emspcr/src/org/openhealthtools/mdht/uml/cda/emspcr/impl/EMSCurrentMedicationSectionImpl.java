@@ -6,38 +6,27 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.CurrentMedication;
 import org.openhealthtools.mdht.uml.cda.emspcr.CurrentlyOnMedication;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSCurrentMedicationSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.PatientOnAnticoagulants;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSCurrentMedicationSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Current Medication Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSCurrentMedicationSection {
+public class EMSCurrentMedicationSectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl implements EMSCurrentMedicationSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -64,8 +53,7 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 */
 	public boolean validateEMSCurrentMedicationSectionTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionTemplateId(
-			this, diagnostics, context);
+		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +71,7 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 * @generated
 	 */
 	public boolean validateEMSCurrentMedicationSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionTitle(
-			this, diagnostics, context);
+		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionTitle(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +90,7 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 */
 	public boolean validateEMSCurrentMedicationSectionCurrentlyOnMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionCurrentlyOnMedication(
-			this, diagnostics, context);
+		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionCurrentlyOnMedication(this, diagnostics, context);
 	}
 
 	/**
@@ -114,8 +100,7 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 */
 	public boolean validateEMSCurrentMedicationSectionPatientOnAnticoagulants(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionPatientOnAnticoagulants(
-			this, diagnostics, context);
+		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionPatientOnAnticoagulants(this, diagnostics, context);
 	}
 
 	/**
@@ -125,8 +110,7 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 */
 	public boolean validateEMSCurrentMedicationSectionCurrentMedication(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionCurrentMedication(
-			this, diagnostics, context);
+		return EMSCurrentMedicationSectionOperations.validateEMSCurrentMedicationSectionCurrentMedication(this, diagnostics, context);
 	}
 
 	/**
@@ -162,16 +146,16 @@ public class EMSCurrentMedicationSectionImpl extends SectionImpl implements EMSC
 	 * @generated
 	 */
 	public EMSCurrentMedicationSection init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSCurrentMedicationSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public EMSCurrentMedicationSection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EMSCurrentMedicationSectionImpl

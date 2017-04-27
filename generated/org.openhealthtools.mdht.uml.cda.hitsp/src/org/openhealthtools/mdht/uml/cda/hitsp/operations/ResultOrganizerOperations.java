@@ -44,8 +44,15 @@ import org.openhealthtools.mdht.uml.cda.hitsp.util.HITSPValidator;
  *
  * @generated
  */
-public class ResultOrganizerOperations extends
-		org.openhealthtools.mdht.uml.cda.ccd.operations.ResultOrganizerOperations {
+public class ResultOrganizerOperations
+		extends org.openhealthtools.mdht.uml.cda.ccd.operations.ResultOrganizerOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -74,7 +81,7 @@ public class ResultOrganizerOperations extends
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -90,22 +97,27 @@ public class ResultOrganizerOperations extends
 	public static boolean validateHITSPResultOrganizerResult(ResultOrganizer resultOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(HITSPPackage.Literals.RESULT_ORGANIZER);
 			try {
-				VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			resultOrganizer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HITSP_RESULT_ORGANIZER_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(resultOrganizer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
-					HITSPValidator.RESULT_ORGANIZER__HITSP_RESULT_ORGANIZER_RESULT,
-					HITSPPlugin.INSTANCE.getString("HITSPResultOrganizerResult"), new Object[] { resultOrganizer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, HITSPValidator.DIAGNOSTIC_SOURCE,
+						HITSPValidator.RESULT_ORGANIZER__HITSP_RESULT_ORGANIZER_RESULT,
+						HITSPPlugin.INSTANCE.getString("ResultOrganizerHITSPResultOrganizerResult"),
+						new Object[] { resultOrganizer }));
 			}
 
 			return false;
@@ -139,8 +151,10 @@ public class ResultOrganizerOperations extends
 	 * @generated
 	 */
 	public static EList<Result> getResults(ResultOrganizer resultOrganizer) {
+
 		if (GET_RESULTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				HITSPPackage.Literals.RESULT_ORGANIZER,
 				HITSPPackage.Literals.RESULT_ORGANIZER.getEAllOperations().get(64));
@@ -150,7 +164,8 @@ public class ResultOrganizerOperations extends
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RESULTS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RESULTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Result> result = (Collection<Result>) query.evaluate(resultOrganizer);
 		return new BasicEList.UnmodifiableEList<Result>(result.size(), result.toArray());

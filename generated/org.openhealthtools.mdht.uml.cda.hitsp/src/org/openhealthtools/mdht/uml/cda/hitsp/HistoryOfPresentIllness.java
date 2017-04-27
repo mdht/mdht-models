@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * <!-- begin-model-doc -->
  * <p>
  *     The History of Present Illness Section contains information about the sequence of events preceding the
- *     patient's current complaints. 
+ *     patient's current complaints.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -59,5 +57,6 @@ public interface HistoryOfPresentIllness extends org.openhealthtools.mdht.uml.cd
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public HistoryOfPresentIllness init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public HistoryOfPresentIllness init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // HistoryOfPresentIllness

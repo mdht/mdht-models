@@ -6,14 +6,11 @@
  */
 package org.openhealthtools.mdht.uml.cda.qrda.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.qrda.MeasureSection;
 import org.openhealthtools.mdht.uml.cda.qrda.QRDAPackage;
 import org.openhealthtools.mdht.uml.cda.qrda.operations.MeasureSectionOperations;
@@ -22,80 +19,78 @@ import org.openhealthtools.mdht.uml.cda.qrda.operations.MeasureSectionOperations
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Measure Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MeasureSectionImpl extends SectionImpl implements MeasureSection {
+public class MeasureSectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl implements MeasureSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected MeasureSectionImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return QRDAPackage.Literals.MEASURE_SECTION;
-  }
+		return QRDAPackage.Literals.MEASURE_SECTION;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateMeasureSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MeasureSectionOperations.validateMeasureSectionTemplateId(this, diagnostics, context);
-  }
+		return MeasureSectionOperations.validateMeasureSectionTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateMeasureSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MeasureSectionOperations.validateMeasureSectionCode(this, diagnostics, context);
-  }
+		return MeasureSectionOperations.validateMeasureSectionCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateMeasureSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MeasureSectionOperations.validateMeasureSectionText(this, diagnostics, context);
-  }
+		return MeasureSectionOperations.validateMeasureSectionText(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateMeasureSectionTitle(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return MeasureSectionOperations.validateMeasureSectionTitle(this, diagnostics, context);
-  }
+		return MeasureSectionOperations.validateMeasureSectionTitle(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public MeasureSection init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -103,8 +98,8 @@ public class MeasureSectionImpl extends SectionImpl implements MeasureSection {
      * @generated
      */
     @Override
-	public MeasureSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public MeasureSection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //MeasureSectionImpl

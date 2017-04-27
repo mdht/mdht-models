@@ -10,16 +10,9 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
-
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.EObjectValidator;
-
-import org.openhealthtools.mdht.uml.cda.consol.util.ConsolValidator;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.*;
-
-import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
 
 /**
  * <!-- begin-user-doc -->
@@ -53,7 +46,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CLASS_CODE = 1;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CLASS_CODE = 2;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Mood Code' of 'Patient Care Report'.
@@ -61,7 +54,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_MOOD_CODE = 2;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_MOOD_CODE = 3;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Code P' of 'Patient Care Report'.
@@ -69,7 +62,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CODE_P = 3;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CODE_P = 5;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Code' of 'Patient Care Report'.
@@ -77,7 +70,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CODE = 4;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CODE = 6;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Confidentiality Code' of 'Patient Care Report'.
@@ -85,7 +78,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE = 5;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CONFIDENTIALITY_CODE = 8;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Record Target' of 'Patient Care Report'.
@@ -93,7 +86,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RECORD_TARGET = 6;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RECORD_TARGET = 10;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Current Medication' of 'Patient Care Report'.
@@ -101,7 +94,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CURRENT_MEDICATION = 7;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CURRENT_MEDICATION = 11;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Cardiac Arrest Event' of 'Patient Care Report'.
@@ -109,7 +102,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CARDIAC_ARREST_EVENT = 8;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_CARDIAC_ARREST_EVENT = 12;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Advance Directives' of 'Patient Care Report'.
@@ -117,7 +110,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES = 9;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ADVANCE_DIRECTIVES = 13;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Allergies And Adverse Reactions Section' of 'Patient Care Report'.
@@ -125,7 +118,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION = 10;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION = 14;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Past Medical History Section' of 'Patient Care Report'.
@@ -133,7 +126,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PAST_MEDICAL_HISTORY_SECTION = 11;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PAST_MEDICAL_HISTORY_SECTION = 15;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Social History Section' of 'Patient Care Report'.
@@ -141,7 +134,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SOCIAL_HISTORY_SECTION = 12;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SOCIAL_HISTORY_SECTION = 16;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Physical Assessment Section' of 'Patient Care Report'.
@@ -149,7 +142,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PHYSICAL_ASSESSMENT_SECTION = 13;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PHYSICAL_ASSESSMENT_SECTION = 17;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Medications Administered Section' of 'Patient Care Report'.
@@ -157,7 +150,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_MEDICATIONS_ADMINISTERED_SECTION = 14;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_MEDICATIONS_ADMINISTERED_SECTION = 18;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Procedures Performed Section' of 'Patient Care Report'.
@@ -165,7 +158,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PROCEDURES_PERFORMED_SECTION = 15;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PROCEDURES_PERFORMED_SECTION = 19;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Patient Care Narrative Section' of 'Patient Care Report'.
@@ -173,7 +166,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PATIENT_CARE_NARRATIVE_SECTION = 16;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PATIENT_CARE_NARRATIVE_SECTION = 20;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Scene Section' of 'Patient Care Report'.
@@ -181,7 +174,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SCENE_SECTION = 17;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SCENE_SECTION = 21;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Dispatch Section' of 'Patient Care Report'.
@@ -189,7 +182,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DISPATCH_SECTION = 18;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DISPATCH_SECTION = 23;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Disposition Section' of 'Patient Care Report'.
@@ -197,7 +190,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DISPOSITION_SECTION = 19;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DISPOSITION_SECTION = 24;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Personnel Adverse Event Section' of 'Patient Care Report'.
@@ -205,7 +198,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PERSONNEL_ADVERSE_EVENT_SECTION = 20;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PERSONNEL_ADVERSE_EVENT_SECTION = 25;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Protocol Section' of 'Patient Care Report'.
@@ -213,7 +206,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PROTOCOL_SECTION = 21;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PROTOCOL_SECTION = 26;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Response Section' of 'Patient Care Report'.
@@ -221,7 +214,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RESPONSE_SECTION = 22;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RESPONSE_SECTION = 27;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Situation Section' of 'Patient Care Report'.
@@ -229,7 +222,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SITUATION_SECTION = 23;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_SITUATION_SECTION = 28;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Times Section' of 'Patient Care Report'.
@@ -237,7 +230,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_TIMES_SECTION = 24;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_TIMES_SECTION = 29;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Vital Signs Section' of 'Patient Care Report'.
@@ -245,7 +238,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_VITAL_SIGNS_SECTION = 25;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_VITAL_SIGNS_SECTION = 30;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Author Participation' of 'Patient Care Report'.
@@ -253,7 +246,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_AUTHOR_PARTICIPATION = 26;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_AUTHOR_PARTICIPATION = 31;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Documentation Of' of 'Patient Care Report'.
@@ -261,7 +254,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DOCUMENTATION_OF = 27;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_DOCUMENTATION_OF = 33;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Related Document' of 'Patient Care Report'.
@@ -269,7 +262,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RELATED_DOCUMENT = 28;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_RELATED_DOCUMENT = 34;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Participant' of 'Patient Care Report'.
@@ -277,7 +270,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PARTICIPANT = 29;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_PARTICIPANT = 35;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report Injury Incident Description Section' of 'Patient Care Report'.
@@ -285,7 +278,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_INJURY_INCIDENT_DESCRIPTION_SECTION = 30;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_INJURY_INCIDENT_DESCRIPTION_SECTION = 36;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Patient Care Report EMS Billing Section' of 'Patient Care Report'.
@@ -293,7 +286,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_BILLING_SECTION = 31;
+	public static final int PATIENT_CARE_REPORT__PATIENT_CARE_REPORT_EMS_BILLING_SECTION = 37;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Template Id' of 'Patient Care Report'.
@@ -301,7 +294,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 32;
+	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TEMPLATE_ID = 1;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Id' of 'Patient Care Report'.
@@ -309,7 +302,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_ID = 33;
+	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_ID = 4;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Title' of 'Patient Care Report'.
@@ -317,7 +310,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TITLE = 34;
+	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_TITLE = 7;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Version Number' of 'Patient Care Report'.
@@ -325,7 +318,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER = 35;
+	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_VERSION_NUMBER = 9;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Component Of' of 'Patient Care Report'.
@@ -333,7 +326,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF = 36;
+	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_COMPONENT_OF = 22;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate General Header Constraints Custodian' of 'Patient Care Report'.
@@ -341,7 +334,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_CUSTODIAN = 37;
+	public static final int PATIENT_CARE_REPORT__GENERAL_HEADER_CONSTRAINTS_CUSTODIAN = 32;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate EMS Current Medication Section Template Id' of 'EMS Current Medication Section'.
@@ -4413,7 +4406,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME = 546;
+	public static final int VITAL_SIGNS_ORGANIZER__EMSPCR_VITAL_SIGNS_ORGANIZER_EFFECTIVE_TIME = 547;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Signs Organizer Template Id' of 'Vital Signs Organizer'.
@@ -4421,7 +4414,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_TEMPLATE_ID = 547;
+	public static final int VITAL_SIGNS_ORGANIZER__VITAL_SIGNS_ORGANIZER_TEMPLATE_ID = 546;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Prior Aid Vitals Template Id' of 'Prior Aid Vitals'.
@@ -7453,7 +7446,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SYSTOLIC_BLOOD_PRESSURE__SYSTOLIC_BLOOD_PRESSURE_MOOD_CODE = 926;
+	public static final int SYSTOLIC_BLOOD_PRESSURE__SYSTOLIC_BLOOD_PRESSURE_MOOD_CODE = 927;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Systolic Blood Pressure Code' of 'Systolic Blood Pressure'.
@@ -7461,7 +7454,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SYSTOLIC_BLOOD_PRESSURE__SYSTOLIC_BLOOD_PRESSURE_CODE = 927;
+	public static final int SYSTOLIC_BLOOD_PRESSURE__SYSTOLIC_BLOOD_PRESSURE_CODE = 928;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Systolic Blood Pressure Value' of 'Systolic Blood Pressure'.
@@ -7469,7 +7462,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SYSTOLIC_BLOOD_PRESSURE__SYSTOLIC_BLOOD_PRESSURE_VALUE = 928;
+	public static final int SYSTOLIC_BLOOD_PRESSURE__SYSTOLIC_BLOOD_PRESSURE_VALUE = 930;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Sign Observation Template Id' of 'Systolic Blood Pressure'.
@@ -7477,7 +7470,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SYSTOLIC_BLOOD_PRESSURE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID = 929;
+	public static final int SYSTOLIC_BLOOD_PRESSURE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID = 926;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Sign Observation Effective Time' of 'Systolic Blood Pressure'.
@@ -7485,7 +7478,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int SYSTOLIC_BLOOD_PRESSURE__VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME = 930;
+	public static final int SYSTOLIC_BLOOD_PRESSURE__VITAL_SIGN_OBSERVATION_EFFECTIVE_TIME = 929;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diastolic Blood Pressure Mood Code' of 'Diastolic Blood Pressure'.
@@ -7493,7 +7486,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE = 931;
+	public static final int DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_MOOD_CODE = 932;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diastolic Blood Pressure Code' of 'Diastolic Blood Pressure'.
@@ -7501,7 +7494,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_CODE = 932;
+	public static final int DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_CODE = 933;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diastolic Blood Pressure Effective Time' of 'Diastolic Blood Pressure'.
@@ -7509,7 +7502,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME = 933;
+	public static final int DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_EFFECTIVE_TIME = 934;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Diastolic Blood Pressure Value' of 'Diastolic Blood Pressure'.
@@ -7517,7 +7510,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_VALUE = 934;
+	public static final int DIASTOLIC_BLOOD_PRESSURE__DIASTOLIC_BLOOD_PRESSURE_VALUE = 935;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Sign Observation Template Id' of 'Diastolic Blood Pressure'.
@@ -7525,7 +7518,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int DIASTOLIC_BLOOD_PRESSURE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID = 935;
+	public static final int DIASTOLIC_BLOOD_PRESSURE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID = 931;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Heart Rate Mood Code' of 'Heart Rate'.
@@ -7533,7 +7526,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEART_RATE__HEART_RATE_MOOD_CODE = 936;
+	public static final int HEART_RATE__HEART_RATE_MOOD_CODE = 937;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Heart Rate Code P' of 'Heart Rate'.
@@ -7541,7 +7534,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEART_RATE__HEART_RATE_CODE_P = 937;
+	public static final int HEART_RATE__HEART_RATE_CODE_P = 938;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Heart Rate Code' of 'Heart Rate'.
@@ -7549,7 +7542,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEART_RATE__HEART_RATE_CODE = 938;
+	public static final int HEART_RATE__HEART_RATE_CODE = 939;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Heart Rate Effective Time' of 'Heart Rate'.
@@ -7557,7 +7550,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEART_RATE__HEART_RATE_EFFECTIVE_TIME = 939;
+	public static final int HEART_RATE__HEART_RATE_EFFECTIVE_TIME = 940;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Heart Rate Value' of 'Heart Rate'.
@@ -7565,7 +7558,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEART_RATE__HEART_RATE_VALUE = 940;
+	public static final int HEART_RATE__HEART_RATE_VALUE = 941;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Sign Observation Template Id' of 'Heart Rate'.
@@ -7573,7 +7566,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int HEART_RATE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID = 941;
+	public static final int HEART_RATE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID = 936;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Respiratory Rate Mood Code' of 'Respiratory Rate'.
@@ -7581,7 +7574,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESPIRATORY_RATE__RESPIRATORY_RATE_MOOD_CODE = 942;
+	public static final int RESPIRATORY_RATE__RESPIRATORY_RATE_MOOD_CODE = 943;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Respiratory Rate Code' of 'Respiratory Rate'.
@@ -7589,7 +7582,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESPIRATORY_RATE__RESPIRATORY_RATE_CODE = 943;
+	public static final int RESPIRATORY_RATE__RESPIRATORY_RATE_CODE = 944;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Respiratory Rate Effective Time' of 'Respiratory Rate'.
@@ -7597,7 +7590,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESPIRATORY_RATE__RESPIRATORY_RATE_EFFECTIVE_TIME = 944;
+	public static final int RESPIRATORY_RATE__RESPIRATORY_RATE_EFFECTIVE_TIME = 945;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Respiratory Rate Value' of 'Respiratory Rate'.
@@ -7605,7 +7598,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESPIRATORY_RATE__RESPIRATORY_RATE_VALUE = 945;
+	public static final int RESPIRATORY_RATE__RESPIRATORY_RATE_VALUE = 946;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Sign Observation Template Id' of 'Respiratory Rate'.
@@ -7613,7 +7606,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int RESPIRATORY_RATE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID = 946;
+	public static final int RESPIRATORY_RATE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID = 942;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Body Temperature Mood Code' of 'Body Temperature'.
@@ -7621,7 +7614,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int BODY_TEMPERATURE__BODY_TEMPERATURE_MOOD_CODE = 947;
+	public static final int BODY_TEMPERATURE__BODY_TEMPERATURE_MOOD_CODE = 948;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Body Temperature Code' of 'Body Temperature'.
@@ -7629,7 +7622,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int BODY_TEMPERATURE__BODY_TEMPERATURE_CODE = 948;
+	public static final int BODY_TEMPERATURE__BODY_TEMPERATURE_CODE = 949;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Body Temperature Effective Time' of 'Body Temperature'.
@@ -7637,7 +7630,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int BODY_TEMPERATURE__BODY_TEMPERATURE_EFFECTIVE_TIME = 949;
+	public static final int BODY_TEMPERATURE__BODY_TEMPERATURE_EFFECTIVE_TIME = 950;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Body Temperature Value' of 'Body Temperature'.
@@ -7645,7 +7638,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int BODY_TEMPERATURE__BODY_TEMPERATURE_VALUE = 950;
+	public static final int BODY_TEMPERATURE__BODY_TEMPERATURE_VALUE = 951;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Vital Sign Observation Template Id' of 'Body Temperature'.
@@ -7653,7 +7646,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static final int BODY_TEMPERATURE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID = 951;
+	public static final int BODY_TEMPERATURE__VITAL_SIGN_OBSERVATION_TEMPLATE_ID = 947;
 
 	/**
 	 * The {@link org.eclipse.emf.common.util.Diagnostic#getCode() code} for constraint 'Validate Oxygen Saturation Template Id' of 'Oxygen Saturation'.
@@ -8285,15 +8278,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected CDAValidator cdaValidator;
-
-	/**
-	 * The cached base package validator.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	protected ConsolValidator consolValidator;
+	protected org.eclipse.mdht.uml.cda.util.CDAValidator cdaValidator;
 
 	/**
 	 * Creates an instance of the switch.
@@ -8303,8 +8288,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public EmspcrValidator() {
 		super();
-		cdaValidator = CDAValidator.INSTANCE;
-		consolValidator = ConsolValidator.INSTANCE;
+		cdaValidator = org.eclipse.mdht.uml.cda.util.CDAValidator.INSTANCE;
 	}
 
 	/**
@@ -8315,7 +8299,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	@Override
 	protected EPackage getEPackage() {
-		return EmspcrPackage.eINSTANCE;
+	  return EmspcrPackage.eINSTANCE;
 	}
 
 	/**
@@ -8328,379 +8312,341 @@ public class EmspcrValidator extends EObjectValidator {
 	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
 		switch (classifierID) {
 			case EmspcrPackage.PATIENT_CARE_REPORT:
-				return validatePatientCareReport((PatientCareReport) value, diagnostics, context);
+				return validatePatientCareReport((PatientCareReport)value, diagnostics, context);
 			case EmspcrPackage.EMS_CURRENT_MEDICATION_SECTION:
-				return validateEMSCurrentMedicationSection((EMSCurrentMedicationSection) value, diagnostics, context);
+				return validateEMSCurrentMedicationSection((EMSCurrentMedicationSection)value, diagnostics, context);
 			case EmspcrPackage.CURRENTLY_ON_MEDICATION:
-				return validateCurrentlyOnMedication((CurrentlyOnMedication) value, diagnostics, context);
+				return validateCurrentlyOnMedication((CurrentlyOnMedication)value, diagnostics, context);
 			case EmspcrPackage.PATIENT_ON_ANTICOAGULANTS:
-				return validatePatientOnAnticoagulants((PatientOnAnticoagulants) value, diagnostics, context);
+				return validatePatientOnAnticoagulants((PatientOnAnticoagulants)value, diagnostics, context);
 			case EmspcrPackage.CURRENT_MEDICATION:
-				return validateCurrentMedication((CurrentMedication) value, diagnostics, context);
+				return validateCurrentMedication((CurrentMedication)value, diagnostics, context);
 			case EmspcrPackage.EMS_CARDIAC_ARREST_EVENT_SECTION:
-				return validateEMSCardiacArrestEventSection((EMSCardiacArrestEventSection) value, diagnostics, context);
+				return validateEMSCardiacArrestEventSection((EMSCardiacArrestEventSection)value, diagnostics, context);
 			case EmspcrPackage.CARDIAC_ARREST:
-				return validateCardiacArrest((CardiacArrest) value, diagnostics, context);
+				return validateCardiacArrest((CardiacArrest)value, diagnostics, context);
 			case EmspcrPackage.EMS_ADVANCE_DIRECTIVES_SECTION:
-				return validateEMSAdvanceDirectivesSection((EMSAdvanceDirectivesSection) value, diagnostics, context);
+				return validateEMSAdvanceDirectivesSection((EMSAdvanceDirectivesSection)value, diagnostics, context);
 			case EmspcrPackage.ADVANCE_DIRECTIVE_OBSERVATION:
-				return validateAdvanceDirectiveObservation((AdvanceDirectiveObservation) value, diagnostics, context);
+				return validateAdvanceDirectiveObservation((AdvanceDirectiveObservation)value, diagnostics, context);
 			case EmspcrPackage.EMS_ALLERGIES_AND_ADVERSE_REACTIONS_SECTION:
-				return validateEMSAllergiesAndAdverseReactionsSection(
-					(EMSAllergiesAndAdverseReactionsSection) value, diagnostics, context);
+				return validateEMSAllergiesAndAdverseReactionsSection((EMSAllergiesAndAdverseReactionsSection)value, diagnostics, context);
 			case EmspcrPackage.NON_DRUG_ALLERGY_ORGANIZER:
-				return validateNonDrugAllergyOrganizer((NonDrugAllergyOrganizer) value, diagnostics, context);
+				return validateNonDrugAllergyOrganizer((NonDrugAllergyOrganizer)value, diagnostics, context);
 			case EmspcrPackage.EXISTENCE_OF_NON_DRUG_ALLERGY:
-				return validateExistenceOfNonDrugAllergy((ExistenceOfNonDrugAllergy) value, diagnostics, context);
+				return validateExistenceOfNonDrugAllergy((ExistenceOfNonDrugAllergy)value, diagnostics, context);
 			case EmspcrPackage.NON_DRUG_ALLERGY:
-				return validateNonDrugAllergy((NonDrugAllergy) value, diagnostics, context);
+				return validateNonDrugAllergy((NonDrugAllergy)value, diagnostics, context);
 			case EmspcrPackage.EMS_PAST_MEDICAL_HISTORY_SECTION:
-				return validateEMSPastMedicalHistorySection((EMSPastMedicalHistorySection) value, diagnostics, context);
+				return validateEMSPastMedicalHistorySection((EMSPastMedicalHistorySection)value, diagnostics, context);
 			case EmspcrPackage.EXISTENCE_OF_HISTORY_OF_CONDITION:
-				return validateExistenceOfHistoryOfCondition(
-					(ExistenceOfHistoryOfCondition) value, diagnostics, context);
+				return validateExistenceOfHistoryOfCondition((ExistenceOfHistoryOfCondition)value, diagnostics, context);
 			case EmspcrPackage.HISTORY_OF_CONDITION:
-				return validateHistoryOfCondition((HistoryOfCondition) value, diagnostics, context);
+				return validateHistoryOfCondition((HistoryOfCondition)value, diagnostics, context);
 			case EmspcrPackage.EMS_SOCIAL_HISTORY_SECTION:
-				return validateEMSSocialHistorySection((EMSSocialHistorySection) value, diagnostics, context);
+				return validateEMSSocialHistorySection((EMSSocialHistorySection)value, diagnostics, context);
 			case EmspcrPackage.EXISTENCE_OF_DRUG_USE_INDICATION:
-				return validateExistenceOfDrugUseIndication((ExistenceOfDrugUseIndication) value, diagnostics, context);
+				return validateExistenceOfDrugUseIndication((ExistenceOfDrugUseIndication)value, diagnostics, context);
 			case EmspcrPackage.DRUG_USE_INDICATION:
-				return validateDrugUseIndication((DrugUseIndication) value, diagnostics, context);
+				return validateDrugUseIndication((DrugUseIndication)value, diagnostics, context);
 			case EmspcrPackage.EMS_PHYSICAL_ASSESSMENT_SECTION:
-				return validateEMSPhysicalAssessmentSection((EMSPhysicalAssessmentSection) value, diagnostics, context);
+				return validateEMSPhysicalAssessmentSection((EMSPhysicalAssessmentSection)value, diagnostics, context);
 			case EmspcrPackage.PHYSICAL_ASSESSMENT_ORGANIZER:
-				return validatePhysicalAssessmentOrganizer((PhysicalAssessmentOrganizer) value, diagnostics, context);
+				return validatePhysicalAssessmentOrganizer((PhysicalAssessmentOrganizer)value, diagnostics, context);
 			case EmspcrPackage.SKIN_ASSESSMENT:
-				return validateSkinAssessment((SkinAssessment) value, diagnostics, context);
+				return validateSkinAssessment((SkinAssessment)value, diagnostics, context);
 			case EmspcrPackage.PATIENT_PREGNANCY:
-				return validatePatientPregnancy((PatientPregnancy) value, diagnostics, context);
+				return validatePatientPregnancy((PatientPregnancy)value, diagnostics, context);
 			case EmspcrPackage.LAST_ORAL_INTAKE:
-				return validateLastOralIntake((LastOralIntake) value, diagnostics, context);
+				return validateLastOralIntake((LastOralIntake)value, diagnostics, context);
 			case EmspcrPackage.PATIENT_AGE:
-				return validatePatientAge((PatientAge) value, diagnostics, context);
+				return validatePatientAge((PatientAge)value, diagnostics, context);
 			case EmspcrPackage.THROMBOLYTIC_CONTRAINDICATIONS:
-				return validateThrombolyticContraindications(
-					(ThrombolyticContraindications) value, diagnostics, context);
+				return validateThrombolyticContraindications((ThrombolyticContraindications)value, diagnostics, context);
 			case EmspcrPackage.BARRIERS_TO_PATIENT_CARE:
-				return validateBarriersToPatientCare((BarriersToPatientCare) value, diagnostics, context);
+				return validateBarriersToPatientCare((BarriersToPatientCare)value, diagnostics, context);
 			case EmspcrPackage.EMS_MEDICATIONS_ADMINISTERED_SECTION:
-				return validateEMSMedicationsAdministeredSection(
-					(EMSMedicationsAdministeredSection) value, diagnostics, context);
+				return validateEMSMedicationsAdministeredSection((EMSMedicationsAdministeredSection)value, diagnostics, context);
 			case EmspcrPackage.MEDICATION_ADMINISTERED:
-				return validateMedicationAdministered((MedicationAdministered) value, diagnostics, context);
+				return validateMedicationAdministered((MedicationAdministered)value, diagnostics, context);
 			case EmspcrPackage.EMS_PROCEDURES_PERFORMED_SECTION:
-				return validateEMSProceduresPerformedSection(
-					(EMSProceduresPerformedSection) value, diagnostics, context);
+				return validateEMSProceduresPerformedSection((EMSProceduresPerformedSection)value, diagnostics, context);
 			case EmspcrPackage.PROCEDURE:
-				return validateProcedure((Procedure) value, diagnostics, context);
+				return validateProcedure((Procedure)value, diagnostics, context);
 			case EmspcrPackage.EMS_PATIENT_CARE_NARRATIVE_SECTION:
-				return validateEMSPatientCareNarrativeSection(
-					(EMSPatientCareNarrativeSection) value, diagnostics, context);
+				return validateEMSPatientCareNarrativeSection((EMSPatientCareNarrativeSection)value, diagnostics, context);
 			case EmspcrPackage.EMS_SCENE_SECTION:
-				return validateEMSSceneSection((EMSSceneSection) value, diagnostics, context);
+				return validateEMSSceneSection((EMSSceneSection)value, diagnostics, context);
 			case EmspcrPackage.FIRST_UNIT_INDICATOR:
-				return validateFirstUnitIndicator((FirstUnitIndicator) value, diagnostics, context);
+				return validateFirstUnitIndicator((FirstUnitIndicator)value, diagnostics, context);
 			case EmspcrPackage.FIRST_UNIT_ON_SCENE:
-				return validateFirstUnitOnScene((FirstUnitOnScene) value, diagnostics, context);
+				return validateFirstUnitOnScene((FirstUnitOnScene)value, diagnostics, context);
 			case EmspcrPackage.SCENE_PATIENT_COUNT:
-				return validateScenePatientCount((ScenePatientCount) value, diagnostics, context);
+				return validateScenePatientCount((ScenePatientCount)value, diagnostics, context);
 			case EmspcrPackage.MASS_CASUALTY_INDICATOR:
-				return validateMassCasualtyIndicator((MassCasualtyIndicator) value, diagnostics, context);
+				return validateMassCasualtyIndicator((MassCasualtyIndicator)value, diagnostics, context);
 			case EmspcrPackage.LOCATION_TYPE_OBSERVATION:
-				return validateLocationTypeObservation((LocationTypeObservation) value, diagnostics, context);
+				return validateLocationTypeObservation((LocationTypeObservation)value, diagnostics, context);
 			case EmspcrPackage.EMS_DISPATCH_SECTION:
-				return validateEMSDispatchSection((EMSDispatchSection) value, diagnostics, context);
+				return validateEMSDispatchSection((EMSDispatchSection)value, diagnostics, context);
 			case EmspcrPackage.EMERGENCY_MEDICAL_DISPATCH_OBSERVATION:
-				return validateEmergencyMedicalDispatchObservation(
-					(EmergencyMedicalDispatchObservation) value, diagnostics, context);
+				return validateEmergencyMedicalDispatchObservation((EmergencyMedicalDispatchObservation)value, diagnostics, context);
 			case EmspcrPackage.COMPLAINT_REPORTED_BY_DISPATCH:
-				return validateComplaintReportedByDispatch((ComplaintReportedByDispatch) value, diagnostics, context);
+				return validateComplaintReportedByDispatch((ComplaintReportedByDispatch)value, diagnostics, context);
 			case EmspcrPackage.EMS_DISPOSITION_SECTION:
-				return validateEMSDispositionSection((EMSDispositionSection) value, diagnostics, context);
+				return validateEMSDispositionSection((EMSDispositionSection)value, diagnostics, context);
 			case EmspcrPackage.NUMBER_OF_PATIENTS_TRANSPORTED_OBSERVATION:
-				return validateNumberOfPatientsTransportedObservation(
-					(NumberOfPatientsTransportedObservation) value, diagnostics, context);
+				return validateNumberOfPatientsTransportedObservation((NumberOfPatientsTransportedObservation)value, diagnostics, context);
 			case EmspcrPackage.INCIDENT_DISPOSITION_OBSERVATION:
-				return validateIncidentDispositionObservation(
-					(IncidentDispositionObservation) value, diagnostics, context);
+				return validateIncidentDispositionObservation((IncidentDispositionObservation)value, diagnostics, context);
 			case EmspcrPackage.TRANSPORT_MODE_OBSERVATION:
-				return validateTransportModeObservation((TransportModeObservation) value, diagnostics, context);
+				return validateTransportModeObservation((TransportModeObservation)value, diagnostics, context);
 			case EmspcrPackage.TRANSPORT_METHOD_OBSERVATION:
-				return validateTransportMethodObservation((TransportMethodObservation) value, diagnostics, context);
+				return validateTransportMethodObservation((TransportMethodObservation)value, diagnostics, context);
 			case EmspcrPackage.REASON_FOR_CHOOSING_DESTINATION_OBSERVATION:
-				return validateReasonForChoosingDestinationObservation(
-					(ReasonForChoosingDestinationObservation) value, diagnostics, context);
+				return validateReasonForChoosingDestinationObservation((ReasonForChoosingDestinationObservation)value, diagnostics, context);
 			case EmspcrPackage.PREARRIVAL_ACTIVATION_OBSERVATION:
-				return validatePrearrivalActivationObservation(
-					(PrearrivalActivationObservation) value, diagnostics, context);
+				return validatePrearrivalActivationObservation((PrearrivalActivationObservation)value, diagnostics, context);
 			case EmspcrPackage.PATIENT_CONDITION_CHANGE_AT_DESTINATION_OBSERVATION:
-				return validatePatientConditionChangeAtDestinationObservation(
-					(PatientConditionChangeAtDestinationObservation) value, diagnostics, context);
+				return validatePatientConditionChangeAtDestinationObservation((PatientConditionChangeAtDestinationObservation)value, diagnostics, context);
 			case EmspcrPackage.EMS_PERSONNEL_ADVERSE_EVENT_SECTION:
-				return validateEMSPersonnelAdverseEventSection(
-					(EMSPersonnelAdverseEventSection) value, diagnostics, context);
+				return validateEMSPersonnelAdverseEventSection((EMSPersonnelAdverseEventSection)value, diagnostics, context);
 			case EmspcrPackage.ADVERSE_EVENT_INDICATOR:
-				return validateAdverseEventIndicator((AdverseEventIndicator) value, diagnostics, context);
+				return validateAdverseEventIndicator((AdverseEventIndicator)value, diagnostics, context);
 			case EmspcrPackage.ADVERSE_EVENT_TYPE_OBSERVATION:
-				return validateAdverseEventTypeObservation((AdverseEventTypeObservation) value, diagnostics, context);
+				return validateAdverseEventTypeObservation((AdverseEventTypeObservation)value, diagnostics, context);
 			case EmspcrPackage.EMS_PROTOCOL_SECTION:
-				return validateEMSProtocolSection((EMSProtocolSection) value, diagnostics, context);
+				return validateEMSProtocolSection((EMSProtocolSection)value, diagnostics, context);
 			case EmspcrPackage.PROTOCOL_OBSERVATION:
-				return validateProtocolObservation((ProtocolObservation) value, diagnostics, context);
+				return validateProtocolObservation((ProtocolObservation)value, diagnostics, context);
 			case EmspcrPackage.CANDIDATE_PATIENT_REGISTRY_TYPE:
-				return validateCandidatePatientRegistryType((CandidatePatientRegistryType) value, diagnostics, context);
+				return validateCandidatePatientRegistryType((CandidatePatientRegistryType)value, diagnostics, context);
 			case EmspcrPackage.EMS_RESPONSE_SECTION:
-				return validateEMSResponseSection((EMSResponseSection) value, diagnostics, context);
+				return validateEMSResponseSection((EMSResponseSection)value, diagnostics, context);
 			case EmspcrPackage.DELAY_ORGANIZER:
-				return validateDelayOrganizer((DelayOrganizer) value, diagnostics, context);
+				return validateDelayOrganizer((DelayOrganizer)value, diagnostics, context);
 			case EmspcrPackage.DISPATCH_LOCATION_ORGANIZER:
-				return validateDispatchLocationOrganizer((DispatchLocationOrganizer) value, diagnostics, context);
+				return validateDispatchLocationOrganizer((DispatchLocationOrganizer)value, diagnostics, context);
 			case EmspcrPackage.RESPONSE_ODOMETER_READING_ORGANIZER:
-				return validateResponseOdometerReadingOrganizer(
-					(ResponseOdometerReadingOrganizer) value, diagnostics, context);
+				return validateResponseOdometerReadingOrganizer((ResponseOdometerReadingOrganizer)value, diagnostics, context);
 			case EmspcrPackage.RESPONSE_MODE_TO_SCENE:
-				return validateResponseModeToScene((ResponseModeToScene) value, diagnostics, context);
+				return validateResponseModeToScene((ResponseModeToScene)value, diagnostics, context);
 			case EmspcrPackage.EMS_SITUATION_SECTION:
-				return validateEMSSituationSection((EMSSituationSection) value, diagnostics, context);
+				return validateEMSSituationSection((EMSSituationSection)value, diagnostics, context);
 			case EmspcrPackage.COMPLAINT:
-				return validateComplaint((Complaint) value, diagnostics, context);
+				return validateComplaint((Complaint)value, diagnostics, context);
 			case EmspcrPackage.POSSIBLE_INJURY:
-				return validatePossibleInjury((PossibleInjury) value, diagnostics, context);
+				return validatePossibleInjury((PossibleInjury)value, diagnostics, context);
 			case EmspcrPackage.PROVIDER_PRIMARY_IMPRESSION:
-				return validateProviderPrimaryImpression((ProviderPrimaryImpression) value, diagnostics, context);
+				return validateProviderPrimaryImpression((ProviderPrimaryImpression)value, diagnostics, context);
 			case EmspcrPackage.PRIMARY_SYMPTOM:
-				return validatePrimarySymptom((PrimarySymptom) value, diagnostics, context);
+				return validatePrimarySymptom((PrimarySymptom)value, diagnostics, context);
 			case EmspcrPackage.OTHER_SYMPTOMS:
-				return validateOtherSymptoms((OtherSymptoms) value, diagnostics, context);
+				return validateOtherSymptoms((OtherSymptoms)value, diagnostics, context);
 			case EmspcrPackage.PROVIDER_SECONDARY_IMPRESSIONS:
-				return validateProviderSecondaryImpressions((ProviderSecondaryImpressions) value, diagnostics, context);
+				return validateProviderSecondaryImpressions((ProviderSecondaryImpressions)value, diagnostics, context);
 			case EmspcrPackage.INITIAL_PATIENT_ACUITY:
-				return validateInitialPatientAcuity((InitialPatientAcuity) value, diagnostics, context);
+				return validateInitialPatientAcuity((InitialPatientAcuity)value, diagnostics, context);
 			case EmspcrPackage.TIMES_SECTION:
-				return validateTimesSection((TimesSection) value, diagnostics, context);
+				return validateTimesSection((TimesSection)value, diagnostics, context);
 			case EmspcrPackage.CALL_TIME:
-				return validateCallTime((CallTime) value, diagnostics, context);
+				return validateCallTime((CallTime)value, diagnostics, context);
 			case EmspcrPackage.UNIT_NOTIFIED_TIME:
-				return validateUnitNotifiedTime((UnitNotifiedTime) value, diagnostics, context);
+				return validateUnitNotifiedTime((UnitNotifiedTime)value, diagnostics, context);
 			case EmspcrPackage.UNIT_EN_ROUTE_TIME:
-				return validateUnitEnRouteTime((UnitEnRouteTime) value, diagnostics, context);
+				return validateUnitEnRouteTime((UnitEnRouteTime)value, diagnostics, context);
 			case EmspcrPackage.UNIT_ON_SCENE_TIME:
-				return validateUnitOnSceneTime((UnitOnSceneTime) value, diagnostics, context);
+				return validateUnitOnSceneTime((UnitOnSceneTime)value, diagnostics, context);
 			case EmspcrPackage.UNIT_AT_PATIENT_TIME:
-				return validateUnitAtPatientTime((UnitAtPatientTime) value, diagnostics, context);
+				return validateUnitAtPatientTime((UnitAtPatientTime)value, diagnostics, context);
 			case EmspcrPackage.UNIT_LEFT_SCENE_TIME:
-				return validateUnitLeftSceneTime((UnitLeftSceneTime) value, diagnostics, context);
+				return validateUnitLeftSceneTime((UnitLeftSceneTime)value, diagnostics, context);
 			case EmspcrPackage.PATIENT_ARRIVED_AT_DESTINATION_TIME:
-				return validatePatientArrivedAtDestinationTime(
-					(PatientArrivedAtDestinationTime) value, diagnostics, context);
+				return validatePatientArrivedAtDestinationTime((PatientArrivedAtDestinationTime)value, diagnostics, context);
 			case EmspcrPackage.UNIT_BACK_IN_SERVICE_TIME:
-				return validateUnitBackInServiceTime((UnitBackInServiceTime) value, diagnostics, context);
+				return validateUnitBackInServiceTime((UnitBackInServiceTime)value, diagnostics, context);
 			case EmspcrPackage.DISPATCH_NOTIFIED_TIME:
-				return validateDispatchNotifiedTime((DispatchNotifiedTime) value, diagnostics, context);
+				return validateDispatchNotifiedTime((DispatchNotifiedTime)value, diagnostics, context);
 			case EmspcrPackage.EMS_VITAL_SIGNS_SECTION:
-				return validateEMSVitalSignsSection((EMSVitalSignsSection) value, diagnostics, context);
+				return validateEMSVitalSignsSection((EMSVitalSignsSection)value, diagnostics, context);
 			case EmspcrPackage.VITAL_SIGNS_ORGANIZER:
-				return validateVitalSignsOrganizer((VitalSignsOrganizer) value, diagnostics, context);
+				return validateVitalSignsOrganizer((VitalSignsOrganizer)value, diagnostics, context);
 			case EmspcrPackage.PRIOR_AID_VITALS:
-				return validatePriorAidVitals((PriorAidVitals) value, diagnostics, context);
+				return validatePriorAidVitals((PriorAidVitals)value, diagnostics, context);
 			case EmspcrPackage.ADDITIONAL_VITAL_SIGNS_ORGANIZER:
-				return validateAdditionalVitalSignsOrganizer(
-					(AdditionalVitalSignsOrganizer) value, diagnostics, context);
+				return validateAdditionalVitalSignsOrganizer((AdditionalVitalSignsOrganizer)value, diagnostics, context);
 			case EmspcrPackage.STROKE_SCORE:
-				return validateStrokeScore((StrokeScore) value, diagnostics, context);
+				return validateStrokeScore((StrokeScore)value, diagnostics, context);
 			case EmspcrPackage.PAIN_SCORE:
-				return validatePainScore((PainScore) value, diagnostics, context);
+				return validatePainScore((PainScore)value, diagnostics, context);
 			case EmspcrPackage.LEVEL_OF_RESPONSIVENESS:
-				return validateLevelOfResponsiveness((LevelOfResponsiveness) value, diagnostics, context);
+				return validateLevelOfResponsiveness((LevelOfResponsiveness)value, diagnostics, context);
 			case EmspcrPackage.BLOOD_GLUCOSE:
-				return validateBloodGlucose((BloodGlucose) value, diagnostics, context);
+				return validateBloodGlucose((BloodGlucose)value, diagnostics, context);
 			case EmspcrPackage.CARBON_MONOXIDE:
-				return validateCarbonMonoxide((CarbonMonoxide) value, diagnostics, context);
+				return validateCarbonMonoxide((CarbonMonoxide)value, diagnostics, context);
 			case EmspcrPackage.CARBON_DIOXIDE:
-				return validateCarbonDioxide((CarbonDioxide) value, diagnostics, context);
+				return validateCarbonDioxide((CarbonDioxide)value, diagnostics, context);
 			case EmspcrPackage.CARDIAC_RHYTHM:
-				return validateCardiacRhythm((CardiacRhythm) value, diagnostics, context);
+				return validateCardiacRhythm((CardiacRhythm)value, diagnostics, context);
 			case EmspcrPackage.GLASGOW_COMA_SCORE_ORGANIZER:
-				return validateGlasgowComaScoreOrganizer((GlasgowComaScoreOrganizer) value, diagnostics, context);
+				return validateGlasgowComaScoreOrganizer((GlasgowComaScoreOrganizer)value, diagnostics, context);
 			case EmspcrPackage.GLASGOW_EYE:
-				return validateGlasgowEye((GlasgowEye) value, diagnostics, context);
+				return validateGlasgowEye((GlasgowEye)value, diagnostics, context);
 			case EmspcrPackage.GLASGOW_MOTOR:
-				return validateGlasgowMotor((GlasgowMotor) value, diagnostics, context);
+				return validateGlasgowMotor((GlasgowMotor)value, diagnostics, context);
 			case EmspcrPackage.GLASGOW_QUALIFIER:
-				return validateGlasgowQualifier((GlasgowQualifier) value, diagnostics, context);
+				return validateGlasgowQualifier((GlasgowQualifier)value, diagnostics, context);
 			case EmspcrPackage.GLASGOW_TOTAL:
-				return validateGlasgowTotal((GlasgowTotal) value, diagnostics, context);
+				return validateGlasgowTotal((GlasgowTotal)value, diagnostics, context);
 			case EmspcrPackage.GLASGOW_VERBAL:
-				return validateGlasgowVerbal((GlasgowVerbal) value, diagnostics, context);
+				return validateGlasgowVerbal((GlasgowVerbal)value, diagnostics, context);
 			case EmspcrPackage.EMS_INJURY_INCIDENT_DESCRIPTION_SECTION:
-				return validateEMSInjuryIncidentDescriptionSection(
-					(EMSInjuryIncidentDescriptionSection) value, diagnostics, context);
+				return validateEMSInjuryIncidentDescriptionSection((EMSInjuryIncidentDescriptionSection)value, diagnostics, context);
 			case EmspcrPackage.INJURY_CAUSE_CATEGORY:
-				return validateInjuryCauseCategory((InjuryCauseCategory) value, diagnostics, context);
+				return validateInjuryCauseCategory((InjuryCauseCategory)value, diagnostics, context);
 			case EmspcrPackage.INJURY_MECHANISM:
-				return validateInjuryMechanism((InjuryMechanism) value, diagnostics, context);
+				return validateInjuryMechanism((InjuryMechanism)value, diagnostics, context);
 			case EmspcrPackage.TRAUMA_CENTER_CRITERIA:
-				return validateTraumaCenterCriteria((TraumaCenterCriteria) value, diagnostics, context);
+				return validateTraumaCenterCriteria((TraumaCenterCriteria)value, diagnostics, context);
 			case EmspcrPackage.INJURY_RISK_FACTOR:
-				return validateInjuryRiskFactor((InjuryRiskFactor) value, diagnostics, context);
+				return validateInjuryRiskFactor((InjuryRiskFactor)value, diagnostics, context);
 			case EmspcrPackage.VEHICLE_IMPACT_AREA:
-				return validateVehicleImpactArea((VehicleImpactArea) value, diagnostics, context);
+				return validateVehicleImpactArea((VehicleImpactArea)value, diagnostics, context);
 			case EmspcrPackage.PATIENT_LOCATION_IN_VEHICLE:
-				return validatePatientLocationInVehicle((PatientLocationInVehicle) value, diagnostics, context);
+				return validatePatientLocationInVehicle((PatientLocationInVehicle)value, diagnostics, context);
 			case EmspcrPackage.VEHICLE_OCCUPANT_SAFETY_EQUIPMENT:
-				return validateVehicleOccupantSafetyEquipment(
-					(VehicleOccupantSafetyEquipment) value, diagnostics, context);
+				return validateVehicleOccupantSafetyEquipment((VehicleOccupantSafetyEquipment)value, diagnostics, context);
 			case EmspcrPackage.AIRBAG_DEPLOYMENT_STATUS:
-				return validateAirbagDeploymentStatus((AirbagDeploymentStatus) value, diagnostics, context);
+				return validateAirbagDeploymentStatus((AirbagDeploymentStatus)value, diagnostics, context);
 			case EmspcrPackage.HEIGHT_OF_FALL:
-				return validateHeightOfFall((HeightOfFall) value, diagnostics, context);
+				return validateHeightOfFall((HeightOfFall)value, diagnostics, context);
 			case EmspcrPackage.DISASTER_TYPE:
-				return validateDisasterType((DisasterType) value, diagnostics, context);
+				return validateDisasterType((DisasterType)value, diagnostics, context);
 			case EmspcrPackage.EMS_BILLING_SECTION:
-				return validateEMSBillingSection((EMSBillingSection) value, diagnostics, context);
+				return validateEMSBillingSection((EMSBillingSection)value, diagnostics, context);
 			case EmspcrPackage.BILLING_CONDITION:
-				return validateBillingCondition((BillingCondition) value, diagnostics, context);
+				return validateBillingCondition((BillingCondition)value, diagnostics, context);
 			case EmspcrPackage.LEVEL_OF_SERVICE_OBSERVATION:
-				return validateLevelOfServiceObservation((LevelOfServiceObservation) value, diagnostics, context);
+				return validateLevelOfServiceObservation((LevelOfServiceObservation)value, diagnostics, context);
 			case EmspcrPackage.EMS_DRUG_ALLERGY:
-				return validateEMSDrugAllergy((EMSDrugAllergy) value, diagnostics, context);
+				return validateEMSDrugAllergy((EMSDrugAllergy)value, diagnostics, context);
 			case EmspcrPackage.EXISTENCE_OF_DRUG_ALLERGY_OBSERVATION:
-				return validateExistenceOfDrugAllergyObservation(
-					(ExistenceOfDrugAllergyObservation) value, diagnostics, context);
+				return validateExistenceOfDrugAllergyObservation((ExistenceOfDrugAllergyObservation)value, diagnostics, context);
 			case EmspcrPackage.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION:
-				return validateMedicationNotAdministeredReasonObservation(
-					(MedicationNotAdministeredReasonObservation) value, diagnostics, context);
+				return validateMedicationNotAdministeredReasonObservation((MedicationNotAdministeredReasonObservation)value, diagnostics, context);
 			case EmspcrPackage.MEDICATION_RESPONSE_OBSERVATION:
-				return validateMedicationResponseObservation(
-					(MedicationResponseObservation) value, diagnostics, context);
+				return validateMedicationResponseObservation((MedicationResponseObservation)value, diagnostics, context);
 			case EmspcrPackage.MEDICATION_COMPLICATION_OBSERVATION:
-				return validateMedicationComplicationObservation(
-					(MedicationComplicationObservation) value, diagnostics, context);
+				return validateMedicationComplicationObservation((MedicationComplicationObservation)value, diagnostics, context);
 			case EmspcrPackage.MEDICATION_PRIOR_ADMINISTRATION_OBSERVATION:
-				return validateMedicationPriorAdministrationObservation(
-					(MedicationPriorAdministrationObservation) value, diagnostics, context);
+				return validateMedicationPriorAdministrationObservation((MedicationPriorAdministrationObservation)value, diagnostics, context);
 			case EmspcrPackage.PATIENT_BODY_WEIGHT:
-				return validatePatientBodyWeight((PatientBodyWeight) value, diagnostics, context);
+				return validatePatientBodyWeight((PatientBodyWeight)value, diagnostics, context);
 			case EmspcrPackage.LENGTH_BASED_PATIENT_BODY_WEIGHT_CLASS:
-				return validateLengthBasedPatientBodyWeightClass(
-					(LengthBasedPatientBodyWeightClass) value, diagnostics, context);
+				return validateLengthBasedPatientBodyWeightClass((LengthBasedPatientBodyWeightClass)value, diagnostics, context);
 			case EmspcrPackage.FACE_ASSESSMENT:
-				return validateFaceAssessment((FaceAssessment) value, diagnostics, context);
+				return validateFaceAssessment((FaceAssessment)value, diagnostics, context);
 			case EmspcrPackage.HEAD_ASSESSMENT:
-				return validateHeadAssessment((HeadAssessment) value, diagnostics, context);
+				return validateHeadAssessment((HeadAssessment)value, diagnostics, context);
 			case EmspcrPackage.NECK_ASSESSMENT:
-				return validateNeckAssessment((NeckAssessment) value, diagnostics, context);
+				return validateNeckAssessment((NeckAssessment)value, diagnostics, context);
 			case EmspcrPackage.CHEST_AND_LUNGS_ASSESSMENT:
-				return validateChestAndLungsAssessment((ChestAndLungsAssessment) value, diagnostics, context);
+				return validateChestAndLungsAssessment((ChestAndLungsAssessment)value, diagnostics, context);
 			case EmspcrPackage.HEART_ASSESSMENT:
-				return validateHeartAssessment((HeartAssessment) value, diagnostics, context);
+				return validateHeartAssessment((HeartAssessment)value, diagnostics, context);
 			case EmspcrPackage.ABDOMEN_ASSESSMENT:
-				return validateAbdomenAssessment((AbdomenAssessment) value, diagnostics, context);
+				return validateAbdomenAssessment((AbdomenAssessment)value, diagnostics, context);
 			case EmspcrPackage.PELVIC_AND_GENITOURINARY_ASSESSMENT:
-				return validatePelvicAndGenitourinaryAssessment(
-					(PelvicAndGenitourinaryAssessment) value, diagnostics, context);
+				return validatePelvicAndGenitourinaryAssessment((PelvicAndGenitourinaryAssessment)value, diagnostics, context);
 			case EmspcrPackage.BACK_AND_SPINE_ASSESSMENT:
-				return validateBackAndSpineAssessment((BackAndSpineAssessment) value, diagnostics, context);
+				return validateBackAndSpineAssessment((BackAndSpineAssessment)value, diagnostics, context);
 			case EmspcrPackage.EXTREMITIES_ASSESSMENT:
-				return validateExtremitiesAssessment((ExtremitiesAssessment) value, diagnostics, context);
+				return validateExtremitiesAssessment((ExtremitiesAssessment)value, diagnostics, context);
 			case EmspcrPackage.EYE_ASSESSMENT:
-				return validateEyeAssessment((EyeAssessment) value, diagnostics, context);
+				return validateEyeAssessment((EyeAssessment)value, diagnostics, context);
 			case EmspcrPackage.MENTAL_STATUS_ASSESSMENT:
-				return validateMentalStatusAssessment((MentalStatusAssessment) value, diagnostics, context);
+				return validateMentalStatusAssessment((MentalStatusAssessment)value, diagnostics, context);
 			case EmspcrPackage.CARDIAC_ARREST_WITH_TIMING:
-				return validateCardiacArrestWithTiming((CardiacArrestWithTiming) value, diagnostics, context);
+				return validateCardiacArrestWithTiming((CardiacArrestWithTiming)value, diagnostics, context);
 			case EmspcrPackage.CARDIAC_ARREST_CAUSE:
-				return validateCardiacArrestCause((CardiacArrestCause) value, diagnostics, context);
+				return validateCardiacArrestCause((CardiacArrestCause)value, diagnostics, context);
 			case EmspcrPackage.PRIOR_CPR:
-				return validatePriorCPR((PriorCPR) value, diagnostics, context);
+				return validatePriorCPR((PriorCPR)value, diagnostics, context);
 			case EmspcrPackage.PRIOR_AED_USE:
-				return validatePriorAEDUse((PriorAEDUse) value, diagnostics, context);
+				return validatePriorAEDUse((PriorAEDUse)value, diagnostics, context);
 			case EmspcrPackage.ARREST_RHYTHM:
-				return validateArrestRhythm((ArrestRhythm) value, diagnostics, context);
+				return validateArrestRhythm((ArrestRhythm)value, diagnostics, context);
 			case EmspcrPackage.RETURN_OF_SPONTANEOUS_CIRCULATION:
-				return validateReturnOfSpontaneousCirculation(
-					(ReturnOfSpontaneousCirculation) value, diagnostics, context);
+				return validateReturnOfSpontaneousCirculation((ReturnOfSpontaneousCirculation)value, diagnostics, context);
 			case EmspcrPackage.DESTINATION_RHYTHM:
-				return validateDestinationRhythm((DestinationRhythm) value, diagnostics, context);
+				return validateDestinationRhythm((DestinationRhythm)value, diagnostics, context);
 			case EmspcrPackage.ABANDONED_PROCEDURE_REASON_OBSERVATION:
-				return validateAbandonedProcedureReasonObservation(
-					(AbandonedProcedureReasonObservation) value, diagnostics, context);
+				return validateAbandonedProcedureReasonObservation((AbandonedProcedureReasonObservation)value, diagnostics, context);
 			case EmspcrPackage.PROCEDURE_PRIOR_INDICATOR:
-				return validateProcedurePriorIndicator((ProcedurePriorIndicator) value, diagnostics, context);
+				return validateProcedurePriorIndicator((ProcedurePriorIndicator)value, diagnostics, context);
 			case EmspcrPackage.PROCEDURE_NUMBER_OF_ATTEMPTS_OBSERVATION:
-				return validateProcedureNumberOfAttemptsObservation(
-					(ProcedureNumberOfAttemptsObservation) value, diagnostics, context);
+				return validateProcedureNumberOfAttemptsObservation((ProcedureNumberOfAttemptsObservation)value, diagnostics, context);
 			case EmspcrPackage.PROCEDURE_SUCCESSFUL_OBSERVATION:
-				return validateProcedureSuccessfulObservation(
-					(ProcedureSuccessfulObservation) value, diagnostics, context);
+				return validateProcedureSuccessfulObservation((ProcedureSuccessfulObservation)value, diagnostics, context);
 			case EmspcrPackage.PROCEDURE_COMPLICATIONS_OBSERVATION:
-				return validateProcedureComplicationsObservation(
-					(ProcedureComplicationsObservation) value, diagnostics, context);
+				return validateProcedureComplicationsObservation((ProcedureComplicationsObservation)value, diagnostics, context);
 			case EmspcrPackage.PROCEDURE_PATIENT_RESPONSE_OBSERVATION:
-				return validateProcedurePatientResponseObservation(
-					(ProcedurePatientResponseObservation) value, diagnostics, context);
+				return validateProcedurePatientResponseObservation((ProcedurePatientResponseObservation)value, diagnostics, context);
 			case EmspcrPackage.AIRWAY_CONFIRMATION_OBSERVATION:
-				return validateAirwayConfirmationObservation(
-					(AirwayConfirmationObservation) value, diagnostics, context);
+				return validateAirwayConfirmationObservation((AirwayConfirmationObservation)value, diagnostics, context);
 			case EmspcrPackage.REASON_PROCEDURE_NOT_ATTEMPTED_OBSERVATION:
-				return validateReasonProcedureNotAttemptedObservation(
-					(ReasonProcedureNotAttemptedObservation) value, diagnostics, context);
+				return validateReasonProcedureNotAttemptedObservation((ReasonProcedureNotAttemptedObservation)value, diagnostics, context);
 			case EmspcrPackage.COMPLAINT_TYPE:
-				return validateComplaintType((ComplaintType) value, diagnostics, context);
+				return validateComplaintType((ComplaintType)value, diagnostics, context);
 			case EmspcrPackage.COMPLAINT_DURATION:
-				return validateComplaintDuration((ComplaintDuration) value, diagnostics, context);
+				return validateComplaintDuration((ComplaintDuration)value, diagnostics, context);
 			case EmspcrPackage.COMPLAINT_ORGAN_SYSTEM:
-				return validateComplaintOrganSystem((ComplaintOrganSystem) value, diagnostics, context);
+				return validateComplaintOrganSystem((ComplaintOrganSystem)value, diagnostics, context);
 			case EmspcrPackage.NEUROLOGICAL_ASSESSMENT:
-				return validateNeurologicalAssessment((NeurologicalAssessment) value, diagnostics, context);
+				return validateNeurologicalAssessment((NeurologicalAssessment)value, diagnostics, context);
 			case EmspcrPackage.SYSTOLIC_BLOOD_PRESSURE:
-				return validateSystolicBloodPressure((SystolicBloodPressure) value, diagnostics, context);
+				return validateSystolicBloodPressure((SystolicBloodPressure)value, diagnostics, context);
 			case EmspcrPackage.DIASTOLIC_BLOOD_PRESSURE:
-				return validateDiastolicBloodPressure((DiastolicBloodPressure) value, diagnostics, context);
+				return validateDiastolicBloodPressure((DiastolicBloodPressure)value, diagnostics, context);
 			case EmspcrPackage.HEART_RATE:
-				return validateHeartRate((HeartRate) value, diagnostics, context);
+				return validateHeartRate((HeartRate)value, diagnostics, context);
 			case EmspcrPackage.RESPIRATORY_RATE:
-				return validateRespiratoryRate((RespiratoryRate) value, diagnostics, context);
+				return validateRespiratoryRate((RespiratoryRate)value, diagnostics, context);
 			case EmspcrPackage.BODY_TEMPERATURE:
-				return validateBodyTemperature((BodyTemperature) value, diagnostics, context);
+				return validateBodyTemperature((BodyTemperature)value, diagnostics, context);
 			case EmspcrPackage.OXYGEN_SATURATION:
-				return validateOxygenSaturation((OxygenSaturation) value, diagnostics, context);
+				return validateOxygenSaturation((OxygenSaturation)value, diagnostics, context);
 			case EmspcrPackage.PROTOCOL_AGE_CATEGORY:
-				return validateProtocolAgeCategory((ProtocolAgeCategory) value, diagnostics, context);
+				return validateProtocolAgeCategory((ProtocolAgeCategory)value, diagnostics, context);
 			case EmspcrPackage.DISPATCH_LOCATION_NAME:
-				return validateDispatchLocationName((DispatchLocationName) value, diagnostics, context);
+				return validateDispatchLocationName((DispatchLocationName)value, diagnostics, context);
 			case EmspcrPackage.DISPATCH_LOCATION_LATITUDE:
-				return validateDispatchLocationLatitude((DispatchLocationLatitude) value, diagnostics, context);
+				return validateDispatchLocationLatitude((DispatchLocationLatitude)value, diagnostics, context);
 			case EmspcrPackage.DISPATCH_LOCATION_LONGITUDE:
-				return validateDispatchLocationLongitude((DispatchLocationLongitude) value, diagnostics, context);
+				return validateDispatchLocationLongitude((DispatchLocationLongitude)value, diagnostics, context);
 			case EmspcrPackage.DISPATCH_DELAY:
-				return validateDispatchDelay((DispatchDelay) value, diagnostics, context);
+				return validateDispatchDelay((DispatchDelay)value, diagnostics, context);
 			case EmspcrPackage.RESPONSE_DELAY:
-				return validateResponseDelay((ResponseDelay) value, diagnostics, context);
+				return validateResponseDelay((ResponseDelay)value, diagnostics, context);
 			case EmspcrPackage.SCENE_DELAY:
-				return validateSceneDelay((SceneDelay) value, diagnostics, context);
+				return validateSceneDelay((SceneDelay)value, diagnostics, context);
 			case EmspcrPackage.TRANSPORT_DELAY:
-				return validateTransportDelay((TransportDelay) value, diagnostics, context);
+				return validateTransportDelay((TransportDelay)value, diagnostics, context);
 			case EmspcrPackage.TURNAROUND_DELAY:
-				return validateTurnaroundDelay((TurnaroundDelay) value, diagnostics, context);
+				return validateTurnaroundDelay((TurnaroundDelay)value, diagnostics, context);
 			case EmspcrPackage.RESPONSE_BEGINNING_ODOMETER_READING:
-				return validateResponseBeginningOdometerReading(
-					(ResponseBeginningOdometerReading) value, diagnostics, context);
+				return validateResponseBeginningOdometerReading((ResponseBeginningOdometerReading)value, diagnostics, context);
 			case EmspcrPackage.RESPONSE_ON_SCENE_ODOMETER_READING:
-				return validateResponseOnSceneOdometerReading(
-					(ResponseOnSceneOdometerReading) value, diagnostics, context);
+				return validateResponseOnSceneOdometerReading((ResponseOnSceneOdometerReading)value, diagnostics, context);
 			case EmspcrPackage.RESPONSE_DESTINATION_ODOMETER_READING:
-				return validateResponseDestinationOdometerReading(
-					(ResponseDestinationOdometerReading) value, diagnostics, context);
+				return validateResponseDestinationOdometerReading((ResponseDestinationOdometerReading)value, diagnostics, context);
 			case EmspcrPackage.RESPONSE_ENDING_ODOMETER_READING:
-				return validateResponseEndingOdometerReading(
-					(ResponseEndingOdometerReading) value, diagnostics, context);
+				return validateResponseEndingOdometerReading((ResponseEndingOdometerReading)value, diagnostics, context);
 			case EmspcrPackage.NON_DRUG_ALLERGY_ORGANIZER_ACTUALLY_DREG:
-				return validateNonDrugAllergyOrganizerActuallyDreg(
-					(NonDrugAllergyOrganizerActuallyDreg) value, diagnostics, context);
+				return validateNonDrugAllergyOrganizerActuallyDreg((NonDrugAllergyOrganizerActuallyDreg)value, diagnostics, context);
 			case EmspcrPackage.EMS_DRUG_ALLERGY_ORGANIZER:
-				return validateEMSDrugAllergyOrganizer((EMSDrugAllergyOrganizer) value, diagnostics, context);
+				return validateEMSDrugAllergyOrganizer((EMSDrugAllergyOrganizer)value, diagnostics, context);
 			default:
 				return true;
 		}
@@ -8713,1207 +8659,52 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validatePatientCareReport(PatientCareReport patientCareReport, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(patientCareReport, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(patientCareReport, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(patientCareReport, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateClassCode(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateClinicalDocument_validateMoodCode(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdRoot(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeIdExtension(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetIdVersionNumber(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsVersionNumberSetId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validateGeneralHeaderConstraintsTemplateId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRealmCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsTypeId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validateGeneralHeaderConstraintsId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validateGeneralHeaderConstraintsTitle(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsEffectiveTime(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsConfidentialityCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLanguageCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSetId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validateGeneralHeaderConstraintsVersionNumber(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthor(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEnterer(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validateGeneralHeaderConstraintsCustodian(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipient(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticator(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticator(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTarget(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validateGeneralHeaderConstraintsComponentOf(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformant(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsSupportParticipant(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOf(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOf(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorization(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressCountry(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressPostalCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressState(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleGeneralHeaderConstraintsUSRealmAddressUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTELUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToYear(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSBirthTimePreciseToDay(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientTSValue(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUSRealmPatientNameMixedContent(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameFamily(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameGiven(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNamePrefix(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameSuffix(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGeneralHeaderConstraintsUSRealmPatientNameUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressCountry(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressPostalCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressState(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGeneralHeaderConstraintsUSRealmAddressUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTELUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianPersonName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCodeFromPersonalRelationshipOrResponsibleParty(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianTelecom(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardianGuardianPerson(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlaceAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplacePlace(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationPreferenceInd(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationModeCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunicationLanguageCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientIfSdtcEnforceRaceCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientAdministrativeGenderCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthTime(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientEthnicGroupCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientMaritalStatusCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientRaceCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientReligiousAffiliationCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientSDTCRaceCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientGuardian(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientBirthplace(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatientLanguageCommunication(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressState(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTELUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationHasNationalProviderIdentifier(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganizationTelecom(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleTelecom(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRolePatient(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRoleProviderOrganization(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsRecordTargetPatientRole(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterEffectiveTime(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounterId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsComponentOfEncompassingEncounter(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressCountry(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressPostalCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressState(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorGeneralHeaderConstraintsUSRealmAddressUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTELUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceManufacturerModelName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAuthoringDeviceSoftwareName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorPersonName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasOneAssignedPersonOrOneAssignedAuthoringDevice(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorHasNationalProviderIdentifier(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthorTelecom(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorTime(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorAssignedAuthor(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTELUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityPersonName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityHasNationalProviderIdentifier(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityTelecom(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntityAssignedPerson(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDataEntererAssignedEntity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressCountry(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressPostalCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressState(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationGeneralHeaderConstraintsUSRealmAddressUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTELUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationHasNationalProviderIdentifier(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianCustodianOrganizationTelecom(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodianRepresentedCustodianOrganization(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsCustodianAssignedCustodian(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientPersonName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientOrganizationName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientInformationRecipient(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipientReceivedOrganization(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformationRecipientIntendedRecipient(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTELUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityPersonName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityHasNationalProviderIdentifier(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityTelecom(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorAssignedEntityAssignedPerson(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorTime(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsLegalAuthenticatorSignatureCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTELUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityPersonName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityHasNationalProviderIdentifier(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityTelecom(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntityAssignedPerson(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorTime(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorSignatureCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthenticatorAssignedEntity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressState(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityPersonName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityHasNationalProviderIdentifier(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntityAssignedPerson(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUSRealmAddressStreet(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressCountry(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressPostalCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressState(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressStreetAddressLine(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUseP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsUSRealmAddressUse(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityGeneralHeaderConstraintsInformantAssignedEntityPersonName(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityAddr(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntityPerson(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantHasAssignedEntityOrRelatedEntity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantAssignedEntity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInformantRelatedEntity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportAssociatedEntityHasAssociatedPersonOrScopingOrganization(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsParticipantSupportTime(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrderId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsInFulfillmentOfOrder(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityHasNationalProviderIdentifier(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntityId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1FunctionCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1TypeCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer1AssignedEntity(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTimeLow(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventEffectiveTime(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEventPerformer(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsDocumentationOfServiceEvent(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentId(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentStatusCodeP(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsentStatusCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateGeneralHeaderConstraints_validateGeneralHeaderConstraintsAuthorizationConsent(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportClassCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportMoodCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportCodeP(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportCode(patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportConfidentialityCode(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportRecordTarget(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportCurrentMedication(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportCardiacArrestEvent(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportAdvanceDirectives(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportAllergiesAndAdverseReactionsSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportPastMedicalHistorySection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportSocialHistorySection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportPhysicalAssessmentSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportMedicationsAdministeredSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportProceduresPerformedSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportPatientCareNarrativeSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportSceneSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportDispatchSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportDispositionSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportPersonnelAdverseEventSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportProtocolSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportResponseSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportSituationSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportTimesSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportVitalSignsSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportAuthorParticipation(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportDocumentationOf(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportRelatedDocument(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportParticipant(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportInjuryIncidentDescriptionSection(
-				patientCareReport, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientCareReport_validatePatientCareReportEMSBillingSection(
-				patientCareReport, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validateGeneralHeaderConstraintsTemplateId(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportClassCode(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportMoodCode(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validateGeneralHeaderConstraintsId(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportCodeP(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportCode(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validateGeneralHeaderConstraintsTitle(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportConfidentialityCode(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validateGeneralHeaderConstraintsVersionNumber(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportRecordTarget(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportCurrentMedication(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportCardiacArrestEvent(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportAdvanceDirectives(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportAllergiesAndAdverseReactionsSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportPastMedicalHistorySection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportSocialHistorySection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportPhysicalAssessmentSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportMedicationsAdministeredSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportProceduresPerformedSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportPatientCareNarrativeSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportSceneSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validateGeneralHeaderConstraintsComponentOf(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportDispatchSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportDispositionSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportPersonnelAdverseEventSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportProtocolSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportResponseSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportSituationSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportTimesSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportVitalSignsSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportAuthorParticipation(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validateGeneralHeaderConstraintsCustodian(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportDocumentationOf(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportRelatedDocument(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportParticipant(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportInjuryIncidentDescriptionSection(patientCareReport, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientCareReport_validatePatientCareReportEMSBillingSection(patientCareReport, diagnostics, context);
 		return result;
 	}
 
@@ -10331,65 +9122,24 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSCurrentMedicationSection(EMSCurrentMedicationSection emsCurrentMedicationSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsCurrentMedicationSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsCurrentMedicationSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsCurrentMedicationSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionTemplateId(
-				emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionCode(
-				emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionTitle(
-				emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionText(
-				emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionCurrentlyOnMedication(
-				emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionPatientOnAnticoagulants(
-				emsCurrentMedicationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionCurrentMedication(
-				emsCurrentMedicationSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionTemplateId(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionCode(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionTitle(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionText(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionCurrentlyOnMedication(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionPatientOnAnticoagulants(emsCurrentMedicationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionCurrentMedication(emsCurrentMedicationSection, diagnostics, context);
 		return result;
 	}
 
@@ -10450,8 +9200,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionCurrentlyOnMedication(
 			EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsCurrentMedicationSection.validateEMSCurrentMedicationSectionCurrentlyOnMedication(
-			diagnostics, context);
+		return emsCurrentMedicationSection.validateEMSCurrentMedicationSectionCurrentlyOnMedication(diagnostics, context);
 	}
 
 	/**
@@ -10463,8 +9212,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSCurrentMedicationSection_validateEMSCurrentMedicationSectionPatientOnAnticoagulants(
 			EMSCurrentMedicationSection emsCurrentMedicationSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsCurrentMedicationSection.validateEMSCurrentMedicationSectionPatientOnAnticoagulants(
-			diagnostics, context);
+		return emsCurrentMedicationSection.validateEMSCurrentMedicationSectionPatientOnAnticoagulants(diagnostics, context);
 	}
 
 	/**
@@ -10486,47 +9234,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateCurrentlyOnMedication(CurrentlyOnMedication currentlyOnMedication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(currentlyOnMedication, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(currentlyOnMedication, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(currentlyOnMedication, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(currentlyOnMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(currentlyOnMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(currentlyOnMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(currentlyOnMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(currentlyOnMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(currentlyOnMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(currentlyOnMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentlyOnMedication_validateCurrentlyOnMedicationTemplateId(
-				currentlyOnMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentlyOnMedication_validateCurrentlyOnMedicationMoodCode(
-				currentlyOnMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentlyOnMedication_validateCurrentlyOnMedicationCode(
-				currentlyOnMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentlyOnMedication_validateCurrentlyOnMedicationValue(
-				currentlyOnMedication, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(currentlyOnMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(currentlyOnMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(currentlyOnMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(currentlyOnMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(currentlyOnMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(currentlyOnMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(currentlyOnMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentlyOnMedication_validateCurrentlyOnMedicationTemplateId(currentlyOnMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentlyOnMedication_validateCurrentlyOnMedicationMoodCode(currentlyOnMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentlyOnMedication_validateCurrentlyOnMedicationCode(currentlyOnMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentlyOnMedication_validateCurrentlyOnMedicationValue(currentlyOnMedication, diagnostics, context);
 		return result;
 	}
 
@@ -10581,47 +9301,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validatePatientOnAnticoagulants(PatientOnAnticoagulants patientOnAnticoagulants,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(patientOnAnticoagulants, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(patientOnAnticoagulants, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(patientOnAnticoagulants, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(patientOnAnticoagulants, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(patientOnAnticoagulants, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(patientOnAnticoagulants, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(patientOnAnticoagulants, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(patientOnAnticoagulants, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(patientOnAnticoagulants, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(patientOnAnticoagulants, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientOnAnticoagulants_validatePatientOnAnticoagulantsTemplateId(
-				patientOnAnticoagulants, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientOnAnticoagulants_validatePatientOnAnticoagulantsMoodCode(
-				patientOnAnticoagulants, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientOnAnticoagulants_validatePatientOnAnticoagulantsCode(
-				patientOnAnticoagulants, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientOnAnticoagulants_validatePatientOnAnticoagulantsValue(
-				patientOnAnticoagulants, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(patientOnAnticoagulants, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(patientOnAnticoagulants, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(patientOnAnticoagulants, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(patientOnAnticoagulants, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(patientOnAnticoagulants, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientOnAnticoagulants, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientOnAnticoagulants, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientOnAnticoagulants_validatePatientOnAnticoagulantsTemplateId(patientOnAnticoagulants, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientOnAnticoagulants_validatePatientOnAnticoagulantsMoodCode(patientOnAnticoagulants, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientOnAnticoagulants_validatePatientOnAnticoagulantsCode(patientOnAnticoagulants, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientOnAnticoagulants_validatePatientOnAnticoagulantsValue(patientOnAnticoagulants, diagnostics, context);
 		return result;
 	}
 
@@ -10676,63 +9368,23 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateCurrentMedication(CurrentMedication currentMedication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(currentMedication, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(currentMedication, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(currentMedication, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSubstanceAdministration_validateClassCode(
-				currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentMedication_validateCurrentMedicationConsumable(
-				currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentMedication_validateCurrentMedicationTemplateId(
-				currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentMedication_validateCurrentMedicationNegationInd(
-				currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentMedication_validateCurrentMedicationNullFlavor(
-				currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentMedication_validateCurrentMedicationDoseQuantity(
-				currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentMedication_validateCurrentMedicationRouteCodeP(
-				currentMedication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCurrentMedication_validateCurrentMedicationRouteCode(
-				currentMedication, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentMedication_validateCurrentMedicationConsumable(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentMedication_validateCurrentMedicationTemplateId(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentMedication_validateCurrentMedicationNegationInd(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentMedication_validateCurrentMedicationNullFlavor(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentMedication_validateCurrentMedicationDoseQuantity(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentMedication_validateCurrentMedicationRouteCodeP(currentMedication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCurrentMedication_validateCurrentMedicationRouteCode(currentMedication, diagnostics, context);
 		return result;
 	}
 
@@ -10820,57 +9472,22 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSCardiacArrestEventSection(EMSCardiacArrestEventSection emsCardiacArrestEventSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsCardiacArrestEventSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsCardiacArrestEventSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsCardiacArrestEventSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionTemplateId(
-				emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionCode(
-				emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionTitle(
-				emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionText(
-				emsCardiacArrestEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionCardiacArrestExistence(
-				emsCardiacArrestEventSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionTemplateId(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionCode(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionTitle(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionText(emsCardiacArrestEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionCardiacArrestExistence(emsCardiacArrestEventSection, diagnostics, context);
 		return result;
 	}
 
@@ -10931,8 +9548,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSCardiacArrestEventSection_validateEMSCardiacArrestEventSectionCardiacArrestExistence(
 			EMSCardiacArrestEventSection emsCardiacArrestEventSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsCardiacArrestEventSection.validateEMSCardiacArrestEventSectionCardiacArrestExistence(
-			diagnostics, context);
+		return emsCardiacArrestEventSection.validateEMSCardiacArrestEventSectionCardiacArrestExistence(diagnostics, context);
 	}
 
 	/**
@@ -10942,76 +9558,28 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateCardiacArrest(CardiacArrest cardiacArrest, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(cardiacArrest, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(cardiacArrest, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(cardiacArrest, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestCauseRelationship(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestInformantParticipation(
-				cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestPriorCPRRelationship(
-				cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestPriorAEDRelationship(
-				cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestSpontaneousCirculationRelationship(
-				cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestDestinationRhythmRelationship(
-				cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestArrestRhythmRelationship(
-				cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestTemplateId(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestMoodCode(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestCode(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestNegationInd(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestEffectiveTime(cardiacArrest, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrest_validateCardiacArrestValue(cardiacArrest, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestCauseRelationship(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestInformantParticipation(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestPriorCPRRelationship(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestPriorAEDRelationship(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestSpontaneousCirculationRelationship(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestDestinationRhythmRelationship(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestArrestRhythmRelationship(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestTemplateId(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestMoodCode(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestCode(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestNegationInd(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestEffectiveTime(cardiacArrest, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrest_validateCardiacArrestValue(cardiacArrest, diagnostics, context);
 		return result;
 	}
 
@@ -11165,57 +9733,22 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSAdvanceDirectivesSection(EMSAdvanceDirectivesSection emsAdvanceDirectivesSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsAdvanceDirectivesSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsAdvanceDirectivesSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsAdvanceDirectivesSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionTemplateId(
-				emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionCode(
-				emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionTitle(
-				emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionText(
-				emsAdvanceDirectivesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(
-				emsAdvanceDirectivesSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionTemplateId(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionCode(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionTitle(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionText(emsAdvanceDirectivesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(emsAdvanceDirectivesSection, diagnostics, context);
 		return result;
 	}
 
@@ -11276,8 +9809,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSAdvanceDirectivesSection_validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(
 			EMSAdvanceDirectivesSection emsAdvanceDirectivesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsAdvanceDirectivesSection.validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(
-			diagnostics, context);
+		return emsAdvanceDirectivesSection.validateEMSAdvanceDirectivesSectionAdvancedDirectiveObservation(diagnostics, context);
 	}
 
 	/**
@@ -11287,51 +9819,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateAdvanceDirectiveObservation(AdvanceDirectiveObservation advanceDirectiveObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(advanceDirectiveObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(advanceDirectiveObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(advanceDirectiveObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationTemplateId(
-				advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationMoodCode(
-				advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationCode(
-				advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationValue(
-				advanceDirectiveObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationValueP(
-				advanceDirectiveObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationTemplateId(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationMoodCode(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationCode(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationValue(advanceDirectiveObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdvanceDirectiveObservation_validateAdvanceDirectiveObservationValueP(advanceDirectiveObservation, diagnostics, context);
 		return result;
 	}
 
@@ -11403,65 +9904,23 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSAllergiesAndAdverseReactionsSection(
 			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsAllergiesAndAdverseReactionsSection, diagnostics, context)) {
-			return false;
-		}
-		boolean result = validate_EveryMultiplicityConforms(
-			emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
-				emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(
-				emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionTemplateId(
-				emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionCode(
-				emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionTitle(
-				emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionText(
-				emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(
-				emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(
-				emsAllergiesAndAdverseReactionsSection, diagnostics, context);
-		}
+		if (!validate_NoCircularContainment(emsAllergiesAndAdverseReactionsSection, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionTemplateId(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionCode(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionTitle(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionText(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(emsAllergiesAndAdverseReactionsSection, diagnostics, context);
 		return result;
 	}
 
@@ -11474,8 +9933,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionTemplateId(
 			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionTemplateId(
-			diagnostics, context);
+		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -11487,8 +9945,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionCode(
 			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionCode(
-			diagnostics, context);
+		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionCode(diagnostics, context);
 	}
 
 	/**
@@ -11500,8 +9957,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionTitle(
 			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionTitle(
-			diagnostics, context);
+		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionTitle(diagnostics, context);
 	}
 
 	/**
@@ -11513,8 +9969,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionText(
 			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionText(
-			diagnostics, context);
+		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionText(diagnostics, context);
 	}
 
 	/**
@@ -11526,8 +9981,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(
 			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(
-			diagnostics, context);
+		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionEnvironmentalAllergies(diagnostics, context);
 	}
 
 	/**
@@ -11539,8 +9993,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSAllergiesAndAdverseReactionsSection_validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(
 			EMSAllergiesAndAdverseReactionsSection emsAllergiesAndAdverseReactionsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(
-			diagnostics, context);
+		return emsAllergiesAndAdverseReactionsSection.validateEMSAllergiesAndAdverseReactionsSectionEMSDrugAllergyOrganizer(diagnostics, context);
 	}
 
 	/**
@@ -11550,43 +10003,18 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateNonDrugAllergyOrganizer(NonDrugAllergyOrganizer nonDrugAllergyOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(nonDrugAllergyOrganizer, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(nonDrugAllergyOrganizer, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(nonDrugAllergyOrganizer, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(nonDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(nonDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(nonDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(nonDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(nonDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(nonDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(nonDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNonDrugAllergyOrganizer_validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(
-				nonDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNonDrugAllergyOrganizer_validateNonDrugAllergyOrganizerNonDrugAllergy(
-				nonDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNonDrugAllergyOrganizer_validateNonDrugAllergyOrganizerTemplateId(
-				nonDrugAllergyOrganizer, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(nonDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(nonDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(nonDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(nonDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(nonDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(nonDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(nonDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNonDrugAllergyOrganizer_validateNonDrugAllergyOrganizerExistenceOfNonDrugAllergy(nonDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNonDrugAllergyOrganizer_validateNonDrugAllergyOrganizerNonDrugAllergy(nonDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNonDrugAllergyOrganizer_validateNonDrugAllergyOrganizerTemplateId(nonDrugAllergyOrganizer, diagnostics, context);
 		return result;
 	}
 
@@ -11630,47 +10058,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateExistenceOfNonDrugAllergy(ExistenceOfNonDrugAllergy existenceOfNonDrugAllergy,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(existenceOfNonDrugAllergy, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(existenceOfNonDrugAllergy, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(existenceOfNonDrugAllergy, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(existenceOfNonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(existenceOfNonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(existenceOfNonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(existenceOfNonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(existenceOfNonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(existenceOfNonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(existenceOfNonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfNonDrugAllergy_validateExistenceOfNonDrugAllergyTemplateId(
-				existenceOfNonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfNonDrugAllergy_validateExistenceOfNonDrugAllergyMoodCode(
-				existenceOfNonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfNonDrugAllergy_validateExistenceOfNonDrugAllergyCode(
-				existenceOfNonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfNonDrugAllergy_validateExistenceOfNonDrugAllergyValue(
-				existenceOfNonDrugAllergy, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(existenceOfNonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(existenceOfNonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(existenceOfNonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(existenceOfNonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(existenceOfNonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(existenceOfNonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(existenceOfNonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfNonDrugAllergy_validateExistenceOfNonDrugAllergyTemplateId(existenceOfNonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfNonDrugAllergy_validateExistenceOfNonDrugAllergyMoodCode(existenceOfNonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfNonDrugAllergy_validateExistenceOfNonDrugAllergyCode(existenceOfNonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfNonDrugAllergy_validateExistenceOfNonDrugAllergyValue(existenceOfNonDrugAllergy, diagnostics, context);
 		return result;
 	}
 
@@ -11729,43 +10129,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateNonDrugAllergy(NonDrugAllergy nonDrugAllergy, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(nonDrugAllergy, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(nonDrugAllergy, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(nonDrugAllergy, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(nonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(nonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(nonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(nonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(nonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(nonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(nonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNonDrugAllergy_validateNonDrugAllergyTemplateId(nonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNonDrugAllergy_validateNonDrugAllergyMoodCode(nonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNonDrugAllergy_validateNonDrugAllergyCode(nonDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNonDrugAllergy_validateNonDrugAllergyValue(nonDrugAllergy, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(nonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(nonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(nonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(nonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(nonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(nonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(nonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNonDrugAllergy_validateNonDrugAllergyTemplateId(nonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNonDrugAllergy_validateNonDrugAllergyMoodCode(nonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNonDrugAllergy_validateNonDrugAllergyCode(nonDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNonDrugAllergy_validateNonDrugAllergyValue(nonDrugAllergy, diagnostics, context);
 		return result;
 	}
 
@@ -11820,65 +10196,24 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSPastMedicalHistorySection(EMSPastMedicalHistorySection emsPastMedicalHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsPastMedicalHistorySection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsPastMedicalHistorySection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsPastMedicalHistorySection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionTemplateId(
-				emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionCode(
-				emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionCodeP(
-				emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionTitle(
-				emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionText(
-				emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(
-				emsPastMedicalHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionHistoryOfCondition(
-				emsPastMedicalHistorySection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionTemplateId(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionCode(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionCodeP(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionTitle(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionText(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(emsPastMedicalHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionHistoryOfCondition(emsPastMedicalHistorySection, diagnostics, context);
 		return result;
 	}
 
@@ -11951,8 +10286,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSPastMedicalHistorySection_validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(
 			EMSPastMedicalHistorySection emsPastMedicalHistorySection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsPastMedicalHistorySection.validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(
-			diagnostics, context);
+		return emsPastMedicalHistorySection.validateEMSPastMedicalHistorySectionExistenceOfHistoryOfCondition(diagnostics, context);
 	}
 
 	/**
@@ -11974,47 +10308,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateExistenceOfHistoryOfCondition(ExistenceOfHistoryOfCondition existenceOfHistoryOfCondition,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(existenceOfHistoryOfCondition, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(existenceOfHistoryOfCondition, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(existenceOfHistoryOfCondition, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(existenceOfHistoryOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(existenceOfHistoryOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(existenceOfHistoryOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(existenceOfHistoryOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(existenceOfHistoryOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(existenceOfHistoryOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(existenceOfHistoryOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfHistoryOfCondition_validateExistenceOfHistoryOfConditionTemplateId(
-				existenceOfHistoryOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfHistoryOfCondition_validateExistenceOfHistoryOfConditionMoodCode(
-				existenceOfHistoryOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfHistoryOfCondition_validateExistenceOfHistoryOfConditionCode(
-				existenceOfHistoryOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfHistoryOfCondition_validateExistenceOfHistoryOfConditionValue(
-				existenceOfHistoryOfCondition, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(existenceOfHistoryOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(existenceOfHistoryOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(existenceOfHistoryOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(existenceOfHistoryOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(existenceOfHistoryOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(existenceOfHistoryOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(existenceOfHistoryOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfHistoryOfCondition_validateExistenceOfHistoryOfConditionTemplateId(existenceOfHistoryOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfHistoryOfCondition_validateExistenceOfHistoryOfConditionMoodCode(existenceOfHistoryOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfHistoryOfCondition_validateExistenceOfHistoryOfConditionCode(existenceOfHistoryOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfHistoryOfCondition_validateExistenceOfHistoryOfConditionValue(existenceOfHistoryOfCondition, diagnostics, context);
 		return result;
 	}
 
@@ -12073,55 +10379,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateHistoryOfCondition(HistoryOfCondition historyOfCondition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(historyOfCondition, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(historyOfCondition, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(historyOfCondition, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHistoryOfCondition_validateHistoryOfConditionTemplateId(
-				historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHistoryOfCondition_validateHistoryOfConditionMoodCode(
-				historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHistoryOfCondition_validateHistoryOfConditionCodeP(
-				historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHistoryOfCondition_validateHistoryOfConditionCode(
-				historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHistoryOfCondition_validateHistoryOfConditionValue(
-				historyOfCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHistoryOfCondition_validateHistoryOfConditionValueP(
-				historyOfCondition, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHistoryOfCondition_validateHistoryOfConditionTemplateId(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHistoryOfCondition_validateHistoryOfConditionMoodCode(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHistoryOfCondition_validateHistoryOfConditionCodeP(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHistoryOfCondition_validateHistoryOfConditionCode(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHistoryOfCondition_validateHistoryOfConditionValue(historyOfCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHistoryOfCondition_validateHistoryOfConditionValueP(historyOfCondition, diagnostics, context);
 		return result;
 	}
 
@@ -12198,65 +10470,24 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSSocialHistorySection(EMSSocialHistorySection emsSocialHistorySection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsSocialHistorySection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsSocialHistorySection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsSocialHistorySection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionTemplateId(
-				emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionCode(
-				emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionCodeP(
-				emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionTitle(
-				emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionText(
-				emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionExistenceOfDrugUseIndication(
-				emsSocialHistorySection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionDrugUseIndication(
-				emsSocialHistorySection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionTemplateId(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionCode(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionCodeP(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionTitle(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionText(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionExistenceOfDrugUseIndication(emsSocialHistorySection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSocialHistorySection_validateEMSSocialHistorySectionDrugUseIndication(emsSocialHistorySection, diagnostics, context);
 		return result;
 	}
 
@@ -12344,51 +10575,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateExistenceOfDrugUseIndication(ExistenceOfDrugUseIndication existenceOfDrugUseIndication,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(existenceOfDrugUseIndication, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(existenceOfDrugUseIndication, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(existenceOfDrugUseIndication, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfDrugUseIndication_validateExistenceOfDrugUseIndicationTemplateId(
-				existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfDrugUseIndication_validateExistenceOfDrugUseIndicationMoodCode(
-				existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfDrugUseIndication_validateExistenceOfDrugUseIndicationCodeP(
-				existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfDrugUseIndication_validateExistenceOfDrugUseIndicationCode(
-				existenceOfDrugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfDrugUseIndication_validateExistenceOfDrugUseIndicationValue(
-				existenceOfDrugUseIndication, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfDrugUseIndication_validateExistenceOfDrugUseIndicationTemplateId(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfDrugUseIndication_validateExistenceOfDrugUseIndicationMoodCode(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfDrugUseIndication_validateExistenceOfDrugUseIndicationCodeP(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfDrugUseIndication_validateExistenceOfDrugUseIndicationCode(existenceOfDrugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfDrugUseIndication_validateExistenceOfDrugUseIndicationValue(existenceOfDrugUseIndication, diagnostics, context);
 		return result;
 	}
 
@@ -12459,45 +10659,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDrugUseIndication(DrugUseIndication drugUseIndication, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(drugUseIndication, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(drugUseIndication, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(drugUseIndication, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(drugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(drugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(drugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(drugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(drugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(drugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(drugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDrugUseIndication_validateDrugUseIndicationTemplateId(
-				drugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDrugUseIndication_validateDrugUseIndicationMoodCode(
-				drugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDrugUseIndication_validateDrugUseIndicationCode(drugUseIndication, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDrugUseIndication_validateDrugUseIndicationValue(drugUseIndication, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(drugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(drugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(drugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(drugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(drugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(drugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(drugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDrugUseIndication_validateDrugUseIndicationTemplateId(drugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDrugUseIndication_validateDrugUseIndicationMoodCode(drugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDrugUseIndication_validateDrugUseIndicationCode(drugUseIndication, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDrugUseIndication_validateDrugUseIndicationValue(drugUseIndication, diagnostics, context);
 		return result;
 	}
 
@@ -12552,81 +10726,28 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSPhysicalAssessmentSection(EMSPhysicalAssessmentSection emsPhysicalAssessmentSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsPhysicalAssessmentSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsPhysicalAssessmentSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsPhysicalAssessmentSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionTemplateId(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionCode(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionCodeP(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionTitle(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionText(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionPatientPregnancy(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionLastOralIntake(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionPatientAge(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionThrombolyticContraindications(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionBarriersToPatientCare(
-				emsPhysicalAssessmentSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionTemplateId(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionCode(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionCodeP(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionTitle(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionText(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionPatientPregnancy(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionLastOralIntake(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionPatientAge(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionThrombolyticContraindications(emsPhysicalAssessmentSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionBarriersToPatientCare(emsPhysicalAssessmentSection, diagnostics, context);
 		return result;
 	}
 
@@ -12699,8 +10820,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(
 			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsPhysicalAssessmentSection.validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(
-			diagnostics, context);
+		return emsPhysicalAssessmentSection.validateEMSPhysicalAssessmentSectionPhysicalAssessmentOrganizer(diagnostics, context);
 	}
 
 	/**
@@ -12748,8 +10868,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionThrombolyticContraindications(
 			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsPhysicalAssessmentSection.validateEMSPhysicalAssessmentSectionThrombolyticContraindications(
-			diagnostics, context);
+		return emsPhysicalAssessmentSection.validateEMSPhysicalAssessmentSectionThrombolyticContraindications(diagnostics, context);
 	}
 
 	/**
@@ -12761,8 +10880,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSPhysicalAssessmentSection_validateEMSPhysicalAssessmentSectionBarriersToPatientCare(
 			EMSPhysicalAssessmentSection emsPhysicalAssessmentSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsPhysicalAssessmentSection.validateEMSPhysicalAssessmentSectionBarriersToPatientCare(
-			diagnostics, context);
+		return emsPhysicalAssessmentSection.validateEMSPhysicalAssessmentSectionBarriersToPatientCare(diagnostics, context);
 	}
 
 	/**
@@ -12772,91 +10890,30 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validatePhysicalAssessmentOrganizer(PhysicalAssessmentOrganizer physicalAssessmentOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(physicalAssessmentOrganizer, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(physicalAssessmentOrganizer, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(physicalAssessmentOrganizer, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent1(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent2(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent3(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent4(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent5(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent6(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent7(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent8(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent9(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent10(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent11(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent12(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent13(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent14(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerTemplateId(
-				physicalAssessmentOrganizer, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent1(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent2(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent3(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent4(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent5(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent6(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent7(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent8(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent9(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent10(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent11(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent12(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent13(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerComponent14(physicalAssessmentOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePhysicalAssessmentOrganizer_validatePhysicalAssessmentOrganizerTemplateId(physicalAssessmentOrganizer, diagnostics, context);
 		return result;
 	}
 
@@ -13047,49 +11104,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateSkinAssessment(SkinAssessment skinAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(skinAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(skinAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(skinAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSkinAssessment_validateSkinAssessmentTemplateId(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSkinAssessment_validateSkinAssessmentMoodCode(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSkinAssessment_validateSkinAssessmentCodeP(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSkinAssessment_validateSkinAssessmentCode(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSkinAssessment_validateSkinAssessmentValue(skinAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSkinAssessment_validateSkinAssessmentValueP(skinAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSkinAssessment_validateSkinAssessmentTemplateId(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSkinAssessment_validateSkinAssessmentMoodCode(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSkinAssessment_validateSkinAssessmentCodeP(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSkinAssessment_validateSkinAssessmentCode(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSkinAssessment_validateSkinAssessmentValue(skinAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSkinAssessment_validateSkinAssessmentValueP(skinAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -13166,50 +11195,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validatePatientPregnancy(PatientPregnancy patientPregnancy, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(patientPregnancy, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(patientPregnancy, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(patientPregnancy, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientPregnancy_validatePatientPregnancyTemplateId(
-				patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientPregnancy_validatePatientPregnancyMoodCode(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientPregnancy_validatePatientPregnancyCodeP(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientPregnancy_validatePatientPregnancyCode(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientPregnancy_validatePatientPregnancyValue(patientPregnancy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientPregnancy_validatePatientPregnancyValueP(patientPregnancy, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientPregnancy_validatePatientPregnancyTemplateId(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientPregnancy_validatePatientPregnancyMoodCode(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientPregnancy_validatePatientPregnancyCodeP(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientPregnancy_validatePatientPregnancyCode(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientPregnancy_validatePatientPregnancyValue(patientPregnancy, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientPregnancy_validatePatientPregnancyValueP(patientPregnancy, diagnostics, context);
 		return result;
 	}
 
@@ -13286,46 +11286,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateLastOralIntake(LastOralIntake lastOralIntake, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(lastOralIntake, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(lastOralIntake, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(lastOralIntake, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLastOralIntake_validateLastOralIntakeTemplateId(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLastOralIntake_validateLastOralIntakeMoodCode(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLastOralIntake_validateLastOralIntakeCodeP(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLastOralIntake_validateLastOralIntakeCode(lastOralIntake, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLastOralIntake_validateLastOralIntakeValue(lastOralIntake, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLastOralIntake_validateLastOralIntakeTemplateId(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLastOralIntake_validateLastOralIntakeMoodCode(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLastOralIntake_validateLastOralIntakeCodeP(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLastOralIntake_validateLastOralIntakeCode(lastOralIntake, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLastOralIntake_validateLastOralIntakeValue(lastOralIntake, diagnostics, context);
 		return result;
 	}
 
@@ -13390,46 +11364,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validatePatientAge(PatientAge patientAge, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(patientAge, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(patientAge, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(patientAge, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientAge_validatePatientAgeTemplateId(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientAge_validatePatientAgeMoodCode(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientAge_validatePatientAgeCodeP(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientAge_validatePatientAgeCode(patientAge, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientAge_validatePatientAgeValue(patientAge, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientAge_validatePatientAgeTemplateId(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientAge_validatePatientAgeMoodCode(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientAge_validatePatientAgeCodeP(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientAge_validatePatientAgeCode(patientAge, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientAge_validatePatientAgeValue(patientAge, diagnostics, context);
 		return result;
 	}
 
@@ -13495,51 +11443,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateThrombolyticContraindications(ThrombolyticContraindications thrombolyticContraindications,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(thrombolyticContraindications, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(thrombolyticContraindications, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(thrombolyticContraindications, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateThrombolyticContraindications_validateThrombolyticContraindicationsTemplateId(
-				thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateThrombolyticContraindications_validateThrombolyticContraindicationsMoodCode(
-				thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateThrombolyticContraindications_validateThrombolyticContraindicationsCodeP(
-				thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateThrombolyticContraindications_validateThrombolyticContraindicationsCode(
-				thrombolyticContraindications, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateThrombolyticContraindications_validateThrombolyticContraindicationsValue(
-				thrombolyticContraindications, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validateThrombolyticContraindications_validateThrombolyticContraindicationsTemplateId(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validateThrombolyticContraindications_validateThrombolyticContraindicationsMoodCode(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validateThrombolyticContraindications_validateThrombolyticContraindicationsCodeP(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validateThrombolyticContraindications_validateThrombolyticContraindicationsCode(thrombolyticContraindications, diagnostics, context);
+		if (result || diagnostics != null) result &= validateThrombolyticContraindications_validateThrombolyticContraindicationsValue(thrombolyticContraindications, diagnostics, context);
 		return result;
 	}
 
@@ -13610,55 +11527,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateBarriersToPatientCare(BarriersToPatientCare barriersToPatientCare,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(barriersToPatientCare, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(barriersToPatientCare, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(barriersToPatientCare, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBarriersToPatientCare_validateBarriersToPatientCareTemplateId(
-				barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBarriersToPatientCare_validateBarriersToPatientCareMoodCode(
-				barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBarriersToPatientCare_validateBarriersToPatientCareCodeP(
-				barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBarriersToPatientCare_validateBarriersToPatientCareCode(
-				barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBarriersToPatientCare_validateBarriersToPatientCareValue(
-				barriersToPatientCare, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBarriersToPatientCare_validateBarriersToPatientCareValueP(
-				barriersToPatientCare, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBarriersToPatientCare_validateBarriersToPatientCareTemplateId(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBarriersToPatientCare_validateBarriersToPatientCareMoodCode(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBarriersToPatientCare_validateBarriersToPatientCareCodeP(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBarriersToPatientCare_validateBarriersToPatientCareCode(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBarriersToPatientCare_validateBarriersToPatientCareValue(barriersToPatientCare, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBarriersToPatientCare_validateBarriersToPatientCareValueP(barriersToPatientCare, diagnostics, context);
 		return result;
 	}
 
@@ -13736,64 +11619,23 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSMedicationsAdministeredSection(
 			EMSMedicationsAdministeredSection emsMedicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsMedicationsAdministeredSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsMedicationsAdministeredSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsMedicationsAdministeredSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
-				emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(
-				emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionTemplateId(
-				emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionCode(
-				emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionCodeP(
-				emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionTitle(
-				emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionText(
-				emsMedicationsAdministeredSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionMedicationAdministered(
-				emsMedicationsAdministeredSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionTemplateId(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionCode(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionCodeP(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionTitle(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionText(emsMedicationsAdministeredSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionMedicationAdministered(emsMedicationsAdministeredSection, diagnostics, context);
 		return result;
 	}
 
@@ -13806,8 +11648,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionTemplateId(
 			EMSMedicationsAdministeredSection emsMedicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsMedicationsAdministeredSection.validateEMSMedicationsAdministeredSectionTemplateId(
-			diagnostics, context);
+		return emsMedicationsAdministeredSection.validateEMSMedicationsAdministeredSectionTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -13867,8 +11708,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSMedicationsAdministeredSection_validateEMSMedicationsAdministeredSectionMedicationAdministered(
 			EMSMedicationsAdministeredSection emsMedicationsAdministeredSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsMedicationsAdministeredSection.validateEMSMedicationsAdministeredSectionMedicationAdministered(
-			diagnostics, context);
+		return emsMedicationsAdministeredSection.validateEMSMedicationsAdministeredSectionMedicationAdministered(diagnostics, context);
 	}
 
 	/**
@@ -13878,107 +11718,34 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateMedicationAdministered(MedicationAdministered medicationAdministered,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationAdministered, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(medicationAdministered, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(medicationAdministered, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSubstanceAdministration_validateClassCode(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredMedicationConsumable(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredResponseRelationship(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredMedicationComplicationRelationship(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredMedicationPriorAdministrationRelationship(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredMedicationPerformerParticipation(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredMedicationAuthorizationRelationship(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredMedicationAdministrationDeviceParticipant(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredTemplateId(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredClassCode(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredNegationInd(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredEffectiveTime(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredRouteCodeP(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredRouteCode(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredApproachSiteCodeP(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredApproachSiteCode(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredDoseQuantity(
-				medicationAdministered, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationAdministered_validateMedicationAdministeredRateQuantity(
-				medicationAdministered, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSubstanceAdministration_validateClassCode(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredMedicationConsumable(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredResponseRelationship(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredMedicationComplicationRelationship(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredMedicationPriorAdministrationRelationship(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredMedicationPerformerParticipation(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredMedicationAuthorizationRelationship(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredMedicationAdministrationDeviceParticipant(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredTemplateId(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredClassCode(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredNegationInd(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredEffectiveTime(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredRouteCodeP(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredRouteCode(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredApproachSiteCodeP(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredApproachSiteCode(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredDoseQuantity(medicationAdministered, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationAdministered_validateMedicationAdministeredRateQuantity(medicationAdministered, diagnostics, context);
 		return result;
 	}
 
@@ -13990,8 +11757,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateMedicationAdministered_validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(
 			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationAdministered.validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(
-			diagnostics, context);
+		return medicationAdministered.validateMedicationAdministeredMedicationNotAdministeredEntryRelationship(diagnostics, context);
 	}
 
 	/**
@@ -14024,8 +11790,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateMedicationAdministered_validateMedicationAdministeredMedicationComplicationRelationship(
 			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationAdministered.validateMedicationAdministeredMedicationComplicationRelationship(
-			diagnostics, context);
+		return medicationAdministered.validateMedicationAdministeredMedicationComplicationRelationship(diagnostics, context);
 	}
 
 	/**
@@ -14036,8 +11801,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateMedicationAdministered_validateMedicationAdministeredMedicationPriorAdministrationRelationship(
 			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationAdministered.validateMedicationAdministeredMedicationPriorAdministrationRelationship(
-			diagnostics, context);
+		return medicationAdministered.validateMedicationAdministeredMedicationPriorAdministrationRelationship(diagnostics, context);
 	}
 
 	/**
@@ -14048,8 +11812,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateMedicationAdministered_validateMedicationAdministeredMedicationPerformerParticipation(
 			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationAdministered.validateMedicationAdministeredMedicationPerformerParticipation(
-			diagnostics, context);
+		return medicationAdministered.validateMedicationAdministeredMedicationPerformerParticipation(diagnostics, context);
 	}
 
 	/**
@@ -14060,8 +11823,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateMedicationAdministered_validateMedicationAdministeredMedicationAuthorizationRelationship(
 			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationAdministered.validateMedicationAdministeredMedicationAuthorizationRelationship(
-			diagnostics, context);
+		return medicationAdministered.validateMedicationAdministeredMedicationAuthorizationRelationship(diagnostics, context);
 	}
 
 	/**
@@ -14072,8 +11834,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateMedicationAdministered_validateMedicationAdministeredMedicationAdministrationDeviceParticipant(
 			MedicationAdministered medicationAdministered, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationAdministered.validateMedicationAdministeredMedicationAdministrationDeviceParticipant(
-			diagnostics, context);
+		return medicationAdministered.validateMedicationAdministeredMedicationAdministrationDeviceParticipant(diagnostics, context);
 	}
 
 	/**
@@ -14193,62 +11954,23 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSProceduresPerformedSection(EMSProceduresPerformedSection emsProceduresPerformedSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsProceduresPerformedSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsProceduresPerformedSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsProceduresPerformedSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
-				emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionTemplateId(
-				emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionCode(
-				emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionCodeP(
-				emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionTitle(
-				emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionText(
-				emsProceduresPerformedSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionProcedureActivityProcedure1(
-				emsProceduresPerformedSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionTemplateId(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionCode(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionCodeP(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionTitle(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionText(emsProceduresPerformedSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionProcedureActivityProcedure1(emsProceduresPerformedSection, diagnostics, context);
 		return result;
 	}
 
@@ -14321,8 +12043,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSProceduresPerformedSection_validateEMSProceduresPerformedSectionProcedureActivityProcedure1(
 			EMSProceduresPerformedSection emsProceduresPerformedSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsProceduresPerformedSection.validateEMSProceduresPerformedSectionProcedureActivityProcedure1(
-			diagnostics, context);
+		return emsProceduresPerformedSection.validateEMSProceduresPerformedSectionProcedureActivityProcedure1(diagnostics, context);
 	}
 
 	/**
@@ -14331,90 +12052,32 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateProcedure(Procedure procedure, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(procedure, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(procedure, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(procedure, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureAbandonedProcedureRelationship(
-				procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureProcedurePriorRelationship(
-				procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(
-				procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureProcedureSuccessfulRelationship(
-				procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureProcedureComplicationsRelationship(
-				procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureProcedurePatientResponseRelationship(
-				procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureProcedurePerformer(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureAirwayConfirmationRelationship(
-				procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(
-				procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureTemplateId(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureCode(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureNegationInd(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureStatusCodeP(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureStatusCode(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureEffectiveTime(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureApproachSiteCodeP(procedure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedure_validateEMSPCRProcedureApproachSiteCode(procedure, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureAbandonedProcedureRelationship(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureProcedurePriorRelationship(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureProcedureSuccessfulRelationship(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureProcedureComplicationsRelationship(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureProcedurePatientResponseRelationship(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureProcedurePerformer(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureAirwayConfirmationRelationship(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureTemplateId(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureCode(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureNegationInd(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureStatusCodeP(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureStatusCode(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureEffectiveTime(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureApproachSiteCodeP(procedure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedure_validateEMSPCRProcedureApproachSiteCode(procedure, diagnostics, context);
 		return result;
 	}
 
@@ -14613,59 +12276,22 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSPatientCareNarrativeSection(
 			EMSPatientCareNarrativeSection emsPatientCareNarrativeSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsPatientCareNarrativeSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsPatientCareNarrativeSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsPatientCareNarrativeSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
-				emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(
-				emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionTemplateId(
-				emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionCode(
-				emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionCodeP(
-				emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionTitle(
-				emsPatientCareNarrativeSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionText(
-				emsPatientCareNarrativeSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionTemplateId(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionCode(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionCodeP(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionTitle(emsPatientCareNarrativeSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPatientCareNarrativeSection_validateEMSPatientCareNarrativeSectionText(emsPatientCareNarrativeSection, diagnostics, context);
 		return result;
 	}
 
@@ -14736,69 +12362,26 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSSceneSection(EMSSceneSection emsSceneSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsSceneSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsSceneSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsSceneSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSceneSection_validateEMSSceneSectionTemplateId(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSceneSection_validateEMSSceneSectionCode(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSceneSection_validateEMSSceneSectionTitle(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSceneSection_validateEMSSceneSectionText(emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSceneSection_validateEMSSceneSectionFirstUnitIndicator(
-				emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSceneSection_validateEMSSceneSectionFirstUnitOnScene(
-				emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSceneSection_validateEMSSceneSectionScenePatientCount(
-				emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSceneSection_validateEMSSceneSectionMassCasualtyIndicator(
-				emsSceneSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSceneSection_validateEMSSceneSectionLocationTypeObservation(
-				emsSceneSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSceneSection_validateEMSSceneSectionTemplateId(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSceneSection_validateEMSSceneSectionCode(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSceneSection_validateEMSSceneSectionTitle(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSceneSection_validateEMSSceneSectionText(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSceneSection_validateEMSSceneSectionFirstUnitIndicator(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSceneSection_validateEMSSceneSectionFirstUnitOnScene(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSceneSection_validateEMSSceneSectionScenePatientCount(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSceneSection_validateEMSSceneSectionMassCasualtyIndicator(emsSceneSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSceneSection_validateEMSSceneSectionLocationTypeObservation(emsSceneSection, diagnostics, context);
 		return result;
 	}
 
@@ -14908,51 +12491,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateFirstUnitIndicator(FirstUnitIndicator firstUnitIndicator, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(firstUnitIndicator, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(firstUnitIndicator, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(firstUnitIndicator, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFirstUnitIndicator_validateFirstUnitIndicatorTemplateId(
-				firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFirstUnitIndicator_validateFirstUnitIndicatorMoodCode(
-				firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFirstUnitIndicator_validateFirstUnitIndicatorCodeP(
-				firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFirstUnitIndicator_validateFirstUnitIndicatorCode(
-				firstUnitIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFirstUnitIndicator_validateFirstUnitIndicatorValue(
-				firstUnitIndicator, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFirstUnitIndicator_validateFirstUnitIndicatorTemplateId(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFirstUnitIndicator_validateFirstUnitIndicatorMoodCode(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFirstUnitIndicator_validateFirstUnitIndicatorCodeP(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFirstUnitIndicator_validateFirstUnitIndicatorCode(firstUnitIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFirstUnitIndicator_validateFirstUnitIndicatorValue(firstUnitIndicator, diagnostics, context);
 		return result;
 	}
 
@@ -15018,47 +12570,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateFirstUnitOnScene(FirstUnitOnScene firstUnitOnScene, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(firstUnitOnScene, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(firstUnitOnScene, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(firstUnitOnScene, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFirstUnitOnScene_validateFirstUnitOnSceneTemplateId(
-				firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFirstUnitOnScene_validateFirstUnitOnSceneMoodCode(firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFirstUnitOnScene_validateFirstUnitOnSceneCodeP(firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFirstUnitOnScene_validateFirstUnitOnSceneCode(firstUnitOnScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFirstUnitOnScene_validateFirstUnitOnSceneValue(firstUnitOnScene, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFirstUnitOnScene_validateFirstUnitOnSceneTemplateId(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFirstUnitOnScene_validateFirstUnitOnSceneMoodCode(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFirstUnitOnScene_validateFirstUnitOnSceneCodeP(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFirstUnitOnScene_validateFirstUnitOnSceneCode(firstUnitOnScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFirstUnitOnScene_validateFirstUnitOnSceneValue(firstUnitOnScene, diagnostics, context);
 		return result;
 	}
 
@@ -15124,48 +12649,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateScenePatientCount(ScenePatientCount scenePatientCount, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(scenePatientCount, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(scenePatientCount, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(scenePatientCount, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateScenePatientCount_validateScenePatientCountTemplateId(
-				scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateScenePatientCount_validateScenePatientCountMoodCode(
-				scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateScenePatientCount_validateScenePatientCountCodeP(scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateScenePatientCount_validateScenePatientCountCode(scenePatientCount, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateScenePatientCount_validateScenePatientCountValue(scenePatientCount, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validateScenePatientCount_validateScenePatientCountTemplateId(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validateScenePatientCount_validateScenePatientCountMoodCode(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validateScenePatientCount_validateScenePatientCountCodeP(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validateScenePatientCount_validateScenePatientCountCode(scenePatientCount, diagnostics, context);
+		if (result || diagnostics != null) result &= validateScenePatientCount_validateScenePatientCountValue(scenePatientCount, diagnostics, context);
 		return result;
 	}
 
@@ -15231,51 +12728,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateMassCasualtyIndicator(MassCasualtyIndicator massCasualtyIndicator,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(massCasualtyIndicator, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(massCasualtyIndicator, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(massCasualtyIndicator, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMassCasualtyIndicator_validateMassCasualtyIndicatorTemplateId(
-				massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMassCasualtyIndicator_validateMassCasualtyIndicatorMoodCode(
-				massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMassCasualtyIndicator_validateMassCasualtyIndicatorCodeP(
-				massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMassCasualtyIndicator_validateMassCasualtyIndicatorCode(
-				massCasualtyIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMassCasualtyIndicator_validateMassCasualtyIndicatorValue(
-				massCasualtyIndicator, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMassCasualtyIndicator_validateMassCasualtyIndicatorTemplateId(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMassCasualtyIndicator_validateMassCasualtyIndicatorMoodCode(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMassCasualtyIndicator_validateMassCasualtyIndicatorCodeP(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMassCasualtyIndicator_validateMassCasualtyIndicatorCode(massCasualtyIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMassCasualtyIndicator_validateMassCasualtyIndicatorValue(massCasualtyIndicator, diagnostics, context);
 		return result;
 	}
 
@@ -15341,43 +12807,18 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateLocationTypeObservation(LocationTypeObservation locationTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(locationTypeObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(locationTypeObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(locationTypeObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(locationTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(locationTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(locationTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(locationTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(locationTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(locationTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(locationTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLocationTypeObservation_validateLocationTypeObservationTemplateId(
-				locationTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLocationTypeObservation_validateLocationTypeObservationCode(
-				locationTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLocationTypeObservation_validateLocationTypeObservationValue(
-				locationTypeObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(locationTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(locationTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(locationTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(locationTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(locationTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(locationTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(locationTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLocationTypeObservation_validateLocationTypeObservationTemplateId(locationTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLocationTypeObservation_validateLocationTypeObservationCode(locationTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLocationTypeObservation_validateLocationTypeObservationValue(locationTypeObservation, diagnostics, context);
 		return result;
 	}
 
@@ -15421,61 +12862,23 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSDispatchSection(EMSDispatchSection emsDispatchSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsDispatchSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsDispatchSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsDispatchSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispatchSection_validateEMSDispatchSectionTemplateId(
-				emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispatchSection_validateEMSDispatchSectionCode(
-				emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispatchSection_validateEMSDispatchSectionTitle(
-				emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispatchSection_validateEMSDispatchSectionText(
-				emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispatchSection_validateEMSDispatchSectionEmergencyMedicalDispatchObservation(
-				emsDispatchSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispatchSection_validateEMSDispatchSectionComplaintReportedByDispatch(
-				emsDispatchSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionTemplateId(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionCode(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionTitle(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionText(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionEmergencyMedicalDispatchObservation(emsDispatchSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispatchSection_validateEMSDispatchSectionComplaintReportedByDispatch(emsDispatchSection, diagnostics, context);
 		return result;
 	}
 
@@ -15553,56 +12956,21 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEmergencyMedicalDispatchObservation(
 			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emergencyMedicalDispatchObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emergencyMedicalDispatchObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emergencyMedicalDispatchObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationTemplateId(
-				emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationMoodCode(
-				emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationCodeP(
-				emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationCode(
-				emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationValue(
-				emergencyMedicalDispatchObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationValueP(
-				emergencyMedicalDispatchObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationTemplateId(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationMoodCode(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationCodeP(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationCode(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationValue(emergencyMedicalDispatchObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationValueP(emergencyMedicalDispatchObservation, diagnostics, context);
 		return result;
 	}
 
@@ -15615,8 +12983,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationTemplateId(
 			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emergencyMedicalDispatchObservation.validateEmergencyMedicalDispatchObservationTemplateId(
-			diagnostics, context);
+		return emergencyMedicalDispatchObservation.validateEmergencyMedicalDispatchObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -15628,8 +12995,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationMoodCode(
 			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emergencyMedicalDispatchObservation.validateEmergencyMedicalDispatchObservationMoodCode(
-			diagnostics, context);
+		return emergencyMedicalDispatchObservation.validateEmergencyMedicalDispatchObservationMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -15641,8 +13007,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationCodeP(
 			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emergencyMedicalDispatchObservation.validateEmergencyMedicalDispatchObservationCodeP(
-			diagnostics, context);
+		return emergencyMedicalDispatchObservation.validateEmergencyMedicalDispatchObservationCodeP(diagnostics, context);
 	}
 
 	/**
@@ -15666,8 +13031,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationValue(
 			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emergencyMedicalDispatchObservation.validateEmergencyMedicalDispatchObservationValue(
-			diagnostics, context);
+		return emergencyMedicalDispatchObservation.validateEmergencyMedicalDispatchObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -15679,8 +13043,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEmergencyMedicalDispatchObservation_validateEmergencyMedicalDispatchObservationValueP(
 			EmergencyMedicalDispatchObservation emergencyMedicalDispatchObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emergencyMedicalDispatchObservation.validateEmergencyMedicalDispatchObservationValueP(
-			diagnostics, context);
+		return emergencyMedicalDispatchObservation.validateEmergencyMedicalDispatchObservationValueP(diagnostics, context);
 	}
 
 	/**
@@ -15690,55 +13053,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateComplaintReportedByDispatch(ComplaintReportedByDispatch complaintReportedByDispatch,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(complaintReportedByDispatch, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(complaintReportedByDispatch, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(complaintReportedByDispatch, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchTemplateId(
-				complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchMoodCode(
-				complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchCodeP(
-				complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchCode(
-				complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchValue(
-				complaintReportedByDispatch, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchValueP(
-				complaintReportedByDispatch, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchTemplateId(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchMoodCode(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchCodeP(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchCode(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchValue(complaintReportedByDispatch, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintReportedByDispatch_validateComplaintReportedByDispatchValueP(complaintReportedByDispatch, diagnostics, context);
 		return result;
 	}
 
@@ -15821,85 +13150,29 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSDispositionSection(EMSDispositionSection emsDispositionSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsDispositionSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsDispositionSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsDispositionSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionTemplateId(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionCode(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionCodeP(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionTitle(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionText(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionNumberOfPatientsObservation(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionIncidentDispositionObservation(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionTransportModeObservation(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionTransportMethodObservation(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionReasonForChoosingDestinationObservation(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionPrearrivalActivationObservation(
-				emsDispositionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDispositionSection_validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(
-				emsDispositionSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionTemplateId(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionCode(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionCodeP(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionTitle(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionText(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionNumberOfPatientsObservation(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionIncidentDispositionObservation(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionTransportModeObservation(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionTransportMethodObservation(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionReasonForChoosingDestinationObservation(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionPrearrivalActivationObservation(emsDispositionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDispositionSection_validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(emsDispositionSection, diagnostics, context);
 		return result;
 	}
 
@@ -16010,8 +13283,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSDispositionSection_validateEMSDispositionSectionReasonForChoosingDestinationObservation(
 			EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return emsDispositionSection.validateEMSDispositionSectionReasonForChoosingDestinationObservation(
-			diagnostics, context);
+		return emsDispositionSection.validateEMSDispositionSectionReasonForChoosingDestinationObservation(diagnostics, context);
 	}
 
 	/**
@@ -16033,8 +13305,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSDispositionSection_validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(
 			EMSDispositionSection emsDispositionSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return emsDispositionSection.validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(
-			diagnostics, context);
+		return emsDispositionSection.validateEMSDispositionSectionPatientConditionChangeAtDestinationObservation(diagnostics, context);
 	}
 
 	/**
@@ -16045,53 +13316,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateNumberOfPatientsTransportedObservation(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(numberOfPatientsTransportedObservation, diagnostics, context)) {
-			return false;
-		}
-		boolean result = validate_EveryMultiplicityConforms(
-			numberOfPatientsTransportedObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationTemplateId(
-				numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationMoodCode(
-				numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationCodeP(
-				numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationCode(
-				numberOfPatientsTransportedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationValue(
-				numberOfPatientsTransportedObservation, diagnostics, context);
-		}
+		if (!validate_NoCircularContainment(numberOfPatientsTransportedObservation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationTemplateId(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationMoodCode(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationCodeP(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationCode(numberOfPatientsTransportedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationValue(numberOfPatientsTransportedObservation, diagnostics, context);
 		return result;
 	}
 
@@ -16104,8 +13342,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationTemplateId(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return numberOfPatientsTransportedObservation.validateNumberOfPatientsTransportedObservationTemplateId(
-			diagnostics, context);
+		return numberOfPatientsTransportedObservation.validateNumberOfPatientsTransportedObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -16117,8 +13354,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationMoodCode(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return numberOfPatientsTransportedObservation.validateNumberOfPatientsTransportedObservationMoodCode(
-			diagnostics, context);
+		return numberOfPatientsTransportedObservation.validateNumberOfPatientsTransportedObservationMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -16130,8 +13366,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationCodeP(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return numberOfPatientsTransportedObservation.validateNumberOfPatientsTransportedObservationCodeP(
-			diagnostics, context);
+		return numberOfPatientsTransportedObservation.validateNumberOfPatientsTransportedObservationCodeP(diagnostics, context);
 	}
 
 	/**
@@ -16143,8 +13378,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationCode(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return numberOfPatientsTransportedObservation.validateNumberOfPatientsTransportedObservationCode(
-			diagnostics, context);
+		return numberOfPatientsTransportedObservation.validateNumberOfPatientsTransportedObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -16156,8 +13390,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateNumberOfPatientsTransportedObservation_validateNumberOfPatientsTransportedObservationValue(
 			NumberOfPatientsTransportedObservation numberOfPatientsTransportedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return numberOfPatientsTransportedObservation.validateNumberOfPatientsTransportedObservationValue(
-			diagnostics, context);
+		return numberOfPatientsTransportedObservation.validateNumberOfPatientsTransportedObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -16168,55 +13401,21 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateIncidentDispositionObservation(
 			IncidentDispositionObservation incidentDispositionObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(incidentDispositionObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(incidentDispositionObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(incidentDispositionObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationTemplateId(
-				incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationMoodCode(
-				incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationCodeP(
-				incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationCode(
-				incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationValue(
-				incidentDispositionObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationValueP(
-				incidentDispositionObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationTemplateId(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationMoodCode(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationCodeP(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationCode(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationValue(incidentDispositionObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateIncidentDispositionObservation_validateIncidentDispositionObservationValueP(incidentDispositionObservation, diagnostics, context);
 		return result;
 	}
 
@@ -16299,55 +13498,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateTransportModeObservation(TransportModeObservation transportModeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(transportModeObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(transportModeObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(transportModeObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportModeObservation_validateTransportModeObservationTemplateId(
-				transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportModeObservation_validateTransportModeObservationMoodCode(
-				transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportModeObservation_validateTransportModeObservationCodeP(
-				transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportModeObservation_validateTransportModeObservationCode(
-				transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportModeObservation_validateTransportModeObservationValue(
-				transportModeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportModeObservation_validateTransportModeObservationValueP(
-				transportModeObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportModeObservation_validateTransportModeObservationTemplateId(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportModeObservation_validateTransportModeObservationMoodCode(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportModeObservation_validateTransportModeObservationCodeP(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportModeObservation_validateTransportModeObservationCode(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportModeObservation_validateTransportModeObservationValue(transportModeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportModeObservation_validateTransportModeObservationValueP(transportModeObservation, diagnostics, context);
 		return result;
 	}
 
@@ -16424,55 +13589,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateTransportMethodObservation(TransportMethodObservation transportMethodObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(transportMethodObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(transportMethodObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(transportMethodObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportMethodObservation_validateTransportMethodObservationTemplateId(
-				transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportMethodObservation_validateTransportMethodObservationMoodCode(
-				transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportMethodObservation_validateTransportMethodObservationCodeP(
-				transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportMethodObservation_validateTransportMethodObservationCode(
-				transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportMethodObservation_validateTransportMethodObservationValue(
-				transportMethodObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportMethodObservation_validateTransportMethodObservationValueP(
-				transportMethodObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportMethodObservation_validateTransportMethodObservationTemplateId(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportMethodObservation_validateTransportMethodObservationMoodCode(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportMethodObservation_validateTransportMethodObservationCodeP(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportMethodObservation_validateTransportMethodObservationCode(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportMethodObservation_validateTransportMethodObservationValue(transportMethodObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportMethodObservation_validateTransportMethodObservationValueP(transportMethodObservation, diagnostics, context);
 		return result;
 	}
 
@@ -16556,57 +13687,21 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonForChoosingDestinationObservation(
 			ReasonForChoosingDestinationObservation reasonForChoosingDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(reasonForChoosingDestinationObservation, diagnostics, context)) {
-			return false;
-		}
-		boolean result = validate_EveryMultiplicityConforms(
-			reasonForChoosingDestinationObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationTemplateId(
-				reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationMoodCode(
-				reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationCodeP(
-				reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationCode(
-				reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationValue(
-				reasonForChoosingDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationValueP(
-				reasonForChoosingDestinationObservation, diagnostics, context);
-		}
+		if (!validate_NoCircularContainment(reasonForChoosingDestinationObservation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationTemplateId(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationMoodCode(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationCodeP(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationCode(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationValue(reasonForChoosingDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationValueP(reasonForChoosingDestinationObservation, diagnostics, context);
 		return result;
 	}
 
@@ -16619,8 +13714,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationTemplateId(
 			ReasonForChoosingDestinationObservation reasonForChoosingDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationTemplateId(
-			diagnostics, context);
+		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -16632,8 +13726,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationMoodCode(
 			ReasonForChoosingDestinationObservation reasonForChoosingDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationMoodCode(
-			diagnostics, context);
+		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -16645,8 +13738,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationCodeP(
 			ReasonForChoosingDestinationObservation reasonForChoosingDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationCodeP(
-			diagnostics, context);
+		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationCodeP(diagnostics, context);
 	}
 
 	/**
@@ -16658,8 +13750,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationCode(
 			ReasonForChoosingDestinationObservation reasonForChoosingDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationCode(
-			diagnostics, context);
+		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -16671,8 +13762,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationValue(
 			ReasonForChoosingDestinationObservation reasonForChoosingDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationValue(
-			diagnostics, context);
+		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -16684,8 +13774,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonForChoosingDestinationObservation_validateReasonForChoosingDestinationObservationValueP(
 			ReasonForChoosingDestinationObservation reasonForChoosingDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationValueP(
-			diagnostics, context);
+		return reasonForChoosingDestinationObservation.validateReasonForChoosingDestinationObservationValueP(diagnostics, context);
 	}
 
 	/**
@@ -16696,56 +13785,21 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePrearrivalActivationObservation(
 			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(prearrivalActivationObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(prearrivalActivationObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(prearrivalActivationObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationTemplateId(
-				prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationMoodCode(
-				prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationCodeP(
-				prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationCode(
-				prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationEffectiveTime(
-				prearrivalActivationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationValue(
-				prearrivalActivationObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationTemplateId(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationMoodCode(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationCodeP(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationCode(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationEffectiveTime(prearrivalActivationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrearrivalActivationObservation_validatePrearrivalActivationObservationValue(prearrivalActivationObservation, diagnostics, context);
 		return result;
 	}
 
@@ -16806,8 +13860,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePrearrivalActivationObservation_validatePrearrivalActivationObservationEffectiveTime(
 			PrearrivalActivationObservation prearrivalActivationObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return prearrivalActivationObservation.validatePrearrivalActivationObservationEffectiveTime(
-			diagnostics, context);
+		return prearrivalActivationObservation.validatePrearrivalActivationObservationEffectiveTime(diagnostics, context);
 	}
 
 	/**
@@ -16830,59 +13883,21 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePatientConditionChangeAtDestinationObservation(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(patientConditionChangeAtDestinationObservation, diagnostics, context)) {
-			return false;
-		}
-		boolean result = validate_EveryMultiplicityConforms(
-			patientConditionChangeAtDestinationObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(
-				patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
-				patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationTemplateId(
-				patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationMoodCode(
-				patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationCodeP(
-				patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationCode(
-				patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationValue(
-				patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationValueP(
-				patientConditionChangeAtDestinationObservation, diagnostics, context);
-		}
+		if (!validate_NoCircularContainment(patientConditionChangeAtDestinationObservation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationTemplateId(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationMoodCode(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationCodeP(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationCode(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationValue(patientConditionChangeAtDestinationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationValueP(patientConditionChangeAtDestinationObservation, diagnostics, context);
 		return result;
 	}
 
@@ -16895,8 +13910,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationTemplateId(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationTemplateId(
-			diagnostics, context);
+		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -16908,8 +13922,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationMoodCode(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationMoodCode(
-			diagnostics, context);
+		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -16921,8 +13934,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationCodeP(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationCodeP(
-			diagnostics, context);
+		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationCodeP(diagnostics, context);
 	}
 
 	/**
@@ -16934,8 +13946,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationCode(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationCode(
-			diagnostics, context);
+		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -16947,8 +13958,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationValue(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationValue(
-			diagnostics, context);
+		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -16960,8 +13970,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePatientConditionChangeAtDestinationObservation_validatePatientConditionChangeAtDestinationObservationValueP(
 			PatientConditionChangeAtDestinationObservation patientConditionChangeAtDestinationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationValueP(
-			diagnostics, context);
+		return patientConditionChangeAtDestinationObservation.validatePatientConditionChangeAtDestinationObservationValueP(diagnostics, context);
 	}
 
 	/**
@@ -16972,68 +13981,24 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSPersonnelAdverseEventSection(
 			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsPersonnelAdverseEventSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsPersonnelAdverseEventSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsPersonnelAdverseEventSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
-				emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(
-				emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionTemplateId(
-				emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionCode(
-				emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionCodeP(
-				emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionTitle(
-				emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionText(
-				emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(
-				emsPersonnelAdverseEventSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(
-				emsPersonnelAdverseEventSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionTemplateId(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionCode(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionCodeP(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionTitle(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionText(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(emsPersonnelAdverseEventSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(emsPersonnelAdverseEventSection, diagnostics, context);
 		return result;
 	}
 
@@ -17106,8 +14071,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(
 			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(
-			diagnostics, context);
+		return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionAdverseEventIndicator(diagnostics, context);
 	}
 
 	/**
@@ -17119,8 +14083,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSPersonnelAdverseEventSection_validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(
 			EMSPersonnelAdverseEventSection emsPersonnelAdverseEventSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(
-			diagnostics, context);
+		return emsPersonnelAdverseEventSection.validateEMSPersonnelAdverseEventSectionAdverseEventTypeObservation(diagnostics, context);
 	}
 
 	/**
@@ -17130,51 +14093,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateAdverseEventIndicator(AdverseEventIndicator adverseEventIndicator,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(adverseEventIndicator, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(adverseEventIndicator, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(adverseEventIndicator, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventIndicator_validateAdverseEventIndicatorTemplateId(
-				adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventIndicator_validateAdverseEventIndicatorMoodCode(
-				adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventIndicator_validateAdverseEventIndicatorCodeP(
-				adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventIndicator_validateAdverseEventIndicatorCode(
-				adverseEventIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventIndicator_validateAdverseEventIndicatorValue(
-				adverseEventIndicator, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventIndicator_validateAdverseEventIndicatorTemplateId(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventIndicator_validateAdverseEventIndicatorMoodCode(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventIndicator_validateAdverseEventIndicatorCodeP(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventIndicator_validateAdverseEventIndicatorCode(adverseEventIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventIndicator_validateAdverseEventIndicatorValue(adverseEventIndicator, diagnostics, context);
 		return result;
 	}
 
@@ -17240,55 +14172,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateAdverseEventTypeObservation(AdverseEventTypeObservation adverseEventTypeObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(adverseEventTypeObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(adverseEventTypeObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(adverseEventTypeObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationTemplateId(
-				adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationMoodCode(
-				adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationCodeP(
-				adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationCode(
-				adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationValue(
-				adverseEventTypeObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationValueP(
-				adverseEventTypeObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationTemplateId(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationMoodCode(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationCodeP(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationCode(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationValue(adverseEventTypeObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdverseEventTypeObservation_validateAdverseEventTypeObservationValueP(adverseEventTypeObservation, diagnostics, context);
 		return result;
 	}
 
@@ -17371,61 +14269,23 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSProtocolSection(EMSProtocolSection emsProtocolSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsProtocolSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsProtocolSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsProtocolSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProtocolSection_validateEMSProtocolSectionTemplateId(
-				emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProtocolSection_validateEMSProtocolSectionCode(
-				emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProtocolSection_validateEMSProtocolSectionTitle(
-				emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProtocolSection_validateEMSProtocolSectionText(
-				emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProtocolSection_validateEMSProtocolSectionProtocolObservation(
-				emsProtocolSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSProtocolSection_validateEMSProtocolSectionCandidatePatientRegistryType(
-				emsProtocolSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProtocolSection_validateEMSProtocolSectionTemplateId(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProtocolSection_validateEMSProtocolSectionCode(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProtocolSection_validateEMSProtocolSectionTitle(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProtocolSection_validateEMSProtocolSectionText(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProtocolSection_validateEMSProtocolSectionProtocolObservation(emsProtocolSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSProtocolSection_validateEMSProtocolSectionCandidatePatientRegistryType(emsProtocolSection, diagnostics, context);
 		return result;
 	}
 
@@ -17502,55 +14362,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateProtocolObservation(ProtocolObservation protocolObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(protocolObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(protocolObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(protocolObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolObservation_validateProtocolObservationTemplateId(
-				protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolObservation_validateProtocolObservationMoodCode(
-				protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolObservation_validateProtocolObservationCodeP(
-				protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolObservation_validateProtocolObservationCode(
-				protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolObservation_validateProtocolObservationValue(
-				protocolObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolObservation_validateProtocolObservationValueP(
-				protocolObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolObservation_validateProtocolObservationTemplateId(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolObservation_validateProtocolObservationMoodCode(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolObservation_validateProtocolObservationCodeP(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolObservation_validateProtocolObservationCode(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolObservation_validateProtocolObservationValue(protocolObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolObservation_validateProtocolObservationValueP(protocolObservation, diagnostics, context);
 		return result;
 	}
 
@@ -17627,55 +14453,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateCandidatePatientRegistryType(CandidatePatientRegistryType candidatePatientRegistryType,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(candidatePatientRegistryType, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(candidatePatientRegistryType, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(candidatePatientRegistryType, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeTemplateId(
-				candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeMoodCode(
-				candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeCodeP(
-				candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeCode(
-				candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeValue(
-				candidatePatientRegistryType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeValueP(
-				candidatePatientRegistryType, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeTemplateId(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeMoodCode(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeCodeP(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeCode(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeValue(candidatePatientRegistryType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCandidatePatientRegistryType_validateCandidatePatientRegistryTypeValueP(candidatePatientRegistryType, diagnostics, context);
 		return result;
 	}
 
@@ -17758,73 +14550,26 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSResponseSection(EMSResponseSection emsResponseSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsResponseSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsResponseSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsResponseSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSResponseSection_validateEMSResponseSectionTemplateId(
-				emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSResponseSection_validateEMSResponseSectionCode(
-				emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSResponseSection_validateEMSResponseSectionCodeP(
-				emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSResponseSection_validateEMSResponseSectionTitle(
-				emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSResponseSection_validateEMSResponseSectionText(
-				emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSResponseSection_validateEMSResponseSectionDelayOrganizer(
-				emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSResponseSection_validateEMSResponseSectionDispatchLocationOrganizer(
-				emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSResponseSection_validateEMSResponseSectionResponseOdometerReadingOrganizer(
-				emsResponseSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSResponseSection_validateEMSResponseSectionResponseModeToScene(
-				emsResponseSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionTemplateId(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionCode(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionCodeP(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionTitle(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionText(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionDelayOrganizer(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionDispatchLocationOrganizer(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionResponseOdometerReadingOrganizer(emsResponseSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSResponseSection_validateEMSResponseSectionResponseModeToScene(emsResponseSection, diagnostics, context);
 		return result;
 	}
 
@@ -17934,54 +14679,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDelayOrganizer(DelayOrganizer delayOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(delayOrganizer, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(delayOrganizer, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(delayOrganizer, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDelayOrganizer_validateDelayOrganizerDispatchDelayRelationship(
-				delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDelayOrganizer_validateDelayOrganizerResponseDelayRelationship(
-				delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDelayOrganizer_validateDelayOrganizerSceneDelayRelationship(
-				delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDelayOrganizer_validateDelayOrganizerTransportDelayRelationship(
-				delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDelayOrganizer_validateDelayOrganizerTurnaoundDelayRelationship(
-				delayOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDelayOrganizer_validateDelayOrganizerTemplateId(delayOrganizer, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDelayOrganizer_validateDelayOrganizerDispatchDelayRelationship(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDelayOrganizer_validateDelayOrganizerResponseDelayRelationship(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDelayOrganizer_validateDelayOrganizerSceneDelayRelationship(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDelayOrganizer_validateDelayOrganizerTransportDelayRelationship(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDelayOrganizer_validateDelayOrganizerTurnaoundDelayRelationship(delayOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDelayOrganizer_validateDelayOrganizerTemplateId(delayOrganizer, diagnostics, context);
 		return result;
 	}
 
@@ -18058,47 +14770,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDispatchLocationOrganizer(DispatchLocationOrganizer dispatchLocationOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(dispatchLocationOrganizer, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(dispatchLocationOrganizer, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(dispatchLocationOrganizer, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(dispatchLocationOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(dispatchLocationOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(dispatchLocationOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(dispatchLocationOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(dispatchLocationOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(dispatchLocationOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationOrganizer_validateDispatchLocationOrganizerDispatchLocationNameRelationship(
-				dispatchLocationOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationOrganizer_validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(
-				dispatchLocationOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationOrganizer_validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(
-				dispatchLocationOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationOrganizer_validateDispatchLocationOrganizerTemplateId(
-				dispatchLocationOrganizer, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(dispatchLocationOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(dispatchLocationOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(dispatchLocationOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(dispatchLocationOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(dispatchLocationOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dispatchLocationOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationOrganizer_validateDispatchLocationOrganizerDispatchLocationNameRelationship(dispatchLocationOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationOrganizer_validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(dispatchLocationOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationOrganizer_validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(dispatchLocationOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationOrganizer_validateDispatchLocationOrganizerTemplateId(dispatchLocationOrganizer, diagnostics, context);
 		return result;
 	}
 
@@ -18111,8 +14795,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateDispatchLocationOrganizer_validateDispatchLocationOrganizerDispatchLocationNameRelationship(
 			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return dispatchLocationOrganizer.validateDispatchLocationOrganizerDispatchLocationNameRelationship(
-			diagnostics, context);
+		return dispatchLocationOrganizer.validateDispatchLocationOrganizerDispatchLocationNameRelationship(diagnostics, context);
 	}
 
 	/**
@@ -18124,8 +14807,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateDispatchLocationOrganizer_validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(
 			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return dispatchLocationOrganizer.validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(
-			diagnostics, context);
+		return dispatchLocationOrganizer.validateDispatchLocationOrganizerDispatchLocationLatitudeRelationship(diagnostics, context);
 	}
 
 	/**
@@ -18137,8 +14819,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateDispatchLocationOrganizer_validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(
 			DispatchLocationOrganizer dispatchLocationOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return dispatchLocationOrganizer.validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(
-			diagnostics, context);
+		return dispatchLocationOrganizer.validateDispatchLocationOrganizerDispatchLocationLongtudeRelationship(diagnostics, context);
 	}
 
 	/**
@@ -18161,52 +14842,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateResponseOdometerReadingOrganizer(
 			ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(responseOdometerReadingOrganizer, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(responseOdometerReadingOrganizer, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(responseOdometerReadingOrganizer, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(
-				responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(
-				responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(
-				responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(
-				responseOdometerReadingOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerTemplateId(
-				responseOdometerReadingOrganizer, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(responseOdometerReadingOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerTemplateId(responseOdometerReadingOrganizer, diagnostics, context);
 		return result;
 	}
 
@@ -18219,8 +14868,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(
 			ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return responseOdometerReadingOrganizer.validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(
-			diagnostics, context);
+		return responseOdometerReadingOrganizer.validateResponseOdometerReadingOrganizerResponseBeginningOdometerReadingRelationship(diagnostics, context);
 	}
 
 	/**
@@ -18232,8 +14880,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(
 			ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return responseOdometerReadingOrganizer.validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(
-			diagnostics, context);
+		return responseOdometerReadingOrganizer.validateResponseOdometerReadingOrganizerResponseOnSceneOdometerReadingRelationship(diagnostics, context);
 	}
 
 	/**
@@ -18245,8 +14892,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(
 			ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return responseOdometerReadingOrganizer.validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(
-			diagnostics, context);
+		return responseOdometerReadingOrganizer.validateResponseOdometerReadingOrganizerResponseDestinationOdometerReadingRelationship(diagnostics, context);
 	}
 
 	/**
@@ -18258,8 +14904,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateResponseOdometerReadingOrganizer_validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(
 			ResponseOdometerReadingOrganizer responseOdometerReadingOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return responseOdometerReadingOrganizer.validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(
-			diagnostics, context);
+		return responseOdometerReadingOrganizer.validateResponseOdometerReadingOrganizerResponseEndingOdometerReadingRelationship(diagnostics, context);
 	}
 
 	/**
@@ -18281,55 +14926,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateResponseModeToScene(ResponseModeToScene responseModeToScene, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(responseModeToScene, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(responseModeToScene, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(responseModeToScene, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseModeToScene_validateResponseModeToSceneTemplateId(
-				responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseModeToScene_validateResponseModeToSceneMoodCode(
-				responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseModeToScene_validateResponseModeToSceneCodeP(
-				responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseModeToScene_validateResponseModeToSceneCode(
-				responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseModeToScene_validateResponseModeToSceneValue(
-				responseModeToScene, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseModeToScene_validateResponseModeToSceneValueP(
-				responseModeToScene, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseModeToScene_validateResponseModeToSceneTemplateId(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseModeToScene_validateResponseModeToSceneMoodCode(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseModeToScene_validateResponseModeToSceneCodeP(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseModeToScene_validateResponseModeToSceneCode(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseModeToScene_validateResponseModeToSceneValue(responseModeToScene, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseModeToScene_validateResponseModeToSceneValueP(responseModeToScene, diagnostics, context);
 		return result;
 	}
 
@@ -18406,85 +15017,29 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSSituationSection(EMSSituationSection emsSituationSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsSituationSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsSituationSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsSituationSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionTemplateId(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionCode(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionCodeP(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionTitle(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionText(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionComplaint(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionPossibleInjury(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionProviderPrimaryImpression(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionPrimarySymptom(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionOtherSymptoms(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionProviderSecondaryImpressions(
-				emsSituationSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSSituationSection_validateEMSSituationSectionInitialPatientAcuity(
-				emsSituationSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionTemplateId(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionCode(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionCodeP(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionTitle(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionText(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionComplaint(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionPossibleInjury(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionProviderPrimaryImpression(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionPrimarySymptom(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionOtherSymptoms(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionProviderSecondaryImpressions(emsSituationSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSSituationSection_validateEMSSituationSectionInitialPatientAcuity(emsSituationSection, diagnostics, context);
 		return result;
 	}
 
@@ -18626,64 +15181,26 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateComplaint(Complaint complaint, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(complaint, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(complaint, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(complaint, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintDurationRelationship(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintTypeRelationship(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintOrganSystemRelationship(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintTemplateId(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintMoodCode(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintCodeP(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintCode(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintEffectiveTime(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintValue(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintTargetSiteCode(complaint, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaint_validateComplaintTargetSiteCodeP(complaint, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintDurationRelationship(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintTypeRelationship(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintOrganSystemRelationship(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintTemplateId(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintMoodCode(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintCodeP(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintCode(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintEffectiveTime(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintValue(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintTargetSiteCode(complaint, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaint_validateComplaintTargetSiteCodeP(complaint, diagnostics, context);
 		return result;
 	}
 
@@ -18815,46 +15332,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validatePossibleInjury(PossibleInjury possibleInjury, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(possibleInjury, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(possibleInjury, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(possibleInjury, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePossibleInjury_validatePossibleInjuryTemplateId(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePossibleInjury_validatePossibleInjuryMoodCode(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePossibleInjury_validatePossibleInjuryCodeP(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePossibleInjury_validatePossibleInjuryCode(possibleInjury, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePossibleInjury_validatePossibleInjuryValue(possibleInjury, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePossibleInjury_validatePossibleInjuryTemplateId(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePossibleInjury_validatePossibleInjuryMoodCode(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePossibleInjury_validatePossibleInjuryCodeP(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePossibleInjury_validatePossibleInjuryCode(possibleInjury, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePossibleInjury_validatePossibleInjuryValue(possibleInjury, diagnostics, context);
 		return result;
 	}
 
@@ -18920,55 +15411,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateProviderPrimaryImpression(ProviderPrimaryImpression providerPrimaryImpression,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(providerPrimaryImpression, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(providerPrimaryImpression, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(providerPrimaryImpression, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionTemplateId(
-				providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionMoodCode(
-				providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionCodeP(
-				providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionCode(
-				providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionValue(
-				providerPrimaryImpression, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionValueP(
-				providerPrimaryImpression, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionTemplateId(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionMoodCode(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionCodeP(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionCode(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionValue(providerPrimaryImpression, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderPrimaryImpression_validateProviderPrimaryImpressionValueP(providerPrimaryImpression, diagnostics, context);
 		return result;
 	}
 
@@ -19051,49 +15508,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validatePrimarySymptom(PrimarySymptom primarySymptom, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(primarySymptom, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(primarySymptom, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(primarySymptom, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrimarySymptom_validatePrimarySymptomTemplateId(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrimarySymptom_validatePrimarySymptomMoodCode(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrimarySymptom_validatePrimarySymptomCodeP(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrimarySymptom_validatePrimarySymptomCode(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrimarySymptom_validatePrimarySymptomValue(primarySymptom, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePrimarySymptom_validatePrimarySymptomValueP(primarySymptom, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrimarySymptom_validatePrimarySymptomTemplateId(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrimarySymptom_validatePrimarySymptomMoodCode(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrimarySymptom_validatePrimarySymptomCodeP(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrimarySymptom_validatePrimarySymptomCode(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrimarySymptom_validatePrimarySymptomValue(primarySymptom, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePrimarySymptom_validatePrimarySymptomValueP(primarySymptom, diagnostics, context);
 		return result;
 	}
 
@@ -19170,49 +15599,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateOtherSymptoms(OtherSymptoms otherSymptoms, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(otherSymptoms, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(otherSymptoms, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(otherSymptoms, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOtherSymptoms_validateOtherSymptomsTemplateId(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOtherSymptoms_validateOtherSymptomsMoodCode(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOtherSymptoms_validateOtherSymptomsCodeP(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOtherSymptoms_validateOtherSymptomsCode(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOtherSymptoms_validateOtherSymptomsValue(otherSymptoms, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOtherSymptoms_validateOtherSymptomsValueP(otherSymptoms, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOtherSymptoms_validateOtherSymptomsTemplateId(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOtherSymptoms_validateOtherSymptomsMoodCode(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOtherSymptoms_validateOtherSymptomsCodeP(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOtherSymptoms_validateOtherSymptomsCode(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOtherSymptoms_validateOtherSymptomsValue(otherSymptoms, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOtherSymptoms_validateOtherSymptomsValueP(otherSymptoms, diagnostics, context);
 		return result;
 	}
 
@@ -19289,55 +15690,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateProviderSecondaryImpressions(ProviderSecondaryImpressions providerSecondaryImpressions,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(providerSecondaryImpressions, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(providerSecondaryImpressions, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(providerSecondaryImpressions, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsTemplateId(
-				providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsMoodCode(
-				providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsCodeP(
-				providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsCode(
-				providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsValue(
-				providerSecondaryImpressions, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsValueP(
-				providerSecondaryImpressions, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsTemplateId(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsMoodCode(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsCodeP(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsCode(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsValue(providerSecondaryImpressions, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProviderSecondaryImpressions_validateProviderSecondaryImpressionsValueP(providerSecondaryImpressions, diagnostics, context);
 		return result;
 	}
 
@@ -19420,55 +15787,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateInitialPatientAcuity(InitialPatientAcuity initialPatientAcuity, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(initialPatientAcuity, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(initialPatientAcuity, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(initialPatientAcuity, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInitialPatientAcuity_validateInitialPatientAcuityTemplateId(
-				initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInitialPatientAcuity_validateInitialPatientAcuityMoodCode(
-				initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInitialPatientAcuity_validateInitialPatientAcuityCodeP(
-				initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInitialPatientAcuity_validateInitialPatientAcuityCode(
-				initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInitialPatientAcuity_validateInitialPatientAcuityValue(
-				initialPatientAcuity, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInitialPatientAcuity_validateInitialPatientAcuityValueP(
-				initialPatientAcuity, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInitialPatientAcuity_validateInitialPatientAcuityTemplateId(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInitialPatientAcuity_validateInitialPatientAcuityMoodCode(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInitialPatientAcuity_validateInitialPatientAcuityCodeP(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInitialPatientAcuity_validateInitialPatientAcuityCode(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInitialPatientAcuity_validateInitialPatientAcuityValue(initialPatientAcuity, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInitialPatientAcuity_validateInitialPatientAcuityValueP(initialPatientAcuity, diagnostics, context);
 		return result;
 	}
 
@@ -19545,77 +15878,30 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateTimesSection(TimesSection timesSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(timesSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(timesSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(timesSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionTemplateId(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionCode(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionTitle(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionText(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionCallTime(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionUnitNotifiedTime(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionUnitEnRouteTime(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionUnitOnSceneTime(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionUnitAtPatienttTime(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionUnitLeftSceneTime(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionPatientArrivedAtDestinationTime(
-				timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionUnitBackInServiceTime(timesSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTimesSection_validateTimesSectionDispatchNotifiedTime(timesSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionTemplateId(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionCode(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionTitle(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionText(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionCallTime(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionUnitNotifiedTime(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionUnitEnRouteTime(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionUnitOnSceneTime(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionUnitAtPatienttTime(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionUnitLeftSceneTime(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionPatientArrivedAtDestinationTime(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionUnitBackInServiceTime(timesSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTimesSection_validateTimesSectionDispatchNotifiedTime(timesSection, diagnostics, context);
 		return result;
 	}
 
@@ -19768,46 +16054,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateCallTime(CallTime callTime, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(callTime, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(callTime, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(callTime, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCallTime_validateCallTimeTemplateId(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCallTime_validateCallTimeMoodCode(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCallTime_validateCallTimeCodeP(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCallTime_validateCallTimeCode(callTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCallTime_validateCallTimeValue(callTime, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCallTime_validateCallTimeTemplateId(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCallTime_validateCallTimeMoodCode(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCallTime_validateCallTimeCodeP(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCallTime_validateCallTimeCode(callTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCallTime_validateCallTimeValue(callTime, diagnostics, context);
 		return result;
 	}
 
@@ -19873,47 +16133,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateUnitNotifiedTime(UnitNotifiedTime unitNotifiedTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(unitNotifiedTime, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(unitNotifiedTime, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(unitNotifiedTime, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitNotifiedTime_validateUnitNotifiedTimeTemplateId(
-				unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitNotifiedTime_validateUnitNotifiedTimeMoodCode(unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitNotifiedTime_validateUnitNotifiedTimeCodeP(unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitNotifiedTime_validateUnitNotifiedTimeCode(unitNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitNotifiedTime_validateUnitNotifiedTimeValue(unitNotifiedTime, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitNotifiedTime_validateUnitNotifiedTimeTemplateId(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitNotifiedTime_validateUnitNotifiedTimeMoodCode(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitNotifiedTime_validateUnitNotifiedTimeCodeP(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitNotifiedTime_validateUnitNotifiedTimeCode(unitNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitNotifiedTime_validateUnitNotifiedTimeValue(unitNotifiedTime, diagnostics, context);
 		return result;
 	}
 
@@ -19979,46 +16212,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateUnitEnRouteTime(UnitEnRouteTime unitEnRouteTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(unitEnRouteTime, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(unitEnRouteTime, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(unitEnRouteTime, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitEnRouteTime_validateUnitEnRouteTimeTemplateId(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitEnRouteTime_validateUnitEnRouteTimeMoodCode(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitEnRouteTime_validateUnitEnRouteTimeCodeP(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitEnRouteTime_validateUnitEnRouteTimeCode(unitEnRouteTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitEnRouteTime_validateUnitEnRouteTimeValue(unitEnRouteTime, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitEnRouteTime_validateUnitEnRouteTimeTemplateId(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitEnRouteTime_validateUnitEnRouteTimeMoodCode(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitEnRouteTime_validateUnitEnRouteTimeCodeP(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitEnRouteTime_validateUnitEnRouteTimeCode(unitEnRouteTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitEnRouteTime_validateUnitEnRouteTimeValue(unitEnRouteTime, diagnostics, context);
 		return result;
 	}
 
@@ -20084,46 +16291,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateUnitOnSceneTime(UnitOnSceneTime unitOnSceneTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(unitOnSceneTime, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(unitOnSceneTime, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(unitOnSceneTime, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitOnSceneTime_validateUnitOnSceneTimeTemplateId(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitOnSceneTime_validateUnitOnSceneTimeMoodCode(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitOnSceneTime_validateUnitOnSceneTimeCodeP(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitOnSceneTime_validateUnitOnSceneTimeCode(unitOnSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitOnSceneTime_validateUnitOnSceneTimeValue(unitOnSceneTime, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitOnSceneTime_validateUnitOnSceneTimeTemplateId(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitOnSceneTime_validateUnitOnSceneTimeMoodCode(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitOnSceneTime_validateUnitOnSceneTimeCodeP(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitOnSceneTime_validateUnitOnSceneTimeCode(unitOnSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitOnSceneTime_validateUnitOnSceneTimeValue(unitOnSceneTime, diagnostics, context);
 		return result;
 	}
 
@@ -20189,48 +16370,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateUnitAtPatientTime(UnitAtPatientTime unitAtPatientTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(unitAtPatientTime, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(unitAtPatientTime, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(unitAtPatientTime, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitAtPatientTime_validateUnitAtPatientTimeTemplateId(
-				unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitAtPatientTime_validateUnitAtPatientTimeMoodCode(
-				unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitAtPatientTime_validateUnitAtPatientTimeCodeP(unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitAtPatientTime_validateUnitAtPatientTimeCode(unitAtPatientTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitAtPatientTime_validateUnitAtPatientTimeValue(unitAtPatientTime, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitAtPatientTime_validateUnitAtPatientTimeTemplateId(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitAtPatientTime_validateUnitAtPatientTimeMoodCode(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitAtPatientTime_validateUnitAtPatientTimeCodeP(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitAtPatientTime_validateUnitAtPatientTimeCode(unitAtPatientTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitAtPatientTime_validateUnitAtPatientTimeValue(unitAtPatientTime, diagnostics, context);
 		return result;
 	}
 
@@ -20296,48 +16449,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateUnitLeftSceneTime(UnitLeftSceneTime unitLeftSceneTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(unitLeftSceneTime, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(unitLeftSceneTime, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(unitLeftSceneTime, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitLeftSceneTime_validateUnitLeftSceneTimeTemplateId(
-				unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitLeftSceneTime_validateUnitLeftSceneTimeMoodCode(
-				unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitLeftSceneTime_validateUnitLeftSceneTimeCodeP(unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitLeftSceneTime_validateUnitLeftSceneTimeCode(unitLeftSceneTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitLeftSceneTime_validateUnitLeftSceneTimeValue(unitLeftSceneTime, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitLeftSceneTime_validateUnitLeftSceneTimeTemplateId(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitLeftSceneTime_validateUnitLeftSceneTimeMoodCode(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitLeftSceneTime_validateUnitLeftSceneTimeCodeP(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitLeftSceneTime_validateUnitLeftSceneTimeCode(unitLeftSceneTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitLeftSceneTime_validateUnitLeftSceneTimeValue(unitLeftSceneTime, diagnostics, context);
 		return result;
 	}
 
@@ -20404,52 +16529,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePatientArrivedAtDestinationTime(
 			PatientArrivedAtDestinationTime patientArrivedAtDestinationTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(patientArrivedAtDestinationTime, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(patientArrivedAtDestinationTime, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(patientArrivedAtDestinationTime, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientArrivedAtDestinationTime_validatePatientArrivedAtDestinationTimeTemplateId(
-				patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientArrivedAtDestinationTime_validatePatientArrivedAtDestinationTimeMoodCode(
-				patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientArrivedAtDestinationTime_validatePatientArrivedAtDestinationTimeCodeP(
-				patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientArrivedAtDestinationTime_validatePatientArrivedAtDestinationTimeCode(
-				patientArrivedAtDestinationTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientArrivedAtDestinationTime_validatePatientArrivedAtDestinationTimeValue(
-				patientArrivedAtDestinationTime, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientArrivedAtDestinationTime_validatePatientArrivedAtDestinationTimeTemplateId(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientArrivedAtDestinationTime_validatePatientArrivedAtDestinationTimeMoodCode(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientArrivedAtDestinationTime_validatePatientArrivedAtDestinationTimeCodeP(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientArrivedAtDestinationTime_validatePatientArrivedAtDestinationTimeCode(patientArrivedAtDestinationTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientArrivedAtDestinationTime_validatePatientArrivedAtDestinationTimeValue(patientArrivedAtDestinationTime, diagnostics, context);
 		return result;
 	}
 
@@ -20520,51 +16613,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateUnitBackInServiceTime(UnitBackInServiceTime unitBackInServiceTime,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(unitBackInServiceTime, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(unitBackInServiceTime, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(unitBackInServiceTime, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitBackInServiceTime_validateUnitBackInServiceTimeTemplateId(
-				unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitBackInServiceTime_validateUnitBackInServiceTimeMoodCode(
-				unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitBackInServiceTime_validateUnitBackInServiceTimeCodeP(
-				unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitBackInServiceTime_validateUnitBackInServiceTimeCode(
-				unitBackInServiceTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateUnitBackInServiceTime_validateUnitBackInServiceTimeValue(
-				unitBackInServiceTime, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitBackInServiceTime_validateUnitBackInServiceTimeTemplateId(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitBackInServiceTime_validateUnitBackInServiceTimeMoodCode(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitBackInServiceTime_validateUnitBackInServiceTimeCodeP(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitBackInServiceTime_validateUnitBackInServiceTimeCode(unitBackInServiceTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateUnitBackInServiceTime_validateUnitBackInServiceTimeValue(unitBackInServiceTime, diagnostics, context);
 		return result;
 	}
 
@@ -20630,51 +16692,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDispatchNotifiedTime(DispatchNotifiedTime dispatchNotifiedTime, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(dispatchNotifiedTime, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(dispatchNotifiedTime, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(dispatchNotifiedTime, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchNotifiedTime_validateDispatchNotifiedTimeTemplateId(
-				dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchNotifiedTime_validateDispatchNotifiedTimeMoodCode(
-				dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchNotifiedTime_validateDispatchNotifiedTimeCodeP(
-				dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchNotifiedTime_validateDispatchNotifiedTimeCode(
-				dispatchNotifiedTime, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchNotifiedTime_validateDispatchNotifiedTimeValue(
-				dispatchNotifiedTime, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchNotifiedTime_validateDispatchNotifiedTimeTemplateId(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchNotifiedTime_validateDispatchNotifiedTimeMoodCode(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchNotifiedTime_validateDispatchNotifiedTimeCodeP(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchNotifiedTime_validateDispatchNotifiedTimeCode(dispatchNotifiedTime, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchNotifiedTime_validateDispatchNotifiedTimeValue(dispatchNotifiedTime, diagnostics, context);
 		return result;
 	}
 
@@ -20740,61 +16771,23 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSVitalSignsSection(EMSVitalSignsSection emsVitalSignsSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsVitalSignsSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsVitalSignsSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsVitalSignsSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionTemplateId(
-				emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionCode(
-				emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionTitle(
-				emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionText(
-				emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionVitalSignsOrganizer(
-				emsVitalSignsSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionAdditionalVitalSignsOrganizer(
-				emsVitalSignsSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionTemplateId(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionCode(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionTitle(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionText(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionVitalSignsOrganizer(emsVitalSignsSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSVitalSignsSection_validateEMSVitalSignsSectionAdditionalVitalSignsOrganizer(emsVitalSignsSection, diagnostics, context);
 		return result;
 	}
 
@@ -20871,91 +16864,23 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateVitalSignsOrganizer(VitalSignsOrganizer vitalSignsOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(vitalSignsOrganizer, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(vitalSignsOrganizer, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(vitalSignsOrganizer, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVitalSignsOrganizer_validateVitalSignsOrganizerTemplateId(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignsOrganizer_validateVitalSignsOrganizerClassCode(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignsOrganizer_validateVitalSignsOrganizerMoodCode(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignsOrganizer_validateVitalSignsOrganizerId(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignsOrganizer_validateVitalSignsOrganizerCode(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignsOrganizer_validateVitalSignsOrganizerStatusCode(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignsOrganizer_validateVitalSignsOrganizerEffectiveTime(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignsOrganizer_validateVitalSignsOrganizerVitalSignObservation(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerHeartRateComponent(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(
-				vitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerEffectiveTime(
-				vitalSignsOrganizer, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerSystolicBloodPressureComponent(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerHeartRateComponent(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerRespiratoryRateComponent(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerBodyTemperatureComponent(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerOxygenSaturationComponent(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSignsOrganizer_validateVitalSignsOrganizerTemplateId(vitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerEffectiveTime(vitalSignsOrganizer, diagnostics, context);
 		return result;
 	}
 
@@ -20978,8 +16903,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateVitalSignsOrganizer_validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(
 			VitalSignsOrganizer vitalSignsOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return vitalSignsOrganizer.validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(
-			diagnostics, context);
+		return vitalSignsOrganizer.validateEMSPCRVitalSignsOrganizerDiastolicBloodPressureComponent(diagnostics, context);
 	}
 
 	/**
@@ -21055,43 +16979,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validatePriorAidVitals(PriorAidVitals priorAidVitals, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(priorAidVitals, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(priorAidVitals, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(priorAidVitals, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(priorAidVitals, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(priorAidVitals, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(priorAidVitals, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(priorAidVitals, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(priorAidVitals, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(priorAidVitals, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(priorAidVitals, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorAidVitals_validatePriorAidVitalsTemplateId(priorAidVitals, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorAidVitals_validatePriorAidVitalsMoodCode(priorAidVitals, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorAidVitals_validatePriorAidVitalsCode(priorAidVitals, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorAidVitals_validatePriorAidVitalsValue(priorAidVitals, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(priorAidVitals, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(priorAidVitals, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(priorAidVitals, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(priorAidVitals, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(priorAidVitals, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(priorAidVitals, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(priorAidVitals, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorAidVitals_validatePriorAidVitalsTemplateId(priorAidVitals, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorAidVitals_validatePriorAidVitalsMoodCode(priorAidVitals, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorAidVitals_validatePriorAidVitalsCode(priorAidVitals, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorAidVitals_validatePriorAidVitalsValue(priorAidVitals, diagnostics, context);
 		return result;
 	}
 
@@ -21146,75 +17046,26 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateAdditionalVitalSignsOrganizer(AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(additionalVitalSignsOrganizer, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(additionalVitalSignsOrganizer, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(additionalVitalSignsOrganizer, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerStrokeScoreComponent(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerPainScoreComponent(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerTemplateId(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerMoodCode(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerEffectiveTime(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(
-				additionalVitalSignsOrganizer, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerStrokeScoreComponent(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerPainScoreComponent(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerTemplateId(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerMoodCode(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerEffectiveTime(additionalVitalSignsOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(additionalVitalSignsOrganizer, diagnostics, context);
 		return result;
 	}
 
@@ -21227,8 +17078,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerStrokeScoreComponent(
 			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerStrokeScoreComponent(
-			diagnostics, context);
+		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerStrokeScoreComponent(diagnostics, context);
 	}
 
 	/**
@@ -21240,8 +17090,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerPainScoreComponent(
 			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerPainScoreComponent(
-			diagnostics, context);
+		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerPainScoreComponent(diagnostics, context);
 	}
 
 	/**
@@ -21253,8 +17102,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(
 			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(
-			diagnostics, context);
+		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(diagnostics, context);
 	}
 
 	/**
@@ -21266,8 +17114,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(
 			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(
-			diagnostics, context);
+		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(diagnostics, context);
 	}
 
 	/**
@@ -21279,8 +17126,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(
 			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(
-			diagnostics, context);
+		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(diagnostics, context);
 	}
 
 	/**
@@ -21292,8 +17138,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(
 			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(
-			diagnostics, context);
+		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(diagnostics, context);
 	}
 
 	/**
@@ -21305,8 +17150,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(
 			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(
-			diagnostics, context);
+		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(diagnostics, context);
 	}
 
 	/**
@@ -21354,8 +17198,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAdditionalVitalSignsOrganizer_validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(
 			AdditionalVitalSignsOrganizer additionalVitalSignsOrganizer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(
-			diagnostics, context);
+		return additionalVitalSignsOrganizer.validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(diagnostics, context);
 	}
 
 	/**
@@ -21364,58 +17207,24 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateStrokeScore(StrokeScore strokeScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(strokeScore, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(strokeScore, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(strokeScore, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateStrokeScore_validateStrokeScoreTemplateId(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateStrokeScore_validateStrokeScoreMoodCode(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateStrokeScore_validateStrokeScoreCodeP(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateStrokeScore_validateStrokeScoreCode(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateStrokeScore_validateStrokeScoreEffectiveTime(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateStrokeScore_validateStrokeScoreValue(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateStrokeScore_validateStrokeScoreValueP(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateStrokeScore_validateStrokeScoreMethodCode(strokeScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateStrokeScore_validateStrokeScoreMethodCodeP(strokeScore, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validateStrokeScore_validateStrokeScoreTemplateId(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validateStrokeScore_validateStrokeScoreMoodCode(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validateStrokeScore_validateStrokeScoreCodeP(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validateStrokeScore_validateStrokeScoreCode(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validateStrokeScore_validateStrokeScoreEffectiveTime(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validateStrokeScore_validateStrokeScoreValue(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validateStrokeScore_validateStrokeScoreValueP(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validateStrokeScore_validateStrokeScoreMethodCode(strokeScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validateStrokeScore_validateStrokeScoreMethodCodeP(strokeScore, diagnostics, context);
 		return result;
 	}
 
@@ -21524,43 +17333,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validatePainScore(PainScore painScore, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(painScore, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(painScore, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(painScore, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(painScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(painScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(painScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(painScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(painScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(painScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(painScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePainScore_validatePainScoreTemplateId(painScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePainScore_validatePainScoreMoodCode(painScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePainScore_validatePainScoreCode(painScore, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePainScore_validatePainScoreEffectiveTime(painScore, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(painScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(painScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(painScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(painScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(painScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(painScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(painScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePainScore_validatePainScoreTemplateId(painScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePainScore_validatePainScoreMoodCode(painScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePainScore_validatePainScoreCode(painScore, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePainScore_validatePainScoreEffectiveTime(painScore, diagnostics, context);
 		return result;
 	}
 
@@ -21615,59 +17400,22 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateLevelOfResponsiveness(LevelOfResponsiveness levelOfResponsiveness,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(levelOfResponsiveness, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(levelOfResponsiveness, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(levelOfResponsiveness, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessTemplateId(
-				levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessMoodCode(
-				levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessCodeP(
-				levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessCode(
-				levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessEffectiveTime(
-				levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessValue(
-				levelOfResponsiveness, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessValueP(
-				levelOfResponsiveness, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessTemplateId(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessMoodCode(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessCodeP(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessCode(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessEffectiveTime(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessValue(levelOfResponsiveness, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfResponsiveness_validateLevelOfResponsivenessValueP(levelOfResponsiveness, diagnostics, context);
 		return result;
 	}
 
@@ -21755,49 +17503,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateBloodGlucose(BloodGlucose bloodGlucose, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(bloodGlucose, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(bloodGlucose, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(bloodGlucose, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBloodGlucose_validateBloodGlucoseTemplateId(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBloodGlucose_validateBloodGlucoseMoodCode(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBloodGlucose_validateBloodGlucoseCodeP(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBloodGlucose_validateBloodGlucoseCode(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBloodGlucose_validateBloodGlucoseEffectiveTime(bloodGlucose, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBloodGlucose_validateBloodGlucoseValue(bloodGlucose, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBloodGlucose_validateBloodGlucoseTemplateId(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBloodGlucose_validateBloodGlucoseMoodCode(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBloodGlucose_validateBloodGlucoseCodeP(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBloodGlucose_validateBloodGlucoseCode(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBloodGlucose_validateBloodGlucoseEffectiveTime(bloodGlucose, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBloodGlucose_validateBloodGlucoseValue(bloodGlucose, diagnostics, context);
 		return result;
 	}
 
@@ -21874,49 +17594,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateCarbonMonoxide(CarbonMonoxide carbonMonoxide, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(carbonMonoxide, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(carbonMonoxide, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(carbonMonoxide, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonMonoxide_validateCarbonMonoxideTemplateId(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonMonoxide_validateCarbonMonoxideMoodCode(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonMonoxide_validateCarbonMonoxideCodeP(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonMonoxide_validateCarbonMonoxideCode(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonMonoxide_validateCarbonMonoxideEffectiveTime(carbonMonoxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonMonoxide_validateCarbonMonoxideValue(carbonMonoxide, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonMonoxide_validateCarbonMonoxideTemplateId(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonMonoxide_validateCarbonMonoxideMoodCode(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonMonoxide_validateCarbonMonoxideCodeP(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonMonoxide_validateCarbonMonoxideCode(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonMonoxide_validateCarbonMonoxideEffectiveTime(carbonMonoxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonMonoxide_validateCarbonMonoxideValue(carbonMonoxide, diagnostics, context);
 		return result;
 	}
 
@@ -21993,49 +17685,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateCarbonDioxide(CarbonDioxide carbonDioxide, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(carbonDioxide, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(carbonDioxide, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(carbonDioxide, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonDioxide_validateCarbonDioxideTemplateId(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonDioxide_validateCarbonDioxideMoodCode(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonDioxide_validateCarbonDioxideCodeP(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonDioxide_validateCarbonDioxideCode(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonDioxide_validateCarbonDioxideEffectiveTime(carbonDioxide, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCarbonDioxide_validateCarbonDioxideValue(carbonDioxide, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonDioxide_validateCarbonDioxideTemplateId(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonDioxide_validateCarbonDioxideMoodCode(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonDioxide_validateCarbonDioxideCodeP(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonDioxide_validateCarbonDioxideCode(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonDioxide_validateCarbonDioxideEffectiveTime(carbonDioxide, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCarbonDioxide_validateCarbonDioxideValue(carbonDioxide, diagnostics, context);
 		return result;
 	}
 
@@ -22112,61 +17776,25 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateCardiacRhythm(CardiacRhythm cardiacRhythm, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(cardiacRhythm, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(cardiacRhythm, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(cardiacRhythm, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacRhythm_validateCardiacRhythmParticipant1(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacRhythm_validateCardiacRhythmTemplateId(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacRhythm_validateCardiacRhythmMoodCode(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacRhythm_validateCardiacRhythmCodeP(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacRhythm_validateCardiacRhythmCode(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacRhythm_validateCardiacRhythmEffectiveTime(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacRhythm_validateCardiacRhythmValue(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacRhythm_validateCardiacRhythmValueP(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacRhythm_validateCardiacRhythmMethodCode(cardiacRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacRhythm_validateCardiacRhythmMethodCodeP(cardiacRhythm, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacRhythm_validateCardiacRhythmParticipant1(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacRhythm_validateCardiacRhythmTemplateId(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacRhythm_validateCardiacRhythmMoodCode(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacRhythm_validateCardiacRhythmCodeP(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacRhythm_validateCardiacRhythmCode(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacRhythm_validateCardiacRhythmEffectiveTime(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacRhythm_validateCardiacRhythmValue(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacRhythm_validateCardiacRhythmValueP(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacRhythm_validateCardiacRhythmMethodCode(cardiacRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacRhythm_validateCardiacRhythmMethodCodeP(cardiacRhythm, diagnostics, context);
 		return result;
 	}
 
@@ -22287,59 +17915,22 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateGlasgowComaScoreOrganizer(GlasgowComaScoreOrganizer glasgowComaScoreOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(glasgowComaScoreOrganizer, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(glasgowComaScoreOrganizer, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(glasgowComaScoreOrganizer, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerGlasgowEye(
-				glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerGlasgowMotor(
-				glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerGlasgowQualifier(
-				glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerGlasgowTotal(
-				glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerGlasgowVerbal(
-				glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerTemplateId(
-				glasgowComaScoreOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerEffectiveTime(
-				glasgowComaScoreOrganizer, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerGlasgowEye(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerGlasgowMotor(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerGlasgowQualifier(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerGlasgowTotal(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerGlasgowVerbal(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerTemplateId(glasgowComaScoreOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowComaScoreOrganizer_validateGlasgowComaScoreOrganizerEffectiveTime(glasgowComaScoreOrganizer, diagnostics, context);
 		return result;
 	}
 
@@ -22433,46 +18024,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateGlasgowEye(GlasgowEye glasgowEye, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(glasgowEye, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(glasgowEye, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(glasgowEye, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowEye_validateGlasgowEyeTemplateId(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowEye_validateGlasgowEyeMoodCode(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowEye_validateGlasgowEyeCodeP(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowEye_validateGlasgowEyeCode(glasgowEye, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowEye_validateGlasgowEyeValue(glasgowEye, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowEye_validateGlasgowEyeTemplateId(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowEye_validateGlasgowEyeMoodCode(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowEye_validateGlasgowEyeCodeP(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowEye_validateGlasgowEyeCode(glasgowEye, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowEye_validateGlasgowEyeValue(glasgowEye, diagnostics, context);
 		return result;
 	}
 
@@ -22538,46 +18103,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateGlasgowMotor(GlasgowMotor glasgowMotor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(glasgowMotor, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(glasgowMotor, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(glasgowMotor, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowMotor_validateGlasgowMotorTemplateId(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowMotor_validateGlasgowMotorMoodCode(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowMotor_validateGlasgowMotorCodeP(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowMotor_validateGlasgowMotorCode(glasgowMotor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowMotor_validateGlasgowMotorValue(glasgowMotor, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowMotor_validateGlasgowMotorTemplateId(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowMotor_validateGlasgowMotorMoodCode(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowMotor_validateGlasgowMotorCodeP(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowMotor_validateGlasgowMotorCode(glasgowMotor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowMotor_validateGlasgowMotorValue(glasgowMotor, diagnostics, context);
 		return result;
 	}
 
@@ -22643,50 +18182,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateGlasgowQualifier(GlasgowQualifier glasgowQualifier, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(glasgowQualifier, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(glasgowQualifier, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(glasgowQualifier, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowQualifier_validateGlasgowQualifierTemplateId(
-				glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowQualifier_validateGlasgowQualifierMoodCode(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowQualifier_validateGlasgowQualifierCodeP(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowQualifier_validateGlasgowQualifierCode(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowQualifier_validateGlasgowQualifierValue(glasgowQualifier, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowQualifier_validateGlasgowQualifierValueP(glasgowQualifier, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowQualifier_validateGlasgowQualifierTemplateId(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowQualifier_validateGlasgowQualifierMoodCode(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowQualifier_validateGlasgowQualifierCodeP(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowQualifier_validateGlasgowQualifierCode(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowQualifier_validateGlasgowQualifierValue(glasgowQualifier, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowQualifier_validateGlasgowQualifierValueP(glasgowQualifier, diagnostics, context);
 		return result;
 	}
 
@@ -22763,46 +18273,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateGlasgowTotal(GlasgowTotal glasgowTotal, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(glasgowTotal, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(glasgowTotal, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(glasgowTotal, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowTotal_validateGlasgowTotalTemplateId(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowTotal_validateGlasgowTotalMoodCode(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowTotal_validateGlasgowTotalCodeP(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowTotal_validateGlasgowTotalCode(glasgowTotal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowTotal_validateGlasgowTotalValue(glasgowTotal, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowTotal_validateGlasgowTotalTemplateId(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowTotal_validateGlasgowTotalMoodCode(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowTotal_validateGlasgowTotalCodeP(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowTotal_validateGlasgowTotalCode(glasgowTotal, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowTotal_validateGlasgowTotalValue(glasgowTotal, diagnostics, context);
 		return result;
 	}
 
@@ -22868,46 +18352,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateGlasgowVerbal(GlasgowVerbal glasgowVerbal, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(glasgowVerbal, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(glasgowVerbal, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(glasgowVerbal, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowVerbal_validateGlasgowVerbalTemplateId(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowVerbal_validateGlasgowVerbalMoodCode(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowVerbal_validateGlasgowVerbalCodeP(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowVerbal_validateGlasgowVerbalCode(glasgowVerbal, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateGlasgowVerbal_validateGlasgowVerbalValue(glasgowVerbal, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowVerbal_validateGlasgowVerbalTemplateId(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowVerbal_validateGlasgowVerbalMoodCode(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowVerbal_validateGlasgowVerbalCodeP(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowVerbal_validateGlasgowVerbalCode(glasgowVerbal, diagnostics, context);
+		if (result || diagnostics != null) result &= validateGlasgowVerbal_validateGlasgowVerbalValue(glasgowVerbal, diagnostics, context);
 		return result;
 	}
 
@@ -22974,96 +18432,31 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsInjuryIncidentDescriptionSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsInjuryIncidentDescriptionSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsInjuryIncidentDescriptionSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionTemplateId(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionCode(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionTitle(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionText(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionHeightOfFall(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionDisasterType(
-				emsInjuryIncidentDescriptionSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionTemplateId(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionCode(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionTitle(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionText(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionHeightOfFall(emsInjuryIncidentDescriptionSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionDisasterType(emsInjuryIncidentDescriptionSection, diagnostics, context);
 		return result;
 	}
 
@@ -23076,8 +18469,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionTemplateId(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionTemplateId(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -23101,8 +18493,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionTitle(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionTitle(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionTitle(diagnostics, context);
 	}
 
 	/**
@@ -23126,8 +18517,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionInjuryCauseCategory(diagnostics, context);
 	}
 
 	/**
@@ -23139,8 +18529,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionInjuryMechanism(diagnostics, context);
 	}
 
 	/**
@@ -23152,8 +18541,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionTraumaCenterCriteria(diagnostics, context);
 	}
 
 	/**
@@ -23165,8 +18553,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionInjuryRiskFactor(diagnostics, context);
 	}
 
 	/**
@@ -23178,8 +18565,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionVehicleImpactArea(diagnostics, context);
 	}
 
 	/**
@@ -23191,8 +18577,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionPatientLocationInVehicle(diagnostics, context);
 	}
 
 	/**
@@ -23204,8 +18589,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionVehicleOccupantSafetyEquipment(diagnostics, context);
 	}
 
 	/**
@@ -23217,8 +18601,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionAirbagDeploymentStatus(diagnostics, context);
 	}
 
 	/**
@@ -23230,8 +18613,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionHeightOfFall(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionHeightOfFall(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionHeightOfFall(diagnostics, context);
 	}
 
 	/**
@@ -23243,8 +18625,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateEMSInjuryIncidentDescriptionSection_validateEMSInjuryIncidentDescriptionSectionDisasterType(
 			EMSInjuryIncidentDescriptionSection emsInjuryIncidentDescriptionSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionDisasterType(
-			diagnostics, context);
+		return emsInjuryIncidentDescriptionSection.validateEMSInjuryIncidentDescriptionSectionDisasterType(diagnostics, context);
 	}
 
 	/**
@@ -23254,47 +18635,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateInjuryCauseCategory(InjuryCauseCategory injuryCauseCategory, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(injuryCauseCategory, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(injuryCauseCategory, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(injuryCauseCategory, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(injuryCauseCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(injuryCauseCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(injuryCauseCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(injuryCauseCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(injuryCauseCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(injuryCauseCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(injuryCauseCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryCauseCategory_validateInjuryCauseCategoryTemplateId(
-				injuryCauseCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryCauseCategory_validateInjuryCauseCategoryMoodCode(
-				injuryCauseCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryCauseCategory_validateInjuryCauseCategoryCode(
-				injuryCauseCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryCauseCategory_validateInjuryCauseCategoryValue(
-				injuryCauseCategory, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(injuryCauseCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(injuryCauseCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(injuryCauseCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(injuryCauseCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(injuryCauseCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(injuryCauseCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(injuryCauseCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryCauseCategory_validateInjuryCauseCategoryTemplateId(injuryCauseCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryCauseCategory_validateInjuryCauseCategoryMoodCode(injuryCauseCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryCauseCategory_validateInjuryCauseCategoryCode(injuryCauseCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryCauseCategory_validateInjuryCauseCategoryValue(injuryCauseCategory, diagnostics, context);
 		return result;
 	}
 
@@ -23349,43 +18702,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateInjuryMechanism(InjuryMechanism injuryMechanism, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(injuryMechanism, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(injuryMechanism, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(injuryMechanism, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(injuryMechanism, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(injuryMechanism, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(injuryMechanism, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(injuryMechanism, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(injuryMechanism, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(injuryMechanism, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(injuryMechanism, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryMechanism_validateInjuryMechanismTemplateId(injuryMechanism, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryMechanism_validateInjuryMechanismMoodCode(injuryMechanism, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryMechanism_validateInjuryMechanismCode(injuryMechanism, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryMechanism_validateInjuryMechanismValue(injuryMechanism, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(injuryMechanism, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(injuryMechanism, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(injuryMechanism, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(injuryMechanism, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(injuryMechanism, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(injuryMechanism, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(injuryMechanism, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryMechanism_validateInjuryMechanismTemplateId(injuryMechanism, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryMechanism_validateInjuryMechanismMoodCode(injuryMechanism, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryMechanism_validateInjuryMechanismCode(injuryMechanism, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryMechanism_validateInjuryMechanismValue(injuryMechanism, diagnostics, context);
 		return result;
 	}
 
@@ -23440,47 +18769,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateTraumaCenterCriteria(TraumaCenterCriteria traumaCenterCriteria, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(traumaCenterCriteria, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(traumaCenterCriteria, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(traumaCenterCriteria, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(traumaCenterCriteria, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(traumaCenterCriteria, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(traumaCenterCriteria, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(traumaCenterCriteria, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(traumaCenterCriteria, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(traumaCenterCriteria, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(traumaCenterCriteria, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTraumaCenterCriteria_validateTraumaCenterCriteriaTemplateId(
-				traumaCenterCriteria, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTraumaCenterCriteria_validateTraumaCenterCriteriaMoodCode(
-				traumaCenterCriteria, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTraumaCenterCriteria_validateTraumaCenterCriteriaCode(
-				traumaCenterCriteria, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTraumaCenterCriteria_validateTraumaCenterCriteriaValue(
-				traumaCenterCriteria, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(traumaCenterCriteria, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(traumaCenterCriteria, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(traumaCenterCriteria, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(traumaCenterCriteria, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(traumaCenterCriteria, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(traumaCenterCriteria, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(traumaCenterCriteria, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTraumaCenterCriteria_validateTraumaCenterCriteriaTemplateId(traumaCenterCriteria, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTraumaCenterCriteria_validateTraumaCenterCriteriaMoodCode(traumaCenterCriteria, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTraumaCenterCriteria_validateTraumaCenterCriteriaCode(traumaCenterCriteria, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTraumaCenterCriteria_validateTraumaCenterCriteriaValue(traumaCenterCriteria, diagnostics, context);
 		return result;
 	}
 
@@ -23535,44 +18836,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateInjuryRiskFactor(InjuryRiskFactor injuryRiskFactor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(injuryRiskFactor, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(injuryRiskFactor, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(injuryRiskFactor, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(injuryRiskFactor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(injuryRiskFactor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(injuryRiskFactor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(injuryRiskFactor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(injuryRiskFactor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(injuryRiskFactor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(injuryRiskFactor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryRiskFactor_validateInjuryRiskFactorTemplateId(
-				injuryRiskFactor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryRiskFactor_validateInjuryRiskFactorMoodCode(injuryRiskFactor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryRiskFactor_validateInjuryRiskFactorCode(injuryRiskFactor, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateInjuryRiskFactor_validateInjuryRiskFactorValue(injuryRiskFactor, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(injuryRiskFactor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(injuryRiskFactor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(injuryRiskFactor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(injuryRiskFactor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(injuryRiskFactor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(injuryRiskFactor, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(injuryRiskFactor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryRiskFactor_validateInjuryRiskFactorTemplateId(injuryRiskFactor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryRiskFactor_validateInjuryRiskFactorMoodCode(injuryRiskFactor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryRiskFactor_validateInjuryRiskFactorCode(injuryRiskFactor, diagnostics, context);
+		if (result || diagnostics != null) result &= validateInjuryRiskFactor_validateInjuryRiskFactorValue(injuryRiskFactor, diagnostics, context);
 		return result;
 	}
 
@@ -23627,45 +18903,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateVehicleImpactArea(VehicleImpactArea vehicleImpactArea, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(vehicleImpactArea, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(vehicleImpactArea, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(vehicleImpactArea, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(vehicleImpactArea, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(vehicleImpactArea, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(vehicleImpactArea, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(vehicleImpactArea, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(vehicleImpactArea, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(vehicleImpactArea, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(vehicleImpactArea, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVehicleImpactArea_validateVehicleImpactAreaTemplateId(
-				vehicleImpactArea, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVehicleImpactArea_validateVehicleImpactAreaMoodCode(
-				vehicleImpactArea, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVehicleImpactArea_validateVehicleImpactAreaCode(vehicleImpactArea, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVehicleImpactArea_validateVehicleImpactAreaValue(vehicleImpactArea, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vehicleImpactArea, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(vehicleImpactArea, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(vehicleImpactArea, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(vehicleImpactArea, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(vehicleImpactArea, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(vehicleImpactArea, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(vehicleImpactArea, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVehicleImpactArea_validateVehicleImpactAreaTemplateId(vehicleImpactArea, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVehicleImpactArea_validateVehicleImpactAreaMoodCode(vehicleImpactArea, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVehicleImpactArea_validateVehicleImpactAreaCode(vehicleImpactArea, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVehicleImpactArea_validateVehicleImpactAreaValue(vehicleImpactArea, diagnostics, context);
 		return result;
 	}
 
@@ -23720,47 +18970,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validatePatientLocationInVehicle(PatientLocationInVehicle patientLocationInVehicle,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(patientLocationInVehicle, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(patientLocationInVehicle, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(patientLocationInVehicle, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(patientLocationInVehicle, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(patientLocationInVehicle, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(patientLocationInVehicle, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(patientLocationInVehicle, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(patientLocationInVehicle, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(patientLocationInVehicle, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(patientLocationInVehicle, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientLocationInVehicle_validatePatientLocationInVehicleTemplateId(
-				patientLocationInVehicle, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientLocationInVehicle_validatePatientLocationInVehicleMoodCode(
-				patientLocationInVehicle, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientLocationInVehicle_validatePatientLocationInVehicleCode(
-				patientLocationInVehicle, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientLocationInVehicle_validatePatientLocationInVehicleValue(
-				patientLocationInVehicle, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(patientLocationInVehicle, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(patientLocationInVehicle, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(patientLocationInVehicle, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(patientLocationInVehicle, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(patientLocationInVehicle, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientLocationInVehicle, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientLocationInVehicle, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientLocationInVehicle_validatePatientLocationInVehicleTemplateId(patientLocationInVehicle, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientLocationInVehicle_validatePatientLocationInVehicleMoodCode(patientLocationInVehicle, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientLocationInVehicle_validatePatientLocationInVehicleCode(patientLocationInVehicle, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientLocationInVehicle_validatePatientLocationInVehicleValue(patientLocationInVehicle, diagnostics, context);
 		return result;
 	}
 
@@ -23816,47 +19038,19 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateVehicleOccupantSafetyEquipment(
 			VehicleOccupantSafetyEquipment vehicleOccupantSafetyEquipment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(vehicleOccupantSafetyEquipment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(vehicleOccupantSafetyEquipment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(vehicleOccupantSafetyEquipment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVehicleOccupantSafetyEquipment_validateVehicleOccupantSafetyEquipmentTemplateId(
-				vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVehicleOccupantSafetyEquipment_validateVehicleOccupantSafetyEquipmentMoodCode(
-				vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVehicleOccupantSafetyEquipment_validateVehicleOccupantSafetyEquipmentCode(
-				vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateVehicleOccupantSafetyEquipment_validateVehicleOccupantSafetyEquipmentValue(
-				vehicleOccupantSafetyEquipment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(vehicleOccupantSafetyEquipment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(vehicleOccupantSafetyEquipment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(vehicleOccupantSafetyEquipment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(vehicleOccupantSafetyEquipment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(vehicleOccupantSafetyEquipment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(vehicleOccupantSafetyEquipment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(vehicleOccupantSafetyEquipment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVehicleOccupantSafetyEquipment_validateVehicleOccupantSafetyEquipmentTemplateId(vehicleOccupantSafetyEquipment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVehicleOccupantSafetyEquipment_validateVehicleOccupantSafetyEquipmentMoodCode(vehicleOccupantSafetyEquipment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVehicleOccupantSafetyEquipment_validateVehicleOccupantSafetyEquipmentCode(vehicleOccupantSafetyEquipment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateVehicleOccupantSafetyEquipment_validateVehicleOccupantSafetyEquipmentValue(vehicleOccupantSafetyEquipment, diagnostics, context);
 		return result;
 	}
 
@@ -23915,51 +19109,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateAirbagDeploymentStatus(AirbagDeploymentStatus airbagDeploymentStatus,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(airbagDeploymentStatus, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(airbagDeploymentStatus, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(airbagDeploymentStatus, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirbagDeploymentStatus_validateAirbagDeploymentStatusTemplateId(
-				airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirbagDeploymentStatus_validateAirbagDeploymentStatusMoodCode(
-				airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirbagDeploymentStatus_validateAirbagDeploymentStatusCode(
-				airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirbagDeploymentStatus_validateAirbagDeploymentStatusValue(
-				airbagDeploymentStatus, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirbagDeploymentStatus_validateAirbagDeploymentStatusValueP(
-				airbagDeploymentStatus, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirbagDeploymentStatus_validateAirbagDeploymentStatusTemplateId(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirbagDeploymentStatus_validateAirbagDeploymentStatusMoodCode(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirbagDeploymentStatus_validateAirbagDeploymentStatusCode(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirbagDeploymentStatus_validateAirbagDeploymentStatusValue(airbagDeploymentStatus, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirbagDeploymentStatus_validateAirbagDeploymentStatusValueP(airbagDeploymentStatus, diagnostics, context);
 		return result;
 	}
 
@@ -24025,43 +19188,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateHeightOfFall(HeightOfFall heightOfFall, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(heightOfFall, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(heightOfFall, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(heightOfFall, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(heightOfFall, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(heightOfFall, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(heightOfFall, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(heightOfFall, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(heightOfFall, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(heightOfFall, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(heightOfFall, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeightOfFall_validateHeightOfFallTemplateId(heightOfFall, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeightOfFall_validateHeightOfFallMoodCode(heightOfFall, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeightOfFall_validateHeightOfFallCode(heightOfFall, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeightOfFall_validateHeightOfFallValue(heightOfFall, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(heightOfFall, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(heightOfFall, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(heightOfFall, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(heightOfFall, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(heightOfFall, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(heightOfFall, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(heightOfFall, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeightOfFall_validateHeightOfFallTemplateId(heightOfFall, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeightOfFall_validateHeightOfFallMoodCode(heightOfFall, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeightOfFall_validateHeightOfFallCode(heightOfFall, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeightOfFall_validateHeightOfFallValue(heightOfFall, diagnostics, context);
 		return result;
 	}
 
@@ -24116,43 +19255,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDisasterType(DisasterType disasterType, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(disasterType, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(disasterType, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(disasterType, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(disasterType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(disasterType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(disasterType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(disasterType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(disasterType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(disasterType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(disasterType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDisasterType_validateDisasterTypeTemplateId(disasterType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDisasterType_validateDisasterTypeMoodCode(disasterType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDisasterType_validateDisasterTypeCode(disasterType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDisasterType_validateDisasterTypeValue(disasterType, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(disasterType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(disasterType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(disasterType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(disasterType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(disasterType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(disasterType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(disasterType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDisasterType_validateDisasterTypeTemplateId(disasterType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDisasterType_validateDisasterTypeMoodCode(disasterType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDisasterType_validateDisasterTypeCode(disasterType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDisasterType_validateDisasterTypeValue(disasterType, diagnostics, context);
 		return result;
 	}
 
@@ -24207,58 +19322,23 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSBillingSection(EMSBillingSection emsBillingSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsBillingSection, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsBillingSection, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsBillingSection, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateClassCode(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= cdaValidator.validateSection_validateMoodCode(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSBillingSection_validateEMSBillingSectionTemplateId(
-				emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSBillingSection_validateEMSBillingSectionCode(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSBillingSection_validateEMSBillingSectionTitle(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSBillingSection_validateEMSBillingSectionText(emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSBillingSection_validateEMSBillingSectionBillingCondition(
-				emsBillingSection, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSBillingSection_validateEMSBillingSectionLevelOfServiceObservation(
-				emsBillingSection, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateClassCode(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= cdaValidator.validateSection_validateMoodCode(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSBillingSection_validateEMSBillingSectionTemplateId(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSBillingSection_validateEMSBillingSectionCode(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSBillingSection_validateEMSBillingSectionTitle(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSBillingSection_validateEMSBillingSectionText(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSBillingSection_validateEMSBillingSectionBillingCondition(emsBillingSection, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSBillingSection_validateEMSBillingSectionLevelOfServiceObservation(emsBillingSection, diagnostics, context);
 		return result;
 	}
 
@@ -24335,50 +19415,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateBillingCondition(BillingCondition billingCondition, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(billingCondition, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(billingCondition, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(billingCondition, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBillingCondition_validateBillingConditionTemplateId(
-				billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBillingCondition_validateBillingConditionCodeP(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBillingCondition_validateBillingConditionCode(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBillingCondition_validateBillingConditionValue(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBillingCondition_validateBillingConditionValueP(billingCondition, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBillingCondition_validateBillingConditionMoodCode(billingCondition, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBillingCondition_validateBillingConditionTemplateId(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBillingCondition_validateBillingConditionCodeP(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBillingCondition_validateBillingConditionCode(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBillingCondition_validateBillingConditionValue(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBillingCondition_validateBillingConditionValueP(billingCondition, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBillingCondition_validateBillingConditionMoodCode(billingCondition, diagnostics, context);
 		return result;
 	}
 
@@ -24455,55 +19506,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateLevelOfServiceObservation(LevelOfServiceObservation levelOfServiceObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(levelOfServiceObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(levelOfServiceObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(levelOfServiceObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationTemplateId(
-				levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationMoodCode(
-				levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationCodeP(
-				levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationCode(
-				levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationValue(
-				levelOfServiceObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationValueP(
-				levelOfServiceObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationTemplateId(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationMoodCode(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationCodeP(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationCode(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationValue(levelOfServiceObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLevelOfServiceObservation_validateLevelOfServiceObservationValueP(levelOfServiceObservation, diagnostics, context);
 		return result;
 	}
 
@@ -24586,37 +19603,17 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSDrugAllergy(EMSDrugAllergy emsDrugAllergy, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsDrugAllergy, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsDrugAllergy, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsDrugAllergy, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDrugAllergy_validateEMSDrugAllergyParticipant1(emsDrugAllergy, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDrugAllergy_validateEMSDrugAllergyTemplateId(emsDrugAllergy, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDrugAllergy_validateEMSDrugAllergyParticipant1(emsDrugAllergy, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDrugAllergy_validateEMSDrugAllergyTemplateId(emsDrugAllergy, diagnostics, context);
 		return result;
 	}
 
@@ -24650,48 +19647,19 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateExistenceOfDrugAllergyObservation(
 			ExistenceOfDrugAllergyObservation existenceOfDrugAllergyObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(existenceOfDrugAllergyObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(existenceOfDrugAllergyObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(existenceOfDrugAllergyObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(existenceOfDrugAllergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(existenceOfDrugAllergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				existenceOfDrugAllergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(existenceOfDrugAllergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(existenceOfDrugAllergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(existenceOfDrugAllergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(existenceOfDrugAllergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfDrugAllergyObservation_validateExistenceOfDrugAllergyObservationTemplateId(
-				existenceOfDrugAllergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfDrugAllergyObservation_validateExistenceOfDrugAllergyObservationMoodCode(
-				existenceOfDrugAllergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfDrugAllergyObservation_validateExistenceOfDrugAllergyObservationCode(
-				existenceOfDrugAllergyObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExistenceOfDrugAllergyObservation_validateExistenceOfDrugAllergyObservationValue(
-				existenceOfDrugAllergyObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(existenceOfDrugAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(existenceOfDrugAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(existenceOfDrugAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(existenceOfDrugAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(existenceOfDrugAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(existenceOfDrugAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(existenceOfDrugAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfDrugAllergyObservation_validateExistenceOfDrugAllergyObservationTemplateId(existenceOfDrugAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfDrugAllergyObservation_validateExistenceOfDrugAllergyObservationMoodCode(existenceOfDrugAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfDrugAllergyObservation_validateExistenceOfDrugAllergyObservationCode(existenceOfDrugAllergyObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExistenceOfDrugAllergyObservation_validateExistenceOfDrugAllergyObservationValue(existenceOfDrugAllergyObservation, diagnostics, context);
 		return result;
 	}
 
@@ -24704,8 +19672,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateExistenceOfDrugAllergyObservation_validateExistenceOfDrugAllergyObservationTemplateId(
 			ExistenceOfDrugAllergyObservation existenceOfDrugAllergyObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return existenceOfDrugAllergyObservation.validateExistenceOfDrugAllergyObservationTemplateId(
-			diagnostics, context);
+		return existenceOfDrugAllergyObservation.validateExistenceOfDrugAllergyObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -24752,54 +19719,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationNotAdministeredReasonObservation(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationNotAdministeredReasonObservation, diagnostics, context)) {
-			return false;
-		}
-		boolean result = validate_EveryMultiplicityConforms(
-			medicationNotAdministeredReasonObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(
-				medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationTemplateId(
-				medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationMoodCode(
-				medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationCode(
-				medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationValue(
-				medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationValueP(
-				medicationNotAdministeredReasonObservation, diagnostics, context);
-		}
+		if (!validate_NoCircularContainment(medicationNotAdministeredReasonObservation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationTemplateId(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationMoodCode(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationCode(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationValue(medicationNotAdministeredReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationValueP(medicationNotAdministeredReasonObservation, diagnostics, context);
 		return result;
 	}
 
@@ -24812,8 +19745,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationTemplateId(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationNotAdministeredReasonObservation.validateMedicationNotAdministeredReasonObservationTemplateId(
-			diagnostics, context);
+		return medicationNotAdministeredReasonObservation.validateMedicationNotAdministeredReasonObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -24825,8 +19757,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationMoodCode(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationNotAdministeredReasonObservation.validateMedicationNotAdministeredReasonObservationMoodCode(
-			diagnostics, context);
+		return medicationNotAdministeredReasonObservation.validateMedicationNotAdministeredReasonObservationMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -24838,8 +19769,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationCode(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationNotAdministeredReasonObservation.validateMedicationNotAdministeredReasonObservationCode(
-			diagnostics, context);
+		return medicationNotAdministeredReasonObservation.validateMedicationNotAdministeredReasonObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -24851,8 +19781,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationValue(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationNotAdministeredReasonObservation.validateMedicationNotAdministeredReasonObservationValue(
-			diagnostics, context);
+		return medicationNotAdministeredReasonObservation.validateMedicationNotAdministeredReasonObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -24864,8 +19793,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationNotAdministeredReasonObservation_validateMedicationNotAdministeredReasonObservationValueP(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationNotAdministeredReasonObservation.validateMedicationNotAdministeredReasonObservationValueP(
-			diagnostics, context);
+		return medicationNotAdministeredReasonObservation.validateMedicationNotAdministeredReasonObservationValueP(diagnostics, context);
 	}
 
 	/**
@@ -24875,51 +19803,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateMedicationResponseObservation(MedicationResponseObservation medicationResponseObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationResponseObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(medicationResponseObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(medicationResponseObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationResponseObservation_validateMedicationResponseObservationTemplateId(
-				medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationResponseObservation_validateMedicationResponseObservationMoodCode(
-				medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationResponseObservation_validateMedicationResponseObservationCodeP(
-				medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationResponseObservation_validateMedicationResponseObservationCode(
-				medicationResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationResponseObservation_validateMedicationResponseObservationValue(
-				medicationResponseObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationResponseObservation_validateMedicationResponseObservationTemplateId(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationResponseObservation_validateMedicationResponseObservationMoodCode(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationResponseObservation_validateMedicationResponseObservationCodeP(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationResponseObservation_validateMedicationResponseObservationCode(medicationResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationResponseObservation_validateMedicationResponseObservationValue(medicationResponseObservation, diagnostics, context);
 		return result;
 	}
 
@@ -24991,56 +19888,21 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationComplicationObservation(
 			MedicationComplicationObservation medicationComplicationObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationComplicationObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(medicationComplicationObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(medicationComplicationObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationTemplateId(
-				medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationMoodCode(
-				medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationCodeP(
-				medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationCode(
-				medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationValue(
-				medicationComplicationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationValueP(
-				medicationComplicationObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationTemplateId(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationMoodCode(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationCodeP(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationCode(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationValue(medicationComplicationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationComplicationObservation_validateMedicationComplicationObservationValueP(medicationComplicationObservation, diagnostics, context);
 		return result;
 	}
 
@@ -25053,8 +19915,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationComplicationObservation_validateMedicationComplicationObservationTemplateId(
 			MedicationComplicationObservation medicationComplicationObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return medicationComplicationObservation.validateMedicationComplicationObservationTemplateId(
-			diagnostics, context);
+		return medicationComplicationObservation.validateMedicationComplicationObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -25125,53 +19986,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationPriorAdministrationObservation(
 			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(medicationPriorAdministrationObservation, diagnostics, context)) {
-			return false;
-		}
-		boolean result = validate_EveryMultiplicityConforms(
-			medicationPriorAdministrationObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationTemplateId(
-				medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationMoodCode(
-				medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationCodeP(
-				medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationCode(
-				medicationPriorAdministrationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationValue(
-				medicationPriorAdministrationObservation, diagnostics, context);
-		}
+		if (!validate_NoCircularContainment(medicationPriorAdministrationObservation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationTemplateId(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationMoodCode(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationCodeP(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationCode(medicationPriorAdministrationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationValue(medicationPriorAdministrationObservation, diagnostics, context);
 		return result;
 	}
 
@@ -25184,8 +20012,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationTemplateId(
 			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationPriorAdministrationObservation.validateMedicationPriorAdministrationObservationTemplateId(
-			diagnostics, context);
+		return medicationPriorAdministrationObservation.validateMedicationPriorAdministrationObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -25197,8 +20024,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationMoodCode(
 			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationPriorAdministrationObservation.validateMedicationPriorAdministrationObservationMoodCode(
-			diagnostics, context);
+		return medicationPriorAdministrationObservation.validateMedicationPriorAdministrationObservationMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -25210,8 +20036,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationCodeP(
 			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationPriorAdministrationObservation.validateMedicationPriorAdministrationObservationCodeP(
-			diagnostics, context);
+		return medicationPriorAdministrationObservation.validateMedicationPriorAdministrationObservationCodeP(diagnostics, context);
 	}
 
 	/**
@@ -25223,8 +20048,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationCode(
 			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationPriorAdministrationObservation.validateMedicationPriorAdministrationObservationCode(
-			diagnostics, context);
+		return medicationPriorAdministrationObservation.validateMedicationPriorAdministrationObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -25236,8 +20060,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateMedicationPriorAdministrationObservation_validateMedicationPriorAdministrationObservationValue(
 			MedicationPriorAdministrationObservation medicationPriorAdministrationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return medicationPriorAdministrationObservation.validateMedicationPriorAdministrationObservationValue(
-			diagnostics, context);
+		return medicationPriorAdministrationObservation.validateMedicationPriorAdministrationObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -25247,45 +20070,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validatePatientBodyWeight(PatientBodyWeight patientBodyWeight, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(patientBodyWeight, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(patientBodyWeight, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(patientBodyWeight, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(patientBodyWeight, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(patientBodyWeight, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(patientBodyWeight, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(patientBodyWeight, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(patientBodyWeight, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(patientBodyWeight, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(patientBodyWeight, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientBodyWeight_validatePatientBodyWeightTemplateId(
-				patientBodyWeight, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientBodyWeight_validatePatientBodyWeightMoodCode(
-				patientBodyWeight, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientBodyWeight_validatePatientBodyWeightCode(patientBodyWeight, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePatientBodyWeight_validatePatientBodyWeightValue(patientBodyWeight, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(patientBodyWeight, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(patientBodyWeight, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(patientBodyWeight, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(patientBodyWeight, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(patientBodyWeight, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(patientBodyWeight, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(patientBodyWeight, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientBodyWeight_validatePatientBodyWeightTemplateId(patientBodyWeight, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientBodyWeight_validatePatientBodyWeightMoodCode(patientBodyWeight, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientBodyWeight_validatePatientBodyWeightCode(patientBodyWeight, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePatientBodyWeight_validatePatientBodyWeightValue(patientBodyWeight, diagnostics, context);
 		return result;
 	}
 
@@ -25341,56 +20138,21 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateLengthBasedPatientBodyWeightClass(
 			LengthBasedPatientBodyWeightClass lengthBasedPatientBodyWeightClass, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(lengthBasedPatientBodyWeightClass, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(lengthBasedPatientBodyWeightClass, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(lengthBasedPatientBodyWeightClass, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassTemplateId(
-				lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassMoodCode(
-				lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassCodeP(
-				lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassCode(
-				lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassEffectiveTime(
-				lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassValue(
-				lengthBasedPatientBodyWeightClass, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassTemplateId(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassMoodCode(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassCodeP(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassCode(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassEffectiveTime(lengthBasedPatientBodyWeightClass, diagnostics, context);
+		if (result || diagnostics != null) result &= validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassValue(lengthBasedPatientBodyWeightClass, diagnostics, context);
 		return result;
 	}
 
@@ -25403,8 +20165,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassTemplateId(
 			LengthBasedPatientBodyWeightClass lengthBasedPatientBodyWeightClass, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return lengthBasedPatientBodyWeightClass.validateLengthBasedPatientBodyWeightClassTemplateId(
-			diagnostics, context);
+		return lengthBasedPatientBodyWeightClass.validateLengthBasedPatientBodyWeightClassTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -25452,8 +20213,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateLengthBasedPatientBodyWeightClass_validateLengthBasedPatientBodyWeightClassEffectiveTime(
 			LengthBasedPatientBodyWeightClass lengthBasedPatientBodyWeightClass, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return lengthBasedPatientBodyWeightClass.validateLengthBasedPatientBodyWeightClassEffectiveTime(
-			diagnostics, context);
+		return lengthBasedPatientBodyWeightClass.validateLengthBasedPatientBodyWeightClassEffectiveTime(diagnostics, context);
 	}
 
 	/**
@@ -25475,52 +20235,22 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateFaceAssessment(FaceAssessment faceAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(faceAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(faceAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(faceAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFaceAssessment_validateFaceAssessmentTemplateId(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFaceAssessment_validateFaceAssessmentMoodCode(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFaceAssessment_validateFaceAssessmentCodeP(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFaceAssessment_validateFaceAssessmentCode(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFaceAssessment_validateFaceAssessmentEffectiveTime(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFaceAssessment_validateFaceAssessmentValue(faceAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateFaceAssessment_validateFaceAssessmentValueP(faceAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFaceAssessment_validateFaceAssessmentTemplateId(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFaceAssessment_validateFaceAssessmentMoodCode(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFaceAssessment_validateFaceAssessmentCodeP(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFaceAssessment_validateFaceAssessmentCode(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFaceAssessment_validateFaceAssessmentEffectiveTime(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFaceAssessment_validateFaceAssessmentValue(faceAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateFaceAssessment_validateFaceAssessmentValueP(faceAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -25608,49 +20338,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateHeadAssessment(HeadAssessment headAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(headAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(headAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(headAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeadAssessment_validateHeadAssessmentTemplateId(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeadAssessment_validateHeadAssessmentMoodCode(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeadAssessment_validateHeadAssessmentCodeP(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeadAssessment_validateHeadAssessmentCode(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeadAssessment_validateHeadAssessmentEffectiveTime(headAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeadAssessment_validateHeadAssessmentValue(headAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeadAssessment_validateHeadAssessmentTemplateId(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeadAssessment_validateHeadAssessmentMoodCode(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeadAssessment_validateHeadAssessmentCodeP(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeadAssessment_validateHeadAssessmentCode(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeadAssessment_validateHeadAssessmentEffectiveTime(headAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeadAssessment_validateHeadAssessmentValue(headAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -25727,46 +20429,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateNeckAssessment(NeckAssessment neckAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(neckAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(neckAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(neckAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeckAssessment_validateNeckAssessmentTemplateId(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeckAssessment_validateNeckAssessmentMoodCode(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeckAssessment_validateNeckAssessmentCode(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeckAssessment_validateNeckAssessmentEffectiveTime(neckAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeckAssessment_validateNeckAssessmentValue(neckAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeckAssessment_validateNeckAssessmentTemplateId(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeckAssessment_validateNeckAssessmentMoodCode(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeckAssessment_validateNeckAssessmentCode(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeckAssessment_validateNeckAssessmentEffectiveTime(neckAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeckAssessment_validateNeckAssessmentValue(neckAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -25832,51 +20508,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateChestAndLungsAssessment(ChestAndLungsAssessment chestAndLungsAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(chestAndLungsAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(chestAndLungsAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(chestAndLungsAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateChestAndLungsAssessment_validateChestAndLungsAssessmentTemplateId(
-				chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateChestAndLungsAssessment_validateChestAndLungsAssessmentMoodCode(
-				chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateChestAndLungsAssessment_validateChestAndLungsAssessmentCode(
-				chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateChestAndLungsAssessment_validateChestAndLungsAssessmentEffectiveTime(
-				chestAndLungsAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateChestAndLungsAssessment_validateChestAndLungsAssessmentValue(
-				chestAndLungsAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateChestAndLungsAssessment_validateChestAndLungsAssessmentTemplateId(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateChestAndLungsAssessment_validateChestAndLungsAssessmentMoodCode(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateChestAndLungsAssessment_validateChestAndLungsAssessmentCode(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateChestAndLungsAssessment_validateChestAndLungsAssessmentEffectiveTime(chestAndLungsAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateChestAndLungsAssessment_validateChestAndLungsAssessmentValue(chestAndLungsAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -25942,53 +20587,22 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateHeartAssessment(HeartAssessment heartAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(heartAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(heartAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(heartAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartAssessment_validateHeartAssessmentTemplateId(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartAssessment_validateHeartAssessmentMoodCode(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartAssessment_validateHeartAssessmentCodeP(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartAssessment_validateHeartAssessmentCode(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartAssessment_validateHeartAssessmentEffectiveTime(
-				heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartAssessment_validateHeartAssessmentValue(heartAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartAssessment_validateHeartAssessmentValueP(heartAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartAssessment_validateHeartAssessmentTemplateId(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartAssessment_validateHeartAssessmentMoodCode(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartAssessment_validateHeartAssessmentCodeP(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartAssessment_validateHeartAssessmentCode(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartAssessment_validateHeartAssessmentEffectiveTime(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartAssessment_validateHeartAssessmentValue(heartAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartAssessment_validateHeartAssessmentValueP(heartAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -26076,53 +20690,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateAbdomenAssessment(AbdomenAssessment abdomenAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(abdomenAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(abdomenAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(abdomenAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbdomenAssessment_validateAbdomenAssessmentTemplateId(
-				abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbdomenAssessment_validateAbdomenAssessmentMoodCode(
-				abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbdomenAssessment_validateAbdomenAssessmentCode(abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbdomenAssessment_validateAbdomenAssessmentEffectiveTime(
-				abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbdomenAssessment_validateAbdomenAssessmentValue(abdomenAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbdomenAssessment_validateAbdomenAssessmentTargetSiteCode(
-				abdomenAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbdomenAssessment_validateAbdomenAssessmentTemplateId(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbdomenAssessment_validateAbdomenAssessmentMoodCode(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbdomenAssessment_validateAbdomenAssessmentCode(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbdomenAssessment_validateAbdomenAssessmentEffectiveTime(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbdomenAssessment_validateAbdomenAssessmentValue(abdomenAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbdomenAssessment_validateAbdomenAssessmentTargetSiteCode(abdomenAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -26200,56 +20782,21 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePelvicAndGenitourinaryAssessment(
 			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(pelvicAndGenitourinaryAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(pelvicAndGenitourinaryAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(pelvicAndGenitourinaryAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentTemplateId(
-				pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentMoodCode(
-				pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentCode(
-				pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentEffectiveTime(
-				pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentValue(
-				pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentValueP(
-				pelvicAndGenitourinaryAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentTemplateId(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentMoodCode(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentCode(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentEffectiveTime(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentValue(pelvicAndGenitourinaryAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentValueP(pelvicAndGenitourinaryAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -26298,8 +20845,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validatePelvicAndGenitourinaryAssessment_validatePelvicAndGenitourinaryAssessmentEffectiveTime(
 			PelvicAndGenitourinaryAssessment pelvicAndGenitourinaryAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return pelvicAndGenitourinaryAssessment.validatePelvicAndGenitourinaryAssessmentEffectiveTime(
-			diagnostics, context);
+		return pelvicAndGenitourinaryAssessment.validatePelvicAndGenitourinaryAssessmentEffectiveTime(diagnostics, context);
 	}
 
 	/**
@@ -26333,67 +20879,24 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateBackAndSpineAssessment(BackAndSpineAssessment backAndSpineAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(backAndSpineAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(backAndSpineAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(backAndSpineAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentTemplateId(
-				backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentMoodCode(
-				backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentCodeP(
-				backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentCode(
-				backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentEffectiveTime(
-				backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentValue(
-				backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentValueP(
-				backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentTargetSiteCode(
-				backAndSpineAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentTargetSiteCodeP(
-				backAndSpineAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentTemplateId(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentMoodCode(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentCodeP(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentCode(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentEffectiveTime(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentValue(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentValueP(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentTargetSiteCode(backAndSpineAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBackAndSpineAssessment_validateBackAndSpineAssessmentTargetSiteCodeP(backAndSpineAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -26503,63 +21006,23 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateExtremitiesAssessment(ExtremitiesAssessment extremitiesAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(extremitiesAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(extremitiesAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(extremitiesAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExtremitiesAssessment_validateExtremitiesAssessmentTemplateId(
-				extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExtremitiesAssessment_validateExtremitiesAssessmentMoodCode(
-				extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExtremitiesAssessment_validateExtremitiesAssessmentCodeP(
-				extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExtremitiesAssessment_validateExtremitiesAssessmentCode(
-				extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExtremitiesAssessment_validateExtremitiesAssessmentEffectiveTime(
-				extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExtremitiesAssessment_validateExtremitiesAssessmentValue(
-				extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExtremitiesAssessment_validateExtremitiesAssessmentTargetSiteCode(
-				extremitiesAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateExtremitiesAssessment_validateExtremitiesAssessmentTargetSiteCodeP(
-				extremitiesAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExtremitiesAssessment_validateExtremitiesAssessmentTemplateId(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExtremitiesAssessment_validateExtremitiesAssessmentMoodCode(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExtremitiesAssessment_validateExtremitiesAssessmentCodeP(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExtremitiesAssessment_validateExtremitiesAssessmentCode(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExtremitiesAssessment_validateExtremitiesAssessmentEffectiveTime(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExtremitiesAssessment_validateExtremitiesAssessmentValue(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExtremitiesAssessment_validateExtremitiesAssessmentTargetSiteCode(extremitiesAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateExtremitiesAssessment_validateExtremitiesAssessmentTargetSiteCodeP(extremitiesAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -26658,58 +21121,24 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEyeAssessment(EyeAssessment eyeAssessment, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(eyeAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(eyeAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(eyeAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEyeAssessment_validateEyeAssessmentTemplateId(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEyeAssessment_validateEyeAssessmentMoodCode(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEyeAssessment_validateEyeAssessmentCodeP(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEyeAssessment_validateEyeAssessmentCode(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEyeAssessment_validateEyeAssessmentEffectiveTime(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEyeAssessment_validateEyeAssessmentValue(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEyeAssessment_validateEyeAssessmentValueP(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEyeAssessment_validateEyeAssessmentTargetSiteCode(eyeAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEyeAssessment_validateEyeAssessmentTargetSiteCodeP(eyeAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEyeAssessment_validateEyeAssessmentTemplateId(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEyeAssessment_validateEyeAssessmentMoodCode(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEyeAssessment_validateEyeAssessmentCodeP(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEyeAssessment_validateEyeAssessmentCode(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEyeAssessment_validateEyeAssessmentEffectiveTime(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEyeAssessment_validateEyeAssessmentValue(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEyeAssessment_validateEyeAssessmentValueP(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEyeAssessment_validateEyeAssessmentTargetSiteCode(eyeAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEyeAssessment_validateEyeAssessmentTargetSiteCodeP(eyeAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -26819,51 +21248,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateMentalStatusAssessment(MentalStatusAssessment mentalStatusAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(mentalStatusAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(mentalStatusAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(mentalStatusAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMentalStatusAssessment_validateMentalStatusAssessmentTemplateId(
-				mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMentalStatusAssessment_validateMentalStatusAssessmentMoodCode(
-				mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMentalStatusAssessment_validateMentalStatusAssessmentCodeP(
-				mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMentalStatusAssessment_validateMentalStatusAssessmentCode(
-				mentalStatusAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateMentalStatusAssessment_validateMentalStatusAssessmentValue(
-				mentalStatusAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMentalStatusAssessment_validateMentalStatusAssessmentTemplateId(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMentalStatusAssessment_validateMentalStatusAssessmentMoodCode(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMentalStatusAssessment_validateMentalStatusAssessmentCodeP(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMentalStatusAssessment_validateMentalStatusAssessmentCode(mentalStatusAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateMentalStatusAssessment_validateMentalStatusAssessmentValue(mentalStatusAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -26929,47 +21327,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateCardiacArrestWithTiming(CardiacArrestWithTiming cardiacArrestWithTiming,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(cardiacArrestWithTiming, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(cardiacArrestWithTiming, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(cardiacArrestWithTiming, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(cardiacArrestWithTiming, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(cardiacArrestWithTiming, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(cardiacArrestWithTiming, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(cardiacArrestWithTiming, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(cardiacArrestWithTiming, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(cardiacArrestWithTiming, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(cardiacArrestWithTiming, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrestWithTiming_validateCardiacArrestWithTimingTemplateId(
-				cardiacArrestWithTiming, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrestWithTiming_validateCardiacArrestWithTimingMoodCode(
-				cardiacArrestWithTiming, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrestWithTiming_validateCardiacArrestWithTimingCode(
-				cardiacArrestWithTiming, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrestWithTiming_validateCardiacArrestWithTimingValue(
-				cardiacArrestWithTiming, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(cardiacArrestWithTiming, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(cardiacArrestWithTiming, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(cardiacArrestWithTiming, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(cardiacArrestWithTiming, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(cardiacArrestWithTiming, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(cardiacArrestWithTiming, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(cardiacArrestWithTiming, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrestWithTiming_validateCardiacArrestWithTimingTemplateId(cardiacArrestWithTiming, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrestWithTiming_validateCardiacArrestWithTimingMoodCode(cardiacArrestWithTiming, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrestWithTiming_validateCardiacArrestWithTimingCode(cardiacArrestWithTiming, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrestWithTiming_validateCardiacArrestWithTimingValue(cardiacArrestWithTiming, diagnostics, context);
 		return result;
 	}
 
@@ -27024,47 +21394,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateCardiacArrestCause(CardiacArrestCause cardiacArrestCause, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(cardiacArrestCause, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(cardiacArrestCause, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(cardiacArrestCause, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(cardiacArrestCause, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(cardiacArrestCause, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(cardiacArrestCause, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(cardiacArrestCause, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(cardiacArrestCause, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(cardiacArrestCause, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(cardiacArrestCause, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrestCause_validateCardiacArrestCauseTemplateId(
-				cardiacArrestCause, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrestCause_validateCardiacArrestCauseMoodCode(
-				cardiacArrestCause, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrestCause_validateCardiacArrestCauseCode(
-				cardiacArrestCause, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateCardiacArrestCause_validateCardiacArrestCauseValue(
-				cardiacArrestCause, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(cardiacArrestCause, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(cardiacArrestCause, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(cardiacArrestCause, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(cardiacArrestCause, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(cardiacArrestCause, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(cardiacArrestCause, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(cardiacArrestCause, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrestCause_validateCardiacArrestCauseTemplateId(cardiacArrestCause, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrestCause_validateCardiacArrestCauseMoodCode(cardiacArrestCause, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrestCause_validateCardiacArrestCauseCode(cardiacArrestCause, diagnostics, context);
+		if (result || diagnostics != null) result &= validateCardiacArrestCause_validateCardiacArrestCauseValue(cardiacArrestCause, diagnostics, context);
 		return result;
 	}
 
@@ -27118,46 +21460,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validatePriorCPR(PriorCPR priorCPR, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(priorCPR, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(priorCPR, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(priorCPR, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorCPR_validatePriorCPRProviderParticipation(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorCPR_validatePriorCPRTemplateId(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorCPR_validatePriorCPRMoodCode(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorCPR_validatePriorCPRCode(priorCPR, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorCPR_validatePriorCPRValue(priorCPR, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorCPR_validatePriorCPRProviderParticipation(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorCPR_validatePriorCPRTemplateId(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorCPR_validatePriorCPRMoodCode(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorCPR_validatePriorCPRCode(priorCPR, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorCPR_validatePriorCPRValue(priorCPR, diagnostics, context);
 		return result;
 	}
 
@@ -27222,47 +21538,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validatePriorAEDUse(PriorAEDUse priorAEDUse, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(priorAEDUse, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(priorAEDUse, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(priorAEDUse, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorAEDUse_validatePriorAEDUsePriorAEDProviderParticipation(
-				priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorAEDUse_validatePriorAEDUseTemplateId(priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorAEDUse_validatePriorAEDUseMoodCode(priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorAEDUse_validatePriorAEDUseCode(priorAEDUse, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validatePriorAEDUse_validatePriorAEDUseValue(priorAEDUse, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorAEDUse_validatePriorAEDUsePriorAEDProviderParticipation(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorAEDUse_validatePriorAEDUseTemplateId(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorAEDUse_validatePriorAEDUseMoodCode(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorAEDUse_validatePriorAEDUseCode(priorAEDUse, diagnostics, context);
+		if (result || diagnostics != null) result &= validatePriorAEDUse_validatePriorAEDUseValue(priorAEDUse, diagnostics, context);
 		return result;
 	}
 
@@ -27328,43 +21617,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateArrestRhythm(ArrestRhythm arrestRhythm, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(arrestRhythm, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(arrestRhythm, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(arrestRhythm, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(arrestRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(arrestRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(arrestRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(arrestRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(arrestRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(arrestRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(arrestRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateArrestRhythm_validateArrestRhythmTemplateId(arrestRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateArrestRhythm_validateArrestRhythmMoodCode(arrestRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateArrestRhythm_validateArrestRhythmCode(arrestRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateArrestRhythm_validateArrestRhythmValue(arrestRhythm, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(arrestRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(arrestRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(arrestRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(arrestRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(arrestRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(arrestRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(arrestRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateArrestRhythm_validateArrestRhythmTemplateId(arrestRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateArrestRhythm_validateArrestRhythmMoodCode(arrestRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateArrestRhythm_validateArrestRhythmCode(arrestRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateArrestRhythm_validateArrestRhythmValue(arrestRhythm, diagnostics, context);
 		return result;
 	}
 
@@ -27420,51 +21685,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReturnOfSpontaneousCirculation(
 			ReturnOfSpontaneousCirculation returnOfSpontaneousCirculation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(returnOfSpontaneousCirculation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(returnOfSpontaneousCirculation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(returnOfSpontaneousCirculation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReturnOfSpontaneousCirculation_validateReturnOfSpontaneousCirculationTemplateId(
-				returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReturnOfSpontaneousCirculation_validateReturnOfSpontaneousCirculationMoodCode(
-				returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReturnOfSpontaneousCirculation_validateReturnOfSpontaneousCirculationCode(
-				returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReturnOfSpontaneousCirculation_validateReturnOfSpontaneousCirculationValue(
-				returnOfSpontaneousCirculation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReturnOfSpontaneousCirculation_validateReturnOfSpontaneousCirculationValueP(
-				returnOfSpontaneousCirculation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReturnOfSpontaneousCirculation_validateReturnOfSpontaneousCirculationTemplateId(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReturnOfSpontaneousCirculation_validateReturnOfSpontaneousCirculationMoodCode(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReturnOfSpontaneousCirculation_validateReturnOfSpontaneousCirculationCode(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReturnOfSpontaneousCirculation_validateReturnOfSpontaneousCirculationValue(returnOfSpontaneousCirculation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReturnOfSpontaneousCirculation_validateReturnOfSpontaneousCirculationValueP(returnOfSpontaneousCirculation, diagnostics, context);
 		return result;
 	}
 
@@ -27535,45 +21769,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDestinationRhythm(DestinationRhythm destinationRhythm, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(destinationRhythm, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(destinationRhythm, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(destinationRhythm, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(destinationRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(destinationRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(destinationRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(destinationRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(destinationRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(destinationRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(destinationRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDestinationRhythm_validateDestinationRhythmTemplateId(
-				destinationRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDestinationRhythm_validateDestinationRhythmMoodCode(
-				destinationRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDestinationRhythm_validateDestinationRhythmCode(destinationRhythm, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDestinationRhythm_validateDestinationRhythmValue(destinationRhythm, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(destinationRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(destinationRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(destinationRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(destinationRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(destinationRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(destinationRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(destinationRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDestinationRhythm_validateDestinationRhythmTemplateId(destinationRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDestinationRhythm_validateDestinationRhythmMoodCode(destinationRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDestinationRhythm_validateDestinationRhythmCode(destinationRhythm, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDestinationRhythm_validateDestinationRhythmValue(destinationRhythm, diagnostics, context);
 		return result;
 	}
 
@@ -27629,56 +21837,21 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAbandonedProcedureReasonObservation(
 			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(abandonedProcedureReasonObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(abandonedProcedureReasonObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(abandonedProcedureReasonObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationTemplateId(
-				abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationMoodCode(
-				abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationCodeP(
-				abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationCode(
-				abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationValue(
-				abandonedProcedureReasonObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationValueP(
-				abandonedProcedureReasonObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationTemplateId(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationMoodCode(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationCodeP(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationCode(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationValue(abandonedProcedureReasonObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationValueP(abandonedProcedureReasonObservation, diagnostics, context);
 		return result;
 	}
 
@@ -27691,8 +21864,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationTemplateId(
 			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return abandonedProcedureReasonObservation.validateAbandonedProcedureReasonObservationTemplateId(
-			diagnostics, context);
+		return abandonedProcedureReasonObservation.validateAbandonedProcedureReasonObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -27704,8 +21876,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationMoodCode(
 			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return abandonedProcedureReasonObservation.validateAbandonedProcedureReasonObservationMoodCode(
-			diagnostics, context);
+		return abandonedProcedureReasonObservation.validateAbandonedProcedureReasonObservationMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -27717,8 +21888,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationCodeP(
 			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return abandonedProcedureReasonObservation.validateAbandonedProcedureReasonObservationCodeP(
-			diagnostics, context);
+		return abandonedProcedureReasonObservation.validateAbandonedProcedureReasonObservationCodeP(diagnostics, context);
 	}
 
 	/**
@@ -27742,8 +21912,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationValue(
 			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return abandonedProcedureReasonObservation.validateAbandonedProcedureReasonObservationValue(
-			diagnostics, context);
+		return abandonedProcedureReasonObservation.validateAbandonedProcedureReasonObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -27755,8 +21924,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateAbandonedProcedureReasonObservation_validateAbandonedProcedureReasonObservationValueP(
 			AbandonedProcedureReasonObservation abandonedProcedureReasonObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return abandonedProcedureReasonObservation.validateAbandonedProcedureReasonObservationValueP(
-			diagnostics, context);
+		return abandonedProcedureReasonObservation.validateAbandonedProcedureReasonObservationValueP(diagnostics, context);
 	}
 
 	/**
@@ -27766,51 +21934,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateProcedurePriorIndicator(ProcedurePriorIndicator procedurePriorIndicator,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(procedurePriorIndicator, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(procedurePriorIndicator, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(procedurePriorIndicator, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePriorIndicator_validateProcedurePriorIndicatorTemplateId(
-				procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePriorIndicator_validateProcedurePriorIndicatorMoodCode(
-				procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePriorIndicator_validateProcedurePriorIndicatorCodeP(
-				procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePriorIndicator_validateProcedurePriorIndicatorCode(
-				procedurePriorIndicator, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePriorIndicator_validateProcedurePriorIndicatorValue(
-				procedurePriorIndicator, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePriorIndicator_validateProcedurePriorIndicatorTemplateId(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePriorIndicator_validateProcedurePriorIndicatorMoodCode(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePriorIndicator_validateProcedurePriorIndicatorCodeP(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePriorIndicator_validateProcedurePriorIndicatorCode(procedurePriorIndicator, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePriorIndicator_validateProcedurePriorIndicatorValue(procedurePriorIndicator, diagnostics, context);
 		return result;
 	}
 
@@ -27877,52 +22014,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedureNumberOfAttemptsObservation(
 			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(procedureNumberOfAttemptsObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(procedureNumberOfAttemptsObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(procedureNumberOfAttemptsObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationTemplateId(
-				procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationMoodCode(
-				procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationCodeP(
-				procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationCode(
-				procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationValue(
-				procedureNumberOfAttemptsObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationTemplateId(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationMoodCode(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationCodeP(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationCode(procedureNumberOfAttemptsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationValue(procedureNumberOfAttemptsObservation, diagnostics, context);
 		return result;
 	}
 
@@ -27935,8 +22040,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationTemplateId(
 			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedureNumberOfAttemptsObservation.validateProcedureNumberOfAttemptsObservationTemplateId(
-			diagnostics, context);
+		return procedureNumberOfAttemptsObservation.validateProcedureNumberOfAttemptsObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -27948,8 +22052,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationMoodCode(
 			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedureNumberOfAttemptsObservation.validateProcedureNumberOfAttemptsObservationMoodCode(
-			diagnostics, context);
+		return procedureNumberOfAttemptsObservation.validateProcedureNumberOfAttemptsObservationMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -27961,8 +22064,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationCodeP(
 			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedureNumberOfAttemptsObservation.validateProcedureNumberOfAttemptsObservationCodeP(
-			diagnostics, context);
+		return procedureNumberOfAttemptsObservation.validateProcedureNumberOfAttemptsObservationCodeP(diagnostics, context);
 	}
 
 	/**
@@ -27974,8 +22076,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationCode(
 			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedureNumberOfAttemptsObservation.validateProcedureNumberOfAttemptsObservationCode(
-			diagnostics, context);
+		return procedureNumberOfAttemptsObservation.validateProcedureNumberOfAttemptsObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -27987,8 +22088,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedureNumberOfAttemptsObservation_validateProcedureNumberOfAttemptsObservationValue(
 			ProcedureNumberOfAttemptsObservation procedureNumberOfAttemptsObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedureNumberOfAttemptsObservation.validateProcedureNumberOfAttemptsObservationValue(
-			diagnostics, context);
+		return procedureNumberOfAttemptsObservation.validateProcedureNumberOfAttemptsObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -27999,51 +22099,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedureSuccessfulObservation(
 			ProcedureSuccessfulObservation procedureSuccessfulObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(procedureSuccessfulObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(procedureSuccessfulObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(procedureSuccessfulObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureSuccessfulObservation_validateProcedureSuccessfulObservationTemplateId(
-				procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureSuccessfulObservation_validateProcedureSuccessfulObservationMoodCode(
-				procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureSuccessfulObservation_validateProcedureSuccessfulObservationCodeP(
-				procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureSuccessfulObservation_validateProcedureSuccessfulObservationCode(
-				procedureSuccessfulObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureSuccessfulObservation_validateProcedureSuccessfulObservationValue(
-				procedureSuccessfulObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureSuccessfulObservation_validateProcedureSuccessfulObservationTemplateId(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureSuccessfulObservation_validateProcedureSuccessfulObservationMoodCode(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureSuccessfulObservation_validateProcedureSuccessfulObservationCodeP(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureSuccessfulObservation_validateProcedureSuccessfulObservationCode(procedureSuccessfulObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureSuccessfulObservation_validateProcedureSuccessfulObservationValue(procedureSuccessfulObservation, diagnostics, context);
 		return result;
 	}
 
@@ -28115,52 +22184,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedureComplicationsObservation(
 			ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(procedureComplicationsObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(procedureComplicationsObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(procedureComplicationsObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureComplicationsObservation_validateProcedureComplicationsObservationTemplateId(
-				procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureComplicationsObservation_validateProcedureComplicationsObservationMoodCode(
-				procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureComplicationsObservation_validateProcedureComplicationsObservationCodeP(
-				procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureComplicationsObservation_validateProcedureComplicationsObservationCode(
-				procedureComplicationsObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedureComplicationsObservation_validateProcedureComplicationsObservationValue(
-				procedureComplicationsObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureComplicationsObservation_validateProcedureComplicationsObservationTemplateId(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureComplicationsObservation_validateProcedureComplicationsObservationMoodCode(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureComplicationsObservation_validateProcedureComplicationsObservationCodeP(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureComplicationsObservation_validateProcedureComplicationsObservationCode(procedureComplicationsObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedureComplicationsObservation_validateProcedureComplicationsObservationValue(procedureComplicationsObservation, diagnostics, context);
 		return result;
 	}
 
@@ -28173,8 +22210,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedureComplicationsObservation_validateProcedureComplicationsObservationTemplateId(
 			ProcedureComplicationsObservation procedureComplicationsObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedureComplicationsObservation.validateProcedureComplicationsObservationTemplateId(
-			diagnostics, context);
+		return procedureComplicationsObservation.validateProcedureComplicationsObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -28233,56 +22269,21 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedurePatientResponseObservation(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(procedurePatientResponseObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(procedurePatientResponseObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(procedurePatientResponseObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationTemplateId(
-				procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationMoodCode(
-				procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationCodeP(
-				procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationCode(
-				procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationValue(
-				procedurePatientResponseObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationValueP(
-				procedurePatientResponseObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationTemplateId(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationMoodCode(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationCodeP(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationCode(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationValue(procedurePatientResponseObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationValueP(procedurePatientResponseObservation, diagnostics, context);
 		return result;
 	}
 
@@ -28295,8 +22296,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationTemplateId(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedurePatientResponseObservation.validateProcedurePatientResponseObservationTemplateId(
-			diagnostics, context);
+		return procedurePatientResponseObservation.validateProcedurePatientResponseObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -28308,8 +22308,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationMoodCode(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedurePatientResponseObservation.validateProcedurePatientResponseObservationMoodCode(
-			diagnostics, context);
+		return procedurePatientResponseObservation.validateProcedurePatientResponseObservationMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -28321,8 +22320,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationCodeP(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedurePatientResponseObservation.validateProcedurePatientResponseObservationCodeP(
-			diagnostics, context);
+		return procedurePatientResponseObservation.validateProcedurePatientResponseObservationCodeP(diagnostics, context);
 	}
 
 	/**
@@ -28346,8 +22344,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationValue(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedurePatientResponseObservation.validateProcedurePatientResponseObservationValue(
-			diagnostics, context);
+		return procedurePatientResponseObservation.validateProcedurePatientResponseObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -28359,8 +22356,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateProcedurePatientResponseObservation_validateProcedurePatientResponseObservationValueP(
 			ProcedurePatientResponseObservation procedurePatientResponseObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedurePatientResponseObservation.validateProcedurePatientResponseObservationValueP(
-			diagnostics, context);
+		return procedurePatientResponseObservation.validateProcedurePatientResponseObservationValueP(diagnostics, context);
 	}
 
 	/**
@@ -28370,63 +22366,23 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateAirwayConfirmationObservation(AirwayConfirmationObservation airwayConfirmationObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(airwayConfirmationObservation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(airwayConfirmationObservation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(airwayConfirmationObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationTemplateId(
-				airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationMoodCode(
-				airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationCodeP(
-				airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationCode(
-				airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationEffectiveTime(
-				airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationValue(
-				airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationMethodCode(
-				airwayConfirmationObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationMethodCodeP(
-				airwayConfirmationObservation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationTemplateId(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationMoodCode(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationCodeP(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationCode(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationEffectiveTime(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationValue(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationMethodCode(airwayConfirmationObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateAirwayConfirmationObservation_validateAirwayConfirmationObservationMethodCodeP(airwayConfirmationObservation, diagnostics, context);
 		return result;
 	}
 
@@ -28534,53 +22490,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonProcedureNotAttemptedObservation(
 			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(reasonProcedureNotAttemptedObservation, diagnostics, context)) {
-			return false;
-		}
-		boolean result = validate_EveryMultiplicityConforms(
-			reasonProcedureNotAttemptedObservation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationTemplateId(
-				reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationMoodCode(
-				reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationCode(
-				reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationValue(
-				reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationValueP(
-				reasonProcedureNotAttemptedObservation, diagnostics, context);
-		}
+		if (!validate_NoCircularContainment(reasonProcedureNotAttemptedObservation, diagnostics, context)) return false;
+		boolean result = validate_EveryMultiplicityConforms(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationTemplateId(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationMoodCode(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationCode(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationValue(reasonProcedureNotAttemptedObservation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationValueP(reasonProcedureNotAttemptedObservation, diagnostics, context);
 		return result;
 	}
 
@@ -28593,8 +22516,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationTemplateId(
 			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return reasonProcedureNotAttemptedObservation.validateReasonProcedureNotAttemptedObservationTemplateId(
-			diagnostics, context);
+		return reasonProcedureNotAttemptedObservation.validateReasonProcedureNotAttemptedObservationTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -28606,8 +22528,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationMoodCode(
 			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return reasonProcedureNotAttemptedObservation.validateReasonProcedureNotAttemptedObservationMoodCode(
-			diagnostics, context);
+		return reasonProcedureNotAttemptedObservation.validateReasonProcedureNotAttemptedObservationMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -28619,8 +22540,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationCode(
 			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return reasonProcedureNotAttemptedObservation.validateReasonProcedureNotAttemptedObservationCode(
-			diagnostics, context);
+		return reasonProcedureNotAttemptedObservation.validateReasonProcedureNotAttemptedObservationCode(diagnostics, context);
 	}
 
 	/**
@@ -28632,8 +22552,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationValue(
 			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return reasonProcedureNotAttemptedObservation.validateReasonProcedureNotAttemptedObservationValue(
-			diagnostics, context);
+		return reasonProcedureNotAttemptedObservation.validateReasonProcedureNotAttemptedObservationValue(diagnostics, context);
 	}
 
 	/**
@@ -28645,8 +22564,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateReasonProcedureNotAttemptedObservation_validateReasonProcedureNotAttemptedObservationValueP(
 			ReasonProcedureNotAttemptedObservation reasonProcedureNotAttemptedObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return reasonProcedureNotAttemptedObservation.validateReasonProcedureNotAttemptedObservationValueP(
-			diagnostics, context);
+		return reasonProcedureNotAttemptedObservation.validateReasonProcedureNotAttemptedObservationValueP(diagnostics, context);
 	}
 
 	/**
@@ -28656,49 +22574,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateComplaintType(ComplaintType complaintType, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(complaintType, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(complaintType, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(complaintType, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintType_validateComplaintTypeTemplateId(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintType_validateComplaintTypeMoodCode(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintType_validateComplaintTypeCodeP(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintType_validateComplaintTypeCode(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintType_validateComplaintTypeValue(complaintType, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintType_validateComplaintTypeValueP(complaintType, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintType_validateComplaintTypeTemplateId(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintType_validateComplaintTypeMoodCode(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintType_validateComplaintTypeCodeP(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintType_validateComplaintTypeCode(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintType_validateComplaintTypeValue(complaintType, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintType_validateComplaintTypeValueP(complaintType, diagnostics, context);
 		return result;
 	}
 
@@ -28775,48 +22665,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateComplaintDuration(ComplaintDuration complaintDuration, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(complaintDuration, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(complaintDuration, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(complaintDuration, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintDuration_validateComplaintDurationTemplateId(
-				complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintDuration_validateComplaintDurationMoodCode(
-				complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintDuration_validateComplaintDurationCodeP(complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintDuration_validateComplaintDurationCode(complaintDuration, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintDuration_validateComplaintDurationValue(complaintDuration, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintDuration_validateComplaintDurationTemplateId(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintDuration_validateComplaintDurationMoodCode(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintDuration_validateComplaintDurationCodeP(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintDuration_validateComplaintDurationCode(complaintDuration, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintDuration_validateComplaintDurationValue(complaintDuration, diagnostics, context);
 		return result;
 	}
 
@@ -28882,55 +22744,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateComplaintOrganSystem(ComplaintOrganSystem complaintOrganSystem, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(complaintOrganSystem, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(complaintOrganSystem, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(complaintOrganSystem, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintOrganSystem_validateComplaintOrganSystemTemplateId(
-				complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintOrganSystem_validateComplaintOrganSystemMoodCode(
-				complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintOrganSystem_validateComplaintOrganSystemCodeP(
-				complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintOrganSystem_validateComplaintOrganSystemCode(
-				complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintOrganSystem_validateComplaintOrganSystemValue(
-				complaintOrganSystem, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateComplaintOrganSystem_validateComplaintOrganSystemValueP(
-				complaintOrganSystem, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintOrganSystem_validateComplaintOrganSystemTemplateId(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintOrganSystem_validateComplaintOrganSystemMoodCode(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintOrganSystem_validateComplaintOrganSystemCodeP(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintOrganSystem_validateComplaintOrganSystemCode(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintOrganSystem_validateComplaintOrganSystemValue(complaintOrganSystem, diagnostics, context);
+		if (result || diagnostics != null) result &= validateComplaintOrganSystem_validateComplaintOrganSystemValueP(complaintOrganSystem, diagnostics, context);
 		return result;
 	}
 
@@ -29007,55 +22835,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateNeurologicalAssessment(NeurologicalAssessment neurologicalAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(neurologicalAssessment, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(neurologicalAssessment, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(neurologicalAssessment, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeurologicalAssessment_validateNeurologicalAssessmentTemplateId(
-				neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeurologicalAssessment_validateNeurologicalAssessmentMoodCode(
-				neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeurologicalAssessment_validateNeurologicalAssessmentCodeP(
-				neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeurologicalAssessment_validateNeurologicalAssessmentCode(
-				neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeurologicalAssessment_validateNeurologicalAssessmentValue(
-				neurologicalAssessment, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNeurologicalAssessment_validateNeurologicalAssessmentValueP(
-				neurologicalAssessment, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeurologicalAssessment_validateNeurologicalAssessmentTemplateId(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeurologicalAssessment_validateNeurologicalAssessmentMoodCode(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeurologicalAssessment_validateNeurologicalAssessmentCodeP(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeurologicalAssessment_validateNeurologicalAssessmentCode(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeurologicalAssessment_validateNeurologicalAssessmentValue(neurologicalAssessment, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNeurologicalAssessment_validateNeurologicalAssessmentValueP(neurologicalAssessment, diagnostics, context);
 		return result;
 	}
 
@@ -29132,111 +22926,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateSystolicBloodPressure(SystolicBloodPressure systolicBloodPressure,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(systolicBloodPressure, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(systolicBloodPressure, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(systolicBloodPressure, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTextReference(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationReferenceValue(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTextReferenceValue(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSystolicBloodPressure_validateVitalSignObservationTemplateId(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationClassCode(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationMoodCode(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationId(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationCodeP(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationCode(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationStatusCode(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSystolicBloodPressure_validateVitalSignObservationEffectiveTime(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationValue(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationInterpretationCode(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationMethodCode(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTargetSiteCode(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationText(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationAuthor(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSystolicBloodPressure_validateSystolicBloodPressureMoodCode(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSystolicBloodPressure_validateSystolicBloodPressureCode(
-				systolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSystolicBloodPressure_validateSystolicBloodPressureValue(
-				systolicBloodPressure, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSystolicBloodPressure_validateVitalSignObservationTemplateId(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSystolicBloodPressure_validateSystolicBloodPressureMoodCode(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSystolicBloodPressure_validateSystolicBloodPressureCode(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSystolicBloodPressure_validateVitalSignObservationEffectiveTime(systolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSystolicBloodPressure_validateSystolicBloodPressureValue(systolicBloodPressure, diagnostics, context);
 		return result;
 	}
 
@@ -29302,115 +23005,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDiastolicBloodPressure(DiastolicBloodPressure diastolicBloodPressure,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(diastolicBloodPressure, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(diastolicBloodPressure, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(diastolicBloodPressure, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTextReference(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationReferenceValue(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTextReferenceValue(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDiastolicBloodPressure_validateVitalSignObservationTemplateId(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationClassCode(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationMoodCode(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationId(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationCodeP(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationCode(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationStatusCode(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationEffectiveTime(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationValue(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationInterpretationCode(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationMethodCode(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTargetSiteCode(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationText(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationAuthor(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDiastolicBloodPressure_validateDiastolicBloodPressureMoodCode(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDiastolicBloodPressure_validateDiastolicBloodPressureCode(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDiastolicBloodPressure_validateDiastolicBloodPressureEffectiveTime(
-				diastolicBloodPressure, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDiastolicBloodPressure_validateDiastolicBloodPressureValue(
-				diastolicBloodPressure, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDiastolicBloodPressure_validateVitalSignObservationTemplateId(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDiastolicBloodPressure_validateDiastolicBloodPressureMoodCode(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDiastolicBloodPressure_validateDiastolicBloodPressureCode(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDiastolicBloodPressure_validateDiastolicBloodPressureEffectiveTime(diastolicBloodPressure, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDiastolicBloodPressure_validateDiastolicBloodPressureValue(diastolicBloodPressure, diagnostics, context);
 		return result;
 	}
 
@@ -29475,113 +23083,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateHeartRate(HeartRate heartRate, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(heartRate, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(heartRate, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(heartRate, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTextReference(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationReferenceValue(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTextReferenceValue(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartRate_validateVitalSignObservationTemplateId(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationClassCode(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationMoodCode(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationId(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationCodeP(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationCode(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationStatusCode(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationEffectiveTime(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationValue(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationInterpretationCode(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationMethodCode(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTargetSiteCode(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationText(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationAuthor(
-				heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartRate_validateHeartRateMoodCode(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartRate_validateHeartRateCodeP(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartRate_validateHeartRateCode(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartRate_validateHeartRateEffectiveTime(heartRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateHeartRate_validateHeartRateValue(heartRate, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartRate_validateVitalSignObservationTemplateId(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartRate_validateHeartRateMoodCode(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartRate_validateHeartRateCodeP(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartRate_validateHeartRateCode(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartRate_validateHeartRateEffectiveTime(heartRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateHeartRate_validateHeartRateValue(heartRate, diagnostics, context);
 		return result;
 	}
 
@@ -29658,112 +23174,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateRespiratoryRate(RespiratoryRate respiratoryRate, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(respiratoryRate, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(respiratoryRate, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(respiratoryRate, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTextReference(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationReferenceValue(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTextReferenceValue(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateRespiratoryRate_validateVitalSignObservationTemplateId(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationClassCode(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationMoodCode(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationId(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationCodeP(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationCode(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationStatusCode(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationEffectiveTime(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationValue(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationInterpretationCode(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationMethodCode(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTargetSiteCode(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationText(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationAuthor(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateRespiratoryRate_validateRespiratoryRateMoodCode(respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateRespiratoryRate_validateRespiratoryRateCode(respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateRespiratoryRate_validateRespiratoryRateEffectiveTime(
-				respiratoryRate, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateRespiratoryRate_validateRespiratoryRateValue(respiratoryRate, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateRespiratoryRate_validateVitalSignObservationTemplateId(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateRespiratoryRate_validateRespiratoryRateMoodCode(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateRespiratoryRate_validateRespiratoryRateCode(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateRespiratoryRate_validateRespiratoryRateEffectiveTime(respiratoryRate, diagnostics, context);
+		if (result || diagnostics != null) result &= validateRespiratoryRate_validateRespiratoryRateValue(respiratoryRate, diagnostics, context);
 		return result;
 	}
 
@@ -29829,112 +23253,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateBodyTemperature(BodyTemperature bodyTemperature, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(bodyTemperature, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(bodyTemperature, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(bodyTemperature, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTextReference(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationReferenceValue(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTextReferenceValue(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBodyTemperature_validateVitalSignObservationTemplateId(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationClassCode(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationMoodCode(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationId(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationCodeP(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationCode(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationStatusCode(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationEffectiveTime(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationValue(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationInterpretationCode(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationMethodCode(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationTargetSiteCode(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationText(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= consolValidator.validateVitalSignObservation_validateVitalSignObservationAuthor(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBodyTemperature_validateBodyTemperatureMoodCode(bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBodyTemperature_validateBodyTemperatureCode(bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBodyTemperature_validateBodyTemperatureEffectiveTime(
-				bodyTemperature, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateBodyTemperature_validateBodyTemperatureValue(bodyTemperature, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBodyTemperature_validateVitalSignObservationTemplateId(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBodyTemperature_validateBodyTemperatureMoodCode(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBodyTemperature_validateBodyTemperatureCode(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBodyTemperature_validateBodyTemperatureEffectiveTime(bodyTemperature, diagnostics, context);
+		if (result || diagnostics != null) result &= validateBodyTemperature_validateBodyTemperatureValue(bodyTemperature, diagnostics, context);
 		return result;
 	}
 
@@ -30000,44 +23332,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateOxygenSaturation(OxygenSaturation oxygenSaturation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(oxygenSaturation, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(oxygenSaturation, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(oxygenSaturation, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(oxygenSaturation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(oxygenSaturation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(oxygenSaturation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(oxygenSaturation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(oxygenSaturation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(oxygenSaturation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(oxygenSaturation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOxygenSaturation_validateOxygenSaturationTemplateId(
-				oxygenSaturation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOxygenSaturation_validateOxygenSaturationMoodCode(oxygenSaturation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOxygenSaturation_validateOxygenSaturationCode(oxygenSaturation, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateOxygenSaturation_validateOxygenSaturationValue(oxygenSaturation, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(oxygenSaturation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(oxygenSaturation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(oxygenSaturation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(oxygenSaturation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(oxygenSaturation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(oxygenSaturation, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(oxygenSaturation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOxygenSaturation_validateOxygenSaturationTemplateId(oxygenSaturation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOxygenSaturation_validateOxygenSaturationMoodCode(oxygenSaturation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOxygenSaturation_validateOxygenSaturationCode(oxygenSaturation, diagnostics, context);
+		if (result || diagnostics != null) result &= validateOxygenSaturation_validateOxygenSaturationValue(oxygenSaturation, diagnostics, context);
 		return result;
 	}
 
@@ -30092,55 +23399,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateProtocolAgeCategory(ProtocolAgeCategory protocolAgeCategory, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(protocolAgeCategory, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(protocolAgeCategory, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(protocolAgeCategory, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolAgeCategory_validateProtocolAgeCategoryTemplateId(
-				protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolAgeCategory_validateProtocolAgeCategoryMoodCode(
-				protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolAgeCategory_validateProtocolAgeCategoryCodeP(
-				protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolAgeCategory_validateProtocolAgeCategoryCode(
-				protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolAgeCategory_validateProtocolAgeCategoryValue(
-				protocolAgeCategory, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateProtocolAgeCategory_validateProtocolAgeCategoryValueP(
-				protocolAgeCategory, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolAgeCategory_validateProtocolAgeCategoryTemplateId(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolAgeCategory_validateProtocolAgeCategoryMoodCode(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolAgeCategory_validateProtocolAgeCategoryCodeP(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolAgeCategory_validateProtocolAgeCategoryCode(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolAgeCategory_validateProtocolAgeCategoryValue(protocolAgeCategory, diagnostics, context);
+		if (result || diagnostics != null) result &= validateProtocolAgeCategory_validateProtocolAgeCategoryValueP(protocolAgeCategory, diagnostics, context);
 		return result;
 	}
 
@@ -30217,47 +23490,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDispatchLocationName(DispatchLocationName dispatchLocationName, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(dispatchLocationName, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(dispatchLocationName, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(dispatchLocationName, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(dispatchLocationName, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(dispatchLocationName, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationName, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(dispatchLocationName, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(dispatchLocationName, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(dispatchLocationName, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(dispatchLocationName, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationName_validateDispatchLocationNameTemplateId(
-				dispatchLocationName, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationName_validateDispatchLocationNameMoodCode(
-				dispatchLocationName, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationName_validateDispatchLocationNameCode(
-				dispatchLocationName, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationName_validateDispatchLocationNameValue(
-				dispatchLocationName, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(dispatchLocationName, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(dispatchLocationName, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationName, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(dispatchLocationName, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(dispatchLocationName, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(dispatchLocationName, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dispatchLocationName, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationName_validateDispatchLocationNameTemplateId(dispatchLocationName, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationName_validateDispatchLocationNameMoodCode(dispatchLocationName, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationName_validateDispatchLocationNameCode(dispatchLocationName, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationName_validateDispatchLocationNameValue(dispatchLocationName, diagnostics, context);
 		return result;
 	}
 
@@ -30312,47 +23557,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDispatchLocationLatitude(DispatchLocationLatitude dispatchLocationLatitude,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(dispatchLocationLatitude, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(dispatchLocationLatitude, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(dispatchLocationLatitude, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(dispatchLocationLatitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(dispatchLocationLatitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationLatitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(dispatchLocationLatitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(dispatchLocationLatitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(dispatchLocationLatitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(dispatchLocationLatitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationLatitude_validateDispatchLocationLatitudeTemplateId(
-				dispatchLocationLatitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationLatitude_validateDispatchLocationLatitudeMoodCode(
-				dispatchLocationLatitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationLatitude_validateDispatchLocationLatitudeCode(
-				dispatchLocationLatitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationLatitude_validateDispatchLocationLatitudeValue(
-				dispatchLocationLatitude, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(dispatchLocationLatitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(dispatchLocationLatitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationLatitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(dispatchLocationLatitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(dispatchLocationLatitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(dispatchLocationLatitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dispatchLocationLatitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationLatitude_validateDispatchLocationLatitudeTemplateId(dispatchLocationLatitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationLatitude_validateDispatchLocationLatitudeMoodCode(dispatchLocationLatitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationLatitude_validateDispatchLocationLatitudeCode(dispatchLocationLatitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationLatitude_validateDispatchLocationLatitudeValue(dispatchLocationLatitude, diagnostics, context);
 		return result;
 	}
 
@@ -30407,47 +23624,19 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDispatchLocationLongitude(DispatchLocationLongitude dispatchLocationLongitude,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(dispatchLocationLongitude, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(dispatchLocationLongitude, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(dispatchLocationLongitude, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(dispatchLocationLongitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(dispatchLocationLongitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationLongitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(dispatchLocationLongitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(dispatchLocationLongitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(dispatchLocationLongitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(dispatchLocationLongitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationLongitude_validateDispatchLocationLongitudeTemplateId(
-				dispatchLocationLongitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationLongitude_validateDispatchLocationLongitudeMoodCode(
-				dispatchLocationLongitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationLongitude_validateDispatchLocationLongitudeCode(
-				dispatchLocationLongitude, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchLocationLongitude_validateDispatchLocationLongitudeValue(
-				dispatchLocationLongitude, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(dispatchLocationLongitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(dispatchLocationLongitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(dispatchLocationLongitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(dispatchLocationLongitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(dispatchLocationLongitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(dispatchLocationLongitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dispatchLocationLongitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationLongitude_validateDispatchLocationLongitudeTemplateId(dispatchLocationLongitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationLongitude_validateDispatchLocationLongitudeMoodCode(dispatchLocationLongitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationLongitude_validateDispatchLocationLongitudeCode(dispatchLocationLongitude, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchLocationLongitude_validateDispatchLocationLongitudeValue(dispatchLocationLongitude, diagnostics, context);
 		return result;
 	}
 
@@ -30506,49 +23695,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateDispatchDelay(DispatchDelay dispatchDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(dispatchDelay, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(dispatchDelay, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(dispatchDelay, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchDelay_validateDispatchDelayTemplateId(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchDelay_validateDispatchDelayMoodCode(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchDelay_validateDispatchDelayCodeP(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchDelay_validateDispatchDelayCode(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchDelay_validateDispatchDelayValue(dispatchDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateDispatchDelay_validateDispatchDelayValueP(dispatchDelay, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchDelay_validateDispatchDelayTemplateId(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchDelay_validateDispatchDelayMoodCode(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchDelay_validateDispatchDelayCodeP(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchDelay_validateDispatchDelayCode(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchDelay_validateDispatchDelayValue(dispatchDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateDispatchDelay_validateDispatchDelayValueP(dispatchDelay, diagnostics, context);
 		return result;
 	}
 
@@ -30625,49 +23786,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateResponseDelay(ResponseDelay responseDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(responseDelay, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(responseDelay, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(responseDelay, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDelay_validateResponseDelayTemplateId(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDelay_validateResponseDelayMoodCode(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDelay_validateResponseDelayCodeP(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDelay_validateResponseDelayCode(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDelay_validateResponseDelayValue(responseDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDelay_validateResponseDelayValueP(responseDelay, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDelay_validateResponseDelayTemplateId(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDelay_validateResponseDelayMoodCode(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDelay_validateResponseDelayCodeP(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDelay_validateResponseDelayCode(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDelay_validateResponseDelayValue(responseDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDelay_validateResponseDelayValueP(responseDelay, diagnostics, context);
 		return result;
 	}
 
@@ -30743,49 +23876,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSceneDelay(SceneDelay sceneDelay, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(sceneDelay, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(sceneDelay, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(sceneDelay, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSceneDelay_validateSceneDelayTemplateId(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSceneDelay_validateSceneDelayMoodCode(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSceneDelay_validateSceneDelayCodeP(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSceneDelay_validateSceneDelayCode(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSceneDelay_validateSceneDelayValue(sceneDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateSceneDelay_validateSceneDelayValueP(sceneDelay, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSceneDelay_validateSceneDelayTemplateId(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSceneDelay_validateSceneDelayMoodCode(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSceneDelay_validateSceneDelayCodeP(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSceneDelay_validateSceneDelayCode(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSceneDelay_validateSceneDelayValue(sceneDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateSceneDelay_validateSceneDelayValueP(sceneDelay, diagnostics, context);
 		return result;
 	}
 
@@ -30862,49 +23967,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateTransportDelay(TransportDelay transportDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(transportDelay, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(transportDelay, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(transportDelay, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportDelay_validateTransportDelayTemplateId(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportDelay_validateTransportDelayMoodCode(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportDelay_validateTransportDelayCodeP(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportDelay_validateTransportDelayCode(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportDelay_validateTransportDelayValue(transportDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTransportDelay_validateTransportDelayValueP(transportDelay, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportDelay_validateTransportDelayTemplateId(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportDelay_validateTransportDelayMoodCode(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportDelay_validateTransportDelayCodeP(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportDelay_validateTransportDelayCode(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportDelay_validateTransportDelayValue(transportDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTransportDelay_validateTransportDelayValueP(transportDelay, diagnostics, context);
 		return result;
 	}
 
@@ -30981,49 +24058,21 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateTurnaroundDelay(TurnaroundDelay turnaroundDelay, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(turnaroundDelay, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(turnaroundDelay, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(turnaroundDelay, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTurnaroundDelay_validateTurnaroundDelayTemplateId(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTurnaroundDelay_validateTurnaroundDelayMoodCode(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTurnaroundDelay_validateTurnaroundDelayCodeP(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTurnaroundDelay_validateTurnaroundDelayCode(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTurnaroundDelay_validateTurnaroundDelayValue(turnaroundDelay, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateTurnaroundDelay_validateTurnaroundDelayValueP(turnaroundDelay, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTurnaroundDelay_validateTurnaroundDelayTemplateId(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTurnaroundDelay_validateTurnaroundDelayMoodCode(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTurnaroundDelay_validateTurnaroundDelayCodeP(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTurnaroundDelay_validateTurnaroundDelayCode(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTurnaroundDelay_validateTurnaroundDelayValue(turnaroundDelay, diagnostics, context);
+		if (result || diagnostics != null) result &= validateTurnaroundDelay_validateTurnaroundDelayValueP(turnaroundDelay, diagnostics, context);
 		return result;
 	}
 
@@ -31101,52 +24150,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateResponseBeginningOdometerReading(
 			ResponseBeginningOdometerReading responseBeginningOdometerReading, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(responseBeginningOdometerReading, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(responseBeginningOdometerReading, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(responseBeginningOdometerReading, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseBeginningOdometerReading_validateResponseBeginningOdometerReadingTemplateId(
-				responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseBeginningOdometerReading_validateResponseBeginningOdometerReadingMoodCode(
-				responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseBeginningOdometerReading_validateResponseBeginningOdometerReadingCodeP(
-				responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseBeginningOdometerReading_validateResponseBeginningOdometerReadingCode(
-				responseBeginningOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseBeginningOdometerReading_validateResponseBeginningOdometerReadingValue(
-				responseBeginningOdometerReading, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseBeginningOdometerReading_validateResponseBeginningOdometerReadingTemplateId(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseBeginningOdometerReading_validateResponseBeginningOdometerReadingMoodCode(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseBeginningOdometerReading_validateResponseBeginningOdometerReadingCodeP(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseBeginningOdometerReading_validateResponseBeginningOdometerReadingCode(responseBeginningOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseBeginningOdometerReading_validateResponseBeginningOdometerReadingValue(responseBeginningOdometerReading, diagnostics, context);
 		return result;
 	}
 
@@ -31218,51 +24235,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateResponseOnSceneOdometerReading(
 			ResponseOnSceneOdometerReading responseOnSceneOdometerReading, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(responseOnSceneOdometerReading, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(responseOnSceneOdometerReading, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(responseOnSceneOdometerReading, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseOnSceneOdometerReading_validateResponseOnSceneOdometerReadingTemplateId(
-				responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseOnSceneOdometerReading_validateResponseOnSceneOdometerReadingMoodCode(
-				responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseOnSceneOdometerReading_validateResponseOnSceneOdometerReadingCodeP(
-				responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseOnSceneOdometerReading_validateResponseOnSceneOdometerReadingCode(
-				responseOnSceneOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseOnSceneOdometerReading_validateResponseOnSceneOdometerReadingValue(
-				responseOnSceneOdometerReading, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseOnSceneOdometerReading_validateResponseOnSceneOdometerReadingTemplateId(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseOnSceneOdometerReading_validateResponseOnSceneOdometerReadingMoodCode(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseOnSceneOdometerReading_validateResponseOnSceneOdometerReadingCodeP(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseOnSceneOdometerReading_validateResponseOnSceneOdometerReadingCode(responseOnSceneOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseOnSceneOdometerReading_validateResponseOnSceneOdometerReadingValue(responseOnSceneOdometerReading, diagnostics, context);
 		return result;
 	}
 
@@ -31334,52 +24320,20 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateResponseDestinationOdometerReading(
 			ResponseDestinationOdometerReading responseDestinationOdometerReading, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(responseDestinationOdometerReading, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(responseDestinationOdometerReading, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(responseDestinationOdometerReading, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingTemplateId(
-				responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingMoodCode(
-				responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingCodeP(
-				responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingCode(
-				responseDestinationOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingValue(
-				responseDestinationOdometerReading, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingTemplateId(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingMoodCode(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingCodeP(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingCode(responseDestinationOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingValue(responseDestinationOdometerReading, diagnostics, context);
 		return result;
 	}
 
@@ -31392,8 +24346,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingTemplateId(
 			ResponseDestinationOdometerReading responseDestinationOdometerReading, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return responseDestinationOdometerReading.validateResponseDestinationOdometerReadingTemplateId(
-			diagnostics, context);
+		return responseDestinationOdometerReading.validateResponseDestinationOdometerReadingTemplateId(diagnostics, context);
 	}
 
 	/**
@@ -31405,8 +24358,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateResponseDestinationOdometerReading_validateResponseDestinationOdometerReadingMoodCode(
 			ResponseDestinationOdometerReading responseDestinationOdometerReading, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return responseDestinationOdometerReading.validateResponseDestinationOdometerReadingMoodCode(
-			diagnostics, context);
+		return responseDestinationOdometerReading.validateResponseDestinationOdometerReadingMoodCode(diagnostics, context);
 	}
 
 	/**
@@ -31452,51 +24404,20 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateResponseEndingOdometerReading(ResponseEndingOdometerReading responseEndingOdometerReading,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(responseEndingOdometerReading, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(responseEndingOdometerReading, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(responseEndingOdometerReading, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseEndingOdometerReading_validateResponseEndingOdometerReadingTemplateId(
-				responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseEndingOdometerReading_validateResponseEndingOdometerReadingMoodCode(
-				responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseEndingOdometerReading_validateResponseEndingOdometerReadingCodeP(
-				responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseEndingOdometerReading_validateResponseEndingOdometerReadingCode(
-				responseEndingOdometerReading, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateResponseEndingOdometerReading_validateResponseEndingOdometerReadingValue(
-				responseEndingOdometerReading, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseEndingOdometerReading_validateResponseEndingOdometerReadingTemplateId(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseEndingOdometerReading_validateResponseEndingOdometerReadingMoodCode(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseEndingOdometerReading_validateResponseEndingOdometerReadingCodeP(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseEndingOdometerReading_validateResponseEndingOdometerReadingCode(responseEndingOdometerReading, diagnostics, context);
+		if (result || diagnostics != null) result &= validateResponseEndingOdometerReading_validateResponseEndingOdometerReadingValue(responseEndingOdometerReading, diagnostics, context);
 		return result;
 	}
 
@@ -31568,40 +24489,17 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateNonDrugAllergyOrganizerActuallyDreg(
 			NonDrugAllergyOrganizerActuallyDreg nonDrugAllergyOrganizerActuallyDreg, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(
-				nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNonDrugAllergyOrganizerActuallyDreg_validateNonDrugAllergyOrganizerActuallyDregEMSDrugAllergy(
-				nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateNonDrugAllergyOrganizerActuallyDreg_validateNonDrugAllergyOrganizerActuallyDregExistenceOfDrugAllergyObservation(
-				nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNonDrugAllergyOrganizerActuallyDreg_validateNonDrugAllergyOrganizerActuallyDregEMSDrugAllergy(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
+		if (result || diagnostics != null) result &= validateNonDrugAllergyOrganizerActuallyDreg_validateNonDrugAllergyOrganizerActuallyDregExistenceOfDrugAllergyObservation(nonDrugAllergyOrganizerActuallyDreg, diagnostics, context);
 		return result;
 	}
 
@@ -31614,8 +24512,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateNonDrugAllergyOrganizerActuallyDreg_validateNonDrugAllergyOrganizerActuallyDregEMSDrugAllergy(
 			NonDrugAllergyOrganizerActuallyDreg nonDrugAllergyOrganizerActuallyDreg, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return nonDrugAllergyOrganizerActuallyDreg.validateNonDrugAllergyOrganizerActuallyDregEMSDrugAllergy(
-			diagnostics, context);
+		return nonDrugAllergyOrganizerActuallyDreg.validateNonDrugAllergyOrganizerActuallyDregEMSDrugAllergy(diagnostics, context);
 	}
 
 	/**
@@ -31627,8 +24524,7 @@ public class EmspcrValidator extends EObjectValidator {
 	public boolean validateNonDrugAllergyOrganizerActuallyDreg_validateNonDrugAllergyOrganizerActuallyDregExistenceOfDrugAllergyObservation(
 			NonDrugAllergyOrganizerActuallyDreg nonDrugAllergyOrganizerActuallyDreg, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return nonDrugAllergyOrganizerActuallyDreg.validateNonDrugAllergyOrganizerActuallyDregExistenceOfDrugAllergyObservation(
-			diagnostics, context);
+		return nonDrugAllergyOrganizerActuallyDreg.validateNonDrugAllergyOrganizerActuallyDregExistenceOfDrugAllergyObservation(diagnostics, context);
 	}
 
 	/**
@@ -31638,39 +24534,17 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSDrugAllergyOrganizer(EMSDrugAllergyOrganizer emsDrugAllergyOrganizer,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-		if (!validate_NoCircularContainment(emsDrugAllergyOrganizer, diagnostics, context)) {
-			return false;
-		}
+		if (!validate_NoCircularContainment(emsDrugAllergyOrganizer, diagnostics, context)) return false;
 		boolean result = validate_EveryMultiplicityConforms(emsDrugAllergyOrganizer, diagnostics, context);
-		if (result || diagnostics != null) {
-			result &= validate_EveryDataValueConforms(emsDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryReferenceIsContained(emsDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(emsDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryProxyResolves(emsDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_UniqueID(emsDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryKeyUnique(emsDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validate_EveryMapEntryUnique(emsDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDrugAllergyOrganizer_validateEMSDrugAllergyOrganizerEMSDrugAllergy(
-				emsDrugAllergyOrganizer, diagnostics, context);
-		}
-		if (result || diagnostics != null) {
-			result &= validateEMSDrugAllergyOrganizer_validateEMSDrugAllergyOrganizerExistenceOfDrugAllergyObservation(
-				emsDrugAllergyOrganizer, diagnostics, context);
-		}
+		if (result || diagnostics != null) result &= validate_EveryDataValueConforms(emsDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryReferenceIsContained(emsDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryBidirectionalReferenceIsPaired(emsDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryProxyResolves(emsDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_UniqueID(emsDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryKeyUnique(emsDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validate_EveryMapEntryUnique(emsDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDrugAllergyOrganizer_validateEMSDrugAllergyOrganizerEMSDrugAllergy(emsDrugAllergyOrganizer, diagnostics, context);
+		if (result || diagnostics != null) result &= validateEMSDrugAllergyOrganizer_validateEMSDrugAllergyOrganizerExistenceOfDrugAllergyObservation(emsDrugAllergyOrganizer, diagnostics, context);
 		return result;
 	}
 
@@ -31693,8 +24567,7 @@ public class EmspcrValidator extends EObjectValidator {
 	 */
 	public boolean validateEMSDrugAllergyOrganizer_validateEMSDrugAllergyOrganizerExistenceOfDrugAllergyObservation(
 			EMSDrugAllergyOrganizer emsDrugAllergyOrganizer, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return emsDrugAllergyOrganizer.validateEMSDrugAllergyOrganizerExistenceOfDrugAllergyObservation(
-			diagnostics, context);
+		return emsDrugAllergyOrganizer.validateEMSDrugAllergyOrganizerExistenceOfDrugAllergyObservation(diagnostics, context);
 	}
 
 	/**

@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.VehicleImpactArea;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +36,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
+public class VehicleImpactAreaOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +72,7 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,25 +87,38 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 
 	public static boolean validateVehicleImpactAreaTemplateId(VehicleImpactArea vehicleImpactArea,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VEHICLE_IMPACT_AREA);
 			try {
-				VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vehicleImpactArea)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VEHICLE_IMPACT_AREA__VEHICLE_IMPACT_AREA_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("VehicleImpactAreaTemplateId"), new Object[] { vehicleImpactArea }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VEHICLE_IMPACT_AREA_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vehicleImpactArea)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.VEHICLE_IMPACT_AREA__VEHICLE_IMPACT_AREA_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("VehicleImpactAreaVehicleImpactAreaTemplateId"),
+						 new Object [] { vehicleImpactArea }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -129,7 +143,7 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,25 +158,38 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 
 	public static boolean validateVehicleImpactAreaMoodCode(VehicleImpactArea vehicleImpactArea,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VEHICLE_IMPACT_AREA);
 			try {
-				VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vehicleImpactArea)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VEHICLE_IMPACT_AREA__VEHICLE_IMPACT_AREA_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("VehicleImpactAreaMoodCode"), new Object[] { vehicleImpactArea }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VEHICLE_IMPACT_AREA_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vehicleImpactArea)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.VEHICLE_IMPACT_AREA__VEHICLE_IMPACT_AREA_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("VehicleImpactAreaVehicleImpactAreaMoodCode"),
+						 new Object [] { vehicleImpactArea }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -176,9 +203,9 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67497-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67497-8' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVehicleImpactAreaCode(VehicleImpactArea, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vehicle Impact Area Code</em>}' invariant operation.
@@ -189,7 +216,7 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,25 +231,38 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 
 	public static boolean validateVehicleImpactAreaCode(VehicleImpactArea vehicleImpactArea,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VEHICLE_IMPACT_AREA);
 			try {
-				VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vehicleImpactArea)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VEHICLE_IMPACT_AREA__VEHICLE_IMPACT_AREA_CODE,
-					EmspcrPlugin.INSTANCE.getString("VehicleImpactAreaCode"), new Object[] { vehicleImpactArea }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VEHICLE_IMPACT_AREA_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vehicleImpactArea)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.VEHICLE_IMPACT_AREA__VEHICLE_IMPACT_AREA_CODE,
+						 EmspcrPlugin.INSTANCE.getString("VehicleImpactAreaVehicleImpactAreaCode"),
+						 new Object [] { vehicleImpactArea }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -236,9 +276,9 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA10137-0' or value.code = 'LA10138-8' or value.code = 'LA10139-6' or value.code = 'LA10140-4' or value.code = 'LA10141-2' or value.code = 'LA13942-0' or value.code = 'LA14557-5' or value.code = 'LA14558-3' or value.code = 'LA6112-2' or value.code = 'LA6113-0' or value.code = 'LA6114-8' or value.code = 'LA6115-5')))";
+	protected static final String VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA10137-0' or value.code = 'LA10138-8' or value.code = 'LA10139-6' or value.code = 'LA10140-4' or value.code = 'LA10141-2' or value.code = 'LA13942-0' or value.code = 'LA14557-5' or value.code = 'LA14558-3' or value.code = 'LA6112-2' or value.code = 'LA6113-0' or value.code = 'LA6114-8' or value.code = 'LA6115-5')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateVehicleImpactAreaValue(VehicleImpactArea, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Vehicle Impact Area Value</em>}' invariant operation.
@@ -249,7 +289,7 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -264,25 +304,38 @@ public class VehicleImpactAreaOperations extends ClinicalStatementOperations {
 
 	public static boolean validateVehicleImpactAreaValue(VehicleImpactArea vehicleImpactArea,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.VEHICLE_IMPACT_AREA);
 			try {
-				VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			vehicleImpactArea)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.VEHICLE_IMPACT_AREA__VEHICLE_IMPACT_AREA_VALUE,
-					EmspcrPlugin.INSTANCE.getString("VehicleImpactAreaValue"), new Object[] { vehicleImpactArea }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_VEHICLE_IMPACT_AREA_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(vehicleImpactArea)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.VEHICLE_IMPACT_AREA__VEHICLE_IMPACT_AREA_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("VehicleImpactAreaVehicleImpactAreaValue"),
+						 new Object [] { vehicleImpactArea }));
+			}
+			 
 			return false;
 		}
 		return true;

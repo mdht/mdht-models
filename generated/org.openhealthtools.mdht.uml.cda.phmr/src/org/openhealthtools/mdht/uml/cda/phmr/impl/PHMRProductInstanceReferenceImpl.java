@@ -22,91 +22,82 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.impl.Participant2Impl;
-
 import org.openhealthtools.mdht.uml.cda.phmr.PHMRProductInstanceReference;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PHMRProductInstanceReferenceOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>PHMR Product Instance Reference</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PHMRProductInstanceReferenceImpl extends Participant2Impl implements PHMRProductInstanceReference {
+public class PHMRProductInstanceReferenceImpl extends org.eclipse.mdht.uml.cda.impl.Participant2Impl implements PHMRProductInstanceReference {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected PHMRProductInstanceReferenceImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE_REFERENCE;
-  }
+		return PhmrPackage.Literals.PHMR_PRODUCT_INSTANCE_REFERENCE;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePHMRProductInstanceReferenceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceTemplateId(this, diagnostics, context);
-  }
+		return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validatePHMRProductInstanceReferenceTypeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceTypeCode(this, diagnostics, context);
-  }
+		return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceTypeCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
 public boolean validatePHMRProductInstanceReferenceParticipantRole(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceParticipantRole(this, diagnostics, context);
-  }
+		return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceParticipantRole(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public PHMRProductInstanceReference init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -114,8 +105,8 @@ public boolean validatePHMRProductInstanceReferenceParticipantRole(DiagnosticCha
      * @generated
      */
     @Override
-	public PHMRProductInstanceReference init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public PHMRProductInstanceReference init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //PHMRProductInstanceReferenceImpl

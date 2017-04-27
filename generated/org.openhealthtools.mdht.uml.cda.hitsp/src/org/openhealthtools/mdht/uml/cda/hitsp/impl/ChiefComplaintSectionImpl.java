@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.ChiefComplaintSectionOperations;
 import org.openhealthtools.mdht.uml.cda.hitsp.ChiefComplaintSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.Condition;
@@ -26,8 +24,6 @@ import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Chief Complaint Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -77,7 +73,8 @@ public class ChiefComplaintSectionImpl extends org.openhealthtools.mdht.uml.cda.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPChiefComplaintSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPChiefComplaintSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.validateHITSPChiefComplaintSectionTemplateId(
 			this, diagnostics, context);
 	}
@@ -87,7 +84,8 @@ public class ChiefComplaintSectionImpl extends org.openhealthtools.mdht.uml.cda.
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHITSPChiefComplaintSectionCondition(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHITSPChiefComplaintSectionCondition(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return org.openhealthtools.mdht.uml.cda.hitsp.operations.ChiefComplaintSectionOperations.validateHITSPChiefComplaintSectionCondition(
 			this, diagnostics, context);
 	}
@@ -108,7 +106,7 @@ public class ChiefComplaintSectionImpl extends org.openhealthtools.mdht.uml.cda.
 	 */
 	@Override
 	public ChiefComplaintSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -117,8 +115,9 @@ public class ChiefComplaintSectionImpl extends org.openhealthtools.mdht.uml.cda.
 	 * @generated
 	 */
 	@Override
-	public ChiefComplaintSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public ChiefComplaintSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // ChiefComplaintSectionImpl

@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -29,7 +22,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrProtocolObservationProtocolAgeCategoryRelationship constraints.validation.error='ProtocolObservationProtocolAgeCategoryRelationshipProtocolAgeCategory'"
  * @generated
  */
-public interface ProtocolObservation extends Observation {
+public interface ProtocolObservation extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -110,9 +103,9 @@ public interface ProtocolObservation extends Observation {
 	public ProtocolObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ProtocolObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public ProtocolObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // ProtocolObservation

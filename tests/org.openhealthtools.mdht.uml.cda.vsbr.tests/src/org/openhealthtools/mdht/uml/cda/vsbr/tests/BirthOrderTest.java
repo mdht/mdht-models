@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.BirthOrder;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.BirthOrderOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,6 +48,7 @@ public class BirthOrderTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateBirthOrderTemplateId() {
 		OperationsTestCase<BirthOrder> validateBirthOrderTemplateIdTestCase = new OperationsTestCase<BirthOrder>(
 			"validateBirthOrderTemplateId",
@@ -78,6 +82,7 @@ public class BirthOrderTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateBirthOrderClassCode() {
 		OperationsTestCase<BirthOrder> validateBirthOrderClassCodeTestCase = new OperationsTestCase<BirthOrder>(
 			"validateBirthOrderClassCode",
@@ -111,6 +116,7 @@ public class BirthOrderTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateBirthOrderMoodCode() {
 		OperationsTestCase<BirthOrder> validateBirthOrderMoodCodeTestCase = new OperationsTestCase<BirthOrder>(
 			"validateBirthOrderMoodCode",
@@ -144,10 +150,12 @@ public class BirthOrderTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateBirthOrderCodeP() {
 		OperationsTestCase<BirthOrder> validateBirthOrderCodePTestCase = new OperationsTestCase<BirthOrder>(
 			"validateBirthOrderCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_BIRTH_ORDER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(BirthOrder target) {
@@ -176,6 +184,7 @@ public class BirthOrderTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateBirthOrderCode() {
 		OperationsTestCase<BirthOrder> validateBirthOrderCodeTestCase = new OperationsTestCase<BirthOrder>(
 			"validateBirthOrderCode",
@@ -208,6 +217,7 @@ public class BirthOrderTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateBirthOrderValue() {
 		OperationsTestCase<BirthOrder> validateBirthOrderValueTestCase = new OperationsTestCase<BirthOrder>(
 			"validateBirthOrderValue",
@@ -291,8 +301,7 @@ public class BirthOrderTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

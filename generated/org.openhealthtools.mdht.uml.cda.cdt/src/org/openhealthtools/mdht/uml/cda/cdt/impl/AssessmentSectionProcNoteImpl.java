@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.cdt.AssessmentSectionProcNote;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.AssessmentSectionProcNoteOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Assessment Section Proc Note</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -56,7 +54,8 @@ public class AssessmentSectionProcNoteImpl extends SectionImpl implements Assess
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAssessmentSectionProcNoteTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAssessmentSectionProcNoteTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return AssessmentSectionProcNoteOperations.validateAssessmentSectionProcNoteTemplateId(
 			this, diagnostics, context);
 	}
@@ -81,7 +80,7 @@ public class AssessmentSectionProcNoteImpl extends SectionImpl implements Assess
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public AssessmentSectionProcNote init(Iterable<? extends Initializer<? extends EObject>> initializers) {

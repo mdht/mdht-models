@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AbandonedProcedureReasonObservationTemplateId AbandonedProcedureReasonObservationMoodCode AbandonedProcedureReasonObservationCode AbandonedProcedureReasonObservationCodeP AbandonedProcedureReasonObservationValue AbandonedProcedureReasonObservationValueP' templateId.root='2.16.840.1.1133883.17.3.10.1.130' moodCode='EVN' code.code='ASSERTION' code.codeSystem='2.16.840.1.113883.5.4' code.codeSystemName='HL7ActCode' code.displayName='Assertion' constraints.validation.dependOn.AbandonedProcedureReasonObservationCode='AbandonedProcedureReasonObservationCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC'"
  * @generated
  */
-public interface AbandonedProcedureReasonObservation extends Observation {
+public interface AbandonedProcedureReasonObservation extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -110,9 +103,9 @@ public interface AbandonedProcedureReasonObservation extends Observation {
 	public AbandonedProcedureReasonObservation init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AbandonedProcedureReasonObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public AbandonedProcedureReasonObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // AbandonedProcedureReasonObservation

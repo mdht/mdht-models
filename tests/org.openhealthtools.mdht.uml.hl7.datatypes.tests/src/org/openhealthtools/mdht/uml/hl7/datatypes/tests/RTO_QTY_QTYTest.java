@@ -11,13 +11,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.INT;
+import org.eclipse.mdht.uml.hl7.datatypes.REAL;
+import org.eclipse.mdht.uml.hl7.datatypes.RTO_QTY_QTY;
+import org.eclipse.mdht.uml.hl7.datatypes.operations.RTO_QTY_QTYOperations;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.INT;
-import org.openhealthtools.mdht.uml.hl7.datatypes.REAL;
-import org.openhealthtools.mdht.uml.hl7.datatypes.RTO_QTY_QTY;
-import org.openhealthtools.mdht.uml.hl7.datatypes.operations.RTO_QTY_QTYOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,16 +43,16 @@ public class RTO_QTY_QTYTest extends CDAValidationTest {
 	@Test
 	public void testValidateDenominator() {
 		OperationsTestCase<RTO_QTY_QTY> validateDenominatorTestCase = new OperationsTestCase<RTO_QTY_QTY>(
-			"validateDenominator",
-			operationsForOCL.getOCLValue("VALIDATE_DENOMINATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			"validateDenominator", operationsForOCL.getOCLValue("VALIDATE_DENOMINATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 			{
 				skipNullTest();
 			}
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addFailTests()
 			 */
 			@Override
 			public void addFailTests() {
@@ -85,8 +85,8 @@ public class RTO_QTY_QTYTest extends CDAValidationTest {
 
 			/*
 			 * (non-Javadoc)
-			 * 
-			 * @see org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
+			 *
+			 * @see org.eclipse.mdht.uml.cda.operations.CDAValidationTest.OperationsTestCase#addPassTests()
 			 */
 			@Override
 			public void addPassTests() {
@@ -180,8 +180,7 @@ public class RTO_QTY_QTYTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

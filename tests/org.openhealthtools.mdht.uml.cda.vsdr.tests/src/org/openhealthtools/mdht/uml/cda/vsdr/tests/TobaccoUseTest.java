@@ -1,9 +1,5 @@
 
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,14 +7,20 @@ package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.TobaccoUseOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -31,10 +33,9 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse#validateTobaccoUseTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse#validateTobaccoUseClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse#validateTobaccoUseCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse#validateTobaccoUseMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse#validateTobaccoUseCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse#validateTobaccoUseValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.TobaccoUse#validateTobaccoUseValueP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Tobacco Use Value P</em>}</li>
  * </ul>
  * </p>
  *
@@ -101,6 +102,9 @@ public void testValidateTobaccoUseTemplateId() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -175,6 +179,9 @@ public void testValidateTobaccoUseClassCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -188,80 +195,6 @@ public void testValidateTobaccoUseClassCode() {
 		};
 
 		validateTobaccoUseClassCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateTobaccoUseCode() {
-			OperationsTestCase<TobaccoUse> validateTobaccoUseCodeTestCase = new OperationsTestCase<TobaccoUse>(
-			"validateTobaccoUseCode",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(TobaccoUse target) {
-
-			}
-
-			@Override
-			protected void updateToPass(TobaccoUse target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return TobaccoUseOperations.validateTobaccoUseCode(
-					(TobaccoUse) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateTobaccoUseCodeTestCase.doValidationTest();
 }		
 
 
@@ -323,6 +256,9 @@ public void testValidateTobaccoUseMoodCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -336,6 +272,83 @@ public void testValidateTobaccoUseMoodCode() {
 		};
 
 		validateTobaccoUseMoodCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateTobaccoUseCode() {
+			OperationsTestCase<TobaccoUse> validateTobaccoUseCodeTestCase = new OperationsTestCase<TobaccoUse>(
+			"validateTobaccoUseCode",
+			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(TobaccoUse target) {
+
+			}
+
+			@Override
+			protected void updateToPass(TobaccoUse target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return TobaccoUseOperations.validateTobaccoUseCode(
+					(TobaccoUse) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateTobaccoUseCodeTestCase.doValidationTest();
 }		
 
 
@@ -400,6 +413,9 @@ public void testValidateTobaccoUseValue() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -413,80 +429,6 @@ public void testValidateTobaccoUseValue() {
 		};
 
 		validateTobaccoUseValueTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateTobaccoUseValueP() {
-			OperationsTestCase<TobaccoUse> validateTobaccoUseValuePTestCase = new OperationsTestCase<TobaccoUse>(
-			"validateTobaccoUseValueP",
-			operationsForOCL.getOCLValue("VALIDATE_TOBACCO_USE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(TobaccoUse target) {
-
-			}
-
-			@Override
-			protected void updateToPass(TobaccoUse target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return TobaccoUseOperations.validateTobaccoUseValueP(
-					(TobaccoUse) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateTobaccoUseValuePTestCase.doValidationTest();
 }		
 
 
@@ -515,6 +457,7 @@ public void testValidateTobaccoUseValueP() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<TobaccoUse> {
+		@Override
 		public TobaccoUse create() {		
 			return VsdrFactory.eINSTANCE.createTobaccoUse();
 		}

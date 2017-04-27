@@ -4,25 +4,100 @@ package org.openhealthtools.mdht.uml.cda.sdtm.util;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
-
 import org.eclipse.emf.ecore.util.Switch;
-
-import org.openhealthtools.mdht.uml.cda.ClinicalDocument;
-import org.openhealthtools.mdht.uml.cda.ClinicalStatement;
-import org.openhealthtools.mdht.uml.cda.Consumable;
-import org.openhealthtools.mdht.uml.cda.Encounter;
-import org.openhealthtools.mdht.uml.cda.Observation;
-import org.openhealthtools.mdht.uml.cda.ObservationRange;
-import org.openhealthtools.mdht.uml.cda.Participant2;
-import org.openhealthtools.mdht.uml.cda.Procedure;
-import org.openhealthtools.mdht.uml.cda.Section;
-import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
-
-import org.openhealthtools.mdht.uml.cda.sdtm.*;
-
-import org.openhealthtools.mdht.uml.hl7.rim.Act;
-import org.openhealthtools.mdht.uml.hl7.rim.InfrastructureRoot;
-import org.openhealthtools.mdht.uml.hl7.rim.Participation;
+import org.openhealthtools.mdht.uml.cda.sdtm.AdverseEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.AssayQuantitation;
+import org.openhealthtools.mdht.uml.cda.sdtm.BodySystemorOrganClass;
+import org.openhealthtools.mdht.uml.cda.sdtm.BodyWeight;
+import org.openhealthtools.mdht.uml.cda.sdtm.BodyWeightGain;
+import org.openhealthtools.mdht.uml.cda.sdtm.Category;
+import org.openhealthtools.mdht.uml.cda.sdtm.ClinicalEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.ClinicalObservation;
+import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
+import org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantMedication;
+import org.openhealthtools.mdht.uml.cda.sdtm.ConcomitantTreatment;
+import org.openhealthtools.mdht.uml.cda.sdtm.ConsumableMaterial;
+import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
+import org.openhealthtools.mdht.uml.cda.sdtm.DeathDiagnosis;
+import org.openhealthtools.mdht.uml.cda.sdtm.DeathRelationship;
+import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
+import org.openhealthtools.mdht.uml.cda.sdtm.DoseAdjustmentReason;
+import org.openhealthtools.mdht.uml.cda.sdtm.DrugAccountability;
+import org.openhealthtools.mdht.uml.cda.sdtm.ECGTestResult;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventDuration;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventOutcome;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventPattern;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventStudyDay;
+import org.openhealthtools.mdht.uml.cda.sdtm.EventorFindingSeverity;
+import org.openhealthtools.mdht.uml.cda.sdtm.ExclusionReason;
+import org.openhealthtools.mdht.uml.cda.sdtm.FastingStatus;
+import org.openhealthtools.mdht.uml.cda.sdtm.FindingAbout;
+import org.openhealthtools.mdht.uml.cda.sdtm.FoodandWaterConsumption;
+import org.openhealthtools.mdht.uml.cda.sdtm.GroupIdentifier;
+import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalDisposition;
+import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalExposure;
+import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalLaboratoryTestResult;
+import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentSection;
+import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDemographics;
+import org.openhealthtools.mdht.uml.cda.sdtm.InclusionorExclusionCriteriaNotMet;
+import org.openhealthtools.mdht.uml.cda.sdtm.Indication;
+import org.openhealthtools.mdht.uml.cda.sdtm.IntendedRegimen;
+import org.openhealthtools.mdht.uml.cda.sdtm.MacroscopicFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.MassIdentification;
+import org.openhealthtools.mdht.uml.cda.sdtm.MedicalHistoryItem;
+import org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySpecimenFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.MicrobiologySusceptibility;
+import org.openhealthtools.mdht.uml.cda.sdtm.MicroscopicFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonPerformanceReason;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonStudyTreatmentRelationship;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanDisposition;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanExposure;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanLaboratoryTestResult;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanSubjectDataDocumentSection;
+import org.openhealthtools.mdht.uml.cda.sdtm.NonhumanSubjectDemographics;
+import org.openhealthtools.mdht.uml.cda.sdtm.OrganMeasurement;
+import org.openhealthtools.mdht.uml.cda.sdtm.OtherTreatmentActionTaken;
+import org.openhealthtools.mdht.uml.cda.sdtm.PalpableMass;
+import org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticConcentrationFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.PharmacokineticParameterFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.PhysicalExaminationFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.PlannedStudyDay;
+import org.openhealthtools.mdht.uml.cda.sdtm.PositionofSubject;
+import org.openhealthtools.mdht.uml.cda.sdtm.PreSpecifiedEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.ProtocolDeviation;
+import org.openhealthtools.mdht.uml.cda.sdtm.QuestionnaireFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.ReferencePeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.ReferenceRange;
+import org.openhealthtools.mdht.uml.cda.sdtm.RelatedRecord;
+import org.openhealthtools.mdht.uml.cda.sdtm.ResultCategory;
+import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
+import org.openhealthtools.mdht.uml.cda.sdtm.SeriousEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.SpecimenInformation;
+import org.openhealthtools.mdht.uml.cda.sdtm.StartRelativetoReferencePeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.StopRelativetoReferencePeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyArm;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyEpoch;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyFindingEvaluator;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectEvent;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudySubjectIntervention;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyTestOrganization;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyTreatmentActionTaken;
+import org.openhealthtools.mdht.uml.cda.sdtm.StudyTreatmentCausality;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubjectCharacteristic;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubjectDataHumanClinicalTrials;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubjectDataNonClinicalTrials;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubjectElement;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubjectPool;
+import org.openhealthtools.mdht.uml.cda.sdtm.SubstanceUse;
+import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
+import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
+import org.openhealthtools.mdht.uml.cda.sdtm.Toxicity;
+import org.openhealthtools.mdht.uml.cda.sdtm.TumorFinding;
+import org.openhealthtools.mdht.uml.cda.sdtm.Visit;
+import org.openhealthtools.mdht.uml.cda.sdtm.VitalSign;
 
 /**
  * <!-- begin-user-doc -->
@@ -62,7 +137,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * Checks whether this is a switch for the given package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @parameter ePackage the package in question.
+	 * @param ePackage the package in question.
 	 * @return whether this is a switch for the given package.
 	 * @generated
 	 */
@@ -2387,7 +2462,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseInfrastructureRoot(InfrastructureRoot object) {
+	public T caseInfrastructureRoot(org.eclipse.mdht.uml.hl7.rim.InfrastructureRoot object) {
 		return null;
 	}
 
@@ -2402,7 +2477,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseAct(Act object) {
+	public T caseAct(org.eclipse.mdht.uml.hl7.rim.Act object) {
 		return null;
 	}
 
@@ -2417,7 +2492,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClinicalDocument(ClinicalDocument object) {
+	public T caseClinicalDocument(org.eclipse.mdht.uml.cda.ClinicalDocument object) {
 		return null;
 	}
 
@@ -2432,7 +2507,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSection(Section object) {
+	public T caseSection(org.eclipse.mdht.uml.cda.Section object) {
 		return null;
 	}
 
@@ -2447,7 +2522,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseClinicalStatement(ClinicalStatement object) {
+	public T caseClinicalStatement(org.eclipse.mdht.uml.cda.ClinicalStatement object) {
 		return null;
 	}
 
@@ -2462,7 +2537,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseCDA_Act(org.openhealthtools.mdht.uml.cda.Act object) {
+	public T caseCDA_Act(org.eclipse.mdht.uml.cda.Act object) {
 		return null;
 	}
 
@@ -2477,7 +2552,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseObservation(Observation object) {
+	public T caseObservation(org.eclipse.mdht.uml.cda.Observation object) {
 		return null;
 	}
 
@@ -2492,7 +2567,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseEncounter(Encounter object) {
+	public T caseEncounter(org.eclipse.mdht.uml.cda.Encounter object) {
 		return null;
 	}
 
@@ -2507,7 +2582,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseProcedure(Procedure object) {
+	public T caseProcedure(org.eclipse.mdht.uml.cda.Procedure object) {
 		return null;
 	}
 
@@ -2522,7 +2597,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseSubstanceAdministration(SubstanceAdministration object) {
+	public T caseSubstanceAdministration(org.eclipse.mdht.uml.cda.SubstanceAdministration object) {
 		return null;
 	}
 
@@ -2537,7 +2612,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParticipation(Participation object) {
+	public T caseParticipation(org.eclipse.mdht.uml.hl7.rim.Participation object) {
 		return null;
 	}
 
@@ -2552,7 +2627,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseConsumable(Consumable object) {
+	public T caseConsumable(org.eclipse.mdht.uml.cda.Consumable object) {
 		return null;
 	}
 
@@ -2567,7 +2642,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseParticipant2(Participant2 object) {
+	public T caseParticipant2(org.eclipse.mdht.uml.cda.Participant2 object) {
 		return null;
 	}
 
@@ -2582,7 +2657,7 @@ public class SdtmSwitch<T> extends Switch<T> {
 	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
 	 * @generated
 	 */
-	public T caseObservationRange(ObservationRange object) {
+	public T caseObservationRange(org.eclipse.mdht.uml.cda.ObservationRange object) {
 		return null;
 	}
 

@@ -35,10 +35,10 @@ import org.openhealthtools.mdht.uml.cda.consol.ContinuityOfCareDocument;
 public class TestDischargeSummary {
 	public static void main(String[] args) {
 		System.out.println("=========================");
-		// testDS("DS.sample.l3.conformances");
-		// validateDS("DischargeSummary_sample");
-		// validateDS("DischargeSummary_2014Edition_sample");
-		testUSRealmAddressAndPatientName();
+		// testDS("EDM_AIS_Test_0_CCDA_CCD_3MB_FixedSchemaErrors");
+		// validateDS("EDM_AIS_Test_0_CCDA_CCD_3MB_FixedSchemaErrors");
+		validateDS("DischargeSummary_2014Edition_sample");
+		// testUSRealmAddressAndPatientName();
 		System.out.println("=========================");
 	}
 

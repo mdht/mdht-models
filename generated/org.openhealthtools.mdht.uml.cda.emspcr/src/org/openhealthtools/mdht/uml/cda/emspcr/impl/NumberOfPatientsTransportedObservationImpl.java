@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.NumberOfPatientsTransportedObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.NumberOfPatientsTransportedObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Number Of Patients Transported Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl implements
+public class NumberOfPatientsTransportedObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements
 		NumberOfPatientsTransportedObservation {
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,8 +50,7 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 */
 	public boolean validateNumberOfPatientsTransportedObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationTemplateId(
-			this, diagnostics, context);
+		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +60,7 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 */
 	public boolean validateNumberOfPatientsTransportedObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationMoodCode(
-			this, diagnostics, context);
+		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +70,7 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 */
 	public boolean validateNumberOfPatientsTransportedObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationCodeP(
-			this, diagnostics, context);
+		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +80,7 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 */
 	public boolean validateNumberOfPatientsTransportedObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationCode(
-			this, diagnostics, context);
+		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +90,7 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 */
 	public boolean validateNumberOfPatientsTransportedObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationValue(
-			this, diagnostics, context);
+		return NumberOfPatientsTransportedObservationOperations.validateNumberOfPatientsTransportedObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -115,16 +99,16 @@ public class NumberOfPatientsTransportedObservationImpl extends ObservationImpl 
 	 * @generated
 	 */
 	public NumberOfPatientsTransportedObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public NumberOfPatientsTransportedObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public NumberOfPatientsTransportedObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // NumberOfPatientsTransportedObservationImpl

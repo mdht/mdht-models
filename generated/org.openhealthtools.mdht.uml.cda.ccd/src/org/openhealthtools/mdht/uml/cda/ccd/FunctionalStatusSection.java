@@ -15,8 +15,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Section;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Section;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +28,7 @@ import org.openhealthtools.mdht.uml.cda.Section;
  *     <i>Functional Status</i> describes the patient's status of normal functioning at the time the Care Record
  *     was created. Functional statuses include information regarding the patient relative to:
  * </p>
- * 
+ *
  *     <ul><li>Ambulatory ability</li>
  *        <li>Mental status or competency</li>
  *         <li>Activities of Daily Living (ADLs), including bathing, dressing, feeding, grooming</li>

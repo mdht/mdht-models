@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ExtremitiesAssessmentTemplateId ExtremitiesAssessmentMoodCode ExtremitiesAssessmentCode ExtremitiesAssessmentCodeP ExtremitiesAssessmentEffectiveTime ExtremitiesAssessmentValue ExtremitiesAssessmentTargetSiteCode' templateId.root='2.16.840.1.1133883.17.3.10.1.120' moodCode='EVN' code.code='67533-0' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Physical findings of Extremity NEMSIS' constraints.validation.dependOn.ExtremitiesAssessmentCode='ExtremitiesAssessmentCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' targetSiteCode.codeSystem='2.16.840.1.113883.6.1' targetSiteCode.codeSystemName='LOINC' constraints.validation.info='ExtremitiesAssessmentTargetSiteCodeP'"
  * @generated
  */
-public interface ExtremitiesAssessment extends Observation {
+public interface ExtremitiesAssessment extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -133,9 +126,9 @@ public interface ExtremitiesAssessment extends Observation {
 	public ExtremitiesAssessment init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ExtremitiesAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public ExtremitiesAssessment init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // ExtremitiesAssessment

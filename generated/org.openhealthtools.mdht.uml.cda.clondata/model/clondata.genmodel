@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.clondata/src"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.clondata" templateDirectory="/org.eclipse.mdht.uml.cda/templates"
+    dynamicTemplates="true" redirection="" modelName="clondata_Ecore" modelPluginClass="CLONDATAPlugin"
+    importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"
+    runtimeVersion="2.5" usedGenPackages="../../org.eclipse.mdht.uml.cda/model/cda.genmodel#//cda ../../org.openhealthtools.mdht.uml.cda.consol2/model/consol.genmodel#//consol ../../org.eclipse.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
+    pluralizedGetters="true" invariantPrefix="validate">
+  <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
+    <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
+    <details key="UNION_PROPERTIES" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURES" value="PROCESS"/>
+    <details key="SUBSETTING_PROPERTIES" value="PROCESS"/>
+    <details key="COMMENTS" value="PROCESS"/>
+    <details key="DUPLICATE_FEATURE_INHERITANCE" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATIONS" value="PROCESS"/>
+    <details key="INVARIANT_CONSTRAINTS" value="PROCESS"/>
+    <details key="REDEFINING_PROPERTIES" value="PROCESS"/>
+    <details key="ANNOTATION_DETAILS" value="PROCESS"/>
+    <details key="DUPLICATE_OPERATION_INHERITANCE" value="PROCESS"/>
+    <details key="REDEFINING_OPERATIONS" value="PROCESS"/>
+    <details key="DERIVED_FEATURES" value="IGNORE"/>
+    <details key="OPERATION_BODIES" value="PROCESS"/>
+    <details key="CAMEL_CASE_NAMES" value="IGNORE"/>
+    <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
+    <details key="VALIDATION_DELEGATES" value="IGNORE"/>
+    <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
+  </genAnnotations>
+  <foreignModel>clondata_Ecore.uml</foreignModel>
+  <genPackages xsi:type="genmodel:GenPackage" prefix="CLONDATA" basePackage="org.openhealthtools.mdht.uml.cda"
+      resource="XML" disposableProviderFactory="true" loadInitialization="true" literalsInterface="false"
+      ecorePackage="clondata.ecore#/" operationsPackage="org.openhealthtools.mdht.uml.cda.clondata.operations">
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//AnthracyclinesLifetimeDose">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseDoseQuantity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseDoseQuantity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseDoseQuantity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseConsumable">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseConsumable/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//AnthracyclinesLifetimeDose/AnthracyclinesLifetimeDoseConsumable/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//BreastTNMMetastasisCategory">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMMetastasisCategory/BreastTNMMetastasisCategoryValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//BreastTNMClinicalCategory">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMClinicalCategory/BreastTNMClinicalCategoryEntryRelationshipObservation/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//BreastTNMNodeCategory">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMNodeCategory/BreastTNMNodeCategoryValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//BreastTNMTumorCategory">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastTNMTumorCategory/BreastTNMTumorCategoryValueP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapeuticDrugTherapyDiscontinued/ChemotherapeuticDrugTherapyDiscontinuedEntryRelationshipObservation/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ChemotherapyProtocolReference">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceExternalDocumentId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceExternalDocumentId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceExternalDocumentId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceExternalDocumentText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceExternalDocumentText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceExternalDocumentText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceExternalDocument">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceExternalDocument/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyProtocolReference/ChemotherapyProtocolReferenceReferenceExternalDocument/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ClinicalDrugTrial">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalDrugTrial/ClinicalDrugTrialStatusCodeP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//HospitalizationWithReason">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//HospitalizationWithReason/HospitalizationWithReasonTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HospitalizationWithReason/HospitalizationWithReasonTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HospitalizationWithReason/HospitalizationWithReasonTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//HospitalizationWithReason/HospitalizationWithReasonCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HospitalizationWithReason/HospitalizationWithReasonCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HospitalizationWithReason/HospitalizationWithReasonCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//HospitalizationWithReason/HospitalizationWithReasonIndication">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HospitalizationWithReason/HospitalizationWithReasonIndication/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HospitalizationWithReason/HospitalizationWithReasonIndication/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//HospitalizationWithReason/getIndication"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//FamilyHistoryofCancerNone">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneNegationInd">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneNegationInd/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneNegationInd/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryofCancerNone/FamilyHistoryofCancerNoneText/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//FamilyHistoryPedigree">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationText">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationText/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistoryPedigree/FamilyHistoryPedigreeReferenceExternalObservationText/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//LastMenstrualPeriod">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodMoodCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodMoodCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodMoodCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LastMenstrualPeriod/LastMenstrualPeriodStatusCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ChemotherapyMedicationActivity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityDoseQuantity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityDoseQuantity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityDoseQuantity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityRepeatNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityRepeatNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityRepeatNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityRouteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityRouteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityRouteCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityRouteCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityRouteCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityRouteCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityClinicalDrugTrial">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityClinicalDrugTrial/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityClinicalDrugTrial/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityChemotherapyProtocolReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityChemotherapyProtocolReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivity/ChemotherapyMedicationActivityChemotherapyProtocolReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivity/getClinicalDrugTrials"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivity/getChemotherapyProtocolReferences"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//OncotypeDXScore">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//OncotypeDXScore/OncotypeDXScoreValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ChemotherapyRegimenPlans">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansChemotherapyMedicationActivity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansChemotherapyMedicationActivity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansChemotherapyMedicationActivity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansClinicalDrugTrial">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansClinicalDrugTrial/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyRegimenPlans/ChemotherapyRegimenPlansClinicalDrugTrial/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/getChemotherapyMedicationActivities"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyRegimenPlans/getClinicalDrugTrials"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//PlanofCareActivityReconstructionProcedure">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PlanofCareActivityReconstructionProcedure/PlanofCareActivityReconstructionProcedureCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PlanofCareActivityReconstructionProcedure/PlanofCareActivityReconstructionProcedureCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PlanofCareActivityReconstructionProcedure/PlanofCareActivityReconstructionProcedureCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PlanofCareActivityReconstructionProcedure/PlanofCareActivityReconstructionProcedureEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PlanofCareActivityReconstructionProcedure/PlanofCareActivityReconstructionProcedureEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PlanofCareActivityReconstructionProcedure/PlanofCareActivityReconstructionProcedureEffectiveTime/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ChemotherapyMedicationActivityPlan">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanRepeatNumber">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanRepeatNumber/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanRepeatNumber/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanRouteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanRouteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanRouteCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanRouteCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanRouteCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanRouteCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanClinicalDrugTrial">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanClinicalDrugTrial/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanClinicalDrugTrial/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanReactionObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanReactionObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanReactionObservation/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanChemotherapyProtocolReference">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanChemotherapyProtocolReference/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanChemotherapyProtocolReference/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanMedicationActivity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanMedicationActivity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ChemotherapyMedicationActivityPlan/ChemotherapyMedicationActivityPlanMedicationActivity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/getClinicalDrugTrial"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/getReactionObservation"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/getChemotherapyProtocolReference"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ChemotherapyMedicationActivityPlan/getMedicationActivity"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//PostTreatmentDiseaseStatus">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PostTreatmentDiseaseStatus/PostTreatmentDiseaseStatusValueP/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//BreastCancerConcernAct"/>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//BreastCancerDiagnosisObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationTargetSiteCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationTargetSiteCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationTargetSiteCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationTargetSiteCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationTargetSiteCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationTargetSiteCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationValueP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationValueP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationValueP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerDiagnosisObservation/BreastCancerDiagnosisObservationValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//NeurotoxicityImpairmentofADLs">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationship">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationship/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationship/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationMoodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservationValue/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipTypeCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipTypeCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipTypeCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservation">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservation/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NeurotoxicityImpairmentofADLs/NeurotoxicityImpairmentofADLsEntryRelationshipObservation/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//RadiationTherapyCareCompleted">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedNegationInd">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedNegationInd/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//RadiationTherapyCareCompleted/RadiationTherapyCareCompletedNegationInd/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//BreastCancerProcedures">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastCancerProcedures/BreastCancerProceduresCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerProcedures/BreastCancerProceduresCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerProcedures/BreastCancerProceduresCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastCancerProcedures/BreastCancerProceduresCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerProcedures/BreastCancerProceduresCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerProcedures/BreastCancerProceduresCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BreastCancerProcedures/BreastCancerProceduresEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerProcedures/BreastCancerProceduresEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BreastCancerProcedures/BreastCancerProceduresEffectiveTime/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//CardiacFunctionObservation">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//CardiacFunctionObservation/CardiacFunctionObservationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//CardiacFunctionObservation/CardiacFunctionObservationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//CardiacFunctionObservation/CardiacFunctionObservationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//CardiacFunctionObservation/CardiacFunctionObservationMethodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//CardiacFunctionObservation/CardiacFunctionObservationMethodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//CardiacFunctionObservation/CardiacFunctionObservationMethodCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//EstrogenReceptorStatus">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusInterpretationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusInterpretationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusInterpretationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusInterpretationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusInterpretationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusInterpretationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusMethodCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusMethodCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusMethodCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusMethodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusMethodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusMethodCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EstrogenReceptorStatus/EstrogenReceptorStatusValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//HER2ReceptorStatus">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusInterpretationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusInterpretationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusInterpretationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusInterpretationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusInterpretationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusInterpretationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//HER2ReceptorStatus/HER2ReceptorStatusValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//NumberofLymphNodesPositive">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NumberofLymphNodesPositive/NumberofLymphNodesPositiveCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesPositive/NumberofLymphNodesPositiveCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesPositive/NumberofLymphNodesPositiveCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NumberofLymphNodesPositive/NumberofLymphNodesPositiveCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesPositive/NumberofLymphNodesPositiveCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesPositive/NumberofLymphNodesPositiveCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NumberofLymphNodesPositive/NumberofLymphNodesPositiveValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesPositive/NumberofLymphNodesPositiveValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesPositive/NumberofLymphNodesPositiveValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//NumberofLymphNodesRemovedandExamined">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NumberofLymphNodesRemovedandExamined/NumberofLymphNodesRemovedandExaminedCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesRemovedandExamined/NumberofLymphNodesRemovedandExaminedCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesRemovedandExamined/NumberofLymphNodesRemovedandExaminedCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NumberofLymphNodesRemovedandExamined/NumberofLymphNodesRemovedandExaminedCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesRemovedandExamined/NumberofLymphNodesRemovedandExaminedCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesRemovedandExamined/NumberofLymphNodesRemovedandExaminedCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//NumberofLymphNodesRemovedandExamined/NumberofLymphNodesRemovedandExaminedValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesRemovedandExamined/NumberofLymphNodesRemovedandExaminedValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//NumberofLymphNodesRemovedandExamined/NumberofLymphNodesRemovedandExaminedValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ProgesteroneReceptorStatus">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusInterpretationCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusInterpretationCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusInterpretationCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusInterpretationCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusInterpretationCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusInterpretationCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProgesteroneReceptorStatus/ProgesteroneReceptorStatusValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//LymphNodeSamplingResultOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerClassCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerClassCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerClassCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerEffectiveTime">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerEffectiveTime/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerEffectiveTime/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerStatusCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerStatusCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerStatusCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerStatusCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerStatusCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerStatusCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerNumberofLymphNodesRemovedandExamined">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerNumberofLymphNodesRemovedandExamined/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerNumberofLymphNodesRemovedandExamined/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerNumberofLymphNodesPositive">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerNumberofLymphNodesPositive/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerNumberofLymphNodesPositive/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerReferenceExternalDocumentCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerReferenceExternalDocumentCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerReferenceExternalDocumentCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerSpecimenSpecimenRolePlayingEntityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerSpecimenSpecimenRolePlayingEntityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerSpecimenSpecimenRolePlayingEntityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerSpecimenSpecimenRoleId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerSpecimenSpecimenRoleId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerSpecimenSpecimenRoleId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerSpecimenSpecimenRoleSpecimenPlayingEntity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerSpecimenSpecimenRoleSpecimenPlayingEntity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//LymphNodeSamplingResultOrganizer/LymphNodeSamplingResultOrganizerSpecimenSpecimenRoleSpecimenPlayingEntity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/getNumberofLymphNodesRemovedandExamined"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//LymphNodeSamplingResultOrganizer/getNumberofLymphNodesPositive"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//MolecularDiagnosticTestingOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//MolecularDiagnosticTestingOrganizer/MolecularDiagnosticTestingOrganizerCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MolecularDiagnosticTestingOrganizer/MolecularDiagnosticTestingOrganizerCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MolecularDiagnosticTestingOrganizer/MolecularDiagnosticTestingOrganizerCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//MolecularDiagnosticTestingOrganizer/MolecularDiagnosticTestingOrganizerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MolecularDiagnosticTestingOrganizer/MolecularDiagnosticTestingOrganizerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MolecularDiagnosticTestingOrganizer/MolecularDiagnosticTestingOrganizerCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//MolecularDiagnosticTestingOrganizer/MolecularDiagnosticTestingOrganizerOncotypeDXScore">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MolecularDiagnosticTestingOrganizer/MolecularDiagnosticTestingOrganizerOncotypeDXScore/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MolecularDiagnosticTestingOrganizer/MolecularDiagnosticTestingOrganizerOncotypeDXScore/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//MolecularDiagnosticTestingOrganizer/getOncotypeDXScores"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ReceptorStatusOrganizer">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerEstrogenReceptorStatus">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerEstrogenReceptorStatus/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerEstrogenReceptorStatus/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerProgesteroneReceptorStatus">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerProgesteroneReceptorStatus/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerProgesteroneReceptorStatus/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerHER2ReceptorStatus">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerHER2ReceptorStatus/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ReceptorStatusOrganizer/ReceptorStatusOrganizerHER2ReceptorStatus/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ReceptorStatusOrganizer/getEstrogenReceptorStatus"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ReceptorStatusOrganizer/getProgesteroneReceptorStatus"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ReceptorStatusOrganizer/getHER2ReceptorStatus"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//BodyHeight">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BodyHeight/BodyHeightCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyHeight/BodyHeightCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyHeight/BodyHeightCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BodyHeight/BodyHeightCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyHeight/BodyHeightCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyHeight/BodyHeightCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BodyHeight/BodyHeightValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyHeight/BodyHeightValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyHeight/BodyHeightValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//BodySurfaceArea">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BodySurfaceArea/BodySurfaceAreaCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodySurfaceArea/BodySurfaceAreaCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodySurfaceArea/BodySurfaceAreaCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BodySurfaceArea/BodySurfaceAreaCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodySurfaceArea/BodySurfaceAreaCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodySurfaceArea/BodySurfaceAreaCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BodySurfaceArea/BodySurfaceAreaValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodySurfaceArea/BodySurfaceAreaValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodySurfaceArea/BodySurfaceAreaValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//BodyWeight">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BodyWeight/BodyWeightCodeP">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyWeight/BodyWeightCodeP/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyWeight/BodyWeightCodeP/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BodyWeight/BodyWeightCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyWeight/BodyWeightCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyWeight/BodyWeightCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//BodyWeight/BodyWeightValue">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyWeight/BodyWeightValue/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//BodyWeight/BodyWeightValue/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//EncountersSectionBCTPS">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//EncountersSectionBCTPS/EncountersSectionBCTPSHospitalizationWithReason">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EncountersSectionBCTPS/EncountersSectionBCTPSHospitalizationWithReason/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//EncountersSectionBCTPS/EncountersSectionBCTPSHospitalizationWithReason/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//EncountersSectionBCTPS/getHospitalizationWithReason"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//FamilyHistorySectionBCTPS">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistorySectionBCTPS/FamilyHistorySectionBCTPSFamilyHistoryofCancerNone">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistorySectionBCTPS/FamilyHistorySectionBCTPSFamilyHistoryofCancerNone/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistorySectionBCTPS/FamilyHistorySectionBCTPSFamilyHistoryofCancerNone/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistorySectionBCTPS/FamilyHistorySectionBCTPSFamilyHistoryPedigree">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistorySectionBCTPS/FamilyHistorySectionBCTPSFamilyHistoryPedigree/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistorySectionBCTPS/FamilyHistorySectionBCTPSFamilyHistoryPedigree/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistorySectionBCTPS/FamilyHistorySectionBCTPSFamilyHistoryOrganizer">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistorySectionBCTPS/FamilyHistorySectionBCTPSFamilyHistoryOrganizer/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//FamilyHistorySectionBCTPS/FamilyHistorySectionBCTPSFamilyHistoryOrganizer/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistorySectionBCTPS/getFamilyHistoryofCancerNone"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistorySectionBCTPS/getFamilyHistoryPedigree"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FamilyHistorySectionBCTPS/getFamilyHistoryOrganizer"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//FunctionalStatusSectionBCTPS">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//FunctionalStatusSectionBCTPS/getNeurotoxicityImpairmentofADLs"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//MedicationsSectionBCTPS">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//MedicationsSectionBCTPS/MedicationsSectionBCTPSAnthracyclinesLifetimeDose">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MedicationsSectionBCTPS/MedicationsSectionBCTPSAnthracyclinesLifetimeDose/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MedicationsSectionBCTPS/MedicationsSectionBCTPSAnthracyclinesLifetimeDose/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//MedicationsSectionBCTPS/MedicationsSectionBCTPSChemotherapeuticDrugTherapyDiscontinued">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MedicationsSectionBCTPS/MedicationsSectionBCTPSChemotherapeuticDrugTherapyDiscontinued/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MedicationsSectionBCTPS/MedicationsSectionBCTPSChemotherapeuticDrugTherapyDiscontinued/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//MedicationsSectionBCTPS/MedicationsSectionBCTPSChemotherapyMedicationActivity">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MedicationsSectionBCTPS/MedicationsSectionBCTPSChemotherapyMedicationActivity/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//MedicationsSectionBCTPS/MedicationsSectionBCTPSChemotherapyMedicationActivity/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//MedicationsSectionBCTPS/getAnthracyclinesLifetimeDoses"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//MedicationsSectionBCTPS/getChemotherapeuticDrugTherapyDiscontinueds"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//MedicationsSectionBCTPS/getChemotherapyMedicationActivities"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//PlanofCareSectionBCTPS">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PlanofCareSectionBCTPS/getChemotherapyRegimenPlans"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PlanofCareSectionBCTPS/getPlanofCareActivityReconstructionProcedure"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PlanofCareSectionBCTPS/getPlanofCareRadiationActivity"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//PlanofCareRadiationActivity">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PlanofCareRadiationActivity/PlanofCareRadiationActivityCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PlanofCareRadiationActivity/PlanofCareRadiationActivityCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PlanofCareRadiationActivity/PlanofCareRadiationActivityCode/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//PlanofCareRadiationActivity/PlanofCareRadiationActivityMoodCode">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PlanofCareRadiationActivity/PlanofCareRadiationActivityMoodCode/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//PlanofCareRadiationActivity/PlanofCareRadiationActivityMoodCode/context"/>
+      </genOperations>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ProblemSectionBCTPS">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProblemSectionBCTPS/ProblemSectionBCTPSBreastCancerConcernAct">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProblemSectionBCTPS/ProblemSectionBCTPSBreastCancerConcernAct/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProblemSectionBCTPS/ProblemSectionBCTPSBreastCancerConcernAct/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProblemSectionBCTPS/ProblemSectionBCTPSLastMenstrualPeriod">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProblemSectionBCTPS/ProblemSectionBCTPSLastMenstrualPeriod/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProblemSectionBCTPS/ProblemSectionBCTPSLastMenstrualPeriod/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProblemSectionBCTPS/getBreastCancerConcernAct"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProblemSectionBCTPS/getLastMenstrualPeriod"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ProceduresSectionBCTPS">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProceduresSectionBCTPS/ProceduresSectionBCTPSBreastCancerProcedures">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProceduresSectionBCTPS/ProceduresSectionBCTPSBreastCancerProcedures/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProceduresSectionBCTPS/ProceduresSectionBCTPSBreastCancerProcedures/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProceduresSectionBCTPS/ProceduresSectionBCTPSRadiationTherapyCareCompleted">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProceduresSectionBCTPS/ProceduresSectionBCTPSRadiationTherapyCareCompleted/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ProceduresSectionBCTPS/ProceduresSectionBCTPSRadiationTherapyCareCompleted/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProceduresSectionBCTPS/getBreastCancerProcedures"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProceduresSectionBCTPS/getRadiationTherapyCareCompleted"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ProceduresSectionBCTPS/getMolecularDiagnosticTestingOrganizer"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ResultsSectionBCTPS">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ResultsSectionBCTPS/getReceptorStatusOrganizer"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ResultsSectionBCTPS/getCardiacFunctionObservation"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//VitalSignsSectionBCTPS">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//VitalSignsSectionBCTPS/VitalSignsSectionBCTPSTemplateId">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//VitalSignsSectionBCTPS/VitalSignsSectionBCTPSTemplateId/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//VitalSignsSectionBCTPS/VitalSignsSectionBCTPSTemplateId/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//VitalSignsSectionBCTPS/VitalSignsSectionBCTPSVitalSignsOrganizerBCTPS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//VitalSignsSectionBCTPS/VitalSignsSectionBCTPSVitalSignsOrganizerBCTPS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//VitalSignsSectionBCTPS/VitalSignsSectionBCTPSVitalSignsOrganizerBCTPS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//VitalSignsSectionBCTPS/getVitalSignsOrganizerBCTPS"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//VitalSignsOrganizerBCTPS">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//VitalSignsOrganizerBCTPS/VitalSignsOrganizerBCTPSBodyHeight">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//VitalSignsOrganizerBCTPS/VitalSignsOrganizerBCTPSBodyHeight/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//VitalSignsOrganizerBCTPS/VitalSignsOrganizerBCTPSBodyHeight/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//VitalSignsOrganizerBCTPS/VitalSignsOrganizerBCTPSBodyWeight">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//VitalSignsOrganizerBCTPS/VitalSignsOrganizerBCTPSBodyWeight/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//VitalSignsOrganizerBCTPS/VitalSignsOrganizerBCTPSBodyWeight/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//VitalSignsOrganizerBCTPS/VitalSignsOrganizerBCTPSBodySurfaceArea">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//VitalSignsOrganizerBCTPS/VitalSignsOrganizerBCTPSBodySurfaceArea/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//VitalSignsOrganizerBCTPS/VitalSignsOrganizerBCTPSBodySurfaceArea/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//VitalSignsOrganizerBCTPS/getBodyHeights"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//VitalSignsOrganizerBCTPS/getBodyWeights"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//VitalSignsOrganizerBCTPS/getBodySurfaceAreas"/>
+    </genClasses>
+    <genClasses xsi:type="genmodel:GenClass" ecoreClass="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary">
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryAllergiesSectionEntriesOptional">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryAllergiesSectionEntriesOptional/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryAllergiesSectionEntriesOptional/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryMedicationsSectionBCTPS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryMedicationsSectionBCTPS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryMedicationsSectionBCTPS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryFamilyHistorySectionBCTPS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryFamilyHistorySectionBCTPS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryFamilyHistorySectionBCTPS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryFamilyHistorySectionBCTPS2">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryFamilyHistorySectionBCTPS2/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryFamilyHistorySectionBCTPS2/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryProblemSectionBCTPS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryProblemSectionBCTPS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryProblemSectionBCTPS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryProceduresSectionBCTPS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryProceduresSectionBCTPS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryProceduresSectionBCTPS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryResultsSectionBCTPS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryResultsSectionBCTPS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryResultsSectionBCTPS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryVitalSignsSectionBCTPS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryVitalSignsSectionBCTPS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryVitalSignsSectionBCTPS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryPlanofCareSectionBCTPS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryPlanofCareSectionBCTPS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryPlanofCareSectionBCTPS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryFunctionalStatusSectionBCTPS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryFunctionalStatusSectionBCTPS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryFunctionalStatusSectionBCTPS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryEncountersSectionBCTPS">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryEncountersSectionBCTPS/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/ClinicalOncologyTreatmentPlanandSummaryEncountersSectionBCTPS/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getAllergiesSectionEntriesOptional"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getMedicationsSectionBCTPS"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getFamilyHistorySectionBCTPS"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getFamilyHistorySectionBCTPS2"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getProblemSectionBCTPS"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getProceduresSectionBCTPS"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getResultsSectionBCTPS"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getVitalSignsSectionBCTPS"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getPlanofCareSectionBCTPS"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getFunctionalStatusSectionBCTPS"/>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="clondata.ecore#//ClinicalOncologyTreatmentPlanandSummary/getEncountersSectionBCTPS"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

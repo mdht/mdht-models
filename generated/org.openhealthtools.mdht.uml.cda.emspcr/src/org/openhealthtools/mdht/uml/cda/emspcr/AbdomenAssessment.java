@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='AbdomenAssessmentTemplateId AbdomenAssessmentMoodCode AbdomenAssessmentCode AbdomenAssessmentEffectiveTime AbdomenAssessmentValue AbdomenAssessmentTargetSiteCode' templateId.root='2.16.840.1.1133883.17.3.10.1.117' moodCode='EVN' code.code='67530-6' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Physical findings of Abdomen NEMSIS' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' targetSiteCode.codeSystem='2.16.840.1.113883.6.1' targetSiteCode.codeSystemName='LOINC'"
  * @generated
  */
-public interface AbdomenAssessment extends Observation {
+public interface AbdomenAssessment extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,9 +102,9 @@ public interface AbdomenAssessment extends Observation {
 	public AbdomenAssessment init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AbdomenAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public AbdomenAssessment init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // AbdomenAssessment

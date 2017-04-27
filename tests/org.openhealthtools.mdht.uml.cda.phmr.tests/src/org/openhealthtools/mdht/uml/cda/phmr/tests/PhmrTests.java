@@ -23,10 +23,10 @@
 package org.openhealthtools.mdht.uml.cda.phmr.tests;
 
 
-import junit.framework.JUnit4TestAdapter;
-
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
+
+import junit.framework.JUnit4TestAdapter;
 
 /**
  * <!-- begin-user-doc -->
@@ -70,13 +70,13 @@ import org.junit.runners.Suite;
 public class PhmrTests {
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static junit.framework.Test suite() {
-    return new JUnit4TestAdapter( PhmrTests.class);
-  }
+		return new JUnit4TestAdapter( PhmrTests.class);
+	}
 	 
 
 } //PhmrTests

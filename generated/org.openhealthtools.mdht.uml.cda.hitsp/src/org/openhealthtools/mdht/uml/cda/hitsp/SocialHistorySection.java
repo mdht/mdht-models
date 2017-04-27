@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * <!-- begin-model-doc -->
  * <p>
  *     The Social History Section contains information about the person's beliefs, home life, community life,
- *     work life, hobbies, and risky habits. 
+ *     work life, hobbies, and risky habits.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -81,5 +79,6 @@ public interface SocialHistorySection extends org.openhealthtools.mdht.uml.cda.i
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public SocialHistorySection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public SocialHistorySection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // SocialHistorySection

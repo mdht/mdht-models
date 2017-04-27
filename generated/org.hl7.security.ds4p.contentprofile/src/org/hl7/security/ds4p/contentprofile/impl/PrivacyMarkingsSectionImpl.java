@@ -11,9 +11,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
-import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.PrivacyMarkingsSection;
@@ -27,7 +26,7 @@ import org.hl7.security.ds4p.contentprofile.operations.PrivacyMarkingsSectionOpe
  *
  * @generated
  */
-public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMarkingsSection {
+public class PrivacyMarkingsSectionImpl extends EObjectImpl implements PrivacyMarkingsSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,6 +51,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsSectionOperations.validatePrivacyMarkingsSectionTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +61,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsSectionCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsSectionOperations.validatePrivacyMarkingsSectionCode(this, diagnostics, context);
 	}
@@ -70,6 +71,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsSectionCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsSectionOperations.validatePrivacyMarkingsSectionCodeP(this, diagnostics, context);
 	}
@@ -79,6 +81,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsSectionText(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsSectionOperations.validatePrivacyMarkingsSectionText(this, diagnostics, context);
 	}
@@ -88,6 +91,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacyMarkingsSectionEntry1(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacyMarkingsSectionOperations.validatePrivacyMarkingsSectionEntry1(this, diagnostics, context);
 	}
@@ -97,6 +101,7 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacyMarkingsSection init() {
 	    return Initializer.Util.init(this);
 	}
@@ -105,7 +110,8 @@ public class PrivacyMarkingsSectionImpl extends SectionImpl implements PrivacyMa
      * <!-- end-user-doc -->
      * @generated
      */
-    public PrivacyMarkingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PrivacyMarkingsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

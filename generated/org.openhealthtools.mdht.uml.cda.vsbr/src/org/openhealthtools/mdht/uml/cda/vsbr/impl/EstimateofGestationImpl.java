@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.EstimateofGestation;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.EstimateofGestationOpera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Estimateof Gestation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EstimateofGestationImpl extends ObservationImpl implements EstimateofGestation {
+public class EstimateofGestationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements EstimateofGestation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,7 +104,7 @@ public class EstimateofGestationImpl extends ObservationImpl implements Estimate
 	 * @generated
 	 */
 	public EstimateofGestation init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -117,8 +112,9 @@ public class EstimateofGestationImpl extends ObservationImpl implements Estimate
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EstimateofGestation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public EstimateofGestation init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // EstimateofGestationImpl

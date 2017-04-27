@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -37,7 +30,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -113,7 +105,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class ECGTestResultOperations extends ClinicalStatementOperations {
+public class ECGTestResultOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -142,7 +142,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -157,25 +157,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultTemplateId(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -203,7 +213,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -218,25 +228,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultClassCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -264,7 +284,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -279,25 +299,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultMoodCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -325,7 +355,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -340,25 +370,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultId(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -386,7 +426,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -401,25 +441,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultCodeP(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -449,7 +499,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -464,25 +514,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -510,7 +570,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -525,25 +585,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultText(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -571,7 +641,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -586,25 +656,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultStatusCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -632,7 +712,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -647,25 +727,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultEffectiveTime(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -693,7 +783,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -708,25 +798,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultValue(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -754,7 +854,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -769,25 +869,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultMethodCodeP(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_METHOD_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_METHOD_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultMethodCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -817,7 +927,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -832,25 +942,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultMethodCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_METHOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_METHOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultMethodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -878,7 +998,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -893,25 +1013,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultInterpretationCodeP(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_INTERPRETATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultInterpretationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -941,7 +1071,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -956,25 +1086,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultInterpretationCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_INTERPRETATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_INTERPRETATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultInterpretationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1002,7 +1142,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1017,25 +1157,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultGroupIdentifier(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1063,7 +1213,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1078,25 +1228,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultNonPerformanceReason(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1124,7 +1284,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1139,25 +1299,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultLeadLocationAssociation(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_LEAD_LOCATION_ASSOCIATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultLeadLocationAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultLeadLocationAssociation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1185,7 +1355,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1200,25 +1370,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultTimingReference(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_TIMING_REFERENCE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1246,7 +1426,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1261,25 +1441,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultStudyTestPerformer(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_STUDY_TEST_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_STUDY_TEST_PERFORMER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultStudyTestPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1307,7 +1497,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1322,25 +1512,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultStudyFindingEvaluator(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_STUDY_FINDING_EVALUATOR,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultStudyFindingEvaluator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultStudyFindingEvaluator", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1368,7 +1568,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1383,25 +1583,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultAssociatedConsciousness(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_ASSOCIATED_CONSCIOUSNESS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultAssociatedConsciousness", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultAssociatedConsciousness", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1429,7 +1639,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1444,25 +1654,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultPlannedStudyDay(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_PLANNED_STUDY_DAY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_PLANNED_STUDY_DAY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultPlannedStudyDay", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1490,7 +1710,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1505,25 +1725,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultStudyDayPeriod(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_STUDY_DAY_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1551,7 +1781,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1566,25 +1796,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultComment(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1612,7 +1852,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1627,25 +1867,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultDomainAssignment(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1673,7 +1923,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1688,25 +1938,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultRelatedRecord(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1734,7 +1994,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1749,25 +2009,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultSupplementalValue(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1795,7 +2065,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1810,25 +2080,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultCategory(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1856,7 +2136,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1871,25 +2151,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultSubCategory(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1917,7 +2207,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1932,25 +2222,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultPositionofSubject(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_POSITIONOF_SUBJECT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_POSITIONOF_SUBJECT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultPositionofSubject", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultPositionofSubject", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -1978,7 +2278,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1993,25 +2293,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultFindingAbout(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULT_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULT_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2039,7 +2349,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2054,25 +2364,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultleadLocationAssociationecgLeadLocationClassCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultleadLocationAssociationecgLeadLocationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultleadLocationAssociationecgLeadLocationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2100,7 +2420,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2115,25 +2435,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultleadLocationAssociationecgLeadLocationCodeP(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultleadLocationAssociationecgLeadLocationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultleadLocationAssociationecgLeadLocationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2163,7 +2493,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2178,25 +2508,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultleadLocationAssociationecgLeadLocationCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultleadLocationAssociationecgLeadLocationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultleadLocationAssociationecgLeadLocationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2224,7 +2564,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2239,25 +2579,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultleadLocationAssociationecgLeadLocationMoodCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultleadLocationAssociationecgLeadLocationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultleadLocationAssociationecgLeadLocationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2287,7 +2637,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2302,25 +2652,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultleadLocationAssociationecgLeadLocationValue(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultleadLocationAssociationecgLeadLocationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultleadLocationAssociationecgLeadLocationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2348,7 +2708,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2363,25 +2723,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultleadLocationAssociationecgLeadLocationValueP(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATIONECG_LEAD_LOCATION_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultleadLocationAssociationecgLeadLocationValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultleadLocationAssociationecgLeadLocationValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2409,7 +2779,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2424,25 +2794,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultleadLocationAssociationTypeCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultleadLocationAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultleadLocationAssociationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2470,7 +2850,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2485,25 +2865,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultleadLocationAssociationEcgLeadLocation(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTLEAD_LOCATION_ASSOCIATION_ECG_LEAD_LOCATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultleadLocationAssociationEcgLeadLocation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultleadLocationAssociationEcgLeadLocation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2531,7 +2921,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2546,25 +2936,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateClassCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultassociatedConsciousnessconsciousnessStateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultassociatedConsciousnessconsciousnessStateClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2592,7 +2992,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2607,25 +3007,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateCodeP(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultassociatedConsciousnessconsciousnessStateCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultassociatedConsciousnessconsciousnessStateCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2655,7 +3065,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2670,25 +3080,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultassociatedConsciousnessconsciousnessStateCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultassociatedConsciousnessconsciousnessStateCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2716,7 +3136,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2731,25 +3151,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateMoodCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultassociatedConsciousnessconsciousnessStateMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultassociatedConsciousnessconsciousnessStateMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2779,7 +3209,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2794,25 +3224,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateValue(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultassociatedConsciousnessconsciousnessStateValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultassociatedConsciousnessconsciousnessStateValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2840,7 +3280,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2855,25 +3295,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultassociatedConsciousnessconsciousnessStateValueP(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESSCONSCIOUSNESS_STATE_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultassociatedConsciousnessconsciousnessStateValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultassociatedConsciousnessconsciousnessStateValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2901,7 +3351,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2916,25 +3366,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultassociatedConsciousnessTypeCode(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultassociatedConsciousnessTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultassociatedConsciousnessTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -2962,7 +3422,7 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -2977,25 +3437,35 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateECGTestResultassociatedConsciousnessConsciousnessState(ECGTestResult ecgTestResult, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ECG_TEST_RESULT);
 			try {
-				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(ecgTestResult)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(ecgTestResult)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ECG_TEST_RESULT__ECG_TEST_RESULTASSOCIATED_CONSCIOUSNESS_CONSCIOUSNESS_STATE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultassociatedConsciousnessConsciousnessState", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ECGTestResultECGTestResultassociatedConsciousnessConsciousnessState", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(ecgTestResult, context) }),
 						 new Object [] { ecgTestResult }));
 			}
 			 
@@ -3031,8 +3501,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(98));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -3040,8 +3515,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(ecgTestResult);
 	}
 
@@ -3072,8 +3548,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(99));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -3081,8 +3562,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(ecgTestResult);
 	}
 
@@ -3113,8 +3595,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  TimingReference getTimingReference(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_TIMING_REFERENCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(100));
 			try {
 				GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -3122,8 +3609,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
 		return (TimingReference) query.evaluate(ecgTestResult);
 	}
 
@@ -3154,8 +3642,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  PlannedStudyDay getPlannedStudyDay(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_PLANNED_STUDY_DAY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(101));
 			try {
 				GET_PLANNED_STUDY_DAY__EOCL_QRY = helper.createQuery(GET_PLANNED_STUDY_DAY__EOCL_EXP);
@@ -3163,8 +3656,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PLANNED_STUDY_DAY__EOCL_QRY);
 		return (PlannedStudyDay) query.evaluate(ecgTestResult);
 	}
 
@@ -3195,8 +3689,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  StudyDayPeriod getStudyDayPeriod(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(102));
 			try {
 				GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);
@@ -3204,8 +3703,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
 		return (StudyDayPeriod) query.evaluate(ecgTestResult);
 	}
 
@@ -3236,8 +3736,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<Comment> getComments(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(103));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -3245,8 +3750,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(ecgTestResult);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -3279,8 +3785,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(104));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -3288,8 +3799,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(ecgTestResult);
 	}
 
@@ -3320,8 +3832,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(105));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -3329,8 +3846,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(ecgTestResult);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -3363,8 +3881,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(106));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -3372,8 +3895,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(ecgTestResult);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -3406,8 +3930,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  Category getCategory(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(107));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -3415,8 +3944,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(ecgTestResult);
 	}
 
@@ -3447,8 +3977,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  SubCategory getSubCategory(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(108));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -3456,8 +3991,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(ecgTestResult);
 	}
 
@@ -3488,8 +4024,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  PositionofSubject getPositionofSubject(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_POSITIONOF_SUBJECT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(109));
 			try {
 				GET_POSITIONOF_SUBJECT__EOCL_QRY = helper.createQuery(GET_POSITIONOF_SUBJECT__EOCL_EXP);
@@ -3497,8 +4038,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_POSITIONOF_SUBJECT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_POSITIONOF_SUBJECT__EOCL_QRY);
 		return (PositionofSubject) query.evaluate(ecgTestResult);
 	}
 
@@ -3529,8 +4071,13 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(ECGTestResult ecgTestResult) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.ECG_TEST_RESULT, SdtmPackage.Literals.ECG_TEST_RESULT.getEAllOperations().get(110));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -3538,8 +4085,9 @@ public class ECGTestResultOperations extends ClinicalStatementOperations {
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(ecgTestResult);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

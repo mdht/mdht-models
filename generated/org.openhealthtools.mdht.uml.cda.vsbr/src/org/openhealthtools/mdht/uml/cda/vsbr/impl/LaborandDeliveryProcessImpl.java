@@ -12,10 +12,6 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.CharacteristicofLaborandDelivery;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcess;
 import org.openhealthtools.mdht.uml.cda.vsbr.MaternalMorbidity;
@@ -30,12 +26,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.LaborandDeliveryProcessO
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Laborand Delivery Process</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class LaborandDeliveryProcessImpl extends ActImpl implements LaborandDeliveryProcess {
+public class LaborandDeliveryProcessImpl extends org.eclipse.mdht.uml.cda.impl.ActImpl
+		implements LaborandDeliveryProcess {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -138,7 +133,8 @@ public class LaborandDeliveryProcessImpl extends ActImpl implements LaborandDeli
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLaborandDeliveryProcessHomeBirthPlan(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateLaborandDeliveryProcessHomeBirthPlan(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return LaborandDeliveryProcessOperations.validateLaborandDeliveryProcessHomeBirthPlan(
 			this, diagnostics, context);
 	}
@@ -181,7 +177,8 @@ public class LaborandDeliveryProcessImpl extends ActImpl implements LaborandDeli
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateLaborandDeliveryProcessRiskFactors(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateLaborandDeliveryProcessRiskFactors(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return LaborandDeliveryProcessOperations.validateLaborandDeliveryProcessRiskFactors(this, diagnostics, context);
 	}
 
@@ -236,7 +233,7 @@ public class LaborandDeliveryProcessImpl extends ActImpl implements LaborandDeli
 	 * @generated
 	 */
 	public LaborandDeliveryProcess init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -244,8 +241,9 @@ public class LaborandDeliveryProcessImpl extends ActImpl implements LaborandDeli
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public LaborandDeliveryProcess init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public LaborandDeliveryProcess init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // LaborandDeliveryProcessImpl

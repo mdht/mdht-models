@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.Medication;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.MedicationOperations;
@@ -63,66 +63,69 @@ public class MedicationTest extends  CDAValidationTest {
  
 									
 public void testValidateMedicationsSectionTemplateId() {
-      OperationsTestCase<Medication> validateMedicationsSectionTemplateIdTestCase = new OperationsTestCase<Medication>(
-      "validateMedicationsSectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<Medication> validateMedicationsSectionTemplateIdTestCase = new OperationsTestCase<Medication>(
+			"validateMedicationsSectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_MEDICATIONS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(Medication target) {
+			@Override
+			protected void updateToFail(Medication target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(Medication target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(Medication target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return MedicationOperations.validateMedicationsSectionTemplateId(
-          (Medication) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return MedicationOperations.validateMedicationsSectionTemplateId(
+					(Medication) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateMedicationsSectionTemplateIdTestCase.doValidationTest();
+		validateMedicationsSectionTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -151,6 +154,7 @@ public void testValidateMedicationsSectionTemplateId() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<Medication> {
+		@Override
 		public Medication create() {		
 			return PhmrFactory.eINSTANCE.createMedication();
 		}
@@ -182,9 +186,9 @@ public void testValidateMedicationsSectionTemplateId() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -194,8 +198,8 @@ public void testValidateMedicationsSectionTemplateId() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

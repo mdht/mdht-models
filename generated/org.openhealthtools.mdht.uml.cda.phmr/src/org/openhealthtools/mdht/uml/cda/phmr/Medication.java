@@ -22,9 +22,7 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr;
 
-import java.lang.Iterable;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection;
 
 /**
@@ -39,10 +37,10 @@ import org.openhealthtools.mdht.uml.cda.ccd.MedicationsSection;
  */
 public interface Medication extends MedicationsSection {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Medication init();
 
@@ -52,5 +50,5 @@ public interface Medication extends MedicationsSection {
      * @generated
      */
     @Override
-	public Medication init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public Medication init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // Medication

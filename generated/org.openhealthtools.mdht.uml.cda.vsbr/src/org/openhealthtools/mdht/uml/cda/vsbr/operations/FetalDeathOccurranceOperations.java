@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.FetalDeathOccurrance;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -40,7 +38,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class FetalDeathOccurranceOperations extends ClinicalStatementOperations {
+public class FetalDeathOccurranceOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +74,7 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DEATH_OCCURRANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DEATH_OCCURRANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -85,27 +90,34 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	public static boolean validateFetalDeathOccurranceTemplateId(FetalDeathOccurrance fetalDeathOccurrance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DEATH_OCCURRANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DEATH_OCCURRANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DEATH_OCCURRANCE);
 			try {
-				VALIDATE_FETAL_DEATH_OCCURRANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DEATH_OCCURRANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_FETAL_DEATH_OCCURRANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DEATH_OCCURRANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeathOccurrance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DEATH_OCCURRANCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				fetalDeathOccurrance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeathOccurranceTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									fetalDeathOccurrance, context) }), new Object[] { fetalDeathOccurrance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeathOccurranceFetalDeathOccurranceTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeathOccurrance, context) }),
+						new Object[] { fetalDeathOccurrance }));
 			}
 
 			return false;
@@ -132,7 +144,7 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DEATH_OCCURRANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DEATH_OCCURRANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -148,27 +160,33 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	public static boolean validateFetalDeathOccurranceClassCode(FetalDeathOccurrance fetalDeathOccurrance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DEATH_OCCURRANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DEATH_OCCURRANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DEATH_OCCURRANCE);
 			try {
-				VALIDATE_FETAL_DEATH_OCCURRANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DEATH_OCCURRANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DEATH_OCCURRANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeathOccurrance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DEATH_OCCURRANCE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				fetalDeathOccurrance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeathOccurranceClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									fetalDeathOccurrance, context) }), new Object[] { fetalDeathOccurrance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeathOccurranceFetalDeathOccurranceClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeathOccurrance, context) }),
+						new Object[] { fetalDeathOccurrance }));
 			}
 
 			return false;
@@ -195,7 +213,7 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DEATH_OCCURRANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DEATH_OCCURRANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -211,27 +229,33 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	public static boolean validateFetalDeathOccurranceMoodCode(FetalDeathOccurrance fetalDeathOccurrance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DEATH_OCCURRANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DEATH_OCCURRANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DEATH_OCCURRANCE);
 			try {
-				VALIDATE_FETAL_DEATH_OCCURRANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DEATH_OCCURRANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DEATH_OCCURRANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeathOccurrance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DEATH_OCCURRANCE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				fetalDeathOccurrance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeathOccurranceMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									fetalDeathOccurrance, context) }), new Object[] { fetalDeathOccurrance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeathOccurranceFetalDeathOccurranceMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeathOccurrance, context) }),
+						new Object[] { fetalDeathOccurrance }));
 			}
 
 			return false;
@@ -258,7 +282,7 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DEATH_OCCURRANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DEATH_OCCURRANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -274,27 +298,32 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	public static boolean validateFetalDeathOccurranceCodeP(FetalDeathOccurrance fetalDeathOccurrance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DEATH_OCCURRANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DEATH_OCCURRANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DEATH_OCCURRANCE);
 			try {
-				VALIDATE_FETAL_DEATH_OCCURRANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DEATH_OCCURRANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DEATH_OCCURRANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeathOccurrance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DEATH_OCCURRANCE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(fetalDeathOccurrance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeathOccurranceCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									fetalDeathOccurrance, context) }), new Object[] { fetalDeathOccurrance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeathOccurranceFetalDeathOccurranceCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeathOccurrance, context) }),
+						new Object[] { fetalDeathOccurrance }));
 			}
 
 			return false;
@@ -310,9 +339,9 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73811-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73811-2' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFetalDeathOccurranceCode(FetalDeathOccurrance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Death Occurrance Code</em>}' invariant operation.
@@ -323,7 +352,7 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -339,27 +368,32 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	public static boolean validateFetalDeathOccurranceCode(FetalDeathOccurrance fetalDeathOccurrance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DEATH_OCCURRANCE);
 			try {
-				VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeathOccurrance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DEATH_OCCURRANCE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(fetalDeathOccurrance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeathOccurranceCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									fetalDeathOccurrance, context) }), new Object[] { fetalDeathOccurrance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeathOccurranceFetalDeathOccurranceCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeathOccurrance, context) }),
+						new Object[] { fetalDeathOccurrance }));
 			}
 
 			return false;
@@ -375,9 +409,9 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '434681000124104' or value.code = '434671000124102' or value.code = '434631000124100' or value.code = '261665006')))";
+	protected static final String VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '434681000124104' or value.code = '434671000124102' or value.code = '434631000124100' or value.code = '261665006')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateFetalDeathOccurranceValue(FetalDeathOccurrance, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Fetal Death Occurrance Value</em>}' invariant operation.
@@ -388,7 +422,7 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -404,27 +438,32 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	public static boolean validateFetalDeathOccurranceValue(FetalDeathOccurrance fetalDeathOccurrance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DEATH_OCCURRANCE);
 			try {
-				VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeathOccurrance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(fetalDeathOccurrance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeathOccurranceValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									fetalDeathOccurrance, context) }), new Object[] { fetalDeathOccurrance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeathOccurranceFetalDeathOccurranceValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeathOccurrance, context) }),
+						new Object[] { fetalDeathOccurrance }));
 			}
 
 			return false;
@@ -451,7 +490,7 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -467,27 +506,33 @@ public class FetalDeathOccurranceOperations extends ClinicalStatementOperations 
 	public static boolean validateFetalDeathOccurranceValueP(FetalDeathOccurrance fetalDeathOccurrance,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.FETAL_DEATH_OCCURRANCE);
 			try {
-				VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			fetalDeathOccurrance)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_FETAL_DEATH_OCCURRANCE_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				fetalDeathOccurrance)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_VALUE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"FetalDeathOccurranceValueP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									fetalDeathOccurrance, context) }), new Object[] { fetalDeathOccurrance }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.FETAL_DEATH_OCCURRANCE__FETAL_DEATH_OCCURRANCE_VALUE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"FetalDeathOccurranceFetalDeathOccurranceValueP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										fetalDeathOccurrance, context) }),
+						new Object[] { fetalDeathOccurrance }));
 			}
 
 			return false;

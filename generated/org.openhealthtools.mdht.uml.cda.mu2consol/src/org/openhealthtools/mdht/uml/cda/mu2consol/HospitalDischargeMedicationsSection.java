@@ -26,8 +26,9 @@ import org.openhealthtools.mdht.uml.cda.consol.MedicationActivity;
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getHospitalDischargeMedicationsSection()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='mu2consolHospitalDischargeMedicationsSectionDischargeMedication mu2consolHospitalDischargeMedicationsSectionMedicationActivity'"
+ * @model annotation= "http://www.openhealthtools.org/mdht/uml/cda/annotation
+ *        constraints.validation.error='mu2consolHospitalDischargeMedicationsSectionDischargeMedication
+ *        mu2consolHospitalDischargeMedicationsSectionMedicationActivity'"
  * @generated
  */
 public interface HospitalDischargeMedicationsSection
@@ -42,8 +43,10 @@ public interface HospitalDischargeMedicationsSection
 	 * @param context
 	 *            The cache of context-specific information. <!-- end-model-doc
 	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->exists(entry : cda::Entry | not entry.act.oclIsUndefined() and entry.act.oclIsKindOf(consol::DischargeMedication))'"
+	 * @model annotation= "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.entry->exists(entry : cda::Entry | not
+	 *        entry.act.oclIsUndefined() and
+	 *        entry.act.oclIsKindOf(consol::DischargeMedication))'"
 	 * @generated
 	 */
 	boolean validateMu2consolHospitalDischargeMedicationsSectionDischargeMedication(DiagnosticChain diagnostics,
@@ -60,8 +63,10 @@ public interface HospitalDischargeMedicationsSection
 	 * @param context
 	 *            The cache of context-specific information. <!-- end-model-doc
 	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.entry->one(entry : cda::Entry | not entry.substanceAdministration.oclIsUndefined() and entry.substanceAdministration.oclIsKindOf(consol::MedicationActivity))'"
+	 * @model annotation= "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.entry->one(entry : cda::Entry | not
+	 *        entry.substanceAdministration.oclIsUndefined() and
+	 *        entry.substanceAdministration.oclIsKindOf(consol::MedicationActivity))'"
 	 * @generated
 	 */
 	boolean validateMu2consolHospitalDischargeMedicationsSectionMedicationActivity(DiagnosticChain diagnostics,
@@ -75,7 +80,10 @@ public interface HospitalDischargeMedicationsSection
 	 * <!-- end-model-doc -->
 	 *
 	 * @model required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | not act.oclIsUndefined() and act.oclIsKindOf(consol::DischargeMedication)).oclAsType(consol::DischargeMedication)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getActs()->select(act : cda::Act | not
+	 *        act.oclIsUndefined() and
+	 *        act.oclIsKindOf(consol::DischargeMedication)).oclAsType(consol::DischargeMedication)'"
 	 * @generated
 	 */
 	EList<DischargeMedication> getmu2consolDischargeMedications();
@@ -91,7 +99,11 @@ public interface HospitalDischargeMedicationsSection
 	 * -->
 	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSubstanceAdministrations()->select(substanceAdministration : cda::SubstanceAdministration | not substanceAdministration.oclIsUndefined() and substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->any(true).oclAsType(consol::MedicationActivity)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getSubstanceAdministrations()->select(substanceAdministration
+	 *        : cda::SubstanceAdministration | not
+	 *        substanceAdministration.oclIsUndefined() and
+	 *        substanceAdministration.oclIsKindOf(consol::MedicationActivity))->asSequence()->any(true).oclAsType(consol::MedicationActivity)'"
 	 * @generated
 	 */
 	MedicationActivity getMedicationActivity();

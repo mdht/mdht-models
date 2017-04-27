@@ -4,10 +4,10 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.URL;
+import org.eclipse.mdht.uml.hl7.datatypes.operations.URLOperations;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
-import org.openhealthtools.mdht.uml.hl7.datatypes.URL;
-import org.openhealthtools.mdht.uml.hl7.datatypes.operations.URLOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -33,7 +33,8 @@ public class URLTest extends CDAValidationTest {
 	@Test
 	public void testValidateURL() {
 		OperationsTestCase<URL> validateURLTestCase = new OperationsTestCase<URL>(
-			"validateURL", operationsForOCL.getOCLValue("VALIDATE_URL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			"validateURL", operationsForOCL.getOCLValue("VALIDATE_URL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 			{
 				skipNullTest();
 			}
@@ -113,8 +114,7 @@ public class URLTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

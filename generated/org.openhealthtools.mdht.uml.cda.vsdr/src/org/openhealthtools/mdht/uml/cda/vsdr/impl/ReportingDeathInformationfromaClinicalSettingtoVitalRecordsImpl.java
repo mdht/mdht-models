@@ -3,34 +3,26 @@
 package org.openhealthtools.mdht.uml.cda.vsdr.impl;
 
 import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ClinicalDocumentImpl;
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathReportDocumentBody;
 import org.openhealthtools.mdht.uml.cda.vsdr.ReportingDeathInformationfromaClinicalSettingtoVitalRecords;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.ReportingDeathInformationfromaClinicalSettingtoVitalRecordsOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Reporting Death Informationfroma Clinical Settingto Vital Records</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ReportingDeathInformationfromaClinicalSettingtoVitalRecordsImpl extends ClinicalDocumentImpl implements ReportingDeathInformationfromaClinicalSettingtoVitalRecords {
+public  class ReportingDeathInformationfromaClinicalSettingtoVitalRecordsImpl extends ClinicalDocumentImpl implements ReportingDeathInformationfromaClinicalSettingtoVitalRecords {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -269,7 +261,8 @@ public class ReportingDeathInformationfromaClinicalSettingtoVitalRecordsImpl ext
 	public ReportingDeathInformationfromaClinicalSettingtoVitalRecords init() {
 	    return Initializer.Util.init(this);
 	}
-    /**
+
+	/**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated

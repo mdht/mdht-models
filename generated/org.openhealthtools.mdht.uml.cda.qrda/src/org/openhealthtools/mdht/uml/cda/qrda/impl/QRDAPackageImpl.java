@@ -12,14 +12,11 @@ import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
 import org.openhealthtools.mdht.uml.cda.qrda.MeasureSection;
 import org.openhealthtools.mdht.uml.cda.qrda.QRDAFactory;
 import org.openhealthtools.mdht.uml.cda.qrda.QRDAPackage;
 import org.openhealthtools.mdht.uml.cda.qrda.QualityReportingDocumentArchitectureDocument;
 import org.openhealthtools.mdht.uml.cda.qrda.util.QRDAValidator;
-import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -87,7 +84,7 @@ public class QRDAPackageImpl extends EPackageImpl implements QRDAPackage {
         isInited = true;
 
         // Initialize simple dependencies
-        CDAPackage.eINSTANCE.eClass();
+        org.eclipse.mdht.uml.cda.CDAPackage.eINSTANCE.eClass();
 
         // Create package meta-data objects
         theQRDAPackage.createPackageContents();
@@ -98,11 +95,9 @@ public class QRDAPackageImpl extends EPackageImpl implements QRDAPackage {
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (theQRDAPackage, 
-             new EValidator.Descriptor()
-             {
+             new EValidator.Descriptor() {
                  @Override
-				public EValidator getEValidator()
-                 {
+				public EValidator getEValidator() {
                      return QRDAValidator.INSTANCE;
                  }
              });
@@ -112,8 +107,8 @@ public class QRDAPackageImpl extends EPackageImpl implements QRDAPackage {
 
   
         // publish my initializers in the registry
-        Initializer.Registry.INSTANCE.registerFactory("org.openhealthtools.mdht.uml.cda.qrda", AnnotationBasedInitializer.FACTORY);
-        Initializer.Registry.INSTANCE.initializeEPackage(theQRDAPackage);
+        org.eclipse.mdht.emf.runtime.util.Initializer.Registry.INSTANCE.registerFactory("org.openhealthtools.mdht.uml.cda.qrda", org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer.FACTORY);
+        org.eclipse.mdht.emf.runtime.util.Initializer.Registry.INSTANCE.initializeEPackage(theQRDAPackage);
                 
         // Update the registry and return the package
         EPackage.Registry.INSTANCE.put(QRDAPackage.eNS_URI, theQRDAPackage);
@@ -198,7 +193,7 @@ public class QRDAPackageImpl extends EPackageImpl implements QRDAPackage {
         setNsURI(eNS_URI);
 
         // Obtain other dependent packages
-        CDAPackage theCDAPackage = (CDAPackage)EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
+        org.eclipse.mdht.uml.cda.CDAPackage theCDAPackage = (org.eclipse.mdht.uml.cda.CDAPackage)EPackage.Registry.INSTANCE.getEPackage(org.eclipse.mdht.uml.cda.CDAPackage.eNS_URI);
 
         // Create type parameters
 
@@ -345,8 +340,7 @@ public class QRDAPackageImpl extends EPackageImpl implements QRDAPackage {
         addAnnotation
           (this, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.qrda"
            });                                       
     }
@@ -362,8 +356,7 @@ public class QRDAPackageImpl extends EPackageImpl implements QRDAPackage {
         addAnnotation
           (qualityReportingDocumentArchitectureDocumentEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "QualityReportingDocumentArchitectureDocumentTemplateId QualityReportingDocumentArchitectureDocumentCode QualityReportingDocumentArchitectureDocumentCodeP QualityReportingDocumentArchitectureDocumentTitle QualityReportingDocumentArchitectureDocumentCustodian QualityReportingDocumentArchitectureDocumentLegalAuthenticator QualityReportingDocumentArchitectureDocumentRecordTarget QualityReportingDocumentArchitectureDocumentMeasureSection",
              "templateId.root", "2.16.840.1.113883.10.20.24.1.1",
              "code.code", "55182-0",
@@ -375,8 +368,7 @@ public class QRDAPackageImpl extends EPackageImpl implements QRDAPackage {
         addAnnotation
           (measureSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "MeasureSectionTemplateId MeasureSectionCode MeasureSectionText MeasureSectionTitle",
              "templateId.root", "2.16.840.1.113883.10.20.24.2.2",
              "code.code", "55186-1",

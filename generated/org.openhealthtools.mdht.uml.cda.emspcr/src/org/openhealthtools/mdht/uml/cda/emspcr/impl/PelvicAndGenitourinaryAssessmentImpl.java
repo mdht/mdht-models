@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.PelvicAndGenitourinaryAssessment;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.PelvicAndGenitourinaryAssessmentOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Pelvic And Genitourinary Assessment</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implements PelvicAndGenitourinaryAssessment {
+public class PelvicAndGenitourinaryAssessmentImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements PelvicAndGenitourinaryAssessment {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentTemplateId(
-			this, diagnostics, context);
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentMoodCode(
-			this, diagnostics, context);
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +68,7 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentCode(
-			this, diagnostics, context);
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentCode(this, diagnostics, context);
 	}
 
 	/**
@@ -92,8 +78,7 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentEffectiveTime(
-			this, diagnostics, context);
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -103,8 +88,7 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentValue(
-			this, diagnostics, context);
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentValue(this, diagnostics, context);
 	}
 
 	/**
@@ -114,8 +98,7 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	 */
 	public boolean validatePelvicAndGenitourinaryAssessmentValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentValueP(
-			this, diagnostics, context);
+		return PelvicAndGenitourinaryAssessmentOperations.validatePelvicAndGenitourinaryAssessmentValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -124,16 +107,16 @@ public class PelvicAndGenitourinaryAssessmentImpl extends ObservationImpl implem
 	 * @generated
 	 */
 	public PelvicAndGenitourinaryAssessment init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PelvicAndGenitourinaryAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public PelvicAndGenitourinaryAssessment init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PelvicAndGenitourinaryAssessmentImpl

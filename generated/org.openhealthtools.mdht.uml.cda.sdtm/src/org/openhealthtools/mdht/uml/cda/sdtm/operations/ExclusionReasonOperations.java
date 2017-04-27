@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.ExclusionReason;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -39,7 +33,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class ExclusionReasonOperations extends ClinicalStatementOperations {
+public class ExclusionReasonOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +70,7 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EXCLUSION_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EXCLUSION_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -83,25 +85,35 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateExclusionReasonTemplateId(ExclusionReason exclusionReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EXCLUSION_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EXCLUSION_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EXCLUSION_REASON);
 			try {
-				VALIDATE_EXCLUSION_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXCLUSION_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXCLUSION_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXCLUSION_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXCLUSION_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(exclusionReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EXCLUSION_REASON_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(exclusionReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EXCLUSION_REASON__EXCLUSION_REASON_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonExclusionReasonTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
 						 new Object [] { exclusionReason }));
 			}
 			 
@@ -129,7 +141,7 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EXCLUSION_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EXCLUSION_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -144,25 +156,35 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateExclusionReasonMoodCode(ExclusionReason exclusionReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EXCLUSION_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EXCLUSION_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EXCLUSION_REASON);
 			try {
-				VALIDATE_EXCLUSION_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXCLUSION_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXCLUSION_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXCLUSION_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXCLUSION_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(exclusionReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EXCLUSION_REASON_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(exclusionReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EXCLUSION_REASON__EXCLUSION_REASON_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonExclusionReasonMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
 						 new Object [] { exclusionReason }));
 			}
 			 
@@ -190,7 +212,7 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EXCLUSION_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EXCLUSION_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -205,25 +227,35 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateExclusionReasonCodeP(ExclusionReason exclusionReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EXCLUSION_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EXCLUSION_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EXCLUSION_REASON);
 			try {
-				VALIDATE_EXCLUSION_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXCLUSION_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXCLUSION_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXCLUSION_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXCLUSION_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(exclusionReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EXCLUSION_REASON_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(exclusionReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EXCLUSION_REASON__EXCLUSION_REASON_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonExclusionReasonCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
 						 new Object [] { exclusionReason }));
 			}
 			 
@@ -253,7 +285,7 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EXCLUSION_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EXCLUSION_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -268,25 +300,35 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateExclusionReasonCode(ExclusionReason exclusionReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EXCLUSION_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EXCLUSION_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EXCLUSION_REASON);
 			try {
-				VALIDATE_EXCLUSION_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXCLUSION_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXCLUSION_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXCLUSION_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXCLUSION_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(exclusionReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EXCLUSION_REASON_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(exclusionReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EXCLUSION_REASON__EXCLUSION_REASON_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonExclusionReasonCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
 						 new Object [] { exclusionReason }));
 			}
 			 
@@ -316,7 +358,7 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EXCLUSION_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EXCLUSION_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -331,25 +373,35 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateExclusionReasonValue(ExclusionReason exclusionReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EXCLUSION_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EXCLUSION_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EXCLUSION_REASON);
 			try {
-				VALIDATE_EXCLUSION_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXCLUSION_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXCLUSION_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXCLUSION_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXCLUSION_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(exclusionReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EXCLUSION_REASON_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(exclusionReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EXCLUSION_REASON__EXCLUSION_REASON_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonExclusionReasonValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
 						 new Object [] { exclusionReason }));
 			}
 			 
@@ -377,7 +429,7 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_EXCLUSION_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_EXCLUSION_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -392,25 +444,35 @@ public class ExclusionReasonOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateExclusionReasonValueP(ExclusionReason exclusionReason, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_EXCLUSION_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_EXCLUSION_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.EXCLUSION_REASON);
 			try {
-				VALIDATE_EXCLUSION_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_EXCLUSION_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_EXCLUSION_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_EXCLUSION_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_EXCLUSION_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(exclusionReason)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_EXCLUSION_REASON_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(exclusionReason)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.EXCLUSION_REASON__EXCLUSION_REASON_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "ExclusionReasonExclusionReasonValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(exclusionReason, context) }),
 						 new Object [] { exclusionReason }));
 			}
 			 

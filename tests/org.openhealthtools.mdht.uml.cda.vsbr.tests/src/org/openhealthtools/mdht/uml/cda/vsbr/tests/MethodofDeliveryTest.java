@@ -1,19 +1,21 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.MethodofDeliveryOperations;
 
 /**
@@ -29,11 +31,9 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.MethodofDeliveryOperatio
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryFinalRouteandMethod(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Final Routeand Method</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryForcepsAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Forceps Association</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryVacuumExtractionAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Vacuum Extraction Association</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryHysterotomyHysterectomyAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Hysterotomy Hysterectomy Association</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryFinalRouteAndMethod(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Final Route And Method</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryFetalPresentation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Fetal Presentation</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.MethodofDelivery#validateMethodofDeliveryHysterotomyHysterectomyAssociation(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Methodof Delivery Hysterotomy Hysterectomy Association</em>}</li>
  * </ul>
  * </p>
  *
@@ -47,6 +47,7 @@ public class MethodofDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMethodofDeliveryTemplateId() {
 		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryTemplateIdTestCase = new OperationsTestCase<MethodofDelivery>(
 			"validateMethodofDeliveryTemplateId",
@@ -81,6 +82,7 @@ public class MethodofDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMethodofDeliveryClassCode() {
 		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryClassCodeTestCase = new OperationsTestCase<MethodofDelivery>(
 			"validateMethodofDeliveryClassCode",
@@ -115,6 +117,7 @@ public class MethodofDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMethodofDeliveryMoodCode() {
 		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryMoodCodeTestCase = new OperationsTestCase<MethodofDelivery>(
 			"validateMethodofDeliveryMoodCode",
@@ -149,6 +152,7 @@ public class MethodofDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMethodofDeliveryCode() {
 		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryCodeTestCase = new OperationsTestCase<MethodofDelivery>(
 			"validateMethodofDeliveryCode",
@@ -183,6 +187,7 @@ public class MethodofDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateMethodofDeliveryCodeP() {
 		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryCodePTestCase = new OperationsTestCase<MethodofDelivery>(
 			"validateMethodofDeliveryCodeP",
@@ -217,10 +222,11 @@ public class MethodofDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateMethodofDeliveryFinalRouteandMethod() {
-		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryFinalRouteandMethodTestCase = new OperationsTestCase<MethodofDelivery>(
-			"validateMethodofDeliveryFinalRouteandMethod",
-			operationsForOCL.getOCLValue("VALIDATE_METHODOF_DELIVERY_FINAL_ROUTEAND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateMethodofDeliveryFinalRouteAndMethod() {
+		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryFinalRouteAndMethodTestCase = new OperationsTestCase<MethodofDelivery>(
+			"validateMethodofDeliveryFinalRouteAndMethod", operationsForOCL.getOCLValue(
+				"VALIDATE_METHODOF_DELIVERY_FINAL_ROUTE_AND_METHOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -237,13 +243,13 @@ public class MethodofDeliveryTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return MethodofDeliveryOperations.validateMethodofDeliveryFinalRouteandMethod(
+				return MethodofDeliveryOperations.validateMethodofDeliveryFinalRouteAndMethod(
 					(MethodofDelivery) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateMethodofDeliveryFinalRouteandMethodTestCase.doValidationTest();
+		validateMethodofDeliveryFinalRouteAndMethodTestCase.doValidationTest();
 	}
 
 	/**
@@ -251,112 +257,11 @@ public class MethodofDeliveryTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateMethodofDeliveryForcepsAssociation() {
-		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryForcepsAssociationTestCase = new OperationsTestCase<MethodofDelivery>(
-			"validateMethodofDeliveryForcepsAssociation",
-			operationsForOCL.getOCLValue("VALIDATE_METHODOF_DELIVERY_FORCEPS_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
 
-			@Override
-			protected void updateToFail(MethodofDelivery target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MethodofDelivery target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MethodofDeliveryOperations.validateMethodofDeliveryForcepsAssociation(
-					(MethodofDelivery) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMethodofDeliveryForcepsAssociationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateMethodofDeliveryVacuumExtractionAssociation() {
-		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryVacuumExtractionAssociationTestCase = new OperationsTestCase<MethodofDelivery>(
-			"validateMethodofDeliveryVacuumExtractionAssociation",
-			operationsForOCL.getOCLValue("VALIDATE_METHODOF_DELIVERY_VACUUM_EXTRACTION_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MethodofDelivery target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MethodofDelivery target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MethodofDeliveryOperations.validateMethodofDeliveryVacuumExtractionAssociation(
-					(MethodofDelivery) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMethodofDeliveryVacuumExtractionAssociationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
-	public void testValidateMethodofDeliveryHysterotomyHysterectomyAssociation() {
-		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryHysterotomyHysterectomyAssociationTestCase = new OperationsTestCase<MethodofDelivery>(
-			"validateMethodofDeliveryHysterotomyHysterectomyAssociation",
-			operationsForOCL.getOCLValue("VALIDATE_METHODOF_DELIVERY_HYSTEROTOMY_HYSTERECTOMY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
-			objectFactory) {
-
-			@Override
-			protected void updateToFail(MethodofDelivery target) {
-
-			}
-
-			@Override
-			protected void updateToPass(MethodofDelivery target) {
-				target.init();
-
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-
-				return MethodofDeliveryOperations.validateMethodofDeliveryHysterotomyHysterectomyAssociation(
-					(MethodofDelivery) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateMethodofDeliveryHysterotomyHysterectomyAssociationTestCase.doValidationTest();
-	}
-
-	/**
-	*
-	* @generated
-	*/
-	@Test
 	public void testValidateMethodofDeliveryFetalPresentation() {
 		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryFetalPresentationTestCase = new OperationsTestCase<MethodofDelivery>(
-			"validateMethodofDeliveryFetalPresentation",
-			operationsForOCL.getOCLValue("VALIDATE_METHODOF_DELIVERY_FETAL_PRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateMethodofDeliveryFetalPresentation", operationsForOCL.getOCLValue(
+				"VALIDATE_METHODOF_DELIVERY_FETAL_PRESENTATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -380,6 +285,42 @@ public class MethodofDeliveryTest extends CDAValidationTest {
 		};
 
 		validateMethodofDeliveryFetalPresentationTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
+	public void testValidateMethodofDeliveryHysterotomyHysterectomyAssociation() {
+		OperationsTestCase<MethodofDelivery> validateMethodofDeliveryHysterotomyHysterectomyAssociationTestCase = new OperationsTestCase<MethodofDelivery>(
+			"validateMethodofDeliveryHysterotomyHysterectomyAssociation",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_METHODOF_DELIVERY_HYSTEROTOMY_HYSTERECTOMY_ASSOCIATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(MethodofDelivery target) {
+
+			}
+
+			@Override
+			protected void updateToPass(MethodofDelivery target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return MethodofDeliveryOperations.validateMethodofDeliveryHysterotomyHysterectomyAssociation(
+					(MethodofDelivery) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateMethodofDeliveryHysterotomyHysterectomyAssociationTestCase.doValidationTest();
 	}
 
 	/**
@@ -435,8 +376,7 @@ public class MethodofDeliveryTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

@@ -16,20 +16,18 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.AssignedEntity;
-import org.openhealthtools.mdht.uml.cda.ParticipantRole;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.AssignedEntity;
+import org.eclipse.mdht.uml.cda.ParticipantRole;
+import org.eclipse.mdht.uml.cda.impl.ActImpl;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.PolicyActivity;
 import org.openhealthtools.mdht.uml.cda.ccd.operations.PolicyActivityOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Policy Activity</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -58,7 +56,8 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePolicyActivityPayerEntityIsRequired(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePolicyActivityPayerEntityIsRequired(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityPayerEntityIsRequired(this, diagnostics, context);
 	}
 
@@ -67,7 +66,8 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePolicyActivityCoveredPartyIsRequired(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePolicyActivityCoveredPartyIsRequired(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityCoveredPartyIsRequired(this, diagnostics, context);
 	}
 
@@ -103,7 +103,8 @@ public class PolicyActivityImpl extends ActImpl implements PolicyActivity {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePolicyActivityEntryRelationshipREFR(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePolicyActivityEntryRelationshipREFR(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PolicyActivityOperations.validatePolicyActivityEntryRelationshipREFR(this, diagnostics, context);
 	}
 

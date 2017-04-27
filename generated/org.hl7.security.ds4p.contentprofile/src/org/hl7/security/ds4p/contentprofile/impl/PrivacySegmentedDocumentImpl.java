@@ -22,7 +22,6 @@ import org.hl7.security.ds4p.contentprofile.PrivacySegmentedDocument;
 import org.hl7.security.ds4p.contentprofile.PrivacySegmentedSection;
 
 import org.hl7.security.ds4p.contentprofile.operations.PrivacySegmentedDocumentOperations;
-import org.openhealthtools.mdht.uml.cda.consol.impl.GeneralHeaderConstraintsImpl;
 
 /**
  * <!-- begin-user-doc -->
@@ -31,7 +30,7 @@ import org.openhealthtools.mdht.uml.cda.consol.impl.GeneralHeaderConstraintsImpl
  *
  * @generated
  */
-public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl implements PrivacySegmentedDocument {
+public class PrivacySegmentedDocumentImpl extends EObjectImpl implements PrivacySegmentedDocument {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -56,6 +55,7 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedDocumentTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentTemplateId(this, diagnostics, context);
 	}
@@ -65,6 +65,7 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedDocumentAuthor1(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentAuthor1(this, diagnostics, context);
 	}
@@ -74,6 +75,7 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedDocumentSegmentedSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentSegmentedSection(this, diagnostics, context);
 	}
@@ -83,6 +85,7 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return PrivacySegmentedDocumentOperations.validatePrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection(this, diagnostics, context);
 	}
@@ -92,6 +95,7 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PrivacySegmentedSection> getSegmentedSections() {
 		return PrivacySegmentedDocumentOperations.getSegmentedSections(this);
 	}
@@ -101,6 +105,7 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<PrivacyMarkingsSection> getPrivacyAndSecurityMarkingsSections() {
 		return PrivacySegmentedDocumentOperations.getPrivacyAndSecurityMarkingsSections(this);
 	}
@@ -110,6 +115,7 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacySegmentedDocument init() {
 	    return Initializer.Util.init(this);
 	}
@@ -118,7 +124,8 @@ public class PrivacySegmentedDocumentImpl extends GeneralHeaderConstraintsImpl i
      * <!-- end-user-doc -->
      * @generated
      */
-    public PrivacySegmentedDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public PrivacySegmentedDocument init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

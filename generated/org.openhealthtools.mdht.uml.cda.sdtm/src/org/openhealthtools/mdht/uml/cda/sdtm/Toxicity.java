@@ -2,17 +2,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,7 +17,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ToxicityTemplateId ToxicityClassCode ToxicityMoodCode ToxicityCode ToxicityCodeP ToxicityValue ToxicityValueP' templateId.root='2.16.840.1.113883.10.20.23.98' classCode='OBS' moodCode='EVN' code.code='TOtbd' code.codeSystem='2.16.840.1.113883.3.26.1.1' code.codeSystemName='NCI Thesaurus' constraints.validation.dependOn.ToxicityCode='ToxicityCodeP' value.codeSystem='2.16.840.1.113883.3.26.1.1' value.codeSystemName='NCI Thesaurus'"
  * @generated
  */
-public interface Toxicity extends Observation {
+public interface Toxicity extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -120,5 +113,5 @@ public interface Toxicity extends Observation {
      * <!-- end-user-doc -->
      * @generated
      */
-    public Toxicity init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    public Toxicity init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // Toxicity

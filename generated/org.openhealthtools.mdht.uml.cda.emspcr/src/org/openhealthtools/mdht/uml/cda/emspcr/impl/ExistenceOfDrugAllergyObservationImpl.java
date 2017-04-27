@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfDrugAllergyObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ExistenceOfDrugAllergyObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Existence Of Drug Allergy Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl implements ExistenceOfDrugAllergyObservation {
+public class ExistenceOfDrugAllergyObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ExistenceOfDrugAllergyObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateExistenceOfDrugAllergyObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationTemplateId(
-			this, diagnostics, context);
+		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateExistenceOfDrugAllergyObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationMoodCode(
-			this, diagnostics, context);
+		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -82,8 +69,7 @@ public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateExistenceOfDrugAllergyObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationCode(
-			this, diagnostics, context);
+		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -93,8 +79,7 @@ public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl imple
 	 */
 	public boolean validateExistenceOfDrugAllergyObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationValue(
-			this, diagnostics, context);
+		return ExistenceOfDrugAllergyObservationOperations.validateExistenceOfDrugAllergyObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -103,16 +88,16 @@ public class ExistenceOfDrugAllergyObservationImpl extends ObservationImpl imple
 	 * @generated
 	 */
 	public ExistenceOfDrugAllergyObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ExistenceOfDrugAllergyObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ExistenceOfDrugAllergyObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ExistenceOfDrugAllergyObservationImpl

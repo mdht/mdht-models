@@ -6,32 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.Procedure;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ProcedureOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Procedure</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.ProcedureImpl implements Procedure {
+public class ProcedureImpl extends org.eclipse.mdht.uml.cda.impl.ProcedureImpl implements Procedure {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -78,8 +69,7 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 */
 	public boolean validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(
-			this, diagnostics, context);
+		return ProcedureOperations.validateEMSPCRProcedureProcedureNumberOfAttemptsRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +99,7 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 */
 	public boolean validateEMSPCRProcedureProcedurePatientResponseRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureProcedurePatientResponseRelationship(
-			this, diagnostics, context);
+		return ProcedureOperations.validateEMSPCRProcedureProcedurePatientResponseRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -139,8 +128,7 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 */
 	public boolean validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ProcedureOperations.validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(
-			this, diagnostics, context);
+		return ProcedureOperations.validateEMSPCRProcedureReasonProcedureNotAttemptedRelationship(this, diagnostics, context);
 	}
 
 	/**
@@ -221,16 +209,16 @@ public class ProcedureImpl extends org.openhealthtools.mdht.uml.cda.impl.Procedu
 	 * @generated
 	 */
 	public Procedure init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public Procedure init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public Procedure init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ProcedureImpl

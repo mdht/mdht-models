@@ -1,9 +1,5 @@
 
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,14 +7,20 @@ package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.CoronerReferralOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -31,9 +33,9 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.CoronerReferral#validateCoronerReferralValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Coroner Referral Value</em>}</li>
  * </ul>
  * </p>
@@ -101,6 +103,9 @@ public void testValidateCoronerReferralTemplateId() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -175,6 +180,9 @@ public void testValidateCoronerReferralClassCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -188,6 +196,83 @@ public void testValidateCoronerReferralClassCode() {
 		};
 
 		validateCoronerReferralClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateCoronerReferralMoodCode() {
+			OperationsTestCase<CoronerReferral> validateCoronerReferralMoodCodeTestCase = new OperationsTestCase<CoronerReferral>(
+			"validateCoronerReferralMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(CoronerReferral target) {
+
+			}
+
+			@Override
+			protected void updateToPass(CoronerReferral target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return CoronerReferralOperations.validateCoronerReferralMoodCode(
+					(CoronerReferral) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateCoronerReferralMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -249,6 +334,9 @@ public void testValidateCoronerReferralCodeP() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -323,6 +411,9 @@ public void testValidateCoronerReferralCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -336,80 +427,6 @@ public void testValidateCoronerReferralCode() {
 		};
 
 		validateCoronerReferralCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateCoronerReferralMoodCode() {
-			OperationsTestCase<CoronerReferral> validateCoronerReferralMoodCodeTestCase = new OperationsTestCase<CoronerReferral>(
-			"validateCoronerReferralMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_CORONER_REFERRAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(CoronerReferral target) {
-
-			}
-
-			@Override
-			protected void updateToPass(CoronerReferral target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return CoronerReferralOperations.validateCoronerReferralMoodCode(
-					(CoronerReferral) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateCoronerReferralMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -474,6 +491,9 @@ public void testValidateCoronerReferralValue() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -515,6 +535,7 @@ public void testValidateCoronerReferralValue() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<CoronerReferral> {
+		@Override
 		public CoronerReferral create() {		
 			return VsdrFactory.eINSTANCE.createCoronerReferral();
 		}

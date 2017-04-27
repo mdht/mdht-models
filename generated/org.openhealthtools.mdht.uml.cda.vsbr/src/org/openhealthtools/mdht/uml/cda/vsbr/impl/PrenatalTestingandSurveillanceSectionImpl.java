@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.PrenatalCare;
 import org.openhealthtools.mdht.uml.cda.vsbr.PrenatalTestingandSurveillanceSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
@@ -25,13 +21,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.PrenatalTestingandSurvei
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Prenatal Testingand Surveillance Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PrenatalTestingandSurveillanceSectionImpl extends SectionImpl implements
-		PrenatalTestingandSurveillanceSection {
+public class PrenatalTestingandSurveillanceSectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl
+		implements PrenatalTestingandSurveillanceSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -132,7 +126,7 @@ public class PrenatalTestingandSurveillanceSectionImpl extends SectionImpl imple
 	 * @generated
 	 */
 	public PrenatalTestingandSurveillanceSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -140,8 +134,9 @@ public class PrenatalTestingandSurveillanceSectionImpl extends SectionImpl imple
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrenatalTestingandSurveillanceSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public PrenatalTestingandSurveillanceSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // PrenatalTestingandSurveillanceSectionImpl

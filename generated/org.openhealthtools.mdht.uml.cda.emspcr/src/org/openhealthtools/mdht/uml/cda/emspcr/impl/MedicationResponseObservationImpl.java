@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.MedicationResponseObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.MedicationResponseObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Medication Response Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class MedicationResponseObservationImpl extends ObservationImpl implements MedicationResponseObservation {
+public class MedicationResponseObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements MedicationResponseObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateMedicationResponseObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationTemplateId(
-			this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 */
 	public boolean validateMedicationResponseObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationMoodCode(
-			this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +68,7 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateMedicationResponseObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationCodeP(
-			this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +77,7 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateMedicationResponseObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationCode(
-			this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +86,7 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public boolean validateMedicationResponseObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return MedicationResponseObservationOperations.validateMedicationResponseObservationValue(
-			this, diagnostics, context);
+		return MedicationResponseObservationOperations.validateMedicationResponseObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -111,16 +95,16 @@ public class MedicationResponseObservationImpl extends ObservationImpl implement
 	 * @generated
 	 */
 	public MedicationResponseObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public MedicationResponseObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public MedicationResponseObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // MedicationResponseObservationImpl

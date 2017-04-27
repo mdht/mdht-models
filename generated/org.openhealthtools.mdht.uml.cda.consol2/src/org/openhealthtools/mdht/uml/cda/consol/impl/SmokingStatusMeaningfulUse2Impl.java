@@ -130,6 +130,64 @@ public class SmokingStatusMeaningfulUse2Impl extends SmokingStatusObservationImp
 	 * @generated
 	 */
 	@Override
+	public boolean validateSmokingStatusObservationEffectiveTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationEffectiveTime(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationIVLTSCenter(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSCenter(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationIVLTSHigh(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSHigh(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationIVLTSLow(DiagnosticChain diagnostics, Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSLow(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public boolean validateSmokingStatusObservationIVLTSWidth(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return SmokingStatusMeaningfulUse2Operations.validateSmokingStatusObservationIVLTSWidth(
+			this, diagnostics, context);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
 	public SmokingStatusMeaningfulUse2 init() {
 		return Initializer.Util.init(this);
 	}

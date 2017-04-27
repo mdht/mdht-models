@@ -7,17 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.CoronerCaseTransfer;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -41,6 +36,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +72,7 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_CASE_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +87,35 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerCaseTransferTemplateId(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_CASE_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_CASE_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_CASE_TRANSFER);
 			try {
-				VALIDATE_CORONER_CASE_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_CASE_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_CASE_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerCaseTransfer)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_CASE_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerCaseTransfer)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCoronerCaseTransferTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
 						 new Object [] { coronerCaseTransfer }));
 			}
 			 
@@ -130,7 +143,7 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_CASE_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +158,35 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerCaseTransferClassCode(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_CASE_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_CASE_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_CASE_TRANSFER);
 			try {
-				VALIDATE_CORONER_CASE_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_CASE_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_CASE_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerCaseTransfer)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_CASE_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerCaseTransfer)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCoronerCaseTransferClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
 						 new Object [] { coronerCaseTransfer }));
 			}
 			 
@@ -191,7 +214,7 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +229,35 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerCaseTransferMoodCode(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_CASE_TRANSFER);
 			try {
-				VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerCaseTransfer)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_CASE_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerCaseTransfer)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCoronerCaseTransferMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
 						 new Object [] { coronerCaseTransfer }));
 			}
 			 
@@ -252,7 +285,7 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +300,35 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerCaseTransferCodeP(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_CASE_TRANSFER);
 			try {
-				VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerCaseTransfer)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_CASE_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerCaseTransfer)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCoronerCaseTransferCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
 						 new Object [] { coronerCaseTransfer }));
 			}
 			 
@@ -315,7 +358,7 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +373,35 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerCaseTransferCode(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_CASE_TRANSFER);
 			try {
-				VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerCaseTransfer)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_CASE_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerCaseTransfer)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCoronerCaseTransferCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
 						 new Object [] { coronerCaseTransfer }));
 			}
 			 
@@ -376,7 +429,7 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_CASE_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -391,25 +444,35 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerCaseTransferValue(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_CASE_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_CASE_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_CASE_TRANSFER);
 			try {
-				VALIDATE_CORONER_CASE_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_CASE_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_CASE_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerCaseTransfer)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_CASE_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerCaseTransfer)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCoronerCaseTransferValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
 						 new Object [] { coronerCaseTransfer }));
 			}
 			 
@@ -437,7 +500,7 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -452,25 +515,35 @@ public class CoronerCaseTransferOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateCoronerCaseTransferCoronerCase(CoronerCaseTransfer coronerCaseTransfer, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.CORONER_CASE_TRANSFER);
 			try {
-				VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(coronerCaseTransfer)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CORONER_CASE_TRANSFER_CORONER_CASE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(coronerCaseTransfer)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.CORONER_CASE_TRANSFER__CORONER_CASE_TRANSFER_CORONER_CASE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCoronerCase", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "CoronerCaseTransferCoronerCaseTransferCoronerCase", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(coronerCaseTransfer, context) }),
 						 new Object [] { coronerCaseTransfer }));
 			}
 			 

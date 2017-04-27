@@ -7,21 +7,12 @@ import org.eclipse.emf.ecore.EGenericType;
 import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EValidator;
-
 import org.eclipse.emf.ecore.impl.EPackageImpl;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
-
-
-import org.openhealthtools.mdht.uml.cda.consol.ConsolPackage;
-import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.CommentActivity;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.CDAPackage;
+import org.eclipse.mdht.uml.cda.util.AnnotationBasedInitializer;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HPOCFactory;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HPOCPackage;
-import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HPoCProblemConcern;
-import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HPoCProblems;
-import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HPoCProblemsSubSection;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareActivityAct;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareActivityEncounter;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareActivityNonMedicinalSupply;
@@ -29,7 +20,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareActivityO
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareActivitySubstanceAdministration;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareDocument;
-
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareHeader;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareInstructions;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.HearingPlanOfCareProblemConcern;
@@ -49,14 +39,10 @@ import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.ProblemsSection;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.ProcedureActivityAct;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.ProcedureActivityProcedure;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.ProcedureSection;
-
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.ReasonNotScreened;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.RiskIndicatorForHearingLossObservation;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.RiskIndicatorsForHearingLossSection;
 import org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc.util.HPOCValidator;
-
-import org.openhealthtools.mdht.uml.cda.util.AnnotationBasedInitializer;
-import org.openhealthtools.mdht.uml.hl7.rim.RIMPackage;
 
 /**
  * <!-- begin-user-doc -->
@@ -318,7 +304,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         isInited = true;
 
         // Initialize simple dependencies
-        ConsolPackage.eINSTANCE.eClass();
+        CDAPackage.eINSTANCE.eClass();
 
         // Create package meta-data objects
         theHPOCPackage.createPackageContents();
@@ -329,10 +315,8 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         // Register package validator
         EValidator.Registry.INSTANCE.put
             (theHPOCPackage, 
-             new EValidator.Descriptor()
-             {
-                 public EValidator getEValidator()
-                 {
+             new EValidator.Descriptor() {
+                 public EValidator getEValidator() {
                      return HPOCValidator.INSTANCE;
                  }
              });
@@ -752,7 +736,6 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         // Obtain other dependent packages
         CDAPackage theCDAPackage = (CDAPackage)EPackage.Registry.INSTANCE.getEPackage(CDAPackage.eNS_URI);
-        ConsolPackage theConsolPackage = (ConsolPackage)EPackage.Registry.INSTANCE.getEPackage(ConsolPackage.eNS_URI);
 
         // Create type parameters
 
@@ -762,32 +745,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         hearingPlanOfCareDocumentEClass.getESuperTypes().add(this.getHearingPlanOfCareHeader());
         hearingPlanOfCareHeaderEClass.getESuperTypes().add(theCDAPackage.getClinicalDocument());
         hearingPlanOfCareSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
-        hearingScreeningSectionEClass.getESuperTypes().add(theConsolPackage.getResultsSection());
         riskIndicatorsForHearingLossSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
         problemsSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
         procedureSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
-        hearingPlanOfCareActivityActEClass.getESuperTypes().add(theConsolPackage.getPlanOfCareActivityAct());
-        hearingPlanOfCareActivityEncounterEClass.getESuperTypes().add(theConsolPackage.getPlanOfCareActivityEncounter());
-        hearingPlanOfCareActivityObservationEClass.getESuperTypes().add(theConsolPackage.getPlanOfCareActivityObservation());
-        hearingPlanOfCareActivityProcedureEClass.getESuperTypes().add(theConsolPackage.getPlanOfCareActivityProcedure());
-        hearingPlanOfCareActivitySubstanceAdministrationEClass.getESuperTypes().add(theConsolPackage.getPlanOfCareActivitySubstanceAdministration());
-        hearingPlanOfCareInstructionsEClass.getESuperTypes().add(theConsolPackage.getInstructions());
-        hearingPlanOfCareActivityNonMedicinalSupplyEClass.getESuperTypes().add(theConsolPackage.getPlanOfCareActivitySupply());
-        hearingScreeningOrganizerEClass.getESuperTypes().add(theConsolPackage.getResultOrganizer());
         hearingScreeningOutcomeObservationLeftEClass.getESuperTypes().add(theCDAPackage.getObservation());
         reasonNotScreenedEClass.getESuperTypes().add(theCDAPackage.getAct());
         hearingScreeningOutcomeObservationRightEClass.getESuperTypes().add(theCDAPackage.getObservation());
-        hearingScreeningResultsOrganizerEClass.getESuperTypes().add(theConsolPackage.getResultOrganizer());
-        hearingScreeningResultObservationEClass.getESuperTypes().add(theConsolPackage.getResultObservation());
         riskIndicatorForHearingLossObservationEClass.getESuperTypes().add(theCDAPackage.getObservation());
-        problemConcernEClass.getESuperTypes().add(theConsolPackage.getProblemConcernAct());
-        hearingPlanOfCareProblemConcernEClass.getESuperTypes().add(theConsolPackage.getProblemConcernAct());
         hearingPlanOfCareProblemsSubSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
-        procedureActivityProcedureEClass.getESuperTypes().add(theConsolPackage.getProcedureActivityProcedure());
-        procedureActivityActEClass.getESuperTypes().add(theConsolPackage.getProcedureActivityAct());
         hearingPlanOfCareRelevantProceduresSubSectionEClass.getESuperTypes().add(theCDAPackage.getSection());
-        hearingPlanOfCareProcedureActivityProcedureEClass.getESuperTypes().add(theConsolPackage.getProcedureActivityProcedure());
-        hearingPlanOfCareProcedureActivityActEClass.getESuperTypes().add(theConsolPackage.getProcedureActivityAct());
 
         // Initialize classes and features; add operations and parameters
         initEClass(hearingPlanOfCareDocumentEClass, HearingPlanOfCareDocument.class, "HearingPlanOfCareDocument", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
@@ -1141,6 +1107,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         initEClass(hearingScreeningSectionEClass, HearingScreeningSection.class, "HearingScreeningSection", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(hearingScreeningSectionEClass, ecorePackage.getEBoolean(), "validateResultsSectionEntriesOptionalTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingScreeningSectionEClass, ecorePackage.getEBoolean(), "validateHearingScreeningSectionCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1383,6 +1358,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+        op = addEOperation(hearingPlanOfCareActivityActEClass, ecorePackage.getEBoolean(), "validatePlanOfCareActivityActTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingPlanOfCareActivityActEClass, ecorePackage.getEBoolean(), "validateHearingPlanOfCareActivityActCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1439,6 +1423,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+        op = addEOperation(hearingPlanOfCareActivityEncounterEClass, ecorePackage.getEBoolean(), "validatePlanOfCareActivityEncounterTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingPlanOfCareActivityEncounterEClass, ecorePackage.getEBoolean(), "validateHearingPlanOfCareActivityEncounterCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1478,6 +1471,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         initEClass(hearingPlanOfCareActivityObservationEClass, HearingPlanOfCareActivityObservation.class, "HearingPlanOfCareActivityObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
         op = addEOperation(hearingPlanOfCareActivityObservationEClass, ecorePackage.getEBoolean(), "validateHearingPlanOfCareActivityObservationEffectiveTimeLowHigh", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingPlanOfCareActivityObservationEClass, ecorePackage.getEBoolean(), "validatePlanOfCareActivityObservationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -1542,6 +1544,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+        op = addEOperation(hearingPlanOfCareActivityProcedureEClass, ecorePackage.getEBoolean(), "validatePlanOfCareActivityProcedureTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingPlanOfCareActivityProcedureEClass, ecorePackage.getEBoolean(), "validateHearingPlanOfCareActivityProcedureCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1588,6 +1599,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         initEClass(hearingPlanOfCareActivitySubstanceAdministrationEClass, HearingPlanOfCareActivitySubstanceAdministration.class, "HearingPlanOfCareActivitySubstanceAdministration", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        op = addEOperation(hearingPlanOfCareActivitySubstanceAdministrationEClass, ecorePackage.getEBoolean(), "validatePlanOfCareActivitySubstanceAdministrationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(hearingPlanOfCareActivitySubstanceAdministrationEClass, ecorePackage.getEBoolean(), "validateHearingPlanOfCareActivitySubstanceAdministrationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1798,6 +1818,42 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         initEClass(hearingPlanOfCareInstructionsEClass, HearingPlanOfCareInstructions.class, "HearingPlanOfCareInstructions", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(hearingPlanOfCareInstructionsEClass, ecorePackage.getEBoolean(), "validateInstructionsTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingPlanOfCareInstructionsEClass, ecorePackage.getEBoolean(), "validateInstructionsCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingPlanOfCareInstructionsEClass, ecorePackage.getEBoolean(), "validateInstructionsCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingPlanOfCareInstructionsEClass, ecorePackage.getEBoolean(), "validateInstructionsText", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingPlanOfCareInstructionsEClass, ecorePackage.getEBoolean(), "validateHearingPlanOfCareInstructionsEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
@@ -1816,7 +1872,25 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+        op = addEOperation(hearingPlanOfCareInstructionsEClass, ecorePackage.getEBoolean(), "validateInstructionsStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         initEClass(hearingPlanOfCareActivityNonMedicinalSupplyEClass, HearingPlanOfCareActivityNonMedicinalSupply.class, "HearingPlanOfCareActivityNonMedicinalSupply", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        op = addEOperation(hearingPlanOfCareActivityNonMedicinalSupplyEClass, ecorePackage.getEBoolean(), "validatePlanOfCareActivitySupplyTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(hearingPlanOfCareActivityNonMedicinalSupplyEClass, ecorePackage.getEBoolean(), "validateHearingPlanOfCareActivityNonMedicinalSupplyCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -1874,7 +1948,34 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         initEClass(hearingScreeningOrganizerEClass, HearingScreeningOrganizer.class, "HearingScreeningOrganizer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(hearingScreeningOrganizerEClass, ecorePackage.getEBoolean(), "validateResultOrganizerTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningOrganizerEClass, ecorePackage.getEBoolean(), "validateResultOrganizerClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingScreeningOrganizerEClass, ecorePackage.getEBoolean(), "validateResultOrganizerCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningOrganizerEClass, ecorePackage.getEBoolean(), "validateResultOrganizerCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2296,7 +2397,52 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         initEClass(hearingScreeningResultsOrganizerEClass, HearingScreeningResultsOrganizer.class, "HearingScreeningResultsOrganizer", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(hearingScreeningResultsOrganizerEClass, ecorePackage.getEBoolean(), "validateResultOrganizerTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningResultsOrganizerEClass, ecorePackage.getEBoolean(), "validateResultOrganizerClassCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingScreeningResultsOrganizerEClass, ecorePackage.getEBoolean(), "validateResultOrganizerCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningResultsOrganizerEClass, ecorePackage.getEBoolean(), "validateResultOrganizerCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningResultsOrganizerEClass, ecorePackage.getEBoolean(), "validateResultOrganizerStatusCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningResultsOrganizerEClass, ecorePackage.getEBoolean(), "validateResultOrganizerStatusCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2316,7 +2462,52 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         initEClass(hearingScreeningResultObservationEClass, HearingScreeningResultObservation.class, "HearingScreeningResultObservation", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(hearingScreeningResultObservationEClass, ecorePackage.getEBoolean(), "validateResultObservationTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingScreeningResultObservationEClass, ecorePackage.getEBoolean(), "validateResultObservationCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningResultObservationEClass, ecorePackage.getEBoolean(), "validateResultObservationCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningResultObservationEClass, ecorePackage.getEBoolean(), "validateResultObservationText", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningResultObservationEClass, ecorePackage.getEBoolean(), "validateResultObservationEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningResultObservationEClass, ecorePackage.getEBoolean(), "validateResultObservationValue", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2343,7 +2534,25 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         g1.getETypeArguments().add(g2);
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
+        op = addEOperation(hearingScreeningResultObservationEClass, ecorePackage.getEBoolean(), "validateResultObservationMethodCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingScreeningResultObservationEClass, ecorePackage.getEBoolean(), "validateResultObservationTargetSiteCodeP", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingScreeningResultObservationEClass, ecorePackage.getEBoolean(), "validateResultObservationTargetSiteCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2473,7 +2682,25 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         initEClass(problemConcernEClass, ProblemConcern.class, "ProblemConcern", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(problemConcernEClass, ecorePackage.getEBoolean(), "validateProblemConcernActTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(problemConcernEClass, ecorePackage.getEBoolean(), "validateProblemConcernText", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(problemConcernEClass, ecorePackage.getEBoolean(), "validateProblemConcernActEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2484,7 +2711,34 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         initEClass(hearingPlanOfCareProblemConcernEClass, HearingPlanOfCareProblemConcern.class, "HearingPlanOfCareProblemConcern", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(hearingPlanOfCareProblemConcernEClass, ecorePackage.getEBoolean(), "validateProblemConcernActTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingPlanOfCareProblemConcernEClass, ecorePackage.getEBoolean(), "validateProblemConcernActId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingPlanOfCareProblemConcernEClass, ecorePackage.getEBoolean(), "validateHearingPlanOfCareProblemConcernText", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingPlanOfCareProblemConcernEClass, ecorePackage.getEBoolean(), "validateProblemConcernActEffectiveTime", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2551,7 +2805,34 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         initEClass(procedureActivityProcedureEClass, ProcedureActivityProcedure.class, "ProcedureActivityProcedure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(procedureActivityProcedureEClass, ecorePackage.getEBoolean(), "validateProcedureActivityProcedureTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(procedureActivityProcedureEClass, ecorePackage.getEBoolean(), "validateHPOCProcedureActivityProcedureText", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(procedureActivityProcedureEClass, ecorePackage.getEBoolean(), "validateProcedureActivityProcedureId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(procedureActivityProcedureEClass, ecorePackage.getEBoolean(), "validateProcedureActivityProcedureCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2562,7 +2843,25 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         initEClass(procedureActivityActEClass, ProcedureActivityAct.class, "ProcedureActivityAct", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(procedureActivityActEClass, ecorePackage.getEBoolean(), "validateProcedureActivityActTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(procedureActivityActEClass, ecorePackage.getEBoolean(), "validateHPOCProcedureActivityActText", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(procedureActivityActEClass, ecorePackage.getEBoolean(), "validateProcedureActivityActCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2683,7 +2982,25 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
 
         initEClass(hearingPlanOfCareProcedureActivityProcedureEClass, HearingPlanOfCareProcedureActivityProcedure.class, "HearingPlanOfCareProcedureActivityProcedure", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
 
+        op = addEOperation(hearingPlanOfCareProcedureActivityProcedureEClass, ecorePackage.getEBoolean(), "validateProcedureActivityProcedureTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
         op = addEOperation(hearingPlanOfCareProcedureActivityProcedureEClass, ecorePackage.getEBoolean(), "validateHearingPlanOfCareProcedureActivityProcedureId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingPlanOfCareProcedureActivityProcedureEClass, ecorePackage.getEBoolean(), "validateProcedureActivityProcedureCode", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
         g1 = createEGenericType(ecorePackage.getEMap());
         g2 = createEGenericType(ecorePackage.getEJavaObject());
@@ -2702,6 +3019,33 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         initEClass(hearingPlanOfCareProcedureActivityActEClass, HearingPlanOfCareProcedureActivityAct.class, "HearingPlanOfCareProcedureActivityAct", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
+
+        op = addEOperation(hearingPlanOfCareProcedureActivityActEClass, ecorePackage.getEBoolean(), "validateProcedureActivityActTemplateId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingPlanOfCareProcedureActivityActEClass, ecorePackage.getEBoolean(), "validateProcedureActivityActId", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
+
+        op = addEOperation(hearingPlanOfCareProcedureActivityActEClass, ecorePackage.getEBoolean(), "validateProcedureActivityActCode", 0, 1, IS_UNIQUE, IS_ORDERED);
+        addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
+        g1 = createEGenericType(ecorePackage.getEMap());
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        g2 = createEGenericType(ecorePackage.getEJavaObject());
+        g1.getETypeArguments().add(g2);
+        addEParameter(op, g1, "context", 0, 1, IS_UNIQUE, IS_ORDERED);
 
         op = addEOperation(hearingPlanOfCareProcedureActivityActEClass, ecorePackage.getEBoolean(), "validateHearingPlanOfCareProcedureActivityActText", 0, 1, IS_UNIQUE, IS_ORDERED);
         addEParameter(op, ecorePackage.getEDiagnosticChain(), "diagnostics", 0, 1, IS_UNIQUE, IS_ORDERED);
@@ -2850,10 +3194,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (this, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "initializers", "org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
     /**
@@ -2868,8 +3211,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareDocumentEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderTemplateId HearingPlanOfCareDocumentTypeIdRoot HearingPlanOfCareDocumentTypeIdExtension HearingPlanOfCareDocumentSetIdAndVersionNumber HearingPlanOfCareDocumentRealmCode HearingPlanOfCareDocumentRealmCodeP HearingPlanOfCareDocumentTypeId HearingPlanOfCareDocumentId HearingPlanOfCareDocumentCode HearingPlanOfCareDocumentTitle HearingPlanOfCareDocumentEffectiveTime HearingPlanOfCareDocumentConfidentialityCode HearingPlanOfCareDocumentLanguageCode HearingPlanOfCareDocumentHearingPlanOfCareSection HearingPlanOfCareDocumentHearingScreeningSection",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.1",
              "realmCode.code", "US",
@@ -2886,8 +3228,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderTemplateId HearingPlanOfCareHeaderRecordTarget HearingPlanOfCareHeaderCustodian HearingPlanOfCareHeaderAuthor",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.2.1",
              "constraints.validation.info", "HearingPlanOfCareHeaderComponentOf HearingPlanOfCareHeaderDocumentationOf"
@@ -2895,8 +3236,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareSectionTemplateId HearingPlanOfCareSectionCode HearingPlanOfCareSectionCodeP HearingPlanOfCareSectionTitle HearingPlanOfCareSectionText",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.1",
              "code.code", "18776-5",
@@ -2908,8 +3248,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingScreeningSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ResultsSectionEntriesOptionalTemplateId HearingScreeningSectionCode HearingScreeningSectionCodeP HearingScreeningSectionText HearingScreeningSectionTitle HearingScreeningSectionEntry",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.2",
              "code.code", "30954-2-HPOC",
@@ -2917,12 +3256,11 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
              "code.codeSystemName", "LOINC",
              "code.displayName", "Relevant diagnostic tests and/or laboratory data for Hearing Screening",
              "constraints.validation.dependOn.HearingScreeningSectionCode", "HearingScreeningSectionCodeP"
-           });                      
+           });                        
         addAnnotation
           (riskIndicatorsForHearingLossSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "RiskIndicatorsForHearingLossSectionTemplateId RiskIndicatorsForHearingLossSectionCode RiskIndicatorsForHearingLossSectionCodeP RiskIndicatorsForHearingLossSectionTitle RiskIndicatorsForHearingLossSectionText",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.3",
              "code.code", "58232-0",
@@ -2934,8 +3272,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (problemsSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ProblemsSectionTemplateId ProblemsSectionCode ProblemsSectionCodeP ProblemsSectionTitle ProblemsSectionText ProblemsSectionEntryProblemConcern",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.4",
              "code.code", "11450-4",
@@ -2947,8 +3284,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (procedureSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ProcedureSectionTemplateId ProcedureSectionCode ProcedureSectionCodeP ProcedureSectionTitle ProcedureSectionText",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.6",
              "code.code", "47519-4",
@@ -2959,50 +3295,45 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareActivityActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PlanOfCareActivityActTemplateId HearingPlanOfCareActivityActEffectiveTimeLowHigh HearingPlanOfCareActivityActCode HearingPlanOfCareActivityActCodeP HearingPlanOfCareActivityActText HearingPlanOfCareActivityActStatusCode HearingPlanOfCareActivityActEffectiveTime",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.2",
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT",
              "constraints.validation.dependOn.HearingPlanOfCareActivityActCode", "HearingPlanOfCareActivityActCodeP"
-           });                        
+           });                          
         addAnnotation
           (hearingPlanOfCareActivityEncounterEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PlanOfCareActivityEncounterTemplateId HearingPlanOfCareActivityEncounterEffectiveTimeLowHigh HearingPlanOfCareActivityEncounterCode HearingPlanOfCareActivityEncounterCodeP HearingPlanOfCareActivityEncounterStatusCode HearingPlanOfCareActivityEncounterText",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.3",
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT"
-           });                     
+           });                       
         addAnnotation
           (hearingPlanOfCareActivityObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PlanOfCareActivityObservationTemplateId HearingPlanOfCareActivityObservationEffectiveTimeLowHigh HearingPlanOfCareActivityObservationCode HearingPlanOfCareActivityObservationCodeP HearingPlanOfCareActivityObservationEffectiveTime HearingPlanOfCareActivityObservationStatusCode HearingPlanOfCareActivityObservationText",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.4",
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT",
              "constraints.validation.dependOn.HearingPlanOfCareActivityObservationCode", "HearingPlanOfCareActivityObservationCodeP"
-           });                        
+           });                          
         addAnnotation
           (hearingPlanOfCareActivityProcedureEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PlanOfCareActivityProcedureTemplateId HearingPlanOfCareActivityProcedureEffectiveTimeLowHigh HearingPlanOfCareActivityProcedureCode HearingPlanOfCareActivityProcedureCodeP HearingPlanOfCareActivityProcedureEffectiveTime HearingPlanOfCareActivityProcedureStatusCode HearingPlanOfCareActivityProcedureText",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.5",
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT"
-           });                        
+           });                          
         addAnnotation
           (hearingPlanOfCareActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PlanOfCareActivitySubstanceAdministrationTemplateId HearingPlanOfCareActivitySubstanceAdministrationCode HearingPlanOfCareActivitySubstanceAdministrationText HearingPlanOfCareActivitySubstanceAdministrationStatusCode HearingPlanOfCareActivitySubstanceAdministrationRouteCode HearingPlanOfCareActivitySubstanceAdministrationAdministrationUnitCode HearingPlanOfCareActivitySubstanceAdministrationApproachSiteCode HearingPlanOfCareActivitySubstanceAdministrationConsumable",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.6",
              "code.codeSystem", "2.16.840.1.113883.6.96",
@@ -3018,12 +3349,11 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
              "approachSiteCode.codeSystem", "2.16.840.1.113883.6.96",
              "approachSiteCode.codeSystemName", "SNOMEDCT",
              "constraints.validation.dependOn.HearingPlanOfCareActivitySubstanceAdministrationApproachSiteCode", "HearingPlanOfCareActivitySubstanceAdministrationApproachSiteCodeP"
-           });                                                                                   
+           });                                                                                     
         addAnnotation
           (hearingPlanOfCareInstructionsEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "InstructionsTemplateId InstructionsCode InstructionsCodeP InstructionsText HearingPlanOfCareInstructionsEffectiveTime InstructionsStatusCode InstructionsStatusCodeP",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.1",
              "code.codeSystem", "2.16.840.1.113883.6.96",
@@ -3031,24 +3361,22 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
              "constraints.validation.dependOn.InstructionsCode", "InstructionsCodeP",
              "statusCode.code", "completed",
              "constraints.validation.dependOn.InstructionsStatusCode", "InstructionsStatusCodeP"
-           });            
+           });                          
         addAnnotation
           (hearingPlanOfCareActivityNonMedicinalSupplyEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "PlanOfCareActivitySupplyTemplateId HearingPlanOfCareActivityNonMedicinalSupplyCode HearingPlanOfCareActivityNonMedicinalSupplyCodeP HearingPlanOfCareActivityNonMedicinalSupplyText",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.7",
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT",
              "constraints.validation.warning", "HearingPlanOfCareActivityNonMedicinalSupplyEffectiveTime HearingPlanOfCareActivityNonMedicinalSupplyQuantity",
              "constraints.validation.info", "HearingPlanOfCareActivityNonMedicinalSupplyParticipant"
-           });                         
+           });                           
         addAnnotation
           (hearingScreeningOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerCode ResultOrganizerCodeP HearingScreeningOrganizerComponentLeftEar HearingScreeningOrganizerComponentRightEar HearingScreeningOrganizerComponentResultsOrganizer",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.8",
              "classCode", "CLUSTER",
@@ -3057,12 +3385,11 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
              "code.codeSystemName", "LOINC",
              "code.displayName", "Newborn Hearing Loss Panel",
              "constraints.validation.dependOn.ResultOrganizerCode", "ResultOrganizerCodeP"
-           });                     
+           });                             
         addAnnotation
           (hearingScreeningOutcomeObservationLeftEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingScreeningOutcomeObservationLeftTemplateId HearingScreeningOutcomeObservationLeftClassCode HearingScreeningOutcomeObservationLeftMoodCode HearingScreeningOutcomeObservationLeftId HearingScreeningOutcomeObservationLeftCode HearingScreeningOutcomeObservationLeftCodeP HearingScreeningOutcomeObservationLeftText HearingScreeningOutcomeObservationLeftStatusCode HearingScreeningOutcomeObservationLeftEffectiveTime HearingScreeningOutcomeObservationLeftValue HearingScreeningOutcomeObservationLeftValueP HearingScreeningOutcomeObservationLeftMethodCode HearingScreeningOutcomeObservationLeftTargetSiteCode",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.9",
              "classCode", "OBS",
@@ -3085,8 +3412,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (reasonNotScreenedEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ReasonNotScreenedTemplateId ReasonNotScreenedClassCode ReasonNotScreenedMoodCode ReasonNotScreenedCode ReasonNotScreenedCodeP ReasonNotScreenedText",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.10",
              "classCode", "ACT",
@@ -3098,8 +3424,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingScreeningOutcomeObservationRightEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingScreeningOutcomeObservationRightTemplateId HearingScreeningOutcomeObservationRightClassCode HearingScreeningOutcomeObservationRightMoodCode HearingScreeningOutcomeObservationRightId HearingScreeningOutcomeObservationRightCode HearingScreeningOutcomeObservationRightCodeP HearingScreeningOutcomeObservationRightText HearingScreeningOutcomeObservationRightStatusCode HearingScreeningOutcomeObservationRightStatusCodeP HearingScreeningOutcomeObservationRightEffectiveTime HearingScreeningOutcomeObservationRightValue HearingScreeningOutcomeObservationRightMethodCode HearingScreeningOutcomeObservationRightTargetSiteCode",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.11",
              "classCode", "OBS",
@@ -3120,8 +3445,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingScreeningResultsOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ResultOrganizerTemplateId ResultOrganizerClassCode ResultOrganizerCode ResultOrganizerCodeP ResultOrganizerStatusCode ResultOrganizerStatusCodeP HearingScreeningResultsOrganizerComponentResultObservation",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.12",
              "classCode", "CLUSTER",
@@ -3131,12 +3455,11 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
              "code.displayName", "Neonatal Hearing Test (Procedure)",
              "constraints.validation.dependOn.ResultOrganizerCode", "ResultOrganizerCodeP",
              "constraints.validation.dependOn.ResultOrganizerStatusCode", "ResultOrganizerStatusCodeP"
-           });             
+           });                           
         addAnnotation
           (hearingScreeningResultObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ResultObservationTemplateId ResultObservationCode ResultObservationCodeP ResultObservationText ResultObservationEffectiveTime ResultObservationValue ResultObservationValueP ResultObservationMethodCode ResultObservationMethodCodeP ResultObservationTargetSiteCode ResultObservationTargetSiteCodeP HearingScreeningResultObservationEntryRelationshipReasonNotScreened",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.13",
              "code.code", "417491009",
@@ -3154,12 +3477,11 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
              "constraints.validation.dependOn.ResultObservationTargetSiteCode", "ResultObservationTargetSiteCodeP",
              "constraints.validation.info", "HearingScreeningResultObservationAuthor",
              "constraints.validation.warning", "HearingScreeningResultObservationPerformer"
-           });                             
+           });                                                 
         addAnnotation
           (riskIndicatorForHearingLossObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "RiskIndicatorForHearingLossObservationTemplateId RiskIndicatorForHearingLossObservationClassCode RiskIndicatorForHearingLossObservationMoodCode RiskIndicatorForHearingLossObservationCode RiskIndicatorForHearingLossObservationText RiskIndicatorForHearingLossObservationStatusCode RiskIndicatorForHearingLossObservationStatusCodeP RiskIndicatorForHearingLossObservationValue RiskIndicatorForHearingLossObservationId",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.1.4.15",
              "classCode", "OBS",
@@ -3170,24 +3492,21 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (problemConcernEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ProblemConcernActTemplateId ProblemConcernText ProblemConcernActEffectiveTime",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.16"
-           });         
+           });              
         addAnnotation
           (hearingPlanOfCareProblemConcernEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ProblemConcernActTemplateId ProblemConcernActId HearingPlanOfCareProblemConcernText ProblemConcernActEffectiveTime",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.17"
-           });         
+           });                 
         addAnnotation
           (hearingPlanOfCareProblemsSubSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareProblemsSubSectionTemplateId HearingPlanOfCareProblemsSubSectionCode HearingPlanOfCareProblemsSubSectionCodeP HearingPlanOfCareProblemsSubSectionText HearingPlanOfCareProblemsSubSectionTitle HearingPlanOfCareProblemsSubSectionEntryHpocProblemConcern",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.5",
              "code.code", "11450-4-HPOC",
@@ -3198,25 +3517,22 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (procedureActivityProcedureEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ProcedureActivityProcedureTemplateId HPOCProcedureActivityProcedureText ProcedureActivityProcedureId ProcedureActivityProcedureCode",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.18"
-           });         
+           });                 
         addAnnotation
           (procedureActivityActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ProcedureActivityActTemplateId HPOCProcedureActivityActText ProcedureActivityActCode",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.19",
              "constraints.validation.info", "HPOCProcedureActivityActEntryRelationshipEncounter HPOCProcedureActivityActEntryRelationshipInstructions HPOCProcedureActivityActEntryRelationshipIndication HPOCProcedureActivityActEntryRelationshipMedication HPOCProcedureActivityActEntryRelationshipProcedure"
-           });                              
+           });                                   
         addAnnotation
           (hearingPlanOfCareRelevantProceduresSubSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareRelevantProceduresSubSectionTemplateId HearingPlanOfCareRelevantProceduresSubSectionCode HearingPlanOfCareRelevantProceduresSubSectionCodeP HearingPlanOfCareRelevantProceduresSubSectionText HearingPlanOfCareRelevantProceduresSubSectionTitle",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.3.7",
              "code.code", "47519-4-HPOC",
@@ -3229,19 +3545,17 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareProcedureActivityProcedureEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ProcedureActivityProcedureTemplateId HearingPlanOfCareProcedureActivityProcedureId ProcedureActivityProcedureCode HearingPlanOfCareProcedureActivityProcedureText",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.20"
-           });            
+           });                 
         addAnnotation
           (hearingPlanOfCareProcedureActivityActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "ProcedureActivityActTemplateId ProcedureActivityActId ProcedureActivityActCode HearingPlanOfCareProcedureActivityActText",
              "templateId.root", "1.3.6.1.4.1.19376.1.7.3.1.1.26.2.4.21"
-           });    
+           });            
     }
 
 				/**
@@ -3256,12 +3570,11 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT",
              "constraints.validation.error", "HearingPlanOfCareHeaderComponentOfEncompassingEncounterCode HearingPlanOfCareHeaderComponentOfEncompassingEncounterId HearingPlanOfCareHeaderComponentOfEncompassingEncounterEffectiveTime HearingPlanOfCareHeaderComponentOfEncompassingEncounterLocation"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
         /**
@@ -3276,10 +3589,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderComponentOfEncompassingEncounterLocationHealthCareFacility"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     }
 
         /**
@@ -3294,10 +3606,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderComponentOfEncompassingEncounterLocationHealthCareFacilityLocation HearingPlanOfCareHeaderComponentOfEncompassingEncounterLocationHealthCareFacilityServiceProviderOrganization"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     }
 
         /**
@@ -3312,10 +3623,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderDocumentationOfServiceEvent"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     }
 
         /**
@@ -3330,13 +3640,12 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "code.codeSystem", "2.16.840.1.113883.6.96",
              "code.codeSystemName", "SNOMEDCT",
              "constraints.validation.error", "HearingPlanOfCareHeaderDocumentationOfServiceEventCode HearingPlanOfCareHeaderDocumentationOfServiceEventCodeP HearingPlanOfCareHeaderDocumentationOfServiceEventEffectiveTime",
              "constraints.validation.warning", "HearingPlanOfCareHeaderDocumentationOfServiceEventPerformer"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     }
 
         /**
@@ -3351,13 +3660,12 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerTypeCode HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerTypeCodeP HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerFunctionCode HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerFunctionCodeP HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerAssignedEntity",
              "constraints.validation.dependOn.HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerTypeCode", "HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerTypeCodeP",
              "functionCode.codeSystem", "2.16.840.1.113883.5.88",
              "functionCode.codeSystemName", "ParticipationFunction"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
     }
 
         /**
@@ -3372,14 +3680,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerAssignedEntityId HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerAssignedEntityCode",
              "code.codeSystem", "2.16.840.1.113883.6.101",
              "code.codeSystemName", "NUCC Health Care Provider Taxonomy",
              "constraints.validation.warning", "HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerAssignedEntityCodeP",
              "constraints.validation.dependOn.HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerAssignedEntityCode", "HearingPlanOfCareHeaderDocumentationOfServiceEventPerformerAssignedEntityCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
     }
 
         /**
@@ -3394,10 +3701,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderRecordTargetPatientRole"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
     }
 
         /**
@@ -3412,10 +3718,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderRecordTargetPatientRoleAddr HearingPlanOfCareHeaderRecordTargetPatientRoleId HearingPlanOfCareHeaderRecordTargetPatientRoleTelecom HearingPlanOfCareHeaderRecordTargetPatientRolePatient"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
     }
 
         /**
@@ -3430,8 +3735,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderRecordTargetPatientRolePatientName HearingPlanOfCareHeaderRecordTargetPatientRolePatientAdministrativeGenderCode HearingPlanOfCareHeaderRecordTargetPatientRolePatientBirthTime HearingPlanOfCareHeaderRecordTargetPatientRolePatientMaritalStatusCode HearingPlanOfCareHeaderRecordTargetPatientRolePatientReligiousAffiliationCode HearingPlanOfCareHeaderRecordTargetPatientRolePatientRaceCode HearingPlanOfCareHeaderRecordTargetPatientRolePatientEthnicGroupCode",
              "administrativeGenderCode.codeSystem", "2.16.840.1.113883.5.1",
              "administrativeGenderCode.codeSystemName", "AdministrativeGenderCode",
@@ -3449,7 +3753,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
              "ethnicGroupCode.codeSystem", "2.16.840.1.113883.6.238",
              "ethnicGroupCode.codeSystemName", "Race and Ethnicity - CDC",
              "constraints.validation.dependOn.HearingPlanOfCareHeaderRecordTargetPatientRolePatientEthnicGroupCode", "HearingPlanOfCareHeaderRecordTargetPatientRolePatientEthnicGroupCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     }
 
         /**
@@ -3464,10 +3768,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.warning", "HearingPlanOfCareHeaderRecordTargetPatientRolePatientGuardianCode HearingPlanOfCareHeaderRecordTargetPatientRolePatientGuardianAddr HearingPlanOfCareHeaderRecordTargetPatientRolePatientGuardianTelecom"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     }
 
         /**
@@ -3482,10 +3785,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderRecordTargetPatientRolePatientGuardianPersonName"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     }
 
         /**
@@ -3500,10 +3802,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderRecordTargetPatientRolePatientBirthplacePlace"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     }
 
         /**
@@ -3518,10 +3819,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderRecordTargetPatientRolePatientBirthplacePlaceAddr"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
         /**
@@ -3536,8 +3836,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderRecordTargetPatientRolePatientLanguageCommunicationLanguageCode HearingPlanOfCareHeaderRecordTargetPatientRolePatientLanguageCommunicationModeCode HearingPlanOfCareHeaderRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode",
              "modeCode.codeSystem", "2.16.840.1.113883.5.60",
              "modeCode.codeSystemName", "LanguageAbilityMode",
@@ -3547,7 +3846,7 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
              "proficiencyLevelCode.codeSystemName", "LanguageAbilityProficiency",
              "constraints.validation.warning", "HearingPlanOfCareHeaderRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP",
              "constraints.validation.dependOn.HearingPlanOfCareHeaderRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCode", "HearingPlanOfCareHeaderRecordTargetPatientRolePatientLanguageCommunicationProficiencyLevelCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
         /**
@@ -3562,10 +3861,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderAuthorTime HearingPlanOfCareHeaderAuthorAssignedAuthor"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
         /**
@@ -3580,14 +3878,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderAuthorAssignedAuthorAddr HearingPlanOfCareHeaderAuthorAssignedAuthorCode HearingPlanOfCareHeaderAuthorAssignedAuthorId HearingPlanOfCareHeaderAuthorAssignedAuthorTelecom",
              "code.codeSystem", "2.16.840.1.113883.5.53",
              "code.codeSystemName", "Healthcare Provider Taxonomy (HIPAA)",
              "constraints.validation.warning", "HearingPlanOfCareHeaderAuthorAssignedAuthorCodeP HearingPlanOfCareHeaderAuthorAssignedAuthorAssignedAuthoringDevice HearingPlanOfCareHeaderAuthorAssignedAuthorAssignedPerson",
              "constraints.validation.dependOn.HearingPlanOfCareHeaderAuthorAssignedAuthorCode", "HearingPlanOfCareHeaderAuthorAssignedAuthorCodeP"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
         /**
@@ -3602,10 +3899,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderAuthorAssignedAuthorPersonName"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     }
 
         /**
@@ -3620,10 +3916,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderAuthorAssignedAuthorAuthoringDeviceManufacturerModelName HearingPlanOfCareHeaderAuthorAssignedAuthorAuthoringDeviceSoftwareName"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     }
 
         /**
@@ -3638,10 +3933,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderCustodianAssignedCustodian"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     }
 
         /**
@@ -3656,10 +3950,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderCustodianAssignedCustodianRepresentedCustodianOrganization"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     }
 
         /**
@@ -3674,10 +3967,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderCustodianAssignedCustodianCustodianOrganizationAddr HearingPlanOfCareHeaderCustodianAssignedCustodianCustodianOrganizationId HearingPlanOfCareHeaderCustodianAssignedCustodianCustodianOrganizationName HearingPlanOfCareHeaderCustodianAssignedCustodianCustodianOrganizationTelecom"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
     }
 
         /**
@@ -3692,10 +3984,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareSectionEntryActAct"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
     }
 
         /**
@@ -3710,10 +4001,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareSectionEntryEncounterEncounter"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
     }
 
         /**
@@ -3728,10 +4018,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareSectionEntryObservationObservation"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
     }
 
         /**
@@ -3746,10 +4035,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareSectionEntryProcedureProcedure"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     }
 
         /**
@@ -3764,10 +4052,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareSectionEntrySubstanceAdministrationSubstanceAdministration"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
         /**
@@ -3782,10 +4069,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareSectionEntrySupplySupply"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
         /**
@@ -3800,10 +4086,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareSectionEntryInstructionsAct"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
         /**
@@ -3818,10 +4103,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingScreeningSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingScreeningSectionEntryOrganizer"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
     }
 
         /**
@@ -3832,14 +4116,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareActivitySubstanceAdministrationConsumableAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationConsumable";                                                                                                                                                                                                                                                                                                                           
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationConsumable";                                                                                                                                                                                                                                                                                                                                     
         addAnnotation
           (hearingPlanOfCareActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareActivitySubstanceAdministrationConsumableManufacturedProduct"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                 
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
         /**
@@ -3850,15 +4133,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareActivitySubstanceAdministrationParticipant2Annotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationParticipant2";                                                                                                                                                                                                                                                                                                                            
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationParticipant2";                                                                                                                                                                                                                                                                                                                                      
         addAnnotation
           (hearingPlanOfCareActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "CSM",
              "constraints.validation.error", "HearingPlanOfCareActivitySubstanceAdministrationParticipant2TypeCode"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
     }
 
         /**
@@ -3869,15 +4151,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipIndicationAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipIndication";                                                                                                                                                                                                                                                                                                                             
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipIndication";                                                                                                                                                                                                                                                                                                                                       
         addAnnotation
           (hearingPlanOfCareActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "RSON",
              "constraints.validation.error", "HearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipIndicationTypeCode"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                               
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
         /**
@@ -3888,16 +4169,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipInstructionsAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipInstructions";                                                                                                                                                                                                                                                                                                                              
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipInstructions";                                                                                                                                                                                                                                                                                                                                        
         addAnnotation
           (hearingPlanOfCareActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "inversionInd", "true",
              "typeCode", "SUBJ",
              "constraints.validation.error", "HearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipInstructionsTypeCode"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                              
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
     }
 
         /**
@@ -3908,15 +4188,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipMedicationSupplyAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipMedicationSupply";                                                                                                                                                                                                                                                                                                                               
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipMedicationSupply";                                                                                                                                                                                                                                                                                                                                         
         addAnnotation
           (hearingPlanOfCareActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "REFR",
              "constraints.validation.error", "HearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipMedicationSupplyTypeCode"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                             
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     }
 
         /**
@@ -3927,15 +4206,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipMedicationDispenseAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipMedicationDispense";                                                                                                                                                                                                                                                                                                                                
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipMedicationDispense";                                                                                                                                                                                                                                                                                                                                          
         addAnnotation
           (hearingPlanOfCareActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "REFR",
              "constraints.validation.error", "HearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipMedicationDispenseTypeCode"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                            
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
     }
 
         /**
@@ -3946,15 +4224,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipReactionAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipReaction";                                                                                                                                                                                                                                                                                                                                 
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipReaction";                                                                                                                                                                                                                                                                                                                                           
         addAnnotation
           (hearingPlanOfCareActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "CAUS",
              "constraints.validation.error", "HearingPlanOfCareActivitySubstanceAdministrationEntryRelationshipReactionTypeCode"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                           
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
     }
 
         /**
@@ -3965,14 +4242,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareActivitySubstanceAdministrationPreconditionAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationPrecondition";                                                                                                                                                                                                                                                                                                                                  
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivitySubstanceAdministrationPrecondition";                                                                                                                                                                                                                                                                                                                                            
         addAnnotation
           (hearingPlanOfCareActivitySubstanceAdministrationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "PRCN"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                          
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     }
 
         /**
@@ -3983,15 +4259,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareActivityNonMedicinalSupplyParticipantAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivityNonMedicinalSupplyParticipant";                                                                                                                                                                                                                                                                                                                                                                                                                  
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareActivityNonMedicinalSupplyParticipant";                                                                                                                                                                                                                                                                                                                                                                                                                                            
         addAnnotation
           (hearingPlanOfCareActivityNonMedicinalSupplyEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "PRD",
              "constraints.validation.error", "HearingPlanOfCareActivityNonMedicinalSupplyParticipantTypeCode HearingPlanOfCareActivityNonMedicinalSupplyParticipantParticipantRole"
-           });                                                                                                                                                                                                                                                                                                                                          
+           });                                                                                                                                                                                                                                                                                                                                                                                                                             
     }
 
         /**
@@ -4002,14 +4277,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingScreeningOrganizerComponentLeftEarAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningOrganizerComponentLeftEar";                                                                                                                                                                                                                                                                                                                                                                                                                                       
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningOrganizerComponentLeftEar";                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
         addAnnotation
           (hearingScreeningOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingScreeningOrganizerComponentLeftEarObservation"
-           });                                                                                                                                                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                                                                                                                                                                      
     }
 
         /**
@@ -4020,14 +4294,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingScreeningOrganizerComponentRightEarAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningOrganizerComponentRightEar";                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningOrganizerComponentRightEar";                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
         addAnnotation
           (hearingScreeningOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingScreeningOrganizerComponentRightEarObservation"
-           });                                                                                                                                                                                                                                                                                                                    
+           });                                                                                                                                                                                                                                                                                                                                                                                                     
     }
 
         /**
@@ -4038,14 +4311,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingScreeningOrganizerComponentResultsOrganizerAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningOrganizerComponentResultsOrganizer";                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningOrganizerComponentResultsOrganizer";                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
         addAnnotation
           (hearingScreeningOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingScreeningOrganizerComponentResultsOrganizerOrganizer"
-           });                                                                                                                                                                                                                                                                                                                   
+           });                                                                                                                                                                                                                                                                                                                                                                                                    
     }
 
         /**
@@ -4059,111 +4331,8 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareDocumentEClass, 
            source, 
-           new String[] 
-           {
-           });                                                                                                                                                           
-        addAnnotation
-          (hearingScreeningSectionEClass, 
-           source, 
-           new String[] 
-           {
-           });                                                                                    
-        addAnnotation
-          (hearingPlanOfCareActivityActEClass, 
-           source, 
-           new String[] 
-           {
-           });                        
-        addAnnotation
-          (hearingPlanOfCareActivityEncounterEClass, 
-           source, 
-           new String[] 
-           {
-           });                     
-        addAnnotation
-          (hearingPlanOfCareActivityObservationEClass, 
-           source, 
-           new String[] 
-           {
-           });                        
-        addAnnotation
-          (hearingPlanOfCareActivityProcedureEClass, 
-           source, 
-           new String[] 
-           {
-           });                                
-        addAnnotation
-          (hearingPlanOfCareActivitySubstanceAdministrationEClass, 
-           source, 
-           new String[] 
-           {
-           });                                                                           
-        addAnnotation
-          (hearingPlanOfCareInstructionsEClass, 
-           source, 
-           new String[] 
-           {
-           });             
-        addAnnotation
-          (hearingPlanOfCareActivityNonMedicinalSupplyEClass, 
-           source, 
-           new String[] 
-           {
-           });                           
-        addAnnotation
-          (hearingScreeningOrganizerEClass, 
-           source, 
-           new String[] 
-           {
-           });                                                                                                                                                      
-        addAnnotation
-          (hearingScreeningResultsOrganizerEClass, 
-           source, 
-           new String[] 
-           {
-           });              
-        addAnnotation
-          (hearingScreeningResultObservationEClass, 
-           source, 
-           new String[] 
-           {
-           });                                                          
-        addAnnotation
-          (problemConcernEClass, 
-           source, 
-           new String[] 
-           {
-           });         
-        addAnnotation
-          (hearingPlanOfCareProblemConcernEClass, 
-           source, 
-           new String[] 
-           {
-           });                             
-        addAnnotation
-          (procedureActivityProcedureEClass, 
-           source, 
-           new String[] 
-           {
-           });               
-        addAnnotation
-          (procedureActivityActEClass, 
-           source, 
-           new String[] 
-           {
-           });                                                
-        addAnnotation
-          (hearingPlanOfCareProcedureActivityProcedureEClass, 
-           source, 
-           new String[] 
-           {
-           });            
-        addAnnotation
-          (hearingPlanOfCareProcedureActivityActEClass, 
-           source, 
-           new String[] 
-           {
-           });   
+           new String[] {
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
         /**
@@ -4178,10 +4347,9 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
         addAnnotation
           (hearingPlanOfCareHeaderEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareHeaderComponentOfEncompassingEncounter"
-           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+           });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
     }
 
         /**
@@ -4192,15 +4360,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingScreeningOutcomeObservationLeftEntryRelationshipAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningOutcomeObservationLeftEntryRelationship";                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningOutcomeObservationLeftEntryRelationship";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
         addAnnotation
           (hearingScreeningOutcomeObservationLeftEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "RSON",
              "constraints.validation.error", "HearingScreeningOutcomeObservationLeftEntryRelationshipTypeCode HearingScreeningOutcomeObservationLeftEntryRelationshipAct"
-           });                                                                                                                                                                                                                                                                                                    
+           });                                                                                                                                                                                                                                                                                                                                                                             
     }
 
         /**
@@ -4211,16 +4378,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingScreeningOutcomeObservationRightEntryRelationshipAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningOutcomeObservationRightEntryRelationship";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningOutcomeObservationRightEntryRelationship";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
         addAnnotation
           (hearingScreeningOutcomeObservationRightEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "RSON",
              "constraints.validation.error", "HearingScreeningOutcomeObservationRightEntryRelationshipTypeCode HearingScreeningOutcomeObservationRightEntryRelationshipTypeCodeP HearingScreeningOutcomeObservationRightEntryRelationshipAct",
              "constraints.validation.dependOn.HearingScreeningOutcomeObservationRightEntryRelationshipTypeCode", "HearingScreeningOutcomeObservationRightEntryRelationshipTypeCodeP"
-           });                                                                                                                                                                                                                         
+           });                                                                                                                                                                                                                                                                                                  
     }
 
         /**
@@ -4231,14 +4397,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingScreeningResultsOrganizerComponentResultObservationAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningResultsOrganizerComponentResultObservation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningResultsOrganizerComponentResultObservation";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         addAnnotation
           (hearingScreeningResultsOrganizerEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingScreeningResultsOrganizerComponentResultObservationObservation"
-           });                                                                                                                                                                 
+           });                                                                                                                                                                                                                                          
     }
 
         /**
@@ -4249,15 +4414,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingScreeningResultObservationEntryRelationshipReasonNotScreenedAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningResultObservationEntryRelationshipReasonNotScreened";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningResultObservationEntryRelationshipReasonNotScreened";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
         addAnnotation
           (hearingScreeningResultObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "RSON",
              "constraints.validation.error", "HearingScreeningResultObservationEntryRelationshipReasonNotScreenedTypeCode HearingScreeningResultObservationEntryRelationshipReasonNotScreenedAct"
-           });                                                                                                                                                        
+           });                                                                                                                                                                                                                   
     }
 
         /**
@@ -4268,15 +4432,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingScreeningResultObservationEntryRelationshipReferAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningResultObservationEntryRelationshipRefer";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingScreeningResultObservationEntryRelationshipRefer";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
         addAnnotation
           (hearingScreeningResultObservationEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "REFR",
              "constraints.validation.error", "HearingScreeningResultObservationEntryRelationshipReferTypeCode HearingScreeningResultObservationEntryRelationshipReferAct"
-           });                                                                                                                                                       
+           });                                                                                                                                                                                                                  
     }
 
         /**
@@ -4287,14 +4450,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareProblemsSubSectionEntryHpocProblemConcernAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareProblemsSubSectionEntryHpocProblemConcern";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareProblemsSubSectionEntryHpocProblemConcern";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
         addAnnotation
           (hearingPlanOfCareProblemsSubSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareProblemsSubSectionEntryHpocProblemConcernAct"
-           });                                                                                      
+           });                                                                                                                
     }
 
         /**
@@ -4305,16 +4467,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocProcedureActivityActEntryRelationshipEncounterAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipEncounter";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipEncounter";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         addAnnotation
           (procedureActivityActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "COMP",
              "constraints.validation.error", "ProcedureActivityActEntryRelationshipTypeCode ProcedureActivityActEntryRelationshipInversionInd",
              "inversionInd", "true"
-           });                                                             
+           });                                                                               
     }
 
         /**
@@ -4325,18 +4486,17 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocProcedureActivityActEntryRelationshipEncounterEncounterAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipEncounterEncounter";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipEncounterEncounter";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
         addAnnotation
           (procedureActivityActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "classCode", "ENC",
              "constraints.validation.error", "ProcedureActivityActEntryRelationshipEncounterEncounterClassCode ProcedureActivityActEntryRelationshipEncounterEncounterClassCodeP ProcedureActivityActEntryRelationshipEncounterEncounterMoodCode ProcedureActivityActEntryRelationshipEncounterEncounterMoodCodeP ProcedureActivityActEntryRelationshipEncounterEncounterId",
              "constraints.validation.dependOn.ProcedureActivityActEntryRelationshipEncounterEncounterClassCode", "ProcedureActivityActEntryRelationshipEncounterEncounterClassCodeP",
              "moodCode", "EVN",
              "constraints.validation.dependOn.ProcedureActivityActEntryRelationshipEncounterEncounterMoodCode", "ProcedureActivityActEntryRelationshipEncounterEncounterMoodCodeP"
-           });                                                            
+           });                                                                              
     }
 
         /**
@@ -4347,16 +4507,15 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocProcedureActivityActEntryRelationshipInstructionsAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipInstructions";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipInstructions";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
         addAnnotation
           (procedureActivityActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "SUBJ",
              "constraints.validation.error", "ProcedureActivityActEntryRelationshipTypeCode ProcedureActivityActEntryRelationshipInversionInd",
              "inversionInd", "true"
-           });                                                           
+           });                                                                             
     }
 
         /**
@@ -4367,15 +4526,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocProcedureActivityActEntryRelationshipIndicationAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipIndication";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipIndication";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
         addAnnotation
           (procedureActivityActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "RSON",
              "constraints.validation.error", "ProcedureActivityActEntryRelationshipTypeCode"
-           });                                                          
+           });                                                                            
     }
 
         /**
@@ -4386,15 +4544,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocProcedureActivityActEntryRelationshipMedicationAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipMedication";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipMedication";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
         addAnnotation
           (procedureActivityActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "COMP",
              "constraints.validation.error", "ProcedureActivityActEntryRelationshipTypeCode"
-           });                                                         
+           });                                                                           
     }
 
         /**
@@ -4405,15 +4562,14 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocProcedureActivityActEntryRelationshipProcedureAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipProcedure";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocProcedureActivityActEntryRelationshipProcedure";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               
         addAnnotation
           (procedureActivityActEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "typeCode", "COMP",
              "constraints.validation.error", "ProcedureActivityActEntryRelationshipTypeCode"
-           });                                                        
+           });                                                                          
     }
 
         /**
@@ -4424,14 +4580,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareRelevantProceduresSubSectionEntryProcedureAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareRelevantProceduresSubSectionEntryProcedure";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareRelevantProceduresSubSectionEntryProcedure";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
         addAnnotation
           (hearingPlanOfCareRelevantProceduresSubSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareRelevantProceduresSubSectionEntryProcedureProcedure"
-           });                                   
+           });                                                
     }
 
         /**
@@ -4442,14 +4597,13 @@ public class HPOCPackageImpl extends EPackageImpl implements HPOCPackage
      */
     protected void createHpocHearingPlanOfCareRelevantProceduresSubSectionEntryActAnnotations()
     {
-        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareRelevantProceduresSubSectionEntryAct";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+        String source = "http://www.openhealthtools.org/mdht/uml/cda/annotation/hpocHearingPlanOfCareRelevantProceduresSubSectionEntryAct";                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
         addAnnotation
           (hearingPlanOfCareRelevantProceduresSubSectionEClass, 
            source, 
-           new String[] 
-           {
+           new String[] {
              "constraints.validation.error", "HearingPlanOfCareRelevantProceduresSubSectionEntryActAct"
-           });                                  
+           });                                               
     }
 
 } //HPOCPackageImpl

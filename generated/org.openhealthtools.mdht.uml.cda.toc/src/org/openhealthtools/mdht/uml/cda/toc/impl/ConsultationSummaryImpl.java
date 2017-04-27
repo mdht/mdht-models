@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.toc.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.impl.GeneralHeaderConstraintsImpl;
 import org.openhealthtools.mdht.uml.cda.hitsp.AdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.AllergiesReactionsSection;
@@ -41,344 +39,337 @@ import org.openhealthtools.mdht.uml.cda.toc.operations.ConsultationSummaryOperat
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Consultation Summary</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
 public class ConsultationSummaryImpl extends GeneralHeaderConstraintsImpl implements ConsultationSummary {
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	protected ConsultationSummaryImpl() {
 		super();
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
 		return ToCPackage.Literals.CONSULTATION_SUMMARY;
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryAllergiesReactionsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationSummaryOperations.validateConsultationSummaryAllergiesReactionsSection(
-			this, diagnostics, context);
+		return ConsultationSummaryOperations.validateConsultationSummaryAllergiesReactionsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryMedicationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateConsultationSummaryMedicationsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryProblemListSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateConsultationSummaryProblemListSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummarySurgeriesSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateConsultationSummarySurgeriesSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryDiagnosticResultsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationSummaryOperations.validateConsultationSummaryDiagnosticResultsSection(
-			this, diagnostics, context);
+		return ConsultationSummaryOperations.validateConsultationSummaryDiagnosticResultsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryAdvanceDirectivesSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationSummaryOperations.validateConsultationSummaryAdvanceDirectivesSection(
-			this, diagnostics, context);
+		return ConsultationSummaryOperations.validateConsultationSummaryAdvanceDirectivesSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryEncountersSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateConsultationSummaryEncountersSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryFamilyHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateConsultationSummaryFamilyHistorySection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryFunctionalStatusSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationSummaryOperations.validateConsultationSummaryFunctionalStatusSection(
-			this, diagnostics, context);
+		return ConsultationSummaryOperations.validateConsultationSummaryFunctionalStatusSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryImmunizationsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateConsultationSummaryImmunizationsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryMedicalEquipmentSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ConsultationSummaryOperations.validateConsultationSummaryMedicalEquipmentSection(
-			this, diagnostics, context);
+		return ConsultationSummaryOperations.validateConsultationSummaryMedicalEquipmentSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryPayersSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateConsultationSummaryPayersSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryPlanOfCareSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateConsultationSummaryPlanOfCareSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummarySocialHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateConsultationSummarySocialHistorySection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public boolean validateConsultationSummaryVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateConsultationSummaryVitalSignsSection(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AllergiesReactionsSection getAllergiesReactionsSection() {
 		return ConsultationSummaryOperations.getAllergiesReactionsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicationsSection getMedicationsSection() {
 		return ConsultationSummaryOperations.getMedicationsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ProblemListSection getProblemListSection() {
 		return ConsultationSummaryOperations.getProblemListSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SurgeriesSection getSurgeriesSection() {
 		return ConsultationSummaryOperations.getSurgeriesSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public DiagnosticResultsSection getDiagnosticResultsSection() {
 		return ConsultationSummaryOperations.getDiagnosticResultsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public AdvanceDirectivesSection getAdvanceDirectivesSection() {
 		return ConsultationSummaryOperations.getAdvanceDirectivesSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public EncountersSection getEncountersSection() {
 		return ConsultationSummaryOperations.getEncountersSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FamilyHistorySection getFamilyHistorySection() {
 		return ConsultationSummaryOperations.getFamilyHistorySection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public FunctionalStatusSection getFunctionalStatusSection() {
 		return ConsultationSummaryOperations.getFunctionalStatusSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public ImmunizationsSection getImmunizationsSection() {
 		return ConsultationSummaryOperations.getImmunizationsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public MedicalEquipmentSection getMedicalEquipmentSection() {
 		return ConsultationSummaryOperations.getMedicalEquipmentSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PayersSection getPayersSection() {
 		return ConsultationSummaryOperations.getPayersSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public PlanOfCareSection getPlanOfCareSection() {
 		return ConsultationSummaryOperations.getPlanOfCareSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public SocialHistorySection getSocialHistorySection() {
 		return ConsultationSummaryOperations.getSocialHistorySection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	public VitalSignsSection getVitalSignsSection() {
 		return ConsultationSummaryOperations.getVitalSignsSection(this);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	* <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConsultationSummaryOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 
 	/**
-	* <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	@Override
 	public ConsultationSummary init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	   * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	   * <!-- end-user-doc -->
-	   * @generated
-	   */
+     * @generated
+     */
 	@Override
-	public ConsultationSummary init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+	public ConsultationSummary init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ConsultationSummaryImpl

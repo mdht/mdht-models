@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.MedicationNotAdministeredReasonObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class MedicationNotAdministeredReasonObservationOperations extends ClinicalStatementOperations {
+public class MedicationNotAdministeredReasonObservationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +73,7 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,28 +89,38 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	public static boolean validateMedicationNotAdministeredReasonObservationTemplateId(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION);
 			try {
-				VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationNotAdministeredReasonObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION__MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("MedicationNotAdministeredReasonObservationTemplateId"),
-					new Object[] { medicationNotAdministeredReasonObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(medicationNotAdministeredReasonObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION__MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("MedicationNotAdministeredReasonObservationMedicationNotAdministeredReasonObservationTemplateId"),
+						 new Object [] { medicationNotAdministeredReasonObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -134,7 +145,7 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -150,28 +161,38 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	public static boolean validateMedicationNotAdministeredReasonObservationMoodCode(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION);
 			try {
-				VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationNotAdministeredReasonObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION__MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("MedicationNotAdministeredReasonObservationMoodCode"),
-					new Object[] { medicationNotAdministeredReasonObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(medicationNotAdministeredReasonObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION__MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("MedicationNotAdministeredReasonObservationMedicationNotAdministeredReasonObservationMoodCode"),
+						 new Object [] { medicationNotAdministeredReasonObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -185,9 +206,9 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
+	protected static final String VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = 'ASSERTION' and value.codeSystem = '2.16.840.1.113883.5.4')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationCode(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Code</em>}' invariant operation.
@@ -198,7 +219,7 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -214,28 +235,38 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	public static boolean validateMedicationNotAdministeredReasonObservationCode(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION);
 			try {
-				VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationNotAdministeredReasonObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION__MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE,
-					EmspcrPlugin.INSTANCE.getString("MedicationNotAdministeredReasonObservationCode"),
-					new Object[] { medicationNotAdministeredReasonObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(medicationNotAdministeredReasonObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION__MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_CODE,
+						 EmspcrPlugin.INSTANCE.getString("MedicationNotAdministeredReasonObservationMedicationNotAdministeredReasonObservationCode"),
+						 new Object [] { medicationNotAdministeredReasonObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -249,9 +280,9 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA15185-4' or value.code = 'LA18921-9' or value.code = 'LA18922-7' or value.code = 'LA18925-0' or value.code = 'LA4216-3' or value.code = 'LA4389-8')))";
+	protected static final String VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA15185-4' or value.code = 'LA18921-9' or value.code = 'LA18922-7' or value.code = 'LA18925-0' or value.code = 'LA4216-3' or value.code = 'LA4389-8')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMedicationNotAdministeredReasonObservationValue(MedicationNotAdministeredReasonObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Medication Not Administered Reason Observation Value</em>}' invariant operation.
@@ -262,7 +293,7 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -278,28 +309,38 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	public static boolean validateMedicationNotAdministeredReasonObservationValue(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION);
 			try {
-				VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationNotAdministeredReasonObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION__MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE,
-					EmspcrPlugin.INSTANCE.getString("MedicationNotAdministeredReasonObservationValue"),
-					new Object[] { medicationNotAdministeredReasonObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(medicationNotAdministeredReasonObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION__MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("MedicationNotAdministeredReasonObservationMedicationNotAdministeredReasonObservationValue"),
+						 new Object [] { medicationNotAdministeredReasonObservation }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -324,7 +365,7 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,28 +381,38 @@ public class MedicationNotAdministeredReasonObservationOperations extends Clinic
 	public static boolean validateMedicationNotAdministeredReasonObservationValueP(
 			MedicationNotAdministeredReasonObservation medicationNotAdministeredReasonObservation,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION);
 			try {
-				VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			medicationNotAdministeredReasonObservation)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION__MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P,
-					EmspcrPlugin.INSTANCE.getString("MedicationNotAdministeredReasonObservationValueP"),
-					new Object[] { medicationNotAdministeredReasonObservation }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(medicationNotAdministeredReasonObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION__MEDICATION_NOT_ADMINISTERED_REASON_OBSERVATION_VALUE_P,
+						 EmspcrPlugin.INSTANCE.getString("MedicationNotAdministeredReasonObservationMedicationNotAdministeredReasonObservationValueP"),
+						 new Object [] { medicationNotAdministeredReasonObservation }));
+			}
+			 
 			return false;
 		}
 		return true;

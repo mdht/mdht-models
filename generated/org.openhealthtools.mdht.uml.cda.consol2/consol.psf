@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<psf version="2.0">
+<provider id="org.eclipse.egit.core.GitProvider">
+<project reference="1.0,https://git.eclipse.org/r/mdht/org.eclipse.mdht,master,cda/plugins/org.eclipse.mdht.uml.cda"/>
+<project reference="1.0,https://git.eclipse.org/r/mdht/org.eclipse.mdht,master,cda/plugins/org.eclipse.mdht.uml.hl7.datatypes"/>
+<project reference="1.0,https://git.eclipse.org/r/mdht/org.eclipse.mdht,master,cda/plugins/org.eclipse.mdht.uml.hl7.rim"/>
+<project reference="1.0,https://git.eclipse.org/r/mdht/org.eclipse.mdht,master,cda/plugins/org.eclipse.mdht.uml.hl7.vocab"/>
+<project reference="1.0,https://github.com/mdht/mdht-models.git,developMultithread,generated/org.openhealthtools.mdht.uml.cda.consol2"/>
+</provider>
+</psf>

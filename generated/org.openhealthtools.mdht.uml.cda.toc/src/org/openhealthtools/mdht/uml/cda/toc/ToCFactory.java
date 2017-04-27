@@ -22,56 +22,56 @@ import org.eclipse.emf.ecore.EFactory;
  */
 public interface ToCFactory extends EFactory {
 	/**
-	* The singleton instance of the factory.
-	* <!-- begin-user-doc -->
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @generated
-	*/
+	 * @generated
+	 */
 	ToCFactory eINSTANCE = org.openhealthtools.mdht.uml.cda.toc.impl.ToCFactoryImpl.init();
 
 	/**
-	* Returns a new object of class '<em>Discharge Summary</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Discharge Summary</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @return a new object of class '<em>Discharge Summary</em>'.
-	* @generated
-	*/
+	 * @return a new object of class '<em>Discharge Summary</em>'.
+	 * @generated
+	 */
 	DischargeSummary createDischargeSummary();
 
 	/**
-	* Returns a new object of class '<em>Discharge Instructions</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Discharge Instructions</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @return a new object of class '<em>Discharge Instructions</em>'.
-	* @generated
-	*/
+	 * @return a new object of class '<em>Discharge Instructions</em>'.
+	 * @generated
+	 */
 	DischargeInstructions createDischargeInstructions();
 
 	/**
-	* Returns a new object of class '<em>Consultation Summary</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Consultation Summary</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @return a new object of class '<em>Consultation Summary</em>'.
-	* @generated
-	*/
+	 * @return a new object of class '<em>Consultation Summary</em>'.
+	 * @generated
+	 */
 	ConsultationSummary createConsultationSummary();
 
 	/**
-	* Returns a new object of class '<em>Consultation Request</em>'.
-	* <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Consultation Request</em>'.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @return a new object of class '<em>Consultation Request</em>'.
-	* @generated
-	*/
+	 * @return a new object of class '<em>Consultation Request</em>'.
+	 * @generated
+	 */
 	ConsultationRequest createConsultationRequest();
 
 	/**
-	* Returns the package supported by this factory.
-	* <!-- begin-user-doc -->
+	 * Returns the package supported by this factory.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	* @return the package supported by this factory.
-	* @generated
-	*/
+	 * @return the package supported by this factory.
+	 * @generated
+	 */
 	ToCPackage getToCPackage();
 
 } // ToCFactory

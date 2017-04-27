@@ -1,21 +1,24 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.CDAFactory;
+import org.eclipse.mdht.uml.cda.StrucDocText;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.CDAFactory;
-import org.openhealthtools.mdht.uml.cda.StrucDocText;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.LaborandDeliveryProcedureSectionOperations;
 
 /**
@@ -30,11 +33,12 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.LaborandDeliveryProcedur
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#validateLaborandDeliveryProcedureSectionClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#validateLaborandDeliveryProcedureSectionMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#validateLaborandDeliveryProcedureSectionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#validateLaborandDeliveryProcedureSectionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#validateLaborandDeliveryProcedureSectionText(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Text</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#validateLaborandDeliveryProcedureSectionObstetricProcedures(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Obstetric Procedures</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#validateLaborandDeliveryProcedureSectionMethodofDelivery(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Methodof Delivery</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#getObstetricProceduress() <em>Get Obstetric Proceduress</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#getMethodofDelivery() <em>Get Methodof Delivery</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#validateLaborandDeliveryProcedureSectionObstetricProcedure(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Obstetric Procedure</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#validateLaborandDeliveryProcedureSectionMethodOfDelivery(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Procedure Section Method Of Delivery</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#getObstetricProcedures() <em>Get Obstetric Procedures</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcedureSection#getMethodOfDelivery() <em>Get Method Of Delivery</em>}</li>
  * </ul>
  * </p>
  *
@@ -48,10 +52,12 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateLaborandDeliveryProcedureSectionTemplateId() {
 		OperationsTestCase<LaborandDeliveryProcedureSection> validateLaborandDeliveryProcedureSectionTemplateIdTestCase = new OperationsTestCase<LaborandDeliveryProcedureSection>(
 			"validateLaborandDeliveryProcedureSectionTemplateId",
-			operationsForOCL.getOCLValue("VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -82,10 +88,12 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateLaborandDeliveryProcedureSectionClassCode() {
 		OperationsTestCase<LaborandDeliveryProcedureSection> validateLaborandDeliveryProcedureSectionClassCodeTestCase = new OperationsTestCase<LaborandDeliveryProcedureSection>(
 			"validateLaborandDeliveryProcedureSectionClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -116,10 +124,12 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateLaborandDeliveryProcedureSectionMoodCode() {
 		OperationsTestCase<LaborandDeliveryProcedureSection> validateLaborandDeliveryProcedureSectionMoodCodeTestCase = new OperationsTestCase<LaborandDeliveryProcedureSection>(
 			"validateLaborandDeliveryProcedureSectionMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -150,10 +160,11 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateLaborandDeliveryProcedureSectionCode() {
 		OperationsTestCase<LaborandDeliveryProcedureSection> validateLaborandDeliveryProcedureSectionCodeTestCase = new OperationsTestCase<LaborandDeliveryProcedureSection>(
-			"validateLaborandDeliveryProcedureSectionCode",
-			operationsForOCL.getOCLValue("VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateLaborandDeliveryProcedureSectionCode", operationsForOCL.getOCLValue(
+				"VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -184,10 +195,46 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
+	public void testValidateLaborandDeliveryProcedureSectionCodeP() {
+		OperationsTestCase<LaborandDeliveryProcedureSection> validateLaborandDeliveryProcedureSectionCodePTestCase = new OperationsTestCase<LaborandDeliveryProcedureSection>(
+			"validateLaborandDeliveryProcedureSectionCodeP", operationsForOCL.getOCLValue(
+				"VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
+
+			@Override
+			protected void updateToFail(LaborandDeliveryProcedureSection target) {
+
+			}
+
+			@Override
+			protected void updateToPass(LaborandDeliveryProcedureSection target) {
+				target.init();
+
+			}
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+
+				return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionCodeP(
+					(LaborandDeliveryProcedureSection) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateLaborandDeliveryProcedureSectionCodePTestCase.doValidationTest();
+	}
+
+	/**
+	*
+	* @generated
+	*/
+	@Test
+
 	public void testValidateLaborandDeliveryProcedureSectionText() {
 		OperationsTestCase<LaborandDeliveryProcedureSection> validateLaborandDeliveryProcedureSectionTextTestCase = new OperationsTestCase<LaborandDeliveryProcedureSection>(
-			"validateLaborandDeliveryProcedureSectionText",
-			operationsForOCL.getOCLValue("VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			"validateLaborandDeliveryProcedureSectionText", operationsForOCL.getOCLValue(
+				"VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -221,10 +268,12 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateLaborandDeliveryProcedureSectionObstetricProcedures() {
-		OperationsTestCase<LaborandDeliveryProcedureSection> validateLaborandDeliveryProcedureSectionObstetricProceduresTestCase = new OperationsTestCase<LaborandDeliveryProcedureSection>(
-			"validateLaborandDeliveryProcedureSectionObstetricProcedures",
-			operationsForOCL.getOCLValue("VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateLaborandDeliveryProcedureSectionObstetricProcedure() {
+		OperationsTestCase<LaborandDeliveryProcedureSection> validateLaborandDeliveryProcedureSectionObstetricProcedureTestCase = new OperationsTestCase<LaborandDeliveryProcedureSection>(
+			"validateLaborandDeliveryProcedureSectionObstetricProcedure",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_OBSTETRIC_PROCEDURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -241,13 +290,13 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionObstetricProcedures(
+				return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionObstetricProcedure(
 					(LaborandDeliveryProcedureSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateLaborandDeliveryProcedureSectionObstetricProceduresTestCase.doValidationTest();
+		validateLaborandDeliveryProcedureSectionObstetricProcedureTestCase.doValidationTest();
 	}
 
 	/**
@@ -255,10 +304,12 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testValidateLaborandDeliveryProcedureSectionMethodofDelivery() {
-		OperationsTestCase<LaborandDeliveryProcedureSection> validateLaborandDeliveryProcedureSectionMethodofDeliveryTestCase = new OperationsTestCase<LaborandDeliveryProcedureSection>(
-			"validateLaborandDeliveryProcedureSectionMethodofDelivery",
-			operationsForOCL.getOCLValue("VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHODOF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+
+	public void testValidateLaborandDeliveryProcedureSectionMethodOfDelivery() {
+		OperationsTestCase<LaborandDeliveryProcedureSection> validateLaborandDeliveryProcedureSectionMethodOfDeliveryTestCase = new OperationsTestCase<LaborandDeliveryProcedureSection>(
+			"validateLaborandDeliveryProcedureSectionMethodOfDelivery",
+			operationsForOCL.getOCLValue(
+				"VALIDATE_LABORAND_DELIVERY_PROCEDURE_SECTION_METHOD_OF_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
 			objectFactory) {
 
 			@Override
@@ -275,13 +326,13 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionMethodofDelivery(
+				return LaborandDeliveryProcedureSectionOperations.validateLaborandDeliveryProcedureSectionMethodOfDelivery(
 					(LaborandDeliveryProcedureSection) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateLaborandDeliveryProcedureSectionMethodofDeliveryTestCase.doValidationTest();
+		validateLaborandDeliveryProcedureSectionMethodOfDeliveryTestCase.doValidationTest();
 	}
 
 	/**
@@ -289,10 +340,11 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetObstetricProceduress() {
+
+	public void testGetObstetricProcedures() {
 
 		LaborandDeliveryProcedureSection target = objectFactory.create();
-		target.getObstetricProceduress();
+		target.getObstetricProcedures();
 
 	}
 
@@ -301,10 +353,11 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
-	public void testGetMethodofDelivery() {
+
+	public void testGetMethodOfDelivery() {
 
 		LaborandDeliveryProcedureSection target = objectFactory.create();
-		target.getMethodofDelivery();
+		target.getMethodOfDelivery();
 
 	}
 
@@ -361,8 +414,7 @@ public class LaborandDeliveryProcedureSectionTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

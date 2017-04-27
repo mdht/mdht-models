@@ -16,8 +16,8 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.Procedure;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.Procedure;
 
 /**
  * <!-- begin-user-doc -->
@@ -112,7 +112,8 @@ public interface ProcedureActivityProcedure extends Procedure, ProcedureActivity
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.participant->exists(participant : cda::Participant2 | not participant.oclIsUndefined() and participant.oclIsKindOf(ccd::EncounterLocation))'"
 	 * @generated
 	 */
-	boolean validateProcedureActivityProcedureEncounterLocation(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateProcedureActivityProcedureEncounterLocation(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

@@ -1,9 +1,5 @@
 
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 
@@ -11,15 +7,20 @@ package org.openhealthtools.mdht.uml.cda.vsdr.tests;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CS;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsdr.operations.DeathCausalInformationOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CS;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 
 /**
@@ -32,12 +33,19 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  * <ul>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Template Id</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationStatusCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Status Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationStatusCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Status Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCause(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentOtherSignificantCondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Other Significant Condition</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentDeathCauseInterval(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Death Cause Interval</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval Code P</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval Mood Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval Value</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Type Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause Component Death Cause Interval Death Cause Interval</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCauseClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause Class Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCauseCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCauseCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause Code</em>}</li>
@@ -47,20 +55,12 @@ import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentCauseDeathCause(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Cause Death Cause</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Other Significant Condition Other Significant Condition Class Code</em>}</li>
+ *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Other Significant Condition Other Significant Condition Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Other Significant Condition Other Significant Condition Code P</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Other Significant Condition Other Significant Condition Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Other Significant Condition Other Significant Condition Mood Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Other Significant Condition Other Significant Condition Value</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentOtherSignificantConditionTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Other Significant Condition Type Code</em>}</li>
  *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantCondition(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Other Significant Condition Other Significant Condition</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Death Cause Interval Death Cause Interval Class Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeP(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Death Cause Interval Death Cause Interval Code P</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Death Cause Interval Death Cause Interval Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Death Cause Interval Death Cause Interval Mood Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValue(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Death Cause Interval Death Cause Interval Value</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumber(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Death Cause Interval Sequence Number</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentDeathCauseIntervalTypeCode(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Death Cause Interval Type Code</em>}</li>
- *   <li>{@link org.openhealthtools.mdht.uml.cda.vsdr.DeathCausalInformation#validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseInterval(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Death Causal Information Component Death Cause Interval Death Cause Interval</em>}</li>
  * </ul>
  * </p>
  *
@@ -127,6 +127,9 @@ public void testValidateDeathCausalInformationTemplateId() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -201,6 +204,9 @@ public void testValidateDeathCausalInformationClassCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -214,80 +220,6 @@ public void testValidateDeathCausalInformationClassCode() {
 		};
 
 		validateDeathCausalInformationClassCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateDeathCausalInformationCode() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationCode",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathCausalInformation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathCausalInformation target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathCausalInformationOperations.validateDeathCausalInformationCode(
-					(DeathCausalInformation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathCausalInformationCodeTestCase.doValidationTest();
 }		
 
 
@@ -349,6 +281,9 @@ public void testValidateDeathCausalInformationMoodCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -362,6 +297,160 @@ public void testValidateDeathCausalInformationMoodCode() {
 		};
 
 		validateDeathCausalInformationMoodCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathCausalInformationCode() {
+			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
+			"validateDeathCausalInformationCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathCausalInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathCausalInformation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathCausalInformationOperations.validateDeathCausalInformationCode(
+					(DeathCausalInformation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathCausalInformationCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathCausalInformationStatusCodeP() {
+			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationStatusCodePTestCase = new OperationsTestCase<DeathCausalInformation>(
+			"validateDeathCausalInformationStatusCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_STATUS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathCausalInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathCausalInformation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathCausalInformationOperations.validateDeathCausalInformationStatusCodeP(
+					(DeathCausalInformation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathCausalInformationStatusCodePTestCase.doValidationTest();
 }		
 
 
@@ -426,6 +515,9 @@ public void testValidateDeathCausalInformationStatusCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -500,6 +592,9 @@ public void testValidateDeathCausalInformationComponentCause() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -574,6 +669,9 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -600,10 +698,10 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 
  
 									
-public void testValidateDeathCausalInformationComponentDeathCauseInterval() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentDeathCauseIntervalTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationComponentDeathCauseInterval",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+public void testValidateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode() {
+			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
+			"validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
 			,objectFactory) {
 
 			@Override
@@ -648,19 +746,487 @@ public void testValidateDeathCausalInformationComponentDeathCauseInterval() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 			
 			
 			
-				return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseInterval(
+				return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCode(
 					(DeathCausalInformation) objectToTest, diagnostician, map);
 			}
 
 		};
 
-		validateDeathCausalInformationComponentDeathCauseIntervalTestCase.doValidationTest();
+		validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP() {
+			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodePTestCase = new OperationsTestCase<DeathCausalInformation>(
+			"validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathCausalInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathCausalInformation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeP(
+					(DeathCausalInformation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodePTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode() {
+			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
+			"validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathCausalInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathCausalInformation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCode(
+					(DeathCausalInformation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode() {
+			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
+			"validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathCausalInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathCausalInformation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCode(
+					(DeathCausalInformation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalMoodCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue() {
+			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValueTestCase = new OperationsTestCase<DeathCausalInformation>(
+			"validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathCausalInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathCausalInformation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+			
+//				CD value = DatatypesFactory.eINSTANCE.createCD();
+//				target.getValues().add(value);
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValue(
+					(DeathCausalInformation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalValueTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode() {
+			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
+			"validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathCausalInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathCausalInformation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCode(
+					(DeathCausalInformation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalTypeCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval() {
+			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalTestCase = new OperationsTestCase<DeathCausalInformation>(
+			"validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_CAUSE_DEATH_CAUSE_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathCausalInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathCausalInformation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathCausalInformationOperations.validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseInterval(
+					(DeathCausalInformation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathCausalInformationComponentCauseDeathCauseComponentDeathCauseIntervalDeathCauseIntervalTestCase.doValidationTest();
 }		
 
 
@@ -722,6 +1288,9 @@ public void testValidateDeathCausalInformationComponentCauseDeathCauseClassCode(
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -796,6 +1365,9 @@ public void testValidateDeathCausalInformationComponentCauseDeathCauseCodeP() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -870,6 +1442,9 @@ public void testValidateDeathCausalInformationComponentCauseDeathCauseCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -944,6 +1519,9 @@ public void testValidateDeathCausalInformationComponentCauseDeathCauseMoodCode()
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -964,7 +1542,7 @@ public void testValidateDeathCausalInformationComponentCauseDeathCauseMoodCode()
 
 /**
 *
-* @generated not
+* @generated
 */
 @Test
 
@@ -992,8 +1570,8 @@ public void testValidateDeathCausalInformationComponentCauseDeathCauseValue() {
 
 				
 			
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-		
+//				CD value = DatatypesFactory.eINSTANCE.createCD();
+//				target.getValues().add(value);
 				
 
 	
@@ -1021,6 +1599,9 @@ public void testValidateDeathCausalInformationComponentCauseDeathCauseValue() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1095,6 +1676,9 @@ public void testValidateDeathCausalInformationComponentCauseSequenceNumber() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1169,6 +1753,9 @@ public void testValidateDeathCausalInformationComponentCauseTypeCode() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1243,6 +1830,9 @@ public void testValidateDeathCausalInformationComponentCauseDeathCause() {
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1317,6 +1907,9 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1330,6 +1923,83 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 		};
 
 		validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionClassCodeTestCase.doValidationTest();
+}		
+
+
+
+
+/**
+*
+* @generated
+*/
+@Test
+
+ 
+									
+public void testValidateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode() {
+			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
+			"validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
+
+			@Override
+			protected void updateToFail(DeathCausalInformation target) {
+
+			}
+
+			@Override
+			protected void updateToPass(DeathCausalInformation target) {
+				target.init();
+				
+				
+				
+				
+				
+
+				
+				
+
+	
+			
+
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
+
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeathCausalInformationOperations.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode(
+					(DeathCausalInformation) objectToTest, diagnostician, map);
+			}
+
+		};
+
+		validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -1391,6 +2061,9 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1465,6 +2138,9 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1486,80 +2162,6 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 /**
 *
 * @generated
-*/
-@Test
-
- 
-									
-public void testValidateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_OTHER_SIGNIFICANT_CONDITION_OTHER_SIGNIFICANT_CONDITION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathCausalInformation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathCausalInformation target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathCausalInformationOperations.validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCode(
-					(DeathCausalInformation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionMoodCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated not
 */
 @Test
 
@@ -1587,9 +2189,9 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 
 				
 			
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-			
-				
+//				CD value = DatatypesFactory.eINSTANCE.createCD();
+//				target.getValues().add(value);
+//				
 
 	
 			
@@ -1616,6 +2218,9 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1690,6 +2295,9 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1764,6 +2372,9 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 			
 				
 			}
+			
+		 
+			
 
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
@@ -1777,601 +2388,6 @@ public void testValidateDeathCausalInformationComponentOtherSignificantCondition
 		};
 
 		validateDeathCausalInformationComponentOtherSignificantConditionOtherSignificantConditionTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCode() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCode",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathCausalInformation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathCausalInformation target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCode(
-					(DeathCausalInformation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalClassCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeP() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodePTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeP",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathCausalInformation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathCausalInformation target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeP(
-					(DeathCausalInformation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodePTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCode() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCode",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathCausalInformation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathCausalInformation target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCode(
-					(DeathCausalInformation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCode() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCode",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathCausalInformation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathCausalInformation target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCode(
-					(DeathCausalInformation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalMoodCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated not
-*/
-@Test
-
- 
-									
-public void testValidateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValue() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValueTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValue",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathCausalInformation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathCausalInformation target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-			
-				CD value = DatatypesFactory.eINSTANCE.createCD();
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValue(
-					(DeathCausalInformation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalValueTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateDeathCausalInformationComponentDeathCauseIntervalSequenceNumber() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumberTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumber",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_SEQUENCE_NUMBER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathCausalInformation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathCausalInformation target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumber(
-					(DeathCausalInformation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathCausalInformationComponentDeathCauseIntervalSequenceNumberTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateDeathCausalInformationComponentDeathCauseIntervalTypeCode() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentDeathCauseIntervalTypeCodeTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationComponentDeathCauseIntervalTypeCode",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathCausalInformation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathCausalInformation target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalTypeCode(
-					(DeathCausalInformation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathCausalInformationComponentDeathCauseIntervalTypeCodeTestCase.doValidationTest();
-}		
-
-
-
-
-/**
-*
-* @generated
-*/
-@Test
-
- 
-									
-public void testValidateDeathCausalInformationComponentDeathCauseIntervalDeathCauseInterval() {
-			OperationsTestCase<DeathCausalInformation> validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalTestCase = new OperationsTestCase<DeathCausalInformation>(
-			"validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseInterval",
-			operationsForOCL.getOCLValue("VALIDATE_DEATH_CAUSAL_INFORMATION_COMPONENT_DEATH_CAUSE_INTERVAL_DEATH_CAUSE_INTERVAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-			,objectFactory) {
-
-			@Override
-			protected void updateToFail(DeathCausalInformation target) {
-
-			}
-
-			@Override
-			protected void updateToPass(DeathCausalInformation target) {
-				target.init();
-				
-				
-				
-				
-				
-
-				
-				
-
-	
-			
-
-	
-		
-		
-			
-				
-		
-			
-				
-			
-				
-				
-				
-				
-				
-				
-				
-			
-			
-					
-			
-				
-			}
-
-			@Override
-			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-			
-			
-			
-				return DeathCausalInformationOperations.validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseInterval(
-					(DeathCausalInformation) objectToTest, diagnostician, map);
-			}
-
-		};
-
-		validateDeathCausalInformationComponentDeathCauseIntervalDeathCauseIntervalTestCase.doValidationTest();
 }		
 
 
@@ -2400,6 +2416,7 @@ public void testValidateDeathCausalInformationComponentDeathCauseIntervalDeathCa
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<DeathCausalInformation> {
+		@Override
 		public DeathCausalInformation create() {		
 			return VsdrFactory.eINSTANCE.createDeathCausalInformation();
 		}

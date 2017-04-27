@@ -52,11 +52,13 @@ public interface ObligationPolicySecurityObservation extends SecurityObservation
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ObligationPolicySecurityObservation init();
     /**
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    public ObligationPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
+    @Override
+	public ObligationPolicySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers);
 } // ObligationPolicySecurityObservation

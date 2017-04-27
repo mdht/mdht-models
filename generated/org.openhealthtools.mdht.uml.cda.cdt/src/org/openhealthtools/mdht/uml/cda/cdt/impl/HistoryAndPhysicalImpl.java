@@ -16,7 +16,7 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ccd.AlertsSection;
 import org.openhealthtools.mdht.uml.cda.ccd.FamilyHistorySection;
 import org.openhealthtools.mdht.uml.cda.ccd.ImmunizationsSection;
@@ -39,8 +39,6 @@ import org.openhealthtools.mdht.uml.cda.cdt.operations.HistoryAndPhysicalOperati
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>History And Physical</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -69,7 +67,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalAssessmentAndPlan(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalAssessmentAndPlan(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalAssessmentAndPlan(this, diagnostics, context);
 	}
 
@@ -141,7 +140,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalMedicationsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalMedicationsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalMedicationsSection(this, diagnostics, context);
 	}
 
@@ -181,7 +181,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 */
 	public boolean validateHistoryAndPhysicalReviewOfSystemsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalReviewOfSystemsSection(this, diagnostics, context);
+		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalReviewOfSystemsSection(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -200,7 +201,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalVitalSignsSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalVitalSignsSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalVitalSignsSection(this, diagnostics, context);
 	}
 
@@ -219,7 +221,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalDiagnosticFindings(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalDiagnosticFindings(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalDiagnosticFindings(this, diagnostics, context);
 	}
 
@@ -237,7 +240,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateHistoryAndPhysicalProceduresSection(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateHistoryAndPhysicalProceduresSection(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateHistoryAndPhysicalProceduresSection(this, diagnostics, context);
 	}
 
@@ -383,7 +387,8 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 	 * @generated
 	 */
 	@Override
-	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateGeneralHeaderConstraintsTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return HistoryAndPhysicalOperations.validateGeneralHeaderConstraintsTemplateId(this, diagnostics, context);
 	}
 
@@ -399,7 +404,7 @@ public class HistoryAndPhysicalImpl extends GeneralHeaderConstraintsImpl impleme
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	@Override

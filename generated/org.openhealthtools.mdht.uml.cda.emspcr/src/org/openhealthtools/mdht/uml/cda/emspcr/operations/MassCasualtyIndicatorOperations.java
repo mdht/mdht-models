@@ -12,19 +12,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.MassCasualtyIndicator;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -44,7 +38,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations {
+public class MassCasualtyIndicatorOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -73,7 +74,7 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MASS_CASUALTY_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MASS_CASUALTY_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -88,26 +89,38 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 
 	public static boolean validateMassCasualtyIndicatorTemplateId(MassCasualtyIndicator massCasualtyIndicator,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MASS_CASUALTY_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MASS_CASUALTY_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MASS_CASUALTY_INDICATOR);
 			try {
-				VALIDATE_MASS_CASUALTY_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MASS_CASUALTY_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MASS_CASUALTY_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MASS_CASUALTY_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MASS_CASUALTY_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			massCasualtyIndicator)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MASS_CASUALTY_INDICATOR__MASS_CASUALTY_INDICATOR_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("MassCasualtyIndicatorTemplateId"),
-					new Object[] { massCasualtyIndicator }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MASS_CASUALTY_INDICATOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(massCasualtyIndicator)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.MASS_CASUALTY_INDICATOR__MASS_CASUALTY_INDICATOR_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("MassCasualtyIndicatorMassCasualtyIndicatorTemplateId"),
+						 new Object [] { massCasualtyIndicator }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -132,7 +145,7 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MASS_CASUALTY_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MASS_CASUALTY_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -147,26 +160,38 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 
 	public static boolean validateMassCasualtyIndicatorMoodCode(MassCasualtyIndicator massCasualtyIndicator,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MASS_CASUALTY_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MASS_CASUALTY_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MASS_CASUALTY_INDICATOR);
 			try {
-				VALIDATE_MASS_CASUALTY_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MASS_CASUALTY_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MASS_CASUALTY_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MASS_CASUALTY_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MASS_CASUALTY_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			massCasualtyIndicator)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MASS_CASUALTY_INDICATOR__MASS_CASUALTY_INDICATOR_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("MassCasualtyIndicatorMoodCode"),
-					new Object[] { massCasualtyIndicator }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MASS_CASUALTY_INDICATOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(massCasualtyIndicator)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.MASS_CASUALTY_INDICATOR__MASS_CASUALTY_INDICATOR_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("MassCasualtyIndicatorMassCasualtyIndicatorMoodCode"),
+						 new Object [] { massCasualtyIndicator }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -191,7 +216,7 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MASS_CASUALTY_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MASS_CASUALTY_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -206,26 +231,38 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 
 	public static boolean validateMassCasualtyIndicatorCodeP(MassCasualtyIndicator massCasualtyIndicator,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MASS_CASUALTY_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MASS_CASUALTY_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MASS_CASUALTY_INDICATOR);
 			try {
-				VALIDATE_MASS_CASUALTY_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MASS_CASUALTY_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MASS_CASUALTY_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MASS_CASUALTY_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MASS_CASUALTY_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			massCasualtyIndicator)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MASS_CASUALTY_INDICATOR__MASS_CASUALTY_INDICATOR_CODE_P,
-					EmspcrPlugin.INSTANCE.getString("MassCasualtyIndicatorCodeP"),
-					new Object[] { massCasualtyIndicator }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MASS_CASUALTY_INDICATOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(massCasualtyIndicator)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.MASS_CASUALTY_INDICATOR__MASS_CASUALTY_INDICATOR_CODE_P,
+						 EmspcrPlugin.INSTANCE.getString("MassCasualtyIndicatorMassCasualtyIndicatorCodeP"),
+						 new Object [] { massCasualtyIndicator }));
+			}
+			
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
@@ -237,7 +274,7 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 				}
 				passToken.add(massCasualtyIndicator);
 			}
-
+			 
 			return false;
 		}
 		return true;
@@ -251,9 +288,9 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67490-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67490-3' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateMassCasualtyIndicatorCode(MassCasualtyIndicator, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Mass Casualty Indicator Code</em>}' invariant operation.
@@ -264,7 +301,7 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,34 +316,44 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 
 	public static boolean validateMassCasualtyIndicatorCode(MassCasualtyIndicator massCasualtyIndicator,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		Object passToken = (context == null)
-				? null
-				: context.get("org.openhealthtools.mdht.uml.cda.emspcr.MassCasualtyIndicatorCodeP");
+	
+	
+	
+  	  
+		Object passToken = (context == null) ? null : context.get("org.openhealthtools.mdht.uml.cda.emspcr.MassCasualtyIndicatorCodeP");
 		if ((passToken instanceof Collection<?>) && ((Collection<?>) passToken).contains(massCasualtyIndicator)) {
 			// I have a free pass to short-circuit
 			return true;
 		}
-
-		if (VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MASS_CASUALTY_INDICATOR);
 			try {
-				VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			massCasualtyIndicator)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MASS_CASUALTY_INDICATOR__MASS_CASUALTY_INDICATOR_CODE,
-					EmspcrPlugin.INSTANCE.getString("MassCasualtyIndicatorCode"),
-					new Object[] { massCasualtyIndicator }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MASS_CASUALTY_INDICATOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(massCasualtyIndicator)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.MASS_CASUALTY_INDICATOR__MASS_CASUALTY_INDICATOR_CODE,
+						 EmspcrPlugin.INSTANCE.getString("MassCasualtyIndicatorMassCasualtyIndicatorCode"),
+						 new Object [] { massCasualtyIndicator }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -331,7 +378,7 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_MASS_CASUALTY_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_MASS_CASUALTY_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -346,26 +393,38 @@ public class MassCasualtyIndicatorOperations extends ClinicalStatementOperations
 
 	public static boolean validateMassCasualtyIndicatorValue(MassCasualtyIndicator massCasualtyIndicator,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_MASS_CASUALTY_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_MASS_CASUALTY_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.MASS_CASUALTY_INDICATOR);
 			try {
-				VALIDATE_MASS_CASUALTY_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_MASS_CASUALTY_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_MASS_CASUALTY_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_MASS_CASUALTY_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_MASS_CASUALTY_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			massCasualtyIndicator)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.MASS_CASUALTY_INDICATOR__MASS_CASUALTY_INDICATOR_VALUE,
-					EmspcrPlugin.INSTANCE.getString("MassCasualtyIndicatorValue"),
-					new Object[] { massCasualtyIndicator }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_MASS_CASUALTY_INDICATOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(massCasualtyIndicator)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.MASS_CASUALTY_INDICATOR__MASS_CASUALTY_INDICATOR_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("MassCasualtyIndicatorMassCasualtyIndicatorValue"),
+						 new Object [] { massCasualtyIndicator }));
+			}
+			 
 			return false;
 		}
 		return true;

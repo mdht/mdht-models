@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='ResponseEndingOdometerReadingTemplateId ResponseEndingOdometerReadingMoodCode ResponseEndingOdometerReadingCode ResponseEndingOdometerReadingCodeP ResponseEndingOdometerReadingValue' templateId.root='2.16.840.1.1133883.17.3.10.1.174' moodCode='EVN' code.code='67487-9' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Counter or odometer reading NEMSIS --end of call' constraints.validation.dependOn.ResponseEndingOdometerReadingCode='ResponseEndingOdometerReadingCodeP'"
  * @generated
  */
-public interface ResponseEndingOdometerReading extends Observation {
+public interface ResponseEndingOdometerReading extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -97,9 +90,9 @@ public interface ResponseEndingOdometerReading extends Observation {
 	public ResponseEndingOdometerReading init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ResponseEndingOdometerReading init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public ResponseEndingOdometerReading init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // ResponseEndingOdometerReading

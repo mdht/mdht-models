@@ -24,8 +24,8 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.ResultOrganizer;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.ResultOrganizerOperations;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>Result Organizer</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object ' <em><b>Result
+ * Organizer</b></em>'. <!-- end-user-doc -->
  *
  * @generated
  */
@@ -33,7 +33,7 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol
 		implements ResultOrganizer {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected ResultOrganizerImpl() {
@@ -42,7 +42,7 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -52,7 +52,7 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -62,7 +62,7 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -72,7 +72,7 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -82,7 +82,7 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -92,7 +92,7 @@ public class ResultOrganizerImpl extends org.openhealthtools.mdht.uml.cda.consol
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override

@@ -1,22 +1,25 @@
+
 /**
- * <copyright>
- * </copyright>
- *
- * $Id$
  */
 package org.openhealthtools.mdht.uml.cda.vsbr.tests;
 
 import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
+
 import org.eclipse.emf.ecore.EObject;
+
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+
+import org.eclipse.mdht.uml.hl7.datatypes.CD;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.InfantLiving;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrFactory;
+
 import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfantLivingOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.CD;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
 
 /**
  * <!-- begin-user-doc -->
@@ -45,6 +48,7 @@ public class InfantLivingTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantLivingTemplateId() {
 		OperationsTestCase<InfantLiving> validateInfantLivingTemplateIdTestCase = new OperationsTestCase<InfantLiving>(
 			"validateInfantLivingTemplateId",
@@ -79,6 +83,7 @@ public class InfantLivingTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantLivingClassCode() {
 		OperationsTestCase<InfantLiving> validateInfantLivingClassCodeTestCase = new OperationsTestCase<InfantLiving>(
 			"validateInfantLivingClassCode",
@@ -113,6 +118,7 @@ public class InfantLivingTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantLivingMoodCode() {
 		OperationsTestCase<InfantLiving> validateInfantLivingMoodCodeTestCase = new OperationsTestCase<InfantLiving>(
 			"validateInfantLivingMoodCode",
@@ -147,6 +153,7 @@ public class InfantLivingTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantLivingCodeP() {
 		OperationsTestCase<InfantLiving> validateInfantLivingCodePTestCase = new OperationsTestCase<InfantLiving>(
 			"validateInfantLivingCodeP",
@@ -167,7 +174,8 @@ public class InfantLivingTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InfantLivingOperations.validateInfantLivingCodeP((InfantLiving) objectToTest, diagnostician, map);
+				return InfantLivingOperations.validateInfantLivingCodeP(
+					(InfantLiving) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -180,10 +188,12 @@ public class InfantLivingTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantLivingCode() {
 		OperationsTestCase<InfantLiving> validateInfantLivingCodeTestCase = new OperationsTestCase<InfantLiving>(
 			"validateInfantLivingCode",
-			operationsForOCL.getOCLValue("VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_INFANT_LIVING_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(InfantLiving target) {
@@ -212,10 +222,12 @@ public class InfantLivingTest extends CDAValidationTest {
 	* @generated
 	*/
 	@Test
+
 	public void testValidateInfantLivingValue() {
 		OperationsTestCase<InfantLiving> validateInfantLivingValueTestCase = new OperationsTestCase<InfantLiving>(
 			"validateInfantLivingValue",
-			operationsForOCL.getOCLValue("VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"), objectFactory) {
+			operationsForOCL.getOCLValue("VALIDATE_INFANT_LIVING_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP"),
+			objectFactory) {
 
 			@Override
 			protected void updateToFail(InfantLiving target) {
@@ -234,7 +246,8 @@ public class InfantLivingTest extends CDAValidationTest {
 			@Override
 			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
 
-				return InfantLivingOperations.validateInfantLivingValue((InfantLiving) objectToTest, diagnostician, map);
+				return InfantLivingOperations.validateInfantLivingValue(
+					(InfantLiving) objectToTest, diagnostician, map);
 			}
 
 		};
@@ -295,8 +308,7 @@ public class InfantLivingTest extends CDAValidationTest {
 	*/
 	@Test
 	public void testConstructor() {
-		@SuppressWarnings("unused")
-		ConstructorTestClass constructorTestClass = new ConstructorTestClass();
+		new ConstructorTestClass();
 	} // testConstructor
 
 	/**

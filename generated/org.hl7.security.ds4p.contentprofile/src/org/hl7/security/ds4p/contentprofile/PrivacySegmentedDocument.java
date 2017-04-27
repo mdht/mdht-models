@@ -12,7 +12,6 @@ import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
 
 /**
  * <!-- begin-user-doc -->
@@ -24,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.consol.GeneralHeaderConstraints;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PrivacySegmentedDocumentTemplateId PrivacySegmentedDocumentAuthor1' templateId.root='2.16.840.1.113883.3.3251.1.1' constraints.validation.info='PrivacySegmentedDocumentSegmentedSection' constraints.validation.warning='PrivacySegmentedDocumentPrivacyAndSecurityMarkingsSection'"
  * @generated
  */
-public interface PrivacySegmentedDocument extends GeneralHeaderConstraints {
+public interface PrivacySegmentedDocument extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

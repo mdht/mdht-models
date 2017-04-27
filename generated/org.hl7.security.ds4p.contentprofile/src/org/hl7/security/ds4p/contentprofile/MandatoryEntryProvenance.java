@@ -12,8 +12,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.Author;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Mandatory Entry Provenance</b></em>'.
@@ -24,7 +22,7 @@ import org.eclipse.mdht.uml.cda.Author;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='MandatoryEntryProvenanceTemplateId MandatoryEntryProvenanceTime MandatoryEntryProvenanceAssignedAuthor' templateId.root='2.16.840.1.113883.3.3251.1.6'"
  * @generated
  */
-public interface MandatoryEntryProvenance extends Author {
+public interface MandatoryEntryProvenance extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->

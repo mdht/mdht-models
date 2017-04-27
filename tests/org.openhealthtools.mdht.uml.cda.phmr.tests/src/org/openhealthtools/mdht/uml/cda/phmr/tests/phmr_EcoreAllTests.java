@@ -35,32 +35,32 @@ import junit.textui.TestRunner;
 public class phmr_EcoreAllTests extends TestSuite {
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static void main(String[] args) {
-    TestRunner.run(suite());
-  }
+		TestRunner.run(suite());
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public static Test suite() {
-    TestSuite suite = new phmr_EcoreAllTests("phmr_Ecore Tests");
-    suite.addTest(PhmrTests.suite());
-    return suite;
-  }
+		TestSuite suite = new phmr_EcoreAllTests("phmr_Ecore Tests");
+		suite.addTest(PhmrTests.suite());
+		return suite;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	public phmr_EcoreAllTests(String name) {
-    super(name);
-  }
+		super(name);
+	}
 
 } //phmr_EcoreAllTests

@@ -11,9 +11,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
-import org.eclipse.mdht.uml.cda.impl.AuthorImpl;
 
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.MandatoryEntryProvenance;
@@ -27,7 +26,7 @@ import org.hl7.security.ds4p.contentprofile.operations.MandatoryEntryProvenanceO
  *
  * @generated
  */
-public class MandatoryEntryProvenanceImpl extends AuthorImpl implements MandatoryEntryProvenance {
+public class MandatoryEntryProvenanceImpl extends EObjectImpl implements MandatoryEntryProvenance {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,6 +51,7 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMandatoryEntryProvenanceTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +61,7 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMandatoryEntryProvenanceTime(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceTime(this, diagnostics, context);
 	}
@@ -70,6 +71,7 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateMandatoryEntryProvenanceAssignedAuthor(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return MandatoryEntryProvenanceOperations.validateMandatoryEntryProvenanceAssignedAuthor(this, diagnostics, context);
 	}
@@ -79,6 +81,7 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MandatoryEntryProvenance init() {
 	    return Initializer.Util.init(this);
 	}
@@ -87,7 +90,8 @@ public class MandatoryEntryProvenanceImpl extends AuthorImpl implements Mandator
      * <!-- end-user-doc -->
      * @generated
      */
-    public MandatoryEntryProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public MandatoryEntryProvenance init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

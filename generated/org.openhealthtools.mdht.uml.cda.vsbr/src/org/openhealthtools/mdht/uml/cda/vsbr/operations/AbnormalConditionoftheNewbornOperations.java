@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.AbnormalConditionoftheNewborn;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -41,7 +39,15 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOperations {
+public class AbnormalConditionoftheNewbornOperations
+		extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -70,7 +76,7 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,28 +93,34 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 			AbnormalConditionoftheNewborn abnormalConditionoftheNewborn, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ABNORMAL_CONDITIONOFTHE_NEWBORN);
 			try {
-				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abnormalConditionoftheNewborn)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				abnormalConditionoftheNewborn)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AbnormalConditionoftheNewbornTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									abnormalConditionoftheNewborn, context) }),
-					new Object[] { abnormalConditionoftheNewborn }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AbnormalConditionoftheNewbornAbnormalConditionoftheNewbornTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										abnormalConditionoftheNewborn, context) }),
+						new Object[] { abnormalConditionoftheNewborn }));
 			}
 
 			return false;
@@ -135,7 +147,7 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -152,28 +164,34 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 			AbnormalConditionoftheNewborn abnormalConditionoftheNewborn, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ABNORMAL_CONDITIONOFTHE_NEWBORN);
 			try {
-				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abnormalConditionoftheNewborn)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				abnormalConditionoftheNewborn)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AbnormalConditionoftheNewbornClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									abnormalConditionoftheNewborn, context) }),
-					new Object[] { abnormalConditionoftheNewborn }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AbnormalConditionoftheNewbornAbnormalConditionoftheNewbornClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										abnormalConditionoftheNewborn, context) }),
+						new Object[] { abnormalConditionoftheNewborn }));
 			}
 
 			return false;
@@ -200,7 +218,7 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -217,28 +235,34 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 			AbnormalConditionoftheNewborn abnormalConditionoftheNewborn, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ABNORMAL_CONDITIONOFTHE_NEWBORN);
 			try {
-				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abnormalConditionoftheNewborn)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				abnormalConditionoftheNewborn)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AbnormalConditionoftheNewbornMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									abnormalConditionoftheNewborn, context) }),
-					new Object[] { abnormalConditionoftheNewborn }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AbnormalConditionoftheNewbornAbnormalConditionoftheNewbornMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										abnormalConditionoftheNewborn, context) }),
+						new Object[] { abnormalConditionoftheNewborn }));
 			}
 
 			return false;
@@ -265,7 +289,7 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -282,28 +306,34 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 			AbnormalConditionoftheNewborn abnormalConditionoftheNewborn, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ABNORMAL_CONDITIONOFTHE_NEWBORN);
 			try {
-				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abnormalConditionoftheNewborn)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				abnormalConditionoftheNewborn)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AbnormalConditionoftheNewbornCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									abnormalConditionoftheNewborn, context) }),
-					new Object[] { abnormalConditionoftheNewborn }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AbnormalConditionoftheNewbornAbnormalConditionoftheNewbornCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										abnormalConditionoftheNewborn, context) }),
+						new Object[] { abnormalConditionoftheNewborn }));
 			}
 
 			return false;
@@ -319,9 +349,9 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73812-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73812-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAbnormalConditionoftheNewbornCode(AbnormalConditionoftheNewborn, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abnormal Conditionofthe Newborn Code</em>}' invariant operation.
@@ -332,7 +362,7 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -349,28 +379,34 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 			AbnormalConditionoftheNewborn abnormalConditionoftheNewborn, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ABNORMAL_CONDITIONOFTHE_NEWBORN);
 			try {
-				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abnormalConditionoftheNewborn)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				abnormalConditionoftheNewborn)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AbnormalConditionoftheNewbornCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									abnormalConditionoftheNewborn, context) }),
-					new Object[] { abnormalConditionoftheNewborn }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AbnormalConditionoftheNewbornAbnormalConditionoftheNewbornCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										abnormalConditionoftheNewborn, context) }),
+						new Object[] { abnormalConditionoftheNewborn }));
 			}
 
 			return false;
@@ -386,9 +422,9 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'PHC1250' or value.code = 'PHC1251' or value.code = '405269005' or value.code = '43470100012410' or value.code = '434621000124103' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007'))";
+	protected static final String VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'PHC1250' or value.code = 'PHC1251' or value.code = '405269005' or value.code = '43470100012410' or value.code = '434621000124103' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAbnormalConditionoftheNewbornCodeVS(AbnormalConditionoftheNewborn, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abnormal Conditionofthe Newborn Code VS</em>}' invariant operation.
@@ -399,7 +435,7 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -416,28 +452,34 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 			AbnormalConditionoftheNewborn abnormalConditionoftheNewborn, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ABNORMAL_CONDITIONOFTHE_NEWBORN);
 			try {
-				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abnormalConditionoftheNewborn)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				abnormalConditionoftheNewborn)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AbnormalConditionoftheNewbornCodeVS",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									abnormalConditionoftheNewborn, context) }),
-					new Object[] { abnormalConditionoftheNewborn }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_CODE_VS,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AbnormalConditionoftheNewbornAbnormalConditionoftheNewbornCodeVS",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										abnormalConditionoftheNewborn, context) }),
+						new Object[] { abnormalConditionoftheNewborn }));
 			}
 
 			return false;
@@ -453,9 +495,9 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'PHC1250' or value.code = 'PHC1251' or value.code = '405269005' or value.code = '43470100012410' or value.code = '434621000124103' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007')))";
+	protected static final String VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = 'PHC1250' or value.code = 'PHC1251' or value.code = '405269005' or value.code = '43470100012410' or value.code = '434621000124103' or value.code = '91175000' or value.code = '56110009' or value.code = '260413007')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateAbnormalConditionoftheNewbornValue(AbnormalConditionoftheNewborn, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Abnormal Conditionofthe Newborn Value</em>}' invariant operation.
@@ -466,7 +508,7 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -483,28 +525,34 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 			AbnormalConditionoftheNewborn abnormalConditionoftheNewborn, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ABNORMAL_CONDITIONOFTHE_NEWBORN);
 			try {
-				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abnormalConditionoftheNewborn)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				abnormalConditionoftheNewborn)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AbnormalConditionoftheNewbornValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									abnormalConditionoftheNewborn, context) }),
-					new Object[] { abnormalConditionoftheNewborn }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AbnormalConditionoftheNewbornAbnormalConditionoftheNewbornValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										abnormalConditionoftheNewborn, context) }),
+						new Object[] { abnormalConditionoftheNewborn }));
 			}
 
 			return false;
@@ -531,7 +579,7 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -548,28 +596,34 @@ public class AbnormalConditionoftheNewbornOperations extends ClinicalStatementOp
 			AbnormalConditionoftheNewborn abnormalConditionoftheNewborn, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.ABNORMAL_CONDITIONOFTHE_NEWBORN);
 			try {
-				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			abnormalConditionoftheNewborn)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				abnormalConditionoftheNewborn)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"AbnormalConditionoftheNewbornValueP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									abnormalConditionoftheNewborn, context) }),
-					new Object[] { abnormalConditionoftheNewborn }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.ABNORMAL_CONDITIONOFTHE_NEWBORN__ABNORMAL_CONDITIONOFTHE_NEWBORN_VALUE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"AbnormalConditionoftheNewbornAbnormalConditionoftheNewbornValueP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										abnormalConditionoftheNewborn, context) }),
+						new Object[] { abnormalConditionoftheNewborn }));
 			}
 
 			return false;

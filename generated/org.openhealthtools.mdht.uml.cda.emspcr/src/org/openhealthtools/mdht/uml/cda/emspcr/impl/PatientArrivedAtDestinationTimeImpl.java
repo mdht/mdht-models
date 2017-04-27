@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.PatientArrivedAtDestinationTime;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.PatientArrivedAtDestinationTimeOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Patient Arrived At Destination Time</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl implements PatientArrivedAtDestinationTime {
+public class PatientArrivedAtDestinationTimeImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements PatientArrivedAtDestinationTime {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 */
 	public boolean validatePatientArrivedAtDestinationTimeTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeTemplateId(
-			this, diagnostics, context);
+		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -71,8 +59,7 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 */
 	public boolean validatePatientArrivedAtDestinationTimeMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeMoodCode(
-			this, diagnostics, context);
+		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -81,8 +68,7 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	public boolean validatePatientArrivedAtDestinationTimeCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeCodeP(
-			this, diagnostics, context);
+		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +77,7 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	public boolean validatePatientArrivedAtDestinationTimeCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeCode(
-			this, diagnostics, context);
+		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeCode(this, diagnostics, context);
 	}
 
 	/**
@@ -101,8 +86,7 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	public boolean validatePatientArrivedAtDestinationTimeValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeValue(
-			this, diagnostics, context);
+		return PatientArrivedAtDestinationTimeOperations.validatePatientArrivedAtDestinationTimeValue(this, diagnostics, context);
 	}
 
 	/**
@@ -111,16 +95,16 @@ public class PatientArrivedAtDestinationTimeImpl extends ObservationImpl impleme
 	 * @generated
 	 */
 	public PatientArrivedAtDestinationTime init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PatientArrivedAtDestinationTime init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public PatientArrivedAtDestinationTime init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PatientArrivedAtDestinationTimeImpl

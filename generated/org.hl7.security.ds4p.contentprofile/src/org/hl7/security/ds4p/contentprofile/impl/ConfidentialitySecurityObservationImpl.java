@@ -50,6 +50,7 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateConfidentialitySecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConfidentialitySecurityObservationOperations.validateConfidentialitySecurityObservationValueP(this, diagnostics, context);
 	}
@@ -59,6 +60,7 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateConfidentialitySecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return ConfidentialitySecurityObservationOperations.validateConfidentialitySecurityObservationValue(this, diagnostics, context);
 	}
@@ -98,6 +100,7 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConfidentialitySecurityObservation init() {
 	    return Initializer.Util.init(this);
 	}
@@ -106,7 +109,8 @@ public class ConfidentialitySecurityObservationImpl extends SecurityObservationI
      * <!-- end-user-doc -->
      * @generated
      */
-    public ConfidentialitySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public ConfidentialitySecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

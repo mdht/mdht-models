@@ -22,132 +22,123 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.phmr.ObservationNullFlavor;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.WaveformObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.WaveformSamplePeriodObservation;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ObservationNullFlavorOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Observation Null Flavor</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ObservationNullFlavorImpl extends ObservationImpl implements ObservationNullFlavor {
+public class ObservationNullFlavorImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ObservationNullFlavor {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ObservationNullFlavorImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR;
-  }
+		return PhmrPackage.Literals.OBSERVATION_NULL_FLAVOR;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateObservationNullFlavorTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObservationNullFlavorOperations.validateObservationNullFlavorTemplateId(this, diagnostics, context);
-  }
+		return ObservationNullFlavorOperations.validateObservationNullFlavorTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateObservationNullFlavorClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObservationNullFlavorOperations.validateObservationNullFlavorClassCode(this, diagnostics, context);
-  }
+		return ObservationNullFlavorOperations.validateObservationNullFlavorClassCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateObservationNullFlavorMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObservationNullFlavorOperations.validateObservationNullFlavorMoodCode(this, diagnostics, context);
-  }
+		return ObservationNullFlavorOperations.validateObservationNullFlavorMoodCode(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateObservationNullFlavorWaveformObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObservationNullFlavorOperations.validateObservationNullFlavorWaveformObservation(this, diagnostics, context);
-  }
+		return ObservationNullFlavorOperations.validateObservationNullFlavorWaveformObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateObservationNullFlavorWaveformSamplePeriodObservation(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ObservationNullFlavorOperations.validateObservationNullFlavorWaveformSamplePeriodObservation(this, diagnostics, context);
-  }
+		return ObservationNullFlavorOperations.validateObservationNullFlavorWaveformSamplePeriodObservation(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public WaveformObservation getWaveformObservation() {
-    return ObservationNullFlavorOperations.getWaveformObservation(this);
-  }
+		return ObservationNullFlavorOperations.getWaveformObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public WaveformSamplePeriodObservation getWaveformSamplePeriodObservation() {
-    return ObservationNullFlavorOperations.getWaveformSamplePeriodObservation(this);
-  }
+		return ObservationNullFlavorOperations.getWaveformSamplePeriodObservation(this);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public ObservationNullFlavor init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -155,8 +146,8 @@ public class ObservationNullFlavorImpl extends ObservationImpl implements Observ
      * @generated
      */
     @Override
-	public ObservationNullFlavor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public ObservationNullFlavor init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //ObservationNullFlavorImpl

@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ReasonForChoosingDestinationObservation;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ReasonForChoosingDestinationObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Reason For Choosing Destination Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl implements
+public class ReasonForChoosingDestinationObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements
 		ReasonForChoosingDestinationObservation {
 	/**
 	 * <!-- begin-user-doc -->
@@ -61,8 +50,7 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	 */
 	public boolean validateReasonForChoosingDestinationObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationTemplateId(
-			this, diagnostics, context);
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -72,8 +60,7 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	 */
 	public boolean validateReasonForChoosingDestinationObservationMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationMoodCode(
-			this, diagnostics, context);
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -83,8 +70,7 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	 */
 	public boolean validateReasonForChoosingDestinationObservationCodeP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationCodeP(
-			this, diagnostics, context);
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -94,8 +80,7 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	 */
 	public boolean validateReasonForChoosingDestinationObservationCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationCode(
-			this, diagnostics, context);
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationCode(this, diagnostics, context);
 	}
 
 	/**
@@ -105,8 +90,7 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	 */
 	public boolean validateReasonForChoosingDestinationObservationValue(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationValue(
-			this, diagnostics, context);
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -116,8 +100,7 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	 */
 	public boolean validateReasonForChoosingDestinationObservationValueP(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationValueP(
-			this, diagnostics, context);
+		return ReasonForChoosingDestinationObservationOperations.validateReasonForChoosingDestinationObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -126,16 +109,16 @@ public class ReasonForChoosingDestinationObservationImpl extends ObservationImpl
 	 * @generated
 	 */
 	public ReasonForChoosingDestinationObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ReasonForChoosingDestinationObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ReasonForChoosingDestinationObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ReasonForChoosingDestinationObservationImpl

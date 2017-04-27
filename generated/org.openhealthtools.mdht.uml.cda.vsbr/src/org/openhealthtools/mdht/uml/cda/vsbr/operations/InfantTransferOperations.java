@@ -14,8 +14,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.InfantTransfer;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPlugin;
@@ -42,7 +40,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class InfantTransferOperations extends ClinicalStatementOperations {
+public class InfantTransferOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +76,7 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,22 +92,27 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantTransferTemplateId(InfantTransfer infantTransfer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_TRANSFER);
 			try {
-				VALIDATE_INFANT_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			infantTransfer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INFANT_TRANSFER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(infantTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_TEMPLATE_ID,
-					VsbrPlugin.INSTANCE.getString("InfantTransferTemplateId"), new Object[] { infantTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_TEMPLATE_ID,
+						VsbrPlugin.INSTANCE.getString("InfantTransferInfantTransferTemplateId"),
+						new Object[] { infantTransfer }));
 			}
 
 			return false;
@@ -129,7 +139,7 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -145,22 +155,27 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantTransferClassCode(InfantTransfer infantTransfer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_TRANSFER);
 			try {
-				VALIDATE_INFANT_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			infantTransfer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INFANT_TRANSFER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(infantTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_CLASS_CODE,
-					VsbrPlugin.INSTANCE.getString("InfantTransferClassCode"), new Object[] { infantTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_CLASS_CODE,
+						VsbrPlugin.INSTANCE.getString("InfantTransferInfantTransferClassCode"),
+						new Object[] { infantTransfer }));
 			}
 
 			return false;
@@ -187,7 +202,7 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -203,22 +218,27 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantTransferMoodCode(InfantTransfer infantTransfer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_TRANSFER);
 			try {
-				VALIDATE_INFANT_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INFANT_TRANSFER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
 			infantTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_MOOD_CODE,
-					VsbrPlugin.INSTANCE.getString("InfantTransferMoodCode"), new Object[] { infantTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_MOOD_CODE,
+						VsbrPlugin.INSTANCE.getString("InfantTransferInfantTransferMoodCode"),
+						new Object[] { infantTransfer }));
 			}
 
 			return false;
@@ -245,7 +265,7 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -261,27 +281,34 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantTransferCodeP(InfantTransfer infantTransfer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_TRANSFER);
 			try {
-				VALIDATE_INFANT_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infantTransfer)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INFANT_TRANSFER_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			infantTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_CODE_P,
-					VsbrPlugin.INSTANCE.getString("InfantTransferCodeP"), new Object[] { infantTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_CODE_P,
+						VsbrPlugin.INSTANCE.getString("InfantTransferInfantTransferCodeP"),
+						new Object[] { infantTransfer }));
 			}
 
 			if (context != null) {
 				// generate a pass token for my dependent constraints to short-circuit or filter results
 				@SuppressWarnings("unchecked")
-				Collection<Object> passToken = (Collection<Object>) context.get("org.openhealthtools.mdht.uml.cda.vsbr.InfantTransferCodeP");
+				Collection<Object> passToken = (Collection<Object>) context.get(
+					"org.openhealthtools.mdht.uml.cda.vsbr.InfantTransferCodeP");
 				if (passToken == null) {
 					// anticipate a reasonably healthy model
 					passToken = new java.util.ArrayList<Object>(3);
@@ -303,9 +330,9 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73758-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73758-5' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInfantTransferCode(InfantTransfer, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Infant Transfer Code</em>}' invariant operation.
@@ -316,7 +343,7 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -340,21 +367,27 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 			return true;
 		}
 
-		if (VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_TRANSFER);
 			try {
-				VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infantTransfer)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INFANT_TRANSFER_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			infantTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_CODE,
-					VsbrPlugin.INSTANCE.getString("InfantTransferCode"), new Object[] { infantTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_CODE,
+						VsbrPlugin.INSTANCE.getString("InfantTransferInfantTransferCode"),
+						new Object[] { infantTransfer }));
 			}
 
 			return false;
@@ -381,7 +414,7 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -397,21 +430,27 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantTransferValue(InfantTransfer infantTransfer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_TRANSFER);
 			try {
-				VALIDATE_INFANT_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(infantTransfer)) {
+
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INFANT_TRANSFER_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+			infantTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_VALUE,
-					VsbrPlugin.INSTANCE.getString("InfantTransferValue"), new Object[] { infantTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_VALUE,
+						VsbrPlugin.INSTANCE.getString("InfantTransferInfantTransferValue"),
+						new Object[] { infantTransfer }));
 			}
 
 			return false;
@@ -438,7 +477,7 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INFANT_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_INFANT_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -454,22 +493,27 @@ public class InfantTransferOperations extends ClinicalStatementOperations {
 	public static boolean validateInfantTransferParticipant(InfantTransfer infantTransfer, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_INFANT_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_INFANT_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.INFANT_TRANSFER);
 			try {
-				VALIDATE_INFANT_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INFANT_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_INFANT_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_INFANT_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INFANT_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			infantTransfer)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_INFANT_TRANSFER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(infantTransfer)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.INFO, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_PARTICIPANT,
-					VsbrPlugin.INSTANCE.getString("InfantTransferParticipant"), new Object[] { infantTransfer }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.INFO, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.INFANT_TRANSFER__INFANT_TRANSFER_PARTICIPANT,
+						VsbrPlugin.INSTANCE.getString("InfantTransferInfantTransferParticipant"),
+						new Object[] { infantTransfer }));
 			}
 
 			return false;

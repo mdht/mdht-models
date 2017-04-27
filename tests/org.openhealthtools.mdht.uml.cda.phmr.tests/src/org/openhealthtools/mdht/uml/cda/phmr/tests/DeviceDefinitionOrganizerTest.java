@@ -28,13 +28,13 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
+import org.eclipse.mdht.uml.hl7.datatypes.DatatypesFactory;
+import org.eclipse.mdht.uml.hl7.datatypes.IVL_TS;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceDefinitionOrganizer;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.DeviceDefinitionOrganizerOperations;
-import org.openhealthtools.mdht.uml.hl7.datatypes.DatatypesFactory;
-import org.openhealthtools.mdht.uml.hl7.datatypes.IVL_TS;
 
 
 /**
@@ -77,66 +77,69 @@ public class DeviceDefinitionOrganizerTest extends  CDAValidationTest {
  
 									
 public void testValidateDeviceDefinitionOrganizerTemplateId() {
-      OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerTemplateIdTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
-      "validateDeviceDefinitionOrganizerTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerTemplateIdTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
+			"validateDeviceDefinitionOrganizerTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceDefinitionOrganizer target) {
+			@Override
+			protected void updateToFail(DeviceDefinitionOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceDefinitionOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceDefinitionOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerTemplateId(
-          (DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerTemplateId(
+					(DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceDefinitionOrganizerTemplateIdTestCase.doValidationTest();
+		validateDeviceDefinitionOrganizerTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -151,66 +154,69 @@ public void testValidateDeviceDefinitionOrganizerTemplateId() {
  
 									
 public void testValidateDeviceDefinitionOrganizerClassCode() {
-      OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerClassCodeTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
-      "validateDeviceDefinitionOrganizerClassCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerClassCodeTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
+			"validateDeviceDefinitionOrganizerClassCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceDefinitionOrganizer target) {
+			@Override
+			protected void updateToFail(DeviceDefinitionOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceDefinitionOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceDefinitionOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerClassCode(
-          (DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerClassCode(
+					(DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceDefinitionOrganizerClassCodeTestCase.doValidationTest();
+		validateDeviceDefinitionOrganizerClassCodeTestCase.doValidationTest();
 }		
 
 
@@ -225,69 +231,72 @@ public void testValidateDeviceDefinitionOrganizerClassCode() {
  
 									
 public void testValidateDeviceDefinitionOrganizerEffectiveTime() {
-      OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerEffectiveTimeTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
-      "validateDeviceDefinitionOrganizerEffectiveTime",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerEffectiveTimeTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
+			"validateDeviceDefinitionOrganizerEffectiveTime",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceDefinitionOrganizer target) {
+			@Override
+			protected void updateToFail(DeviceDefinitionOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceDefinitionOrganizer target) {
-        target.init();
-        
-        
-          IVL_TS ts = DatatypesFactory .eINSTANCE.createIVL_TS();
-          target.setEffectiveTime(ts );								
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceDefinitionOrganizer target) {
+				target.init();
+				
+				
+					IVL_TS ts = DatatypesFactory .eINSTANCE.createIVL_TS();
+					target.setEffectiveTime(ts );								
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerEffectiveTime(
-          (DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerEffectiveTime(
+					(DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceDefinitionOrganizerEffectiveTimeTestCase.doValidationTest();
+		validateDeviceDefinitionOrganizerEffectiveTimeTestCase.doValidationTest();
 }		
 
 
@@ -302,66 +311,69 @@ public void testValidateDeviceDefinitionOrganizerEffectiveTime() {
  
 									
 public void testValidateDeviceDefinitionOrganizerMoodCode() {
-      OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerMoodCodeTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
-      "validateDeviceDefinitionOrganizerMoodCode",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerMoodCodeTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
+			"validateDeviceDefinitionOrganizerMoodCode",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceDefinitionOrganizer target) {
+			@Override
+			protected void updateToFail(DeviceDefinitionOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceDefinitionOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceDefinitionOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerMoodCode(
-          (DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerMoodCode(
+					(DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceDefinitionOrganizerMoodCodeTestCase.doValidationTest();
+		validateDeviceDefinitionOrganizerMoodCodeTestCase.doValidationTest();
 }		
 
 
@@ -376,66 +388,69 @@ public void testValidateDeviceDefinitionOrganizerMoodCode() {
  
 									
 public void testValidateDeviceDefinitionOrganizerSamplingFrequencyObservation() {
-      OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerSamplingFrequencyObservationTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
-      "validateDeviceDefinitionOrganizerSamplingFrequencyObservation",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_SAMPLING_FREQUENCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerSamplingFrequencyObservationTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
+			"validateDeviceDefinitionOrganizerSamplingFrequencyObservation",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_SAMPLING_FREQUENCY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceDefinitionOrganizer target) {
+			@Override
+			protected void updateToFail(DeviceDefinitionOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceDefinitionOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceDefinitionOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerSamplingFrequencyObservation(
-          (DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerSamplingFrequencyObservation(
+					(DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceDefinitionOrganizerSamplingFrequencyObservationTestCase.doValidationTest();
+		validateDeviceDefinitionOrganizerSamplingFrequencyObservationTestCase.doValidationTest();
 }		
 
 
@@ -450,66 +465,69 @@ public void testValidateDeviceDefinitionOrganizerSamplingFrequencyObservation() 
  
 									
 public void testValidateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation() {
-      OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservationTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
-      "validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_DEVICE_MEASUREMENT_RANGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservationTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
+			"validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_DEVICE_MEASUREMENT_RANGE_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceDefinitionOrganizer target) {
+			@Override
+			protected void updateToFail(DeviceDefinitionOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceDefinitionOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceDefinitionOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation(
-          (DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservation(
+					(DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservationTestCase.doValidationTest();
+		validateDeviceDefinitionOrganizerDeviceMeasurementRangeObservationTestCase.doValidationTest();
 }		
 
 
@@ -524,66 +542,69 @@ public void testValidateDeviceDefinitionOrganizerDeviceMeasurementRangeObservati
  
 									
 public void testValidateDeviceDefinitionOrganizerDeviceResolutionObservation() {
-      OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerDeviceResolutionObservationTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
-      "validateDeviceDefinitionOrganizerDeviceResolutionObservation",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_DEVICE_RESOLUTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerDeviceResolutionObservationTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
+			"validateDeviceDefinitionOrganizerDeviceResolutionObservation",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_DEVICE_RESOLUTION_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceDefinitionOrganizer target) {
+			@Override
+			protected void updateToFail(DeviceDefinitionOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceDefinitionOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceDefinitionOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceResolutionObservation(
-          (DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceResolutionObservation(
+					(DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceDefinitionOrganizerDeviceResolutionObservationTestCase.doValidationTest();
+		validateDeviceDefinitionOrganizerDeviceResolutionObservationTestCase.doValidationTest();
 }		
 
 
@@ -598,66 +619,69 @@ public void testValidateDeviceDefinitionOrganizerDeviceResolutionObservation() {
  
 									
 public void testValidateDeviceDefinitionOrganizerDeviceAccuracyObservation() {
-      OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerDeviceAccuracyObservationTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
-      "validateDeviceDefinitionOrganizerDeviceAccuracyObservation",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_DEVICE_ACCURACY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerDeviceAccuracyObservationTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
+			"validateDeviceDefinitionOrganizerDeviceAccuracyObservation",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_DEVICE_ACCURACY_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceDefinitionOrganizer target) {
+			@Override
+			protected void updateToFail(DeviceDefinitionOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceDefinitionOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceDefinitionOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceAccuracyObservation(
-          (DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerDeviceAccuracyObservation(
+					(DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceDefinitionOrganizerDeviceAccuracyObservationTestCase.doValidationTest();
+		validateDeviceDefinitionOrganizerDeviceAccuracyObservationTestCase.doValidationTest();
 }		
 
 
@@ -672,66 +696,69 @@ public void testValidateDeviceDefinitionOrganizerDeviceAccuracyObservation() {
  
 									
 public void testValidateDeviceDefinitionOrganizerParticipant() {
-      OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerParticipantTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
-      "validateDeviceDefinitionOrganizerParticipant",
-      operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<DeviceDefinitionOrganizer> validateDeviceDefinitionOrganizerParticipantTestCase = new OperationsTestCase<DeviceDefinitionOrganizer>(
+			"validateDeviceDefinitionOrganizerParticipant",
+			operationsForOCL.getOCLValue("VALIDATE_DEVICE_DEFINITION_ORGANIZER_PARTICIPANT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(DeviceDefinitionOrganizer target) {
+			@Override
+			protected void updateToFail(DeviceDefinitionOrganizer target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(DeviceDefinitionOrganizer target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(DeviceDefinitionOrganizer target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerParticipant(
-          (DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return DeviceDefinitionOrganizerOperations.validateDeviceDefinitionOrganizerParticipant(
+					(DeviceDefinitionOrganizer) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateDeviceDefinitionOrganizerParticipantTestCase.doValidationTest();
+		validateDeviceDefinitionOrganizerParticipantTestCase.doValidationTest();
 }		
 
 
@@ -852,6 +879,7 @@ target.getDeviceAccuracyObservation();
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<DeviceDefinitionOrganizer> {
+		@Override
 		public DeviceDefinitionOrganizer create() {		
 			return PhmrFactory.eINSTANCE.createDeviceDefinitionOrganizer();
 		}
@@ -883,9 +911,9 @@ target.getDeviceAccuracyObservation();
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -895,8 +923,8 @@ target.getDeviceAccuracyObservation();
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

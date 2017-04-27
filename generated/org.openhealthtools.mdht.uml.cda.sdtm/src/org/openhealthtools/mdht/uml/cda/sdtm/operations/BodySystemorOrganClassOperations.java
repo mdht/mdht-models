@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.BodySystemorOrganClass;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -40,7 +34,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class BodySystemorOrganClassOperations extends ClinicalStatementOperations {
+public class BodySystemorOrganClassOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +71,7 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +86,35 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateBodySystemorOrganClassTemplateId(BodySystemorOrganClass bodySystemorOrganClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_SYSTEMOR_ORGAN_CLASS);
 			try {
-				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodySystemorOrganClass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodySystemorOrganClass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_SYSTEMOR_ORGAN_CLASS__BODY_SYSTEMOR_ORGAN_CLASS_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassBodySystemorOrganClassTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
 						 new Object [] { bodySystemorOrganClass }));
 			}
 			 
@@ -130,7 +142,7 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +157,35 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateBodySystemorOrganClassClassCode(BodySystemorOrganClass bodySystemorOrganClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_SYSTEMOR_ORGAN_CLASS);
 			try {
-				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodySystemorOrganClass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodySystemorOrganClass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_SYSTEMOR_ORGAN_CLASS__BODY_SYSTEMOR_ORGAN_CLASS_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassBodySystemorOrganClassClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
 						 new Object [] { bodySystemorOrganClass }));
 			}
 			 
@@ -191,7 +213,7 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +228,35 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateBodySystemorOrganClassMoodCode(BodySystemorOrganClass bodySystemorOrganClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_SYSTEMOR_ORGAN_CLASS);
 			try {
-				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodySystemorOrganClass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodySystemorOrganClass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_SYSTEMOR_ORGAN_CLASS__BODY_SYSTEMOR_ORGAN_CLASS_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassBodySystemorOrganClassMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
 						 new Object [] { bodySystemorOrganClass }));
 			}
 			 
@@ -252,7 +284,7 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +299,35 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateBodySystemorOrganClassCodeP(BodySystemorOrganClass bodySystemorOrganClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_SYSTEMOR_ORGAN_CLASS);
 			try {
-				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodySystemorOrganClass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodySystemorOrganClass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_SYSTEMOR_ORGAN_CLASS__BODY_SYSTEMOR_ORGAN_CLASS_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassBodySystemorOrganClassCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
 						 new Object [] { bodySystemorOrganClass }));
 			}
 			 
@@ -315,7 +357,7 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +372,35 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateBodySystemorOrganClassCode(BodySystemorOrganClass bodySystemorOrganClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_SYSTEMOR_ORGAN_CLASS);
 			try {
-				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodySystemorOrganClass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodySystemorOrganClass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_SYSTEMOR_ORGAN_CLASS__BODY_SYSTEMOR_ORGAN_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassBodySystemorOrganClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
 						 new Object [] { bodySystemorOrganClass }));
 			}
 			 
@@ -378,7 +430,7 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -393,25 +445,35 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateBodySystemorOrganClassValue(BodySystemorOrganClass bodySystemorOrganClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_SYSTEMOR_ORGAN_CLASS);
 			try {
-				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodySystemorOrganClass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodySystemorOrganClass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_SYSTEMOR_ORGAN_CLASS__BODY_SYSTEMOR_ORGAN_CLASS_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassBodySystemorOrganClassValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
 						 new Object [] { bodySystemorOrganClass }));
 			}
 			 
@@ -439,7 +501,7 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -454,25 +516,35 @@ public class BodySystemorOrganClassOperations extends ClinicalStatementOperation
 	 */
 	
 	public static  boolean validateBodySystemorOrganClassValueP(BodySystemorOrganClass bodySystemorOrganClass, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.BODY_SYSTEMOR_ORGAN_CLASS);
 			try {
-				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(bodySystemorOrganClass)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(bodySystemorOrganClass)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.BODY_SYSTEMOR_ORGAN_CLASS__BODY_SYSTEMOR_ORGAN_CLASS_VALUE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "BodySystemorOrganClassBodySystemorOrganClassValueP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(bodySystemorOrganClass, context) }),
 						 new Object [] { bodySystemorOrganClass }));
 			}
 			 

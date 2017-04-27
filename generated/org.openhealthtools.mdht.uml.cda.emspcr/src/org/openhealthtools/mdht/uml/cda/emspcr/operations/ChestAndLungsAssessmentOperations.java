@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.ChestAndLungsAssessment;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -43,7 +37,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperations {
+public class ChestAndLungsAssessmentOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -72,7 +73,7 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,26 +88,38 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 
 	public static boolean validateChestAndLungsAssessmentTemplateId(ChestAndLungsAssessment chestAndLungsAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CHEST_AND_LUNGS_ASSESSMENT);
 			try {
-				VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chestAndLungsAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CHEST_AND_LUNGS_ASSESSMENT__CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("ChestAndLungsAssessmentTemplateId"),
-					new Object[] { chestAndLungsAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(chestAndLungsAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CHEST_AND_LUNGS_ASSESSMENT__CHEST_AND_LUNGS_ASSESSMENT_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("ChestAndLungsAssessmentChestAndLungsAssessmentTemplateId"),
+						 new Object [] { chestAndLungsAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -131,7 +144,7 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -146,26 +159,38 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 
 	public static boolean validateChestAndLungsAssessmentMoodCode(ChestAndLungsAssessment chestAndLungsAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CHEST_AND_LUNGS_ASSESSMENT);
 			try {
-				VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chestAndLungsAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CHEST_AND_LUNGS_ASSESSMENT__CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("ChestAndLungsAssessmentMoodCode"),
-					new Object[] { chestAndLungsAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(chestAndLungsAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CHEST_AND_LUNGS_ASSESSMENT__CHEST_AND_LUNGS_ASSESSMENT_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ChestAndLungsAssessmentChestAndLungsAssessmentMoodCode"),
+						 new Object [] { chestAndLungsAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -179,9 +204,9 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67528-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67528-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateChestAndLungsAssessmentCode(ChestAndLungsAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest And Lungs Assessment Code</em>}' invariant operation.
@@ -192,7 +217,7 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -207,26 +232,38 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 
 	public static boolean validateChestAndLungsAssessmentCode(ChestAndLungsAssessment chestAndLungsAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CHEST_AND_LUNGS_ASSESSMENT);
 			try {
-				VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chestAndLungsAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CHEST_AND_LUNGS_ASSESSMENT__CHEST_AND_LUNGS_ASSESSMENT_CODE,
-					EmspcrPlugin.INSTANCE.getString("ChestAndLungsAssessmentCode"),
-					new Object[] { chestAndLungsAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(chestAndLungsAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CHEST_AND_LUNGS_ASSESSMENT__CHEST_AND_LUNGS_ASSESSMENT_CODE,
+						 EmspcrPlugin.INSTANCE.getString("ChestAndLungsAssessmentChestAndLungsAssessmentCode"),
+						 new Object [] { chestAndLungsAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -251,7 +288,7 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -266,26 +303,38 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 
 	public static boolean validateChestAndLungsAssessmentEffectiveTime(ChestAndLungsAssessment chestAndLungsAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CHEST_AND_LUNGS_ASSESSMENT);
 			try {
-				VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chestAndLungsAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CHEST_AND_LUNGS_ASSESSMENT__CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME,
-					EmspcrPlugin.INSTANCE.getString("ChestAndLungsAssessmentEffectiveTime"),
-					new Object[] { chestAndLungsAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(chestAndLungsAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CHEST_AND_LUNGS_ASSESSMENT__CHEST_AND_LUNGS_ASSESSMENT_EFFECTIVE_TIME,
+						 EmspcrPlugin.INSTANCE.getString("ChestAndLungsAssessmentChestAndLungsAssessmentEffectiveTime"),
+						 new Object [] { chestAndLungsAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -299,9 +348,9 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17208-2' or value.code = 'LA17209-0' or value.code = 'LA17214-0' or value.code = 'LA17215-7' or value.code = 'LA17220-7' or value.code = 'LA17222-3' or value.code = 'LA17223-1' or value.code = 'LA17224-9' or value.code = 'LA17225-6' or value.code = 'LA17226-4' or value.code = 'LA17227-2' or value.code = 'LA17228-0' or value.code = 'LA17229-8' or value.code = 'LA17230-6' or value.code = 'LA17231-4' or value.code = 'LA17232-2' or value.code = 'LA17233-0' or value.code = 'LA17234-8' or value.code = 'LA17236-3' or value.code = 'LA17237-1' or value.code = 'LA17238-9' or value.code = 'LA17244-7' or value.code = 'LA17245-4' or value.code = 'LA18220-6' or value.code = 'LA18221-4' or value.code = 'LA18222-2' or value.code = 'LA18223-0' or value.code = 'LA18224-8' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA18229-7' or value.code = 'LA18230-5' or value.code = 'LA18231-3' or value.code = 'LA18232-1' or value.code = 'LA18233-9' or value.code = 'LA18234-7' or value.code = 'LA18235-4' or value.code = 'LA18236-2' or value.code = 'LA18237-0' or value.code = 'LA18238-8' or value.code = 'LA18239-6' or value.code = 'LA18240-4' or value.code = 'LA18402-0' or value.code = 'LA6626-1' or value.code = 'LA6630-3' or value.code = 'LA7410-9' or value.code = 'LA7452-1' or value.code = 'LA7460-4')))";
+	protected static final String VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17208-2' or value.code = 'LA17209-0' or value.code = 'LA17214-0' or value.code = 'LA17215-7' or value.code = 'LA17220-7' or value.code = 'LA17222-3' or value.code = 'LA17223-1' or value.code = 'LA17224-9' or value.code = 'LA17225-6' or value.code = 'LA17226-4' or value.code = 'LA17227-2' or value.code = 'LA17228-0' or value.code = 'LA17229-8' or value.code = 'LA17230-6' or value.code = 'LA17231-4' or value.code = 'LA17232-2' or value.code = 'LA17233-0' or value.code = 'LA17234-8' or value.code = 'LA17236-3' or value.code = 'LA17237-1' or value.code = 'LA17238-9' or value.code = 'LA17244-7' or value.code = 'LA17245-4' or value.code = 'LA18220-6' or value.code = 'LA18221-4' or value.code = 'LA18222-2' or value.code = 'LA18223-0' or value.code = 'LA18224-8' or value.code = 'LA18225-5' or value.code = 'LA18226-3' or value.code = 'LA18229-7' or value.code = 'LA18230-5' or value.code = 'LA18231-3' or value.code = 'LA18232-1' or value.code = 'LA18233-9' or value.code = 'LA18234-7' or value.code = 'LA18235-4' or value.code = 'LA18236-2' or value.code = 'LA18237-0' or value.code = 'LA18238-8' or value.code = 'LA18239-6' or value.code = 'LA18240-4' or value.code = 'LA18402-0' or value.code = 'LA6626-1' or value.code = 'LA6630-3' or value.code = 'LA7410-9' or value.code = 'LA7452-1' or value.code = 'LA7460-4')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateChestAndLungsAssessmentValue(ChestAndLungsAssessment, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Chest And Lungs Assessment Value</em>}' invariant operation.
@@ -312,7 +361,7 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -327,26 +376,38 @@ public class ChestAndLungsAssessmentOperations extends ClinicalStatementOperatio
 
 	public static boolean validateChestAndLungsAssessmentValue(ChestAndLungsAssessment chestAndLungsAssessment,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.CHEST_AND_LUNGS_ASSESSMENT);
 			try {
-				VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			chestAndLungsAssessment)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.CHEST_AND_LUNGS_ASSESSMENT__CHEST_AND_LUNGS_ASSESSMENT_VALUE,
-					EmspcrPlugin.INSTANCE.getString("ChestAndLungsAssessmentValue"),
-					new Object[] { chestAndLungsAssessment }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_CHEST_AND_LUNGS_ASSESSMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(chestAndLungsAssessment)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.CHEST_AND_LUNGS_ASSESSMENT__CHEST_AND_LUNGS_ASSESSMENT_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("ChestAndLungsAssessmentChestAndLungsAssessmentValue"),
+						 new Object [] { chestAndLungsAssessment }));
+			}
+			 
 			return false;
 		}
 		return true;

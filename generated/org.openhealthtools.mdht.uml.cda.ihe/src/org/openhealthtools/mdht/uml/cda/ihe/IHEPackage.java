@@ -12,7 +12,7 @@ package org.openhealthtools.mdht.uml.cda.ihe;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
+import org.eclipse.mdht.uml.cda.CDAPackage;
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 
@@ -10738,7 +10738,8 @@ public interface IHEPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT + 0;
+	int PROCEDURE_ENTRY_PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT = CCDPackage.PROCEDURE_ACTIVITY_PROCEDURE_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.
@@ -19810,7 +19811,8 @@ public interface IHEPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE_FEATURE_COUNT = CCDPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE_FEATURE_COUNT + 0;
+	int PROCEDURE_ENTRY_PLAN_OF_CARE_ACTIVITY_PROCEDURE_FEATURE_COUNT = CCDPackage.PLAN_OF_CARE_ACTIVITY_PROCEDURE_FEATURE_COUNT +
+			0;
 
 	/**
 	 * The feature id for the '<em><b>Realm Code</b></em>' containment reference list.

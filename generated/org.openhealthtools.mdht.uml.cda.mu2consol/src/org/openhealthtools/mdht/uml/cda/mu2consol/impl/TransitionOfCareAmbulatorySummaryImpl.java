@@ -32,7 +32,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends SummaryOfCareRecordIm
 		implements TransitionOfCareAmbulatorySummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected TransitionOfCareAmbulatorySummaryImpl() {
@@ -41,7 +41,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends SummaryOfCareRecordIm
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -51,7 +51,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends SummaryOfCareRecordIm
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -63,7 +63,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends SummaryOfCareRecordIm
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -75,7 +75,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends SummaryOfCareRecordIm
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -87,7 +87,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends SummaryOfCareRecordIm
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -99,7 +99,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends SummaryOfCareRecordIm
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -109,7 +109,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends SummaryOfCareRecordIm
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -119,7 +119,7 @@ public class TransitionOfCareAmbulatorySummaryImpl extends SummaryOfCareRecordIm
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override

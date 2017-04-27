@@ -81,6 +81,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacySegmentedDocument createPrivacySegmentedDocument() {
 		PrivacySegmentedDocumentImpl privacySegmentedDocument = new PrivacySegmentedDocumentImpl();
 		return privacySegmentedDocument;
@@ -91,6 +92,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacySegmentedSection createPrivacySegmentedSection() {
 		PrivacySegmentedSectionImpl privacySegmentedSection = new PrivacySegmentedSectionImpl();
 		return privacySegmentedSection;
@@ -101,6 +103,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacyMarkingsSection createPrivacyMarkingsSection() {
 		PrivacyMarkingsSectionImpl privacyMarkingsSection = new PrivacyMarkingsSectionImpl();
 		return privacyMarkingsSection;
@@ -111,6 +114,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ObligationPolicySecurityObservation createObligationPolicySecurityObservation() {
 		ObligationPolicySecurityObservationImpl obligationPolicySecurityObservation = new ObligationPolicySecurityObservationImpl();
 		return obligationPolicySecurityObservation;
@@ -121,6 +125,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MandatoryDocumentProvenance createMandatoryDocumentProvenance() {
 		MandatoryDocumentProvenanceImpl mandatoryDocumentProvenance = new MandatoryDocumentProvenanceImpl();
 		return mandatoryDocumentProvenance;
@@ -131,6 +136,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MandatoryDocumentAssignedAuthor createMandatoryDocumentAssignedAuthor() {
 		MandatoryDocumentAssignedAuthorImpl mandatoryDocumentAssignedAuthor = new MandatoryDocumentAssignedAuthorImpl();
 		return mandatoryDocumentAssignedAuthor;
@@ -141,6 +147,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacyAnnotation createPrivacyAnnotation() {
 		PrivacyAnnotationImpl privacyAnnotation = new PrivacyAnnotationImpl();
 		return privacyAnnotation;
@@ -151,6 +158,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public RefrainPolicySecurityObservation createRefrainPolicySecurityObservation() {
 		RefrainPolicySecurityObservationImpl refrainPolicySecurityObservation = new RefrainPolicySecurityObservationImpl();
 		return refrainPolicySecurityObservation;
@@ -161,6 +169,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PurposeOfUseSecurityObservation createPurposeOfUseSecurityObservation() {
 		PurposeOfUseSecurityObservationImpl purposeOfUseSecurityObservation = new PurposeOfUseSecurityObservationImpl();
 		return purposeOfUseSecurityObservation;
@@ -171,6 +180,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ConfidentialitySecurityObservation createConfidentialitySecurityObservation() {
 		ConfidentialitySecurityObservationImpl confidentialitySecurityObservation = new ConfidentialitySecurityObservationImpl();
 		return confidentialitySecurityObservation;
@@ -181,6 +191,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public ProtectedProblem createProtectedProblem() {
 		ProtectedProblemImpl protectedProblem = new ProtectedProblemImpl();
 		return protectedProblem;
@@ -191,6 +202,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MandatoryEntryProvenance createMandatoryEntryProvenance() {
 		MandatoryEntryProvenanceImpl mandatoryEntryProvenance = new MandatoryEntryProvenanceImpl();
 		return mandatoryEntryProvenance;
@@ -201,6 +213,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MandatoryEntryAssignedAuthor createMandatoryEntryAssignedAuthor() {
 		MandatoryEntryAssignedAuthorImpl mandatoryEntryAssignedAuthor = new MandatoryEntryAssignedAuthorImpl();
 		return mandatoryEntryAssignedAuthor;
@@ -211,6 +224,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacyAnnotationEntryRelationship createPrivacyAnnotationEntryRelationship() {
 		PrivacyAnnotationEntryRelationshipImpl privacyAnnotationEntryRelationship = new PrivacyAnnotationEntryRelationshipImpl();
 		return privacyAnnotationEntryRelationship;
@@ -221,6 +235,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public PrivacyMarkingsEntry createPrivacyMarkingsEntry() {
 		PrivacyMarkingsEntryImpl privacyMarkingsEntry = new PrivacyMarkingsEntryImpl();
 		return privacyMarkingsEntry;
@@ -231,6 +246,7 @@ public class CONTENTPROFILEFactoryImpl extends EFactoryImpl implements CONTENTPR
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public CONTENTPROFILEPackage getCONTENTPROFILEPackage() {
 		return (CONTENTPROFILEPackage)getEPackage();
 	}

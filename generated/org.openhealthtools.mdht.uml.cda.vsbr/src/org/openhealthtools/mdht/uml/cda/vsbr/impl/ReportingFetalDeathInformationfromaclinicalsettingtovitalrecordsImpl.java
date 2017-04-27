@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.FetalDeliverySection;
 import org.openhealthtools.mdht.uml.cda.vsbr.HistoryofInfectionFetalDeathSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliverySection;
@@ -29,12 +25,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.ReportingFetalDeathInfor
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Reporting Fetal Death Informationfromaclinicalsettingtovitalrecords</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImpl extends ClinicalDocumentImpl
+public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImpl
+		extends org.eclipse.mdht.uml.cda.impl.ClinicalDocumentImpl
 		implements ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords {
 	/**
 	 * <!-- begin-user-doc -->
@@ -303,7 +298,8 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImp
 	 * @generated
 	 */
 	public LaborandDeliverySection getLaborAndDeliverySection() {
-		return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getLaborAndDeliverySection(this);
+		return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getLaborAndDeliverySection(
+			this);
 	}
 
 	/**
@@ -321,7 +317,8 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImp
 	 * @generated
 	 */
 	public PrenatalTestingandSurveillanceSection getPrenatalTestingAndSurveillance() {
-		return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getPrenatalTestingAndSurveillance(this);
+		return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getPrenatalTestingAndSurveillance(
+			this);
 	}
 
 	/**
@@ -339,7 +336,8 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImp
 	 * @generated
 	 */
 	public HistoryofInfectionFetalDeathSection getHistoryOfInfectionFetalDeathSection() {
-		return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getHistoryOfInfectionFetalDeathSection(this);
+		return ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsOperations.getHistoryOfInfectionFetalDeathSection(
+			this);
 	}
 
 	/**
@@ -348,7 +346,7 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImp
 	 * @generated
 	 */
 	public ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -357,8 +355,8 @@ public class ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImp
 	 * @generated
 	 */
 	public ReportingFetalDeathInformationfromaclinicalsettingtovitalrecords init(
-			Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // ReportingFetalDeathInformationfromaclinicalsettingtovitalrecordsImpl

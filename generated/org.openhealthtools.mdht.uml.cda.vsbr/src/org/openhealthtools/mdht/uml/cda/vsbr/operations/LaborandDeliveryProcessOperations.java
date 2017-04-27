@@ -20,8 +20,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.CharacteristicofLaborandDelivery;
 import org.openhealthtools.mdht.uml.cda.vsbr.LaborandDeliveryProcess;
 import org.openhealthtools.mdht.uml.cda.vsbr.MaternalMorbidity;
@@ -63,7 +61,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class LaborandDeliveryProcessOperations extends ClinicalStatementOperations {
+public class LaborandDeliveryProcessOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -92,7 +97,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -108,27 +113,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessTemplateId(LaborandDeliveryProcess laborandDeliveryProcess,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -155,7 +167,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -171,27 +183,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessClassCode(LaborandDeliveryProcess laborandDeliveryProcess,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCESS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -218,7 +237,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -234,27 +253,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessMoodCode(LaborandDeliveryProcess laborandDeliveryProcess,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -281,7 +307,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -297,27 +323,33 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessCodeP(LaborandDeliveryProcess laborandDeliveryProcess,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -333,9 +365,9 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '57074-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '57074-7' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcessCode(LaborandDeliveryProcess, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Process Code</em>}' invariant operation.
@@ -346,7 +378,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -362,27 +394,33 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessCode(LaborandDeliveryProcess laborandDeliveryProcess,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -409,7 +447,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -425,28 +463,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessAttendantParticipation(
 			LaborandDeliveryProcess laborandDeliveryProcess, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessAttendantParticipation",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_ATTENDANT_PARTICIPATION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessAttendantParticipation",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -473,7 +517,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -489,27 +533,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessEntryRelationship(
 			LaborandDeliveryProcess laborandDeliveryProcess, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessEntryRelationship",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_ENTRY_RELATIONSHIP,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessEntryRelationship",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -525,7 +576,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::Characteristic of Labor and Delivery) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::CharacteristicofLaborandDelivery) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcessCharacteristicsOfLaborAndDelivery(LaborandDeliveryProcess, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Process Characteristics Of Labor And Delivery</em>}' invariant operation.
@@ -536,7 +587,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -552,29 +603,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessCharacteristicsOfLaborAndDelivery(
 			LaborandDeliveryProcess laborandDeliveryProcess, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessCharacteristicsOfLaborAndDelivery",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_CHARACTERISTICS_OF_LABOR_AND_DELIVERY,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessCharacteristicsOfLaborAndDelivery",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -590,7 +646,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::Planned Home Birth) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::PlannedHomeBirth) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcessHomeBirthPlan(LaborandDeliveryProcess, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Process Home Birth Plan</em>}' invariant operation.
@@ -601,7 +657,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -617,27 +673,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessHomeBirthPlan(LaborandDeliveryProcess laborandDeliveryProcess,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessHomeBirthPlan",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_HOME_BIRTH_PLAN,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessHomeBirthPlan",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -653,7 +716,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::Maternal Transfer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->one(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::MaternalTransfer) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcessMaternalTransfer(LaborandDeliveryProcess, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Process Maternal Transfer</em>}' invariant operation.
@@ -664,7 +727,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -680,27 +743,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessMaternalTransfer(
 			LaborandDeliveryProcess laborandDeliveryProcess, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessMaternalTransfer",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MATERNAL_TRANSFER,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessMaternalTransfer",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -727,7 +797,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -743,28 +813,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessParticipatingLocation(
 			LaborandDeliveryProcess laborandDeliveryProcess, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessParticipatingLocation",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_PARTICIPATING_LOCATION,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessParticipatingLocation",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -780,7 +856,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::Maternal Morbidity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::MaternalMorbidity) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcessMaternalMorbidities(LaborandDeliveryProcess, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Process Maternal Morbidities</em>}' invariant operation.
@@ -791,7 +867,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -807,28 +883,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessMaternalMorbidities(
 			LaborandDeliveryProcess laborandDeliveryProcess, DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessMaternalMorbidities",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_MATERNAL_MORBIDITIES,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessMaternalMorbidities",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -844,7 +926,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::Pregnancy Risk Factor) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
+	protected static final String VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entryRelationship->exists(entryRelationship : cda::EntryRelationship | not entryRelationship.observation.oclIsUndefined() and entryRelationship.observation.oclIsKindOf(vsbr::PregnancyRiskFactor) and entryRelationship.typeCode = vocab::x_ActRelationshipEntryRelationship::COMP)";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateLaborandDeliveryProcessRiskFactors(LaborandDeliveryProcess, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Laborand Delivery Process Risk Factors</em>}' invariant operation.
@@ -855,7 +937,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -871,27 +953,34 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	public static boolean validateLaborandDeliveryProcessRiskFactors(LaborandDeliveryProcess laborandDeliveryProcess,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS);
 			try {
-				VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			laborandDeliveryProcess)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_LABORAND_DELIVERY_PROCESS_RISK_FACTORS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				laborandDeliveryProcess)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_RISK_FACTORS,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"LaborandDeliveryProcessRiskFactors",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									laborandDeliveryProcess, context) }), new Object[] { laborandDeliveryProcess }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.LABORAND_DELIVERY_PROCESS__LABORAND_DELIVERY_PROCESS_RISK_FACTORS,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"LaborandDeliveryProcessLaborandDeliveryProcessRiskFactors",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										laborandDeliveryProcess, context) }),
+						new Object[] { laborandDeliveryProcess }));
 			}
 
 			return false;
@@ -907,7 +996,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_CHARACTERISTICS_OF_LABOR_AND_DELIVERIES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Characteristic of Labor and Delivery)).oclAsType(vsbr::Characteristic of Labor and Delivery)";
+	protected static final String GET_CHARACTERISTICS_OF_LABOR_AND_DELIVERIES__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::CharacteristicofLaborandDelivery)).oclAsType(vsbr::CharacteristicofLaborandDelivery)";
 
 	/**
 	 * The cached OCL query for the '{@link #getCharacteristicsOfLaborAndDeliveries(LaborandDeliveryProcess) <em>Get Characteristics Of Labor And Deliveries</em>}' query operation.
@@ -927,20 +1016,25 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 
 	public static EList<CharacteristicofLaborandDelivery> getCharacteristicsOfLaborAndDeliveries(
 			LaborandDeliveryProcess laborandDeliveryProcess) {
+
 		if (GET_CHARACTERISTICS_OF_LABOR_AND_DELIVERIES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS,
 				VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS.getEAllOperations().get(64));
 			try {
-				GET_CHARACTERISTICS_OF_LABOR_AND_DELIVERIES__EOCL_QRY = helper.createQuery(GET_CHARACTERISTICS_OF_LABOR_AND_DELIVERIES__EOCL_EXP);
+				GET_CHARACTERISTICS_OF_LABOR_AND_DELIVERIES__EOCL_QRY = helper.createQuery(
+					GET_CHARACTERISTICS_OF_LABOR_AND_DELIVERIES__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CHARACTERISTICS_OF_LABOR_AND_DELIVERIES__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CHARACTERISTICS_OF_LABOR_AND_DELIVERIES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<CharacteristicofLaborandDelivery> result = (Collection<CharacteristicofLaborandDelivery>) query.evaluate(laborandDeliveryProcess);
+		Collection<CharacteristicofLaborandDelivery> result = (Collection<CharacteristicofLaborandDelivery>) query.evaluate(
+			laborandDeliveryProcess);
 		return new BasicEList.UnmodifiableEList<CharacteristicofLaborandDelivery>(result.size(), result.toArray());
 	}
 
@@ -952,7 +1046,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_HOME_BIRTH_PLAN__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Planned Home Birth))->asSequence()->any(true).oclAsType(vsbr::Planned Home Birth)";
+	protected static final String GET_HOME_BIRTH_PLAN__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::PlannedHomeBirth))->asSequence()->any(true).oclAsType(vsbr::PlannedHomeBirth)";
 
 	/**
 	 * The cached OCL query for the '{@link #getHomeBirthPlan(LaborandDeliveryProcess) <em>Get Home Birth Plan</em>}' query operation.
@@ -971,8 +1065,10 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 */
 
 	public static PlannedHomeBirth getHomeBirthPlan(LaborandDeliveryProcess laborandDeliveryProcess) {
+
 		if (GET_HOME_BIRTH_PLAN__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS,
 				VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS.getEAllOperations().get(65));
@@ -982,7 +1078,8 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_HOME_BIRTH_PLAN__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_HOME_BIRTH_PLAN__EOCL_QRY);
 		return (PlannedHomeBirth) query.evaluate(laborandDeliveryProcess);
 	}
 
@@ -994,7 +1091,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MATERNAL_TRANSFER__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Maternal Transfer))->asSequence()->any(true).oclAsType(vsbr::Maternal Transfer)";
+	protected static final String GET_MATERNAL_TRANSFER__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::MaternalTransfer))->asSequence()->any(true).oclAsType(vsbr::MaternalTransfer)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMaternalTransfer(LaborandDeliveryProcess) <em>Get Maternal Transfer</em>}' query operation.
@@ -1013,8 +1110,10 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 */
 
 	public static MaternalTransfer getMaternalTransfer(LaborandDeliveryProcess laborandDeliveryProcess) {
+
 		if (GET_MATERNAL_TRANSFER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS,
 				VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS.getEAllOperations().get(66));
@@ -1024,7 +1123,8 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MATERNAL_TRANSFER__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MATERNAL_TRANSFER__EOCL_QRY);
 		return (MaternalTransfer) query.evaluate(laborandDeliveryProcess);
 	}
 
@@ -1036,7 +1136,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_MATERNAL_MORBIDITIESS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Maternal Morbidity)).oclAsType(vsbr::Maternal Morbidity)";
+	protected static final String GET_MATERNAL_MORBIDITIESS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::MaternalMorbidity)).oclAsType(vsbr::MaternalMorbidity)";
 
 	/**
 	 * The cached OCL query for the '{@link #getMaternalMorbiditiess(LaborandDeliveryProcess) <em>Get Maternal Morbiditiess</em>}' query operation.
@@ -1055,8 +1155,10 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 */
 
 	public static EList<MaternalMorbidity> getMaternalMorbiditiess(LaborandDeliveryProcess laborandDeliveryProcess) {
+
 		if (GET_MATERNAL_MORBIDITIESS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS,
 				VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS.getEAllOperations().get(67));
@@ -1066,7 +1168,8 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MATERNAL_MORBIDITIESS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MATERNAL_MORBIDITIESS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<MaternalMorbidity> result = (Collection<MaternalMorbidity>) query.evaluate(laborandDeliveryProcess);
 		return new BasicEList.UnmodifiableEList<MaternalMorbidity>(result.size(), result.toArray());
@@ -1080,7 +1183,7 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_RISK_FACTORSS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Pregnancy Risk Factor)).oclAsType(vsbr::Pregnancy Risk Factor)";
+	protected static final String GET_RISK_FACTORSS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::PregnancyRiskFactor)).oclAsType(vsbr::PregnancyRiskFactor)";
 
 	/**
 	 * The cached OCL query for the '{@link #getRiskFactorss(LaborandDeliveryProcess) <em>Get Risk Factorss</em>}' query operation.
@@ -1099,8 +1202,10 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 	 */
 
 	public static EList<PregnancyRiskFactor> getRiskFactorss(LaborandDeliveryProcess laborandDeliveryProcess) {
+
 		if (GET_RISK_FACTORSS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS,
 				VsbrPackage.Literals.LABORAND_DELIVERY_PROCESS.getEAllOperations().get(68));
@@ -1110,9 +1215,11 @@ public class LaborandDeliveryProcessOperations extends ClinicalStatementOperatio
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RISK_FACTORSS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RISK_FACTORSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<PregnancyRiskFactor> result = (Collection<PregnancyRiskFactor>) query.evaluate(laborandDeliveryProcess);
+		Collection<PregnancyRiskFactor> result = (Collection<PregnancyRiskFactor>) query.evaluate(
+			laborandDeliveryProcess);
 		return new BasicEList.UnmodifiableEList<PregnancyRiskFactor>(result.size(), result.toArray());
 	}
 

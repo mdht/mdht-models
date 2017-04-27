@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.SectionImpl;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.PastMedicalHistorySectionConsult;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.PastMedicalHistorySectionConsultOperations;
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Past Medical History Section Consult</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -67,7 +65,8 @@ public class PastMedicalHistorySectionConsultImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePastMedicalHistorySectionConsultCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePastMedicalHistorySectionConsultCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PastMedicalHistorySectionConsultOperations.validatePastMedicalHistorySectionConsultCode(
 			this, diagnostics, context);
 	}
@@ -77,7 +76,8 @@ public class PastMedicalHistorySectionConsultImpl extends SectionImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePastMedicalHistorySectionConsultText(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePastMedicalHistorySectionConsultText(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PastMedicalHistorySectionConsultOperations.validatePastMedicalHistorySectionConsultText(
 			this, diagnostics, context);
 	}
@@ -93,7 +93,7 @@ public class PastMedicalHistorySectionConsultImpl extends SectionImpl implements
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public PastMedicalHistorySectionConsult init(Iterable<? extends Initializer<? extends EObject>> initializers) {

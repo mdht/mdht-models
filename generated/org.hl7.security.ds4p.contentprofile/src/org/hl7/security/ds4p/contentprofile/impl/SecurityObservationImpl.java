@@ -11,9 +11,8 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.eclipse.mdht.emf.runtime.util.Initializer;
-
-import org.eclipse.mdht.uml.cda.impl.ObservationImpl;
 
 import org.hl7.security.ds4p.contentprofile.CONTENTPROFILEPackage;
 import org.hl7.security.ds4p.contentprofile.SecurityObservation;
@@ -27,7 +26,7 @@ import org.hl7.security.ds4p.contentprofile.operations.SecurityObservationOperat
  *
  * @generated
  */
-public abstract class SecurityObservationImpl extends ObservationImpl implements SecurityObservation {
+public abstract class SecurityObservationImpl extends EObjectImpl implements SecurityObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -52,6 +51,7 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSecurityObservationTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SecurityObservationOperations.validateSecurityObservationTemplateId(this, diagnostics, context);
 	}
@@ -61,6 +61,7 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSecurityObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SecurityObservationOperations.validateSecurityObservationCodeP(this, diagnostics, context);
 	}
@@ -70,6 +71,7 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSecurityObservationCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SecurityObservationOperations.validateSecurityObservationCode(this, diagnostics, context);
 	}
@@ -79,6 +81,7 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSecurityObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SecurityObservationOperations.validateSecurityObservationValue(this, diagnostics, context);
 	}
@@ -88,6 +91,7 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSecurityObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SecurityObservationOperations.validateSecurityObservationValueP(this, diagnostics, context);
 	}
@@ -97,6 +101,7 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public boolean validateSecurityObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return SecurityObservationOperations.validateSecurityObservationMoodCode(this, diagnostics, context);
 	}
@@ -106,6 +111,7 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SecurityObservation init() {
 	    return Initializer.Util.init(this);
 	}
@@ -114,7 +120,8 @@ public abstract class SecurityObservationImpl extends ObservationImpl implements
      * <!-- end-user-doc -->
      * @generated
      */
-    public SecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
+    @Override
+	public SecurityObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
         Initializer.Util.init(this, initializers);
         return this;
     }

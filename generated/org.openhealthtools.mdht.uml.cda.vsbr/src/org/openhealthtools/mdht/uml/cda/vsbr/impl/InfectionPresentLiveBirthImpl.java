@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.InfectionPresentLiveBirth;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.InfectionPresentLiveBirt
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Infection Present Live Birth</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class InfectionPresentLiveBirthImpl extends ObservationImpl implements InfectionPresentLiveBirth {
+public class InfectionPresentLiveBirthImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements InfectionPresentLiveBirth {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -54,7 +49,8 @@ public class InfectionPresentLiveBirthImpl extends ObservationImpl implements In
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInfectionPresentLiveBirthTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInfectionPresentLiveBirthTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InfectionPresentLiveBirthOperations.validateInfectionPresentLiveBirthTemplateId(
 			this, diagnostics, context);
 	}
@@ -64,7 +60,8 @@ public class InfectionPresentLiveBirthImpl extends ObservationImpl implements In
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateInfectionPresentLiveBirthClassCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateInfectionPresentLiveBirthClassCode(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return InfectionPresentLiveBirthOperations.validateInfectionPresentLiveBirthClassCode(
 			this, diagnostics, context);
 	}
@@ -75,7 +72,8 @@ public class InfectionPresentLiveBirthImpl extends ObservationImpl implements In
 	 * @generated
 	 */
 	public boolean validateInfectionPresentLiveBirthMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return InfectionPresentLiveBirthOperations.validateInfectionPresentLiveBirthMoodCode(this, diagnostics, context);
+		return InfectionPresentLiveBirthOperations.validateInfectionPresentLiveBirthMoodCode(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -129,7 +127,7 @@ public class InfectionPresentLiveBirthImpl extends ObservationImpl implements In
 	 * @generated
 	 */
 	public InfectionPresentLiveBirth init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -137,8 +135,9 @@ public class InfectionPresentLiveBirthImpl extends ObservationImpl implements In
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InfectionPresentLiveBirth init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public InfectionPresentLiveBirth init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // InfectionPresentLiveBirthImpl

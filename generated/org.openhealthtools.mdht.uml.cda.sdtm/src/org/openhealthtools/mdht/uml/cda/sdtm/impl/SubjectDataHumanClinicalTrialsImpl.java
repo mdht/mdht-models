@@ -2,35 +2,24 @@
  */
 package org.openhealthtools.mdht.uml.cda.sdtm.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.HumanClinicalSubjectDataDocumentSection;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubjectDataHumanClinicalTrials;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.operations.SubjectDataHumanClinicalTrialsOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Subject Data Human Clinical Trials</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class SubjectDataHumanClinicalTrialsImpl extends ClinicalDocumentImpl implements SubjectDataHumanClinicalTrials {
+public class SubjectDataHumanClinicalTrialsImpl extends org.eclipse.mdht.uml.cda.impl.ClinicalDocumentImpl implements SubjectDataHumanClinicalTrials {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -247,7 +236,7 @@ public class SubjectDataHumanClinicalTrialsImpl extends ClinicalDocumentImpl imp
 	 */
 	@Override
 	public SubjectDataHumanClinicalTrials init() {
-	    return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
     /**
      * <!-- begin-user-doc -->
@@ -255,8 +244,8 @@ public class SubjectDataHumanClinicalTrialsImpl extends ClinicalDocumentImpl imp
      * @generated
      */
     @Override
-	public SubjectDataHumanClinicalTrials init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public SubjectDataHumanClinicalTrials init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //SubjectDataHumanClinicalTrialsImpl

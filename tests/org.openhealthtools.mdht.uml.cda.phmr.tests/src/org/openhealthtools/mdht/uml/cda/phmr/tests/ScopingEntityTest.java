@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.ScopingEntity;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ScopingEntityOperations;
@@ -64,66 +64,69 @@ public class ScopingEntityTest extends  CDAValidationTest {
  
 									
 public void testValidateScopingEntityTemplateId() {
-      OperationsTestCase<ScopingEntity> validateScopingEntityTemplateIdTestCase = new OperationsTestCase<ScopingEntity>(
-      "validateScopingEntityTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_SCOPING_ENTITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<ScopingEntity> validateScopingEntityTemplateIdTestCase = new OperationsTestCase<ScopingEntity>(
+			"validateScopingEntityTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_SCOPING_ENTITY_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ScopingEntity target) {
+			@Override
+			protected void updateToFail(ScopingEntity target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ScopingEntity target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ScopingEntity target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ScopingEntityOperations.validateScopingEntityTemplateId(
-          (ScopingEntity) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ScopingEntityOperations.validateScopingEntityTemplateId(
+					(ScopingEntity) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateScopingEntityTemplateIdTestCase.doValidationTest();
+		validateScopingEntityTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -138,66 +141,69 @@ public void testValidateScopingEntityTemplateId() {
  
 									
 public void testValidateScopingEntityDesc() {
-      OperationsTestCase<ScopingEntity> validateScopingEntityDescTestCase = new OperationsTestCase<ScopingEntity>(
-      "validateScopingEntityDesc",
-      operationsForOCL.getOCLValue("VALIDATE_SCOPING_ENTITY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<ScopingEntity> validateScopingEntityDescTestCase = new OperationsTestCase<ScopingEntity>(
+			"validateScopingEntityDesc",
+			operationsForOCL.getOCLValue("VALIDATE_SCOPING_ENTITY_DESC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(ScopingEntity target) {
+			@Override
+			protected void updateToFail(ScopingEntity target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(ScopingEntity target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(ScopingEntity target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ScopingEntityOperations.validateScopingEntityDesc(
-          (ScopingEntity) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ScopingEntityOperations.validateScopingEntityDesc(
+					(ScopingEntity) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateScopingEntityDescTestCase.doValidationTest();
+		validateScopingEntityDescTestCase.doValidationTest();
 }		
 
 
@@ -226,6 +232,7 @@ public void testValidateScopingEntityDesc() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<ScopingEntity> {
+		@Override
 		public ScopingEntity create() {		
 			return PhmrFactory.eINSTANCE.createScopingEntity();
 		}
@@ -257,9 +264,9 @@ public void testValidateScopingEntityDesc() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -269,8 +276,8 @@ public void testValidateScopingEntityDesc() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

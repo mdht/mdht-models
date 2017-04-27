@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="/org.openhealthtools.mdht.uml.cda.consol2/src"
-    modelPluginID="org.openhealthtools.mdht.uml.cda.consol" templateDirectory="/org.eclipse.mdht.uml.cda/templates"
+    modelPluginID="org.openhealthtools.mdht.uml.cda.consol2" templateDirectory="/org.eclipse.mdht.uml.cda/templates"
     dynamicTemplates="true" redirection="" modelName="Consol" modelPluginClass="ConsolPlugin"
     testsDirectory="/org.openhealthtools.mdht.uml.cda.consol2.tests/src/test/java"
     importerID="org.eclipse.uml2.uml.ecore.importer" complianceLevel="5.0" copyrightFields="false"

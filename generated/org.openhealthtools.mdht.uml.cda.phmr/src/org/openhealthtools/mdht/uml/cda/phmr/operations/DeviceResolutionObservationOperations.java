@@ -27,18 +27,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.phmr.DeviceResolutionObservation;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPlugin;
-
 import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
 
 /**
@@ -59,326 +53,363 @@ import org.openhealthtools.mdht.uml.cda.phmr.util.PhmrValidator;
  *
  * @generated
  */
-public class DeviceResolutionObservationOperations extends ClinicalStatementOperations {
-	/**
-   * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-   * @generated
-   */
-	protected DeviceResolutionObservationOperations() {
-    super();
-  }
+public class DeviceResolutionObservationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
 
 	/**
-   * The cached OCL expression body for the '{@link #validateDeviceResolutionObservationTemplateId(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Template Id</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateDeviceResolutionObservationTemplateId(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @generated
+	 */
+	protected DeviceResolutionObservationOperations() {
+		super();
+	}
+
+	/**
+	 * The cached OCL expression body for the '{@link #validateDeviceResolutionObservationTemplateId(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Template Id</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #validateDeviceResolutionObservationTemplateId(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.9.6')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateDeviceResolutionObservationTemplateId(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Template Id</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDeviceResolutionObservationTemplateId(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Template Id</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateDeviceResolutionObservationTemplateId(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateDeviceResolutionObservationTemplateId(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param deviceResolutionObservation The receiving '<em><b>Device Resolution Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param deviceResolutionObservation The receiving '<em><b>Device Resolution Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateDeviceResolutionObservationTemplateId(DeviceResolutionObservation deviceResolutionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.DEVICE_RESOLUTION_OBSERVATION);
-      try
-      {
-        VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deviceResolutionObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.DEVICE_RESOLUTION_OBSERVATION__DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID,
-             PhmrPlugin.INSTANCE.getString("DeviceResolutionObservationTemplateId"),
-             new Object [] { deviceResolutionObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.DEVICE_RESOLUTION_OBSERVATION);
+			try {
+				VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deviceResolutionObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.DEVICE_RESOLUTION_OBSERVATION__DEVICE_RESOLUTION_OBSERVATION_TEMPLATE_ID,
+						 PhmrPlugin.INSTANCE.getString("DeviceResolutionObservationDeviceResolutionObservationTemplateId"),
+						 new Object [] { deviceResolutionObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateDeviceResolutionObservationClassCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Class Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDeviceResolutionObservationClassCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Class Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateDeviceResolutionObservationClassCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateDeviceResolutionObservationClassCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.classCode=vocab::ActClassObservation::OBS";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateDeviceResolutionObservationClassCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Class Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDeviceResolutionObservationClassCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Class Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateDeviceResolutionObservationClassCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateDeviceResolutionObservationClassCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param deviceResolutionObservation The receiving '<em><b>Device Resolution Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param deviceResolutionObservation The receiving '<em><b>Device Resolution Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateDeviceResolutionObservationClassCode(DeviceResolutionObservation deviceResolutionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.DEVICE_RESOLUTION_OBSERVATION);
-      try
-      {
-        VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deviceResolutionObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.DEVICE_RESOLUTION_OBSERVATION__DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE,
-             PhmrPlugin.INSTANCE.getString("DeviceResolutionObservationClassCode"),
-             new Object [] { deviceResolutionObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.DEVICE_RESOLUTION_OBSERVATION);
+			try {
+				VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deviceResolutionObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.DEVICE_RESOLUTION_OBSERVATION__DEVICE_RESOLUTION_OBSERVATION_CLASS_CODE,
+						 PhmrPlugin.INSTANCE.getString("DeviceResolutionObservationDeviceResolutionObservationClassCode"),
+						 new Object [] { deviceResolutionObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateDeviceResolutionObservationCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDeviceResolutionObservationCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateDeviceResolutionObservationCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateDeviceResolutionObservationCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
 "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
 "value.code = '17441009' and value.codeSystem = '2.16.840.1.113883.6.96')";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateDeviceResolutionObservationCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDeviceResolutionObservationCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateDeviceResolutionObservationCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateDeviceResolutionObservationCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param deviceResolutionObservation The receiving '<em><b>Device Resolution Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param deviceResolutionObservation The receiving '<em><b>Device Resolution Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateDeviceResolutionObservationCode(DeviceResolutionObservation deviceResolutionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.DEVICE_RESOLUTION_OBSERVATION);
-      try
-      {
-        VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deviceResolutionObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.DEVICE_RESOLUTION_OBSERVATION__DEVICE_RESOLUTION_OBSERVATION_CODE,
-             PhmrPlugin.INSTANCE.getString("DeviceResolutionObservationCode"),
-             new Object [] { deviceResolutionObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.DEVICE_RESOLUTION_OBSERVATION);
+			try {
+				VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deviceResolutionObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.DEVICE_RESOLUTION_OBSERVATION__DEVICE_RESOLUTION_OBSERVATION_CODE,
+						 PhmrPlugin.INSTANCE.getString("DeviceResolutionObservationDeviceResolutionObservationCode"),
+						 new Object [] { deviceResolutionObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateDeviceResolutionObservationMoodCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Mood Code</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDeviceResolutionObservationMoodCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Mood Code</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateDeviceResolutionObservationMoodCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateDeviceResolutionObservationMoodCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.moodCode=vocab::x_ActMoodDocumentObservation::DEF";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateDeviceResolutionObservationMoodCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Mood Code</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDeviceResolutionObservationMoodCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Mood Code</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateDeviceResolutionObservationMoodCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateDeviceResolutionObservationMoodCode(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param deviceResolutionObservation The receiving '<em><b>Device Resolution Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param deviceResolutionObservation The receiving '<em><b>Device Resolution Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateDeviceResolutionObservationMoodCode(DeviceResolutionObservation deviceResolutionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.DEVICE_RESOLUTION_OBSERVATION);
-      try
-      {
-        VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deviceResolutionObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.DEVICE_RESOLUTION_OBSERVATION__DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE,
-             PhmrPlugin.INSTANCE.getString("DeviceResolutionObservationMoodCode"),
-             new Object [] { deviceResolutionObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.DEVICE_RESOLUTION_OBSERVATION);
+			try {
+				VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deviceResolutionObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.DEVICE_RESOLUTION_OBSERVATION__DEVICE_RESOLUTION_OBSERVATION_MOOD_CODE,
+						 PhmrPlugin.INSTANCE.getString("DeviceResolutionObservationDeviceResolutionObservationMoodCode"),
+						 new Object [] { deviceResolutionObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 	/**
-   * The cached OCL expression body for the '{@link #validateDeviceResolutionObservationValue(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Value</em>}' operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL expression body for the '{@link #validateDeviceResolutionObservationValue(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Value</em>}' operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateDeviceResolutionObservationValue(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
+	 * @see #validateDeviceResolutionObservationValue(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
 	protected static final String VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1)";
 
 	/**
-   * The cached OCL invariant for the '{@link #validateDeviceResolutionObservationValue(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Value</em>}' invariant operation.
-   * <!-- begin-user-doc -->
+	 * The cached OCL invariant for the '{@link #validateDeviceResolutionObservationValue(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Device Resolution Observation Value</em>}' invariant operation.
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @see #validateDeviceResolutionObservationValue(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-   * @generated
-   * @ordered
-   */
-	protected static Constraint VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	 * @see #validateDeviceResolutionObservationValue(DeviceResolutionObservation, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 * @ordered
+	 */
+	protected static ThreadLocal<  Constraint> VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * <!-- begin-model-doc -->
-   * @param deviceResolutionObservation The receiving '<em><b>Device Resolution Observation</b></em>' model object.
-   * @param diagnostics The chain of diagnostics to which problems are to be appended.
-   * @param context The cache of context-specific information.
-   * <!-- end-model-doc -->
-   * @generated
-   */
+	 * <!-- begin-model-doc -->
+	 * @param deviceResolutionObservation The receiving '<em><b>Device Resolution Observation</b></em>' model object.
+	 * @param diagnostics The chain of diagnostics to which problems are to be appended.
+	 * @param context The cache of context-specific information.
+	 * <!-- end-model-doc -->
+	 * @generated
+	 */
 	public static  boolean validateDeviceResolutionObservationValue(DeviceResolutionObservation deviceResolutionObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-    if (VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-      OCL.Helper helper = EOCL_ENV.createOCLHelper();
-      helper.setContext(PhmrPackage.Literals.DEVICE_RESOLUTION_OBSERVATION);
-      try
-      {
-        VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-      }
-      catch (ParserException pe)
-      {
-        throw new UnsupportedOperationException(pe.getLocalizedMessage());
-      }
-    }
-    if (!EOCL_ENV.createQuery(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(deviceResolutionObservation))
-    {
-      if (diagnostics != null)
-      {
-        diagnostics.add
-          (new BasicDiagnostic
-            (Diagnostic.ERROR,
-             PhmrValidator.DIAGNOSTIC_SOURCE,
-             PhmrValidator.DEVICE_RESOLUTION_OBSERVATION__DEVICE_RESOLUTION_OBSERVATION_VALUE,
-             PhmrPlugin.INSTANCE.getString("DeviceResolutionObservationValue"),
-             new Object [] { deviceResolutionObservation }));
-      }
-       
-      return false;
-    }
-    return true;
-  }
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
+			helper.setContext(PhmrPackage.Literals.DEVICE_RESOLUTION_OBSERVATION);
+			try {
+				VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
+				throw new UnsupportedOperationException(pe.getLocalizedMessage());
+			}
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DEVICE_RESOLUTION_OBSERVATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(deviceResolutionObservation)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 PhmrValidator.DIAGNOSTIC_SOURCE,
+						 PhmrValidator.DEVICE_RESOLUTION_OBSERVATION__DEVICE_RESOLUTION_OBSERVATION_VALUE,
+						 PhmrPlugin.INSTANCE.getString("DeviceResolutionObservationDeviceResolutionObservationValue"),
+						 new Object [] { deviceResolutionObservation }));
+			}
+			 
+			return false;
+		}
+		return true;
+	}
 
 } // DeviceResolutionObservationOperations

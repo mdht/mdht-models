@@ -4,21 +4,23 @@
     <packageImport xmi:id="_mezKYCN-EeK79INyp4G_AA">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ihe/model/ihe_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packageImport xmi:id="_mezKYSN-EeK79INyp4G_AA">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    <packageImport xmi:id="_PKZrwE3jEeGVaJScxwOy7g">
+      <importedPackage href="pathmap://CDA_MODEL/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_hPUsgNcZEeGfQ6frO0B-Jg">
+      <importedPackage href="pathmap://DATATYPES_MODEL/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_q3SeUD49EeKUq_Bmx5Topg">
+      <importedPackage href="pathmap://VOCAB_MODEL/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
     </packageImport>
     <packageImport xmi:id="_mezKYiN-EeK79INyp4G_AA">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packageImport xmi:id="_mezKYyN-EeK79INyp4G_AA">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
-    </packageImport>
+   
     <packageImport xmi:id="_mezKZCN-EeK79INyp4G_AA">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packageImport xmi:id="_mezKZSN-EeK79INyp4G_AA">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
-    </packageImport>
+   
     <packageImport xmi:id="_mezKZiN-EeK79INyp4G_AA">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ihe.qrph.model/model/qrph-vocab.uml#_mbhz8CN-EeK79INyp4G_AA"/>
     </packageImport>

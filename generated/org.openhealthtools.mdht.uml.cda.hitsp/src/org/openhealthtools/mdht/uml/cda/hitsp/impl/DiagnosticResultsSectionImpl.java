@@ -10,14 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.hitsp.DiagnosticResultsSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.HITSPPackage;
 import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
@@ -30,8 +28,6 @@ import org.openhealthtools.mdht.uml.cda.ihe.impl.CodedResultsSectionImpl;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Diagnostic Results Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -69,8 +65,10 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateDiagnosticResultsSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionTemplateId(this, diagnostics, context);
+	public boolean validateDiagnosticResultsSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return DiagnosticResultsSectionOperations.validateDiagnosticResultsSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -138,7 +136,7 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	 */
 	@Override
 	public DiagnosticResultsSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -147,8 +145,9 @@ public class DiagnosticResultsSectionImpl extends CodedResultsSectionImpl implem
 	 * @generated
 	 */
 	@Override
-	public DiagnosticResultsSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public DiagnosticResultsSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // DiagnosticResultsSectionImpl

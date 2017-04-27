@@ -6,18 +6,12 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.AdditionalVitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.BloodGlucose;
 import org.openhealthtools.mdht.uml.cda.emspcr.CarbonDioxide;
@@ -28,21 +22,16 @@ import org.openhealthtools.mdht.uml.cda.emspcr.GlasgowComaScoreOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.LevelOfResponsiveness;
 import org.openhealthtools.mdht.uml.cda.emspcr.PainScore;
 import org.openhealthtools.mdht.uml.cda.emspcr.StrokeScore;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.AdditionalVitalSignsOrganizerOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.OrganizerImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Additional Vital Signs Organizer</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements AdditionalVitalSignsOrganizer {
+public class AdditionalVitalSignsOrganizerImpl extends org.eclipse.mdht.uml.cda.impl.OrganizerImpl implements AdditionalVitalSignsOrganizer {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,8 +58,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerStrokeScoreComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerStrokeScoreComponent(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerStrokeScoreComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +68,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerPainScoreComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerPainScoreComponent(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerPainScoreComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -91,8 +78,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerLevelOfResponsivenessComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -102,8 +88,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerBloodGlucoseComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -113,8 +98,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonMonoxideComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -124,8 +108,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCarbonDioxideComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -135,8 +118,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerCardiacRhythmComponent(this, diagnostics, context);
 	}
 
 	/**
@@ -146,8 +128,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerTemplateId(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -157,8 +138,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerMoodCode(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerMoodCode(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -168,8 +148,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerEffectiveTime(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerEffectiveTime(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerEffectiveTime(this, diagnostics, context);
 	}
 
 	/**
@@ -179,8 +158,7 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 */
 	public boolean validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(
-			this, diagnostics, context);
+		return AdditionalVitalSignsOrganizerOperations.validateAdditionalVitalSignsOrganizerGlasgowComaScoreOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -261,16 +239,16 @@ public class AdditionalVitalSignsOrganizerImpl extends OrganizerImpl implements 
 	 * @generated
 	 */
 	public AdditionalVitalSignsOrganizer init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdditionalVitalSignsOrganizer init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public AdditionalVitalSignsOrganizer init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdditionalVitalSignsOrganizerImpl

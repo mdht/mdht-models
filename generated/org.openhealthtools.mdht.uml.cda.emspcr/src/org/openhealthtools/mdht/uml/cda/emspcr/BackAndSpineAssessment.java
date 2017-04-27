@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='BackAndSpineAssessmentTemplateId BackAndSpineAssessmentMoodCode BackAndSpineAssessmentCode BackAndSpineAssessmentCodeP BackAndSpineAssessmentEffectiveTime BackAndSpineAssessmentValue BackAndSpineAssessmentValueP BackAndSpineAssessmentTargetSiteCode BackAndSpineAssessmentTargetSiteCodeP' templateId.root='2.16.840.1.1133883.17.3.10.1.119' moodCode='EVN' code.code='67532-2' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Physical findings of Back+Spine NEMSIS' constraints.validation.dependOn.BackAndSpineAssessmentCode='BackAndSpineAssessmentCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' targetSiteCode.codeSystem='2.16.840.1.113883.6.1' targetSiteCode.codeSystemName='LOINC'"
  * @generated
  */
-public interface BackAndSpineAssessment extends Observation {
+public interface BackAndSpineAssessment extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -145,9 +138,9 @@ public interface BackAndSpineAssessment extends Observation {
 	public BackAndSpineAssessment init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public BackAndSpineAssessment init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public BackAndSpineAssessment init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // BackAndSpineAssessment

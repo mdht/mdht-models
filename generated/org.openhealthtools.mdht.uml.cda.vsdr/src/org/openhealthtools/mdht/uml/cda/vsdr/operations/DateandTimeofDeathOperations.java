@@ -7,17 +7,12 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
+import org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations;
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.DateandTimeofDeath;
 import org.openhealthtools.mdht.uml.cda.vsdr.VsdrPackage;
-
 import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
 
 /**
@@ -41,6 +36,14 @@ import org.openhealthtools.mdht.uml.cda.vsdr.util.VsdrValidator;
  * @generated
  */
 public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -69,7 +72,7 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DATEAND_TIMEOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DATEAND_TIMEOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -84,25 +87,35 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDateandTimeofDeathTemplateId(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DATEAND_TIMEOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DATEAND_TIMEOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DATEAND_TIMEOF_DEATH);
 			try {
-				VALIDATE_DATEAND_TIMEOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEAND_TIMEOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dateandTimeofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateandTimeofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathDateandTimeofDeathTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
 						 new Object [] { dateandTimeofDeath }));
 			}
 			 
@@ -130,7 +143,7 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DATEAND_TIMEOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DATEAND_TIMEOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -145,25 +158,35 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDateandTimeofDeathClassCode(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DATEAND_TIMEOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DATEAND_TIMEOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DATEAND_TIMEOF_DEATH);
 			try {
-				VALIDATE_DATEAND_TIMEOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEAND_TIMEOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dateandTimeofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateandTimeofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathDateandTimeofDeathClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
 						 new Object [] { dateandTimeofDeath }));
 			}
 			 
@@ -191,7 +214,7 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DATEAND_TIMEOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DATEAND_TIMEOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -206,25 +229,35 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDateandTimeofDeathMoodCode(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DATEAND_TIMEOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DATEAND_TIMEOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DATEAND_TIMEOF_DEATH);
 			try {
-				VALIDATE_DATEAND_TIMEOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEAND_TIMEOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dateandTimeofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateandTimeofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathDateandTimeofDeathMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
 						 new Object [] { dateandTimeofDeath }));
 			}
 			 
@@ -252,7 +285,7 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DATEAND_TIMEOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DATEAND_TIMEOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -267,25 +300,35 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDateandTimeofDeathCodeP(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DATEAND_TIMEOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DATEAND_TIMEOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DATEAND_TIMEOF_DEATH);
 			try {
-				VALIDATE_DATEAND_TIMEOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEAND_TIMEOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dateandTimeofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateandTimeofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathDateandTimeofDeathCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
 						 new Object [] { dateandTimeofDeath }));
 			}
 			 
@@ -315,7 +358,7 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DATEAND_TIMEOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DATEAND_TIMEOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -330,25 +373,35 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDateandTimeofDeathCode(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DATEAND_TIMEOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DATEAND_TIMEOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DATEAND_TIMEOF_DEATH);
 			try {
-				VALIDATE_DATEAND_TIMEOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEAND_TIMEOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dateandTimeofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateandTimeofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathDateandTimeofDeathCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
 						 new Object [] { dateandTimeofDeath }));
 			}
 			 
@@ -376,7 +429,7 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -391,25 +444,35 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDateandTimeofDeathEffectiveTime(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DATEAND_TIMEOF_DEATH);
 			try {
-				VALIDATE_DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dateandTimeofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateandTimeofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathDateandTimeofDeathEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
 						 new Object [] { dateandTimeofDeath }));
 			}
 			 
@@ -437,7 +500,7 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DATEAND_TIMEOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DATEAND_TIMEOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -452,25 +515,35 @@ public class DateandTimeofDeathOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDateandTimeofDeathText(DateandTimeofDeath dateandTimeofDeath, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DATEAND_TIMEOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DATEAND_TIMEOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsdrPackage.Literals.DATEAND_TIMEOF_DEATH);
 			try {
-				VALIDATE_DATEAND_TIMEOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DATEAND_TIMEOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DATEAND_TIMEOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(dateandTimeofDeath)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DATEAND_TIMEOF_DEATH_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(dateandTimeofDeath)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 VsdrValidator.DIAGNOSTIC_SOURCE,
 						 VsdrValidator.DATEAND_TIMEOF_DEATH__DATEAND_TIMEOF_DEATH_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DateandTimeofDeathDateandTimeofDeathText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(dateandTimeofDeath, context) }),
 						 new Object [] { dateandTimeofDeath }));
 			}
 			 

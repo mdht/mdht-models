@@ -22,81 +22,72 @@
  */
 package org.openhealthtools.mdht.uml.cda.phmr.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
-
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.impl.Participant2Impl;
-
 import org.openhealthtools.mdht.uml.cda.phmr.Participant;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrPackage;
-
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ParticipantOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Participant</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ParticipantImpl extends Participant2Impl implements Participant {
+public class ParticipantImpl extends org.eclipse.mdht.uml.cda.impl.Participant2Impl implements Participant {
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	protected ParticipantImpl() {
-    super();
-  }
+		super();
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	protected EClass eStaticClass() {
-    return PhmrPackage.Literals.PARTICIPANT;
-  }
+		return PhmrPackage.Literals.PARTICIPANT;
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public boolean validateParticipantTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-    return ParticipantOperations.validateParticipantTemplateId(this, diagnostics, context);
-  }
+		return ParticipantOperations.validateParticipantTemplateId(this, diagnostics, context);
+	}
 
 	/**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
 public boolean validateParticipantPHMRProductInstance(DiagnosticChain diagnostics, Map<Object, Object> context)
   {
-    return ParticipantOperations.validateParticipantPHMRProductInstance(this, diagnostics, context);
-  }
+		return ParticipantOperations.validateParticipantPHMRProductInstance(this, diagnostics, context);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
 	@Override
 	public Participant init() {
-      return Initializer.Util.init(this);
-  }
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
+	}
 
   /**
      * <!-- begin-user-doc -->
@@ -104,8 +95,8 @@ public boolean validateParticipantPHMRProductInstance(DiagnosticChain diagnostic
      * @generated
      */
     @Override
-	public Participant init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-        Initializer.Util.init(this, initializers);
+	public Participant init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
         return this;
     }
 } //ParticipantImpl

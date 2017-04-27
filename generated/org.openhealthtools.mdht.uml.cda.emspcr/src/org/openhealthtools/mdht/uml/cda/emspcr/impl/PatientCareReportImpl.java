@@ -6,20 +6,13 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.consol.impl.GeneralHeaderConstraintsImpl;
-
+import org.eclipse.emf.ecore.impl.EObjectImpl;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSAdvanceDirectivesSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSAllergiesAndAdverseReactionsSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSBillingSection;
@@ -43,19 +36,16 @@ import org.openhealthtools.mdht.uml.cda.emspcr.EMSVitalSignsSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.PatientCareReport;
 import org.openhealthtools.mdht.uml.cda.emspcr.TimesSection;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.PatientCareReportOperations;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Patient Care Report</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implements PatientCareReport {
+public class PatientCareReportImpl extends EObjectImpl implements PatientCareReport {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -163,8 +153,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 */
 	public boolean validatePatientCareReportAllergiesAndAdverseReactionsSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportAllergiesAndAdverseReactionsSection(
-			this, diagnostics, context);
+		return PatientCareReportOperations.validatePatientCareReportAllergiesAndAdverseReactionsSection(this, diagnostics, context);
 	}
 
 	/**
@@ -174,8 +163,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 */
 	public boolean validatePatientCareReportPastMedicalHistorySection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportPastMedicalHistorySection(
-			this, diagnostics, context);
+		return PatientCareReportOperations.validatePatientCareReportPastMedicalHistorySection(this, diagnostics, context);
 	}
 
 	/**
@@ -195,8 +183,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 */
 	public boolean validatePatientCareReportPhysicalAssessmentSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportPhysicalAssessmentSection(
-			this, diagnostics, context);
+		return PatientCareReportOperations.validatePatientCareReportPhysicalAssessmentSection(this, diagnostics, context);
 	}
 
 	/**
@@ -206,8 +193,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 */
 	public boolean validatePatientCareReportMedicationsAdministeredSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportMedicationsAdministeredSection(
-			this, diagnostics, context);
+		return PatientCareReportOperations.validatePatientCareReportMedicationsAdministeredSection(this, diagnostics, context);
 	}
 
 	/**
@@ -217,8 +203,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 */
 	public boolean validatePatientCareReportProceduresPerformedSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportProceduresPerformedSection(
-			this, diagnostics, context);
+		return PatientCareReportOperations.validatePatientCareReportProceduresPerformedSection(this, diagnostics, context);
 	}
 
 	/**
@@ -228,8 +213,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 */
 	public boolean validatePatientCareReportPatientCareNarrativeSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportPatientCareNarrativeSection(
-			this, diagnostics, context);
+		return PatientCareReportOperations.validatePatientCareReportPatientCareNarrativeSection(this, diagnostics, context);
 	}
 
 	/**
@@ -266,8 +250,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 */
 	public boolean validatePatientCareReportPersonnelAdverseEventSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportPersonnelAdverseEventSection(
-			this, diagnostics, context);
+		return PatientCareReportOperations.validatePatientCareReportPersonnelAdverseEventSection(this, diagnostics, context);
 	}
 
 	/**
@@ -358,8 +341,7 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 */
 	public boolean validatePatientCareReportInjuryIncidentDescriptionSection(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return PatientCareReportOperations.validatePatientCareReportInjuryIncidentDescriptionSection(
-			this, diagnostics, context);
+		return PatientCareReportOperations.validatePatientCareReportInjuryIncidentDescriptionSection(this, diagnostics, context);
 	}
 
 	/**
@@ -628,17 +610,17 @@ public class PatientCareReportImpl extends GeneralHeaderConstraintsImpl implemen
 	 */
 	@Override
 	public PatientCareReport init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
+     * @generated
+     */
 	@Override
-	public PatientCareReport init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+	public PatientCareReport init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // PatientCareReportImpl

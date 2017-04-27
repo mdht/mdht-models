@@ -16,18 +16,16 @@ import java.util.Map;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.impl.ClinicalDocumentImpl;
 import org.openhealthtools.mdht.uml.cda.cdt.CDTPackage;
 import org.openhealthtools.mdht.uml.cda.cdt.LevelOneConformance;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.LevelOneConformanceOperations;
-import org.openhealthtools.mdht.uml.cda.impl.ClinicalDocumentImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Level One Conformance</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
@@ -71,7 +69,7 @@ public class LevelOneConformanceImpl extends ClinicalDocumentImpl implements Lev
 
 	/**
 	 * <!-- begin-user-doc -->
-	   * <!-- end-user-doc -->
+	 * <!-- end-user-doc -->
 	 * @generated
 	 */
 	public LevelOneConformance init(Iterable<? extends Initializer<? extends EObject>> initializers) {

@@ -15,8 +15,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-import org.openhealthtools.mdht.uml.cda.SubstanceAdministration;
+import org.eclipse.mdht.emf.runtime.util.Initializer;
+import org.eclipse.mdht.uml.cda.SubstanceAdministration;
 
 /**
  * <!-- begin-user-doc -->
@@ -65,7 +65,8 @@ public interface PlanOfCareActivitySubstanceAdministration extends SubstanceAdmi
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.id->isEmpty() or self.id->exists(element | element.isNullFlavorUndefined())) implies (not self.id->isEmpty())'"
 	 * @generated
 	 */
-	boolean validatePlanOfCareActivitySubstanceAdministrationId(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validatePlanOfCareActivitySubstanceAdministrationId(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->

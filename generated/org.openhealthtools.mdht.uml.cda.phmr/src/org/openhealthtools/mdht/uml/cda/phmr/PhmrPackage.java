@@ -24,9 +24,6 @@ package org.openhealthtools.mdht.uml.cda.phmr;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EPackage;
-
-import org.openhealthtools.mdht.uml.cda.CDAPackage;
-
 import org.openhealthtools.mdht.uml.cda.ccd.CCDPackage;
 
 /**
@@ -95,7 +92,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int DEVICE_ACCURACY_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -104,7 +101,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int DEVICE_ACCURACY_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -113,7 +110,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int DEVICE_ACCURACY_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -122,7 +119,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int DEVICE_ACCURACY_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -131,7 +128,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int DEVICE_ACCURACY_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
      * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -140,7 +137,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int DEVICE_ACCURACY_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -149,7 +146,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int DEVICE_ACCURACY_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -158,7 +155,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int DEVICE_ACCURACY_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -167,7 +164,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int DEVICE_ACCURACY_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -176,7 +173,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int DEVICE_ACCURACY_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -185,7 +182,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int DEVICE_ACCURACY_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -194,7 +191,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int DEVICE_ACCURACY_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -203,7 +200,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int DEVICE_ACCURACY_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
      * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -212,7 +209,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int DEVICE_ACCURACY_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
      * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -221,7 +218,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int DEVICE_ACCURACY_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -230,7 +227,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int DEVICE_ACCURACY_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -239,7 +236,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int DEVICE_ACCURACY_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -248,7 +245,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int DEVICE_ACCURACY_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -257,7 +254,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int DEVICE_ACCURACY_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -266,7 +263,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int DEVICE_ACCURACY_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -275,7 +272,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int DEVICE_ACCURACY_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -284,7 +281,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int DEVICE_ACCURACY_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -293,7 +290,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int DEVICE_ACCURACY_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -302,7 +299,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int DEVICE_ACCURACY_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -311,7 +308,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int DEVICE_ACCURACY_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -320,7 +317,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int DEVICE_ACCURACY_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -329,7 +326,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int DEVICE_ACCURACY_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -338,7 +335,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int DEVICE_ACCURACY_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -347,7 +344,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int DEVICE_ACCURACY_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -356,7 +353,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int DEVICE_ACCURACY_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
      * The number of structural features of the '<em>Device Accuracy Observation</em>' class.
@@ -365,7 +362,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_ACCURACY_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int DEVICE_ACCURACY_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.DeviceDefinitionOrganizerImpl <em>Device Definition Organizer</em>}' class.
@@ -384,7 +381,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__REALM_CODE = CDAPackage.ORGANIZER__REALM_CODE;
+	int DEVICE_DEFINITION_ORGANIZER__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -393,7 +390,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__TYPE_ID = CDAPackage.ORGANIZER__TYPE_ID;
+	int DEVICE_DEFINITION_ORGANIZER__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -402,7 +399,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__TEMPLATE_ID = CDAPackage.ORGANIZER__TEMPLATE_ID;
+	int DEVICE_DEFINITION_ORGANIZER__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -411,7 +408,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__ID = CDAPackage.ORGANIZER__ID;
+	int DEVICE_DEFINITION_ORGANIZER__ID = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -420,7 +417,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__CODE = CDAPackage.ORGANIZER__CODE;
+	int DEVICE_DEFINITION_ORGANIZER__CODE = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__CODE;
 
 	/**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -429,7 +426,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__STATUS_CODE = CDAPackage.ORGANIZER__STATUS_CODE;
+	int DEVICE_DEFINITION_ORGANIZER__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__STATUS_CODE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -438,7 +435,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__EFFECTIVE_TIME = CDAPackage.ORGANIZER__EFFECTIVE_TIME;
+	int DEVICE_DEFINITION_ORGANIZER__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -447,7 +444,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__SUBJECT = CDAPackage.ORGANIZER__SUBJECT;
+	int DEVICE_DEFINITION_ORGANIZER__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -456,7 +453,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__SPECIMEN = CDAPackage.ORGANIZER__SPECIMEN;
+	int DEVICE_DEFINITION_ORGANIZER__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -465,7 +462,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__PERFORMER = CDAPackage.ORGANIZER__PERFORMER;
+	int DEVICE_DEFINITION_ORGANIZER__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -474,7 +471,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__AUTHOR = CDAPackage.ORGANIZER__AUTHOR;
+	int DEVICE_DEFINITION_ORGANIZER__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -483,7 +480,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__INFORMANT = CDAPackage.ORGANIZER__INFORMANT;
+	int DEVICE_DEFINITION_ORGANIZER__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -492,7 +489,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__PARTICIPANT = CDAPackage.ORGANIZER__PARTICIPANT;
+	int DEVICE_DEFINITION_ORGANIZER__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -501,7 +498,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__REFERENCE = CDAPackage.ORGANIZER__REFERENCE;
+	int DEVICE_DEFINITION_ORGANIZER__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -510,7 +507,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__PRECONDITION = CDAPackage.ORGANIZER__PRECONDITION;
+	int DEVICE_DEFINITION_ORGANIZER__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Component</b></em>' containment reference list.
@@ -519,7 +516,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__COMPONENT = CDAPackage.ORGANIZER__COMPONENT;
+	int DEVICE_DEFINITION_ORGANIZER__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__COMPONENT;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -528,7 +525,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__NULL_FLAVOR = CDAPackage.ORGANIZER__NULL_FLAVOR;
+	int DEVICE_DEFINITION_ORGANIZER__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -537,7 +534,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__CLASS_CODE = CDAPackage.ORGANIZER__CLASS_CODE;
+	int DEVICE_DEFINITION_ORGANIZER__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -546,7 +543,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER__MOOD_CODE = CDAPackage.ORGANIZER__MOOD_CODE;
+	int DEVICE_DEFINITION_ORGANIZER__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER__MOOD_CODE;
 
 	/**
      * The number of structural features of the '<em>Device Definition Organizer</em>' class.
@@ -555,7 +552,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_DEFINITION_ORGANIZER_FEATURE_COUNT = CDAPackage.ORGANIZER_FEATURE_COUNT + 0;
+	int DEVICE_DEFINITION_ORGANIZER_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.ORGANIZER_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.SamplingFrequencyObservationImpl <em>Sampling Frequency Observation</em>}' class.
@@ -574,7 +571,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int SAMPLING_FREQUENCY_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -583,7 +580,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int SAMPLING_FREQUENCY_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -592,7 +589,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int SAMPLING_FREQUENCY_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -601,7 +598,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int SAMPLING_FREQUENCY_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -610,7 +607,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int SAMPLING_FREQUENCY_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
      * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -619,7 +616,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int SAMPLING_FREQUENCY_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -628,7 +625,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int SAMPLING_FREQUENCY_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -637,7 +634,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int SAMPLING_FREQUENCY_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -646,7 +643,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int SAMPLING_FREQUENCY_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -655,7 +652,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int SAMPLING_FREQUENCY_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -664,7 +661,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int SAMPLING_FREQUENCY_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -673,7 +670,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int SAMPLING_FREQUENCY_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -682,7 +679,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int SAMPLING_FREQUENCY_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
      * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -691,7 +688,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int SAMPLING_FREQUENCY_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
      * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -700,7 +697,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int SAMPLING_FREQUENCY_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -709,7 +706,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int SAMPLING_FREQUENCY_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -718,7 +715,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int SAMPLING_FREQUENCY_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -727,7 +724,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int SAMPLING_FREQUENCY_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -736,7 +733,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int SAMPLING_FREQUENCY_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -745,7 +742,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int SAMPLING_FREQUENCY_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -754,7 +751,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int SAMPLING_FREQUENCY_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -763,7 +760,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int SAMPLING_FREQUENCY_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -772,7 +769,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int SAMPLING_FREQUENCY_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -781,7 +778,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int SAMPLING_FREQUENCY_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -790,7 +787,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int SAMPLING_FREQUENCY_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -799,7 +796,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int SAMPLING_FREQUENCY_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -808,7 +805,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int SAMPLING_FREQUENCY_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -817,7 +814,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int SAMPLING_FREQUENCY_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -826,7 +823,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int SAMPLING_FREQUENCY_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -835,7 +832,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int SAMPLING_FREQUENCY_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
      * The number of structural features of the '<em>Sampling Frequency Observation</em>' class.
@@ -844,7 +841,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SAMPLING_FREQUENCY_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int SAMPLING_FREQUENCY_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.DeviceMeasurementRangeObservationImpl <em>Device Measurement Range Observation</em>}' class.
@@ -863,7 +860,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -872,7 +869,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -881,7 +878,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -890,7 +887,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -899,7 +896,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
      * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -908,7 +905,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -917,7 +914,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -926,7 +923,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -935,7 +932,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -944,7 +941,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -953,7 +950,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -962,7 +959,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -971,7 +968,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
      * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -980,7 +977,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
      * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -989,7 +986,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -998,7 +995,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -1007,7 +1004,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -1016,7 +1013,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -1025,7 +1022,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -1034,7 +1031,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -1043,7 +1040,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -1052,7 +1049,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -1061,7 +1058,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -1070,7 +1067,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -1079,7 +1076,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -1088,7 +1085,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -1097,7 +1094,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -1106,7 +1103,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -1115,7 +1112,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -1124,7 +1121,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
      * The number of structural features of the '<em>Device Measurement Range Observation</em>' class.
@@ -1133,7 +1130,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_MEASUREMENT_RANGE_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int DEVICE_MEASUREMENT_RANGE_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.DeviceResolutionObservationImpl <em>Device Resolution Observation</em>}' class.
@@ -1152,7 +1149,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int DEVICE_RESOLUTION_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -1161,7 +1158,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int DEVICE_RESOLUTION_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -1170,7 +1167,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int DEVICE_RESOLUTION_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -1179,7 +1176,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int DEVICE_RESOLUTION_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -1188,7 +1185,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int DEVICE_RESOLUTION_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
      * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -1197,7 +1194,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int DEVICE_RESOLUTION_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -1206,7 +1203,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int DEVICE_RESOLUTION_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -1215,7 +1212,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int DEVICE_RESOLUTION_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -1224,7 +1221,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int DEVICE_RESOLUTION_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -1233,7 +1230,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int DEVICE_RESOLUTION_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -1242,7 +1239,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int DEVICE_RESOLUTION_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -1251,7 +1248,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int DEVICE_RESOLUTION_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -1260,7 +1257,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int DEVICE_RESOLUTION_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
      * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -1269,7 +1266,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int DEVICE_RESOLUTION_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
      * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -1278,7 +1275,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int DEVICE_RESOLUTION_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -1287,7 +1284,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int DEVICE_RESOLUTION_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -1296,7 +1293,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int DEVICE_RESOLUTION_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -1305,7 +1302,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int DEVICE_RESOLUTION_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -1314,7 +1311,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int DEVICE_RESOLUTION_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -1323,7 +1320,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int DEVICE_RESOLUTION_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -1332,7 +1329,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int DEVICE_RESOLUTION_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -1341,7 +1338,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int DEVICE_RESOLUTION_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -1350,7 +1347,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int DEVICE_RESOLUTION_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -1359,7 +1356,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int DEVICE_RESOLUTION_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -1368,7 +1365,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int DEVICE_RESOLUTION_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -1377,7 +1374,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int DEVICE_RESOLUTION_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -1386,7 +1383,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int DEVICE_RESOLUTION_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -1395,7 +1392,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int DEVICE_RESOLUTION_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -1404,7 +1401,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int DEVICE_RESOLUTION_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -1413,7 +1410,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int DEVICE_RESOLUTION_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
      * The number of structural features of the '<em>Device Resolution Observation</em>' class.
@@ -1422,7 +1419,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int DEVICE_RESOLUTION_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int DEVICE_RESOLUTION_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.EventObservationImpl <em>Event Observation</em>}' class.
@@ -1441,7 +1438,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int EVENT_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -1450,7 +1447,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int EVENT_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -1459,7 +1456,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int EVENT_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -1468,7 +1465,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int EVENT_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -1477,7 +1474,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int EVENT_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
      * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -1486,7 +1483,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int EVENT_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -1495,7 +1492,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int EVENT_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -1504,7 +1501,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int EVENT_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -1513,7 +1510,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int EVENT_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -1522,7 +1519,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int EVENT_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -1531,7 +1528,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int EVENT_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -1540,7 +1537,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int EVENT_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -1549,7 +1546,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int EVENT_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
      * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -1558,7 +1555,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int EVENT_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
      * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -1567,7 +1564,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int EVENT_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -1576,7 +1573,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int EVENT_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -1585,7 +1582,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int EVENT_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -1594,7 +1591,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int EVENT_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -1603,7 +1600,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int EVENT_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -1612,7 +1609,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int EVENT_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -1621,7 +1618,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int EVENT_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -1630,7 +1627,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int EVENT_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -1639,7 +1636,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int EVENT_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -1648,7 +1645,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int EVENT_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -1657,7 +1654,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int EVENT_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -1666,7 +1663,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int EVENT_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -1675,7 +1672,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int EVENT_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -1684,7 +1681,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int EVENT_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -1693,7 +1690,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int EVENT_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -1702,7 +1699,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int EVENT_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
      * The number of structural features of the '<em>Event Observation</em>' class.
@@ -1711,7 +1708,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int EVENT_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int EVENT_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.MedicalEquipmentImpl <em>Medical Equipment</em>}' class.
@@ -2200,7 +2197,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__REALM_CODE = CDAPackage.OBSERVATION_MEDIA__REALM_CODE;
+	int OBSERVATION_MEDIA_JPG__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -2209,7 +2206,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__TYPE_ID = CDAPackage.OBSERVATION_MEDIA__TYPE_ID;
+	int OBSERVATION_MEDIA_JPG__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -2218,7 +2215,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__TEMPLATE_ID = CDAPackage.OBSERVATION_MEDIA__TEMPLATE_ID;
+	int OBSERVATION_MEDIA_JPG__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -2227,7 +2224,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__ID = CDAPackage.OBSERVATION_MEDIA__ID;
+	int OBSERVATION_MEDIA_JPG__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__ID;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -2236,7 +2233,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__LANGUAGE_CODE = CDAPackage.OBSERVATION_MEDIA__LANGUAGE_CODE;
+	int OBSERVATION_MEDIA_JPG__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Value</b></em>' containment reference.
@@ -2245,7 +2242,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__VALUE = CDAPackage.OBSERVATION_MEDIA__VALUE;
+	int OBSERVATION_MEDIA_JPG__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__VALUE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -2254,7 +2251,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__SUBJECT = CDAPackage.OBSERVATION_MEDIA__SUBJECT;
+	int OBSERVATION_MEDIA_JPG__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -2263,7 +2260,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__SPECIMEN = CDAPackage.OBSERVATION_MEDIA__SPECIMEN;
+	int OBSERVATION_MEDIA_JPG__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -2272,7 +2269,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__PERFORMER = CDAPackage.OBSERVATION_MEDIA__PERFORMER;
+	int OBSERVATION_MEDIA_JPG__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -2281,7 +2278,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__AUTHOR = CDAPackage.OBSERVATION_MEDIA__AUTHOR;
+	int OBSERVATION_MEDIA_JPG__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -2290,7 +2287,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__INFORMANT = CDAPackage.OBSERVATION_MEDIA__INFORMANT;
+	int OBSERVATION_MEDIA_JPG__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -2299,7 +2296,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__PARTICIPANT = CDAPackage.OBSERVATION_MEDIA__PARTICIPANT;
+	int OBSERVATION_MEDIA_JPG__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -2308,7 +2305,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION_MEDIA__ENTRY_RELATIONSHIP;
+	int OBSERVATION_MEDIA_JPG__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__ENTRY_RELATIONSHIP;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -2317,7 +2314,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__REFERENCE = CDAPackage.OBSERVATION_MEDIA__REFERENCE;
+	int OBSERVATION_MEDIA_JPG__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -2326,7 +2323,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__PRECONDITION = CDAPackage.OBSERVATION_MEDIA__PRECONDITION;
+	int OBSERVATION_MEDIA_JPG__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Observation Media Id</b></em>' attribute.
@@ -2335,7 +2332,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__OBSERVATION_MEDIA_ID = CDAPackage.OBSERVATION_MEDIA__OBSERVATION_MEDIA_ID;
+	int OBSERVATION_MEDIA_JPG__OBSERVATION_MEDIA_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__OBSERVATION_MEDIA_ID;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -2344,7 +2341,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__NULL_FLAVOR = CDAPackage.OBSERVATION_MEDIA__NULL_FLAVOR;
+	int OBSERVATION_MEDIA_JPG__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -2353,7 +2350,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__CLASS_CODE = CDAPackage.OBSERVATION_MEDIA__CLASS_CODE;
+	int OBSERVATION_MEDIA_JPG__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -2362,7 +2359,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG__MOOD_CODE = CDAPackage.OBSERVATION_MEDIA__MOOD_CODE;
+	int OBSERVATION_MEDIA_JPG__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA__MOOD_CODE;
 
 	/**
      * The number of structural features of the '<em>Observation Media JPG</em>' class.
@@ -2371,7 +2368,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_MEDIA_JPG_FEATURE_COUNT = CDAPackage.OBSERVATION_MEDIA_FEATURE_COUNT + 0;
+	int OBSERVATION_MEDIA_JPG_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_MEDIA_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.ObservationNullFlavorImpl <em>Observation Null Flavor</em>}' class.
@@ -2390,7 +2387,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int OBSERVATION_NULL_FLAVOR__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -2399,7 +2396,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int OBSERVATION_NULL_FLAVOR__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -2408,7 +2405,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int OBSERVATION_NULL_FLAVOR__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -2417,7 +2414,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__ID = CDAPackage.OBSERVATION__ID;
+	int OBSERVATION_NULL_FLAVOR__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -2426,7 +2423,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__CODE = CDAPackage.OBSERVATION__CODE;
+	int OBSERVATION_NULL_FLAVOR__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
      * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -2435,7 +2432,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int OBSERVATION_NULL_FLAVOR__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -2444,7 +2441,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int OBSERVATION_NULL_FLAVOR__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -2453,7 +2450,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int OBSERVATION_NULL_FLAVOR__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -2462,7 +2459,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int OBSERVATION_NULL_FLAVOR__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -2471,7 +2468,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int OBSERVATION_NULL_FLAVOR__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -2480,7 +2477,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int OBSERVATION_NULL_FLAVOR__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -2489,7 +2486,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int OBSERVATION_NULL_FLAVOR__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -2498,7 +2495,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int OBSERVATION_NULL_FLAVOR__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
      * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -2507,7 +2504,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int OBSERVATION_NULL_FLAVOR__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
      * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -2516,7 +2513,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int OBSERVATION_NULL_FLAVOR__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -2525,7 +2522,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int OBSERVATION_NULL_FLAVOR__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -2534,7 +2531,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int OBSERVATION_NULL_FLAVOR__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -2543,7 +2540,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int OBSERVATION_NULL_FLAVOR__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -2552,7 +2549,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int OBSERVATION_NULL_FLAVOR__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -2561,7 +2558,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int OBSERVATION_NULL_FLAVOR__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -2570,7 +2567,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int OBSERVATION_NULL_FLAVOR__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -2579,7 +2576,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int OBSERVATION_NULL_FLAVOR__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -2588,7 +2585,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int OBSERVATION_NULL_FLAVOR__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -2597,7 +2594,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int OBSERVATION_NULL_FLAVOR__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -2606,7 +2603,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int OBSERVATION_NULL_FLAVOR__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -2615,7 +2612,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int OBSERVATION_NULL_FLAVOR__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -2624,7 +2621,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int OBSERVATION_NULL_FLAVOR__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -2633,7 +2630,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int OBSERVATION_NULL_FLAVOR__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -2642,7 +2639,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int OBSERVATION_NULL_FLAVOR__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -2651,7 +2648,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int OBSERVATION_NULL_FLAVOR__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
      * The number of structural features of the '<em>Observation Null Flavor</em>' class.
@@ -2660,7 +2657,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int OBSERVATION_NULL_FLAVOR_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int OBSERVATION_NULL_FLAVOR_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.WaveformObservationImpl <em>Waveform Observation</em>}' class.
@@ -2679,7 +2676,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int WAVEFORM_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -2688,7 +2685,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int WAVEFORM_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -2697,7 +2694,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int WAVEFORM_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -2706,7 +2703,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int WAVEFORM_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -2715,7 +2712,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int WAVEFORM_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
      * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -2724,7 +2721,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int WAVEFORM_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -2733,7 +2730,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int WAVEFORM_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -2742,7 +2739,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int WAVEFORM_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -2751,7 +2748,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int WAVEFORM_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -2760,7 +2757,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int WAVEFORM_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -2769,7 +2766,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int WAVEFORM_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -2778,7 +2775,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int WAVEFORM_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -2787,7 +2784,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int WAVEFORM_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
      * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -2796,7 +2793,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int WAVEFORM_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
      * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -2805,7 +2802,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int WAVEFORM_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -2814,7 +2811,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int WAVEFORM_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -2823,7 +2820,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int WAVEFORM_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -2832,7 +2829,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int WAVEFORM_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -2841,7 +2838,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int WAVEFORM_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -2850,7 +2847,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int WAVEFORM_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -2859,7 +2856,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int WAVEFORM_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -2868,7 +2865,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int WAVEFORM_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -2877,7 +2874,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int WAVEFORM_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -2886,7 +2883,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int WAVEFORM_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -2895,7 +2892,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int WAVEFORM_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -2904,7 +2901,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int WAVEFORM_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -2913,7 +2910,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int WAVEFORM_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -2922,7 +2919,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int WAVEFORM_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -2931,7 +2928,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int WAVEFORM_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -2940,7 +2937,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int WAVEFORM_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
      * The number of structural features of the '<em>Waveform Observation</em>' class.
@@ -2949,7 +2946,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int WAVEFORM_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.WaveformSamplePeriodObservationImpl <em>Waveform Sample Period Observation</em>}' class.
@@ -2968,7 +2965,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -2977,7 +2974,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -2986,7 +2983,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -2995,7 +2992,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -3004,7 +3001,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
      * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -3013,7 +3010,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -3022,7 +3019,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -3031,7 +3028,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -3040,7 +3037,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -3049,7 +3046,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -3058,7 +3055,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -3067,7 +3064,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -3076,7 +3073,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
      * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -3085,7 +3082,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
      * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -3094,7 +3091,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -3103,7 +3100,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -3112,7 +3109,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -3121,7 +3118,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -3130,7 +3127,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -3139,7 +3136,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -3148,7 +3145,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -3157,7 +3154,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -3166,7 +3163,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -3175,7 +3172,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -3184,7 +3181,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -3193,7 +3190,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -3202,7 +3199,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -3211,7 +3208,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -3220,7 +3217,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -3229,7 +3226,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
      * The number of structural features of the '<em>Waveform Sample Period Observation</em>' class.
@@ -3238,7 +3235,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int WAVEFORM_SAMPLE_PERIOD_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.ParticipantImpl <em>Participant</em>}' class.
@@ -3257,7 +3254,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT__REALM_CODE = CDAPackage.PARTICIPANT2__REALM_CODE;
+	int PARTICIPANT__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -3266,7 +3263,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT__TYPE_ID = CDAPackage.PARTICIPANT2__TYPE_ID;
+	int PARTICIPANT__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -3275,7 +3272,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT__TEMPLATE_ID = CDAPackage.PARTICIPANT2__TEMPLATE_ID;
+	int PARTICIPANT__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Time</b></em>' containment reference.
@@ -3284,7 +3281,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT__TIME = CDAPackage.PARTICIPANT2__TIME;
+	int PARTICIPANT__TIME = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__TIME;
 
 	/**
      * The feature id for the '<em><b>Awareness Code</b></em>' containment reference.
@@ -3293,7 +3290,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT__AWARENESS_CODE = CDAPackage.PARTICIPANT2__AWARENESS_CODE;
+	int PARTICIPANT__AWARENESS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__AWARENESS_CODE;
 
 	/**
      * The feature id for the '<em><b>Participant Role</b></em>' containment reference.
@@ -3302,7 +3299,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT__PARTICIPANT_ROLE = CDAPackage.PARTICIPANT2__PARTICIPANT_ROLE;
+	int PARTICIPANT__PARTICIPANT_ROLE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__PARTICIPANT_ROLE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -3311,7 +3308,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT__NULL_FLAVOR = CDAPackage.PARTICIPANT2__NULL_FLAVOR;
+	int PARTICIPANT__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Type Code</b></em>' attribute.
@@ -3320,7 +3317,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT__TYPE_CODE = CDAPackage.PARTICIPANT2__TYPE_CODE;
+	int PARTICIPANT__TYPE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__TYPE_CODE;
 
 	/**
      * The feature id for the '<em><b>Context Control Code</b></em>' attribute.
@@ -3329,7 +3326,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT__CONTEXT_CONTROL_CODE = CDAPackage.PARTICIPANT2__CONTEXT_CONTROL_CODE;
+	int PARTICIPANT__CONTEXT_CONTROL_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__CONTEXT_CONTROL_CODE;
 
 	/**
      * The number of structural features of the '<em>Participant</em>' class.
@@ -3338,7 +3335,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_FEATURE_COUNT = CDAPackage.PARTICIPANT2_FEATURE_COUNT + 0;
+	int PARTICIPANT_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.GeneralHeaderConstraintsImpl <em>General Header Constraints</em>}' class.
@@ -3357,7 +3354,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__REALM_CODE = CDAPackage.CLINICAL_DOCUMENT__REALM_CODE;
+	int GENERAL_HEADER_CONSTRAINTS__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -3366,7 +3363,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__TYPE_ID = CDAPackage.CLINICAL_DOCUMENT__TYPE_ID;
+	int GENERAL_HEADER_CONSTRAINTS__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -3375,7 +3372,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__TEMPLATE_ID = CDAPackage.CLINICAL_DOCUMENT__TEMPLATE_ID;
+	int GENERAL_HEADER_CONSTRAINTS__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference.
@@ -3384,7 +3381,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__ID = CDAPackage.CLINICAL_DOCUMENT__ID;
+	int GENERAL_HEADER_CONSTRAINTS__ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -3393,7 +3390,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__CODE = CDAPackage.CLINICAL_DOCUMENT__CODE;
+	int GENERAL_HEADER_CONSTRAINTS__CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CODE;
 
 	/**
      * The feature id for the '<em><b>Title</b></em>' containment reference.
@@ -3402,7 +3399,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__TITLE = CDAPackage.CLINICAL_DOCUMENT__TITLE;
+	int GENERAL_HEADER_CONSTRAINTS__TITLE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__TITLE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -3411,7 +3408,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__EFFECTIVE_TIME = CDAPackage.CLINICAL_DOCUMENT__EFFECTIVE_TIME;
+	int GENERAL_HEADER_CONSTRAINTS__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Confidentiality Code</b></em>' containment reference.
@@ -3420,7 +3417,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__CONFIDENTIALITY_CODE = CDAPackage.CLINICAL_DOCUMENT__CONFIDENTIALITY_CODE;
+	int GENERAL_HEADER_CONSTRAINTS__CONFIDENTIALITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CONFIDENTIALITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -3429,7 +3426,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__LANGUAGE_CODE = CDAPackage.CLINICAL_DOCUMENT__LANGUAGE_CODE;
+	int GENERAL_HEADER_CONSTRAINTS__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Set Id</b></em>' containment reference.
@@ -3438,7 +3435,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__SET_ID = CDAPackage.CLINICAL_DOCUMENT__SET_ID;
+	int GENERAL_HEADER_CONSTRAINTS__SET_ID = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__SET_ID;
 
 	/**
      * The feature id for the '<em><b>Version Number</b></em>' containment reference.
@@ -3447,7 +3444,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__VERSION_NUMBER = CDAPackage.CLINICAL_DOCUMENT__VERSION_NUMBER;
+	int GENERAL_HEADER_CONSTRAINTS__VERSION_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__VERSION_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Copy Time</b></em>' containment reference.
@@ -3456,7 +3453,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__COPY_TIME = CDAPackage.CLINICAL_DOCUMENT__COPY_TIME;
+	int GENERAL_HEADER_CONSTRAINTS__COPY_TIME = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COPY_TIME;
 
 	/**
      * The feature id for the '<em><b>Record Target</b></em>' containment reference list.
@@ -3465,7 +3462,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__RECORD_TARGET = CDAPackage.CLINICAL_DOCUMENT__RECORD_TARGET;
+	int GENERAL_HEADER_CONSTRAINTS__RECORD_TARGET = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__RECORD_TARGET;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -3474,7 +3471,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__AUTHOR = CDAPackage.CLINICAL_DOCUMENT__AUTHOR;
+	int GENERAL_HEADER_CONSTRAINTS__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Data Enterer</b></em>' containment reference.
@@ -3483,7 +3480,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__DATA_ENTERER = CDAPackage.CLINICAL_DOCUMENT__DATA_ENTERER;
+	int GENERAL_HEADER_CONSTRAINTS__DATA_ENTERER = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__DATA_ENTERER;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -3492,7 +3489,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__INFORMANT = CDAPackage.CLINICAL_DOCUMENT__INFORMANT;
+	int GENERAL_HEADER_CONSTRAINTS__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Custodian</b></em>' containment reference.
@@ -3501,7 +3498,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__CUSTODIAN = CDAPackage.CLINICAL_DOCUMENT__CUSTODIAN;
+	int GENERAL_HEADER_CONSTRAINTS__CUSTODIAN = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CUSTODIAN;
 
 	/**
      * The feature id for the '<em><b>Information Recipient</b></em>' containment reference list.
@@ -3510,7 +3507,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__INFORMATION_RECIPIENT = CDAPackage.CLINICAL_DOCUMENT__INFORMATION_RECIPIENT;
+	int GENERAL_HEADER_CONSTRAINTS__INFORMATION_RECIPIENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__INFORMATION_RECIPIENT;
 
 	/**
      * The feature id for the '<em><b>Legal Authenticator</b></em>' containment reference.
@@ -3519,7 +3516,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__LEGAL_AUTHENTICATOR = CDAPackage.CLINICAL_DOCUMENT__LEGAL_AUTHENTICATOR;
+	int GENERAL_HEADER_CONSTRAINTS__LEGAL_AUTHENTICATOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__LEGAL_AUTHENTICATOR;
 
 	/**
      * The feature id for the '<em><b>Authenticator</b></em>' containment reference list.
@@ -3528,7 +3525,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__AUTHENTICATOR = CDAPackage.CLINICAL_DOCUMENT__AUTHENTICATOR;
+	int GENERAL_HEADER_CONSTRAINTS__AUTHENTICATOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHENTICATOR;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -3537,7 +3534,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__PARTICIPANT = CDAPackage.CLINICAL_DOCUMENT__PARTICIPANT;
+	int GENERAL_HEADER_CONSTRAINTS__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>In Fulfillment Of</b></em>' containment reference list.
@@ -3546,7 +3543,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__IN_FULFILLMENT_OF = CDAPackage.CLINICAL_DOCUMENT__IN_FULFILLMENT_OF;
+	int GENERAL_HEADER_CONSTRAINTS__IN_FULFILLMENT_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__IN_FULFILLMENT_OF;
 
 	/**
      * The feature id for the '<em><b>Documentation Of</b></em>' containment reference list.
@@ -3555,7 +3552,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__DOCUMENTATION_OF = CDAPackage.CLINICAL_DOCUMENT__DOCUMENTATION_OF;
+	int GENERAL_HEADER_CONSTRAINTS__DOCUMENTATION_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__DOCUMENTATION_OF;
 
 	/**
      * The feature id for the '<em><b>Related Document</b></em>' containment reference list.
@@ -3564,7 +3561,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__RELATED_DOCUMENT = CDAPackage.CLINICAL_DOCUMENT__RELATED_DOCUMENT;
+	int GENERAL_HEADER_CONSTRAINTS__RELATED_DOCUMENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__RELATED_DOCUMENT;
 
 	/**
      * The feature id for the '<em><b>Authorization</b></em>' containment reference list.
@@ -3573,7 +3570,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__AUTHORIZATION = CDAPackage.CLINICAL_DOCUMENT__AUTHORIZATION;
+	int GENERAL_HEADER_CONSTRAINTS__AUTHORIZATION = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__AUTHORIZATION;
 
 	/**
      * The feature id for the '<em><b>Component Of</b></em>' containment reference.
@@ -3582,7 +3579,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__COMPONENT_OF = CDAPackage.CLINICAL_DOCUMENT__COMPONENT_OF;
+	int GENERAL_HEADER_CONSTRAINTS__COMPONENT_OF = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COMPONENT_OF;
 
 	/**
      * The feature id for the '<em><b>Component</b></em>' containment reference.
@@ -3591,7 +3588,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__COMPONENT = CDAPackage.CLINICAL_DOCUMENT__COMPONENT;
+	int GENERAL_HEADER_CONSTRAINTS__COMPONENT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__COMPONENT;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -3600,7 +3597,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__NULL_FLAVOR = CDAPackage.CLINICAL_DOCUMENT__NULL_FLAVOR;
+	int GENERAL_HEADER_CONSTRAINTS__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -3609,7 +3606,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__CLASS_CODE = CDAPackage.CLINICAL_DOCUMENT__CLASS_CODE;
+	int GENERAL_HEADER_CONSTRAINTS__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -3618,7 +3615,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS__MOOD_CODE = CDAPackage.CLINICAL_DOCUMENT__MOOD_CODE;
+	int GENERAL_HEADER_CONSTRAINTS__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT__MOOD_CODE;
 
 	/**
      * The number of structural features of the '<em>General Header Constraints</em>' class.
@@ -3627,7 +3624,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT = CDAPackage.CLINICAL_DOCUMENT_FEATURE_COUNT + 0;
+	int GENERAL_HEADER_CONSTRAINTS_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.CLINICAL_DOCUMENT_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.PersonalHealthcareMonitoringReportImpl <em>Personal Healthcare Monitoring Report</em>}' class.
@@ -4306,7 +4303,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__REALM_CODE = CDAPackage.OBSERVATION__REALM_CODE;
+	int WAVEFORM_SERIES_OBSERVATION__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -4315,7 +4312,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__TYPE_ID = CDAPackage.OBSERVATION__TYPE_ID;
+	int WAVEFORM_SERIES_OBSERVATION__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -4324,7 +4321,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__TEMPLATE_ID = CDAPackage.OBSERVATION__TEMPLATE_ID;
+	int WAVEFORM_SERIES_OBSERVATION__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -4333,7 +4330,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__ID = CDAPackage.OBSERVATION__ID;
+	int WAVEFORM_SERIES_OBSERVATION__ID = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -4342,7 +4339,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__CODE = CDAPackage.OBSERVATION__CODE;
+	int WAVEFORM_SERIES_OBSERVATION__CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CODE;
 
 	/**
      * The feature id for the '<em><b>Derivation Expr</b></em>' containment reference.
@@ -4351,7 +4348,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__DERIVATION_EXPR = CDAPackage.OBSERVATION__DERIVATION_EXPR;
+	int WAVEFORM_SERIES_OBSERVATION__DERIVATION_EXPR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__DERIVATION_EXPR;
 
 	/**
      * The feature id for the '<em><b>Text</b></em>' containment reference.
@@ -4360,7 +4357,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__TEXT = CDAPackage.OBSERVATION__TEXT;
+	int WAVEFORM_SERIES_OBSERVATION__TEXT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TEXT;
 
 	/**
      * The feature id for the '<em><b>Status Code</b></em>' containment reference.
@@ -4369,7 +4366,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__STATUS_CODE = CDAPackage.OBSERVATION__STATUS_CODE;
+	int WAVEFORM_SERIES_OBSERVATION__STATUS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__STATUS_CODE;
 
 	/**
      * The feature id for the '<em><b>Effective Time</b></em>' containment reference.
@@ -4378,7 +4375,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__EFFECTIVE_TIME = CDAPackage.OBSERVATION__EFFECTIVE_TIME;
+	int WAVEFORM_SERIES_OBSERVATION__EFFECTIVE_TIME = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__EFFECTIVE_TIME;
 
 	/**
      * The feature id for the '<em><b>Priority Code</b></em>' containment reference.
@@ -4387,7 +4384,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__PRIORITY_CODE = CDAPackage.OBSERVATION__PRIORITY_CODE;
+	int WAVEFORM_SERIES_OBSERVATION__PRIORITY_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRIORITY_CODE;
 
 	/**
      * The feature id for the '<em><b>Repeat Number</b></em>' containment reference.
@@ -4396,7 +4393,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__REPEAT_NUMBER = CDAPackage.OBSERVATION__REPEAT_NUMBER;
+	int WAVEFORM_SERIES_OBSERVATION__REPEAT_NUMBER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REPEAT_NUMBER;
 
 	/**
      * The feature id for the '<em><b>Language Code</b></em>' containment reference.
@@ -4405,7 +4402,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__LANGUAGE_CODE = CDAPackage.OBSERVATION__LANGUAGE_CODE;
+	int WAVEFORM_SERIES_OBSERVATION__LANGUAGE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__LANGUAGE_CODE;
 
 	/**
      * The feature id for the '<em><b>Value</b></em>' containment reference list.
@@ -4414,7 +4411,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__VALUE = CDAPackage.OBSERVATION__VALUE;
+	int WAVEFORM_SERIES_OBSERVATION__VALUE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__VALUE;
 
 	/**
      * The feature id for the '<em><b>Interpretation Code</b></em>' containment reference list.
@@ -4423,7 +4420,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__INTERPRETATION_CODE = CDAPackage.OBSERVATION__INTERPRETATION_CODE;
+	int WAVEFORM_SERIES_OBSERVATION__INTERPRETATION_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INTERPRETATION_CODE;
 
 	/**
      * The feature id for the '<em><b>Method Code</b></em>' containment reference list.
@@ -4432,7 +4429,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__METHOD_CODE = CDAPackage.OBSERVATION__METHOD_CODE;
+	int WAVEFORM_SERIES_OBSERVATION__METHOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__METHOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Target Site Code</b></em>' containment reference list.
@@ -4441,7 +4438,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__TARGET_SITE_CODE = CDAPackage.OBSERVATION__TARGET_SITE_CODE;
+	int WAVEFORM_SERIES_OBSERVATION__TARGET_SITE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__TARGET_SITE_CODE;
 
 	/**
      * The feature id for the '<em><b>Subject</b></em>' containment reference.
@@ -4450,7 +4447,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__SUBJECT = CDAPackage.OBSERVATION__SUBJECT;
+	int WAVEFORM_SERIES_OBSERVATION__SUBJECT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SUBJECT;
 
 	/**
      * The feature id for the '<em><b>Specimen</b></em>' containment reference list.
@@ -4459,7 +4456,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__SPECIMEN = CDAPackage.OBSERVATION__SPECIMEN;
+	int WAVEFORM_SERIES_OBSERVATION__SPECIMEN = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__SPECIMEN;
 
 	/**
      * The feature id for the '<em><b>Performer</b></em>' containment reference list.
@@ -4468,7 +4465,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__PERFORMER = CDAPackage.OBSERVATION__PERFORMER;
+	int WAVEFORM_SERIES_OBSERVATION__PERFORMER = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PERFORMER;
 
 	/**
      * The feature id for the '<em><b>Author</b></em>' containment reference list.
@@ -4477,7 +4474,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__AUTHOR = CDAPackage.OBSERVATION__AUTHOR;
+	int WAVEFORM_SERIES_OBSERVATION__AUTHOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__AUTHOR;
 
 	/**
      * The feature id for the '<em><b>Informant</b></em>' containment reference list.
@@ -4486,7 +4483,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__INFORMANT = CDAPackage.OBSERVATION__INFORMANT;
+	int WAVEFORM_SERIES_OBSERVATION__INFORMANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__INFORMANT;
 
 	/**
      * The feature id for the '<em><b>Participant</b></em>' containment reference list.
@@ -4495,7 +4492,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__PARTICIPANT = CDAPackage.OBSERVATION__PARTICIPANT;
+	int WAVEFORM_SERIES_OBSERVATION__PARTICIPANT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PARTICIPANT;
 
 	/**
      * The feature id for the '<em><b>Entry Relationship</b></em>' containment reference list.
@@ -4504,7 +4501,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__ENTRY_RELATIONSHIP = CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
+	int WAVEFORM_SERIES_OBSERVATION__ENTRY_RELATIONSHIP = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__ENTRY_RELATIONSHIP;
 
 	/**
      * The feature id for the '<em><b>Reference</b></em>' containment reference list.
@@ -4513,7 +4510,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__REFERENCE = CDAPackage.OBSERVATION__REFERENCE;
+	int WAVEFORM_SERIES_OBSERVATION__REFERENCE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE;
 
 	/**
      * The feature id for the '<em><b>Precondition</b></em>' containment reference list.
@@ -4522,7 +4519,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__PRECONDITION = CDAPackage.OBSERVATION__PRECONDITION;
+	int WAVEFORM_SERIES_OBSERVATION__PRECONDITION = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__PRECONDITION;
 
 	/**
      * The feature id for the '<em><b>Reference Range</b></em>' containment reference list.
@@ -4531,7 +4528,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__REFERENCE_RANGE = CDAPackage.OBSERVATION__REFERENCE_RANGE;
+	int WAVEFORM_SERIES_OBSERVATION__REFERENCE_RANGE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__REFERENCE_RANGE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -4540,7 +4537,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__NULL_FLAVOR = CDAPackage.OBSERVATION__NULL_FLAVOR;
+	int WAVEFORM_SERIES_OBSERVATION__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -4549,7 +4546,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__CLASS_CODE = CDAPackage.OBSERVATION__CLASS_CODE;
+	int WAVEFORM_SERIES_OBSERVATION__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Mood Code</b></em>' attribute.
@@ -4558,7 +4555,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__MOOD_CODE = CDAPackage.OBSERVATION__MOOD_CODE;
+	int WAVEFORM_SERIES_OBSERVATION__MOOD_CODE = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__MOOD_CODE;
 
 	/**
      * The feature id for the '<em><b>Negation Ind</b></em>' attribute.
@@ -4567,7 +4564,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION__NEGATION_IND = CDAPackage.OBSERVATION__NEGATION_IND;
+	int WAVEFORM_SERIES_OBSERVATION__NEGATION_IND = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION__NEGATION_IND;
 
 	/**
      * The number of structural features of the '<em>Waveform Series Observation</em>' class.
@@ -4576,7 +4573,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int WAVEFORM_SERIES_OBSERVATION_FEATURE_COUNT = CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
+	int WAVEFORM_SERIES_OBSERVATION_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.OBSERVATION_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.ResultsImpl <em>Results</em>}' class.
@@ -4776,7 +4773,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__REALM_CODE = CDAPackage.PARTICIPANT_ROLE__REALM_CODE;
+	int PARTICIPANT_ROLE__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -4785,7 +4782,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__TYPE_ID = CDAPackage.PARTICIPANT_ROLE__TYPE_ID;
+	int PARTICIPANT_ROLE__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -4794,7 +4791,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__TEMPLATE_ID = CDAPackage.PARTICIPANT_ROLE__TEMPLATE_ID;
+	int PARTICIPANT_ROLE__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -4803,7 +4800,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__ID = CDAPackage.PARTICIPANT_ROLE__ID;
+	int PARTICIPANT_ROLE__ID = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -4812,7 +4809,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__CODE = CDAPackage.PARTICIPANT_ROLE__CODE;
+	int PARTICIPANT_ROLE__CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__CODE;
 
 	/**
      * The feature id for the '<em><b>Addr</b></em>' containment reference list.
@@ -4821,7 +4818,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__ADDR = CDAPackage.PARTICIPANT_ROLE__ADDR;
+	int PARTICIPANT_ROLE__ADDR = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__ADDR;
 
 	/**
      * The feature id for the '<em><b>Telecom</b></em>' containment reference list.
@@ -4830,7 +4827,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__TELECOM = CDAPackage.PARTICIPANT_ROLE__TELECOM;
+	int PARTICIPANT_ROLE__TELECOM = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__TELECOM;
 
 	/**
      * The feature id for the '<em><b>Playing Device</b></em>' containment reference.
@@ -4839,7 +4836,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__PLAYING_DEVICE = CDAPackage.PARTICIPANT_ROLE__PLAYING_DEVICE;
+	int PARTICIPANT_ROLE__PLAYING_DEVICE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__PLAYING_DEVICE;
 
 	/**
      * The feature id for the '<em><b>Playing Entity</b></em>' containment reference.
@@ -4848,7 +4845,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__PLAYING_ENTITY = CDAPackage.PARTICIPANT_ROLE__PLAYING_ENTITY;
+	int PARTICIPANT_ROLE__PLAYING_ENTITY = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__PLAYING_ENTITY;
 
 	/**
      * The feature id for the '<em><b>Scoping Entity</b></em>' containment reference.
@@ -4857,7 +4854,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__SCOPING_ENTITY = CDAPackage.PARTICIPANT_ROLE__SCOPING_ENTITY;
+	int PARTICIPANT_ROLE__SCOPING_ENTITY = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__SCOPING_ENTITY;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -4866,7 +4863,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__NULL_FLAVOR = CDAPackage.PARTICIPANT_ROLE__NULL_FLAVOR;
+	int PARTICIPANT_ROLE__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -4875,7 +4872,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE__CLASS_CODE = CDAPackage.PARTICIPANT_ROLE__CLASS_CODE;
+	int PARTICIPANT_ROLE__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE__CLASS_CODE;
 
 	/**
      * The number of structural features of the '<em>Participant Role</em>' class.
@@ -4884,7 +4881,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PARTICIPANT_ROLE_FEATURE_COUNT = CDAPackage.PARTICIPANT_ROLE_FEATURE_COUNT + 0;
+	int PARTICIPANT_ROLE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT_ROLE_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.PHMRProductInstanceImpl <em>PHMR Product Instance</em>}' class.
@@ -5030,7 +5027,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PHMR_PRODUCT_INSTANCE_REFERENCE__REALM_CODE = CDAPackage.PARTICIPANT2__REALM_CODE;
+	int PHMR_PRODUCT_INSTANCE_REFERENCE__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -5039,7 +5036,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PHMR_PRODUCT_INSTANCE_REFERENCE__TYPE_ID = CDAPackage.PARTICIPANT2__TYPE_ID;
+	int PHMR_PRODUCT_INSTANCE_REFERENCE__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -5048,7 +5045,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PHMR_PRODUCT_INSTANCE_REFERENCE__TEMPLATE_ID = CDAPackage.PARTICIPANT2__TEMPLATE_ID;
+	int PHMR_PRODUCT_INSTANCE_REFERENCE__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Time</b></em>' containment reference.
@@ -5057,7 +5054,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PHMR_PRODUCT_INSTANCE_REFERENCE__TIME = CDAPackage.PARTICIPANT2__TIME;
+	int PHMR_PRODUCT_INSTANCE_REFERENCE__TIME = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__TIME;
 
 	/**
      * The feature id for the '<em><b>Awareness Code</b></em>' containment reference.
@@ -5066,7 +5063,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PHMR_PRODUCT_INSTANCE_REFERENCE__AWARENESS_CODE = CDAPackage.PARTICIPANT2__AWARENESS_CODE;
+	int PHMR_PRODUCT_INSTANCE_REFERENCE__AWARENESS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__AWARENESS_CODE;
 
 	/**
      * The feature id for the '<em><b>Participant Role</b></em>' containment reference.
@@ -5075,7 +5072,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PHMR_PRODUCT_INSTANCE_REFERENCE__PARTICIPANT_ROLE = CDAPackage.PARTICIPANT2__PARTICIPANT_ROLE;
+	int PHMR_PRODUCT_INSTANCE_REFERENCE__PARTICIPANT_ROLE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__PARTICIPANT_ROLE;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -5084,7 +5081,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PHMR_PRODUCT_INSTANCE_REFERENCE__NULL_FLAVOR = CDAPackage.PARTICIPANT2__NULL_FLAVOR;
+	int PHMR_PRODUCT_INSTANCE_REFERENCE__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Type Code</b></em>' attribute.
@@ -5093,7 +5090,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PHMR_PRODUCT_INSTANCE_REFERENCE__TYPE_CODE = CDAPackage.PARTICIPANT2__TYPE_CODE;
+	int PHMR_PRODUCT_INSTANCE_REFERENCE__TYPE_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__TYPE_CODE;
 
 	/**
      * The feature id for the '<em><b>Context Control Code</b></em>' attribute.
@@ -5102,7 +5099,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PHMR_PRODUCT_INSTANCE_REFERENCE__CONTEXT_CONTROL_CODE = CDAPackage.PARTICIPANT2__CONTEXT_CONTROL_CODE;
+	int PHMR_PRODUCT_INSTANCE_REFERENCE__CONTEXT_CONTROL_CODE = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2__CONTEXT_CONTROL_CODE;
 
 	/**
      * The number of structural features of the '<em>PHMR Product Instance Reference</em>' class.
@@ -5111,7 +5108,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PHMR_PRODUCT_INSTANCE_REFERENCE_FEATURE_COUNT = CDAPackage.PARTICIPANT2_FEATURE_COUNT + 0;
+	int PHMR_PRODUCT_INSTANCE_REFERENCE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.PARTICIPANT2_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.PlayingDeviceImpl <em>Playing Device</em>}' class.
@@ -5130,7 +5127,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PLAYING_DEVICE__REALM_CODE = CDAPackage.DEVICE__REALM_CODE;
+	int PLAYING_DEVICE__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.DEVICE__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -5139,7 +5136,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PLAYING_DEVICE__TYPE_ID = CDAPackage.DEVICE__TYPE_ID;
+	int PLAYING_DEVICE__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.DEVICE__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -5148,7 +5145,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PLAYING_DEVICE__TEMPLATE_ID = CDAPackage.DEVICE__TEMPLATE_ID;
+	int PLAYING_DEVICE__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.DEVICE__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -5157,7 +5154,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PLAYING_DEVICE__CODE = CDAPackage.DEVICE__CODE;
+	int PLAYING_DEVICE__CODE = org.eclipse.mdht.uml.cda.CDAPackage.DEVICE__CODE;
 
 	/**
      * The feature id for the '<em><b>Manufacturer Model Name</b></em>' containment reference.
@@ -5166,7 +5163,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PLAYING_DEVICE__MANUFACTURER_MODEL_NAME = CDAPackage.DEVICE__MANUFACTURER_MODEL_NAME;
+	int PLAYING_DEVICE__MANUFACTURER_MODEL_NAME = org.eclipse.mdht.uml.cda.CDAPackage.DEVICE__MANUFACTURER_MODEL_NAME;
 
 	/**
      * The feature id for the '<em><b>Software Name</b></em>' containment reference.
@@ -5175,7 +5172,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PLAYING_DEVICE__SOFTWARE_NAME = CDAPackage.DEVICE__SOFTWARE_NAME;
+	int PLAYING_DEVICE__SOFTWARE_NAME = org.eclipse.mdht.uml.cda.CDAPackage.DEVICE__SOFTWARE_NAME;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -5184,7 +5181,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PLAYING_DEVICE__NULL_FLAVOR = CDAPackage.DEVICE__NULL_FLAVOR;
+	int PLAYING_DEVICE__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.DEVICE__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -5193,7 +5190,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PLAYING_DEVICE__CLASS_CODE = CDAPackage.DEVICE__CLASS_CODE;
+	int PLAYING_DEVICE__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.DEVICE__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Determiner Code</b></em>' attribute.
@@ -5202,7 +5199,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PLAYING_DEVICE__DETERMINER_CODE = CDAPackage.DEVICE__DETERMINER_CODE;
+	int PLAYING_DEVICE__DETERMINER_CODE = org.eclipse.mdht.uml.cda.CDAPackage.DEVICE__DETERMINER_CODE;
 
 	/**
      * The number of structural features of the '<em>Playing Device</em>' class.
@@ -5211,7 +5208,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int PLAYING_DEVICE_FEATURE_COUNT = CDAPackage.DEVICE_FEATURE_COUNT + 0;
+	int PLAYING_DEVICE_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.DEVICE_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.ScopingEntityImpl <em>Scoping Entity</em>}' class.
@@ -5230,7 +5227,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SCOPING_ENTITY__REALM_CODE = CDAPackage.ENTITY__REALM_CODE;
+	int SCOPING_ENTITY__REALM_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ENTITY__REALM_CODE;
 
 	/**
      * The feature id for the '<em><b>Type Id</b></em>' containment reference.
@@ -5239,7 +5236,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SCOPING_ENTITY__TYPE_ID = CDAPackage.ENTITY__TYPE_ID;
+	int SCOPING_ENTITY__TYPE_ID = org.eclipse.mdht.uml.cda.CDAPackage.ENTITY__TYPE_ID;
 
 	/**
      * The feature id for the '<em><b>Template Id</b></em>' containment reference list.
@@ -5248,7 +5245,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SCOPING_ENTITY__TEMPLATE_ID = CDAPackage.ENTITY__TEMPLATE_ID;
+	int SCOPING_ENTITY__TEMPLATE_ID = org.eclipse.mdht.uml.cda.CDAPackage.ENTITY__TEMPLATE_ID;
 
 	/**
      * The feature id for the '<em><b>Id</b></em>' containment reference list.
@@ -5257,7 +5254,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SCOPING_ENTITY__ID = CDAPackage.ENTITY__ID;
+	int SCOPING_ENTITY__ID = org.eclipse.mdht.uml.cda.CDAPackage.ENTITY__ID;
 
 	/**
      * The feature id for the '<em><b>Code</b></em>' containment reference.
@@ -5266,7 +5263,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SCOPING_ENTITY__CODE = CDAPackage.ENTITY__CODE;
+	int SCOPING_ENTITY__CODE = org.eclipse.mdht.uml.cda.CDAPackage.ENTITY__CODE;
 
 	/**
      * The feature id for the '<em><b>Desc</b></em>' containment reference.
@@ -5275,7 +5272,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SCOPING_ENTITY__DESC = CDAPackage.ENTITY__DESC;
+	int SCOPING_ENTITY__DESC = org.eclipse.mdht.uml.cda.CDAPackage.ENTITY__DESC;
 
 	/**
      * The feature id for the '<em><b>Null Flavor</b></em>' attribute.
@@ -5284,7 +5281,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SCOPING_ENTITY__NULL_FLAVOR = CDAPackage.ENTITY__NULL_FLAVOR;
+	int SCOPING_ENTITY__NULL_FLAVOR = org.eclipse.mdht.uml.cda.CDAPackage.ENTITY__NULL_FLAVOR;
 
 	/**
      * The feature id for the '<em><b>Class Code</b></em>' attribute.
@@ -5293,7 +5290,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SCOPING_ENTITY__CLASS_CODE = CDAPackage.ENTITY__CLASS_CODE;
+	int SCOPING_ENTITY__CLASS_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ENTITY__CLASS_CODE;
 
 	/**
      * The feature id for the '<em><b>Determiner Code</b></em>' attribute.
@@ -5302,7 +5299,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SCOPING_ENTITY__DETERMINER_CODE = CDAPackage.ENTITY__DETERMINER_CODE;
+	int SCOPING_ENTITY__DETERMINER_CODE = org.eclipse.mdht.uml.cda.CDAPackage.ENTITY__DETERMINER_CODE;
 
 	/**
      * The number of structural features of the '<em>Scoping Entity</em>' class.
@@ -5311,7 +5308,7 @@ public interface PhmrPackage extends EPackage {
      * @generated
      * @ordered
      */
-	int SCOPING_ENTITY_FEATURE_COUNT = CDAPackage.ENTITY_FEATURE_COUNT + 0;
+	int SCOPING_ENTITY_FEATURE_COUNT = org.eclipse.mdht.uml.cda.CDAPackage.ENTITY_FEATURE_COUNT + 0;
 
 	/**
      * The meta object id for the '{@link org.openhealthtools.mdht.uml.cda.phmr.impl.VitalSignsOrganizerImpl <em>Vital Signs Organizer</em>}' class.

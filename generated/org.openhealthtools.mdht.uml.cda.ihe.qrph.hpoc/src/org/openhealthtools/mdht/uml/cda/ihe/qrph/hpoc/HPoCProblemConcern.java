@@ -2,12 +2,8 @@
  */
 package org.openhealthtools.mdht.uml.cda.ihe.qrph.hpoc;
 
-import java.lang.Iterable;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
+import org.eclipse.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.consol.ProblemConcernAct;
 
 /**

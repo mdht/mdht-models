@@ -20,8 +20,6 @@ import org.eclipse.ocl.ecore.OCL;
 
 import org.eclipse.ocl.expressions.OCLExpression;
 
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.HistoryofInfectionLiveBirthSection;
 import org.openhealthtools.mdht.uml.cda.vsbr.InfectionPresentLiveBirth;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
@@ -46,7 +44,15 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperations {
+public class HistoryofInfectionLiveBirthSectionOperations
+		extends org.eclipse.mdht.uml.cda.operations.SectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -75,7 +81,7 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -92,30 +98,34 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 			HistoryofInfectionLiveBirthSection historyofInfectionLiveBirthSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION);
 			try {
-				VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyofInfectionLiveBirthSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyofInfectionLiveBirthSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HistoryofInfectionLiveBirthSectionTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									historyofInfectionLiveBirthSection, context) }),
-					new Object[] { historyofInfectionLiveBirthSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"HistoryofInfectionLiveBirthSectionHistoryofInfectionLiveBirthSectionTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										historyofInfectionLiveBirthSection, context) }),
+						new Object[] { historyofInfectionLiveBirthSection }));
 			}
 
 			return false;
@@ -131,9 +141,9 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and "
-			+ "let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in "
-			+ "value.code = '71459-2' and value.codeSystemName = 'LOINC')";
+	protected static final String VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CE) and " +
+			"let value : datatypes::CE = self.code.oclAsType(datatypes::CE) in " +
+			"value.code = '71459-2' and value.codeSystemName = 'LOINC')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryofInfectionLiveBirthSectionCode(HistoryofInfectionLiveBirthSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Historyof Infection Live Birth Section Code</em>}' invariant operation.
@@ -144,7 +154,7 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,28 +171,34 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 			HistoryofInfectionLiveBirthSection historyofInfectionLiveBirthSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION);
 			try {
-				VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyofInfectionLiveBirthSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyofInfectionLiveBirthSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HistoryofInfectionLiveBirthSectionCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									historyofInfectionLiveBirthSection, context) }),
-					new Object[] { historyofInfectionLiveBirthSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"HistoryofInfectionLiveBirthSectionHistoryofInfectionLiveBirthSectionCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										historyofInfectionLiveBirthSection, context) }),
+						new Object[] { historyofInfectionLiveBirthSection }));
 			}
 
 			return false;
@@ -209,7 +225,7 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -226,28 +242,34 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 			HistoryofInfectionLiveBirthSection historyofInfectionLiveBirthSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION);
 			try {
-				VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyofInfectionLiveBirthSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyofInfectionLiveBirthSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HistoryofInfectionLiveBirthSectionText",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									historyofInfectionLiveBirthSection, context) }),
-					new Object[] { historyofInfectionLiveBirthSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_TEXT,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"HistoryofInfectionLiveBirthSectionHistoryofInfectionLiveBirthSectionText",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										historyofInfectionLiveBirthSection, context) }),
+						new Object[] { historyofInfectionLiveBirthSection }));
 			}
 
 			return false;
@@ -263,7 +285,7 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::Infection Present: Live Birth))";
+	protected static final String VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.nullFlavor <> vocab::NullFlavor::NI implies entry->exists(entry : cda::Entry | not entry.observation.oclIsUndefined() and entry.observation.oclIsKindOf(vsbr::InfectionPresentLiveBirth))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateHistoryofInfectionLiveBirthSectionInfectionPresentLiveBirth(HistoryofInfectionLiveBirthSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Historyof Infection Live Birth Section Infection Present Live Birth</em>}' invariant operation.
@@ -274,7 +296,7 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -291,30 +313,34 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 			HistoryofInfectionLiveBirthSection historyofInfectionLiveBirthSection, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
 
-		if (VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION);
 			try {
-				VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(
-			VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			historyofInfectionLiveBirthSection)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				historyofInfectionLiveBirthSection)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"HistoryofInfectionLiveBirthSectionInfectionPresentLiveBirth",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
-									historyofInfectionLiveBirthSection, context) }),
-					new Object[] { historyofInfectionLiveBirthSection }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION__HISTORYOF_INFECTION_LIVE_BIRTH_SECTION_INFECTION_PRESENT_LIVE_BIRTH,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"HistoryofInfectionLiveBirthSectionHistoryofInfectionLiveBirthSectionInfectionPresentLiveBirth",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										historyofInfectionLiveBirthSection, context) }),
+						new Object[] { historyofInfectionLiveBirthSection }));
 			}
 
 			return false;
@@ -330,7 +356,7 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::Infection Present: Live Birth)).oclAsType(vsbr::Infection Present: Live Birth)";
+	protected static final String GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(vsbr::InfectionPresentLiveBirth)).oclAsType(vsbr::InfectionPresentLiveBirth)";
 
 	/**
 	 * The cached OCL query for the '{@link #getInfectionPresentLiveBirths(HistoryofInfectionLiveBirthSection) <em>Get Infection Present Live Births</em>}' query operation.
@@ -350,20 +376,25 @@ public class HistoryofInfectionLiveBirthSectionOperations extends SectionOperati
 
 	public static EList<InfectionPresentLiveBirth> getInfectionPresentLiveBirths(
 			HistoryofInfectionLiveBirthSection historyofInfectionLiveBirthSection) {
+
 		if (GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(
 				VsbrPackage.Literals.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION,
 				VsbrPackage.Literals.HISTORYOF_INFECTION_LIVE_BIRTH_SECTION.getEAllOperations().get(59));
 			try {
-				GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_QRY = helper.createQuery(GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_EXP);
+				GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_QRY = helper.createQuery(
+					GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_EXP);
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_INFECTION_PRESENT_LIVE_BIRTHS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
-		Collection<InfectionPresentLiveBirth> result = (Collection<InfectionPresentLiveBirth>) query.evaluate(historyofInfectionLiveBirthSection);
+		Collection<InfectionPresentLiveBirth> result = (Collection<InfectionPresentLiveBirth>) query.evaluate(
+			historyofInfectionLiveBirthSection);
 		return new BasicEList.UnmodifiableEList<InfectionPresentLiveBirth>(result.size(), result.toArray());
 	}
 

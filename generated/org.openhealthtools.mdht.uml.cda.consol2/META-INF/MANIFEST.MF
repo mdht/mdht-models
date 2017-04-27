@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: %pluginName
 Bundle-SymbolicName: org.openhealthtools.mdht.uml.cda.consol2;singleton:=true
-Bundle-Version: 2.5.17.qualifier
+Bundle-Version: 3.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
@@ -17,7 +17,7 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.mdht.uml.hl7.vocab;visibility:=reexport,
  org.eclipse.uml2.types;visibility:=reexport
 Bundle-ActivationPolicy: lazy
-Bundle-Activator: org.openhealthtools.mdht.uml.cda.consol.ConsolPlugin$Implementation
+Bundle-Activator: org.openhealthtools.mdht.uml.cda.consol2.ConsolPlugin$Implementation
 Export-Package: org.openhealthtools.mdht.uml.cda.consol,
  org.openhealthtools.mdht.uml.cda.consol.impl,
  org.openhealthtools.mdht.uml.cda.consol.operations,

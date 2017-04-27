@@ -13,8 +13,6 @@ import org.eclipse.ocl.ParserException;
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
 
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.PregnancyRiskFactor;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -42,7 +40,14 @@ import org.openhealthtools.mdht.uml.cda.vsbr.util.VsbrValidator;
  *
  * @generated
  */
-public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
+public class PregnancyRiskFactorOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +76,7 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PREGNANCY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -87,28 +92,33 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyRiskFactorTemplateId(PregnancyRiskFactor pregnancyRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PREGNANCY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PREGNANCY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PREGNANCY_RISK_FACTOR);
 			try {
-				VALIDATE_PREGNANCY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyRiskFactor)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PREGNANCY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				pregnancyRiskFactor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_TEMPLATE_ID,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PregnancyRiskFactorTemplateId",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyRiskFactor, context) }),
-					new Object[] { pregnancyRiskFactor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_TEMPLATE_ID,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PregnancyRiskFactorPregnancyRiskFactorTemplateId",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										pregnancyRiskFactor, context) }),
+						new Object[] { pregnancyRiskFactor }));
 			}
 
 			return false;
@@ -135,7 +145,7 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PREGNANCY_RISK_FACTOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_RISK_FACTOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -151,28 +161,33 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyRiskFactorClassCode(PregnancyRiskFactor pregnancyRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PREGNANCY_RISK_FACTOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PREGNANCY_RISK_FACTOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PREGNANCY_RISK_FACTOR);
 			try {
-				VALIDATE_PREGNANCY_RISK_FACTOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_RISK_FACTOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_RISK_FACTOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyRiskFactor)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PREGNANCY_RISK_FACTOR_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				pregnancyRiskFactor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CLASS_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PregnancyRiskFactorClassCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyRiskFactor, context) }),
-					new Object[] { pregnancyRiskFactor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CLASS_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PregnancyRiskFactorPregnancyRiskFactorClassCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										pregnancyRiskFactor, context) }),
+						new Object[] { pregnancyRiskFactor }));
 			}
 
 			return false;
@@ -199,7 +214,7 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PREGNANCY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -215,28 +230,33 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyRiskFactorMoodCode(PregnancyRiskFactor pregnancyRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PREGNANCY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PREGNANCY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PREGNANCY_RISK_FACTOR);
 			try {
-				VALIDATE_PREGNANCY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyRiskFactor)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PREGNANCY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				pregnancyRiskFactor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_MOOD_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PregnancyRiskFactorMoodCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyRiskFactor, context) }),
-					new Object[] { pregnancyRiskFactor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_MOOD_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PregnancyRiskFactorPregnancyRiskFactorMoodCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										pregnancyRiskFactor, context) }),
+						new Object[] { pregnancyRiskFactor }));
 			}
 
 			return false;
@@ -263,7 +283,7 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PREGNANCY_RISK_FACTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_RISK_FACTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -279,28 +299,32 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyRiskFactorCodeP(PregnancyRiskFactor pregnancyRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PREGNANCY_RISK_FACTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PREGNANCY_RISK_FACTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PREGNANCY_RISK_FACTOR);
 			try {
-				VALIDATE_PREGNANCY_RISK_FACTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_RISK_FACTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_RISK_FACTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyRiskFactor)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PREGNANCY_RISK_FACTOR_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pregnancyRiskFactor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PregnancyRiskFactorCodeP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyRiskFactor, context) }),
-					new Object[] { pregnancyRiskFactor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PregnancyRiskFactorPregnancyRiskFactorCodeP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										pregnancyRiskFactor, context) }),
+						new Object[] { pregnancyRiskFactor }));
 			}
 
 			return false;
@@ -316,9 +340,9 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '73775-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.code = '73775-9' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePregnancyRiskFactorCode(PregnancyRiskFactor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Risk Factor Code</em>}' invariant operation.
@@ -329,7 +353,7 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -345,28 +369,32 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyRiskFactorCode(PregnancyRiskFactor pregnancyRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PREGNANCY_RISK_FACTOR);
 			try {
-				VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyRiskFactor)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PREGNANCY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pregnancyRiskFactor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PregnancyRiskFactorCode",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyRiskFactor, context) }),
-					new Object[] { pregnancyRiskFactor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PregnancyRiskFactorPregnancyRiskFactorCode",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										pregnancyRiskFactor, context) }),
+						new Object[] { pregnancyRiskFactor }));
 			}
 
 			return false;
@@ -382,9 +410,9 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '73211009' or value.code = '11687002' or value.code = '38341003' or value.code = '48194001' or value.code = '15938005' or value.code = '161765003' or value.code = '271903000' or value.code = '65046005' or value.code = '58533008' or value.code = '63487001' or value.code = '200144004' or value.code = '260413007'))";
+	protected static final String VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '73211009' or value.code = '11687002' or value.code = '38341003' or value.code = '48194001' or value.code = '15938005' or value.code = '161765003' or value.code = '271903000' or value.code = '65046005' or value.code = '58533008' or value.code = '63487001' or value.code = '200144004' or value.code = '260413007'))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePregnancyRiskFactorCodeVS(PregnancyRiskFactor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Risk Factor Code VS</em>}' invariant operation.
@@ -395,7 +423,7 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -411,28 +439,32 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyRiskFactorCodeVS(PregnancyRiskFactor pregnancyRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PREGNANCY_RISK_FACTOR);
 			try {
-				VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyRiskFactor)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PREGNANCY_RISK_FACTOR_CODE_VS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pregnancyRiskFactor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE_VS,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PregnancyRiskFactorCodeVS",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyRiskFactor, context) }),
-					new Object[] { pregnancyRiskFactor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_CODE_VS,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PregnancyRiskFactorPregnancyRiskFactorCodeVS",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										pregnancyRiskFactor, context) }),
+						new Object[] { pregnancyRiskFactor }));
 			}
 
 			return false;
@@ -448,9 +480,9 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '73211009' or value.code = '11687002' or value.code = '38341003' or value.code = '48194001' or value.code = '15938005' or value.code = '161765003' or value.code = '271903000' or value.code = '65046005' or value.code = '58533008' or value.code = '63487001' or value.code = '200144004' or value.code = '260413007')))";
+	protected static final String VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (self.value->size() = 1 and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and " +
+			"let value : datatypes::CD = element.oclAsType(datatypes::CD) in " +
+			"value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '73211009' or value.code = '11687002' or value.code = '38341003' or value.code = '48194001' or value.code = '15938005' or value.code = '161765003' or value.code = '271903000' or value.code = '65046005' or value.code = '58533008' or value.code = '63487001' or value.code = '200144004' or value.code = '260413007')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validatePregnancyRiskFactorValue(PregnancyRiskFactor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Pregnancy Risk Factor Value</em>}' invariant operation.
@@ -461,7 +493,7 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -477,28 +509,32 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyRiskFactorValue(PregnancyRiskFactor pregnancyRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PREGNANCY_RISK_FACTOR);
 			try {
-				VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyRiskFactor)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PREGNANCY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pregnancyRiskFactor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_VALUE,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PregnancyRiskFactorValue",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyRiskFactor, context) }),
-					new Object[] { pregnancyRiskFactor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_VALUE,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PregnancyRiskFactorPregnancyRiskFactorValue",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										pregnancyRiskFactor, context) }),
+						new Object[] { pregnancyRiskFactor }));
 			}
 
 			return false;
@@ -525,7 +561,7 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PREGNANCY_RISK_FACTOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_RISK_FACTOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -541,28 +577,32 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyRiskFactorValueP(PregnancyRiskFactor pregnancyRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PREGNANCY_RISK_FACTOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PREGNANCY_RISK_FACTOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PREGNANCY_RISK_FACTOR);
 			try {
-				VALIDATE_PREGNANCY_RISK_FACTOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_RISK_FACTOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_RISK_FACTOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyRiskFactor)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PREGNANCY_RISK_FACTOR_VALUE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(pregnancyRiskFactor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_VALUE_P,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PregnancyRiskFactorValueP",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyRiskFactor, context) }),
-					new Object[] { pregnancyRiskFactor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_VALUE_P,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PregnancyRiskFactorPregnancyRiskFactorValueP",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										pregnancyRiskFactor, context) }),
+						new Object[] { pregnancyRiskFactor }));
 			}
 
 			return false;
@@ -589,7 +629,7 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -605,28 +645,34 @@ public class PregnancyRiskFactorOperations extends ClinicalStatementOperations {
 	public static boolean validatePregnancyRiskFactorEntryRelationship(PregnancyRiskFactor pregnancyRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(VsbrPackage.Literals.PREGNANCY_RISK_FACTOR);
 			try {
-				VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(
+					helper.createInvariant(
+						VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			pregnancyRiskFactor)) {
+
+		if (!EOCL_ENV.get().createQuery(
+			VALIDATE_PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(
+				pregnancyRiskFactor)) {
 			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR,
-					VsbrValidator.DIAGNOSTIC_SOURCE,
-					VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP,
-					org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
-						"_UI_GenericInvariant_diagnostic",
-						new Object[] {
-								"PregnancyRiskFactorEntryRelationship",
-								org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(pregnancyRiskFactor, context) }),
-					new Object[] { pregnancyRiskFactor }));
+				diagnostics.add(
+					new BasicDiagnostic(
+						Diagnostic.ERROR, VsbrValidator.DIAGNOSTIC_SOURCE,
+						VsbrValidator.PREGNANCY_RISK_FACTOR__PREGNANCY_RISK_FACTOR_ENTRY_RELATIONSHIP,
+						org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString(
+							"_UI_GenericInvariant_diagnostic",
+							new Object[] {
+									"PregnancyRiskFactorPregnancyRiskFactorEntryRelationship",
+									org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(
+										pregnancyRiskFactor, context) }),
+						new Object[] { pregnancyRiskFactor }));
 			}
 
 			return false;

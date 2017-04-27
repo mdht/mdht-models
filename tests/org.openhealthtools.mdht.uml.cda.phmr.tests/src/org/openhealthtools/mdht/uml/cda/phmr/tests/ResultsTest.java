@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.Results;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.ResultsOperations;
@@ -65,66 +65,69 @@ public class ResultsTest extends  CDAValidationTest {
  
 									
 public void testValidateResultsResultOrganizer() {
-      OperationsTestCase<Results> validateResultsResultOrganizerTestCase = new OperationsTestCase<Results>(
-      "validateResultsResultOrganizer",
-      operationsForOCL.getOCLValue("VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<Results> validateResultsResultOrganizerTestCase = new OperationsTestCase<Results>(
+			"validateResultsResultOrganizer",
+			operationsForOCL.getOCLValue("VALIDATE_RESULTS_RESULT_ORGANIZER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(Results target) {
+			@Override
+			protected void updateToFail(Results target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(Results target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(Results target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultsOperations.validateResultsResultOrganizer(
-          (Results) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ResultsOperations.validateResultsResultOrganizer(
+					(Results) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateResultsResultOrganizerTestCase.doValidationTest();
+		validateResultsResultOrganizerTestCase.doValidationTest();
 }		
 
 
@@ -162,66 +165,69 @@ target.getPhmrResultOrganizer();
  
 									
 public void testValidateResultsSectionTemplateId() {
-      OperationsTestCase<Results> validateResultsSectionTemplateIdTestCase = new OperationsTestCase<Results>(
-      "validateResultsSectionTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<Results> validateResultsSectionTemplateIdTestCase = new OperationsTestCase<Results>(
+			"validateResultsSectionTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_RESULTS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(Results target) {
+			@Override
+			protected void updateToFail(Results target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(Results target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(Results target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return ResultsOperations.validateResultsSectionTemplateId(
-          (Results) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return ResultsOperations.validateResultsSectionTemplateId(
+					(Results) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validateResultsSectionTemplateIdTestCase.doValidationTest();
+		validateResultsSectionTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -250,6 +256,7 @@ public void testValidateResultsSectionTemplateId() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<Results> {
+		@Override
 		public Results create() {		
 			return PhmrFactory.eINSTANCE.createResults();
 		}
@@ -281,9 +288,9 @@ public void testValidateResultsSectionTemplateId() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -293,8 +300,8 @@ public void testValidateResultsSectionTemplateId() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

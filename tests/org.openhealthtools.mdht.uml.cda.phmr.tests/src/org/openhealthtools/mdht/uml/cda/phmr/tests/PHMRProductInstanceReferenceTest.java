@@ -28,8 +28,8 @@ import java.util.Map;
 
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.ecore.EObject;
+import org.eclipse.mdht.uml.cda.operations.CDAValidationTest;
 import org.junit.Test;
-import org.openhealthtools.mdht.uml.cda.operations.CDAValidationTest;
 import org.openhealthtools.mdht.uml.cda.phmr.PHMRProductInstanceReference;
 import org.openhealthtools.mdht.uml.cda.phmr.PhmrFactory;
 import org.openhealthtools.mdht.uml.cda.phmr.operations.PHMRProductInstanceReferenceOperations;
@@ -65,66 +65,69 @@ public class PHMRProductInstanceReferenceTest extends  CDAValidationTest {
  
 									
 public void testValidatePHMRProductInstanceReferenceTemplateId() {
-      OperationsTestCase<PHMRProductInstanceReference> validatePHMRProductInstanceReferenceTemplateIdTestCase = new OperationsTestCase<PHMRProductInstanceReference>(
-      "validatePHMRProductInstanceReferenceTemplateId",
-      operationsForOCL.getOCLValue("VALIDATE_PHMR_PRODUCT_INSTANCE_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PHMRProductInstanceReference> validatePHMRProductInstanceReferenceTemplateIdTestCase = new OperationsTestCase<PHMRProductInstanceReference>(
+			"validatePHMRProductInstanceReferenceTemplateId",
+			operationsForOCL.getOCLValue("VALIDATE_PHMR_PRODUCT_INSTANCE_REFERENCE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PHMRProductInstanceReference target) {
+			@Override
+			protected void updateToFail(PHMRProductInstanceReference target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PHMRProductInstanceReference target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PHMRProductInstanceReference target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceTemplateId(
-          (PHMRProductInstanceReference) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceTemplateId(
+					(PHMRProductInstanceReference) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePHMRProductInstanceReferenceTemplateIdTestCase.doValidationTest();
+		validatePHMRProductInstanceReferenceTemplateIdTestCase.doValidationTest();
 }		
 
 
@@ -139,66 +142,69 @@ public void testValidatePHMRProductInstanceReferenceTemplateId() {
  
 									
 public void testValidatePHMRProductInstanceReferenceTypeCode() {
-      OperationsTestCase<PHMRProductInstanceReference> validatePHMRProductInstanceReferenceTypeCodeTestCase = new OperationsTestCase<PHMRProductInstanceReference>(
-      "validatePHMRProductInstanceReferenceTypeCode",
-      operationsForOCL.getOCLValue("VALIDATE_PHMR_PRODUCT_INSTANCE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PHMRProductInstanceReference> validatePHMRProductInstanceReferenceTypeCodeTestCase = new OperationsTestCase<PHMRProductInstanceReference>(
+			"validatePHMRProductInstanceReferenceTypeCode",
+			operationsForOCL.getOCLValue("VALIDATE_PHMR_PRODUCT_INSTANCE_REFERENCE_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PHMRProductInstanceReference target) {
+			@Override
+			protected void updateToFail(PHMRProductInstanceReference target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PHMRProductInstanceReference target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PHMRProductInstanceReference target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceTypeCode(
-          (PHMRProductInstanceReference) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceTypeCode(
+					(PHMRProductInstanceReference) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePHMRProductInstanceReferenceTypeCodeTestCase.doValidationTest();
+		validatePHMRProductInstanceReferenceTypeCodeTestCase.doValidationTest();
 }		
 
 
@@ -213,66 +219,69 @@ public void testValidatePHMRProductInstanceReferenceTypeCode() {
  
 									
 public void testValidatePHMRProductInstanceReferenceParticipantRole() {
-      OperationsTestCase<PHMRProductInstanceReference> validatePHMRProductInstanceReferenceParticipantRoleTestCase = new OperationsTestCase<PHMRProductInstanceReference>(
-      "validatePHMRProductInstanceReferenceParticipantRole",
-      operationsForOCL.getOCLValue("VALIDATE_PHMR_PRODUCT_INSTANCE_REFERENCE_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
-      ,objectFactory) {
+			OperationsTestCase<PHMRProductInstanceReference> validatePHMRProductInstanceReferenceParticipantRoleTestCase = new OperationsTestCase<PHMRProductInstanceReference>(
+			"validatePHMRProductInstanceReferenceParticipantRole",
+			operationsForOCL.getOCLValue("VALIDATE_PHMR_PRODUCT_INSTANCE_REFERENCE_PARTICIPANT_ROLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP")
+			,objectFactory) {
 
-      @Override
-      protected void updateToFail(PHMRProductInstanceReference target) {
+			@Override
+			protected void updateToFail(PHMRProductInstanceReference target) {
 
-      }
+			}
 
-      @Override
-      protected void updateToPass(PHMRProductInstanceReference target) {
-        target.init();
-        
-        
-        
-        
-        
+			@Override
+			protected void updateToPass(PHMRProductInstanceReference target) {
+				target.init();
+				
+				
+				
+				
+				
 
-        
-        
+				
+				
 
-  
-      
+	
+			
 
-  
-    
-    
-      
-        
-    
-      
-        
-      
-        
-        
-        
-        
-        
-        
-        
-      
-      
-          
-      
-        
-      }
+	
+		
+		
+			
+				
+		
+			
+				
+			
+				
+				
+				
+				
+				
+				
+				
+			
+			
+					
+			
+				
+			}
+			
+		 
+			
 
-      @Override
-      protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
-      
-      
-      
-        return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceParticipantRole(
-          (PHMRProductInstanceReference) objectToTest, diagnostician, map);
-      }
+			@Override
+			protected boolean validate(EObject objectToTest, BasicDiagnostic diagnostician, Map<Object, Object> map) {
+			
+			
+			
+				return PHMRProductInstanceReferenceOperations.validatePHMRProductInstanceReferenceParticipantRole(
+					(PHMRProductInstanceReference) objectToTest, diagnostician, map);
+			}
 
-    };
+		};
 
-    validatePHMRProductInstanceReferenceParticipantRoleTestCase.doValidationTest();
+		validatePHMRProductInstanceReferenceParticipantRoleTestCase.doValidationTest();
 }		
 
 
@@ -301,6 +310,7 @@ public void testValidatePHMRProductInstanceReferenceParticipantRole() {
 * @generated
 */
 	private static class ObjectFactory implements TestObjectFactory<PHMRProductInstanceReference> {
+		@Override
 		public PHMRProductInstanceReference create() {		
 			return PhmrFactory.eINSTANCE.createPHMRProductInstanceReference();
 		}
@@ -332,9 +342,9 @@ public void testValidatePHMRProductInstanceReferenceParticipantRole() {
 */	
 		@Test
 	public void testConstructor() {
-          @SuppressWarnings("unused")
-      ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
-  } // testConstructor
+	        @SuppressWarnings("unused")
+			ConstructorTestClass constructorTestClass = new ConstructorTestClass();		
+	} // testConstructor
 	
 	
 	
@@ -344,8 +354,8 @@ public void testValidatePHMRProductInstanceReferenceParticipantRole() {
 */
 	@Override
 	protected EObject getObjectToTest() {		
-    return null;
-  }
+		return null;
+	}
 	
 	
 

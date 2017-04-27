@@ -11,19 +11,13 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPlugin;
 import org.openhealthtools.mdht.uml.cda.emspcr.InjuryRiskFactor;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.util.EmspcrValidator;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
 
 /**
  * <!-- begin-user-doc -->
@@ -42,7 +36,14 @@ import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
  *
  * @generated
  */
-public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
+public class InjuryRiskFactorOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -71,7 +72,7 @@ public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INJURY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -86,25 +87,38 @@ public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInjuryRiskFactorTemplateId(InjuryRiskFactor injuryRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_INJURY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_RISK_FACTOR);
 			try {
-				VALIDATE_INJURY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_INJURY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryRiskFactor)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_RISK_FACTOR__INJURY_RISK_FACTOR_TEMPLATE_ID,
-					EmspcrPlugin.INSTANCE.getString("InjuryRiskFactorTemplateId"), new Object[] { injuryRiskFactor }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_RISK_FACTOR_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injuryRiskFactor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_RISK_FACTOR__INJURY_RISK_FACTOR_TEMPLATE_ID,
+						 EmspcrPlugin.INSTANCE.getString("InjuryRiskFactorInjuryRiskFactorTemplateId"),
+						 new Object [] { injuryRiskFactor }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -129,7 +143,7 @@ public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INJURY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -144,25 +158,38 @@ public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInjuryRiskFactorMoodCode(InjuryRiskFactor injuryRiskFactor,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
-
-		if (VALIDATE_INJURY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_RISK_FACTOR);
 			try {
-				VALIDATE_INJURY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_INJURY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryRiskFactor)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_RISK_FACTOR__INJURY_RISK_FACTOR_MOOD_CODE,
-					EmspcrPlugin.INSTANCE.getString("InjuryRiskFactorMoodCode"), new Object[] { injuryRiskFactor }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_RISK_FACTOR_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injuryRiskFactor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_RISK_FACTOR__INJURY_RISK_FACTOR_MOOD_CODE,
+						 EmspcrPlugin.INSTANCE.getString("InjuryRiskFactorInjuryRiskFactorMoodCode"),
+						 new Object [] { injuryRiskFactor }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -176,9 +203,9 @@ public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "
-			+ "value.code = '67496-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
+	protected static final String VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.code.oclIsUndefined() or self.code.isNullFlavorUndefined()) implies (not self.code.oclIsUndefined() and self.code.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = self.code.oclAsType(datatypes::CD) in "+
+"value.code = '67496-0' and value.codeSystem = '2.16.840.1.113883.6.1')";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInjuryRiskFactorCode(InjuryRiskFactor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Risk Factor Code</em>}' invariant operation.
@@ -189,7 +216,7 @@ public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -204,25 +231,38 @@ public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInjuryRiskFactorCode(InjuryRiskFactor injuryRiskFactor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_RISK_FACTOR);
 			try {
-				VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryRiskFactor)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_RISK_FACTOR__INJURY_RISK_FACTOR_CODE,
-					EmspcrPlugin.INSTANCE.getString("InjuryRiskFactorCode"), new Object[] { injuryRiskFactor }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_RISK_FACTOR_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injuryRiskFactor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_RISK_FACTOR__INJURY_RISK_FACTOR_CODE,
+						 EmspcrPlugin.INSTANCE.getString("InjuryRiskFactorInjuryRiskFactorCode"),
+						 new Object [] { injuryRiskFactor }));
+			}
+			 
 			return false;
 		}
 		return true;
@@ -236,9 +276,9 @@ public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
 	 * @generated
 	 * @ordered
 	 */
-	protected static final String VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "
-			+ "let value : datatypes::CD = element.oclAsType(datatypes::CD) in "
-			+ "value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17348-6' or value.code = 'LA17349-4' or value.code = 'LA17350-2' or value.code = 'LA17352-8' or value.code = 'LA17353-6' or value.code = 'LA17357-7' or value.code = 'LA17360-1' or value.code = 'LA18124-0')))";
+	protected static final String VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "(self.value->isEmpty() or self.value->exists(element | element.isNullFlavorUndefined())) implies (not self.value->isEmpty() and self.value->forAll(element | not element.oclIsUndefined() and element.oclIsKindOf(datatypes::CD) and "+
+"let value : datatypes::CD = element.oclAsType(datatypes::CD) in "+
+"value.codeSystem = '2.16.840.1.113883.6.1' and (value.code = 'LA17348-6' or value.code = 'LA17349-4' or value.code = 'LA17350-2' or value.code = 'LA17352-8' or value.code = 'LA17353-6' or value.code = 'LA17357-7' or value.code = 'LA17360-1' or value.code = 'LA18124-0')))";
 
 	/**
 	 * The cached OCL invariant for the '{@link #validateInjuryRiskFactorValue(InjuryRiskFactor, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Validate Injury Risk Factor Value</em>}' invariant operation.
@@ -249,7 +289,7 @@ public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -264,25 +304,38 @@ public class InjuryRiskFactorOperations extends ClinicalStatementOperations {
 
 	public static boolean validateInjuryRiskFactorValue(InjuryRiskFactor injuryRiskFactor, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-
-		if (VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+	
+	
+	
+  	  
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(EmspcrPackage.Literals.INJURY_RISK_FACTOR);
 			try {
-				VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
-			} catch (ParserException pe) {
+				VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
+			}
+			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(
-			injuryRiskFactor)) {
-			if (diagnostics != null) {
-				diagnostics.add(new BasicDiagnostic(
-					Diagnostic.ERROR, EmspcrValidator.DIAGNOSTIC_SOURCE,
-					EmspcrValidator.INJURY_RISK_FACTOR__INJURY_RISK_FACTOR_VALUE,
-					EmspcrPlugin.INSTANCE.getString("InjuryRiskFactorValue"), new Object[] { injuryRiskFactor }));
 			}
-
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_INJURY_RISK_FACTOR_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(injuryRiskFactor)) {
+			if (diagnostics != null) {
+				diagnostics.add
+					(new BasicDiagnostic
+						(Diagnostic.ERROR,
+						 EmspcrValidator.DIAGNOSTIC_SOURCE,
+						 EmspcrValidator.INJURY_RISK_FACTOR__INJURY_RISK_FACTOR_VALUE,
+						 EmspcrPlugin.INSTANCE.getString("InjuryRiskFactorInjuryRiskFactorValue"),
+						 new Object [] { injuryRiskFactor }));
+			}
+			 
 			return false;
 		}
 		return true;

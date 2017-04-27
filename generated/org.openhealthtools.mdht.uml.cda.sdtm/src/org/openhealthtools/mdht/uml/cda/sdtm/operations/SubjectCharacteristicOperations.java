@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DataCollection;
@@ -34,7 +27,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubjectCharacteristic;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -78,7 +70,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class SubjectCharacteristicOperations extends ClinicalStatementOperations {
+public class SubjectCharacteristicOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -107,7 +107,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -122,25 +122,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicTemplateId(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -168,7 +178,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -183,25 +193,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicClassCode(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -229,7 +249,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -244,25 +264,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicMoodCode(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -290,7 +320,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -305,25 +335,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicId(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -351,7 +391,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -366,25 +406,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicCodeP(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -414,7 +464,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -429,25 +479,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicCode(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -475,7 +535,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -490,25 +550,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicStatusCode(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_STATUS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_STATUS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicStatusCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -536,7 +606,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -551,25 +621,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicValue(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -597,7 +677,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -612,25 +692,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicDataCollection(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_DATA_COLLECTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_DATA_COLLECTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicDataCollection", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -658,7 +748,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -673,25 +763,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicNonPerformanceReason(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_NON_PERFORMANCE_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicNonPerformanceReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -719,7 +819,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -734,25 +834,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicGroupIdentifier(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_GROUP_IDENTIFIER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicGroupIdentifier", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -780,7 +890,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -795,25 +905,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicComment(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -841,7 +961,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -856,25 +976,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicDomainAssignment(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -902,7 +1032,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -917,25 +1047,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicRelatedRecord(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -963,7 +1103,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -978,25 +1118,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicSupplementalValue(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -1024,7 +1174,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1039,25 +1189,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicCategory(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -1085,7 +1245,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1100,25 +1260,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicSubCategory(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -1146,7 +1316,7 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_SUBJECT_CHARACTERISTIC_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_SUBJECT_CHARACTERISTIC_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1161,25 +1331,35 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  boolean validateSubjectCharacteristicFindingAbout(SubjectCharacteristic subjectCharacteristic, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_SUBJECT_CHARACTERISTIC_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_SUBJECT_CHARACTERISTIC_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC);
 			try {
-				VALIDATE_SUBJECT_CHARACTERISTIC_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_SUBJECT_CHARACTERISTIC_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_SUBJECT_CHARACTERISTIC_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(subjectCharacteristic)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_SUBJECT_CHARACTERISTIC_FINDING_ABOUT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(subjectCharacteristic)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.SUBJECT_CHARACTERISTIC__SUBJECT_CHARACTERISTIC_FINDING_ABOUT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "SubjectCharacteristicSubjectCharacteristicFindingAbout", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(subjectCharacteristic, context) }),
 						 new Object [] { subjectCharacteristic }));
 			}
 			 
@@ -1215,8 +1395,13 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  DataCollection getDataCollection(SubjectCharacteristic subjectCharacteristic) {
+	
+	
+	
 		if (GET_DATA_COLLECTION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC, SdtmPackage.Literals.SUBJECT_CHARACTERISTIC.getEAllOperations().get(69));
 			try {
 				GET_DATA_COLLECTION__EOCL_QRY = helper.createQuery(GET_DATA_COLLECTION__EOCL_EXP);
@@ -1224,8 +1409,9 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DATA_COLLECTION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DATA_COLLECTION__EOCL_QRY);
 		return (DataCollection) query.evaluate(subjectCharacteristic);
 	}
 
@@ -1256,8 +1442,13 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  NonPerformanceReason getNonPerformanceReason(SubjectCharacteristic subjectCharacteristic) {
+	
+	
+	
 		if (GET_NON_PERFORMANCE_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC, SdtmPackage.Literals.SUBJECT_CHARACTERISTIC.getEAllOperations().get(70));
 			try {
 				GET_NON_PERFORMANCE_REASON__EOCL_QRY = helper.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_EXP);
@@ -1265,8 +1456,9 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NON_PERFORMANCE_REASON__EOCL_QRY);
 		return (NonPerformanceReason) query.evaluate(subjectCharacteristic);
 	}
 
@@ -1297,8 +1489,13 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  GroupIdentifier getGroupIdentifier(SubjectCharacteristic subjectCharacteristic) {
+	
+	
+	
 		if (GET_GROUP_IDENTIFIER__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC, SdtmPackage.Literals.SUBJECT_CHARACTERISTIC.getEAllOperations().get(71));
 			try {
 				GET_GROUP_IDENTIFIER__EOCL_QRY = helper.createQuery(GET_GROUP_IDENTIFIER__EOCL_EXP);
@@ -1306,8 +1503,9 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_GROUP_IDENTIFIER__EOCL_QRY);
 		return (GroupIdentifier) query.evaluate(subjectCharacteristic);
 	}
 
@@ -1338,8 +1536,13 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  EList<Comment> getComments(SubjectCharacteristic subjectCharacteristic) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC, SdtmPackage.Literals.SUBJECT_CHARACTERISTIC.getEAllOperations().get(72));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1347,8 +1550,9 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(subjectCharacteristic);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1381,8 +1585,13 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(SubjectCharacteristic subjectCharacteristic) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC, SdtmPackage.Literals.SUBJECT_CHARACTERISTIC.getEAllOperations().get(73));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1390,8 +1599,9 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(subjectCharacteristic);
 	}
 
@@ -1422,8 +1632,13 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(SubjectCharacteristic subjectCharacteristic) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC, SdtmPackage.Literals.SUBJECT_CHARACTERISTIC.getEAllOperations().get(74));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1431,8 +1646,9 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(subjectCharacteristic);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1465,8 +1681,13 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(SubjectCharacteristic subjectCharacteristic) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC, SdtmPackage.Literals.SUBJECT_CHARACTERISTIC.getEAllOperations().get(75));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1474,8 +1695,9 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(subjectCharacteristic);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -1508,8 +1730,13 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  Category getCategory(SubjectCharacteristic subjectCharacteristic) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC, SdtmPackage.Literals.SUBJECT_CHARACTERISTIC.getEAllOperations().get(76));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -1517,8 +1744,9 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(subjectCharacteristic);
 	}
 
@@ -1549,8 +1777,13 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  SubCategory getSubCategory(SubjectCharacteristic subjectCharacteristic) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC, SdtmPackage.Literals.SUBJECT_CHARACTERISTIC.getEAllOperations().get(77));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -1558,8 +1791,9 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(subjectCharacteristic);
 	}
 
@@ -1590,8 +1824,13 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 	 */
 	
 	public static  EList<FindingAbout> getFindingAbouts(SubjectCharacteristic subjectCharacteristic) {
+	
+	
+	
 		if (GET_FINDING_ABOUTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.SUBJECT_CHARACTERISTIC, SdtmPackage.Literals.SUBJECT_CHARACTERISTIC.getEAllOperations().get(78));
 			try {
 				GET_FINDING_ABOUTS__EOCL_QRY = helper.createQuery(GET_FINDING_ABOUTS__EOCL_EXP);
@@ -1599,8 +1838,9 @@ public class SubjectCharacteristicOperations extends ClinicalStatementOperations
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FINDING_ABOUTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FindingAbout> result = (Collection<FindingAbout>) query.evaluate(subjectCharacteristic);
 		return new BasicEList.UnmodifiableEList<FindingAbout>(result.size(), result.toArray());

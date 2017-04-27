@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -28,7 +21,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='GlasgowQualifierTemplateId GlasgowQualifierMoodCode GlasgowQualifierCode GlasgowQualifierCodeP GlasgowQualifierValue' templateId.root='2.16.840.1.1133883.17.3.10.1.159' moodCode='EVN' code.code='55285-1' code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' code.displayName='Glasgow coma score special circumstances' constraints.validation.dependOn.GlasgowQualifierCode='GlasgowQualifierCodeP' value.codeSystem='2.16.840.1.113883.6.1' value.codeSystemName='LOINC' constraints.validation.info='GlasgowQualifierValueP'"
  * @generated
  */
-public interface GlasgowQualifier extends Observation {
+public interface GlasgowQualifier extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -109,9 +102,9 @@ public interface GlasgowQualifier extends Observation {
 	public GlasgowQualifier init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public GlasgowQualifier init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public GlasgowQualifier init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // GlasgowQualifier

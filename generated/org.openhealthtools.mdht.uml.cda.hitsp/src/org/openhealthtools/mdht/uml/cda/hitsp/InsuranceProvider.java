@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.CoverageEntry;
 
 /**
@@ -124,7 +122,8 @@ public interface InsuranceProvider extends CoverageEntry {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getActs()->select(act : cda::Act | act.oclIsKindOf(ihe::PayerEntry))->forAll(a : cda::Act | a.participant->exists (par : cda::Participant2 | par.typeCode = vocab::ParticipationType::COV and par.time.high->size() > 0))'"
 	 * @generated
 	 */
-	boolean validateInsuranceProviderHealthPlanCoverageStopTime(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateInsuranceProviderHealthPlanCoverageStopTime(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -322,5 +321,6 @@ public interface InsuranceProvider extends CoverageEntry {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public InsuranceProvider init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public InsuranceProvider init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // InsuranceProvider

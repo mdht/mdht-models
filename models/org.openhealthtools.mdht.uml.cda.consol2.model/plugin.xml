@@ -15,7 +15,7 @@
 -->
 
 <plugin
-   id="org.openhealthtools.mdht.uml.cda.consol.model"
+   id="org.openhealthtools.mdht.uml.cda.consol2.model"
 >
     
      <extension point="org.eclipse.emf.ecore.uri_mapping">

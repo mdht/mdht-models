@@ -42,20 +42,15 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  * <p>
  * The following operations are supported:
  * <ul>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getMu2consolCognitiveStatusResultObservations()
+ * <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getMu2consolCognitiveStatusResultObservations()
  * <em>Get Mu2consol Cognitive Status Result Observations</em>}</li>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getMu2consolCognitiveStatusResultOrganizers()
+ * <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getMu2consolCognitiveStatusResultOrganizers()
  * <em>Get Mu2consol Cognitive Status Result Organizers</em>}</li>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getMu2consolFunctionalStatusResultObservations()
+ * <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getMu2consolFunctionalStatusResultObservations()
  * <em>Get Mu2consol Functional Status Result Observations</em>}</li>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getMu2consolFunctionalStatusResultOrganizers()
+ * <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#getMu2consolFunctionalStatusResultOrganizers()
  * <em>Get Mu2consol Functional Status Result Organizers</em>}</li>
- * <li>
- * {@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#validateFunctionalStatusSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+ * <li>{@link org.openhealthtools.mdht.uml.cda.mu2consol.FunctionalStatusSection#validateFunctionalStatusSectionTemplateId(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
  * <em>Validate Functional Status Section Template Id</em>}</li>
  * </ul>
  * </p>
@@ -64,9 +59,16 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.util.Mu2consolValidator;
  */
 public class FunctionalStatusSectionOperations
 		extends org.openhealthtools.mdht.uml.cda.consol.operations.FunctionalStatusSectionOperations {
+	protected static final ThreadLocal<OCL> EOCL_ENV = new ThreadLocal<OCL>() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected FunctionalStatusSectionOperations() {
@@ -75,14 +77,16 @@ public class FunctionalStatusSectionOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 
 	public static EList<CognitiveStatusResultObservation> getMu2consolCognitiveStatusResultObservations(
 			FunctionalStatusSection functionalStatusSection) {
+
 		if (GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION,
 					Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(83));
 			try {
@@ -92,7 +96,8 @@ public class FunctionalStatusSectionOperations
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<CognitiveStatusResultObservation> result = (Collection<CognitiveStatusResultObservation>) query
 				.evaluate(functionalStatusSection);
@@ -101,14 +106,16 @@ public class FunctionalStatusSectionOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 
 	public static EList<CognitiveStatusResultOrganizer> getMu2consolCognitiveStatusResultOrganizers(
 			FunctionalStatusSection functionalStatusSection) {
+
 		if (GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION,
 					Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(84));
 			try {
@@ -118,7 +125,8 @@ public class FunctionalStatusSectionOperations
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<CognitiveStatusResultOrganizer> result = (Collection<CognitiveStatusResultOrganizer>) query
 				.evaluate(functionalStatusSection);
@@ -127,14 +135,16 @@ public class FunctionalStatusSectionOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 
 	public static EList<FunctionalStatusResultObservation> getMu2consolFunctionalStatusResultObservations(
 			FunctionalStatusSection functionalStatusSection) {
+
 		if (GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION,
 					Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(85));
 			try {
@@ -144,7 +154,8 @@ public class FunctionalStatusSectionOperations
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FunctionalStatusResultObservation> result = (Collection<FunctionalStatusResultObservation>) query
 				.evaluate(functionalStatusSection);
@@ -153,14 +164,16 @@ public class FunctionalStatusSectionOperations
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 
 	public static EList<FunctionalStatusResultOrganizer> getMu2consolFunctionalStatusResultOrganizers(
 			FunctionalStatusSection functionalStatusSection) {
+
 		if (GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION,
 					Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION.getEAllOperations().get(86));
 			try {
@@ -170,7 +183,8 @@ public class FunctionalStatusSectionOperations
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_QRY);
+
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FunctionalStatusResultOrganizer> result = (Collection<FunctionalStatusResultOrganizer>) query
 				.evaluate(functionalStatusSection);
@@ -178,11 +192,11 @@ public class FunctionalStatusSectionOperations
 	}
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
+	 * The cached OCL expression body for the
+	 * '{@link #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
 	 * <em>Get Mu2consol Cognitive Status Result Observations</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
 	 * @generated
 	 * @ordered
@@ -190,11 +204,11 @@ public class FunctionalStatusSectionOperations
 	protected static final String GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::CognitiveStatusResultObservation)).oclAsType(mu2consol::CognitiveStatusResultObservation)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
+	 * The cached OCL query for the
+	 * '{@link #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
 	 * <em>Get Mu2consol Cognitive Status Result Observations</em>}' query
 	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getMu2consolCognitiveStatusResultObservations(FunctionalStatusSection)
 	 * @generated
 	 * @ordered
@@ -202,11 +216,11 @@ public class FunctionalStatusSectionOperations
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
+	 * The cached OCL expression body for the
+	 * '{@link #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
 	 * <em>Get Mu2consol Cognitive Status Result Organizers</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
 	 * @generated
 	 * @ordered
@@ -214,11 +228,11 @@ public class FunctionalStatusSectionOperations
 	protected static final String GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::CognitiveStatusResultOrganizer)).oclAsType(mu2consol::CognitiveStatusResultOrganizer)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
+	 * The cached OCL query for the
+	 * '{@link #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
 	 * <em>Get Mu2consol Cognitive Status Result Organizers</em>}' query
 	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getMu2consolCognitiveStatusResultOrganizers(FunctionalStatusSection)
 	 * @generated
 	 * @ordered
@@ -226,11 +240,11 @@ public class FunctionalStatusSectionOperations
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_COGNITIVE_STATUS_RESULT_ORGANIZERS__EOCL_QRY;
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
+	 * The cached OCL expression body for the
+	 * '{@link #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
 	 * <em>Get Mu2consol Functional Status Result Observations</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
 	 * @generated
 	 * @ordered
@@ -238,11 +252,11 @@ public class FunctionalStatusSectionOperations
 	protected static final String GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_EXP = "self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(mu2consol::FunctionalStatusResultObservation)).oclAsType(mu2consol::FunctionalStatusResultObservation)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
+	 * The cached OCL query for the
+	 * '{@link #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
 	 * <em>Get Mu2consol Functional Status Result Observations</em>}' query
 	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getMu2consolFunctionalStatusResultObservations(FunctionalStatusSection)
 	 * @generated
 	 * @ordered
@@ -250,11 +264,11 @@ public class FunctionalStatusSectionOperations
 	protected static OCLExpression<EClassifier> GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_OBSERVATIONS__EOCL_QRY;
 
 	/**
-	 * The cached OCL expression body for the '
-	 * {@link #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
+	 * The cached OCL expression body for the
+	 * '{@link #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
 	 * <em>Get Mu2consol Functional Status Result Organizers</em>}' operation.
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
 	 * @generated
 	 * @ordered
@@ -262,11 +276,11 @@ public class FunctionalStatusSectionOperations
 	protected static final String GET_MU2CONSOL_FUNCTIONAL_STATUS_RESULT_ORGANIZERS__EOCL_EXP = "self.getOrganizers()->select(organizer : cda::Organizer | not organizer.oclIsUndefined() and organizer.oclIsKindOf(mu2consol::FunctionalStatusResultOrganizer)).oclAsType(mu2consol::FunctionalStatusResultOrganizer)";
 
 	/**
-	 * The cached OCL query for the '
-	 * {@link #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
+	 * The cached OCL query for the
+	 * '{@link #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
 	 * <em>Get Mu2consol Functional Status Result Organizers</em>}' query
 	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #getMu2consolFunctionalStatusResultOrganizers(FunctionalStatusSection)
 	 * @generated
 	 * @ordered
@@ -287,18 +301,18 @@ public class FunctionalStatusSectionOperations
 	protected static final String VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP = "self.templateId->exists(id : datatypes::II | id.root = '2.16.840.1.113883.10.20.22.2.14')";
 
 	/**
-	 * The cached OCL invariant for the '
-	 * {@link #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * The cached OCL invariant for the
+	 * '{@link #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection, org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * <em>Validate Functional Status Section Template Id</em>}' invariant
 	 * operation. <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @see #validateFunctionalStatusSectionTemplateId(FunctionalStatusSection,
 	 *      org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
 	 * @generated
 	 * @ordered
 	 */
 
-	protected static Constraint VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<Constraint> VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new ThreadLocal<Constraint>();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc --> <!-- begin-model-doc -->
@@ -317,17 +331,21 @@ public class FunctionalStatusSectionOperations
 	public static boolean validateFunctionalStatusSectionTemplateId(FunctionalStatusSection functionalStatusSection,
 			DiagnosticChain diagnostics, Map<Object, Object> context) {
 
-		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		if (VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(Mu2consolPackage.Literals.FUNCTIONAL_STATUS_SECTION);
 			try {
-				VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(
-						VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV
+						.set(helper.createInvariant(
+								VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			} catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
 		}
-		if (!EOCL_ENV.createQuery(VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV)
+
+		if (!EOCL_ENV.get()
+				.createQuery(VALIDATE_FUNCTIONAL_STATUS_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get())
 				.check(functionalStatusSection)) {
 			if (diagnostics != null) {
 				diagnostics.add(new BasicDiagnostic(Diagnostic.ERROR, Mu2consolValidator.DIAGNOSTIC_SOURCE,

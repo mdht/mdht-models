@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:genmodel="http://www.eclipse.org/uml2/2.2.0/GenModel" modelDirectory="org.openhealthtools.mdht.uml.cda.vsbr/src" modelPluginID="org.openhealthtools.mdht.uml.cda.vsbr"
-    templateDirectory="/org.openhealthtools.mdht.uml.cda/templates" dynamicTemplates="true"
+    templateDirectory="/org.eclipse.mdht.uml.cda/templates" dynamicTemplates="true"
     modelName="vsbr_Ecore" modelPluginClass="VsbrPlugin" importerID="org.eclipse.uml2.uml.ecore.importer"
-    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" usedGenPackages="platform:/plugin/org.openhealthtools.mdht.uml.cda/model/cda.genmodel#//cda platform:/plugin/org.openhealthtools.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab platform:/plugin/org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes platform:/plugin/org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.openhealthtools.mdht.uml.hl7.rim/model/rim.genmodel#//rim platform:/plugin/org.eclipse.uml2.types/model/Types.genmodel#//types"
+    complianceLevel="7.0" copyrightFields="false" runtimeVersion="2.9" usedGenPackages="../../org.eclipse.mdht.uml.cda/model/cda.genmodel#//cda ../../org.eclipse.mdht.uml.hl7.datatypes/model/datatypes.genmodel#//datatypes ../../org.eclipse.emf.ecore/model/Ecore.genmodel#//ecore ../../org.eclipse.mdht.uml.hl7.rim/model/rim.genmodel#//rim ../../org.eclipse.uml2.types/model/Types.genmodel#//types ../../org.eclipse.mdht.uml.hl7.vocab/model/vocab.genmodel#//vocab"
     pluralizedGetters="true" invariantPrefix="validate">
   <genAnnotations source="http://www.eclipse.org/emf/2002/GenModel/importer/org.eclipse.uml2.uml.ecore.importer">
     <details key="ECORE_TAGGED_VALUES" value="PROCESS"/>
@@ -24,6 +24,10 @@
     <details key="SUPER_CLASS_ORDER" value="PROCESS"/>
     <details key="VALIDATION_DELEGATES" value="IGNORE"/>
     <details key="INVOCATION_DELEGATES" value="IGNORE"/>
+    <details key="OPPOSITE_ROLE_NAMES" value="IGNORE"/>
+    <details key="PROPERTY_DEFAULT_EXPRESSIONS" value="IGNORE"/>
+    <details key="NON_API_INVARIANTS" value="IGNORE"/>
+    <details key="UNTYPED_PROPERTIES" value="REPORT"/>
   </genAnnotations>
   <foreignModel>vsbr_Ecore.uml</foreignModel>
   <genPackages xsi:type="genmodel:GenPackage" prefix="Vsbr" basePackage="org.openhealthtools.mdht.uml.cda"
@@ -833,6 +837,10 @@
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AssessmentsSection/AssessmentsSectionText">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AssessmentsSection/AssessmentsSectionText/diagnostics"/>
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AssessmentsSection/AssessmentsSectionText/context"/>
+      </genOperations>
+      <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AssessmentsSection/AssessmentsSectionTitle">
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AssessmentsSection/AssessmentsSectionTitle/diagnostics"/>
+        <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AssessmentsSection/AssessmentsSectionTitle/context"/>
       </genOperations>
       <genOperations xsi:type="genmodel:GenOperation" ecoreOperation="vsbr.ecore#//AssessmentsSection/AssessmentsSectionAssessmentObservation">
         <genParameters xsi:type="genmodel:GenParameter" ecoreParameter="vsbr.ecore#//AssessmentsSection/AssessmentsSectionAssessmentObservation/diagnostics"/>

@@ -6,17 +6,10 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.Observation;
 
 /**
  * <!-- begin-user-doc -->
@@ -30,7 +23,7 @@ import org.openhealthtools.mdht.uml.cda.Observation;
  *        annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation/emspcrPriorAEDUsePriorAEDProviderParticipationPriorAEDProvider code.codeSystem='2.16.840.1.113883.6.1' code.codeSystemName='LOINC' constraints.validation.error='PriorAEDUsePriorAEDProviderParticipationPriorAEDProviderCode'"
  * @generated
  */
-public interface PriorAEDUse extends Observation {
+public interface PriorAEDUse extends org.eclipse.mdht.uml.cda.Observation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -99,9 +92,9 @@ public interface PriorAEDUse extends Observation {
 	public PriorAEDUse init();
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public PriorAEDUse init(Iterable<? extends Initializer<? extends EObject>> initializers);
+     * @generated
+     */
+	public PriorAEDUse init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // PriorAEDUse

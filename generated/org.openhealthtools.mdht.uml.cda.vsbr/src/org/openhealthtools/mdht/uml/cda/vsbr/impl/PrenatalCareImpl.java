@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ActImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.PrenatalCare;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,10 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.PrenatalCareOperations;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Prenatal Care</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PrenatalCareImpl extends ActImpl implements PrenatalCare {
+public class PrenatalCareImpl extends org.eclipse.mdht.uml.cda.impl.ActImpl implements PrenatalCare {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -127,7 +121,7 @@ public class PrenatalCareImpl extends ActImpl implements PrenatalCare {
 	 * @generated
 	 */
 	public PrenatalCare init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -135,8 +129,9 @@ public class PrenatalCareImpl extends ActImpl implements PrenatalCare {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PrenatalCare init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public PrenatalCare init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // PrenatalCareImpl

@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -26,7 +24,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * <p>
  *     The Discharge Diagnosis Section contains information about the conditions identified during the hospital
  *     stay that either need to be monitored after discharge from the hospital and/or where resolved during the hospital
- *     course. 
+ *     course.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -81,5 +79,6 @@ public interface DischargeDiagnosisSection extends org.openhealthtools.mdht.uml.
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public DischargeDiagnosisSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public DischargeDiagnosisSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // DischargeDiagnosisSection

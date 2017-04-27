@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -39,7 +33,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class DomainAssignmentOperations extends ClinicalStatementOperations {
+public class DomainAssignmentOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +70,7 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DOMAIN_ASSIGNMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DOMAIN_ASSIGNMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -83,25 +85,35 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDomainAssignmentTemplateId(DomainAssignment domainAssignment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DOMAIN_ASSIGNMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DOMAIN_ASSIGNMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DOMAIN_ASSIGNMENT);
 			try {
-				VALIDATE_DOMAIN_ASSIGNMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DOMAIN_ASSIGNMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DOMAIN_ASSIGNMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(domainAssignment)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DOMAIN_ASSIGNMENT_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(domainAssignment)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DOMAIN_ASSIGNMENT__DOMAIN_ASSIGNMENT_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentDomainAssignmentTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
 						 new Object [] { domainAssignment }));
 			}
 			 
@@ -129,7 +141,7 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DOMAIN_ASSIGNMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DOMAIN_ASSIGNMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -144,25 +156,35 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDomainAssignmentMoodCode(DomainAssignment domainAssignment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DOMAIN_ASSIGNMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DOMAIN_ASSIGNMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DOMAIN_ASSIGNMENT);
 			try {
-				VALIDATE_DOMAIN_ASSIGNMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DOMAIN_ASSIGNMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DOMAIN_ASSIGNMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(domainAssignment)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DOMAIN_ASSIGNMENT_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(domainAssignment)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DOMAIN_ASSIGNMENT__DOMAIN_ASSIGNMENT_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentDomainAssignmentMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
 						 new Object [] { domainAssignment }));
 			}
 			 
@@ -190,7 +212,7 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DOMAIN_ASSIGNMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DOMAIN_ASSIGNMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -205,25 +227,35 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDomainAssignmentClassCode(DomainAssignment domainAssignment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DOMAIN_ASSIGNMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DOMAIN_ASSIGNMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DOMAIN_ASSIGNMENT);
 			try {
-				VALIDATE_DOMAIN_ASSIGNMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DOMAIN_ASSIGNMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DOMAIN_ASSIGNMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(domainAssignment)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DOMAIN_ASSIGNMENT_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(domainAssignment)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DOMAIN_ASSIGNMENT__DOMAIN_ASSIGNMENT_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentDomainAssignmentClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
 						 new Object [] { domainAssignment }));
 			}
 			 
@@ -251,7 +283,7 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DOMAIN_ASSIGNMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DOMAIN_ASSIGNMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -266,25 +298,35 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDomainAssignmentCodeP(DomainAssignment domainAssignment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DOMAIN_ASSIGNMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DOMAIN_ASSIGNMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DOMAIN_ASSIGNMENT);
 			try {
-				VALIDATE_DOMAIN_ASSIGNMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DOMAIN_ASSIGNMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DOMAIN_ASSIGNMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(domainAssignment)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DOMAIN_ASSIGNMENT_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(domainAssignment)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DOMAIN_ASSIGNMENT__DOMAIN_ASSIGNMENT_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentDomainAssignmentCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
 						 new Object [] { domainAssignment }));
 			}
 			 
@@ -314,7 +356,7 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DOMAIN_ASSIGNMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DOMAIN_ASSIGNMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -329,25 +371,35 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDomainAssignmentCode(DomainAssignment domainAssignment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DOMAIN_ASSIGNMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DOMAIN_ASSIGNMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DOMAIN_ASSIGNMENT);
 			try {
-				VALIDATE_DOMAIN_ASSIGNMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DOMAIN_ASSIGNMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DOMAIN_ASSIGNMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(domainAssignment)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DOMAIN_ASSIGNMENT_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(domainAssignment)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DOMAIN_ASSIGNMENT__DOMAIN_ASSIGNMENT_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentDomainAssignmentCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
 						 new Object [] { domainAssignment }));
 			}
 			 
@@ -377,7 +429,7 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_DOMAIN_ASSIGNMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_DOMAIN_ASSIGNMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -392,25 +444,35 @@ public class DomainAssignmentOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateDomainAssignmentValue(DomainAssignment domainAssignment, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_DOMAIN_ASSIGNMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_DOMAIN_ASSIGNMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.DOMAIN_ASSIGNMENT);
 			try {
-				VALIDATE_DOMAIN_ASSIGNMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_DOMAIN_ASSIGNMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_DOMAIN_ASSIGNMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_DOMAIN_ASSIGNMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(domainAssignment)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_DOMAIN_ASSIGNMENT_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(domainAssignment)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.DOMAIN_ASSIGNMENT__DOMAIN_ASSIGNMENT_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "DomainAssignmentDomainAssignmentValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(domainAssignment, context) }),
 						 new Object [] { domainAssignment }));
 			}
 			 

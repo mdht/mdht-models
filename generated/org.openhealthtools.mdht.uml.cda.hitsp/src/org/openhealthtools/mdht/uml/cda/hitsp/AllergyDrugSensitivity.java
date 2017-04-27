@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceConcern;
 
 /**
@@ -26,7 +24,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.AllergyIntoleranceConcern;
  * <!-- begin-model-doc -->
  * <p>
  *     This module contains the allergy or intolerance conditions and the associated adverse reactions suffered
- *     by the patient. See the HL7 Continuity of Care Document Section 3.8 for constraints applicable to this module. 
+ *     by the patient. See the HL7 Continuity of Care Document Section 3.8 for constraints applicable to this module.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -71,7 +69,8 @@ public interface AllergyDrugSensitivity extends AllergyIntoleranceConcern {
 	 * @model annotation="http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->exists(obs : cda::Observation |  not obs.code.oclIsUndefined() and obs.code.codeSystem = \'2.16.840.1.113883.6.96\' and (obs.code.code = \'420134006\' or obs.code.code =\'418038007\' or obs.code.code=\'419511003\' or obs.code.code=\'418471000\' or obs.code.code=\'419199007\' or obs.code.code=\'416098002\' or obs.code.code=\'414285001\' or obs.code.code=\'59037007\' or obs.code.code=\'235719002\'))'"
 	 * @generated
 	 */
-	boolean validateAllergyDrugSensitivityAdverseEventTypeVocab(DiagnosticChain diagnostics, Map<Object, Object> context);
+	boolean validateAllergyDrugSensitivityAdverseEventTypeVocab(DiagnosticChain diagnostics,
+			Map<Object, Object> context);
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -309,5 +308,6 @@ public interface AllergyDrugSensitivity extends AllergyIntoleranceConcern {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public AllergyDrugSensitivity init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public AllergyDrugSensitivity init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // AllergyDrugSensitivity

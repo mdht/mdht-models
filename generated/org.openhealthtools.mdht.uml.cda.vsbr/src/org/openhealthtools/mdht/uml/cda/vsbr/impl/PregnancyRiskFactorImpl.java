@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.PregnancyRiskFactor;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.PregnancyRiskFactorOpera
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Pregnancy Risk Factor</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class PregnancyRiskFactorImpl extends ObservationImpl implements PregnancyRiskFactor {
+public class PregnancyRiskFactorImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements PregnancyRiskFactor {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -126,7 +121,8 @@ public class PregnancyRiskFactorImpl extends ObservationImpl implements Pregnanc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePregnancyRiskFactorEntryRelationship(DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePregnancyRiskFactorEntryRelationship(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return PregnancyRiskFactorOperations.validatePregnancyRiskFactorEntryRelationship(this, diagnostics, context);
 	}
 
@@ -136,7 +132,7 @@ public class PregnancyRiskFactorImpl extends ObservationImpl implements Pregnanc
 	 * @generated
 	 */
 	public PregnancyRiskFactor init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -144,8 +140,9 @@ public class PregnancyRiskFactorImpl extends ObservationImpl implements Pregnanc
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public PregnancyRiskFactor init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public PregnancyRiskFactor init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // PregnancyRiskFactorImpl

@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.SubstanceAdministrationOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.Category;
 import org.openhealthtools.mdht.uml.cda.sdtm.Comment;
 import org.openhealthtools.mdht.uml.cda.sdtm.DomainAssignment;
@@ -34,7 +27,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.StudyDayPeriod;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubCategory;
 import org.openhealthtools.mdht.uml.cda.sdtm.SupplementalValue;
 import org.openhealthtools.mdht.uml.cda.sdtm.TimingReference;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -83,7 +75,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class NonhumanExposureOperations extends SubstanceAdministrationOperations {
+public class NonhumanExposureOperations extends org.eclipse.mdht.uml.cda.operations.SubstanceAdministrationOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -112,7 +112,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -127,25 +127,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureTemplateId(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -173,7 +183,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -188,25 +198,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureClassCode(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -234,7 +254,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -249,25 +269,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureMoodCode(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -295,7 +325,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -310,25 +340,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureDoseQuantity(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_DOSE_QUANTITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -356,7 +396,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -371,25 +411,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureEffectiveTime(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_EFFECTIVE_TIME__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_EFFECTIVE_TIME,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureEffectiveTime", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -417,7 +467,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -432,25 +482,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureId(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -480,7 +540,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -495,25 +555,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureRouteCode(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_ROUTE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureRouteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureRouteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -541,7 +611,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -556,25 +626,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureRouteCodeP(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_ROUTE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_ROUTE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureRouteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureRouteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -602,7 +682,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -617,25 +697,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureMaxDoseQuantity(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_MAX_DOSE_QUANTITY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureMaxDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureMaxDoseQuantity", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -663,7 +753,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -678,25 +768,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureText(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -726,7 +826,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -741,25 +841,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureApproachSiteCode(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_APPROACH_SITE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureApproachSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureApproachSiteCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -787,7 +897,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -802,25 +912,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureApproachSiteCodeP(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_APPROACH_SITE_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureApproachSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureApproachSiteCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -848,7 +968,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -863,25 +983,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureConsumableMaterial(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_CONSUMABLE_MATERIAL,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureConsumableMaterial", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureConsumableMaterial", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -909,7 +1039,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -924,25 +1054,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureTimingReference(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_TIMING_REFERENCE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_TIMING_REFERENCE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureTimingReference", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -970,7 +1110,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -985,25 +1125,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureStudyDayPeriod(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_STUDY_DAY_PERIOD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureStudyDayPeriod", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -1031,7 +1181,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1046,25 +1196,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureComment(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -1092,7 +1252,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1107,25 +1267,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureDomainAssignment(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_DOMAIN_ASSIGNMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureDomainAssignment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -1153,7 +1323,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1168,25 +1338,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureRelatedRecord(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_RELATED_RECORD__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_RELATED_RECORD,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureRelatedRecord", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -1214,7 +1394,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1229,25 +1409,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureSupplementalValue(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_SUPPLEMENTAL_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureSupplementalValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -1275,7 +1465,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1290,25 +1480,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureDoseAdjustmentReason(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_DOSE_ADJUSTMENT_REASON,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureDoseAdjustmentReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureDoseAdjustmentReason", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -1336,7 +1536,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1351,25 +1551,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureCategory(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -1397,7 +1607,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1412,25 +1622,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureSubCategory(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_SUB_CATEGORY__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_SUB_CATEGORY,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureSubCategory", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -1458,7 +1678,7 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_EXPOSURE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_EXPOSURE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1473,25 +1693,35 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  boolean validateNonhumanExposureEventDuration(NonhumanExposure nonhumanExposure, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_EXPOSURE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_EXPOSURE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE);
 			try {
-				VALIDATE_NONHUMAN_EXPOSURE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_EXPOSURE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_EXPOSURE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_EXPOSURE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanExposure)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_EXPOSURE_EVENT_DURATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanExposure)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_EXPOSURE__NONHUMAN_EXPOSURE_EVENT_DURATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureEventDuration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanExposureNonhumanExposureEventDuration", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanExposure, context) }),
 						 new Object [] { nonhumanExposure }));
 			}
 			 
@@ -1527,8 +1757,13 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  TimingReference getTimingReference(NonhumanExposure nonhumanExposure) {
+	
+	
+	
 		if (GET_TIMING_REFERENCE__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE, SdtmPackage.Literals.NONHUMAN_EXPOSURE.getEAllOperations().get(75));
 			try {
 				GET_TIMING_REFERENCE__EOCL_QRY = helper.createQuery(GET_TIMING_REFERENCE__EOCL_EXP);
@@ -1536,8 +1771,9 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TIMING_REFERENCE__EOCL_QRY);
 		return (TimingReference) query.evaluate(nonhumanExposure);
 	}
 
@@ -1568,8 +1804,13 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  StudyDayPeriod getStudyDayPeriod(NonhumanExposure nonhumanExposure) {
+	
+	
+	
 		if (GET_STUDY_DAY_PERIOD__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE, SdtmPackage.Literals.NONHUMAN_EXPOSURE.getEAllOperations().get(76));
 			try {
 				GET_STUDY_DAY_PERIOD__EOCL_QRY = helper.createQuery(GET_STUDY_DAY_PERIOD__EOCL_EXP);
@@ -1577,8 +1818,9 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_DAY_PERIOD__EOCL_QRY);
 		return (StudyDayPeriod) query.evaluate(nonhumanExposure);
 	}
 
@@ -1609,8 +1851,13 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  EList<Comment> getComments(NonhumanExposure nonhumanExposure) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE, SdtmPackage.Literals.NONHUMAN_EXPOSURE.getEAllOperations().get(77));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -1618,8 +1865,9 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(nonhumanExposure);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -1652,8 +1900,13 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  DomainAssignment getDomainAssignment(NonhumanExposure nonhumanExposure) {
+	
+	
+	
 		if (GET_DOMAIN_ASSIGNMENT__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE, SdtmPackage.Literals.NONHUMAN_EXPOSURE.getEAllOperations().get(78));
 			try {
 				GET_DOMAIN_ASSIGNMENT__EOCL_QRY = helper.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_EXP);
@@ -1661,8 +1914,9 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOMAIN_ASSIGNMENT__EOCL_QRY);
 		return (DomainAssignment) query.evaluate(nonhumanExposure);
 	}
 
@@ -1693,8 +1947,13 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  EList<RelatedRecord> getRelatedRecords(NonhumanExposure nonhumanExposure) {
+	
+	
+	
 		if (GET_RELATED_RECORDS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE, SdtmPackage.Literals.NONHUMAN_EXPOSURE.getEAllOperations().get(79));
 			try {
 				GET_RELATED_RECORDS__EOCL_QRY = helper.createQuery(GET_RELATED_RECORDS__EOCL_EXP);
@@ -1702,8 +1961,9 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_RELATED_RECORDS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_RELATED_RECORDS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<RelatedRecord> result = (Collection<RelatedRecord>) query.evaluate(nonhumanExposure);
 		return new BasicEList.UnmodifiableEList<RelatedRecord>(result.size(), result.toArray());
@@ -1736,8 +1996,13 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  EList<SupplementalValue> getSupplementalValues(NonhumanExposure nonhumanExposure) {
+	
+	
+	
 		if (GET_SUPPLEMENTAL_VALUES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE, SdtmPackage.Literals.NONHUMAN_EXPOSURE.getEAllOperations().get(80));
 			try {
 				GET_SUPPLEMENTAL_VALUES__EOCL_QRY = helper.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_EXP);
@@ -1745,8 +2010,9 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUPPLEMENTAL_VALUES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SupplementalValue> result = (Collection<SupplementalValue>) query.evaluate(nonhumanExposure);
 		return new BasicEList.UnmodifiableEList<SupplementalValue>(result.size(), result.toArray());
@@ -1779,8 +2045,13 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  DoseAdjustmentReason getDoseAdjustmentReason(NonhumanExposure nonhumanExposure) {
+	
+	
+	
 		if (GET_DOSE_ADJUSTMENT_REASON__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE, SdtmPackage.Literals.NONHUMAN_EXPOSURE.getEAllOperations().get(81));
 			try {
 				GET_DOSE_ADJUSTMENT_REASON__EOCL_QRY = helper.createQuery(GET_DOSE_ADJUSTMENT_REASON__EOCL_EXP);
@@ -1788,8 +2059,9 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DOSE_ADJUSTMENT_REASON__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DOSE_ADJUSTMENT_REASON__EOCL_QRY);
 		return (DoseAdjustmentReason) query.evaluate(nonhumanExposure);
 	}
 
@@ -1820,8 +2092,13 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  Category getCategory(NonhumanExposure nonhumanExposure) {
+	
+	
+	
 		if (GET_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE, SdtmPackage.Literals.NONHUMAN_EXPOSURE.getEAllOperations().get(82));
 			try {
 				GET_CATEGORY__EOCL_QRY = helper.createQuery(GET_CATEGORY__EOCL_EXP);
@@ -1829,8 +2106,9 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CATEGORY__EOCL_QRY);
 		return (Category) query.evaluate(nonhumanExposure);
 	}
 
@@ -1861,8 +2139,13 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  SubCategory getSubCategory(NonhumanExposure nonhumanExposure) {
+	
+	
+	
 		if (GET_SUB_CATEGORY__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE, SdtmPackage.Literals.NONHUMAN_EXPOSURE.getEAllOperations().get(83));
 			try {
 				GET_SUB_CATEGORY__EOCL_QRY = helper.createQuery(GET_SUB_CATEGORY__EOCL_EXP);
@@ -1870,8 +2153,9 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUB_CATEGORY__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUB_CATEGORY__EOCL_QRY);
 		return (SubCategory) query.evaluate(nonhumanExposure);
 	}
 
@@ -1902,8 +2186,13 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 	 */
 	
 	public static  EventDuration getEventDuration(NonhumanExposure nonhumanExposure) {
+	
+	
+	
 		if (GET_EVENT_DURATION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_EXPOSURE, SdtmPackage.Literals.NONHUMAN_EXPOSURE.getEAllOperations().get(84));
 			try {
 				GET_EVENT_DURATION__EOCL_QRY = helper.createQuery(GET_EVENT_DURATION__EOCL_EXP);
@@ -1911,8 +2200,9 @@ public class NonhumanExposureOperations extends SubstanceAdministrationOperation
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_EVENT_DURATION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_EVENT_DURATION__EOCL_QRY);
 		return (EventDuration) query.evaluate(nonhumanExposure);
 	}
 

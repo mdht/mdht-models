@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.AdverseEventTypeObservation;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.AdverseEventTypeObservationOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Adverse Event Type Observation</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AdverseEventTypeObservationImpl extends ObservationImpl implements AdverseEventTypeObservation {
+public class AdverseEventTypeObservationImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements AdverseEventTypeObservation {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -60,8 +49,7 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 */
 	public boolean validateAdverseEventTypeObservationTemplateId(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationTemplateId(
-			this, diagnostics, context);
+		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -70,8 +58,7 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdverseEventTypeObservationMoodCode(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationMoodCode(
-			this, diagnostics, context);
+		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationMoodCode(this, diagnostics, context);
 	}
 
 	/**
@@ -80,8 +67,7 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdverseEventTypeObservationCodeP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationCodeP(
-			this, diagnostics, context);
+		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationCodeP(this, diagnostics, context);
 	}
 
 	/**
@@ -99,8 +85,7 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdverseEventTypeObservationValue(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationValue(
-			this, diagnostics, context);
+		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationValue(this, diagnostics, context);
 	}
 
 	/**
@@ -109,8 +94,7 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public boolean validateAdverseEventTypeObservationValueP(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationValueP(
-			this, diagnostics, context);
+		return AdverseEventTypeObservationOperations.validateAdverseEventTypeObservationValueP(this, diagnostics, context);
 	}
 
 	/**
@@ -119,16 +103,16 @@ public class AdverseEventTypeObservationImpl extends ObservationImpl implements 
 	 * @generated
 	 */
 	public AdverseEventTypeObservation init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public AdverseEventTypeObservation init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public AdverseEventTypeObservation init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // AdverseEventTypeObservationImpl

@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.ClinicalStatementOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.AssayQuantitation;
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -39,7 +33,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class AssayQuantitationOperations extends ClinicalStatementOperations {
+public class AssayQuantitationOperations extends org.eclipse.mdht.uml.cda.operations.ClinicalStatementOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -68,7 +70,7 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ASSAY_QUANTITATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSAY_QUANTITATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -83,25 +85,35 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAssayQuantitationTemplateId(AssayQuantitation assayQuantitation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ASSAY_QUANTITATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ASSAY_QUANTITATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ASSAY_QUANTITATION);
 			try {
-				VALIDATE_ASSAY_QUANTITATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ASSAY_QUANTITATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSAY_QUANTITATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assayQuantitation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSAY_QUANTITATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assayQuantitation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ASSAY_QUANTITATION__ASSAY_QUANTITATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationAssayQuantitationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
 						 new Object [] { assayQuantitation }));
 			}
 			 
@@ -129,7 +141,7 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ASSAY_QUANTITATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSAY_QUANTITATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -144,25 +156,35 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAssayQuantitationClassCode(AssayQuantitation assayQuantitation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ASSAY_QUANTITATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ASSAY_QUANTITATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ASSAY_QUANTITATION);
 			try {
-				VALIDATE_ASSAY_QUANTITATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ASSAY_QUANTITATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSAY_QUANTITATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assayQuantitation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSAY_QUANTITATION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assayQuantitation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ASSAY_QUANTITATION__ASSAY_QUANTITATION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationAssayQuantitationClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
 						 new Object [] { assayQuantitation }));
 			}
 			 
@@ -190,7 +212,7 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ASSAY_QUANTITATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSAY_QUANTITATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -205,25 +227,35 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAssayQuantitationMoodCode(AssayQuantitation assayQuantitation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ASSAY_QUANTITATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ASSAY_QUANTITATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ASSAY_QUANTITATION);
 			try {
-				VALIDATE_ASSAY_QUANTITATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ASSAY_QUANTITATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSAY_QUANTITATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assayQuantitation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSAY_QUANTITATION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assayQuantitation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ASSAY_QUANTITATION__ASSAY_QUANTITATION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationAssayQuantitationMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
 						 new Object [] { assayQuantitation }));
 			}
 			 
@@ -251,7 +283,7 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ASSAY_QUANTITATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSAY_QUANTITATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -266,25 +298,35 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAssayQuantitationCodeP(AssayQuantitation assayQuantitation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ASSAY_QUANTITATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ASSAY_QUANTITATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ASSAY_QUANTITATION);
 			try {
-				VALIDATE_ASSAY_QUANTITATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ASSAY_QUANTITATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSAY_QUANTITATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assayQuantitation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSAY_QUANTITATION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assayQuantitation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ASSAY_QUANTITATION__ASSAY_QUANTITATION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationAssayQuantitationCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
 						 new Object [] { assayQuantitation }));
 			}
 			 
@@ -314,7 +356,7 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ASSAY_QUANTITATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSAY_QUANTITATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -329,25 +371,35 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAssayQuantitationCode(AssayQuantitation assayQuantitation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ASSAY_QUANTITATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ASSAY_QUANTITATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ASSAY_QUANTITATION);
 			try {
-				VALIDATE_ASSAY_QUANTITATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ASSAY_QUANTITATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSAY_QUANTITATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assayQuantitation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSAY_QUANTITATION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assayQuantitation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ASSAY_QUANTITATION__ASSAY_QUANTITATION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationAssayQuantitationCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
 						 new Object [] { assayQuantitation }));
 			}
 			 
@@ -375,7 +427,7 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_ASSAY_QUANTITATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_ASSAY_QUANTITATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -390,25 +442,35 @@ public class AssayQuantitationOperations extends ClinicalStatementOperations {
 	 */
 	
 	public static  boolean validateAssayQuantitationValue(AssayQuantitation assayQuantitation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_ASSAY_QUANTITATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_ASSAY_QUANTITATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.ASSAY_QUANTITATION);
 			try {
-				VALIDATE_ASSAY_QUANTITATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_ASSAY_QUANTITATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_ASSAY_QUANTITATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_ASSAY_QUANTITATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(assayQuantitation)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_ASSAY_QUANTITATION_VALUE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(assayQuantitation)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.ASSAY_QUANTITATION__ASSAY_QUANTITATION_VALUE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "AssayQuantitationAssayQuantitationValue", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(assayQuantitation, context) }),
 						 new Object [] { assayQuantitation }));
 			}
 			 

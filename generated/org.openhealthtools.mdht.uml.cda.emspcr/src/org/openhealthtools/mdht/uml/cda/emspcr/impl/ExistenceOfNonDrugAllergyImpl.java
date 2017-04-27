@@ -6,34 +6,23 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ExistenceOfNonDrugAllergy;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.ExistenceOfNonDrugAllergyOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Existence Of Non Drug Allergy</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class ExistenceOfNonDrugAllergyImpl extends ObservationImpl implements ExistenceOfNonDrugAllergy {
+public class ExistenceOfNonDrugAllergyImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl implements ExistenceOfNonDrugAllergy {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -59,8 +48,7 @@ public class ExistenceOfNonDrugAllergyImpl extends ObservationImpl implements Ex
 	 * @generated
 	 */
 	public boolean validateExistenceOfNonDrugAllergyTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return ExistenceOfNonDrugAllergyOperations.validateExistenceOfNonDrugAllergyTemplateId(
-			this, diagnostics, context);
+		return ExistenceOfNonDrugAllergyOperations.validateExistenceOfNonDrugAllergyTemplateId(this, diagnostics, context);
 	}
 
 	/**
@@ -96,16 +84,16 @@ public class ExistenceOfNonDrugAllergyImpl extends ObservationImpl implements Ex
 	 * @generated
 	 */
 	public ExistenceOfNonDrugAllergy init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public ExistenceOfNonDrugAllergy init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public ExistenceOfNonDrugAllergy init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // ExistenceOfNonDrugAllergyImpl

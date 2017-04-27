@@ -10,14 +10,12 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp.impl;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.cdt.operations.AssessmentAndPlanSectionOperations;
 import org.openhealthtools.mdht.uml.cda.hitsp.AssessmentAndPlanSection;
 import org.openhealthtools.mdht.uml.cda.hitsp.Encounter;
@@ -30,13 +28,11 @@ import org.openhealthtools.mdht.uml.cda.hitsp.Procedure;
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Assessment And Plan Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class AssessmentAndPlanSectionImpl extends
-		org.openhealthtools.mdht.uml.cda.ihe.impl.AssessmentAndPlanSectionImpl implements AssessmentAndPlanSection {
+public class AssessmentAndPlanSectionImpl extends org.openhealthtools.mdht.uml.cda.ihe.impl.AssessmentAndPlanSectionImpl
+		implements AssessmentAndPlanSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -62,8 +58,10 @@ public class AssessmentAndPlanSectionImpl extends
 	 * @generated
 	 */
 	@Override
-	public boolean validateAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionTemplateId(this, diagnostics, context);
+	public boolean validateAssessmentAndPlanSectionTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return AssessmentAndPlanSectionOperations.validateAssessmentAndPlanSectionTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -137,7 +135,8 @@ public class AssessmentAndPlanSectionImpl extends
 	 * @generated
 	 */
 	public EList<Medication> getMedications() {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getMedications(this);
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getMedications(
+			this);
 	}
 
 	/**
@@ -146,7 +145,8 @@ public class AssessmentAndPlanSectionImpl extends
 	 * @generated
 	 */
 	public EList<Immunization> getImmunizations() {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getImmunizations(this);
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getImmunizations(
+			this);
 	}
 
 	/**
@@ -155,7 +155,8 @@ public class AssessmentAndPlanSectionImpl extends
 	 * @generated
 	 */
 	public EList<Encounter> getEncounterEntries() {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getEncounterEntries(this);
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getEncounterEntries(
+			this);
 	}
 
 	/**
@@ -164,7 +165,8 @@ public class AssessmentAndPlanSectionImpl extends
 	 * @generated
 	 */
 	public EList<Procedure> getProcedureEntries() {
-		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getProcedureEntries(this);
+		return org.openhealthtools.mdht.uml.cda.hitsp.operations.AssessmentAndPlanSectionOperations.getProcedureEntries(
+			this);
 	}
 
 	/**
@@ -174,7 +176,7 @@ public class AssessmentAndPlanSectionImpl extends
 	 */
 	@Override
 	public AssessmentAndPlanSection init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -183,8 +185,9 @@ public class AssessmentAndPlanSectionImpl extends
 	 * @generated
 	 */
 	@Override
-	public AssessmentAndPlanSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public AssessmentAndPlanSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // AssessmentAndPlanSectionImpl

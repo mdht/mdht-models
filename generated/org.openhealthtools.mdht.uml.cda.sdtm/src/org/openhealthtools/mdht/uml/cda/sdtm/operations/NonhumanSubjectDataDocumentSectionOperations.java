@@ -10,18 +10,11 @@ import org.eclipse.emf.common.util.BasicEList;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClassifier;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
 import org.eclipse.ocl.expressions.OCLExpression;
-
-import org.openhealthtools.mdht.uml.cda.operations.SectionOperations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.BodyWeight;
 import org.openhealthtools.mdht.uml.cda.sdtm.BodyWeightGain;
 import org.openhealthtools.mdht.uml.cda.sdtm.ClinicalObservation;
@@ -48,7 +41,6 @@ import org.openhealthtools.mdht.uml.cda.sdtm.SubjectCharacteristic;
 import org.openhealthtools.mdht.uml.cda.sdtm.SubjectElement;
 import org.openhealthtools.mdht.uml.cda.sdtm.TumorFinding;
 import org.openhealthtools.mdht.uml.cda.sdtm.VitalSign;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -119,7 +111,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperations {
+public class NonhumanSubjectDataDocumentSectionOperations extends org.eclipse.mdht.uml.cda.operations.SectionOperations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -148,7 +148,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -163,25 +163,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionTemplateId(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -209,7 +219,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -224,25 +234,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionClassCode(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLASS_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionClassCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -270,7 +290,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -285,25 +305,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionMoodCode(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MOOD_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionMoodCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -331,7 +361,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -346,25 +376,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionCodeP(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE_P,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionCodeP", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -394,7 +434,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -409,25 +449,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionCode(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -455,7 +505,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -470,25 +520,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionText(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TEXT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionText", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -516,7 +576,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -531,25 +591,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionTitle(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TITLE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionTitle", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -577,7 +647,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -592,25 +662,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionNonhumanSubjectDemographics(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_SUBJECT_DEMOGRAPHICS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDemographics", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionNonhumanSubjectDemographics", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -638,7 +718,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -653,25 +733,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionNonhumanDisposition(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_DISPOSITION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanDisposition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionNonhumanDisposition", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -699,7 +789,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -714,25 +804,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionSubjectElement(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_ELEMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionSubjectElement", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionSubjectElement", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -760,7 +860,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -775,25 +875,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionNonhumanExposure(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_EXPOSURE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanExposure", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionNonhumanExposure", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -821,7 +931,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -836,25 +946,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionBodyWeight(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionBodyWeight", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionBodyWeight", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -882,7 +1002,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -897,25 +1017,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionBodyWeightGain(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_BODY_WEIGHT_GAIN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionBodyWeightGain", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionBodyWeightGain", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -943,7 +1073,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -958,25 +1088,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionClinicalObservation(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_CLINICAL_OBSERVATION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionClinicalObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionClinicalObservation", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1004,7 +1144,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1019,25 +1159,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionDeathDiagnosis(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_DEATH_DIAGNOSIS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionDeathDiagnosis", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionDeathDiagnosis", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1065,7 +1215,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1080,25 +1230,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionFoodandWaterConsumption(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_FOODAND_WATER_CONSUMPTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionFoodandWaterConsumption", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionFoodandWaterConsumption", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1126,7 +1286,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1141,25 +1301,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionNonhumanLaboratoryTestResult(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_NONHUMAN_LABORATORY_TEST_RESULT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanLaboratoryTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionNonhumanLaboratoryTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1187,7 +1357,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1202,25 +1372,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionMacroscopicFinding(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MACROSCOPIC_FINDING,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionMacroscopicFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionMacroscopicFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1248,7 +1428,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1263,25 +1443,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionMicroscopicFindings(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_MICROSCOPIC_FINDINGS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionMicroscopicFindings", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionMicroscopicFindings", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1309,7 +1499,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1324,25 +1514,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionOrganMeasurement(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ORGAN_MEASUREMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionOrganMeasurement", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionOrganMeasurement", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1370,7 +1570,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1385,25 +1585,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionPalpableMass(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PALPABLE_MASS,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionPalpableMass", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionPalpableMass", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1431,7 +1641,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1446,25 +1656,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionPharmacokineticConcentrationFinding(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_CONCENTRATION_FINDING,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionPharmacokineticConcentrationFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionPharmacokineticConcentrationFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1492,7 +1712,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1507,25 +1727,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionSubjectCharacteristic(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_SUBJECT_CHARACTERISTIC,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionSubjectCharacteristic", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionSubjectCharacteristic", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1553,7 +1783,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1568,25 +1798,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionTumorFinding(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_TUMOR_FINDING,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionTumorFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionTumorFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1614,7 +1854,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1629,25 +1869,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionVitalSign(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_VITAL_SIGN,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionVitalSign", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionVitalSign", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1675,7 +1925,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1690,25 +1940,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionECGTestResult(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_ECG_TEST_RESULT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionECGTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionECGTestResult", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1736,7 +1996,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1751,25 +2011,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionStudySubjectEvent(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_EVENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionStudySubjectEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionStudySubjectEvent", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1797,7 +2067,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1812,25 +2082,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionStudySubjectFinding(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_FINDING,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionStudySubjectFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionStudySubjectFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1858,7 +2138,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1873,25 +2153,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionStudySubjectIntervention(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_STUDY_SUBJECT_INTERVENTION,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionStudySubjectIntervention", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionStudySubjectIntervention", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1919,7 +2209,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1934,25 +2224,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionComment(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_COMMENT,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionComment", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -1980,7 +2280,7 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -1995,25 +2295,35 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  boolean validateNonhumanSubjectDataDocumentSectionPharmacokineticParameterFinding(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION);
 			try {
-				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(nonhumanSubjectDataDocumentSection)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(nonhumanSubjectDataDocumentSection)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION__NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION_PHARMACOKINETIC_PARAMETER_FINDING,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionPharmacokineticParameterFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "NonhumanSubjectDataDocumentSectionNonhumanSubjectDataDocumentSectionPharmacokineticParameterFinding", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(nonhumanSubjectDataDocumentSection, context) }),
 						 new Object [] { nonhumanSubjectDataDocumentSection }));
 			}
 			 
@@ -2049,8 +2359,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  NonhumanSubjectDemographics getNonhumanSubjectDemographics(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_NONHUMAN_SUBJECT_DEMOGRAPHICS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(86));
 			try {
 				GET_NONHUMAN_SUBJECT_DEMOGRAPHICS__EOCL_QRY = helper.createQuery(GET_NONHUMAN_SUBJECT_DEMOGRAPHICS__EOCL_EXP);
@@ -2058,8 +2373,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NONHUMAN_SUBJECT_DEMOGRAPHICS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NONHUMAN_SUBJECT_DEMOGRAPHICS__EOCL_QRY);
 		return (NonhumanSubjectDemographics) query.evaluate(nonhumanSubjectDataDocumentSection);
 	}
 
@@ -2090,8 +2406,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  NonhumanDisposition getNonhumanDisposition(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_NONHUMAN_DISPOSITION__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(87));
 			try {
 				GET_NONHUMAN_DISPOSITION__EOCL_QRY = helper.createQuery(GET_NONHUMAN_DISPOSITION__EOCL_EXP);
@@ -2099,8 +2420,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NONHUMAN_DISPOSITION__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NONHUMAN_DISPOSITION__EOCL_QRY);
 		return (NonhumanDisposition) query.evaluate(nonhumanSubjectDataDocumentSection);
 	}
 
@@ -2131,8 +2453,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<SubjectElement> getSubjectElements(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_SUBJECT_ELEMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(88));
 			try {
 				GET_SUBJECT_ELEMENTS__EOCL_QRY = helper.createQuery(GET_SUBJECT_ELEMENTS__EOCL_EXP);
@@ -2140,8 +2467,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUBJECT_ELEMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUBJECT_ELEMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SubjectElement> result = (Collection<SubjectElement>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<SubjectElement>(result.size(), result.toArray());
@@ -2174,8 +2502,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<NonhumanExposure> getNonhumanExposures(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_NONHUMAN_EXPOSURES__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(89));
 			try {
 				GET_NONHUMAN_EXPOSURES__EOCL_QRY = helper.createQuery(GET_NONHUMAN_EXPOSURES__EOCL_EXP);
@@ -2183,8 +2516,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NONHUMAN_EXPOSURES__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NONHUMAN_EXPOSURES__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<NonhumanExposure> result = (Collection<NonhumanExposure>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<NonhumanExposure>(result.size(), result.toArray());
@@ -2217,8 +2551,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<BodyWeight> getBodyWeights(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_BODY_WEIGHTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(90));
 			try {
 				GET_BODY_WEIGHTS__EOCL_QRY = helper.createQuery(GET_BODY_WEIGHTS__EOCL_EXP);
@@ -2226,8 +2565,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_BODY_WEIGHTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_BODY_WEIGHTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<BodyWeight> result = (Collection<BodyWeight>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<BodyWeight>(result.size(), result.toArray());
@@ -2260,8 +2600,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<BodyWeightGain> getBodyWeightGains(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_BODY_WEIGHT_GAINS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(91));
 			try {
 				GET_BODY_WEIGHT_GAINS__EOCL_QRY = helper.createQuery(GET_BODY_WEIGHT_GAINS__EOCL_EXP);
@@ -2269,8 +2614,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_BODY_WEIGHT_GAINS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_BODY_WEIGHT_GAINS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<BodyWeightGain> result = (Collection<BodyWeightGain>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<BodyWeightGain>(result.size(), result.toArray());
@@ -2303,8 +2649,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<ClinicalObservation> getClinicalObservations(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_CLINICAL_OBSERVATIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(92));
 			try {
 				GET_CLINICAL_OBSERVATIONS__EOCL_QRY = helper.createQuery(GET_CLINICAL_OBSERVATIONS__EOCL_EXP);
@@ -2312,8 +2663,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_CLINICAL_OBSERVATIONS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_CLINICAL_OBSERVATIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ClinicalObservation> result = (Collection<ClinicalObservation>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<ClinicalObservation>(result.size(), result.toArray());
@@ -2346,8 +2698,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  DeathDiagnosis getDeathDiagnosis(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_DEATH_DIAGNOSIS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(93));
 			try {
 				GET_DEATH_DIAGNOSIS__EOCL_QRY = helper.createQuery(GET_DEATH_DIAGNOSIS__EOCL_EXP);
@@ -2355,8 +2712,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_DEATH_DIAGNOSIS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_DEATH_DIAGNOSIS__EOCL_QRY);
 		return (DeathDiagnosis) query.evaluate(nonhumanSubjectDataDocumentSection);
 	}
 
@@ -2387,8 +2745,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<FoodandWaterConsumption> getFoodandWaterConsumptions(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_FOODAND_WATER_CONSUMPTIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(94));
 			try {
 				GET_FOODAND_WATER_CONSUMPTIONS__EOCL_QRY = helper.createQuery(GET_FOODAND_WATER_CONSUMPTIONS__EOCL_EXP);
@@ -2396,8 +2759,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_FOODAND_WATER_CONSUMPTIONS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_FOODAND_WATER_CONSUMPTIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<FoodandWaterConsumption> result = (Collection<FoodandWaterConsumption>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<FoodandWaterConsumption>(result.size(), result.toArray());
@@ -2430,8 +2794,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<NonhumanLaboratoryTestResult> getNonhumanLaboratoryTestResults(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_NONHUMAN_LABORATORY_TEST_RESULTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(95));
 			try {
 				GET_NONHUMAN_LABORATORY_TEST_RESULTS__EOCL_QRY = helper.createQuery(GET_NONHUMAN_LABORATORY_TEST_RESULTS__EOCL_EXP);
@@ -2439,8 +2808,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_NONHUMAN_LABORATORY_TEST_RESULTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_NONHUMAN_LABORATORY_TEST_RESULTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<NonhumanLaboratoryTestResult> result = (Collection<NonhumanLaboratoryTestResult>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<NonhumanLaboratoryTestResult>(result.size(), result.toArray());
@@ -2473,8 +2843,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<MacroscopicFinding> getMacroscopicFindings(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_MACROSCOPIC_FINDINGS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(96));
 			try {
 				GET_MACROSCOPIC_FINDINGS__EOCL_QRY = helper.createQuery(GET_MACROSCOPIC_FINDINGS__EOCL_EXP);
@@ -2482,8 +2857,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MACROSCOPIC_FINDINGS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MACROSCOPIC_FINDINGS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<MacroscopicFinding> result = (Collection<MacroscopicFinding>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<MacroscopicFinding>(result.size(), result.toArray());
@@ -2516,8 +2892,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<MicroscopicFinding> getMicroscopicFindingss(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_MICROSCOPIC_FINDINGSS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(97));
 			try {
 				GET_MICROSCOPIC_FINDINGSS__EOCL_QRY = helper.createQuery(GET_MICROSCOPIC_FINDINGSS__EOCL_EXP);
@@ -2525,8 +2906,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_MICROSCOPIC_FINDINGSS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_MICROSCOPIC_FINDINGSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<MicroscopicFinding> result = (Collection<MicroscopicFinding>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<MicroscopicFinding>(result.size(), result.toArray());
@@ -2559,8 +2941,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<OrganMeasurement> getOrganMeasurements(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_ORGAN_MEASUREMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(98));
 			try {
 				GET_ORGAN_MEASUREMENTS__EOCL_QRY = helper.createQuery(GET_ORGAN_MEASUREMENTS__EOCL_EXP);
@@ -2568,8 +2955,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ORGAN_MEASUREMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ORGAN_MEASUREMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<OrganMeasurement> result = (Collection<OrganMeasurement>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<OrganMeasurement>(result.size(), result.toArray());
@@ -2602,8 +2990,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<PalpableMass> getPalpableMasss(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_PALPABLE_MASSS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(99));
 			try {
 				GET_PALPABLE_MASSS__EOCL_QRY = helper.createQuery(GET_PALPABLE_MASSS__EOCL_EXP);
@@ -2611,8 +3004,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PALPABLE_MASSS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PALPABLE_MASSS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PalpableMass> result = (Collection<PalpableMass>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<PalpableMass>(result.size(), result.toArray());
@@ -2645,8 +3039,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<PharmacokineticConcentrationFinding> getPharmacokineticConcentrationFindings(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_PHARMACOKINETIC_CONCENTRATION_FINDINGS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(100));
 			try {
 				GET_PHARMACOKINETIC_CONCENTRATION_FINDINGS__EOCL_QRY = helper.createQuery(GET_PHARMACOKINETIC_CONCENTRATION_FINDINGS__EOCL_EXP);
@@ -2654,8 +3053,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PHARMACOKINETIC_CONCENTRATION_FINDINGS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PHARMACOKINETIC_CONCENTRATION_FINDINGS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PharmacokineticConcentrationFinding> result = (Collection<PharmacokineticConcentrationFinding>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<PharmacokineticConcentrationFinding>(result.size(), result.toArray());
@@ -2688,8 +3088,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<SubjectCharacteristic> getSubjectCharacteristics(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_SUBJECT_CHARACTERISTICS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(101));
 			try {
 				GET_SUBJECT_CHARACTERISTICS__EOCL_QRY = helper.createQuery(GET_SUBJECT_CHARACTERISTICS__EOCL_EXP);
@@ -2697,8 +3102,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_SUBJECT_CHARACTERISTICS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_SUBJECT_CHARACTERISTICS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<SubjectCharacteristic> result = (Collection<SubjectCharacteristic>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<SubjectCharacteristic>(result.size(), result.toArray());
@@ -2731,8 +3137,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<TumorFinding> getTumorFindings(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_TUMOR_FINDINGS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(102));
 			try {
 				GET_TUMOR_FINDINGS__EOCL_QRY = helper.createQuery(GET_TUMOR_FINDINGS__EOCL_EXP);
@@ -2740,8 +3151,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_TUMOR_FINDINGS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_TUMOR_FINDINGS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<TumorFinding> result = (Collection<TumorFinding>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<TumorFinding>(result.size(), result.toArray());
@@ -2774,8 +3186,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<VitalSign> getVitalSigns(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_VITAL_SIGNS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(103));
 			try {
 				GET_VITAL_SIGNS__EOCL_QRY = helper.createQuery(GET_VITAL_SIGNS__EOCL_EXP);
@@ -2783,8 +3200,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_VITAL_SIGNS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_VITAL_SIGNS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<VitalSign> result = (Collection<VitalSign>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<VitalSign>(result.size(), result.toArray());
@@ -2817,8 +3235,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<ECGTestResult> getECGTestResults(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_ECG_TEST_RESULTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(104));
 			try {
 				GET_ECG_TEST_RESULTS__EOCL_QRY = helper.createQuery(GET_ECG_TEST_RESULTS__EOCL_EXP);
@@ -2826,8 +3249,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_ECG_TEST_RESULTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_ECG_TEST_RESULTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<ECGTestResult> result = (Collection<ECGTestResult>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<ECGTestResult>(result.size(), result.toArray());
@@ -2860,8 +3284,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<StudySubjectEvent> getStudySubjectEvents(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_STUDY_SUBJECT_EVENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(105));
 			try {
 				GET_STUDY_SUBJECT_EVENTS__EOCL_QRY = helper.createQuery(GET_STUDY_SUBJECT_EVENTS__EOCL_EXP);
@@ -2869,8 +3298,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_SUBJECT_EVENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_SUBJECT_EVENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<StudySubjectEvent> result = (Collection<StudySubjectEvent>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<StudySubjectEvent>(result.size(), result.toArray());
@@ -2903,8 +3333,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<StudySubjectFinding> getStudySubjectFindings(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_STUDY_SUBJECT_FINDINGS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(106));
 			try {
 				GET_STUDY_SUBJECT_FINDINGS__EOCL_QRY = helper.createQuery(GET_STUDY_SUBJECT_FINDINGS__EOCL_EXP);
@@ -2912,8 +3347,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_SUBJECT_FINDINGS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_SUBJECT_FINDINGS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<StudySubjectFinding> result = (Collection<StudySubjectFinding>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<StudySubjectFinding>(result.size(), result.toArray());
@@ -2946,8 +3382,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<StudySubjectIntervention> getStudySubjectInterventions(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_STUDY_SUBJECT_INTERVENTIONS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(107));
 			try {
 				GET_STUDY_SUBJECT_INTERVENTIONS__EOCL_QRY = helper.createQuery(GET_STUDY_SUBJECT_INTERVENTIONS__EOCL_EXP);
@@ -2955,8 +3396,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_STUDY_SUBJECT_INTERVENTIONS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_STUDY_SUBJECT_INTERVENTIONS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<StudySubjectIntervention> result = (Collection<StudySubjectIntervention>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<StudySubjectIntervention>(result.size(), result.toArray());
@@ -2989,8 +3431,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<Comment> getComments(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_COMMENTS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(108));
 			try {
 				GET_COMMENTS__EOCL_QRY = helper.createQuery(GET_COMMENTS__EOCL_EXP);
@@ -2998,8 +3445,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_COMMENTS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_COMMENTS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<Comment> result = (Collection<Comment>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<Comment>(result.size(), result.toArray());
@@ -3032,8 +3480,13 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 	 */
 	
 	public static  EList<PharmacokineticParameterFinding> getPharmacokineticParameterFindings(NonhumanSubjectDataDocumentSection nonhumanSubjectDataDocumentSection) {
+	
+	
+	
 		if (GET_PHARMACOKINETIC_PARAMETER_FINDINGS__EOCL_QRY == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setOperationContext(SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION, SdtmPackage.Literals.NONHUMAN_SUBJECT_DATA_DOCUMENT_SECTION.getEAllOperations().get(109));
 			try {
 				GET_PHARMACOKINETIC_PARAMETER_FINDINGS__EOCL_QRY = helper.createQuery(GET_PHARMACOKINETIC_PARAMETER_FINDINGS__EOCL_EXP);
@@ -3041,8 +3494,9 @@ public class NonhumanSubjectDataDocumentSectionOperations extends SectionOperati
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		OCL.Query query = EOCL_ENV.createQuery(GET_PHARMACOKINETIC_PARAMETER_FINDINGS__EOCL_QRY);
+			}
+		 
+		OCL.Query query = EOCL_ENV.get().createQuery(GET_PHARMACOKINETIC_PARAMETER_FINDINGS__EOCL_QRY);
 		@SuppressWarnings("unchecked")
 		Collection<PharmacokineticParameterFinding> result = (Collection<PharmacokineticParameterFinding>) query.evaluate(nonhumanSubjectDataDocumentSection);
 		return new BasicEList.UnmodifiableEList<PharmacokineticParameterFinding>(result.size(), result.toArray());

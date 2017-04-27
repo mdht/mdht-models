@@ -1,18 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:CDA="http://www.openhealthtools.org/mdht/schemas/cda/4" xmlns:Ecore="http://www.eclipse.org/uml2/schemas/Ecore/5" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/4.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/uml2/schemas/Ecore/5 pathmap://UML_PROFILES/Ecore.profile.uml#_z1OFcHjqEdy8S4Cr8Rc_NA">
   <uml:Package xmi:id="_qQyD8jxVEd6JwqSGecoePg" name="hitsp">
-    <packageImport xmi:id="_-xRsgDxVEd6JwqSGecoePg">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
-    </packageImport>
+   
     <packageImport xmi:id="_8zZJ4GD8Ed6bFO5yxRh3Nw">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.ccd/model/ccd_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
     </packageImport>
     <packageImport xmi:id="_AKC0kJqZEd-B4IL9pc6oFQ">
       <importedPackage href="../../org.openhealthtools.mdht.uml.cda.cdt/model/cdt_Ecore.uml#_qQyD8jxVEd6JwqSGecoePg"/>
     </packageImport>
-    <packageImport xmi:id="_S49LUIwJEd6B6JSUB00H7g">
-      <importedPackage href="../../org.openhealthtools.mdht.uml.hl7.datatypes/model/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+   
+    <packageImport xmi:id="_PKZrwE3jEeGVaJScxwOy7g">
+      <importedPackage href="pathmap://CDA_MODEL/cda.uml#_ii81kjxVEd6JwqSGecoePg"/>
     </packageImport>
+    <packageImport xmi:id="_hPUsgNcZEeGfQ6frO0B-Jg">
+      <importedPackage href="pathmap://DATATYPES_MODEL/datatypes.uml#_XgMSwzxVEd6JwqSGecoePg"/>
+    </packageImport>
+    <packageImport xmi:id="_q3SeUD49EeKUq_Bmx5Topg">
+      <importedPackage href="pathmap://VOCAB_MODEL/vocab.uml#__yVbeUDcEd6xYZuu1VKCVw"/>
+    </packageImport>
+    
     <packageImport xmi:id="_Zkp_kDITEd-saqiXO4OYhQ">
       <importedPackage href="../../org.openhealthtools.mdht.uml.term.models/model/hitsp-c80.uml#_KnCD4CFjEd-3s7f6mWX-3A"/>
     </packageImport>
@@ -2434,7 +2440,7 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '329505003' or val
         </specification>
       </ownedRule>
       <generalization xmi:id="_NC6JAU51EeC-IOl-lQ-2xA">
-        <general xmi:type="uml:Class" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
+        <general xmi:type="uml:Class" href="pathmap://CDA_MODEL/cda.uml#_bJyIQDxYEd6JwqSGecoePg"/>
       </generalization>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_vMJZwE8mEeCYjrG3z1gQrQ" name="MedicationOrderInformation">
@@ -3143,8 +3149,8 @@ value.codeSystem = '2.16.840.1.113883.6.96' and (value.code = '281789004' or val
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_8UKPwBpOEeSd5OoVIuDNwg" clientDependency="_8UKPwRpOEeSd5OoVIuDNwg" name="HITSPRegistryDelegate">
       <interfaceRealization xmi:id="_8UKPwRpOEeSd5OoVIuDNwg" client="_8UKPwBpOEeSd5OoVIuDNwg">
-        <supplier xmi:type="uml:Interface" href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_M9TsYBgbEd-f6JfqlBX7nQ"/>
-        <contract href="../../org.openhealthtools.mdht.uml.cda/model/cda.uml#_M9TsYBgbEd-f6JfqlBX7nQ"/>
+        <supplier xmi:type="uml:Interface" href="pathmap://CDA_MODEL/cda.uml#_M9TsYBgbEd-f6JfqlBX7nQ"/>
+        <contract href="pathmap://CDA_MODEL/cda.uml#_M9TsYBgbEd-f6JfqlBX7nQ"/>
       </interfaceRealization>
     </packagedElement>
     <profileApplication xmi:id="_aMu68IwJEd6B6JSUB00H7g">

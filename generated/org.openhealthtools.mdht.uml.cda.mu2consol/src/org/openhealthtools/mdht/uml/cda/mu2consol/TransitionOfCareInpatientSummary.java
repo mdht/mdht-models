@@ -24,8 +24,10 @@ import org.openhealthtools.mdht.uml.cda.consol.HospitalDischargeInstructionsSect
  *
  *
  * @see org.openhealthtools.mdht.uml.cda.mu2consol.Mu2consolPackage#getTransitionOfCareInpatientSummary()
- * @model annotation=
- *        "http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='TransitionOfCareInpatientSummaryMedications TransitionOfCareInpatientSummaryEncounterDiagnoses TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection'"
+ * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation
+ *        constraints.validation.error='TransitionOfCareInpatientSummaryMedications
+ *        TransitionOfCareInpatientSummaryEncounterDiagnoses
+ *        TransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection'"
  * @generated
  */
 public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
@@ -37,8 +39,12 @@ public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
 	 * @param context
 	 *            The cache of context-specific information. <!-- end-model-doc
 	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='(self.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection)) or \r\nself.getAllSections()->one(s : cda::Section | not s.oclIsUndefined() and s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))'"
+	 * @model annotation= "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='(self.getAllSections()->one(s : cda::Section | not
+	 *        s.oclIsUndefined() and s.oclIsTypeOf(consol::MedicationsSection))
+	 *        or \r\nself.getAllSections()->one(s : cda::Section | not
+	 *        s.oclIsUndefined() and
+	 *        s.oclIsTypeOf(consol::HospitalDischargeMedicationsSection)))'"
 	 * @generated
 	 */
 	boolean validateTransitionOfCareInpatientSummaryMedications(DiagnosticChain diagnostics,
@@ -52,8 +58,52 @@ public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
 	 * @param context
 	 *            The cache of context-specific information. <!-- end-model-doc
 	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getSections()->exists( osec : cda::Section | not osec.oclIsUndefined() and osec.nullFlavor <> vocab::NullFlavor::NI implies  (  self.getSections()->exists( sec : cda::Section | not sec.oclIsUndefined() and sec.oclIsKindOf(consol::AssessmentSection) and sec.getObservations()->exists(obs : cda::Observation | not obs.oclIsUndefined() and obs.oclIsKindOf(consol::ProblemObservation)) )  ) or (  self.getSections()->exists( sec : cda::Section | not sec.oclIsUndefined() and sec.oclIsKindOf(consol::AssessmentAndPlanSection) and sec.getObservations()->exists(obs : cda::Observation | not obs.oclIsUndefined() and obs.oclIsKindOf(consol::ProblemObservation)) )  ) or (  self.getSections()->exists( sec : cda::Section | not sec.oclIsUndefined() and sec.oclIsKindOf(consol::PostoperativeDiagnosisSection) and sec.getObservations()->exists(obs : cda::Observation | not obs.oclIsUndefined() and obs.oclIsKindOf(consol::ProblemObservation)) )  ) or (  self.getSections()->exists(sec : cda::Section | not sec.oclIsUndefined() and sec.oclIsKindOf(consol::ProblemSection) and ( sec.getActs()->exists(a : cda::Act | not a.oclIsUndefined() and a.oclIsKindOf(consol::ProblemConcernAct) or sec.getObservations()->exists(obs : cda::Observation | not obs.oclIsUndefined() and obs.oclIsKindOf(consol::ProblemObservation)) ) ) )  ) or (  self.getSections()->exists( sec : cda::Section | not sec.oclIsUndefined() and sec.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection) and sec.getActs()->exists(a : cda::Act | not a.oclIsUndefined() and a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)) )  ) or (  self.getSections()->exists( sec : cda::Section | not sec.oclIsUndefined() and sec.oclIsKindOf(consol::HospitalDischargeDiagnosisSection) and sec.getActs()->exists(a : cda::Act | not a.oclIsUndefined() and a.oclIsKindOf(consol::HospitalDischargeDiagnosis)) )  ) or (  self.getSections()->exists(sec : cda::Section | not sec.oclIsUndefined() and sec.oclIsKindOf(consol::EncountersSection) and ( sec.getEncounters()->exists(enc : cda::Encounter | not enc.oclIsUndefined() and enc.oclIsKindOf(consol::EncounterActivities) or sec.getActs()->exists(a : cda::Act | not a.oclIsUndefined() and a.oclIsKindOf(consol::EncounterDiagnosis)) ) ) )  )  )'"
+	 * @model annotation= "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getSections()->exists( osec : cda::Section | not
+	 *        osec.oclIsUndefined() and osec.nullFlavor <> vocab::NullFlavor::NI
+	 *        implies ( self.getSections()->exists( sec : cda::Section | not
+	 *        sec.oclIsUndefined() and
+	 *        sec.oclIsKindOf(consol::AssessmentSection) and
+	 *        sec.getObservations()->exists(obs : cda::Observation | not
+	 *        obs.oclIsUndefined() and
+	 *        obs.oclIsKindOf(consol::ProblemObservation)) ) ) or (
+	 *        self.getSections()->exists( sec : cda::Section | not
+	 *        sec.oclIsUndefined() and
+	 *        sec.oclIsKindOf(consol::AssessmentAndPlanSection) and
+	 *        sec.getObservations()->exists(obs : cda::Observation | not
+	 *        obs.oclIsUndefined() and
+	 *        obs.oclIsKindOf(consol::ProblemObservation)) ) ) or (
+	 *        self.getSections()->exists( sec : cda::Section | not
+	 *        sec.oclIsUndefined() and
+	 *        sec.oclIsKindOf(consol::PostoperativeDiagnosisSection) and
+	 *        sec.getObservations()->exists(obs : cda::Observation | not
+	 *        obs.oclIsUndefined() and
+	 *        obs.oclIsKindOf(consol::ProblemObservation)) ) ) or (
+	 *        self.getSections()->exists(sec : cda::Section | not
+	 *        sec.oclIsUndefined() and sec.oclIsKindOf(consol::ProblemSection)
+	 *        and ( sec.getActs()->exists(a : cda::Act | not a.oclIsUndefined()
+	 *        and a.oclIsKindOf(consol::ProblemConcernAct) or
+	 *        sec.getObservations()->exists(obs : cda::Observation | not
+	 *        obs.oclIsUndefined() and
+	 *        obs.oclIsKindOf(consol::ProblemObservation)) ) ) ) ) or (
+	 *        self.getSections()->exists( sec : cda::Section | not
+	 *        sec.oclIsUndefined() and
+	 *        sec.oclIsKindOf(consol::HospitalAdmissionDiagnosisSection) and
+	 *        sec.getActs()->exists(a : cda::Act | not a.oclIsUndefined() and
+	 *        a.oclIsKindOf(consol::HospitalAdmissionDiagnosis)) ) ) or (
+	 *        self.getSections()->exists( sec : cda::Section | not
+	 *        sec.oclIsUndefined() and
+	 *        sec.oclIsKindOf(consol::HospitalDischargeDiagnosisSection) and
+	 *        sec.getActs()->exists(a : cda::Act | not a.oclIsUndefined() and
+	 *        a.oclIsKindOf(consol::HospitalDischargeDiagnosis)) ) ) or (
+	 *        self.getSections()->exists(sec : cda::Section | not
+	 *        sec.oclIsUndefined() and
+	 *        sec.oclIsKindOf(consol::EncountersSection) and (
+	 *        sec.getEncounters()->exists(enc : cda::Encounter | not
+	 *        enc.oclIsUndefined() and
+	 *        enc.oclIsKindOf(consol::EncounterActivities) or
+	 *        sec.getActs()->exists(a : cda::Act | not a.oclIsUndefined() and
+	 *        a.oclIsKindOf(consol::EncounterDiagnosis)) ) ) ) ) )'"
 	 * @generated
 	 */
 	boolean validateTransitionOfCareInpatientSummaryEncounterDiagnoses(DiagnosticChain diagnostics,
@@ -70,8 +120,10 @@ public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
 	 * @param context
 	 *            The cache of context-specific information. <!-- end-model-doc
 	 *            -->
-	 * @model annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->one(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))'"
+	 * @model annotation= "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getAllSections()->one(section : cda::Section | not
+	 *        section.oclIsUndefined() and
+	 *        section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))'"
 	 * @generated
 	 */
 	boolean validateTransitionOfCareInpatientSummaryHospitalDischargeInstructionsSection(DiagnosticChain diagnostics,
@@ -87,21 +139,24 @@ public interface TransitionOfCareInpatientSummary extends SummaryOfCareRecord {
 	 * <!-- end-model-doc -->
 	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getAllSections()->select(section : cda::Section | not section.oclIsUndefined() and section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeInstructionsSection)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getAllSections()->select(section : cda::Section | not
+	 *        section.oclIsUndefined() and
+	 *        section.oclIsKindOf(consol::HospitalDischargeInstructionsSection))->asSequence()->any(true).oclAsType(consol::HospitalDischargeInstructionsSection)'"
 	 * @generated
 	 */
 	HospitalDischargeInstructionsSection getHospitalDischargeInstructionsSection();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public TransitionOfCareInpatientSummary init();
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	public TransitionOfCareInpatientSummary init(Iterable<? extends Initializer<? extends EObject>> initializers);

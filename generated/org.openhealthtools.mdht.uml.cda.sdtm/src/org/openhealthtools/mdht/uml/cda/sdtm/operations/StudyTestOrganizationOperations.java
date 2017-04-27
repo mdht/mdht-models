@@ -7,17 +7,11 @@ import java.util.Map;
 import org.eclipse.emf.common.util.BasicDiagnostic;
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.ocl.ParserException;
-
 import org.eclipse.ocl.ecore.Constraint;
 import org.eclipse.ocl.ecore.OCL;
-
-import org.openhealthtools.mdht.uml.cda.operations.Participant2Operations;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.SdtmPackage;
 import org.openhealthtools.mdht.uml.cda.sdtm.StudyTestOrganization;
-
 import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
 
 /**
@@ -36,7 +30,15 @@ import org.openhealthtools.mdht.uml.cda.sdtm.util.SdtmValidator;
  *
  * @generated
  */
-public class StudyTestOrganizationOperations extends Participant2Operations {
+public class StudyTestOrganizationOperations extends org.eclipse.mdht.uml.cda.operations.Participant2Operations {
+	protected static final ThreadLocal< OCL > EOCL_ENV = new ThreadLocal< OCL >() {
+		@Override
+		public OCL initialValue() {
+			return OCL.newInstance();
+		}
+	};
+
+
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -65,7 +67,7 @@ public class StudyTestOrganizationOperations extends Participant2Operations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_TEST_ORGANIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_TEST_ORGANIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -80,25 +82,35 @@ public class StudyTestOrganizationOperations extends Participant2Operations {
 	 */
 	
 	public static  boolean validateStudyTestOrganizationTemplateId(StudyTestOrganization studyTestOrganization, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_TEST_ORGANIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_TEST_ORGANIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_TEST_ORGANIZATION);
 			try {
-				VALIDATE_STUDY_TEST_ORGANIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_TEST_ORGANIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_TEST_ORGANIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_TEST_ORGANIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_TEST_ORGANIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyTestOrganization)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_TEST_ORGANIZATION_TEMPLATE_ID__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyTestOrganization)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_TEST_ORGANIZATION__STUDY_TEST_ORGANIZATION_TEMPLATE_ID,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTestOrganizationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTestOrganization, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTestOrganizationStudyTestOrganizationTemplateId", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTestOrganization, context) }),
 						 new Object [] { studyTestOrganization }));
 			}
 			 
@@ -126,7 +138,7 @@ public class StudyTestOrganizationOperations extends Participant2Operations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_TEST_ORGANIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_TEST_ORGANIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -141,25 +153,35 @@ public class StudyTestOrganizationOperations extends Participant2Operations {
 	 */
 	
 	public static  boolean validateStudyTestOrganizationTypeCode(StudyTestOrganization studyTestOrganization, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_TEST_ORGANIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_TEST_ORGANIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_TEST_ORGANIZATION);
 			try {
-				VALIDATE_STUDY_TEST_ORGANIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_TEST_ORGANIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_TEST_ORGANIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_TEST_ORGANIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_TEST_ORGANIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyTestOrganization)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_TEST_ORGANIZATION_TYPE_CODE__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyTestOrganization)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_TEST_ORGANIZATION__STUDY_TEST_ORGANIZATION_TYPE_CODE,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTestOrganizationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTestOrganization, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTestOrganizationStudyTestOrganizationTypeCode", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTestOrganization, context) }),
 						 new Object [] { studyTestOrganization }));
 			}
 			 
@@ -187,7 +209,7 @@ public class StudyTestOrganizationOperations extends Participant2Operations {
 	 * @ordered
 	 */
 	
-	protected static Constraint VALIDATE_STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV;
+	protected static ThreadLocal<  Constraint> VALIDATE_STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = new  ThreadLocal<  Constraint>();
 	
 
 	/**
@@ -202,25 +224,35 @@ public class StudyTestOrganizationOperations extends Participant2Operations {
 	 */
 	
 	public static  boolean validateStudyTestOrganizationRoleOfPerformer(StudyTestOrganization studyTestOrganization, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	
+	
+	
   	  
-		if (VALIDATE_STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV == null) {
-			OCL.Helper helper = EOCL_ENV.createOCLHelper();
+  	  
+   
+  	  
+  	  
+		if (VALIDATE_STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get() == null) {
+		
+	 
+			OCL.Helper helper = EOCL_ENV.get().createOCLHelper();
 			helper.setContext(SdtmPackage.Literals.STUDY_TEST_ORGANIZATION);
 			try {
-				VALIDATE_STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV = helper.createInvariant(VALIDATE_STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP);
+				VALIDATE_STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.set(helper.createInvariant(VALIDATE_STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_EXP));
 			}
 			catch (ParserException pe) {
 				throw new UnsupportedOperationException(pe.getLocalizedMessage());
 			}
-		}
-		if (!EOCL_ENV.createQuery(VALIDATE_STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV).check(studyTestOrganization)) {
+			}
+		 
+		if (!EOCL_ENV.get().createQuery(VALIDATE_STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER__DIAGNOSTIC_CHAIN_MAP__EOCL_INV.get()).check(studyTestOrganization)) {
 			if (diagnostics != null) {
 				diagnostics.add
 					(new BasicDiagnostic
 						(Diagnostic.ERROR,
 						 SdtmValidator.DIAGNOSTIC_SOURCE,
 						 SdtmValidator.STUDY_TEST_ORGANIZATION__STUDY_TEST_ORGANIZATION_ROLE_OF_PERFORMER,
-						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTestOrganizationRoleOfPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTestOrganization, context) }),
+						 org.eclipse.emf.ecore.plugin.EcorePlugin.INSTANCE.getString("_UI_GenericInvariant_diagnostic", new Object[] { "StudyTestOrganizationStudyTestOrganizationRoleOfPerformer", org.eclipse.emf.ecore.util.EObjectValidator.getObjectLabel(studyTestOrganization, context) }),
 						 new Object [] { studyTestOrganization }));
 			}
 			 

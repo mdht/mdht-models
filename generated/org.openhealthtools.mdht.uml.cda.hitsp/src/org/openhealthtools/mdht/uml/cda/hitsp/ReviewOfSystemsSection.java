@@ -10,12 +10,10 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 
 /**
  * <!-- begin-user-doc -->
@@ -25,7 +23,7 @@ import org.openhealthtools.mdht.emf.runtime.util.Initializer;
  * <!-- begin-model-doc -->
  * <p>
  *     The Review of Systems Section contains information describing patient responses to questions about the
- *     function of various body systems. 
+ *     function of various body systems.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -60,5 +58,6 @@ public interface ReviewOfSystemsSection extends org.openhealthtools.mdht.uml.cda
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ReviewOfSystemsSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public ReviewOfSystemsSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // ReviewOfSystemsSection

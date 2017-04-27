@@ -23,15 +23,15 @@ import org.openhealthtools.mdht.uml.cda.mu2consol.VDTAmbulatorySummary;
 import org.openhealthtools.mdht.uml.cda.mu2consol.operations.VDTAmbulatorySummaryOperations;
 
 /**
- * <!-- begin-user-doc --> An implementation of the model object '
- * <em><b>VDT Ambulatory Summary</b></em>'. <!-- end-user-doc -->
+ * <!-- begin-user-doc --> An implementation of the model object ' <em><b>VDT
+ * Ambulatory Summary</b></em>'. <!-- end-user-doc -->
  *
  * @generated
  */
 public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl implements VDTAmbulatorySummary {
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	protected VDTAmbulatorySummaryImpl() {
@@ -40,7 +40,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl im
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -50,7 +50,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl im
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -62,7 +62,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl im
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -74,7 +74,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl im
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -84,7 +84,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl im
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override
@@ -94,7 +94,7 @@ public class VDTAmbulatorySummaryImpl extends ViewDownloadTransmitSummaryImpl im
 
 	/**
 	 * <!-- begin-user-doc --> <!-- end-user-doc -->
-	 * 
+	 *
 	 * @generated
 	 */
 	@Override

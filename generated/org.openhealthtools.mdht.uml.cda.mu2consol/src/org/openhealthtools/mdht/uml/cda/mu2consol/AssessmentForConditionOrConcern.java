@@ -32,7 +32,10 @@ public interface AssessmentForConditionOrConcern extends AssessmentSection {
 	 * end-model-doc -->
 	 *
 	 * @model kind="operation" required="true" ordered="false" annotation=
-	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel body='self.getObservations()->select(observation : cda::Observation | not observation.oclIsUndefined() and observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)'"
+	 *        "http://www.eclipse.org/uml2/1.1.0/GenModel
+	 *        body='self.getObservations()->select(observation :
+	 *        cda::Observation | not observation.oclIsUndefined() and
+	 *        observation.oclIsKindOf(consol::ProblemObservation))->asSequence()->any(true).oclAsType(consol::ProblemObservation)'"
 	 * @generated
 	 */
 	ProblemObservation getProblemObservation();

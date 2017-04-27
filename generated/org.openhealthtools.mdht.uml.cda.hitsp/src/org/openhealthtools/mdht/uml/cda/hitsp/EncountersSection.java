@@ -10,13 +10,11 @@
  *******************************************************************************/
 package org.openhealthtools.mdht.uml.cda.hitsp;
 
-import java.lang.Iterable;
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EObject;
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
 import org.openhealthtools.mdht.uml.cda.ihe.EncounterHistorySection;
 
 /**
@@ -27,7 +25,7 @@ import org.openhealthtools.mdht.uml.cda.ihe.EncounterHistorySection;
  * <!-- begin-model-doc -->
  * <p>
  *     The Encounter Section contains information describing the patient history of encounters. At a minimum,
- *     current and pertinent historical encounters should be included; a full encounter history may be included. 
+ *     current and pertinent historical encounters should be included; a full encounter history may be included.
  * </p>
  * <!-- end-model-doc -->
  *
@@ -70,5 +68,6 @@ public interface EncountersSection extends EncounterHistorySection {
 	   * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EncountersSection init(Iterable<? extends Initializer<? extends EObject>> initializers);
+	public EncountersSection init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers);
 } // EncountersSection

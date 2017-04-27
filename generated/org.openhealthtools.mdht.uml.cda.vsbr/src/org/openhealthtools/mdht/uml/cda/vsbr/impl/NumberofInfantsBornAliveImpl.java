@@ -11,10 +11,6 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
 
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
-import org.openhealthtools.mdht.uml.cda.impl.ObservationImpl;
-
 import org.openhealthtools.mdht.uml.cda.vsbr.NumberofInfantsBornAlive;
 import org.openhealthtools.mdht.uml.cda.vsbr.VsbrPackage;
 
@@ -24,12 +20,11 @@ import org.openhealthtools.mdht.uml.cda.vsbr.operations.NumberofInfantsBornAlive
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>Numberof Infants Born Alive</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class NumberofInfantsBornAliveImpl extends ObservationImpl implements NumberofInfantsBornAlive {
+public class NumberofInfantsBornAliveImpl extends org.eclipse.mdht.uml.cda.impl.ObservationImpl
+		implements NumberofInfantsBornAlive {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -54,8 +49,10 @@ public class NumberofInfantsBornAliveImpl extends ObservationImpl implements Num
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateNumberofInfantsBornAliveTemplateId(DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveTemplateId(this, diagnostics, context);
+	public boolean validateNumberofInfantsBornAliveTemplateId(DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return NumberofInfantsBornAliveOperations.validateNumberofInfantsBornAliveTemplateId(
+			this, diagnostics, context);
 	}
 
 	/**
@@ -109,7 +106,7 @@ public class NumberofInfantsBornAliveImpl extends ObservationImpl implements Num
 	 * @generated
 	 */
 	public NumberofInfantsBornAlive init() {
-		return Initializer.Util.init(this);
+		return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
@@ -117,8 +114,9 @@ public class NumberofInfantsBornAliveImpl extends ObservationImpl implements Num
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public NumberofInfantsBornAlive init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
+	public NumberofInfantsBornAlive init(
+			Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+		org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
 		return this;
 	}
 } // NumberofInfantsBornAliveImpl

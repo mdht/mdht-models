@@ -16,6 +16,7 @@ import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.ResourceLocator;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.util.EObjectValidator;
+import org.eclipse.mdht.uml.cda.util.CDAValidator;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveObservation;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveReference;
 import org.openhealthtools.mdht.uml.cda.ccd.AdvanceDirectiveStatusObservation;
@@ -94,7 +95,6 @@ import org.openhealthtools.mdht.uml.cda.ccd.SupportGuardian;
 import org.openhealthtools.mdht.uml.cda.ccd.SupportParticipant;
 import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsOrganizer;
 import org.openhealthtools.mdht.uml.cda.ccd.VitalSignsSection;
-import org.openhealthtools.mdht.uml.cda.util.CDAValidator;
 
 /**
  * <!-- begin-user-doc -->
@@ -4127,7 +4127,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	@Override
-	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	protected boolean validate(int classifierID, Object value, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		switch (classifierID) {
 			case CCDPackage.MEDICATIONS_SECTION:
 				return validateMedicationsSection((MedicationsSection) value, diagnostics, context);
@@ -4609,7 +4610,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventRequired(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentServiceEventRequired(diagnostics, context);
 	}
 
@@ -4620,7 +4622,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventClassCode(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentServiceEventClassCode(diagnostics, context);
 	}
 
@@ -4631,7 +4634,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentServiceEventEffectiveTime(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentServiceEventEffectiveTime(diagnostics, context);
 	}
 
@@ -4642,7 +4646,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentLanguageCodeFormat(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentLanguageCodeFormat(diagnostics, context);
 	}
 
@@ -4653,7 +4658,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentNoTemplateIdExtension(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentNoTemplateIdExtension(diagnostics, context);
 	}
 
@@ -4664,7 +4670,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasEffectiveTimeSeconds(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentHasEffectiveTimeSeconds(diagnostics, context);
 	}
 
@@ -4675,7 +4682,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasEffectiveTimeZone(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentHasEffectiveTimeZone(diagnostics, context);
 	}
 
@@ -4686,7 +4694,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentOneOrTwoRecordTarget(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentOneOrTwoRecordTarget(diagnostics, context);
 	}
 
@@ -4697,7 +4706,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasAssignedAuthor(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentHasAssignedAuthor(diagnostics, context);
 	}
 
@@ -4708,7 +4718,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentHasAssignedAuthorNullFlavor(
 			diagnostics, context);
 	}
@@ -4720,7 +4731,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentHasInformationRecipient(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentHasInformationRecipient(diagnostics, context);
 	}
 
@@ -4731,7 +4743,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentTemplateId(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentTemplateId(diagnostics, context);
 	}
 
@@ -4742,7 +4755,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentCode(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentCode(diagnostics, context);
 	}
 
@@ -4753,7 +4767,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentLanguageCode(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentLanguageCode(diagnostics, context);
 	}
 
@@ -4764,7 +4779,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentProblemSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentProblemSection(diagnostics, context);
 	}
 
@@ -4775,7 +4791,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentFamilyHistorySection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentFamilyHistorySection(diagnostics, context);
 	}
 
@@ -4786,7 +4803,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentSocialHistorySection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentSocialHistorySection(diagnostics, context);
 	}
 
@@ -4797,7 +4815,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentAlertsSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentAlertsSection(diagnostics, context);
 	}
 
@@ -4808,7 +4827,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentMedicationsSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentMedicationsSection(diagnostics, context);
 	}
 
@@ -4819,7 +4839,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentResultsSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentResultsSection(diagnostics, context);
 	}
 
@@ -4830,7 +4851,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentProceduresSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentProceduresSection(diagnostics, context);
 	}
 
@@ -4841,7 +4863,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentEncountersSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentEncountersSection(diagnostics, context);
 	}
 
@@ -4852,7 +4875,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentPlanOfCareSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentPlanOfCareSection(diagnostics, context);
 	}
 
@@ -4863,7 +4887,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentImmunizationsSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentImmunizationsSection(diagnostics, context);
 	}
 
@@ -4874,7 +4899,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentVitalSignsSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentVitalSignsSection(diagnostics, context);
 	}
 
@@ -4885,7 +4911,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentMedicalEquipmentSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentMedicalEquipmentSection(diagnostics, context);
 	}
 
@@ -4896,7 +4923,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentFunctionalStatusSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentFunctionalStatusSection(diagnostics, context);
 	}
 
@@ -4907,7 +4935,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentAdvanceDirectivesSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentAdvanceDirectivesSection(diagnostics, context);
 	}
 
@@ -4918,7 +4947,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentPayersSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentPayersSection(diagnostics, context);
 	}
 
@@ -4929,7 +4959,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateContinuityOfCareDocument_validateContinuityOfCareDocumentPurposeSection(
-			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ContinuityOfCareDocument continuityOfCareDocument, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return continuityOfCareDocument.validateContinuityOfCareDocumentPurposeSection(diagnostics, context);
 	}
 
@@ -5494,7 +5525,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateProblemStatusObservation_validateStatusObservationTemplateId(
-			ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			ProblemStatusObservation problemStatusObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return problemStatusObservation.validateStatusObservationTemplateId(diagnostics, context);
 	}
 
@@ -5671,9 +5703,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateProblemHealthStatusObservation(
-			ProblemHealthStatusObservation problemHealthStatusObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateProblemHealthStatusObservation(ProblemHealthStatusObservation problemHealthStatusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(problemHealthStatusObservation, diagnostics, context)) {
 			return false;
 		}
@@ -5685,7 +5716,8 @@ public class CCDValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(problemHealthStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(problemHealthStatusObservation, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				problemHealthStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(problemHealthStatusObservation, diagnostics, context);
@@ -5872,8 +5904,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEpisodeObservation_validateEpisodeObservationClassCode(
-			EpisodeObservation episodeObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEpisodeObservation_validateEpisodeObservationClassCode(EpisodeObservation episodeObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return episodeObservation.validateEpisodeObservationClassCode(diagnostics, context);
 	}
 
@@ -5981,8 +6013,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePatientAwareness_validatePatientAwarenessParticipantRoleId(
-			PatientAwareness patientAwareness, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePatientAwareness_validatePatientAwarenessParticipantRoleId(PatientAwareness patientAwareness,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return patientAwareness.validatePatientAwarenessParticipantRoleId(diagnostics, context);
 	}
 
@@ -6263,7 +6295,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationHasSubjectPatientRelationship(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationHasSubjectPatientRelationship(
 			diagnostics, context);
 	}
@@ -6275,7 +6308,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationRelationshipValueCode(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationRelationshipValueCode(diagnostics, context);
 	}
 
@@ -6286,7 +6320,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationHasRelatedSubjectCode(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationHasRelatedSubjectCode(diagnostics, context);
 	}
 
@@ -6297,8 +6332,10 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationRelatedSubjectCodeValueSet(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
-		return familyHistoryObservation.validateFamilyHistoryObservationRelatedSubjectCodeValueSet(diagnostics, context);
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
+		return familyHistoryObservation.validateFamilyHistoryObservationRelatedSubjectCodeValueSet(
+			diagnostics, context);
 	}
 
 	/**
@@ -6308,7 +6345,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationHasRelatedSubjectSubject(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationHasRelatedSubjectSubject(diagnostics, context);
 	}
 
@@ -6319,7 +6357,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationHasGenderCode(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationHasGenderCode(diagnostics, context);
 	}
 
@@ -6330,7 +6369,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationRelatedSubjectBirthTime(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationRelatedSubjectBirthTime(diagnostics, context);
 	}
 
@@ -6341,7 +6381,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationTemplateId(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationTemplateId(diagnostics, context);
 	}
 
@@ -6352,7 +6393,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationId(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationId(diagnostics, context);
 	}
 
@@ -6363,7 +6405,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationStatusCode(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationStatusCode(diagnostics, context);
 	}
 
@@ -6374,7 +6417,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationEffectiveTime(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationEffectiveTime(diagnostics, context);
 	}
 
@@ -6385,7 +6429,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationMoodCode(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationMoodCode(diagnostics, context);
 	}
 
@@ -6396,7 +6441,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationAgeObservation(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationAgeObservation(diagnostics, context);
 	}
 
@@ -6407,7 +6453,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateFamilyHistoryObservation_validateFamilyHistoryObservationProblemStatusObservation(
-			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			FamilyHistoryObservation familyHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return familyHistoryObservation.validateFamilyHistoryObservationProblemStatusObservation(diagnostics, context);
 	}
 
@@ -7016,8 +7063,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateResultObservation_validateResultObservationEffectiveTime(
-			ResultObservation resultObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateResultObservation_validateResultObservationEffectiveTime(ResultObservation resultObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return resultObservation.validateResultObservationEffectiveTime(diagnostics, context);
 	}
 
@@ -7356,7 +7403,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservation_validateSocialHistoryObservationCodeValueSet(
-			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return socialHistoryObservation.validateSocialHistoryObservationCodeValueSet(diagnostics, context);
 	}
 
@@ -7367,7 +7415,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservation_validateSocialHistoryObservationTemplateId(
-			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return socialHistoryObservation.validateSocialHistoryObservationTemplateId(diagnostics, context);
 	}
 
@@ -7378,7 +7427,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservation_validateSocialHistoryObservationClassCode(
-			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return socialHistoryObservation.validateSocialHistoryObservationClassCode(diagnostics, context);
 	}
 
@@ -7389,7 +7439,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservation_validateSocialHistoryObservationId(
-			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return socialHistoryObservation.validateSocialHistoryObservationId(diagnostics, context);
 	}
 
@@ -7400,7 +7451,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservation_validateSocialHistoryObservationMoodCode(
-			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return socialHistoryObservation.validateSocialHistoryObservationMoodCode(diagnostics, context);
 	}
 
@@ -7411,7 +7463,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservation_validateSocialHistoryObservationStatusCode(
-			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return socialHistoryObservation.validateSocialHistoryObservationStatusCode(diagnostics, context);
 	}
 
@@ -7422,7 +7475,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservation_validateSocialHistoryObservationSocialHistoryStatusObservation(
-			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return socialHistoryObservation.validateSocialHistoryObservationSocialHistoryStatusObservation(
 			diagnostics, context);
 	}
@@ -7434,7 +7488,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateSocialHistoryObservation_validateSocialHistoryObservationEpisodeObservation(
-			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			SocialHistoryObservation socialHistoryObservation, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return socialHistoryObservation.validateSocialHistoryObservationEpisodeObservation(diagnostics, context);
 	}
 
@@ -7443,9 +7498,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSocialHistoryStatusObservation(
-			SocialHistoryStatusObservation socialHistoryStatusObservation, DiagnosticChain diagnostics,
-			Map<Object, Object> context) {
+	public boolean validateSocialHistoryStatusObservation(SocialHistoryStatusObservation socialHistoryStatusObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(socialHistoryStatusObservation, diagnostics, context)) {
 			return false;
 		}
@@ -7457,7 +7511,8 @@ public class CCDValidator extends EObjectValidator {
 			result &= validate_EveryReferenceIsContained(socialHistoryStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validate_EveryBidirectionalReferenceIsPaired(socialHistoryStatusObservation, diagnostics, context);
+			result &= validate_EveryBidirectionalReferenceIsPaired(
+				socialHistoryStatusObservation, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validate_EveryProxyResolves(socialHistoryStatusObservation, diagnostics, context);
@@ -7921,8 +7976,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateEncountersActivity_validateEncountersActivityClassCode(
-			EncountersActivity encountersActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateEncountersActivity_validateEncountersActivityClassCode(EncountersActivity encountersActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return encountersActivity.validateEncountersActivityClassCode(diagnostics, context);
 	}
 
@@ -8179,8 +8234,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivity_validateMedicationActivityHasReason(
-			MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationActivity_validateMedicationActivityHasReason(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medicationActivity.validateMedicationActivityHasReason(diagnostics, context);
 	}
 
@@ -8267,8 +8322,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivity_validateMedicationActivityRouteCode(
-			MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationActivity_validateMedicationActivityRouteCode(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medicationActivity.validateMedicationActivityRouteCode(diagnostics, context);
 	}
 
@@ -8333,8 +8388,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateMedicationActivity_validateMedicationActivityPerformer(
-			MedicationActivity medicationActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateMedicationActivity_validateMedicationActivityPerformer(MedicationActivity medicationActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return medicationActivity.validateMedicationActivityPerformer(diagnostics, context);
 	}
 
@@ -8442,7 +8497,8 @@ public class CCDValidator extends EObjectValidator {
 				supplyActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateSupplyActivity_validateSupplyActivityProductInstance(supplyActivity, diagnostics, context);
+			result &= validateSupplyActivity_validateSupplyActivityProductInstance(
+				supplyActivity, diagnostics, context);
 		}
 		return result;
 	}
@@ -8819,8 +8875,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAlertObservation_validateAlertObservationInformationSource(
-			AlertObservation alertObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAlertObservation_validateAlertObservationInformationSource(AlertObservation alertObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return alertObservation.validateAlertObservationInformationSource(diagnostics, context);
 	}
 
@@ -8885,8 +8941,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateAlertObservation_validateAlertObservationPlayingEntityCode(
-			AlertObservation alertObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateAlertObservation_validateAlertObservationPlayingEntityCode(AlertObservation alertObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return alertObservation.validateAlertObservationPlayingEntityCode(diagnostics, context);
 	}
 
@@ -9242,8 +9298,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateSeverityObservation_validateSeverityObservationValue(
-			SeverityObservation severityObservation, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateSeverityObservation_validateSeverityObservationValue(SeverityObservation severityObservation,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return severityObservation.validateSeverityObservationValue(diagnostics, context);
 	}
 
@@ -9380,7 +9436,8 @@ public class CCDValidator extends EObjectValidator {
 			result &= validateResultsSection_validateResultsSectionText(resultsSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultsSection_validateResultsSectionResultOrganizer(resultsSection, diagnostics, context);
+			result &= validateResultsSection_validateResultsSectionResultOrganizer(
+				resultsSection, diagnostics, context);
 		}
 		return result;
 	}
@@ -9536,7 +9593,8 @@ public class CCDValidator extends EObjectValidator {
 	public boolean validateMedicationSeriesNumberObservation_validateMedicationSeriesNumberObservationMoodCode(
 			MedicationSeriesNumberObservation medicationSeriesNumberObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return medicationSeriesNumberObservation.validateMedicationSeriesNumberObservationMoodCode(diagnostics, context);
+		return medicationSeriesNumberObservation.validateMedicationSeriesNumberObservationMoodCode(
+			diagnostics, context);
 	}
 
 	/**
@@ -10815,7 +10873,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTemplateId(
-			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return advanceDirectivesSection.validateAdvanceDirectivesSectionTemplateId(diagnostics, context);
 	}
 
@@ -10826,7 +10885,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionCode(
-			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return advanceDirectivesSection.validateAdvanceDirectivesSectionCode(diagnostics, context);
 	}
 
@@ -10837,7 +10897,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionTitle(
-			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return advanceDirectivesSection.validateAdvanceDirectivesSectionTitle(diagnostics, context);
 	}
 
@@ -10848,7 +10909,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionText(
-			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return advanceDirectivesSection.validateAdvanceDirectivesSectionText(diagnostics, context);
 	}
 
@@ -10859,7 +10921,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validateAdvanceDirectivesSection_validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
-			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			AdvanceDirectivesSection advanceDirectivesSection, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return advanceDirectivesSection.validateAdvanceDirectivesSectionAdvanceDirectiveObservation(
 			diagnostics, context);
 	}
@@ -11026,7 +11089,8 @@ public class CCDValidator extends EObjectValidator {
 			result &= validatePurposeSection_validatePurposeSectionText(purposeSection, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validatePurposeSection_validatePurposeSectionPurposeActivity(purposeSection, diagnostics, context);
+			result &= validatePurposeSection_validatePurposeSectionPurposeActivity(
+				purposeSection, diagnostics, context);
 		}
 		return result;
 	}
@@ -11268,7 +11332,8 @@ public class CCDValidator extends EObjectValidator {
 				vitalSignsOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerMoodCode(vitalSignsOrganizer, diagnostics, context);
+			result &= validateResultOrganizer_validateResultOrganizerMoodCode(
+				vitalSignsOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateResultOrganizer_validateResultOrganizerId(vitalSignsOrganizer, diagnostics, context);
@@ -11285,7 +11350,8 @@ public class CCDValidator extends EObjectValidator {
 				vitalSignsOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateResultOrganizer_validateResultOrganizerSpecimen(vitalSignsOrganizer, diagnostics, context);
+			result &= validateResultOrganizer_validateResultOrganizerSpecimen(
+				vitalSignsOrganizer, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateVitalSignsOrganizer_validateVitalSignsOrganizerInformationSource(
@@ -11765,7 +11831,8 @@ public class CCDValidator extends EObjectValidator {
 				coverageActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
-			result &= validateCoverageActivity_validateCoverageActivityClassCode(coverageActivity, diagnostics, context);
+			result &= validateCoverageActivity_validateCoverageActivityClassCode(
+				coverageActivity, diagnostics, context);
 		}
 		if (result || diagnostics != null) {
 			result &= validateCoverageActivity_validateCoverageActivityMoodCode(coverageActivity, diagnostics, context);
@@ -11793,8 +11860,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCoverageActivity_validateCoverageActivityInformationSource(
-			CoverageActivity coverageActivity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCoverageActivity_validateCoverageActivityInformationSource(CoverageActivity coverageActivity,
+			DiagnosticChain diagnostics, Map<Object, Object> context) {
 		return coverageActivity.validateCoverageActivityInformationSource(diagnostics, context);
 	}
 
@@ -12142,7 +12209,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validatePayerEntity(PayerEntity payerEntity, DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validatePayerEntity(PayerEntity payerEntity, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		if (!validate_NoCircularContainment(payerEntity, diagnostics, context)) {
 			return false;
 		}
@@ -12250,8 +12318,8 @@ public class CCDValidator extends EObjectValidator {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public boolean validateCoveredParty_validateCoveredPartyCode(CoveredParty coveredParty,
-			DiagnosticChain diagnostics, Map<Object, Object> context) {
+	public boolean validateCoveredParty_validateCoveredPartyCode(CoveredParty coveredParty, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return coveredParty.validateCoveredPartyCode(diagnostics, context);
 	}
 
@@ -13451,7 +13519,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivitySupply_validatePlanOfCareActivitySupplyMoodCodeValue(
-			PlanOfCareActivitySupply planOfCareActivitySupply, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			PlanOfCareActivitySupply planOfCareActivitySupply, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return planOfCareActivitySupply.validatePlanOfCareActivitySupplyMoodCodeValue(diagnostics, context);
 	}
 
@@ -13462,7 +13531,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivitySupply_validatePlanOfCareActivitySupplyTemplateId(
-			PlanOfCareActivitySupply planOfCareActivitySupply, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			PlanOfCareActivitySupply planOfCareActivitySupply, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return planOfCareActivitySupply.validatePlanOfCareActivitySupplyTemplateId(diagnostics, context);
 	}
 
@@ -13473,7 +13543,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivitySupply_validatePlanOfCareActivitySupplyId(
-			PlanOfCareActivitySupply planOfCareActivitySupply, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			PlanOfCareActivitySupply planOfCareActivitySupply, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return planOfCareActivitySupply.validatePlanOfCareActivitySupplyId(diagnostics, context);
 	}
 
@@ -13484,7 +13555,8 @@ public class CCDValidator extends EObjectValidator {
 	 * @generated
 	 */
 	public boolean validatePlanOfCareActivitySupply_validatePlanOfCareActivitySupplyMoodCode(
-			PlanOfCareActivitySupply planOfCareActivitySupply, DiagnosticChain diagnostics, Map<Object, Object> context) {
+			PlanOfCareActivitySupply planOfCareActivitySupply, DiagnosticChain diagnostics,
+			Map<Object, Object> context) {
 		return planOfCareActivitySupply.validatePlanOfCareActivitySupplyMoodCode(diagnostics, context);
 	}
 
@@ -13895,7 +13967,8 @@ public class CCDValidator extends EObjectValidator {
 	public boolean validateProcedureActivityObservation_validateProcedureActivityObservationProblemObservation(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedureActivityObservation.validateProcedureActivityObservationProblemObservation(diagnostics, context);
+		return procedureActivityObservation.validateProcedureActivityObservationProblemObservation(
+			diagnostics, context);
 	}
 
 	/**
@@ -13919,7 +13992,8 @@ public class CCDValidator extends EObjectValidator {
 	public boolean validateProcedureActivityObservation_validateProcedureActivityObservationMedicationActivity(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedureActivityObservation.validateProcedureActivityObservationMedicationActivity(diagnostics, context);
+		return procedureActivityObservation.validateProcedureActivityObservationMedicationActivity(
+			diagnostics, context);
 	}
 
 	/**
@@ -13931,7 +14005,8 @@ public class CCDValidator extends EObjectValidator {
 	public boolean validateProcedureActivityObservation_validateProcedureActivityObservationPatientInstruction(
 			ProcedureActivityObservation procedureActivityObservation, DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return procedureActivityObservation.validateProcedureActivityObservationPatientInstruction(diagnostics, context);
+		return procedureActivityObservation.validateProcedureActivityObservationPatientInstruction(
+			diagnostics, context);
 	}
 
 	/**

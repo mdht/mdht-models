@@ -6,38 +6,27 @@
  */
 package org.openhealthtools.mdht.uml.cda.emspcr.impl;
 
-import java.lang.Iterable;
-
 import java.util.Map;
 
 import org.eclipse.emf.common.util.DiagnosticChain;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
-
-import org.openhealthtools.mdht.emf.runtime.util.Initializer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.DelayOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.DispatchLocationOrganizer;
 import org.openhealthtools.mdht.uml.cda.emspcr.EMSResponseSection;
 import org.openhealthtools.mdht.uml.cda.emspcr.EmspcrPackage;
 import org.openhealthtools.mdht.uml.cda.emspcr.ResponseModeToScene;
 import org.openhealthtools.mdht.uml.cda.emspcr.ResponseOdometerReadingOrganizer;
-
 import org.openhealthtools.mdht.uml.cda.emspcr.operations.EMSResponseSectionOperations;
-
-import org.openhealthtools.mdht.uml.cda.impl.SectionImpl;
 
 /**
  * <!-- begin-user-doc -->
  * An implementation of the model object '<em><b>EMS Response Section</b></em>'.
  * <!-- end-user-doc -->
- * <p>
- * </p>
  *
  * @generated
  */
-public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSection {
+public class EMSResponseSectionImpl extends org.eclipse.mdht.uml.cda.impl.SectionImpl implements EMSResponseSection {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -118,8 +107,7 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 */
 	public boolean validateEMSResponseSectionDispatchLocationOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSResponseSectionOperations.validateEMSResponseSectionDispatchLocationOrganizer(
-			this, diagnostics, context);
+		return EMSResponseSectionOperations.validateEMSResponseSectionDispatchLocationOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -129,8 +117,7 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 */
 	public boolean validateEMSResponseSectionResponseOdometerReadingOrganizer(DiagnosticChain diagnostics,
 			Map<Object, Object> context) {
-		return EMSResponseSectionOperations.validateEMSResponseSectionResponseOdometerReadingOrganizer(
-			this, diagnostics, context);
+		return EMSResponseSectionOperations.validateEMSResponseSectionResponseOdometerReadingOrganizer(this, diagnostics, context);
 	}
 
 	/**
@@ -185,16 +172,16 @@ public class EMSResponseSectionImpl extends SectionImpl implements EMSResponseSe
 	 * @generated
 	 */
 	public EMSResponseSection init() {
-		return Initializer.Util.init(this);
+	    return org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this);
 	}
 
 	/**
-	 * <!-- begin-user-doc -->
+     * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public EMSResponseSection init(Iterable<? extends Initializer<? extends EObject>> initializers) {
-		Initializer.Util.init(this, initializers);
-		return this;
-	}
+     * @generated
+     */
+	public EMSResponseSection init(Iterable<? extends org.eclipse.mdht.emf.runtime.util.Initializer<? extends EObject>> initializers) {
+        org.eclipse.mdht.emf.runtime.util.Initializer.Util.init(this, initializers);
+        return this;
+    }
 } // EMSResponseSectionImpl

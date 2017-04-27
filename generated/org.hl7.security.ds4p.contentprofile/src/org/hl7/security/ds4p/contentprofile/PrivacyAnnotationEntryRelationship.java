@@ -12,8 +12,6 @@ import org.eclipse.emf.ecore.EObject;
 
 import org.eclipse.mdht.emf.runtime.util.Initializer;
 
-import org.eclipse.mdht.uml.cda.EntryRelationship;
-
 /**
  * <!-- begin-user-doc -->
  * A representation of the model object '<em><b>Privacy Annotation Entry Relationship</b></em>'.
@@ -24,7 +22,7 @@ import org.eclipse.mdht.uml.cda.EntryRelationship;
  * @model annotation="http://www.openhealthtools.org/mdht/uml/cda/annotation constraints.validation.error='PrivacyAnnotationEntryRelationshipTemplateId PrivacyAnnotationEntryRelationshipOrganizer' templateId.root='2.16.840.1.113883.3.3251.1.11'"
  * @generated
  */
-public interface PrivacyAnnotationEntryRelationship extends EntryRelationship {
+public interface PrivacyAnnotationEntryRelationship extends EObject {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
