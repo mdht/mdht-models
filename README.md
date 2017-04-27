@@ -41,7 +41,7 @@ If you are looking to create new or modify existing CDA-based models you will ei
 
 or
 
--   To install the plugins into eclipse directly (using an update site TODO PROVIDE URL FOR UPDATE SITE AND/OR ANOTHER METHOD OF INSTALLATION INTO THE IDE)
+-   To install the plugins into Eclipse directly. Use the following URL as your Update Site in Eclipse: https://hudson.eclipse.org/mdht/job/MDHT-master/lastSuccessfulBuild/artifact/repository. This will inject MDHT into your Eclipse installation.
 
 or
 
